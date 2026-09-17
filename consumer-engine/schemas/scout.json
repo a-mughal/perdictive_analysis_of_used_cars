@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scout report",
+  "type": "object",
+  "required": ["retrieved_at", "facts", "search_terms", "price_ladder", "competitors", "complaint_clusters", "praise_clusters", "fee_inputs"],
+  "properties": {
+    "retrieved_at": {"type": "string"},
+    "facts": {
+      "type": "array", "minItems": 5,
+      "items": {"type": "object", "required": ["fact_id", "statement", "source"],
+        "properties": {"fact_id": {"type": "string"}, "statement": {"type": "string"}, "source": {"type": "string"}, "confidence": {"type": "string", "enum": ["high", "medium", "low"]}}}
+    },
+    "search_terms": {"type": "array", "minItems": 3, "items": {"type": "object", "required": ["term"], "properties": {"term": {"type": "string"}, "seasonal": {"type": "boolean"}, "notes": {"type": "string"}, "fact_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "price_ladder": {"type": "object", "required": ["primary_term", "median", "anchor_note"],
+      "properties": {"primary_term": {"type": "string"}, "min": {"type": "number"}, "p25": {"type": "number"}, "median": {"type": "number"}, "p75": {"type": "number"}, "max": {"type": "number"}, "typical_pack_count": {"type": "number"}, "median_price_per_unit": {"type": "number"}, "anchor_note": {"type": "string"}, "fact_ids": {"type": "array", "items": {"type": "string"}}}},
+    "competitors": {"type": "array", "minItems": 5,
+      "items": {"type": "object", "required": ["name", "price_usd", "fact_ids"],
+        "properties": {"asin": {"type": "string"}, "name": {"type": "string"}, "price_usd": {"type": "number"}, "pack_count": {"type": "number"}, "rating": {"type": "number"}, "review_count": {"type": "integer"}, "est_monthly_units": {"type": "number"}, "est_monthly_units_uncertainty": {"type": "string"}, "key_features": {"type": "array", "items": {"type": "string"}}, "main_image_description": {"type": "string"}, "seller_type": {"type": "string"}, "fact_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "complaint_clusters": {"type": "array", "minItems": 3,
+      "items": {"type": "object", "required": ["cluster_id", "pattern", "share_of_negative", "stage", "fact_ids"],
+        "properties": {"cluster_id": {"type": "string"}, "pattern": {"type": "string"}, "share_of_negative": {"type": "number", "minimum": 0, "maximum": 1}, "stage": {"type": "string"}, "paraphrased_examples": {"type": "array", "maxItems": 3, "items": {"type": "string", "maxLength": 140}}, "root_cause_hypothesis": {"type": "string"}, "fact_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "praise_clusters": {"type": "array", "items": {"type": "object", "required": ["pattern", "share_of_positive"], "properties": {"pattern": {"type": "string"}, "share_of_positive": {"type": "number"}, "fact_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "unanswered_questions": {"type": "array", "items": {"type": "string"}},
+    "fee_inputs": {
+      "type": "object",
+      "required": ["referral_rate", "fba_fee_usd", "storage_per_cuft_month_usd", "duty_rate", "sea_freight_usd_per_cbm"],
+      "properties": {
+        "referral_rate": {"$ref": "_range.json"},
+        "fba_fee_usd": {"$ref": "_range.json"},
+        "storage_per_cuft_month_usd": {"$ref": "_range.json"},
+        "duty_rate": {"$ref": "_range.json"},
+        "additional_tariff_rate": {"$ref": "_range.json"},
+        "sea_freight_usd_per_cbm": {"$ref": "_range.json"},
+        "hts_code": {"type": "string"},
+        "origin_assumed": {"type": "string"}
+      }
+    },
+    "trends": {"type": "array", "items": {"type": "object", "required": ["trend"], "properties": {"trend": {"type": "string"}, "fact_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "gaps": {"type": "array", "items": {"type": "string"}}
+  }
+}

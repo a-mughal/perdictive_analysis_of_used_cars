@@ -1,0 +1,239 @@
+{
+ "persona": {
+  "who_i_am": "WFH desk owner",
+  "trigger": "cable fell",
+  "fired_solution": "tape",
+  "urgency": "this_week",
+  "search_term": "cable clips",
+  "why_this_term": "what I'd type",
+  "tags": [
+   "jtbd.hiring_moment"
+  ]
+ },
+ "journey": [
+  {
+   "stage": 0,
+   "gate": "trigger",
+   "what_i_see": "...",
+   "what_i_think": "...",
+   "what_i_feel": "...",
+   "decision": "hesitate",
+   "tags": [
+    "kahneman.wysiati"
+   ]
+  },
+  {
+   "stage": 1,
+   "gate": "gate.image_fit",
+   "what_i_see": "...",
+   "what_i_think": "...",
+   "what_i_feel": "...",
+   "decision": "hesitate",
+   "tags": [
+    "kahneman.wysiati"
+   ]
+  },
+  {
+   "stage": 2,
+   "gate": "gate.image_2_to_6",
+   "what_i_see": "...",
+   "what_i_think": "...",
+   "what_i_feel": "...",
+   "decision": "hesitate",
+   "tags": [
+    "kahneman.wysiati"
+   ]
+  },
+  {
+   "stage": 3,
+   "gate": "hesitation",
+   "what_i_see": "...",
+   "what_i_think": "...",
+   "what_i_feel": "...",
+   "decision": "hesitate",
+   "tags": [
+    "kahneman.wysiati"
+   ]
+  },
+  {
+   "stage": 4,
+   "gate": "first_60s",
+   "what_i_see": "...",
+   "what_i_think": "...",
+   "what_i_feel": "...",
+   "decision": "hesitate",
+   "tags": [
+    "kahneman.wysiati"
+   ]
+  },
+  {
+   "stage": 5,
+   "gate": "failure",
+   "what_i_see": "...",
+   "what_i_think": "...",
+   "what_i_feel": "...",
+   "decision": "hesitate",
+   "tags": [
+    "kahneman.wysiati"
+   ]
+  },
+  {
+   "stage": 6,
+   "gate": "removal",
+   "what_i_see": "...",
+   "what_i_think": "...",
+   "what_i_feel": "...",
+   "decision": "hesitate",
+   "tags": [
+    "kahneman.wysiati"
+   ]
+  }
+ ],
+ "purchase_probability_current": {
+  "click": 0.35,
+  "add_to_cart": 0.4,
+  "buy": 0.3,
+  "reasoning": "fixture"
+ },
+ "fears": [
+  {
+   "rank": 1,
+   "question": "fear 1",
+   "tags": [
+    "kahneman.loss_aversion"
+   ],
+   "answered_by": "image"
+  },
+  {
+   "rank": 2,
+   "question": "fear 2",
+   "tags": [
+    "kahneman.loss_aversion"
+   ],
+   "answered_by": "image"
+  },
+  {
+   "rank": 3,
+   "question": "fear 3",
+   "tags": [
+    "kahneman.loss_aversion"
+   ],
+   "answered_by": "image"
+  },
+  {
+   "rank": 4,
+   "question": "fear 4",
+   "tags": [
+    "kahneman.loss_aversion"
+   ],
+   "answered_by": "image"
+  }
+ ],
+ "attributes_kano": [
+  {
+   "attribute": "attr 0",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 1",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 2",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 3",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 4",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 5",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 6",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 7",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 8",
+   "kano_class": "must_be"
+  },
+  {
+   "attribute": "attr 9",
+   "kano_class": "must_be"
+  }
+ ],
+ "outcomes_ulwick": [
+  {
+   "outcome_id": "O0",
+   "statement": "minimise ...",
+   "importance": 9.0,
+   "satisfaction": 0.2,
+   "opportunity": 7.2
+  },
+  {
+   "outcome_id": "O1",
+   "statement": "minimise ...",
+   "importance": 8.5,
+   "satisfaction": 0.28,
+   "opportunity": 6.12
+  },
+  {
+   "outcome_id": "O2",
+   "statement": "minimise ...",
+   "importance": 8.0,
+   "satisfaction": 0.36,
+   "opportunity": 5.12
+  },
+  {
+   "outcome_id": "O3",
+   "statement": "minimise ...",
+   "importance": 7.5,
+   "satisfaction": 0.44,
+   "opportunity": 4.2
+  },
+  {
+   "outcome_id": "O4",
+   "statement": "minimise ...",
+   "importance": 7.0,
+   "satisfaction": 0.52,
+   "opportunity": 3.36
+  },
+  {
+   "outcome_id": "O5",
+   "statement": "minimise ...",
+   "importance": 6.5,
+   "satisfaction": 0.6000000000000001,
+   "opportunity": 2.6
+  },
+  {
+   "outcome_id": "O6",
+   "statement": "minimise ...",
+   "importance": 6.0,
+   "satisfaction": 0.6799999999999999,
+   "opportunity": 1.92
+  },
+  {
+   "outcome_id": "O7",
+   "statement": "minimise ...",
+   "importance": 5.5,
+   "satisfaction": 0.76,
+   "opportunity": 1.32
+  }
+ ],
+ "price_psychology": {
+  "anchor_seen_usd": 7.99,
+  "max_without_reason_usd": 10,
+  "max_with_reason_usd": 15,
+  "reason_required": "visible lid / holds thick cable"
+ },
+ "what_would_make_me_buy": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}

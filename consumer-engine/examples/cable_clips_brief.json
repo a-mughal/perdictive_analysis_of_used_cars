@@ -1,0 +1,30 @@
+{
+  "slug": "cable-clips",
+  "product_name": "Cable clips (desk / under-desk cord holders)",
+  "source_url": "https://www.amazon.com/s?k=cable+clips",
+  "marketplace": "amazon.com",
+  "created_at": "2026-09-17T00:00:00+00:00",
+  "current_state": "category",
+  "target_buyer": {
+    "description": "Work-from-home desk owner, 25-45, phone in hand at night after a charging cable fell behind the desk again",
+    "context": "Owns a standing desk or a wooden desk; mixes thin charger cables with thick HDMI/power cords; rents or cares about the desk finish",
+    "price_band_usd": {"min": 7, "max": 17}
+  },
+  "seller_constraints": {
+    "launch_budget_usd": 15000,
+    "time_to_market_months": 8,
+    "origin_country": "CN",
+    "existing_supplier": true,
+    "must_keep": ["adhesive mount option"],
+    "must_avoid": ["electronics", "anything needing UL certification"]
+  },
+  "user_hypotheses": [
+    "Buyers decide from the main image by imagining the clip on their own cable and desk",
+    "Adjustability across cable diameters matters more than pack count",
+    "An openable head that lets you swap cables without unthreading would be a differentiator",
+    "Magnetic mounting is rising because of standing desks",
+    "Sustainability claims matter but only if specific"
+  ],
+  "assumptions": ["Amazon search pages cannot be fetched directly; scout triangulates from trackers and retailer review pages"],
+  "iterations": 0
+}

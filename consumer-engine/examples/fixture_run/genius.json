@@ -1,0 +1,467 @@
+{
+ "planning_fallacy_multiplier": 1.4,
+ "versions": [
+  {
+   "version_id": "v1",
+   "idea_ids": [
+    "I1",
+    "I2",
+    "I3"
+   ],
+   "bom": [
+    {
+     "part": "body",
+     "qty": 6,
+     "unit_cost_usd": {
+      "low": 0.05,
+      "base": 0.08,
+      "high": 0.14,
+      "assumption": "assumed for fixture test"
+     }
+    },
+    {
+     "part": "VHB pad",
+     "qty": 6,
+     "unit_cost_usd": {
+      "low": 0.03,
+      "base": 0.05,
+      "high": 0.08,
+      "assumption": "assumed for fixture test"
+     }
+    },
+    {
+     "part": "box",
+     "qty": 1,
+     "unit_cost_usd": {
+      "low": 0.1,
+      "base": 0.18,
+      "high": 0.3,
+      "assumption": "assumed for fixture test"
+     }
+    }
+   ],
+   "unit_cost_exw_usd": {
+    "low": 0.9,
+    "base": 1.3,
+    "high": 2.0,
+    "assumption": "assumed for fixture test"
+   },
+   "landed_cost_usd": {
+    "low": 1.5,
+    "base": 2.1,
+    "high": 3.2,
+    "assumption": "assumed for fixture test"
+   }
+  }
+ ],
+ "tooling_and_nre": [
+  {
+   "item": "steel tool",
+   "cost_usd": {
+    "low": 4000,
+    "base": 7000,
+    "high": 12000,
+    "assumption": "assumed for fixture test"
+   }
+  },
+  {
+   "item": "FTO search",
+   "cost_usd": {
+    "low": 500,
+    "base": 1200,
+    "high": 3000,
+    "assumption": "assumed for fixture test"
+   }
+  },
+  {
+   "item": "photo/video",
+   "cost_usd": {
+    "low": 600,
+    "base": 1500,
+    "high": 3000,
+    "assumption": "assumed for fixture test"
+   }
+  }
+ ],
+ "fixed_launch_cost_usd": {
+  "low": 9000,
+  "base": 14000,
+  "high": 24000,
+  "assumption": "assumed for fixture test"
+ },
+ "price_usd": {
+  "low": 11.99,
+  "base": 13.99,
+  "high": 15.99,
+  "assumption": "assumed for fixture test"
+ },
+ "fee_stack": {
+  "referral_usd": {
+   "low": 1.8,
+   "base": 2.1,
+   "high": 2.4,
+   "assumption": "assumed for fixture test",
+   "stale": true
+  },
+  "fba_usd": {
+   "low": 3.2,
+   "base": 3.5,
+   "high": 4.0,
+   "assumption": "assumed for fixture test",
+   "stale": true
+  },
+  "storage_alloc_usd": {
+   "low": 0.05,
+   "base": 0.1,
+   "high": 0.2,
+   "assumption": "assumed for fixture test"
+  },
+  "returns_alloc_usd": {
+   "low": 0.2,
+   "base": 0.4,
+   "high": 0.8,
+   "assumption": "assumed for fixture test"
+  },
+  "ad_alloc_usd": {
+   "low": 1.5,
+   "base": 3.0,
+   "high": 5.0,
+   "assumption": "assumed for fixture test"
+  },
+  "any_stale": true
+ },
+ "contribution_per_unit_usd": {
+  "low": 1.0,
+  "base": 3.5,
+  "high": 5.5,
+  "assumption": "assumed for fixture test"
+ },
+ "break_even_units": {
+  "low": 2500,
+  "base": 4000,
+  "high": 14000,
+  "assumption": "assumed for fixture test"
+ },
+ "sanity_rails": [
+  {
+   "rail": "landed<=30% price",
+   "pass": true
+  },
+  {
+   "rail": "contribution>=25%",
+   "pass": true
+  },
+  {
+   "rail": "timeline<=9mo",
+   "pass": true
+  },
+  {
+   "rail": "P(profit)>=60%",
+   "pass": true
+  }
+ ],
+ "forecast": {
+  "term_monthly_units": {
+   "low": 40000,
+   "base": 70000,
+   "high": 100000,
+   "assumption": "assumed for fixture test"
+  },
+  "share_m3": {
+   "low": 0.003,
+   "base": 0.01,
+   "high": 0.02,
+   "assumption": "assumed for fixture test"
+  },
+  "share_m6": {
+   "low": 0.01,
+   "base": 0.025,
+   "high": 0.05,
+   "assumption": "assumed for fixture test"
+  },
+  "share_m12": {
+   "low": 0.02,
+   "base": 0.04,
+   "high": 0.08,
+   "assumption": "assumed for fixture test"
+  },
+  "monthly_units_m3": {
+   "low": 150,
+   "base": 600,
+   "high": 1500,
+   "assumption": "assumed for fixture test"
+  },
+  "monthly_units_m6": {
+   "low": 500,
+   "base": 1500,
+   "high": 3500,
+   "assumption": "assumed for fixture test"
+  },
+  "monthly_units_m12": {
+   "low": 1000,
+   "base": 2500,
+   "high": 6000,
+   "assumption": "assumed for fixture test"
+  },
+  "annual_units_y1": {
+   "low": 6000,
+   "base": 15000,
+   "high": 35000,
+   "assumption": "assumed for fixture test"
+  },
+  "reasoning": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+ },
+ "mc_inputs": {
+  "price": {
+   "low": 11.99,
+   "base": 13.99,
+   "high": 15.99,
+   "assumption": "assumed for fixture test"
+  },
+  "landed_cost": {
+   "low": 1.5,
+   "base": 2.1,
+   "high": 3.2,
+   "assumption": "assumed for fixture test"
+  },
+  "referral_rate": {
+   "low": 0.15,
+   "base": 0.15,
+   "high": 0.16,
+   "assumption": "assumed for fixture test"
+  },
+  "fba_fee": {
+   "low": 3.2,
+   "base": 3.5,
+   "high": 4.0,
+   "assumption": "assumed for fixture test"
+  },
+  "storage_alloc": {
+   "low": 0.05,
+   "base": 0.1,
+   "high": 0.2,
+   "assumption": "assumed for fixture test"
+  },
+  "return_rate": {
+   "low": 0.02,
+   "base": 0.04,
+   "high": 0.08,
+   "assumption": "assumed for fixture test"
+  },
+  "ad_rate": {
+   "low": 0.12,
+   "base": 0.22,
+   "high": 0.4,
+   "assumption": "assumed for fixture test"
+  },
+  "monthly_units_m6": {
+   "low": 500,
+   "base": 1500,
+   "high": 3500,
+   "assumption": "assumed for fixture test"
+  },
+  "monthly_units_m12": {
+   "low": 1000,
+   "base": 2500,
+   "high": 6000,
+   "assumption": "assumed for fixture test"
+  },
+  "fixed_launch_cost": {
+   "low": 9000,
+   "base": 14000,
+   "high": 24000,
+   "assumption": "assumed for fixture test"
+  }
+ },
+ "timeline": {
+  "phases": [
+   {
+    "phase": "CAD",
+    "weeks": {
+     "low": 2,
+     "base": 3,
+     "high": 4,
+     "assumption": "assumed for fixture test"
+    }
+   },
+   {
+    "phase": "proto",
+    "weeks": {
+     "low": 2,
+     "base": 3,
+     "high": 5,
+     "assumption": "assumed for fixture test"
+    }
+   },
+   {
+    "phase": "tool",
+    "weeks": {
+     "low": 6,
+     "base": 9,
+     "high": 14,
+     "assumption": "assumed for fixture test"
+    }
+   },
+   {
+    "phase": "ship",
+    "weeks": {
+     "low": 5,
+     "base": 6,
+     "high": 8,
+     "assumption": "assumed for fixture test"
+    }
+   }
+  ],
+  "weeks_to_first_sale": {
+   "low": 20,
+   "base": 28,
+   "high": 38,
+   "assumption": "assumed for fixture test"
+  }
+ },
+ "premortem": [
+  {
+   "obituary": "ob 0",
+   "probability": 0.15,
+   "impact": "major",
+   "mitigation": "m",
+   "mitigation_cost_usd": {
+    "low": 100,
+    "base": 500,
+    "high": 1500,
+    "assumption": "assumed for fixture test"
+   }
+  },
+  {
+   "obituary": "ob 1",
+   "probability": 0.15,
+   "impact": "major",
+   "mitigation": "m",
+   "mitigation_cost_usd": {
+    "low": 100,
+    "base": 500,
+    "high": 1500,
+    "assumption": "assumed for fixture test"
+   }
+  },
+  {
+   "obituary": "ob 2",
+   "probability": 0.15,
+   "impact": "major",
+   "mitigation": "m",
+   "mitigation_cost_usd": {
+    "low": 100,
+    "base": 500,
+    "high": 1500,
+    "assumption": "assumed for fixture test"
+   }
+  },
+  {
+   "obituary": "ob 3",
+   "probability": 0.15,
+   "impact": "major",
+   "mitigation": "m",
+   "mitigation_cost_usd": {
+    "low": 100,
+    "base": 500,
+    "high": 1500,
+    "assumption": "assumed for fixture test"
+   }
+  },
+  {
+   "obituary": "ob 4",
+   "probability": 0.15,
+   "impact": "major",
+   "mitigation": "m",
+   "mitigation_cost_usd": {
+    "low": 100,
+    "base": 500,
+    "high": 1500,
+    "assumption": "assumed for fixture test"
+   }
+  },
+  {
+   "obituary": "ob 5",
+   "probability": 0.15,
+   "impact": "major",
+   "mitigation": "m",
+   "mitigation_cost_usd": {
+    "low": 100,
+    "base": 500,
+    "high": 1500,
+    "assumption": "assumed for fixture test"
+   }
+  }
+ ],
+ "idea_rulings": [
+  {
+   "idea_id": "I0",
+   "ruling": "stretch",
+   "why": "w",
+   "deciding_number": "n"
+  },
+  {
+   "idea_id": "I1",
+   "ruling": "realistic",
+   "why": "w",
+   "deciding_number": "n"
+  },
+  {
+   "idea_id": "I2",
+   "ruling": "realistic",
+   "why": "w",
+   "deciding_number": "n"
+  },
+  {
+   "idea_id": "I3",
+   "ruling": "realistic",
+   "why": "w",
+   "deciding_number": "n"
+  },
+  {
+   "idea_id": "I4",
+   "ruling": "stretch",
+   "why": "w",
+   "deciding_number": "n"
+  }
+ ],
+ "recommended_first_version": {
+  "version_id": "v1",
+  "idea_ids": [
+   "I1",
+   "I2",
+   "I3"
+  ],
+  "landed_cost_usd": {
+   "low": 1.5,
+   "base": 2.1,
+   "high": 3.2,
+   "assumption": "assumed for fixture test"
+  },
+  "price_usd": {
+   "low": 11.99,
+   "base": 13.99,
+   "high": 15.99,
+   "assumption": "assumed for fixture test"
+  },
+  "contribution_pct": {
+   "low": 10,
+   "base": 26,
+   "high": 38,
+   "assumption": "assumed for fixture test"
+  },
+  "break_even_units": {
+   "low": 2500,
+   "base": 4000,
+   "high": 14000,
+   "assumption": "assumed for fixture test"
+  },
+  "months_to_break_even_base": 7
+ },
+ "feasibility_verdict": "realistic",
+ "three_sentences_to_founder": [
+  "Ship v1.",
+  "Fees are stale.",
+  "Hero waits."
+ ]
+}

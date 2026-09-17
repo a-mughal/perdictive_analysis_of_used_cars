@@ -1,0 +1,208 @@
+{
+ "target_spec": {
+  "outcomes_targeted": [
+   "O0"
+  ],
+  "must_fix_clusters": [
+   "C1",
+   "C2"
+  ],
+  "should_fix_clusters": [
+   "C3"
+  ]
+ },
+ "ideas": [
+  {
+   "idea_id": "I0",
+   "name": "idea 0",
+   "role": "hero",
+   "mechanism": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+   "fixes_complaint_clusters": [
+    "C1"
+   ],
+   "improves_outcomes": [
+    "O0"
+   ],
+   "improves_gates": [
+    "gate.image_fit"
+   ],
+   "kano_class": "delighter",
+   "triz_or_erric_tags": [
+    "triz.dynamics"
+   ],
+   "thumbnail_visibility": "high",
+   "cost_tier": "tooling",
+   "priority": "now",
+   "prior_art_risk": "medium",
+   "prior_art_reason": "hinged clips exist",
+   "test_that_proves_it": "peel test",
+   "how_it_looks_in_main_image": "lid open",
+   "buyer_sentence": "it has a lid"
+  },
+  {
+   "idea_id": "I1",
+   "name": "idea 1",
+   "role": "supporting",
+   "mechanism": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+   "fixes_complaint_clusters": [
+    "C1",
+    "C2"
+   ],
+   "improves_outcomes": [
+    "O0"
+   ],
+   "improves_gates": [
+    "gate.image_fit"
+   ],
+   "kano_class": "delighter",
+   "triz_or_erric_tags": [
+    "triz.dynamics"
+   ],
+   "thumbnail_visibility": "high",
+   "cost_tier": "free",
+   "priority": "now",
+   "prior_art_risk": "medium",
+   "prior_art_reason": "hinged clips exist",
+   "test_that_proves_it": "peel test",
+   "how_it_looks_in_main_image": "lid open",
+   "buyer_sentence": "it has a lid"
+  },
+  {
+   "idea_id": "I2",
+   "name": "idea 2",
+   "role": "supporting",
+   "mechanism": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+   "fixes_complaint_clusters": [
+    "C1"
+   ],
+   "improves_outcomes": [
+    "O0"
+   ],
+   "improves_gates": [
+    "gate.image_fit"
+   ],
+   "kano_class": "delighter",
+   "triz_or_erric_tags": [
+    "triz.dynamics"
+   ],
+   "thumbnail_visibility": "medium",
+   "cost_tier": "cents",
+   "priority": "now",
+   "prior_art_risk": "medium",
+   "prior_art_reason": "hinged clips exist",
+   "test_that_proves_it": "peel test",
+   "how_it_looks_in_main_image": "lid open",
+   "buyer_sentence": "it has a lid"
+  },
+  {
+   "idea_id": "I3",
+   "name": "idea 3",
+   "role": "hygiene",
+   "mechanism": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+   "fixes_complaint_clusters": [
+    "C1",
+    "C2"
+   ],
+   "improves_outcomes": [
+    "O0"
+   ],
+   "improves_gates": [
+    "gate.image_fit"
+   ],
+   "kano_class": "delighter",
+   "triz_or_erric_tags": [
+    "triz.dynamics"
+   ],
+   "thumbnail_visibility": "low",
+   "cost_tier": "cents",
+   "priority": "now",
+   "prior_art_risk": "medium",
+   "prior_art_reason": "hinged clips exist",
+   "test_that_proves_it": "peel test",
+   "how_it_looks_in_main_image": "lid open",
+   "buyer_sentence": "it has a lid"
+  },
+  {
+   "idea_id": "I4",
+   "name": "idea 4",
+   "role": "supporting",
+   "mechanism": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+   "fixes_complaint_clusters": [
+    "C1"
+   ],
+   "improves_outcomes": [
+    "O0"
+   ],
+   "improves_gates": [
+    "gate.image_fit"
+   ],
+   "kano_class": "delighter",
+   "triz_or_erric_tags": [
+    "triz.dynamics"
+   ],
+   "thumbnail_visibility": "medium",
+   "cost_tier": "dimes",
+   "priority": "now",
+   "prior_art_risk": "medium",
+   "prior_art_reason": "hinged clips exist",
+   "test_that_proves_it": "peel test",
+   "how_it_looks_in_main_image": "lid open",
+   "buyer_sentence": "it has a lid"
+  }
+ ],
+ "errc": {
+  "eliminate": [
+   "120-packs"
+  ],
+  "reduce": [
+   "sizes"
+  ],
+  "raise": [
+   "removal"
+  ],
+  "create": [
+   "lid"
+  ]
+ },
+ "hero_as_product": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+ "version_plan": {
+  "v1_now": [
+   "I1",
+   "I2",
+   "I3"
+  ],
+  "v2_later": [
+   {
+    "idea_id": "I0",
+    "unlock_trigger": "100 reviews"
+   }
+  ]
+ },
+ "sustainability": {
+  "claims": [
+   {
+    "claim": "30% PCR PP",
+    "verification": "supplier cert"
+   }
+  ]
+ },
+ "listing_implications": {
+  "title_first_60": "Cable Clips with Lid, 2-10mm",
+  "main_image_brief": "x",
+  "image_briefs_2_to_6": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ],
+  "honest_limitations": [
+   "not for textured walls",
+   "cure 60 min"
+  ]
+ },
+ "what_i_cut": [
+  "blister pack",
+  "7 sizes"
+ ]
+}

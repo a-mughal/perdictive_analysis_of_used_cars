@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "range.json",
+  "title": "Range estimate",
+  "type": "object",
+  "required": ["low", "base", "high", "assumption"],
+  "properties": {
+    "low": {"type": "number"},
+    "base": {"type": "number"},
+    "high": {"type": "number"},
+    "unit": {"type": "string"},
+    "assumption": {"type": "string", "minLength": 8},
+    "source": {"type": "string"},
+    "stale": {"type": "boolean", "default": false}
+  },
+  "additionalProperties": false
+}

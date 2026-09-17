@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Product brief",
+  "type": "object",
+  "required": ["slug", "product_name", "created_at", "target_buyer", "marketplace"],
+  "properties": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9-]{2,40}$"},
+    "product_name": {"type": "string"},
+    "source_url": {"type": "string"},
+    "marketplace": {"type": "string", "default": "amazon.com"},
+    "created_at": {"type": "string"},
+    "current_state": {"type": "string", "enum": ["idea", "existing_listing", "competitor_listing", "category"]},
+    "target_buyer": {
+      "type": "object",
+      "required": ["description"],
+      "properties": {
+        "description": {"type": "string"},
+        "context": {"type": "string"},
+        "price_band_usd": {"type": "object", "properties": {"min": {"type": "number"}, "max": {"type": "number"}}}
+      }
+    },
+    "seller_constraints": {
+      "type": "object",
+      "properties": {
+        "launch_budget_usd": {"type": "number"},
+        "time_to_market_months": {"type": "number"},
+        "origin_country": {"type": "string"},
+        "existing_supplier": {"type": "boolean"},
+        "must_keep": {"type": "array", "items": {"type": "string"}},
+        "must_avoid": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "user_hypotheses": {"type": "array", "items": {"type": "string"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "iterations": {"type": "integer", "default": 0}
+  }
+}

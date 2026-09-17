@@ -1,0 +1,205 @@
+{
+ "retrieved_at": "2026-09-17",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "statement": "fact 1",
+   "source": "https://example.com/1",
+   "confidence": "medium"
+  },
+  {
+   "fact_id": "F2",
+   "statement": "fact 2",
+   "source": "https://example.com/2",
+   "confidence": "medium"
+  },
+  {
+   "fact_id": "F3",
+   "statement": "fact 3",
+   "source": "https://example.com/3",
+   "confidence": "medium"
+  },
+  {
+   "fact_id": "F4",
+   "statement": "fact 4",
+   "source": "https://example.com/4",
+   "confidence": "medium"
+  },
+  {
+   "fact_id": "F5",
+   "statement": "fact 5",
+   "source": "https://example.com/5",
+   "confidence": "medium"
+  },
+  {
+   "fact_id": "F6",
+   "statement": "fact 6",
+   "source": "https://example.com/6",
+   "confidence": "medium"
+  },
+  {
+   "fact_id": "F7",
+   "statement": "fact 7",
+   "source": "https://example.com/7",
+   "confidence": "medium"
+  },
+  {
+   "fact_id": "F8",
+   "statement": "fact 8",
+   "source": "https://example.com/8",
+   "confidence": "medium"
+  }
+ ],
+ "search_terms": [
+  {
+   "term": "cable clips",
+   "seasonal": false
+  },
+  {
+   "term": "magnetic cable clips",
+   "seasonal": false
+  },
+  {
+   "term": "cord organizer desk",
+   "seasonal": false
+  }
+ ],
+ "price_ladder": {
+  "primary_term": "cable clips",
+  "min": 5.99,
+  "p25": 6.99,
+  "median": 7.99,
+  "p75": 9.99,
+  "max": 14.99,
+  "typical_pack_count": 24,
+  "median_price_per_unit": 0.33,
+  "anchor_note": "row-1 median is the bulk pack price",
+  "fact_ids": [
+   "F1"
+  ]
+ },
+ "competitors": [
+  {
+   "name": "Competitor 1",
+   "price_usd": 7.99,
+   "pack_count": 16,
+   "rating": 4.4,
+   "review_count": 1000,
+   "fact_ids": [
+    "F1"
+   ]
+  },
+  {
+   "name": "Competitor 2",
+   "price_usd": 8.99,
+   "pack_count": 16,
+   "rating": 4.4,
+   "review_count": 2000,
+   "fact_ids": [
+    "F1"
+   ]
+  },
+  {
+   "name": "Competitor 3",
+   "price_usd": 9.99,
+   "pack_count": 16,
+   "rating": 4.4,
+   "review_count": 3000,
+   "fact_ids": [
+    "F1"
+   ]
+  },
+  {
+   "name": "Competitor 4",
+   "price_usd": 10.99,
+   "pack_count": 16,
+   "rating": 4.4,
+   "review_count": 4000,
+   "fact_ids": [
+    "F1"
+   ]
+  },
+  {
+   "name": "Competitor 5",
+   "price_usd": 11.99,
+   "pack_count": 16,
+   "rating": 4.4,
+   "review_count": 5000,
+   "fact_ids": [
+    "F1"
+   ]
+  }
+ ],
+ "complaint_clusters": [
+  {
+   "cluster_id": "C1",
+   "pattern": "adhesive fails within weeks",
+   "share_of_negative": 0.38,
+   "stage": "5",
+   "fact_ids": [
+    "F2"
+   ]
+  },
+  {
+   "cluster_id": "C2",
+   "pattern": "cable pops out / wrong size",
+   "share_of_negative": 0.27,
+   "stage": "4",
+   "fact_ids": [
+    "F3"
+   ]
+  },
+  {
+   "cluster_id": "C3",
+   "pattern": "paint damage on removal",
+   "share_of_negative": 0.12,
+   "stage": "6",
+   "fact_ids": [
+    "F4"
+   ]
+  }
+ ],
+ "praise_clusters": [
+  {
+   "pattern": "easy install",
+   "share_of_positive": 0.5
+  }
+ ],
+ "fee_inputs": {
+  "referral_rate": {
+   "low": 0.14,
+   "base": 0.15,
+   "high": 0.16,
+   "assumption": "category default; FETCH",
+   "stale": true
+  },
+  "fba_fee_usd": {
+   "low": 3.2,
+   "base": 3.5,
+   "high": 4.0,
+   "assumption": "small standard; FETCH",
+   "stale": true
+  },
+  "storage_per_cuft_month_usd": {
+   "low": 0.7,
+   "base": 0.9,
+   "high": 2.4,
+   "assumption": "seasonal; FETCH",
+   "stale": true
+  },
+  "duty_rate": {
+   "low": 0.03,
+   "base": 0.05,
+   "high": 0.08,
+   "assumption": "HTS 3926; verify",
+   "stale": true
+  },
+  "sea_freight_usd_per_cbm": {
+   "low": 80,
+   "base": 150,
+   "high": 300,
+   "assumption": "CN-USWC spot; verify",
+   "stale": true
+  }
+ }
+}

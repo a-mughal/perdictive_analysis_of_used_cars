@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Buyer report",
+  "type": "object",
+  "required": ["persona", "journey", "purchase_probability_current", "fears", "attributes_kano", "outcomes_ulwick", "price_psychology", "what_would_make_me_buy"],
+  "properties": {
+    "persona": {"type": "object", "required": ["who_i_am", "trigger", "fired_solution", "urgency", "search_term", "why_this_term"],
+      "properties": {"who_i_am": {"type": "string"}, "trigger": {"type": "string"}, "fired_solution": {"type": "string"}, "urgency": {"type": "string", "enum": ["today", "this_week", "someday"]}, "search_term": {"type": "string"}, "why_this_term": {"type": "string"}, "tags": {"type": "array", "items": {"type": "string"}}}},
+    "journey": {"type": "array", "minItems": 6,
+      "items": {"type": "object", "required": ["stage", "gate", "what_i_see", "what_i_think", "what_i_feel", "decision", "tags"],
+        "properties": {"stage": {"type": "integer", "minimum": 0, "maximum": 6}, "gate": {"type": "string"}, "what_i_see": {"type": "string"}, "what_i_think": {"type": "string"}, "what_i_feel": {"type": "string"}, "decision": {"type": "string", "enum": ["pass", "hesitate", "leave"]}, "tags": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "scout_fact_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "purchase_probability_current": {"type": "object", "required": ["click", "add_to_cart", "buy", "reasoning"],
+      "properties": {"click": {"type": "number", "minimum": 0, "maximum": 1}, "add_to_cart": {"type": "number", "minimum": 0, "maximum": 1}, "buy": {"type": "number", "minimum": 0, "maximum": 1}, "reasoning": {"type": "string"}}},
+    "fears": {"type": "array", "minItems": 3, "maxItems": 8,
+      "items": {"type": "object", "required": ["rank", "question", "tags"],
+        "properties": {"rank": {"type": "integer"}, "question": {"type": "string"}, "tags": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "from_cluster_id": {"type": "string"}, "answered_by": {"type": "string", "enum": ["image", "bullet", "product_change", "unanswerable"]}}}},
+    "attributes_kano": {"type": "array", "minItems": 10,
+      "items": {"type": "object", "required": ["attribute", "kano_class"],
+        "properties": {"attribute": {"type": "string"}, "kano_class": {"type": "string", "enum": ["must_be", "performance", "delighter", "indifferent", "reverse"]}, "note": {"type": "string"}}}},
+    "outcomes_ulwick": {"type": "array", "minItems": 6, "maxItems": 10,
+      "items": {"type": "object", "required": ["outcome_id", "statement", "importance", "satisfaction", "opportunity"],
+        "properties": {"outcome_id": {"type": "string"}, "statement": {"type": "string"}, "importance": {"type": "number", "minimum": 1, "maximum": 10}, "satisfaction": {"type": "number", "minimum": 0, "maximum": 1}, "opportunity": {"type": "number"}, "evidence_cluster_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "price_psychology": {"type": "object", "required": ["anchor_seen_usd", "max_without_reason_usd", "max_with_reason_usd", "reason_required"],
+      "properties": {"anchor_seen_usd": {"type": "number"}, "max_without_reason_usd": {"type": "number"}, "max_with_reason_usd": {"type": "number"}, "reason_required": {"type": "string"}, "tags": {"type": "array", "items": {"type": "string"}}}},
+    "hypotheses_tested": {"type": "array", "items": {"type": "object", "required": ["hypothesis", "verdict"], "properties": {"hypothesis": {"type": "string"}, "verdict": {"type": "string", "enum": ["confirmed", "partly", "rejected"]}, "why": {"type": "string"}}}},
+    "what_would_make_me_buy": {"type": "string", "minLength": 200}
+  }
+}

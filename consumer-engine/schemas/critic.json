@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Critic report",
+  "type": "object",
+  "required": ["findings", "overall", "three_things_the_founder_must_hear", "untagged_judgement_paths", "unsourced_claim_paths"],
+  "properties": {
+    "findings": {"type": "array",
+      "items": {"type": "object", "required": ["id", "file", "field_path", "severity", "finding", "fix", "owner_agent"],
+        "properties": {"id": {"type": "string"}, "file": {"type": "string"}, "field_path": {"type": "string"}, "severity": {"type": "string", "enum": ["fatal", "major", "minor"]}, "finding": {"type": "string"}, "fix": {"type": "string"}, "owner_agent": {"type": "string", "enum": ["scout", "buyer", "innovaty", "genius", "orchestrator"]}}}},
+    "untagged_judgement_paths": {"type": "array", "items": {"type": "string"}},
+    "unsourced_claim_paths": {"type": "array", "items": {"type": "string"}},
+    "contamination_detected": {"type": "boolean"},
+    "overall": {"type": "string", "enum": ["pass", "fix_and_rerun", "block"]},
+    "three_things_the_founder_must_hear": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "findings": [
+  {
+   "id": "K1",
+   "file": "scout.json",
+   "field_path": "fee_inputs",
+   "severity": "major",
+   "finding": "all fees stale",
+   "fix": "fetch",
+   "owner_agent": "scout"
+  }
+ ],
+ "untagged_judgement_paths": [],
+ "unsourced_claim_paths": [],
+ "contamination_detected": false,
+ "overall": "pass",
+ "three_things_the_founder_must_hear": [
+  "a",
+  "b",
+  "c"
+ ]
+}

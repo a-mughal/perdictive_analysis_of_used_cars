@@ -1,0 +1,159 @@
+{
+  "persona": {
+    "who_i_am": "I'm a small-animal owner (hamster/guinea pig cage) who just did my nightly spot-clean with a repurposed cat litter scoop and it failed me again.",
+    "trigger": "I scooped the cage at 10:40pm and the litter scoop either let all the soiled bedding fall right back through the holes or caught nothing at all, so the cage still smells and I still have wet clumps in there.",
+    "fired_solution": "A cat litter scoop I already had lying around - its holes are sized for clumping clay litter, not loose paper/aspen bedding, so it mis-separates on the very first real use (C1).",
+    "urgency": "today",
+    "search_term": "hamster litter scoop sifter",
+    "why_this_term": "It's the core head term the category actually lists under, and it names my animal instead of repeating the cat-litter vocabulary that just failed me (cialdini.consistency - I won't switch search language mid-hunt once I've typed this)."
+  },
+  "buy_driver": {
+    "driver": "pain",
+    "pain_level": "moderate",
+    "evidence": "C1 (mesh sized for litter clumps lets bedding fines fall through or catches nothing - my exact tonight) and C2 (clumps sticking to flimsy mesh, bulky handle for a small cage) - this is a recurring annoyance that just spiked, not a life-or-death fix, so I'm actively comparing but not panic-buying the first thing I see.",
+    "tags": ["law.pain_moderate", "jtbd.firing", "kano.must_be"]
+  },
+  "future_self": "I picture myself doing the Sunday-night cage clean in under a minute: one scoop through the bedding, the tray catches the wet clumps and droppings, the clean fluffy bedding falls straight back into the cage, and I dump the tray in the trash without ever touching anything wet with my hands.",
+  "comfort_and_laziness": "I never have to pick clumps out by hand, never have to shake a scoop over the trash guessing whether I just threw away half a bag of clean bedding, and never have to keep two mismatched tools (a cat scoop plus a kitchen sieve I improvised) by the cage - one grab, one motion, done.",
+  "benefits_not_features": [
+    {
+      "feature": "3mm mesh gauge calibrated for paper/aspen bedding fines",
+      "benefit": "I stop losing clean bedding every time I clean - the fines fall through, the waste stays in the tray, so my bedding actually lasts as long as it's supposed to."
+    },
+    {
+      "feature": "Two-piece sifter tray + waste scoop combo",
+      "benefit": "I clean the whole cage with one purchase instead of hunting down a separate sifter and a separate scoop that never quite match each other."
+    },
+    {
+      "feature": "Bedding-level depth marks on the scoop handle",
+      "benefit": "I can glance at the handle and know how much fresh bedding to add back without eyeballing it or over-filling the cage."
+    },
+    {
+      "feature": "Mesh purpose-built for bedding instead of clumping cat litter",
+      "benefit": "I finally have a tool made for MY pet, not a cat's litter box repurposed and half-working on my hamster's cage."
+    }
+  ],
+  "three_second_scan": [
+    {
+      "signal": "image",
+      "what_i_see": "Competitor tiles show a lone plastic scoop on white with no mesh visible, or a mesh scoop head with no hand/cage for scale, and no product shows the sifter actually separating bedding from waste.",
+      "verdict": "push_away",
+      "tags": ["gate.image_fit", "underhill.decompression", "kahneman.wysiati"]
+    },
+    {
+      "signal": "price",
+      "what_i_see": "The row I see runs $4.29-$10.17 for generic scoops; this product sits well above that with nothing in the image explaining why.",
+      "verdict": "push_away",
+      "tags": ["kahneman.anchoring", "gate.price_vs_anchor"]
+    },
+    {
+      "signal": "rating",
+      "what_i_see": "The one competitor with visible numbers is 3.6 stars from 73 reviews - below my safe-click bar - and the true combo-set comparators show no rating or review count at all.",
+      "verdict": "push_away",
+      "tags": ["cialdini.social_proof", "gate.social_proof"]
+    },
+    {
+      "signal": "design",
+      "what_i_see": "It's a 2-3 piece mesh-tray-plus-scoop set, which is the shape I'm actually looking for, but nothing in the tile distinguishes it from a generic cat-litter-style set.",
+      "verdict": "neutral",
+      "tags": ["law.three_second_scan", "sharp.mental_availability"]
+    },
+    {
+      "signal": "experience_promise",
+      "what_i_see": "No bullet or badge on the grid tells me the mesh is calibrated for bedding specifically - the exact promise I need to see isn't visible yet at this stage.",
+      "verdict": "neutral",
+      "tags": ["kahneman.wysiati", "law.benefit_not_feature"]
+    }
+  ],
+  "purchase_probability_current": {
+    "click": 0.3,
+    "add_to_cart": 0.35,
+    "buy": 0.55,
+    "reasoning": "click: generic-looking image plus an unexplained price jump above the $4.29-$10.17 row median pushes me past silently (kahneman.anchoring, gate.image_fit); add_to_cart: given a click, I still can't confirm from scout's data that the listing copy or images actually prove the mesh gauge is bedding-calibrated, so I stay hesitant (cialdini.social_proof gap, law.benefit_not_feature); buy: given a full cart, the price sits inside my stated $14.39-$21.59 budget and the core pain (C1) is real and current, so if nothing derails me at checkout I complete the purchase (sutherland.satisficing, nudge.friction_asymmetry)."
+  },
+  "fears": [
+    {
+      "rank": 1,
+      "question": "Is this mesh actually sized for bedding fines, or will it be the same clumping-litter gauge that just failed me tonight?",
+      "tags": ["kano.must_be", "cialdini.authority"],
+      "from_cluster_id": "C1",
+      "answered_by": "image"
+    },
+    {
+      "rank": 2,
+      "question": "Will wet clumps stick to this mesh instead of separating cleanly, like the cheap plastic ones do?",
+      "tags": ["kano.must_be", "law.pain_moderate"],
+      "from_cluster_id": "C2",
+      "answered_by": "image"
+    },
+    {
+      "rank": 3,
+      "question": "Is the scoop head and handle actually small enough to fit through my hamster cage's opening, or is it sized for a cat litter box?",
+      "tags": ["gate.image_2_to_6", "kano.must_be"],
+      "from_cluster_id": "C2",
+      "answered_by": "image"
+    },
+    {
+      "rank": 4,
+      "question": "Why should I pay roughly double what the generic scoops on this page cost - what am I actually getting for that?",
+      "tags": ["kahneman.anchoring", "kahneman.system2_trigger"],
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 5,
+      "question": "Has anyone with a small pet actually used this and confirmed it works, or are the reviews all from cat owners?",
+      "tags": ["cialdini.social_proof", "sutherland.satisficing"],
+      "answered_by": "unanswerable"
+    }
+  ],
+  "unmet_needs": [
+    {
+      "need_id": "N1",
+      "statement": "I need a mesh gauge actually sized for loose paper/aspen bedding fines, not clumping cat litter, so I stop over-discarding clean bedding or leaving waste behind.",
+      "pain_level": "moderate",
+      "severity": 8,
+      "evidence_cluster_ids": ["C1"]
+    },
+    {
+      "need_id": "N2",
+      "statement": "I need the mesh and body to be rigid enough that clumps drop free instead of sticking, and to hold up to repeated daily scooping without going flimsy.",
+      "pain_level": "moderate",
+      "severity": 6,
+      "evidence_cluster_ids": ["C2"]
+    },
+    {
+      "need_id": "N3",
+      "statement": "I need the scoop head and handle sized for a small cage opening, not a cat litter box, so it doesn't feel bulky or awkward in my hand.",
+      "pain_level": "moderate",
+      "severity": 5,
+      "evidence_cluster_ids": ["C2"]
+    },
+    {
+      "need_id": "N4",
+      "statement": "I need real proof - ratings, reviews, or a clear demo image - that this was actually tested on small-animal bedding, not just carried over from a cat-litter listing.",
+      "pain_level": "latent",
+      "severity": 4
+    }
+  ],
+  "price_psychology": {
+    "anchor_seen_usd": 10.17,
+    "max_without_reason_usd": 12,
+    "max_with_reason_usd": 20,
+    "reason_required": "A visible demo/callout image (side-by-side or split-screen) showing the mesh letting fine bedding pass through while catching soiled clumps and droppings, ideally with the '3mm' gauge called out by name and contrasted against a regular litter scoop - a named, specific spec, not just a claim."
+  },
+  "packaging_expectation": "It should feel like a real pet-care tool, not a dollar-store scoop: the plastic should feel rigid and not flex or creak when I pick it up, the mesh holes should look clean-molded and even, and a simple card or insert explaining the mesh size would reassure me it was designed on purpose. If the plastic feels thin and flexy, if the mesh looks warped or uneven, or if it arrives loose and rattling with no protection, I'll silently decide it's the same cheap cat-scoop plastic in a new listing before I've even used it.",
+  "lifestyle_target": {
+    "primary": "An everyday home pet-parent doing a quiet evening cage-cleaning routine - hands actually sifting bedding over the cage or a trash can, hamster/guinea pig visible and undisturbed nearby, a tidy home setting.",
+    "avoid": "Anything that looks like it was shot for a cat litter box - white sterile bathroom-tile backgrounds or cat imagery would make me think this is just a relabeled cat product, which is the exact thing that failed me tonight."
+  },
+  "memory_hook": "The image of bedding fines raining cleanly through the mesh while a wet clump stays trapped - that specific before/after moment is what I'll keep picturing the next time my current scoop lets everything fall through again.",
+  "color_read": "A soft green or blue pet-care palette reads as gentle and purpose-built for a small animal; stark clinical white or the black plastic of a generic cat-litter scoop would anchor me back to the cat-litter category I'm actively trying to escape.",
+  "hypotheses_tested": [
+    {
+      "hypothesis": "A small-animal owner frustrated that a repurposed cat-litter scoop either passes everything or nothing will buy a sifter/scoop combo specifically because its mesh gauge is calibrated for bedding fines rather than clumping litter.",
+      "verdict": "partly",
+      "why": "The pain is exactly mine and real (C1/C2 match my tonight precisely), but scout couldn't confirm this product's own listing images or bullets actually show or state the bedding-specific calibration, and there's no verified rating or review data for the true combo-set comparators - so I'd want that proof visible on the page before I'd say the purchase is settled, not just plausible."
+    }
+  ],
+  "what_would_make_me_buy": "I'll buy this one if the listing shows me, not just tells me, that the mesh is sized for my bedding and not cat litter - a clear demo image of clumps caught and fines passing through, a named mesh size, and a scoop that visibly fits a small cage opening rather than a litter box; if the price sits in the teens with that proof attached I won't blink at paying more than the generic $5-10 scoops, because I've already wasted money and patience on the wrong tool tonight. And if it actually works the way it promises the first time I use it, I'll tell every hamster-owner friend I have, because I know exactly how many of them are still fighting the same cat-scoop mismatch I was an hour ago."
+}

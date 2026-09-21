@@ -1,0 +1,219 @@
+{
+  "target_spec": {
+    "needs_targeted": ["N1", "N2", "N3"],
+    "must_fix_clusters": ["C1", "C2"],
+    "over_served_to_cut": [
+      "Cat-litter-box-length handles and heads copied wholesale onto small-animal tools — buyers explicitly resent this bulk (C2), so spend nothing more making the tool bigger",
+      "Bulk multi-pack scoop assortments (e.g. the 12-piece bath-spoon pack, F6) — quantity-as-value signaling that the 3.6-star/73-review data shows buyers do not actually reward"
+    ]
+  },
+  "ideas": [
+    {
+      "idea_id": "I1",
+      "name": "See-Through Sift Window",
+      "role": "hero",
+      "aspect": "pain_removal",
+      "mechanism": "A strip of clear polycarbonate (or PET) is insert-molded or heat-staked into one long wall of the sifter tray, positioned exactly at the 3mm mesh plane. Light and bedding are visible through the wall as the user sifts, so fines are seen falling past the mesh line in real time while retained clumps/pellets stay visibly stacked above it. This is a real physical viewing port, not a graphic overlay.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1", "N4"],
+      "improves_gates": ["gate.image_fit", "gate.image_2_to_6", "gate.qna"],
+      "kano_class": "delighter",
+      "triz_or_erric_tags": ["triz.local_quality", "erric.create", "cialdini.authority"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "dimes",
+      "priority": "now",
+      "prior_art_risk": "medium",
+      "prior_art_reason": "Clear inspection windows exist generically on kitchen sifters, but a mesh-level viewing window purpose-built to prove bedding/waste separation is not present on any of the named competitors (F1-F2); risk is in the specific combination, not the window concept itself.",
+      "test_that_proves_it": "Bench sieve-verification test: pour a measured 50g paper/aspen bedding sample (with fines) through the tray under the window, video-record pass-through against a 3mm calibrated aperture reference (ISO 3310-style mesh check); confirm >=90% of sub-3mm fines pass within 10 seconds while a 25mm wood-pellet clump analog remains visibly retained above the window line.",
+      "how_it_looks_in_main_image": "The tray is angled three-quarters toward camera mid-sift, pale bedding fines caught mid-fall behind the clear side window and a dark, moist-looking clump visibly resting on the mesh above it.",
+      "buyer_sentence": "You can actually watch the bedding fall through the side while the gross clump just sits there on top — I didn't have to take their word for it."
+    },
+    {
+      "idea_id": "I2",
+      "name": "High-Contrast Dual-Color Fine Mesh",
+      "role": "supporting",
+      "aspect": "eye_catching",
+      "mechanism": "The mesh insert is molded in a bright contrasting resin color (pale cream/white) against a saturated sage-green tray-body color, assembled as a snap-fit two-piece unit, so the individual 3mm apertures read as a distinct fine grid pattern instead of blending into a single body color the way single-tone competitor mesh does.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1"],
+      "improves_gates": ["gate.image_orientation", "gate.image_fit"],
+      "kano_class": "performance",
+      "triz_or_erric_tags": ["triz.colour_change", "triz.local_quality", "erric.raise"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "cents",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Two-tone contrast molding is a basic, widely used manufacturing technique with no proprietary claim; many pet products already ship in two-tone plastics.",
+      "test_that_proves_it": "Grid-legibility panel test: photograph the tray at a simulated 300x300px thumbnail under standard e-commerce lightbox lighting next to the five named competitor images (F1); confirm in a 10-person panel that the mesh reads as 'fine mesh' vs 'coarse mesh' correctly within 2 seconds.",
+      "how_it_looks_in_main_image": "A sage-green tray frame holds a crisp white fine-hole mesh insert, the color break making the mesh grid pop as a distinct visual band even at thumbnail size.",
+      "buyer_sentence": "You can literally see how fine the holes are from the product photo — it doesn't look like just another cat scoop with big holes."
+    },
+    {
+      "idea_id": "I3",
+      "name": "Molded-In 3mm Gauge Callout",
+      "role": "supporting",
+      "aspect": "design",
+      "mechanism": "The text '3MM BEDDING MESH' is raised/embossed directly into the tray rim during molding (a steel-safe text addition to the existing tool, no extra part), rather than printed on a removable sticker, so the spec is physically part of the product and visible and touchable at unboxing and in a close-up image.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1", "N4"],
+      "improves_gates": ["gate.brand_trust", "gate.image_2_to_6", "gate.bullets"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["cialdini.authority", "triz.merging", "erric.create"],
+      "thumbnail_visibility": "medium",
+      "cost_tier": "free",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Molded-in spec text is standard low-risk tooling practice; none of the named competitors (F1) do this, so differentiation risk is low and legal risk is negligible.",
+      "test_that_proves_it": "Text legibility/durability test: 200 damp-cloth wipe cycles (informal ASTM D5264-style rub test) confirming the embossed text stays fully legible, versus a printed/sticker control that fades or peels within the same cycle count.",
+      "how_it_looks_in_main_image": "A macro inset shows the tray rim with '3MM BEDDING MESH' molded in relief, catching raking light to show it is physically part of the plastic, not a sticker.",
+      "buyer_sentence": "It actually says 3mm right on the tray, molded in — not some sticker that's going to peel off in a week."
+    },
+    {
+      "idea_id": "I4",
+      "name": "Compact Cage-Fit Scoop Head & Contoured Short Handle",
+      "role": "supporting",
+      "aspect": "comfort",
+      "mechanism": "The scoop head width is reduced to fit within the typical small-pet cage door opening range (targeting roughly 4in/10cm max head width), and the handle is shortened with a finger-contoured grip profile sized for one-handed use, replacing the longer cat-litter-box-length handles used by repurposed cat scoops.",
+      "fixes_complaint_clusters": ["C2"],
+      "improves_needs": ["N3"],
+      "improves_gates": ["gate.image_2_to_6", "gate.bullets"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.asymmetry", "erric.reduce"],
+      "thumbnail_visibility": "medium",
+      "cost_tier": "tooling",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Scoop head/handle proportions are basic ergonomic geometry with no known patent; small-pet-specific sizing is simply underserved by the cat-adjacent tools named in F1, not a novel mechanism.",
+      "test_that_proves_it": "Cage-door fit test: pass the scoop head through a sample set of the 10 best-selling small-animal cage door/access openings and confirm insertion without binding on at least 90% of them, plus a one-hand grip trial with 10 users under 2 minutes each.",
+      "how_it_looks_in_main_image": "The scoop rests beside an open cage door in the frame, its head clearly narrower than the door opening, with a short contoured handle a hand could close around.",
+      "buyer_sentence": "It actually fits through the cage door without me wrestling it in sideways like the cat scoop did."
+    },
+    {
+      "idea_id": "I5",
+      "name": "Ribbed Non-Stick Mesh Underside + Reinforced Frame",
+      "role": "hygiene",
+      "aspect": "durability",
+      "mechanism": "Raised standoff ribs are molded into the underside of the mesh (a waffle/rib pattern beneath the 3mm holes) so soiled clumps rest on narrow rib lines instead of a flat suction-prone surface and release with a light tap instead of sticking; the tray's outer frame wall thickness is increased at load-bearing edges to eliminate the flex/creak reported in C2.",
+      "fixes_complaint_clusters": ["C2"],
+      "improves_needs": ["N2"],
+      "improves_gates": ["gate.reviews_negative_first", "gate.image_2_to_6"],
+      "kano_class": "performance",
+      "triz_or_erric_tags": ["triz.local_quality", "triz.dynamics", "erric.raise"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "cents",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Ribbed release surfaces and reinforced wall sections are standard molding techniques used broadly across houseware sieves; no proprietary claim is likely.",
+      "test_that_proves_it": "Clump-release test: apply a standardized moist bedding-clump analog (soaked wood pellet + paper fines, 24h at 23C) to the mesh, invert and tap once from 10cm, measure % release vs a flat-mesh control. Flex test: apply a defined edge load and measure deflection (informal ASTM D790-style 3-point flex) vs the thinner-wall control.",
+      "how_it_looks_in_main_image": "Not the primary subject; supports image 3 (hard case): a moist clump releasing cleanly from the mesh with one light tap, no residue left, shown in profile.",
+      "buyer_sentence": "One little tap and the clump just drops off — it doesn't stick and smear across the mesh like the last one did."
+    },
+    {
+      "idea_id": "I6",
+      "name": "Durable Molded Depth Marks",
+      "role": "hygiene",
+      "aspect": "convenience",
+      "mechanism": "The bedding-level depth marks on the scoop handle move from a printed/pad-printed graphic to shallow embossed ridges filled with a contrasting solid-color resin (color-fill or two-shot molding), so the marks are physically recessed into the plastic and can't wear, scratch, or wash off with repeated daily scooping and rinsing.",
+      "fixes_complaint_clusters": ["C2"],
+      "improves_needs": ["N2", "N3"],
+      "improves_gates": ["gate.image_2_to_6", "gate.qna"],
+      "kano_class": "delighter",
+      "triz_or_erric_tags": ["triz.composite_materials", "erric.raise"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "cents",
+      "priority": "later",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Embossed, color-filled markings are a common durable-marking technique in kitchenware/tools; no distinctive IP concern.",
+      "test_that_proves_it": "Abrasion/wash durability test: 200 damp-cloth wipe cycles plus 20 submerged rinse cycles in warm water; confirm depth-mark visibility and color retention vs a pad-printed control that fades or flakes within the same cycle count.",
+      "how_it_looks_in_main_image": "Not the primary subject; appears in image 2 (scale/detail shot): a close-up of the handle showing crisp, color-filled ridge marks catching light distinctly from the surrounding matte handle.",
+      "buyer_sentence": "The fill-level marks are actually molded in, not printed on, so they're not rubbing off after a month of washing it."
+    }
+  ],
+  "packaging": {
+    "unboxing_moment": "A small die-cut window in the box lid sits directly over the mesh tray, so before the lid is even lifted the customer can press a fingertip against the real 3mm mesh and feel that it's rigid, not flexy or warped. Lifting the lid reveals the tray and scoop nested snugly in a shaped cardboard tray — no rattling, no loose poly bag — beside a small card explaining the '3mm, built for bedding, not cat litter' story.",
+    "upgrade_vs_category": "The named competitors (F1, F3-F6) ship as a bagged single scoop with no window and no explanation card. This combo lets the buyer verify the mesh by touch before opening (post.cognitive_dissonance, law.packaging_first_touch), replacing the generic mailer-bag norm with a shaped, snug-fit tray that answers the 'is this cheap plastic' fear on first contact — exactly the failure mode buyer.packaging_expectation names as a silent one-star trigger.",
+    "cost_tier": "dimes"
+  },
+  "color_strategy": {
+    "product_color": "Sage green tray, scoop and handle accents — a soft, natural pet-care tone that reads as gentle and purpose-built for a living animal, directly matching buyer.color_read's stated preference and deliberately avoiding stark clinical white or generic black cat-litter plastic that would silently re-anchor the buyer to the cat-litter category she is actively trying to escape tonight.",
+    "main_image_anchor": "A muted sage-to-cream soft gradient background (not sterile white, not black), with the crisp white contrast mesh (I2) as the one bright accent point that pulls the eye and separates this tile from the white-background, black-plastic rivals filling the rest of the grid.",
+    "brand_direction": "A gentle, trustworthy, purpose-built small-pet-care brand — closer to a boutique pet-wellness label than a mass commodity cleaning tool — signaling 'made for your hamster' rather than 'recycled cat product.'"
+  },
+  "bundle_or_addition": {
+    "what": "A second, narrower snap-in 3mm mesh insert sized for tight corners and hideouts, clipping into the same tray frame, plus a small card pointing to the back-end replacement-mesh-tray SKU named in the brief.",
+    "why_it_wins": "Answers fear rank 3 (does this actually fit small/awkward spaces) and pre-empts the 'it wore out and I can't replace it' one-star before it's written by proving the replacement ecosystem exists from day one (post.return_reason, cialdini.reciprocity, triz.cheap_short_living: durable body plus a cheap replaceable mesh).",
+    "cost_tier": "dimes"
+  },
+  "errc": {
+    "eliminate": [
+      "Oversized cat-litter-box-length handles and heads copied wholesale from cat scoops — buyers explicitly reject this bulk (C2)",
+      "Printed/sticker spec labels that peel and erode trust, replaced by molded-in text (I3)"
+    ],
+    "reduce": [
+      "Handle length and scoop head footprint, cut down to small-cage-door dimensions instead of the cat-litter-box norm (I4)",
+      "Packaging void-fill and loose-bag shipping, replaced by a snug shaped internal tray"
+    ],
+    "raise": [
+      "Mesh-gauge visual proof and named-spec signaling (window, embossed callout, contrast color) far beyond anything any named competitor shows",
+      "Frame rigidity and mesh clump-release performance to directly answer C2's 'feels flimsy / clumps stick' pattern"
+    ],
+    "create": [
+      "A physically visible, touchable proof-of-mechanism (the sift window, I1) that no competitor in scout's grid offers",
+      "A same-family spare-mesh add-on tying to a stated back-end replacement SKU"
+    ]
+  },
+  "version_plan": {
+    "v1_now": ["I1", "I2", "I3", "I4", "I5"],
+    "v2_later": [
+      {
+        "idea_id": "I6",
+        "unlock_trigger": "Once v1 reviews confirm the printed depth marks are not themselves generating complaints, upgrade to color-filled molding at the next scheduled mold revision rather than delaying launch for a secondary two-shot tooling change."
+      }
+    ]
+  },
+  "listing_implications": {
+    "title_first_60": "Hamster Bedding Sifter Scoop Combo - See-Through 3mm Mesh",
+    "main_image_brief": "Show the sage-green sifter tray mid-sift at a slight downward angle, held in a hand: pale bedding fines caught mid-fall behind the clear see-through side window (I1), a dark moist clump visibly resting on the crisp white contrast mesh (I2), and the molded '3MM BEDDING MESH' rim callout (I3) readable under soft light, all on a muted sage/cream anchor background - no text overlays, the mechanism itself doing the proving, not a caption.",
+    "image_briefs_2_to_4": [
+      "Scale: the compact scoop head held in an adult hand beside an open small-pet cage door, showing it passes through without turning sideways.",
+      "Hard case: a moist wood-pellet clump on the mesh releasing clean with one light tap, zero residue left on the ribbed underside.",
+      "Install/use-in-3-steps: a three-panel strip - scoop through bedding, sift over the tray, tap the clump into the trash - ending with clean bedding falling straight back into the cage."
+    ],
+    "honest_limitations": [
+      "The see-through window shows the sifting action but is a viewing aid, not a measuring gauge - use the handle's depth marks, not the window, to judge bedding volume.",
+      "The 3mm gauge is tuned for loose paper/aspen bedding fines; very fine sand-bath sand may still pass through faster than intended, so this is not marketed or sold as a sand-bath sifter.",
+      "The scoop head is sized for standard small-cage doors, not the narrowest openings on some travel/carrier cages - check your door width (~4in max) before buying if your cage is unusually tight."
+    ]
+  },
+  "image_prompts": [
+    {
+      "purpose": "main_image",
+      "prompt": "Studio product photograph of a sage-green plastic pet-bedding sifter tray and matching waste scoop, shot at a three-quarter angle tilted slightly downward, mid-sift: pale beige paper and aspen bedding fines are frozen mid-fall behind a clear polycarbonate viewing window set into the tray's long side wall, while a single dark, moist-looking bedding clump rests visibly on top of a crisp white fine-mesh grid that contrasts sharply against the sage-green frame; the tray rim shows embossed raised lettering reading '3MM BEDDING MESH' catching a soft raking highlight; background is a smooth muted sage-to-cream gradient sweep with soft diffused studio lighting, no shadows harsh enough to hide detail, no text overlays, no logos, clean commercial e-commerce product photography, high resolution, slight overhead camera angle."
+    },
+    {
+      "purpose": "packaging",
+      "prompt": "Overhead unboxing photograph of a matte sage-green and cream cardboard box with a small die-cut oval window in the lid that reveals the real white 3mm mesh tray underneath even before opening; a pair of hands is mid-motion lifting the open lid away, revealing the sage-green sifter tray and scoop nested snugly in a shaped cardboard inner tray with zero rattle or loose fill, alongside a small printed insert card reading '3mm, built for bedding - not cat litter' resting beside the tray; warm soft natural window light from the upper left, a plain light wood tabletop surface, shallow depth of field with the box and tray in sharp focus, cozy home setting, no clinical white background, photorealistic product photography."
+    },
+    {
+      "purpose": "lifestyle",
+      "prompt": "Warm, softly lit evening photograph inside a cozy home: a person's hands are gently sifting fresh paper bedding over an open-top hamster cage using the sage-green sifter tray and scoop, clean fluffy bedding visibly falling back into the cage while a small clump sits caught in the tray; a curious hamster is visible nearby on the cage's clean bedding, undisturbed and alert, not startled; the setting is a lived-in bedroom or living room corner with warm lamp light, wood shelving, and soft shadows, nothing sterile or clinical, no white bathroom tile, no cat imagery anywhere in frame; candid documentary-style photography, slightly shallow depth of field, camera at a natural eye-level angle looking down at the cage and hands, evoking a calm, satisfied one-minute routine rather than a chore."
+    }
+  ],
+  "sustainability": {
+    "claims": [
+      {
+        "claim": "Tray and scoop body molded from at least 30% post-consumer recycled polypropylene.",
+        "verification": "Supplier-issued recycled-content certificate for the specific resin lot, retained on file and referenced in the listing's bullet, not asserted without it."
+      }
+    ],
+    "rejected_claims": [
+      "'Biodegradable' or 'compostable' - the tray, scoop and mesh are polypropylene, which does not biodegrade; this claim would be false and is refused outright.",
+      "'BPA-free' as a differentiator - ordinary food-contact-safe PP/PA housewares plastics do not contain BPA to begin with, so the claim would be misleading-by-irrelevance and is refused."
+    ]
+  },
+  "what_i_cut": [
+    "The 12-piece bulk multi-pack format (mismatched cheap scoops, F6) the category leans on to look like more value for the money - one well-made combo ships instead of a dozen flimsy ones.",
+    "Cat-litter-box-scale handle length and head width copied from repurposed cat scoops - shortened and narrowed (I4) to help pay for the mesh window and reinforced frame.",
+    "Multiple color/pattern SKU variants, a common category tactic - one deliberate sage-green colorway ships, cutting variation-driven decision fatigue (schwartz.overload) and SKU complexity to fund the packaging window."
+  ]
+}

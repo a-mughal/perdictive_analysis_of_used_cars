@@ -131,13 +131,13 @@
     }
   ],
   "packaging": {
-    "unboxing_moment": "In the first ten seconds the buyer lifts a slim matte-black hinged lid instead of tearing a poly bag; inside, three numbered chrome-tipped pins and a foil-sealed pouch of glossy red strips sit in their own molded slots with zero rattle, and a small kraft card with a QR code and three numbered install icons rests in its own slot beside them. Nothing feels loose, nothing feels improvised, and the rubber does not look or feel dusty.",
-    "upgrade_vs_category": "The category norm for this price band is a plain poly bag with loose pins and an exposed sheet of rubber strips (as scout observed on the Genuine Innovations tile). Swapping that for a reusable slotted hard case plus a sealed strip sub-pouch and a proof card is a visible, felt step up in perceived engineering effort (sutherland.costly_signal) that a buyer reads as quality before they ever use the tool, directly answering the buyer's own stated packaging_expectation.",
+    "unboxing_moment": "In the first ten seconds the buyer lifts a slim hinged lid instead of tearing a poly bag; inside, three numbered chrome-tipped pins and five glossy red rubber strips sit in their own molded slots with zero rattle, exactly as the kit ships today. Nothing feels loose, nothing feels improvised, and the rubber does not look or feel dusty.",
+    "upgrade_vs_category": "The category norm for this price band is a plain poly bag with loose pins and an exposed sheet of rubber strips (as scout observed on the Genuine Innovations tile). Swapping that for a reusable slotted hard case is a visible, felt step up in perceived engineering effort (sutherland.costly_signal) that a buyer reads as quality before they ever use the tool, directly answering the buyer's own stated packaging_expectation. The foil-sealed strip pouch (I2) and QR proof card (I3) are a near-zero-cost fast-follow once this leaner case-only launch is proven, per genius's recommended v1_hero_case scope.",
     "cost_tier": "tooling"
   },
   "color_strategy": {
-    "product_color": "Matte gunmetal-black anodized aluminum body with a small oxide-red pull-ring accent at the cap. Black reads authority, durability and 'a real tool, not a toy' — the buyer's own words — while the red accent borrows urgency/hazard-marker psychology so it is the first thing found by touch or glance in a packed saddlebag.",
-    "main_image_anchor": "A warm sandstone-to-charcoal gradient background rather than stark clinical white — light enough that the matte black tool and red accent keep full contrast at 300 px, but warm and outdoor-toned enough to separate the tile from the white-background, silver-tool rivals in the same grid row.",
+    "product_color": "Brand-direction target: matte gunmetal-black anodized aluminum body with a small oxide-red pull-ring accent at the cap (I4). Black reads authority, durability and 'a real tool, not a toy' — the buyer's own words — while the red accent borrows urgency/hazard-marker psychology so it is the first thing found by touch or glance in a packed saddlebag. Per genius's recommended v1_hero_case scope, this finish change ships as part of the I2/I3/I4 fast-follow bundle once the hard-case-only launch is proven, not at initial launch — v1 ships the tool in its current stock silver/raw-anodized finish, with the charcoal hard case and the warm anchor background carrying the color story instead.",
+    "main_image_anchor": "A warm sandstone-to-charcoal gradient background rather than stark clinical white — light enough that the charcoal hard case and the tool's current stock finish keep full contrast at 300 px, but warm and outdoor-toned enough to separate the tile from the white-background, silver-tool rivals in the same grid row. (Once I4's matte gunmetal-black finish and red accent ship in the fast-follow bundle, they will sharpen this contrast further, but the v1_hero_case main image relies on the case shape and organization to stand out.)",
     "brand_direction": "A no-nonsense, trail-tested mechanic's-tool brand: durability and quiet competence over playful color or gimmicks, aimed at riders who want the tool that looks like it has already survived a ride, not the one that looks new in the box."
   },
   "bundle_or_addition": {
@@ -164,8 +164,20 @@
     ]
   },
   "version_plan": {
-    "v1_now": ["I1", "I2", "I3", "I4"],
+    "v1_now": ["I1"],
     "v2_later": [
+      {
+        "idea_id": "I2",
+        "unlock_trigger": "Genius costed I2 only inside the bundled v1_plus_bundle version and recommended the leaner v1_hero_case (I1 alone) instead; fast-follow with the foil-sealed strip pouch once the hard-case-only launch is live and reviews start landing — genius prices it as a near-zero-cost addition ($0.06 base incremental EXW, under 0.4% of price), not worth delaying the case-only launch for."
+      },
+      {
+        "idea_id": "I3",
+        "unlock_trigger": "Same fast-follow window as I2/I4, once the hard case is live and reviews start landing. Genius's own premortem flags that the QR mechanism alone is not fully trustworthy as a review substitute (most mobile shoppers never scan it), so before this ships its strongest proof point should also be placed directly in a bullet/image rather than gated behind the code."
+      },
+      {
+        "idea_id": "I4",
+        "unlock_trigger": "Same fast-follow window as I2/I3, once the hard case is live and reviews start landing. Genius holds v1 price near the top of the buyer's no-reason-required band ($16.99, close to the $18 ceiling) specifically to protect an already-thin fee-stack contribution margin on the leaner I1-only launch; the finish/ring change is deferred with I2/I3 as a near-zero-cost bundle rather than adding cost before that margin is proven at scale."
+      },
       {
         "idea_id": "I5",
         "unlock_trigger": "Next scheduled mold revision or running-change window for the tool body, gated on a quick freedom-to-operate check on combination valve-core-remover tool designs given the medium prior-art risk."
@@ -178,14 +190,14 @@
   },
   "listing_implications": {
     "title_first_60": "ROCKBROS Tubeless Tire Plug Kit, No-Glue Repair, Hard Case",
-    "main_image_brief": "Show the matte gunmetal-black tool with its red pull-ring accent laid open beside its slotted hard case, with the three numbered pins, the foil-sealed strip pouch and the proof card each visible in their own slot, on the warm sandstone-to-charcoal anchor background — every visible v1 change present, no text overlay.",
+    "main_image_brief": "Show the tool in its current stock finish laid open beside its slotted hard case, with the three numbered pins and the five rubber strips each visible in their own slot exactly as they ship today (no foil pouch, no proof card — those are the v2 fast-follow), on the warm sandstone-to-charcoal anchor background — the hard case itself, open and organized, is the single v1_hero_case change on display, no text overlay.",
     "image_briefs_2_to_4": [
       "Scale: the tool held in one hand next to a tire valve stem and a coin, proving it truly fits a jersey pocket.",
-      "Hard case / what's in the box: the case open flat-lay, pins, foil-sealed strip pouch and QR proof card each in a labeled slot.",
+      "Hard case / what's in the box: the case open flat-lay, the tool, three numbered pins and five rubber strips each in a labeled slot exactly as they ship today.",
       "Install in three steps: flatten the puncture, insert a strip, pump CO2 — shot trailside on an actual punctured tire holding air."
     ],
     "honest_limitations": [
-      "The five (now ten with the bonus pouch) rubber strips are a consumable — expect to use the QR-linked refill link after several repairs, not treat them as infinite.",
+      "The five rubber strips are a consumable — expect to order refill strips after several repairs, not treat them as infinite.",
       "This is a get-home trailside plug, not a permanent tire repair — replace or professionally patch the tire once home.",
       "Works on tubeless setups only; it will not seal a standard inner tube."
     ]
@@ -193,15 +205,15 @@
   "image_prompts": [
     {
       "purpose": "main_image",
-      "prompt": "A macro product photograph of a compact matte gunmetal-black anodized aluminum bike tire plug tool with a small oxide-red aluminum pull-ring at its cap end, shown open beside its slim charcoal hard case whose molded foam insert holds three numbered chrome-tipped steel pins and five dark-red rubber bacon strips still sealed in a small clear-foil sub-pouch, plus a small kraft-brown QR proof card tucked in its own slot; the whole kit is arranged in a tidy three-quarter overhead flat-lay on a warm sandstone-to-charcoal gradient background with soft diffused studio lighting that puts a gentle highlight along the tool's matte finish and the red accent, sharp focus throughout, no text or logos overlaid, photorealistic e-commerce product photography."
+      "prompt": "A macro product photograph of a compact silver-toned raw-anodized aluminum bike tire plug tool with three integrated pins, shown open beside its slim charcoal hard case whose molded foam insert holds the tool in its own slot, three numbered chrome-tipped steel pins in their own slots, and five ordinary dark-red rubber bacon strips resting in their own foam compartment exactly as they ship today — nothing foil-wrapped, no printed card; the open case with its organized slotted foam layout is the single hero visual, arranged in a tidy three-quarter overhead flat-lay on a warm sandstone-to-charcoal gradient background with soft diffused studio lighting that puts a gentle highlight along the foam texture and the tool's brushed metal finish, sharp focus throughout, no text or logos overlaid, photorealistic e-commerce product photography."
     },
     {
       "purpose": "packaging",
-      "prompt": "A close-up lifestyle photograph of a pair of dust-smudged cyclist's hands lifting the hinged lid off a slim matte charcoal hard case, revealing three numbered chrome pins and five foil-sealed dark-red rubber strips seated snugly in individual molded foam slots with zero rattle, a small kraft QR proof card nestled beside them; the case rests on a weathered wooden tailgate or a gravel-dusted bike top-tube, warm early-morning side light raking across the foam texture, shallow depth of field blurring a gravel bike frame in the background, documentary-style product-in-use photography, no visible text or brand logos legible."
+      "prompt": "A close-up lifestyle photograph of a pair of dust-smudged cyclist's hands lifting the hinged lid off a slim charcoal hard case, revealing three numbered chrome pins and five dark-red rubber strips seated snugly in individual molded foam slots with zero rattle, exactly as the kit ships today; the case rests on a weathered wooden tailgate or a gravel-dusted bike top-tube, warm early-morning side light raking across the foam texture, shallow depth of field blurring a gravel bike frame in the background, documentary-style product-in-use photography, no visible text or brand logos legible."
     },
     {
       "purpose": "lifestyle",
-      "prompt": "A candid outdoor action-documentary photograph of a dusty, self-sufficient gravel cyclist crouched beside their bike on a sun-lit dirt shoulder, tire laid flat toward camera, one hand pressing the matte gunmetal-black plug tool with its red accent ring into the punctured tread while a small CO2 inflator rests ready on the ground nearby; dust and trail grit visible on the rider's forearms and gloves, golden-hour side light, shallow depth of field with a blurred gravel road and hills behind, no other people in frame, confident unhurried body language, natural color grade, no text overlays."
+      "prompt": "A candid outdoor action-documentary photograph of a dusty, self-sufficient gravel cyclist crouched beside their bike on a sun-lit dirt shoulder, tire laid flat toward camera, one hand pressing the plug tool in its current stock finish into the punctured tread while a small CO2 inflator rests ready on the ground nearby; dust and trail grit visible on the rider's forearms and gloves, golden-hour side light, shallow depth of field with a blurred gravel road and hills behind, no other people in frame, confident unhurried body language, natural color grade, no text overlays."
     }
   ],
   "sustainability": {
@@ -217,8 +229,8 @@
     ]
   },
   "what_i_cut": [
-    "The multi-fold, multi-language paper instruction booklet — replaced by a single QR-linked proof/install card and numbered pins, funding part of the hard case.",
+    "The multi-fold, multi-language paper instruction booklet — replaced for v1 by numbered pins and the hard case's own slotted organization; the QR-linked proof/install card (I3) fast-follows once the case-only launch is proven, per genius's leaner v1_hero_case scope.",
     "The loose single-use poly bag as the sole packaging layer — replaced entirely by the reusable slotted hard case.",
-    "Multiple colorway/variant listings — ship one matte gunmetal colorway only, avoiding the variation-dropdown drop-off (schwartz.overload) and keeping tooling cost down."
+    "Multiple colorway/variant listings — v1_hero_case ships the tool in its current single stock finish only (the matte gunmetal colorway is deferred to the I2/I3/I4 fast-follow bundle), avoiding the variation-dropdown drop-off (schwartz.overload) and keeping tooling cost down."
   ]
 }

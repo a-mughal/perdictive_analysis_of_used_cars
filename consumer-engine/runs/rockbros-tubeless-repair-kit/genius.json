@@ -1,0 +1,242 @@
+{
+  "planning_fallacy_multiplier": 1.35,
+  "versions": [
+    {
+      "version_id": "v1_hero_case",
+      "idea_ids": ["I1"],
+      "bom": [
+        {
+          "part": "Aluminum-alloy tool body with 3 integrated pins (deflating, thwarting, inserting) and anodized oxidation surface treatment — unchanged must-keep part, ~48g per F3",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.70, "base": 1.10, "high": 1.80, "assumption": "Not fetched this run — search budget was spent on the hard-case price (own one-off search, see below), not on the metal tool body. Rule-of-thumb range for a small (~48g) multi-pin aluminum hand tool with an anodized finish at 10k+ MOQ from China, built from general manufacturing-cost knowledge rather than a supplier quote; wider than a plain plastic part because it involves metal machining/pinning plus a finishing step."}
+        },
+        {
+          "part": "Vulcanized rubber 'bacon' sealing strips — unchanged must-keep part",
+          "qty": 5,
+          "unit_cost_usd": {"low": 0.02, "base": 0.04, "high": 0.08, "assumption": "Not a knowledge-base rule-of-thumb line item (closest analogue is the alcohol-prep-pad/cents-tier consumables); estimated as a small extruded/vulcanized rubber piece at high volume. Not independently sourced this run."}
+        },
+        {
+          "part": "Hinged hard case with molded foam insert (3 pin slots + 1 strip compartment) replacing the poly bag [I1]",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.45, "base": 0.90, "high": 1.60, "assumption": "Own one-off web search this session (not a scout fact_id, not authorized by any brief clause — used the brief's 1-2-search allowance for a component scout didn't price): found a wholesale zipper EVA-foam tool case at ~$3.30/unit (Alibaba/Global Sources listings) as an upper anchor for a larger fabric-and-foam case. Our case is smaller (saddlebag-sized) and a rigid injection-molded ABS clamshell rather than a zippered EVA case, so priced lower; range stays wide because no exact-spec quote was obtained."}
+        },
+        {
+          "part": "Assembly and QC labor per unit (China)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.05, "high": 0.08, "assumption": "Knowledge-base rule of thumb: 'assembly labour and QC for three to five parts in China or Vietnam is a few cents.' This version has 4 parts (tool, strips, case, foam-insert-as-one-assembly), at the lower end of that band."}
+        }
+      ],
+      "unit_weight_g": 93,
+      "landed_cost_usd": {"low": 1.64, "base": 3.27, "high": 6.96, "assumption": "landed = EXW BOM sum + freight/unit + duty/unit + inbound-to-FBA. EXW BOM sums to low $1.28 / base $2.25 / high $3.88 above. Freight: scout's sea_freight_usd_per_cbm is marked stale (F-gap); widened by a quarter around its range (low $112/base $220/high $338 per CBM per the brief's stale-widening instruction) and divided by an assumed 2,000-3,000 units/CBM (small saddlebag kit, ~0.29L raw volume with carton-packing losses) to get $0.04/$0.09/$0.17 per unit. Duty: scout's duty_rate is marked stale and already widened by scout to low 0.25/base 0.325/high 0.58; widened by a further quarter per the brief's instruction to low 0.17/base 0.325/high 0.66 and applied to EXW per the formula duty_per_unit = unit_cost_exw × duty_rate (this single duty_rate is treated as already inclusive of MFN + Section 301 + any Section 232 aluminum stacking per scout's own note on F9/F10, so the separate additional_tariff_rate field is NOT added again to avoid double-counting). Inbound-to-FBA (customs brokerage + port-to-warehouse trucking + 3PL prep/labeling for a light small-parcel item): own estimate, low $0.10/base $0.20/high $0.35, not fetched this session."}
+    },
+    {
+      "version_id": "v1_plus_bundle",
+      "idea_ids": ["I1", "I2", "I3", "I4"],
+      "bom": [
+        {
+          "part": "Aluminum-alloy tool body, matte gunmetal-black anodized dye batch (same anodizing line, no new tooling per innovaty) [I4], 3 integrated pins",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.70, "base": 1.10, "high": 1.80, "assumption": "Same estimate as v1_hero_case's tool body — innovaty states the color change is a dye-batch swap on the existing anodizing line with no new tooling, so no cost delta assumed versus the raw/silver finish."}
+        },
+        {
+          "part": "Oxide-red aluminum pull-ring accent at cap end [I4]",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.12, "assumption": "Small stamped/machined aluminum ring, new part. Not sourced this session; general small-metal-hardware cost range."}
+        },
+        {
+          "part": "Vulcanized rubber 'bacon' sealing strips — unchanged must-keep part",
+          "qty": 5,
+          "unit_cost_usd": {"low": 0.02, "base": 0.04, "high": 0.08, "assumption": "Same as v1_hero_case; not independently sourced this run."}
+        },
+        {
+          "part": "Foil-sealed strip sub-pouch with printed pack date [I2]",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.12, "assumption": "Small heat-sealed mylar/foil pouch with print, one step up from the knowledge base's poly-bag cents-tier ($0.01-0.03); not sourced this run."}
+        },
+        {
+          "part": "Hinged hard case with molded foam insert, now with an added QR-card slot [I1]",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.45, "base": 0.90, "high": 1.60, "assumption": "Same one-off search basis as v1_hero_case's case; the extra card slot is a foam-cut change, not assumed to add meaningful unit cost."}
+        },
+        {
+          "part": "Kraft QR proof/install card [I3]",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.12, "assumption": "Simple single-panel printed card, cheaper than the knowledge base's printed-tuck-box range ($0.08-0.25) since it is not a box; not sourced this run."}
+        },
+        {
+          "part": "Assembly and QC labor per unit (China) — more parts/steps than v1_hero_case",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.05, "base": 0.08, "high": 0.12, "assumption": "Same rule of thumb, upper end of the 'few cents' band because this version has 6-7 discrete parts to seat and inspect versus 4."}
+        }
+      ],
+      "unit_weight_g": 105,
+      "landed_cost_usd": {"low": 1.77, "base": 3.55, "high": 7.63, "assumption": "Same method as v1_hero_case. EXW BOM sums to low $1.39 / base $2.46 / high $4.28. Freight per unit unchanged ($0.04/$0.09/$0.17, same CBM-rate and units/CBM assumptions — the extra parts are small enough not to change the packed-carton volume materially). Duty uses the same widened-stale rate (0.17/0.325/0.66) applied to this version's higher EXW: low $0.24/base $0.80/high $2.83. Inbound-to-FBA unchanged ($0.10/$0.20/$0.35)."}
+    }
+  ],
+  "tooling_and_nre": [
+    {
+      "item": "Hinged hard-case mold (aluminum 2-cavity soft tool, ABS clamshell with living hinge)",
+      "cost_usd": {"low": 3000, "base": 4500, "high": 7000, "assumption": "Knowledge-base rule of thumb: 'an aluminium prototype tool of one to four cavities is low four figures.' Sized for the recommended v1_hero_case launch volume; a steel production tool would only be justified once monthly volume clears roughly 20-30k units/year, which the forecast below does not yet show."}
+    },
+    {
+      "item": "Foam/EVA insert die-cut tool",
+      "cost_usd": {"low": 300, "base": 600, "high": 1200, "assumption": "A die-cut foam insert uses a steel rule die, not an injection mold — materially cheaper than the case shell tool. Not independently sourced this session."}
+    },
+    {
+      "item": "Prop 65 / material compliance testing on the updated packaged unit (case material, existing aluminum tool, rubber strips)",
+      "cost_usd": {"low": 500, "base": 1200, "high": 2500, "assumption": "Passive plastic/aluminum/rubber accessory sold in the US; per the knowledge base, regulatory exposure is 'usually nothing' beyond Prop 65 labeling/packaging-claim checks. Third-party lab quote range from general knowledge, not fetched this session."}
+    },
+    {
+      "item": "Shake-drop and accelerated-aging validation testing (I1/I2's own stated test protocol: 100-cycle/1m shake-drop plus 30-day 40C/70%RH aging cycle)",
+      "cost_usd": {"low": 400, "base": 900, "high": 1800, "assumption": "Third-party test-lab service rather than an owned rig, given modest expected volume; not sourced this session."}
+    },
+    {
+      "item": "Updated product photography (main image plus 2-4 secondary images per innovaty's image_briefs, showing the open hard case)",
+      "cost_usd": {"low": 800, "base": 1500, "high": 3000, "assumption": "This is a listing/packaging refresh on an already-live ASIN, so only new photography and minor bullet copy are needed — no new-listing setup cost. Freelance/studio e-commerce product photography market range, not sourced this session."}
+    },
+    {
+      "item": "First relaunch ad budget (60-90 days, to rebuild visibility after the packaging change and push toward the first wave of reviews)",
+      "cost_usd": {"low": 1500, "base": 3000, "high": 6000, "assumption": "Existing ASIN with some sales history but thin reviews per buyer's fear #3 — needs a push but not a full cold-start budget. Sized against the ad_rate range below and the month 1-3 volume in the forecast."}
+    },
+    {
+      "item": "Samples and sample freight (2-3 rounds, DHL/air express, China to US)",
+      "cost_usd": {"low": 150, "base": 350, "high": 700, "assumption": "Standard express-courier cost for a handful of small, light sample units per round; not sourced this session."}
+    },
+    {
+      "item": "Contingent FTO search for I5's valve-core-notch combination-tool overlap (medium prior-art risk per innovaty) — NOT required for the v1_hero_case launch below, mandatory only before I5's mold change is ever committed in v2",
+      "cost_usd": {"low": 800, "base": 1500, "high": 3000, "assumption": "Per the knowledge base, an FTO search is mandatory when any proposed idea carries medium or high prior-art risk; I5 does. Flagged here so it is not forgotten, but excluded from fixed_launch_cost_usd because I5 is not in the recommended version and innovaty itself deferred it to v2_later."}
+    }
+  ],
+  "fixed_launch_cost_usd": {"low": 6650, "base": 12050, "high": 22200, "assumption": "Sum of the tooling_and_nre items needed to get v1_hero_case (the recommended version) to first sale: hard-case mold + foam die tool + Prop65/compliance testing + shake-drop/aging validation + updated photography + first relaunch ad budget + samples/freight. Excludes the contingent I5 FTO search, which is not part of this launch."},
+  "price_usd": {"low": 15.49, "base": 16.99, "high": 17.99, "assumption": "Buyer's stated band is $12-18 with max_without_reason_usd $18 and an anchor_seen of $16; buyer explicitly says going above ~$18 needs recessed/protected plug tips, a named material certification, and a stated hold-time/mileage claim — none of which v1_hero_case or v1_plus_bundle deliver (that's I5/I6 territory, later). Priced at $16.99 base, near the top of the no-reason-required band, both to fund the added packaging cost and because thin fee-stack economics (see economics below) need the headroom; kept below $18 so no new justification is required from the buyer's own logic."},
+  "economics": {
+    "referral_rate": {"low": 0.12, "base": 0.15, "high": 0.15, "assumption": "Scout F7: Sports & Outdoors referral is a flat 15% with a $0.30/unit minimum, held flat across 2025-2026; not marked stale, used as given. Low bound reflects scout's own noted possibility of a lower-rate adjacent category placement, unconfirmed for this ASIN."},
+    "fba_fee_usd": {"low": 3.85, "base": 4.35, "high": 5.75, "assumption": "Scout F8 gives 2026 Small Standard fulfillment fees of $3.85-$4.55 (not marked stale). Base nudged slightly above scout's own base ($4.20) and the high end widened materially beyond scout's $4.55 as genius's own risk adjustment (not a new fetched fee, clearly flagged as my own judgement) because the hard case (I1) adds bulk and premortem item #3 below is specifically the risk that packaged dimensions cross into the next size tier, which would jump this fee well past scout's quoted band."},
+    "storage_alloc_usd": {"low": 0.01, "base": 0.03, "high": 0.12, "assumption": "Built from scout's storage_per_cuft_month_usd, which is marked stale and widened by a quarter per the brief's instruction (low $0.38/base $1.00/high $2.81 per cubic foot per month), multiplied by an assumed ~0.015 cubic feet packaged unit volume (small saddlebag-sized hard case) and an assumed 1.0-2.5 months of average FBA dwell time before sale (low case 1.0mo, high case 2.5mo reflecting Q4 aged-inventory risk). Genuinely small in dollar terms for a light, compact item."},
+    "return_rate": {"low": 0.04, "base": 0.06, "high": 0.10, "assumption": "Not provided by scout (no fee/tariff figure to fetch here — this is a behavioral estimate, not a fee). Standard-range estimate for a low-ASP cycling accessory with a real 'does it fit my tire' doubt (buyer's fear #4/N4) but an easy, low-friction Amazon return; own estimate, not sourced this session."},
+    "ad_rate": {"low": 0.20, "base": 0.30, "high": 0.55, "assumption": "Knowledge base: ACoS runs 40-80% at launch, 15-30% steady-state on a commodity. This is a packaging/listing refresh on an already-published ASIN (some ranking history exists) rather than a cold launch, but buyer's fear #3 confirms reviews are still genuinely thin, so placed between the two bands rather than at either extreme: base 30% (top of steady-state / bottom of launch), high 55% to cover a real relaunch push if organic ranking has decayed."}
+  },
+  "forecast": {
+    "term_monthly_units": {"low": 3000, "base": 5500, "high": 9000, "assumption": "Scout explicitly could not obtain tracker-based monthly-unit estimates for any competitor this session (a named gap, not silence-worthy since the forecast field is required) — so this is genius's own order-of-magnitude read on a mid-tier cycling-accessory term, built from scout's price ladder (min $8/median $16/max $48 across at least 4 named competitors: Genuine Innovations, Stan's Dart, Dynaplug, plus ROCKBROS's own multiple parallel ASINs per F1/F2) and the 2026 media-refresh trend note, not from a fetched base figure. Widened well past the standard ±40% specifically because there is no scout-sourced anchor to apply that percentage to."},
+    "share_m6": {"low": 0.02, "base": 0.035, "high": 0.05, "assumption": "Knowledge base: a new/relisted entrant reaches 1-5% of term volume in months 1-3 if click-through and conversion beat the median. Buyer's own click probability (0.3) is dragged down specifically by the blank-rating-tile problem (push_away verdict on the rating signal) which packaging changes do not fix, so placed below the middle of the 1-5% band rather than above it, offset slightly upward because add_to_cart (0.45) and buy (0.55) are both healthy once a shopper does click, and I4's high thumbnail_visibility should help the click side some."},
+    "share_m12": {"low": 0.035, "base": 0.06, "high": 0.09, "assumption": "Knowledge base's 3-10% by months 6-12 band. Upward drift from m6 assumes the hard case (I1, thumbnail-visible) plus, if fast-followed, the QR proof card (I3) and color accent (I4) slowly rebuild the trust signal a star rating would otherwise carry, and that review count grows through the ad-funded push. Still placed below the top of the band because none of v1's changes answer buyer's #1 fear (an actual visible rating) directly."},
+    "monthly_units_m6": {"low": 60, "base": 193, "high": 450, "assumption": "term_monthly_units × share_m6, computed pairwise at each of low/base/high (3000×0.02, 5500×0.035, 9000×0.05) to keep the chain internally consistent rather than mixing extremes."},
+    "monthly_units_m12": {"low": 105, "base": 330, "high": 810, "assumption": "term_monthly_units × share_m12, same pairwise method (3000×0.035, 5500×0.06, 9000×0.09)."},
+    "annual_units_y1": {"low": 750, "base": 2380, "high": 5670, "assumption": "Because this is an existing ASIN (not a cold launch), months 1-3 are not a full moore.chasm zero, but reviews are still thin (buyer's fear #3), so modeled as ~40% of the month-6 run rate for months 1-3, ramping to the month-6 rate for months 4-6, then averaging between the month-6 and month-12 rates for months 7-12. Base case: (0.4×193×3)+(193×3)+(avg(193,330)×6) ≈ 232+579+1570 ≈ 2,380. Same method applied at the low and high pairs."},
+    "seasonality_note": "Scout flags the core search terms as seasonal, most likely a spring/summer riding-season peak rather than back-to-school or Q4 gifting, since this is a repair tool bought in reaction to a puncture, not a planned gift; the 2026 media-refresh trend suggests steady rather than sharply seasonal interest. A mild Q4 stocking-stuffer bump is plausible but not modeled as a primary driver.",
+    "reasoning": "Outside-in chain: term volume (3,000-9,000/mo, unanchored own estimate, see assumption above) × attainable share (2-5% by month 6, 3.5-9% by month 12, placed below the middle of the knowledge-base bands because the buyer's own click-through is dragged down by the blank-rating-tile problem that packaging alone doesn't fix) = monthly units (60-450 at month 6, 105-810 at month 12) → annual units built by ramping from a thin-review months 1-3 period through month 6 and averaging to month 12, landing at 750-5,670 units in year one (base ~2,380). The whole chain is wide because the base market-size figure itself is genius's own order-of-magnitude read, not a scout-sourced number."
+  },
+  "timeline": {
+    "phases": [
+      {"phase": "Concept, CAD and DFM for the hard case and foam insert with 2 suppliers (existing tool body and pins are unchanged, so no new CAD needed there)", "weeks": {"low": 2.7, "base": 4.1, "high": 5.4, "assumption": "Knowledge-base range 2-4 weeks pre-multiplier, ×1.35 planning-fallacy multiplier applied."}},
+      {"phase": "Prototypes, fit test, and packaging/compliance testing in parallel (shake-drop, accelerated aging, Prop 65 check)", "weeks": {"low": 2.7, "base": 3.4, "high": 4.1, "assumption": "Knowledge-base prototype range 2-3 weeks pre-multiplier; compliance/aging testing runs in parallel rather than adding serial time, ×1.35 applied."}},
+      {"phase": "Soft tooling (aluminum case mold, foam die-cut tool) and T1 samples", "weeks": {"low": 5.4, "base": 6.75, "high": 8.1, "assumption": "Knowledge-base range 4-6 weeks pre-multiplier, ×1.35 applied."}},
+      {"phase": "One iteration round on fit/tolerance", "weeks": {"low": 2.7, "base": 4.1, "high": 5.4, "assumption": "Knowledge-base range 2-4 weeks pre-multiplier, ×1.35 applied."}},
+      {"phase": "Production run and packaging assembly", "weeks": {"low": 4.05, "base": 4.73, "high": 5.4, "assumption": "Knowledge-base range 3-4 weeks pre-multiplier, ×1.35 applied."}},
+      {"phase": "Sea freight and FBA check-in, with listing photography/bullet updates running in parallel (no new-listing approval wait since the ASIN is already live)", "weeks": {"low": 6.75, "base": 8.1, "high": 9.45, "assumption": "Knowledge-base range 5-7 weeks pre-multiplier, ×1.35 applied. Because this is an existing ASIN, there is no from-scratch listing-review ramp to add on top, unlike a brand-new product launch."}}
+    ],
+    "weeks_to_first_sale": {"low": 24.3, "base": 31.05, "high": 37.8, "assumption": "Sum of the six phases above (concept+prototype/testing+tooling+iteration+production+freight), all already carrying the ×1.35 multiplier. Sits inside the knowledge base's 20-34-week pre-multiplier band scaled by the multiplier; slightly favors the lower half of that band because this is a packaging update to an existing, already-approved ASIN rather than a first-time listing."}
+  },
+  "premortem": [
+    {
+      "obituary": "It's 12 months on: the bacon strips sat in a saddlebag for six months, degraded from heat and pressure exactly the way C1 describes, and failed to seal on the one ride that mattered — the foil pouch and hard case we built specifically to prevent this didn't stop it, and the review that tanked the rating is the exact '6 months later' story buyer already feared.",
+      "probability": 0.2,
+      "impact": "major",
+      "mitigation": "Foil-sealed sub-pouch (I2, if fast-followed) plus accelerated-aging validation (40C/70%RH, 6-month equivalent) actually run before launch rather than assumed, and a printed pack/use-by date so buyers can self-check freshness.",
+      "mitigation_cost_usd": {"low": 150, "base": 400, "high": 900, "assumption": "Third-party accelerated-aging lab test plus date-coding setup; not sourced this session."}
+    },
+    {
+      "obituary": "A no-name factory photographed our open-case hero shot, copied the slotted hard-case layout within 90 days, and undercut us at roughly 60% of price — the one thing a stranger could actually see in the thumbnail became the one thing that stopped being a differentiator.",
+      "probability": 0.45,
+      "impact": "major",
+      "mitigation": "Innovaty itself rates I1's prior_art_risk as low precisely because hinged hard cases are generic and easy to copy, so the real defense is speed to market plus a content moat (I3's proof card/video, I4's brand color) that is slower and less obviously worth copying than a case shape; treat the case as a 6-12 month lead, not a permanent moat, and keep iterating.",
+      "mitigation_cost_usd": {"low": 500, "base": 1200, "high": 2500, "assumption": "Rush/expedite fees to compress tooling and shipping lead time to protect the first-mover window; not sourced this session."}
+    },
+    {
+      "obituary": "The new hard case pushed the packaged unit's dimensions a few millimeters over the Small Standard size-tier line, the FBA fee jumped well past our fetched estimate, and the contribution gain from the price increase evaporated into the fee stack.",
+      "probability": 0.3,
+      "impact": "major",
+      "mitigation": "Lock final packed case+foam+insert dimensions against Amazon's published Small Standard limits during the DFM phase, before tooling sign-off, with explicit slack budget rather than designing to the exact line.",
+      "mitigation_cost_usd": {"low": 50, "base": 150, "high": 400, "assumption": "Engineering time for a dimensional-compliance check during the existing DFM phase; not a separate large spend."}
+    },
+    {
+      "obituary": "The Section 301/232 tariff stack on this aluminum-bodied, China-origin tool moved again and landed near the high end of scout's already-stale duty range (near 60%+), and duty alone ate a large slice of an already-thin margin.",
+      "probability": 0.22,
+      "impact": "fatal",
+      "mitigation": "Get an actual HTS ruling / licensed customs-broker classification before committing production tooling, hold explicit tariff headroom in the pricing model, and have a fallback (reprice toward $17.99, or evaluate final-assembly diversification outside China) ready if the confirmed rate lands above ~45%.",
+      "mitigation_cost_usd": {"low": 500, "base": 1500, "high": 4000, "assumption": "Customs broker consultation and a formal (or informal) HTS classification opinion; not sourced this session, general market range."}
+    },
+    {
+      "obituary": "Amazon's automated content review flagged the packaging's 'reduces poly-bag film' sustainability line as an unverifiable environmental claim and edited or suppressed the bullet, quietly removing the one extra trust signal we were counting on to offset the missing star rating.",
+      "probability": 0.12,
+      "impact": "minor",
+      "mitigation": "Keep the claim strictly quantitative and file-backed (the BOM weight comparison innovaty already specifies as its verification method), and avoid words like 'eco-friendly' or 'sustainable' per innovaty's own rejected_claims list.",
+      "mitigation_cost_usd": {"low": 0, "base": 100, "high": 300, "assumption": "Documentation/compliance-file time only; genuinely low cost."}
+    },
+    {
+      "obituary": "Review velocity stayed too slow to cross the chasm: the blank-rating-tile problem buyer named as fear #3 was never actually fixed by a packaging change, click-through stayed near the bottom of the range, and month-6 share landed at 2% instead of 5%.",
+      "probability": 0.35,
+      "impact": "major",
+      "mitigation": "Run an early-reviewer seeding program alongside the relaunch and weight the ad budget toward driving the first 50-100 verified reviews fast, since I1-I4 lift add_to_cart and buy (buyer already scores those 0.45/0.55) but do nothing for the click-through gate itself.",
+      "mitigation_cost_usd": {"low": 300, "base": 800, "high": 2000, "assumption": "Early-reviewer program unit/incentive cost; not sourced this session, general market range."}
+    },
+    {
+      "obituary": "The QR-linked bench-test video and proof card were designed to substitute for the reviews we don't have, but most shoppers on mobile never scanned the code, so the substitute proof never actually reached them and the trust gap buyer named stayed open.",
+      "probability": 0.3,
+      "impact": "minor",
+      "mitigation": "Put the single strongest proof point (e.g. a stated hold-time/mileage claim) directly into a bullet and a secondary image as visible text/graphic, not gated behind the QR scan, so it lands even for shoppers who never scan.",
+      "mitigation_cost_usd": {"low": 0, "base": 150, "high": 400, "assumption": "Copywriting and one secondary-image update; low cost, folded into the existing photography line if bundled."}
+    }
+  ],
+  "idea_rulings": [
+    {
+      "idea_id": "I1",
+      "ruling": "realistic",
+      "why": "Cheap, thumbnail-visible, directly fixes C1/N1, and is the recommended version on its own.",
+      "deciding_number": "Hard case adds $0.90 base EXW per unit — about 5.3% of the $16.99 base price — for a change with high thumbnail_visibility, the one lever buyer's click-through (0.3) is weakest on."
+    },
+    {
+      "idea_id": "I2",
+      "ruling": "realistic",
+      "why": "Cents-tier packaging change directly extending I1's fix to C1/N1; near-zero risk.",
+      "deciding_number": "$0.06 base incremental EXW cost, under 0.4% of price."
+    },
+    {
+      "idea_id": "I3",
+      "ruling": "realistic",
+      "why": "Cheap per-unit cost, but premortem #7 shows the QR mechanism itself is not fully trustworthy as a review substitute — the idea is sound, the execution needs the proof point also placed off-QR.",
+      "deciding_number": "$800 base one-off video-production cost ÷ ~2,380 base forecast annual units ≈ $0.34/unit amortized — trivial unit-economics cost for a trust-signal attempt, even with the mitigation above."
+    },
+    {
+      "idea_id": "I4",
+      "ruling": "realistic",
+      "why": "Reuses the existing anodizing line (no new case tooling per innovaty), only a small ring part is new, and it is high-thumbnail-visibility — the exact lever the buyer's weak click-through needs.",
+      "deciding_number": "$1,000 base one-off ring-tooling cost ÷ ~2,380 base forecast annual units ≈ $0.42/unit amortized."
+    },
+    {
+      "idea_id": "I5",
+      "ruling": "stretch",
+      "why": "Innovaty itself correctly deferred this to v2_later behind a medium-prior-art-risk gate; realistic only once that gate clears.",
+      "deciding_number": "prior_art_risk = medium, which per the knowledge base makes a $1,500 base FTO search mandatory before any mold commitment — not yet spent, so not yet realistic."
+    },
+    {
+      "idea_id": "I6",
+      "ruling": "realistic",
+      "why": "Pure bench validation and bullet/image update on the existing strip geometry; no new part, no tooling.",
+      "deciding_number": "cost_tier: free — no BOM or tooling line item at all, the lowest-risk idea in the whole set."
+    }
+  ],
+  "recommended_version_id": "v1_hero_case",
+  "feasibility_verdict": "stretch",
+  "regulatory": [
+    "Prop 65 California labeling review recommended given the aluminum surface treatment and rubber strip components sold to US consumers — no known lead/phthalate flag, but not independently tested this session",
+    "No CPSC child-product scrutiny expected — no magnets, not marketed to children",
+    "FBA dimensional/weight compliance check required before tooling sign-off, since the new hard case is the specific risk of crossing into a higher size tier (see premortem #3)",
+    "No import license beyond standard customs entry expected for a passive aluminum/rubber hand tool; confirm the final HTS classification before shipping at scale — scout flagged this as unconfirmed, likely 8205.59 or 8714.99.80"
+  ],
+  "three_sentences_to_founder": [
+    "Ship the hard case alone first (v1_hero_case): roughly $6,650-$22,200 (base ~$12,050) in tooling, testing, photography and first-ad spend, about $1.6-$7.0/unit landed (base ~$3.27), and it's the one change a stranger can actually see in a 300-pixel thumbnail.",
+    "At base assumptions the fee stack alone — 15% referral, ~$4.35 FBA, 30% ad rate — consumes most of a $16.99 price, so contribution margin is thin; hold price near $17-18, keep the case under the FBA size-tier line, and get real ad-rate data before green-lighting anything more, which is why my own call is stretch, not realistic, until that's proven.",
+    "Hold I2 (foil pouch), I3 (QR proof card) and I4 (gunmetal finish + red ring) as a near-zero-cost fast-follow once the case is live and reviews start landing, and don't touch I5's valve-core notch until its mandatory ~$1,500 FTO search clears."
+  ]
+}

@@ -21,7 +21,7 @@
       "triz_or_erric_tags": ["triz.local_quality", "erric.create", "cialdini.authority"],
       "thumbnail_visibility": "high",
       "cost_tier": "dimes",
-      "priority": "now",
+      "priority": "later",
       "prior_art_risk": "medium",
       "prior_art_reason": "Clear inspection windows exist generically on kitchen sifters, but a mesh-level viewing window purpose-built to prove bedding/waste separation is not present on any of the named competitors (F1-F2); risk is in the specific combination, not the window concept itself.",
       "test_that_proves_it": "Bench sieve-verification test: pour a measured 50g paper/aspen bedding sample (with fines) through the tray under the window, video-record pass-through against a 3mm calibrated aperture reference (ISO 3310-style mesh check); confirm >=90% of sub-3mm fines pass within 10 seconds while a 25mm wood-pellet clump analog remains visibly retained above the window line.",
@@ -163,8 +163,12 @@
     ]
   },
   "version_plan": {
-    "v1_now": ["I1", "I2", "I3", "I4", "I5"],
+    "v1_now": ["I2", "I3", "I4", "I5"],
     "v2_later": [
+      {
+        "idea_id": "I1",
+        "unlock_trigger": "Genius costed I1 into v1_plus_hero, not the recommended v1_now, since it adds a bespoke insert-molded/heat-staked second-material step and, at innovaty's own medium prior-art risk rating, triggers a mandatory freedom-to-operate search v1_now doesn't need to spend on; fast-follow once v1 sales confirm demand for the visible mesh-separation proof."
+      },
       {
         "idea_id": "I6",
         "unlock_trigger": "Once v1 reviews confirm the printed depth marks are not themselves generating complaints, upgrade to color-filled molding at the next scheduled mold revision rather than delaying launch for a secondary two-shot tooling change."

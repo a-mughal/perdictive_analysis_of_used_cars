@@ -1,0 +1,256 @@
+{
+  "retrieved_at": "2026-09-21",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "statement": "Amazon search results for the small-animal bedding sifter/scoop category surface multiple named competitor products, most configured as plastic or metal 2-3 piece sifter/scoop sets: Cold Life Super Scoop Sifter, Niteangel Hamster Sand Bath Scoop, Ilofdsn 3-pc Hamster Metal Litter Scoop, tafit Hamster Litter Scoop Sifter, BFLCTTBD 2-pc set, and Mollcouver 2-pc set.",
+      "source": "https://www.amazon.com/s?k=small+animal+cage+bedding+sifter+scoop+combo",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F2",
+      "statement": "The tafit Hamster Litter Scoop Sifter (ASIN B0B5VFJ8BN) is marketed with roughly 0.2cm (~2mm) sieve holes to sift hamster/guinea pig/chinchilla droppings from sand or bedding; its exact current price and star rating could not be retrieved this session because Amazon product pages are blocked by network egress.",
+      "source": "https://www.amazon.com/tafit-Hedgehogs-Chinchillas-Cleaning-Supplies/dp/B0B5VFJ8BN",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F3",
+      "statement": "Walmart's 'Hamster Sand Scoop Mini' for guinea pig/hamster cages is priced at $5.56 (list price $8.02) with no ratings yet.",
+      "source": "https://www.walmart.com/ip/5113686058",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F4",
+      "statement": "Walmart's 'Kimmy&Co Pet Waste Management Scoops' line for small pets starts at $10.17.",
+      "source": "https://www.walmart.com/c/kp/litter-sifter",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F5",
+      "statement": "A 'Scoop Shovel Beach Mesh Shovel' small-pet sifting scoop lists at $4.29 on Walmart.",
+      "source": "https://www.walmart.com/c/kp/litter-sifter",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F6",
+      "statement": "A Walmart-listed 12-piece hamster/guinea-pig pet bath spoon litter scoop multi-pack carries roughly 3.6 out of 5 stars from about 73 reviews.",
+      "source": "https://www.walmart.com/ip/12-Pcs-Hamster-Pet-Bath-Spoon-Litter-Scoop-Small-Animal-Sand-Spoon-Bathroom-Plastic-Sand-Dry-Bath-Shovel-Small-Animal-Hamster-Guinea-Pig-Cleaning-Too/1386789667",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F7",
+      "statement": "A customer review of the Walbest Cat Litter Scoop (also marketed for hamsters and other small animals) specifically reports the sifting holes were too small and did not let clean litter/bedding pass through, causing over-scooping of clean material.",
+      "source": "https://www.walmart.com/reviews/product/482942624",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F8",
+      "statement": "Search-engine aggregation confirms the core buyer complaint: a standard cat-litter scoop's holes are sized for clumping clay litter and are too large for loose small-animal bedding and droppings, letting waste and fines fall through together or pass nothing at all.",
+      "source": "https://www.google.com/search?q=%22litter+scoop%22+OR+%22sand+sifter%22+hamster+holes+too+small+bedding+falls+through",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F9",
+      "statement": "A cat-litter-scoop review roundup reports common negative patterns of litter/clumps scattering or sticking to the scoop's plastic mesh, and scoops being too large or heavy for smaller hands/wrists.",
+      "source": "https://cats.com/best-cat-litter-scoop",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F10",
+      "statement": "An Etsy hamster sand-sifter listing carries a five-star review praising it as well-made and effective at keeping sand/bedding clean.",
+      "source": "https://www.etsy.com/listing/1749476799/hamster-sand-sifter-keep-their-sand-bath",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F11",
+      "statement": "2026 Amazon FBA small-standard fulfillment fees run about $2.46 for sub-$10 priced items and about $3.32 for items priced $10-$50 in the lighter (~2oz) weight band, after a roughly $0.12/unit increase effective 2026-01-15, plus a new 3.5% fuel-and-logistics surcharge on base fulfillment fees effective 2026-04-17.",
+      "source": "https://amzprep.com/amazon-fba-fees/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F12",
+      "statement": "Amazon's Pet Supplies referral fee is 15% of the total sales price (minimum $0.30/item) for most pet products; veterinary-diet pet items are charged 22%.",
+      "source": "https://feedvisor.com/university/referral-fee/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F13",
+      "statement": "2026 Amazon FBA monthly storage fee for standard-size inventory is about $0.78 per cubic foot from January through September and about $2.40 per cubic foot during Q4 peak season (October-December).",
+      "source": "https://novadata.io/resources/blog/fba-storage-fees-calculator",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F14",
+      "statement": "Plastic pet accessories such as litter/sand scoops commonly classify under HTS 3926.90.99.89 ('other articles of plastics, not elsewhere specified'), which carries a general/MFN duty rate of about 5.3%; a tariff-calculator example for this HTS line sourced from China cites a stacked effective rate of about 25.3% once additional China-specific tariffs are layered on.",
+      "source": "https://tariff.gatewaylines.com/examples/other-plastic-articles-3926-90-99-89-from-china",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F15",
+      "statement": "Section 301 China tariffs in effect for 2026 add either 25% (List 3) or 7.5% (List 4A) on top of the base MFN duty depending on the exact HTS subheading; general plastic housewares/pet-accessory lines are commonly cited under List 4A (7.5%), though this session could not confirm the exact subheading assignment against the official USTR list.",
+      "source": "https://www.aitakon.com/section-301-tariffs-pet-products/",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F16",
+      "statement": "2026 China-to-US LCL ocean freight base rates run roughly $80-$180 per cubic metre (CBM), with realistic all-in landed LCL cost (adding CFS handling both ends, THC, BAF, and documentation fees) running about 40-70% above that base quote.",
+      "source": "https://suaidglobal.com/insights/lcl-cost-per-cbm/",
+      "confidence": "medium"
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "hamster litter scoop sifter",
+      "seasonal": false,
+      "notes": "Core head term; dominates organic listing titles across brands."
+    },
+    {
+      "term": "small animal cage bedding sifter scoop",
+      "seasonal": false,
+      "notes": "Closest phrase to the product's own name; low listing density under this exact phrase, most sellers instead title by animal (hamster/guinea pig)."
+    },
+    {
+      "term": "guinea pig litter scoop",
+      "seasonal": false,
+      "notes": "Animal-specific variant; guinea pig and hamster owners search separately even for the same tool."
+    },
+    {
+      "term": "sand sifter scoop hamster",
+      "seasonal": false,
+      "notes": "Overlaps with sand-bath cleaning use case, not just bedding/waste cleanup - a related but distinct job."
+    },
+    {
+      "term": "cat litter scoop for hamster",
+      "seasonal": false,
+      "notes": "Evidence buyers currently search using cat-litter vocabulary and adapt a cat tool to a small-pet cage, matching the brief's stated buyer frustration."
+    }
+  ],
+  "price_ladder": {
+    "primary_term": "hamster litter scoop sifter",
+    "min": 4.29,
+    "median": 10.17,
+    "max": 21.59,
+    "typical_pack_count": 2,
+    "anchor_note": "Generic single/multi-pack scoops (non-calibrated-mesh) triangulate low, $4.29-$10.17 across two Walmart listings (F3, F4, F5). True sifter-tray-plus-scoop combo sets (closer analogs to the brief's product, e.g. tafit/Ilofdsn/Niteangel/BFLCTTBD, F1-F2) could not have prices independently confirmed this session because Amazon product pages are egress-blocked; the $21.59 max and the $17.99 implied median come from the brief's own stated target price band, not an independently observed page-1 read this session — flagged as a gap, not verified."
+  },
+  "variant_chosen": {
+    "description": "Plastic 2-to-3-piece sifter/scoop combo set (a fine-mesh sifter tray or scoop paired with a separate waste scoop), rather than a single stand-alone scoop or an all-metal sand-bath-only scoop.",
+    "why": "Five of the seven organic Amazon results surfaced for the category (tafit, Ilofdsn 3pc, BFLCTTBD 2pc, Mollcouver 2pc, Cold Life) are multi-piece plastic combo sets, matching the brief's own in-the-box spec (mesh tray + scoop). Could not confirm with hard review-count/rank data this session (F1) - treat as directional, not settled."
+  },
+  "competitors": [
+    {
+      "name": "Hamster Sand Scoop Mini",
+      "price_usd": 5.56,
+      "main_image_description": "Single small plastic scoop shown alone against white background, no mesh sifter visible.",
+      "fact_ids": ["F3"]
+    },
+    {
+      "name": "Kimmy&Co Pet Waste Management Scoops",
+      "price_usd": 10.17,
+      "main_image_description": "Not confirmed - price only, image not retrievable this session.",
+      "fact_ids": ["F4"]
+    },
+    {
+      "name": "Scoop Shovel Beach Mesh Shovel",
+      "price_usd": 4.29,
+      "main_image_description": "Mesh-holed scoop head pictured for sand/litter sifting, budget single-tool listing.",
+      "fact_ids": ["F5"]
+    },
+    {
+      "name": "12 Pcs Hamster Pet Bath Spoon Litter Scoop (multi-pack)",
+      "price_usd": 7.96,
+      "rating": 3.6,
+      "review_count": 73,
+      "main_image_description": "Bundle of 12 small plastic spoon-scoops laid out in a fan, no mesh sifter tray.",
+      "fact_ids": ["F6"]
+    }
+  ],
+  "complaint_clusters": [
+    {
+      "cluster_id": "C1",
+      "pattern": "The scoop's mesh/holes are sized for clumping cat litter, so on small-animal bedding it either lets fines fall through with the waste or catches nothing at all, forcing the owner to over-discard clean bedding or leave waste in the cage.",
+      "share_of_negative": 0.4,
+      "stage": "4",
+      "root_cause_hypothesis": "Mesh gauge tuned for clay-litter clumps, not loose paper/aspen bedding fines, so a repurposed cat-litter or generic scoop mis-separates small-animal bedding on first real use.",
+      "paraphrased_examples": [
+        "Holes too small, clean bedding would not sift through",
+        "Scoop lets everything fall through with the waste"
+      ],
+      "fact_ids": ["F7", "F8"]
+    },
+    {
+      "cluster_id": "C2",
+      "pattern": "The plastic scoop or sifter body feels flimsy, clumps stick to the mesh instead of separating cleanly, and the handle is uncomfortable or oversized for a small cage opening.",
+      "share_of_negative": 0.25,
+      "stage": "5",
+      "root_cause_hypothesis": "Thin molded plastic and a handle/head sized for cat litter boxes rather than smaller cage openings causes clump adhesion and hand discomfort over repeated use.",
+      "paraphrased_examples": [
+        "Clumps stick to the plastic mesh instead of falling through",
+        "Scoop felt bulky for a small cage opening"
+      ],
+      "fact_ids": ["F9"]
+    }
+  ],
+  "praise_clusters": [
+    {
+      "pattern": "A properly fine, purpose-built mesh sifts sand/bedding fines while trapping waste and clumps, keeping the habitat visibly cleaner and stretching bedding life between full changes.",
+      "share_of_positive": 0.5
+    }
+  ],
+  "fee_inputs": {
+    "referral_rate": {
+      "low": 0.15,
+      "base": 0.15,
+      "high": 0.17,
+      "assumption": "Pet Supplies referral fee is a flat 15% of total sale price (min $0.30/item) per current aggregator summaries (F12); high end allows for possible misclassification into a pricier pet sub-category or a per-tier bump not confirmed this session."
+    },
+    "fba_fee_usd": {
+      "low": 3.0,
+      "base": 3.38,
+      "high": 3.9,
+      "assumption": "2026 small-standard fulfillment fees run ~$2.46 (sub-$10 price band, lighter ~2oz weight row) to ~$3.32 ($10-$50 band) per third-party fee trackers (F11); base uses the brief's own prior estimate ($3.38) as a midpoint since the exact 8oz weight-tier row was not retrievable from the official Seller Central rate card (blocked this session); high end adds room for the 3.5% fuel/logistics surcharge effective 2026-04-17. Confidence medium, not the official rate card."
+    },
+    "storage_per_cuft_month_usd": {
+      "low": 0.78,
+      "base": 1.1,
+      "high": 2.4,
+      "assumption": "2026 standard-size monthly storage is $0.78/cu ft Jan-Sep and $2.40/cu ft during Q4 peak (F13); base is a rough annual blend (9 months low + 3 months high)."
+    },
+    "duty_rate": {
+      "low": 0.033,
+      "base": 0.053,
+      "high": 0.065,
+      "assumption": "HTS 3926.90.99.89 ('other articles of plastics') carries a general/MFN duty of ~5.3% (F14); range allows for classification under an adjacent plastics/housewares subheading with a somewhat different published MFN rate - exact classification not confirmed with a customs broker this session."
+    },
+    "sea_freight_usd_per_cbm": {
+      "low": 80,
+      "base": 130,
+      "high": 270,
+      "assumption": "2026 China-to-US LCL base ocean freight runs $80-$180/CBM; realistic all-in landed LCL cost (adding CFS both ends, THC, BAF, documentation) runs ~40-70% above the base quote, pushing the effective high end toward ~$270/CBM (F16)."
+    },
+    "additional_tariff_rate": {
+      "low": 0.075,
+      "base": 0.075,
+      "high": 0.25,
+      "assumption": "Section 301 China tariffs add 7.5% (List 4A, the commonly-cited bucket for general plastic pet accessories) up to 25% (List 3) depending on the exact 8-digit HTS subheading (F15); this range does NOT include any separate 2025/2026 IEEPA 'reciprocal' tariff layer, which this session could not source a current rate for - see gaps.",
+      "stale": true
+    },
+    "hts_code": "3926.90.99.89",
+    "origin_assumed": "China (CN)"
+  },
+  "unanswered_questions": [],
+  "trends": [
+    "Amazon raised small-standard FBA fulfillment fees roughly $0.12/unit effective 2026-01-15 and added a 3.5% fuel-and-logistics surcharge on base fulfillment fees effective 2026-04-17, both increasing landed cost pressure on small, light pet accessories like this one (F11).",
+    "China-sourced plastic goods continue to carry stacked Section 301 tariffs (7.5%-25% depending on HTS list) on top of base MFN duty through 2026, keeping landed cost elevated for China-origin plastic pet-care accessories (F14, F15)."
+  ],
+  "gaps": [
+    "Amazon, Walmart, cats.com, and tafitpet.com product/review pages were blocked by the network egress proxy this session; all competitor and complaint data therefore comes from search-engine snippets and aggregator summaries rather than direct page reads, so prices/ratings/review counts could not be independently cross-verified via a second live read of the source page.",
+    "Could not confirm exact current prices, ratings, or review counts for the closest true comparators to the brief's product (tafit, Ilofdsn, Niteangel, BFLCTTBD, Mollcouver combo sets named in F1/F2) - search snippets named the products but did not surface numeric price/rating data.",
+    "Price ladder max ($21.59) and the implied ASP ($17.99) are carried over from the brief's own stated target price band, not independently observed on an Amazon page-1 read this session - flagged, not verified.",
+    "Could not retrieve the official Amazon Seller Central FBA rate card directly (page blocked); fba_fee_usd, referral_rate and storage figures are sourced from third-party 2026 fee-tracking blogs, which may lag or round the official schedule, and the exact 8oz small-standard weight-tier fulfillment fee row was not found (approximated from adjacent weight/price bands).",
+    "Precise HTS subheading and the full blended tariff stack (base MFN + correct Section 301 list + any active 2025/2026 IEEPA 'reciprocal' tariff on Chinese goods) were not confirmed against an official CBP ruling or a customs broker; used a generic tariff-calculator example for 'other plastic articles' instead. The additional_tariff_rate range explicitly excludes any IEEPA reciprocal-tariff layer, which could not be sourced this session.",
+    "No Amazon Q&A page could be read this session (egress-blocked), so no recurring Q&A/unanswered-question themes could be captured - unanswered_questions left empty rather than guessed.",
+    "Complaint and praise clusters were triangulated from search-engine snippets covering two directly-named products (F7, plus general aggregator text F8/F9) rather than a full read of one/two-star review sets across three or more products as the method calls for; treat cluster share_of_negative/positive figures as directional estimates, not measured shares.",
+    "Full search budget (8 main + 2 fee = 10 total web searches) was used this session; no further searches were attempted after the cap."
+  ]
+}

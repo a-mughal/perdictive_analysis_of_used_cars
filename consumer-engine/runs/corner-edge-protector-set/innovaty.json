@@ -1,0 +1,219 @@
+{
+  "target_spec": {
+    "needs_targeted": ["N1", "N2", "N3", "N4", "N5"],
+    "must_fix_clusters": ["C1", "C2"],
+    "over_served_to_cut": [
+      "The category's proliferation of near-duplicate board-thickness/length SKUs sold under one brand (F3, F5) forces cross-comparison the buyer resents (C2) - cut variant count, don't add more.",
+      "Sheer bulk piece-count as the primary value lever (F5's 100-pack framing) is over-invested relative to what the buyer actually values, a matched, provable rating (N1) - stop competing on raw count."
+    ]
+  },
+  "ideas": [
+    {
+      "idea_id": "I1",
+      "name": "Stamped Load-Rating Corner Caps",
+      "role": "hero",
+      "aspect": "eye_catching",
+      "mechanism": "Each of the 8 HDPE corner caps is injection-molded with a raised, high-contrast debossed 'ECT-32' numeral and a hot-stamped black-ink callout on the outward-facing panel - the same panel the main photo shows - so the spec is physically part of the cap, not a peel-off sticker or a packaging-only claim. A small debossed box-stack pictogram next to it signals 'stack-load rated' without extra copy.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1", "N5"],
+      "improves_gates": ["gate.image_orientation", "gate.title_scan", "gate.brand_trust", "gate.price_vs_anchor"],
+      "kano_class": "delighter",
+      "triz_or_erric_tags": ["triz.local_quality", "triz.colour_change", "cialdini.authority", "erric.create"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "tooling",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Printed spec claims exist industry-wide, but molding the ECT number into a corner cap's visible face (vs. a paper label or packaging-only print) was not observed on any of scout's four named competitors; this is a decoration/mold-insert method, not a novel mechanism, so risk is low.",
+      "test_that_proves_it": "Hot-stamp/deboss legibility and abrasion test (ASTM D5264-style rub test) at 24h and 30d, 23C/50%RH, plus a mocked 16-tile grid render at 300px checked for numeral legibility against the four named competitor listings.",
+      "how_it_looks_in_main_image": "A kraft-brown corner protector on a corner, camera close enough that the debossed black 'ECT-32' numeral on the blue HDPE cap reads clearly even scaled down to a thumbnail.",
+      "buyer_sentence": "This one actually tells you the number right on the corner, not buried in the description, so I know what it can hold before I even tape the box shut."
+    },
+    {
+      "idea_id": "I2",
+      "name": "Weight-Match Guide Card",
+      "role": "supporting",
+      "aspect": "pain_removal",
+      "mechanism": "A single 3x5in kraft cardstock insert, same spec-sheet look as the caps, ships flat inside the set with a plain lookup: rows mapping ECT-32 to 'good for 1 box up to about X lb' and how many sets to buy for 2 or 3 boxes. Printed one color, no lamination, so it adds a die-cut sheet and a print run, not a new part.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1", "N4", "N5"],
+      "improves_gates": ["gate.bullets", "gate.qna", "gate.image_2_to_6"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.merging", "ulwick.outcome_statement", "erric.create"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "cents",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Instructional inserts are common in packaging generally; a weight-lookup card specific to corner protectors was not observed among scout's four competitors, so combination risk is low.",
+      "test_that_proves_it": "Comprehension test: 10 first-time users asked to pick the correct set-count for a stated box weight using only the card, in under 15 seconds, unread instructions elsewhere.",
+      "how_it_looks_in_main_image": "Not shown in the main image; appears flat-laid in image 5 (what's in the box) with the lookup table legible at listing-image resolution.",
+      "buyer_sentence": "I checked the card, saw my box weight fell in the one-set row, and didn't have to guess again."
+    },
+    {
+      "idea_id": "I3",
+      "name": "Safety-Blue HDPE Caps",
+      "role": "supporting",
+      "aspect": "color",
+      "mechanism": "The HDPE caps are molded in a consistent safety-blue resin instead of natural/white HDPE, using the existing insert-mold tooling with a swapped colorant masterbatch - no new cavity, same cycle time. The kraft corrugate body stays natural brown; only the caps carry the accent color, giving the piece a two-tone, industrial-equipment look against all-white or all-kraft rival tiles.",
+      "fixes_complaint_clusters": [],
+      "improves_needs": ["N4", "N5"],
+      "improves_gates": ["gate.image_orientation", "gate.price_vs_anchor"],
+      "kano_class": "delighter",
+      "triz_or_erric_tags": ["triz.colour_change", "triz.local_quality", "law.color_anchor", "erric.raise"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "cents",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Colored plastic accents are ubiquitous across consumer goods; a colorant-masterbatch swap on existing tooling carries no meaningful exclusivity risk.",
+      "test_that_proves_it": "Mocked 16-tile grid A/B click-through comparison of blue-cap vs natural-cap product photos placed alongside the four named competitor images.",
+      "how_it_looks_in_main_image": "Kraft-brown corrugate wings capped by two crisp safety-blue HDPE points, unmistakably two-tone against an all-white or all-kraft background.",
+      "buyer_sentence": "It actually looks like real packaging equipment, not another beige foam pad, I spotted it in the search results before I even read the title."
+    },
+    {
+      "idea_id": "I4",
+      "name": "Extended-Wing Two-Box Coverage Geometry",
+      "role": "supporting",
+      "aspect": "design",
+      "mechanism": "The die-cut pattern is re-nested on the same corrugate sheet so each corner wing runs about 3.5in (up from a typical 2in tip-cap) and each edge guard about 18in, using the sheet more efficiently so tighter nesting offsets the extra board. Score-line placement is adjusted so the blank still folds flat for shelf storage. The result: the same 8+4 count wraps down both mating edges of an average box instead of just capping the point.",
+      "fixes_complaint_clusters": ["C2"],
+      "improves_needs": ["N2", "N4"],
+      "improves_gates": ["gate.image_2_to_6", "gate.bullets"],
+      "kano_class": "performance",
+      "triz_or_erric_tags": ["triz.universality", "triz.asymmetry", "erric.raise"],
+      "thumbnail_visibility": "medium",
+      "cost_tier": "free",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Wing-length variation is a routine die-cut parameter across the category - scout notes IDL alone sells several lengths - so no single seller owns a specific dimension.",
+      "test_that_proves_it": "Fit test across 10 common box sizes (small/medium/large shipping and moving cartons), measuring percent of corner/edge fully covered without gapping or overhang, before and after the wing extension.",
+      "how_it_looks_in_main_image": "Visibly longer, fuller wings running well down both box faces from the corner point, reading as substantial rather than a small tip-cap.",
+      "buyer_sentence": "These actually wrap down the sides of the box, not just cap the tip, so I'm not left wondering if the middle of the edge is still exposed."
+    },
+    {
+      "idea_id": "I5",
+      "name": "Self-Locking Slot-and-Tab Fold",
+      "role": "hygiene",
+      "aspect": "comfort",
+      "mechanism": "One wing of each piece gets a die-cut slot and the opposing wing a matching tab; folding the piece into shape seats the tab in the slot and the corrugate's own spring-back holds the fold locked, so the protector keeps its shape mid-pack with no tape and no second hand. This is a die-cut geometry change only, on the same board and tooling footprint.",
+      "fixes_complaint_clusters": ["C2"],
+      "improves_needs": ["N2"],
+      "improves_gates": ["gate.image_2_to_6"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.self_service", "triz.preliminary_action", "kano.must_be"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "free",
+      "priority": "now",
+      "prior_art_risk": "medium",
+      "prior_art_reason": "Slot-and-tab self-locking folds are common across corrugated packaging generally (cartons, dividers); applying the mechanism to a corner protector specifically is a plausible novel combination, but the base mechanism has broad prior art, so a quick FTO spot-check is warranted.",
+      "test_that_proves_it": "1,000-cycle fold/unfold retention test at the tab, then a 30-day static hold under normal handling to confirm the fold stays locked with no adhesive, adapted from the playbook's jaw-insertion protocol.",
+      "how_it_looks_in_main_image": "Not shown in the main image; appears in image 4 (install in three steps) as a close-up of the tab clicking into the slot mid-fold.",
+      "buyer_sentence": "It just clicks into shape and stays there while I tape the box, no wrestling a floppy flap like the foam pads."
+    },
+    {
+      "idea_id": "I6",
+      "name": "Matte No-Logo Kraft Finish",
+      "role": "hygiene",
+      "aspect": "design",
+      "mechanism": "The corrugate facing uses an uncoated matte kraft liner with no printed branding on the outward-facing panel of the pieces themselves (branding stays on the pack/insert only), and the cap-to-board bond is a flush, seam-hidden press-fit rather than a visible glue bead, so each piece reads as a clean spec-grade component rather than a printed promotional item.",
+      "fixes_complaint_clusters": [],
+      "improves_needs": ["N3", "N5"],
+      "improves_gates": ["gate.brand_trust", "gate.image_2_to_6"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.local_quality", "kano.must_be", "erric.eliminate"],
+      "thumbnail_visibility": "medium",
+      "cost_tier": "free",
+      "priority": "later",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Matte finish and no-logo-on-face are cosmetic/process choices already common among premium SKUs in the category; no ownable mechanism.",
+      "test_that_proves_it": "Blind perception test: 10 respondents rate photos of the finished piece vs. a glossy-logo control on 'looks like a real spec product,' 1-5 scale.",
+      "how_it_looks_in_main_image": "Clean, seamless matte kraft surface with no visible glue lines or printed logos on the corner face, just the debossed ECT-32 callout from I1.",
+      "buyer_sentence": "It doesn't look like some no-name reseller slapped a logo on cardboard, it looks like an actual engineered part."
+    }
+  ],
+  "packaging": {
+    "unboxing_moment": "The set arrives in a rigid, flat kraft mailer, not a poly bag - it feels stiff and uncrushed in the hand from the first touch. Sliding off the printed belly-band, the buyer sees the exact same ECT-32 numeral and the weight-match table from the listing photos, stacked neatly with zero shifting, before they've touched a single piece - the packaging itself is the first proof the spec is real (post.cognitive_dissonance).",
+    "upgrade_vs_category": "The buyer explicitly names loose poly-bag packaging with dinged corners and no visible rating as the exact tell of 'unrated junk' (buyer.packaging_expectation). Category norm here is a plain poly bag with no printed spec. This set instead ships in a slim rigid kraft mailer with a printed belly-band carrying the same ECT-32 callout and weight-match table as the main image and the I2 insert, so the rating is visible before the bag is even opened, and the rigid mailer itself prevents the exact corner-dinging the buyer fears in transit.",
+    "cost_tier": "dimes"
+  },
+  "color_strategy": {
+    "product_color": "Natural kraft-brown corrugate body with safety-blue HDPE caps and black debossed/hot-stamped print. Brown reads as raw, unbleached, spec-sheet-honest rather than a marketing color choice - the buyer says so directly (buyer.color_read); blue on the caps borrows industrial-safety trust cues; black-on-kraft print reads as an engineering label, not packaging decoration.",
+    "main_image_anchor": "A cool, pale blue-gray studio background (not stark white, not warm) so the warm kraft-brown board and the blue caps both pop with strong contrast against the sea of white-cardboard, white-background competitor tiles on the grid; a thin blue keyline in one image corner echoes the cap color to tie the tile together at a glance.",
+    "brand_direction": "An engineering-spec / industrial-supply brand voice - 'the box-corner spec sheet' - positioned closer to a named-component industrial supplier than to a generic craft-store packaging brand."
+  },
+  "bundle_or_addition": {
+    "what": "One spare HDPE corner cap plus a short length of kraft reinforcement tape (enough for one extra corner), loose in the set.",
+    "why_it_wins": "Directly answers fear rank 1 ('will it hold for MY box') and fear rank 5 ('is this flimsy junk from an unknown brand') with a cheap, visible cushion-in-advance (triz.cushion_in_advance): the one cap that takes a hard knock or the heaviest box in the batch has a spare on hand, which a plain 100-piece unrated pack cannot match in kind, only in raw count.",
+    "cost_tier": "cents"
+  },
+  "errc": {
+    "eliminate": [
+      "Multiple near-identical duty-tier/length SKUs sold under one brand that force cross-comparison before ordering (the direct cause the scout traces to C2).",
+      "Glossy printed branding/logo on the visible face of the piece itself, which the buyer reads as 'marketing,' not spec."
+    ],
+    "reduce": [
+      "Packaging spend on generic poly-bag shipping - redirected specifically into the belly-band/rigid-mailer upgrade that earns spec-trust, not a wholesale packaging overhaul.",
+      "Competing on raw piece count against 100-packs - the count stays at 8+4, the message shifts from 'more pieces' to 'rated pieces, fewer needed per box.'"
+    ],
+    "raise": [
+      "Visibility of the ECT rating - from a packaging-only claim (the industry norm) to a molded, on-product, thumbnail-legible callout on the cap itself.",
+      "Real coverage per piece - wing length raised so 8+4 pieces protect a full box edge-to-edge, not just the corner tip."
+    ],
+    "create": [
+      "A plain-English weight-match guide that turns an abstract ECT number into 'good for a box up to about X lb,' which none of scout's four named competitors offer.",
+      "A self-locking fold that holds its shape mid-pack with no tape, versus fiddly flaps or loose foam."
+    ]
+  },
+  "version_plan": {
+    "v1_now": ["I1", "I2", "I3", "I4", "I5"],
+    "v2_later": [
+      {
+        "idea_id": "I6",
+        "unlock_trigger": "Ship v1 first since the matte no-logo finish is a hygiene polish, not a must-fix; add it once the first reorder cycle confirms the ECT-cap tooling and belly-band packaging are stable and review text shows 'looks cheap' or 'looks like a cheap knockoff' is not a live complaint pattern."
+      }
+    ]
+  },
+  "listing_implications": {
+    "title_first_60": "ECT-32 Rated Corner Protectors & Edge Guards, 12-Pc Set",
+    "main_image_brief": "One corner protector shot on a pale blue-gray background, kraft-brown wings shown at their full extended length, two safety-blue HDPE caps with the debossed 'ECT-32' numeral clearly legible even at thumbnail size, no overlay text, camera angled to show both the corner point and one wing's spec callout in the same frame.",
+    "image_briefs_2_to_4": [
+      "Scale: the protector held in a hand next to a tape measure showing wing length, so shoppers judge real coverage against their own box size in one glance.",
+      "Hard case: a fully taped, protected box shown under a stacked load or a hand pressing down hard on the corner, with a simple callout tying the visible ECT-32 numeral to 'holds up to about X lb per corner' so the rating reads as proven, not printed.",
+      "Install: a three-frame sequence - unfold, tab clicks into the slot, corner seated - showing the whole process taking under two seconds, no tape, no tools."
+    ],
+    "honest_limitations": [
+      "This is a 12-piece set (8 corners + 4 edge guards) sized for about 1 box's corners and edges, not a 50-100-count bulk pack - shippers doing many boxes per run should plan on multiple sets, and the weight-match card says exactly how many.",
+      "ECT-32 is a manufacturer-stated Edge Crush Test spec printed on our own board and mold, not a third-party or government certification - it is an industry test standard, not a regulatory seal.",
+      "Built and tested for standard shipping and moving cartons; very large or pallet-scale freight loads should look at the heavier 0.225in-class continuous-strip protectors instead, not this set."
+    ]
+  },
+  "image_prompts": [
+    {
+      "purpose": "main_image",
+      "prompt": "Product photograph of a single foldable corrugated corner protector for shipping boxes, shot centered on a cool pale blue-gray seamless studio background under soft, even softbox lighting with a gentle shadow beneath it; the body is natural unbleached kraft-brown corrugated cardboard with crisp, unbent die-cut edges and visible fluting texture, folded into an L-shaped corner form with extended full-length wings running down both faces; two matte safety-blue HDPE plastic caps are fused flush over the corner tip, each cap bearing a clearly legible debossed black-inked 'ECT-32' numeral and a small stacked-box pictogram; the finish is matte with no glossy printing, no logos, and no visible glue seams anywhere on the outward face; shot at a three-quarter angle from slightly above so both the wing length and the debossed cap text are readable even when the image is scaled down to a small thumbnail; no text overlays, no additional graphics, clean commercial product photography style, sharp focus, high detail on the cardboard texture and the debossed plastic lettering."
+    },
+    {
+      "purpose": "packaging",
+      "prompt": "Overhead unboxing photograph on a warm wood tabletop, hands entering the frame from the bottom to slide a printed kraft belly-band off a slim, rigid kraft-brown mailer box; the belly-band is printed in black ink with a bold 'ECT-32' numeral and a small weight-match table reading like a spec sheet; underneath, the mailer lid is open just enough to reveal the corner protectors and edge guards stacked perfectly flat and snug in a neat row, kraft-brown corrugate with visible safety-blue HDPE caps facing up, nothing loose or shifted, no poly bag visible anywhere; soft natural window light from the left casting soft shadows, a slight steam-of-coffee-mug and a roll of packing tape blurred in the background to suggest a small home shipping operation; photorealistic, shallow depth of field focused on the belly-band text and the stacked pieces, warm and orderly mood, no additional text overlays beyond what is printed on the physical belly-band itself."
+    },
+    {
+      "purpose": "lifestyle",
+      "prompt": "Photorealistic lifestyle photograph inside a tidy home garage set up as a small shipping operation: shelving stacked with flattened cardboard boxes in the background, a roll of tape and a stack of prepared shipping boxes on a worktable in the foreground; a confident adult in a casual t-shirt and apron is mid-pack, one hand pressing a kraft-brown corner protector with a visible blue HDPE cap onto the corner of a box while the other hand reaches for packing tape, calm and focused expression, no rush, no clutter of extra foam or bubble wrap piled around the box; warm late-afternoon light coming through a garage window, medium shot from a slightly low angle emphasizing competence and control, shallow depth of field with the corner protector and hands in sharp focus and the shelving softly blurred behind; documentary-style commercial photography, natural skin tones, no studio backdrop, no staged empty-room or moving-truck framing."
+    }
+  ],
+  "sustainability": {
+    "claims": [
+      {
+        "claim": "Corrugate body and kraft packaging (mailer, belly-band, insert card) are curbside paper-recyclable, with no foam, no plastic lamination, and no mixed-material coating on the board face - only the HDPE caps are separate plastic components.",
+        "verification": "Material composition stated on the insert card and belly-band; corrugate and kraft stock match standard OCC/kraft paper recycling stream acceptance criteria."
+      }
+    ],
+    "rejected_claims": [
+      "Not claiming 'biodegradable' or 'compostable' for the HDPE corner caps - HDPE is a durable, non-compostable plastic, and the playbook explicitly forbids that claim for PP/PA-class materials.",
+      "Not stating a specific recycled-content percentage for the corrugate this round - no supplier certificate was sourced by scout, so a numeric claim would be unverifiable and is deferred until one is obtained."
+    ]
+  },
+  "what_i_cut": [
+    "Multiple board-thickness/length SKU variants (the light/regular/heavy tiers competitors like IDL sell under one brand) - replaced with one extended-wing geometry plus a printed weight-match guide, cutting variant-management cost and the cross-comparison confusion that drives C2, instead of adding more dropdowns (gate.variations).",
+    "Printed branding/logo on the visible face of the piece itself - cut to fund the debossed ECT-32 spec callout and keep the piece reading as an engineered part rather than a promotional item.",
+    "A separate paper instruction manual - the same insert card doubles as the weight-match guide and the fold instructions (triz.merging), so we don't pay for and print a second document."
+  ]
+}

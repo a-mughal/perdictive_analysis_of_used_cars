@@ -1,0 +1,151 @@
+{
+  "persona": {
+    "who_i_am": "I'm a gravel/MTB rider who runs tubeless tires and just got stranded by a puncture I couldn't fix on the trail.",
+    "trigger": "Mid-ride my tire suddenly started losing air on the trail with no shop or car nearby, and I had nothing tubeless-specific to plug it with.",
+    "fired_solution": "I was carrying a basic tube-patch kit and a mini pump, but you can't glue-patch a tubeless tire without breaking the bead, so I either walked out or begged a ride home.",
+    "urgency": "today",
+    "search_term": "bike tire repair kit tubeless no glue",
+    "why_this_term": "It's the exact phrase for what failed me tonight - no glue, no waiting, no breaking the bead - and it's how scout's own search_terms list frames the long-tail match to this product."
+  },
+  "buy_driver": {
+    "driver": "pain",
+    "pain_level": "moderate",
+    "evidence": "C1 (rubber plug strips degrading and failing exactly when needed) and C2 (sealant-dependent plugs failing) tell me even the fix I'm shopping for can let me down again, so I'm comparing carefully rather than grabbing the first tile - that's searching-and-not-searching, not blind panic; the praise pattern on fast no-glue insertion (40% of positive mentions) is what's pulling me toward this category at all.",
+    "tags": ["jtbd.hiring_moment", "jtbd.firing", "law.pain_moderate", "ulwick.underserved"]
+  },
+  "future_self": "I picture myself on a gravel climb next month, tire hisses flat, I flip the bike over, flatten the puncture, jam a strip in, two pumps of CO2, and I'm rolling again before my riding buddy has even finished unclipping - dust on my hands, the little metal tool clicked back into my saddlebag, nobody waiting on me, nobody driving out to get me.",
+  "comfort_and_laziness": "I never have to carry glue, wait for it to tack up, break the bead, pull the tire off the rim, or find a shop before Monday - it's flatten, insert, pump, ride. The kit removes the entire 'am I about to be stranded' calculation from my ride, which is the exact lazy path I want after tonight.",
+  "benefits_not_features": [
+    {
+      "feature": "No-glue tubeless plug mechanism: flatten the puncture, insert a bacon strip, pump in air or CO2, ride away in minutes",
+      "benefit": "I fix the flat myself in under a couple minutes without waiting for glue to cure or gambling on a bad bond, so I'm back riding almost immediately instead of walking out."
+    },
+    {
+      "feature": "Aluminum alloy tool body with an oxidation surface treatment for waterproofing and rust resistance",
+      "benefit": "It can sit forgotten in my saddlebag through sweat, rain and mud for months without seizing up or rusting shut the one time I actually need it to work."
+    },
+    {
+      "feature": "Multi-plug conversion kit: deflating pin, thwarting pin, inserting pin, plus 5 rubber (bacon) strips",
+      "benefit": "I get a dedicated tool for each step (exhausting, cleaning, filling) instead of improvising with one blunt tip, and 5 strips means I'm still covered if the first plug doesn't hold or I flat twice in one ride."
+    },
+    {
+      "feature": "Compact, lightweight metal tool form factor",
+      "benefit": "It disappears into a jersey pocket or saddlebag without me noticing the weight, so there's no excuse to leave it at home next time."
+    }
+  ],
+  "three_second_scan": [
+    {
+      "signal": "image",
+      "what_i_see": "Scout never actually got a live grab of this exact ASIN's tile (F11) - I only have the bullet/must_keep description to go on, which reads like a small aluminum tool plus rubber strips, similar to the plastic-handled Genuine Innovations tile scout did see. Unclear at 300px whether it looks like a real tool or a toy.",
+      "verdict": "neutral",
+      "tags": ["kahneman.wysiati", "underhill.decompression"]
+    },
+    {
+      "signal": "price",
+      "what_i_see": "The ASP I'm told is roughly $15 (unconfirmed, flagged as a typo-derived assumption), which sits close to the $16 category median scout found - if that price is real it passes the anchor test without me needing a reason.",
+      "verdict": "pull",
+      "tags": ["kahneman.anchoring", "ariely.relativity"]
+    },
+    {
+      "signal": "rating",
+      "what_i_see": "No star rating or review count is visible for this exact ASIN - scout couldn't pull it, and to me that's a blank tile. What isn't shown, I assume is absent, so an unrated listing next to the well-reviewed names I know (Genuine Innovations, Stan's, Dynaplug) reads as risky.",
+      "verdict": "push_away",
+      "tags": ["cialdini.social_proof", "kahneman.wysiati"]
+    },
+    {
+      "signal": "design",
+      "what_i_see": "A compact aluminum-body tool with three metal pins and rubber strips - the same silhouette shows up across at least two other ROCKBROS ASINs scout found (F1, F2), so it reads as the brand's standard build, not a one-off, but it doesn't visually signal anything special next to Dynaplug's recessed-plug housing.",
+      "verdict": "neutral",
+      "tags": ["cialdini.authority", "kahneman.system1"]
+    },
+    {
+      "signal": "experience_promise",
+      "what_i_see": "The promise is no-glue, no-wait, ride-away-in-minutes without removing the tire - that's word for word the thing 40% of positive mentions in this category care about, and it's exactly what I needed tonight.",
+      "verdict": "pull",
+      "tags": ["law.benefit_not_feature", "jtbd.functional"]
+    }
+  ],
+  "purchase_probability_current": {
+    "click": 0.3,
+    "add_to_cart": 0.45,
+    "buy": 0.55,
+    "reasoning": "click 0.3: price looks fair and the promise matches what I need, but a completely blank rating tile next to named competitors makes me hesitate to even open it. add_to_cart 0.45: the bullets answer my core no-glue/no-tire-removal need and the aluminum/waterproof claim addresses my degradation fear, but I still can't confirm real reviews or that it fits both road and MTB tubeless. buy 0.55: at ~$15 the downside is small and returns are easy, so once it's in the cart the price itself isn't the blocker - my remaining doubt is whether the strips will still work months from now."
+  },
+  "fears": [
+    {
+      "rank": 1,
+      "question": "Will these rubber strips still seal when I actually need them, or will they be dried out and useless after bouncing around in my bag for six months?",
+      "tags": ["ulwick.underserved", "kano.must_be"],
+      "from_cluster_id": "C1",
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 2,
+      "question": "Does this actually work without depending on fresh sealant already being in my tire, or will it fail the way a dried-out sealant setup does?",
+      "tags": ["kahneman.system2_trigger", "ulwick.underserved"],
+      "from_cluster_id": "C2",
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 3,
+      "question": "Is this actually a proven product, or am I the guinea pig for a listing with no visible ratings or reviews?",
+      "tags": ["cialdini.social_proof", "kahneman.wysiati"],
+      "answered_by": "unanswerable"
+    },
+    {
+      "rank": 4,
+      "question": "Will this really fit my narrower road tubeless tire, not just the wide MTB tires the pictures probably show?",
+      "tags": ["kahneman.system2_trigger", "ulwick.outcome_statement"],
+      "answered_by": "image"
+    },
+    {
+      "rank": 5,
+      "question": "Are the pins and CO2 threading actually compatible with the pump and cartridges I already carry, or do I need to buy an adapter too?",
+      "tags": ["kahneman.system2_trigger"],
+      "answered_by": "bullet"
+    }
+  ],
+  "unmet_needs": [
+    {
+      "need_id": "N1",
+      "statement": "I need to trust the plug strips will still seal after sitting unused in my bag for months, not just fresh out of the box.",
+      "pain_level": "moderate",
+      "severity": 7,
+      "evidence_cluster_ids": ["C1"]
+    },
+    {
+      "need_id": "N2",
+      "statement": "I need a repair that doesn't quietly depend on sealant I forgot to refresh inside my tire.",
+      "pain_level": "moderate",
+      "severity": 6,
+      "evidence_cluster_ids": ["C2"]
+    },
+    {
+      "need_id": "N3",
+      "statement": "I need proof - real ride reports, not just install photos - that a plug holds for actual mileage and not just that it goes in easily.",
+      "pain_level": "moderate",
+      "severity": 8
+    },
+    {
+      "need_id": "N4",
+      "statement": "I need to know one kit genuinely covers both my road tubeless and my MTB tubeless tires so I don't buy the wrong thing.",
+      "pain_level": "latent",
+      "severity": 5
+    }
+  ],
+  "price_psychology": {
+    "anchor_seen_usd": 16,
+    "max_without_reason_usd": 18,
+    "max_with_reason_usd": 28,
+    "reason_required": "I'd need to actually see the plug tips protected or recessed inside the tool body (like Dynaplug's) instead of exposed rubber strips, plus a named material or certification and a stated hold-time/mileage claim, before I'd pay meaningfully above the $16-18 band."
+  },
+  "packaging_expectation": "The unboxing has to feel like a small sturdy tin or hard case with each pin and strip in its own slot, wrapped so the rubber doesn't start degrading before I've even used it, and simple printed steps right there. If it's loose pins rattling in a flimsy poly bag with no instructions and the rubber already feels tacky or dusty, I'll silently write this off as a cheap knockoff before I ever try it on a tire.",
+  "lifestyle_target": {
+    "primary": "Me, dusty and self-sufficient, crouched trailside or on a gravel shoulder fixing my own flat in minutes and getting back on the bike without help - capable, unbothered, still riding.",
+    "avoid": "A clean studio product shot with no rider or trail context, or a workshop-mechanic framing that makes it look like a garage tool rather than something I'd actually carry."
+  },
+  "memory_hook": "The line 'no glue, no wait, ride away in minutes' - the promise that I'm rolling again before my friends even notice I stopped - paired with how little it weighs, which makes it feel like there's no excuse not to carry it.",
+  "color_read": "Matte black or gunmetal aluminum reads like a real durable tool, not a toy - that's the authority cue I want on something safety-adjacent. A small red pull-tab or strip-holder would help me spot it instantly in a packed saddlebag when I'm fumbling at the roadside.",
+  "hypotheses_tested": [],
+  "what_would_make_me_buy": "I'll buy this one and tell a friend if the listing shows me real proof, not just a promise: a photo of the plug actually seated in a punctured tire holding air, a rider saying it survived a real ride afterward, and something - a star rating, a review count, anything - that tells me I'm not the first person trying it. At around $15 the price already feels safe and the no-glue no-tire-removal promise is exactly the fix I needed tonight; what's missing is anything that answers whether the rubber strips will still be good six months from now and whether it actually works on my kind of tire, and until I see that answered in the images or bullets, I'll keep it in my open tabs and keep comparing instead of clicking buy."
+}

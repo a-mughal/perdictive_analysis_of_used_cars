@@ -1,0 +1,261 @@
+{
+  "planning_fallacy_multiplier": 1.35,
+  "versions": [
+    {
+      "version_id": "v1_now",
+      "idea_ids": ["I2", "I3", "I4", "I5"],
+      "bom": [
+        {
+          "part": "Sifter tray body (PP, sage green, ribbed underside per I5, molded-in '3MM BEDDING MESH' text per I3, no extra tooling cost for I3)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 1.05, "base": 1.35, "high": 1.75, "assumption": "Largest of the brief's 3 baseline parts; allocated ~45-47% of the brief's own prior unverified $2.90 FOB baseline (assumptions[] in brief.json, itself a pre-reprice, non-supplier-confirmed figure) plus I5's reinforced-wall/rib delta (+$0.02-0.08, 'cents' tier per innovaty). Range widened ~20% beyond a straight allocation because the $2.90 anchor predates any scout/genius verification."}
+        },
+        {
+          "part": "Contrast dual-color 3mm fine-mesh insert, snap-fit into tray (I2)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.45, "base": 0.64, "high": 0.90, "assumption": "Allocated ~20% of the brief's $2.90 FOB baseline plus I2's two-tone/snap-fit delta (+$0.03-0.10, innovaty's own 'cents' cost_tier). Fine multi-aperture mold detail (many small 3mm holes) runs above a same-weight solid part per the knowledge-base rule 'cavitation and cycle time dominate' at this MOQ (1,000 units, below the 10k+ reference point for the low end of the rule of thumb)."}
+        },
+        {
+          "part": "Compact cage-fit scoop + short contoured handle, pad-printed depth marks (I4; I6's two-shot color-fill marks deferred to v2)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.62, "base": 0.80, "high": 1.05, "assumption": "Allocated ~25% of the $2.90 FOB baseline. I4's smaller head/handle trims some material versus the cat-scoop-length baseline, roughly offset by added ergonomic-taper mold detail, so no net delta assumed for I4 itself (its real cost lives in tooling, see tooling_and_nre); +$0.02-0.05 added here for pad-printing the depth marks since I6's molded version is deferred."}
+        },
+        {
+          "part": "Die-cut window tuck box + shaped cardboard inner tray + printed insert card (innovaty's packaging spec)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.33, "base": 0.55, "high": 0.85, "assumption": "Rule of thumb: a printed tuck box runs $0.08-0.25 and a poly bag $0.01-0.03 for a generic mailer; this is a step up (die-cut viewing window over the mesh, a shaped snug-fit inner tray, a printed insert card) versus the brief's own baseline $0.30 prep/poly/FNSKU figure, priced as that baseline plus a $0.25-0.55 upgrade delta. No supplier quote yet, so range is wide."}
+        },
+        {
+          "part": "Assembly labour & QC (mesh snap-fit + final visual/gauge check, 4 parts)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.10, "base": 0.16, "high": 0.26, "assumption": "Rule of thumb: 'assembly labour and QC for three to five parts in China or Vietnam is a few cents' - used near the low-to-mid of that band since this version has no window-insert/heat-stake step (that's v1_plus_hero only), but does add a pin-gauge check on every batch per the mesh-gauge-drift mitigation in the pre-mortem."}
+        },
+        {
+          "part": "FNSKU label + inbound prep labour",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.06, "base": 0.10, "high": 0.15, "assumption": "Carried over from the brief's bundled $0.30 prep/poly/FNSKU baseline with the poly-bag protection portion removed, since the new die-cut box (above) now provides primary protective packaging."}
+        }
+      ],
+      "unit_weight_g": 170,
+      "landed_cost_usd": {"low": 3.05, "base": 4.44, "high": 7.51, "assumption": "landed = EXW parts/labour/packaging (sum of this BOM: low 2.61 / base 3.60 / high 4.96) + freight_per_unit + duty_per_unit + inbound_to_fba. Freight: packed volume ~52-68 cu in modeled at scout's sea_freight_usd_per_cbm ($80/$130/$270 per CBM, F16) = $0.07/$0.13/$0.30. Duty: scout's duty_rate (F14, HTS 3926.90.99.89) plus additional_tariff_rate (F15, Section 301, already flagged 'stale': true by scout) combined and both WIDENED ~25% per this run's instruction, since scout's own gaps flag the exact HTS subheading as unconfirmed and no 2025/2026 IEEPA reciprocal-tariff rate was found: combined effective duty_rate used here is low 8.4% / base 12.8% / high 36.2%, applied to EXW = $0.22/$0.46/$1.80. Inbound_to_fba (port drayage + Amazon inbound-placement allowance): not in scout's fee_inputs at all (a genuine gap) - estimated low $0.15 base $0.25 high $0.45 and marked stale.", "stale": true}
+    },
+    {
+      "version_id": "v1_plus_hero",
+      "idea_ids": ["I1", "I2", "I3", "I4", "I5"],
+      "bom": [
+        {
+          "part": "Sifter tray body (PP, sage green, ribbed underside per I5, molded-in '3MM BEDDING MESH' text per I3, plus the insert-molded window aperture cut into one wall for I1)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 1.05, "base": 1.35, "high": 1.75, "assumption": "Same allocation and reasoning as v1_now's tray line; the window aperture itself is priced as its own BOM line below, this line only covers the base tray body."}
+        },
+        {
+          "part": "Contrast dual-color 3mm fine-mesh insert, snap-fit into tray (I2)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.45, "base": 0.64, "high": 0.90, "assumption": "Same as v1_now's mesh-insert line."}
+        },
+        {
+          "part": "Clear polycarbonate/PET sift-window strip, insert-molded or heat-staked into the tray wall at the mesh plane (I1, hero)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.10, "base": 0.22, "high": 0.38, "assumption": "Own one-off web search this run (not a scout fact_id, not authorized by any brief clause, just a component-price check): weilinplastic.com, rapiddirect.com and protolabs.com (all accessed Sept 2026) put clear polycarbonate resin at roughly $3-6.50/kg, so material for a small ~2g strip is well under $0.02/unit - material is not the driver here. The bulk of this line is the second-material insert/heat-stake assembly step, priced off the knowledge base's 'overmould or second material adds $0.05-0.20' rule of thumb and pushed above that band's high end because this is a bespoke first-run process (no supplier quote yet) requiring an extra join step."}
+        },
+        {
+          "part": "Compact cage-fit scoop + short contoured handle, pad-printed depth marks (I4)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.62, "base": 0.80, "high": 1.05, "assumption": "Same as v1_now's scoop line."}
+        },
+        {
+          "part": "Die-cut window tuck box + shaped cardboard inner tray + printed insert card",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.33, "base": 0.55, "high": 0.85, "assumption": "Same as v1_now's packaging line."}
+        },
+        {
+          "part": "Assembly labour & QC (mesh snap-fit + window insert/heat-stake + final visual/gauge check, 5 parts)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.12, "base": 0.20, "high": 0.32, "assumption": "Same rule-of-thumb base as v1_now's labour line, bumped up for the extra window-insert/heat-stake join step this version alone requires."}
+        },
+        {
+          "part": "FNSKU label + inbound prep labour",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.06, "base": 0.10, "high": 0.15, "assumption": "Same as v1_now's prep line."}
+        }
+      ],
+      "unit_weight_g": 182,
+      "landed_cost_usd": {"low": 3.18, "base": 4.74, "high": 8.14, "assumption": "Same build-up method as v1_now: EXW (sum of this BOM: low 2.73 / base 3.86 / high 5.40) + freight_per_unit ($0.07/$0.14/$0.33, using the same sea_freight_usd_per_cbm range on a marginally larger packed volume for the window part) + duty_per_unit (same widened combined duty_rate 8.4%/12.8%/36.2% applied to this version's higher EXW = $0.23/$0.49/$1.96) + inbound_to_fba ($0.15/$0.25/$0.45, same as v1_now, stale/estimated). This version's landed cost runs higher mainly because duty is charged on the whole EXW base, and the window raises that base.", "stale": true}
+    }
+  ],
+  "tooling_and_nre": [
+    {
+      "item": "Aluminium prototype/soft tool (1-4 cavities) for DFM and fit-check rounds, 3 core parts (tray, mesh, scoop)",
+      "cost_usd": {"low": 2500, "base": 4000, "high": 6500, "assumption": "Knowledge-base rule of thumb: 'an aluminium prototype tool of one to four cavities is low four figures.'"}
+    },
+    {
+      "item": "Steel production tool, 3 parts, 1-2 cavities each (v1_now scope; excludes the window-strip insert tooling, which is v1_plus_hero-only)",
+      "cost_usd": {"low": 2500, "base": 6500, "high": 14000, "assumption": "The brief's own prior sourcing estimate cites $950 total tooling, but that is far below the knowledge-base rule of thumb ('a steel production tool of eight to sixteen cavities is mid four to low five figures') even allowing for a small MOQ (1,000 units) and low cavitation (1-2 per part); $950 is treated as an unverified, likely-optimistic supplier quote (possibly a shared/modified existing base mold) rather than a confirmed custom-tool price, and the range is widened well above it to reflect real custom steel tooling for 3 new small parts with ribbing, snap-fit and embossed text."}
+    },
+    {
+      "item": "Light prior-art / FTO screen (informal search, not the full mandatory FTO)",
+      "cost_usd": {"low": 400, "base": 800, "high": 1500, "assumption": "A full FTO search is only mandatory when a shipped idea carries medium/high prior-art risk (innovaty flags I1 'medium', all of I2-I5 'low'). v1_now ships none of I1, so this is a lighter informal screen rather than the mandatory full search; a full $1,500-$3,000 FTO becomes mandatory before funding v1_plus_hero, which does ship I1."}
+    },
+    {
+      "item": "Prototype rounds and physical samples + air-freight for samples (3-5 rounds, small parcels)",
+      "cost_usd": {"low": 300, "base": 600, "high": 1100, "assumption": "Small-parcel air freight for iterative sample rounds between the supplier and the seller/tester, sized off typical DHL/FedEx small-parcel international rates for a few hundred grams per shipment across 3-5 rounds; not independently sourced this session, so kept wide."}
+    },
+    {
+      "item": "Bench test rig: mesh sieve-verification, clump-release, and frame-flex tests (per innovaty's test_that_proves_it protocols for I1/I2/I5)",
+      "cost_usd": {"low": 200, "base": 450, "high": 800, "assumption": "Informal rig using a calibrated reference sieve, a moisture-controlled bedding-clump analog and a simple 3-point flex jig, built/bought in-house rather than sent to an accredited lab; scaled to a low-volume launch budget."}
+    },
+    {
+      "item": "Compliance review: Prop 65 labelling and packaging-claim check for a passive plastic pet accessory",
+      "cost_usd": {"low": 150, "base": 350, "high": 600, "assumption": "Brief's regulatory position is 'none' beyond standard care; knowledge base flags Prop 65 labelling as the one thing to still check for a passive US plastic accessory. No CPSC/child-product exposure since no magnets are used in this version."}
+    },
+    {
+      "item": "Product, packaging and lifestyle photography (main image + 2-4 supporting image briefs + packaging + lifestyle, per innovaty's image_prompts)",
+      "cost_usd": {"low": 600, "base": 1200, "high": 2200, "assumption": "Small-studio commercial product photography rate for a 5-6 shot package (hero, scale/fit, hard-case demo, use-in-3-steps, packaging, lifestyle) at typical freelance/small-studio day rates; not independently sourced this session."}
+    },
+    {
+      "item": "First-month launch ad budget (seed PPC spend to establish rank/reviews, separate from the ongoing ad_rate ACoS modeled per-unit)",
+      "cost_usd": {"low": 1500, "base": 3000, "high": 5500, "assumption": "One-time seed budget to fund the launch-heavy ACoS phase (40-80% of price per the knowledge base) before enough organic sales exist to fund ads from revenue; sized off the term_monthly_units estimate and a few weeks of launch-level spend."}
+    }
+  ],
+  "fixed_launch_cost_usd": {"low": 8150, "base": 16900, "high": 32200, "assumption": "Sum of the tooling_and_nre list above (v1_now scope: no window-strip tooling, only a light informal prior-art screen since v1_now ships no medium/high-risk idea). Deliberately excludes the MOQ 1,000-unit inventory purchase - that cost is already carried per-unit in landed_cost_usd and recovered through per-unit contribution, not through fixed cost, to avoid double-counting break-even units. Note: the brief's seller_constraints field left launch budget and time-to-market unset because the sourcing card never stated them, not because either is $0; this range is genius's own bottom-up build, not a check against a stated budget."}
+  ,
+  "price_usd": {"low": 16.99, "base": 18.99, "high": 19.99, "assumption": "Buyer's stated band is $14.39-$21.59 (brief.target_buyer.price_band_usd); buyer.price_psychology names a $12 ceiling with no visible reason and a $20 ceiling 'with reason' - specifically a visible demo/callout proving the mesh gauge, named by size. I2 (contrast mesh) and I3 (molded '3MM BEDDING MESH' text) are exactly that reason and ship in both versions, so price is set above the no-reason $12 ceiling but kept at or under buyer's own $20 with-reason ceiling rather than pushing to the brief's outer $21.59, since buyer's own stated max-with-reason is the tighter constraint. Base $18.99 sits close to the brief's own prior $17.99 ASP assumption."}
+  ,
+  "economics": {
+    "referral_rate": {"low": 0.15, "base": 0.15, "high": 0.17, "assumption": "Scout F12: Amazon Pet Supplies referral fee is a flat 15% of total sale price (min $0.30/item); high end allows for possible misclassification into a pricier sub-category, not confirmed this session."},
+    "fba_fee_usd": {"low": 2.90, "base": 3.45, "high": 4.15, "assumption": "Scout's fee_inputs.fba_fee_usd (low 3.00/base 3.38/high 3.90) widened ~25% per this run's instruction, since scout's own gaps explicitly flag the exact 8oz small-standard weight-tier fulfillment-fee row as not found and approximated from adjacent bands. Base nudged up slightly from scout's 3.38 to 3.45 to reflect this version's upgraded box+shaped-tray packaging sitting closer to the top of the 8oz band (see pre-mortem: packaging tier-line risk).", "stale": true},
+    "storage_alloc_usd": {"low": 0.03, "base": 0.06, "high": 0.15, "assumption": "Scout's storage_per_cuft_month_usd (F13: $0.78 Jan-Sep, $2.40 Q4, base $1.10 blended) applied to a packed volume of roughly 0.034-0.039 cu ft (52-68 cu in) and an assumed ~1.5 months of average inventory dwell per unit sold (a genius assumption, not sourced - MOQ 1,000 units against modest early monthly volumes implies real carrying time)."},
+    "return_rate": {"low": 0.03, "base": 0.05, "high": 0.09, "assumption": "The brief's own prior estimate cites a 2.0% returns reserve, but that figure is part of the same pre-reprice card the brief flags as never actually verified, and scout has no fee_input or fact for category return rate at all (a genuine gap, not fetched this run). Using a directional band typical of small Amazon houseware/pet accessories instead, and marking it stale since it was not fetched.", "stale": true},
+    "ad_rate": {"low": 0.22, "base": 0.42, "high": 0.70, "assumption": "Knowledge base: ACoS runs 40-80% at launch and 15-30% steady state on a commodity. Range spans a full-spectrum triangular distribution for the Monte-Carlo: low end reflects an optimized steady-state month 9-12 scenario, high end reflects the launch-heavy months 1-3 (moore.chasm, no reviews yet), base is a rough year-one blend weighted toward the still-building early months given buyer's own purchase_probability shows a moderate (not impulse) pain driver requiring sustained comparison-stage ad exposure."}
+  },
+  "forecast": {
+    "term_monthly_units": {"low": 1200, "base": 2000, "high": 2800, "assumption": "Scout could not retrieve BSR/unit-volume data for the top 10-20 ASINs on this term (egress-blocked, per scout.gaps) - no scout number exists to apply the ±40% rule to directly. Base of 2,000 combined monthly units is genius's own reasoned estimate for this narrow animal-specific accessory sub-niche, triangulated from: (a) F6's 73 total reviews on one long-lived multi-pack listing implying real but modest steady sales, and (b) six or more named competing SKUs (F1) implying a real, not vanishingly small, category. ±40% applied around that base per the forecast method. Marked stale since it is not a fetched/sourced figure.", "stale": true},
+    "share_m6": {"low": 0.02, "base": 0.035, "high": 0.06, "assumption": "Knowledge base: a new entrant moving from page two to page one reaches 1-5% of term volume in months 1-3 and 3-10% by months 6-12 if CTR/conversion beat the median. Placed near the low-to-mid of the 3-10% band for month 6 because I2/I1 give 'high' thumbnail visibility (innovaty) that should push CTR above median, but buyer's fear rank 5 ('has anyone with a small pet actually used this') is explicitly unanswered at launch (buyer.fears, answered_by: unanswerable) and moore.chasm keeps months 1-3 innovator-only, which drags the month-6 cumulative position down from the top of the band."},
+    "share_m12": {"low": 0.04, "base": 0.07, "high": 0.11, "assumption": "Same 3-10% band, moved toward its upper-mid by month 12 as reviews accumulate past the chasm-crossing point; high end allowed to run slightly above the knowledge-base's 10% ceiling only in the optimistic tail to reflect I1/I2's above-median thumbnail visibility if the fast-follow window ships by mid-year, capped modestly since this remains a niche, unproven-brand entrant with no viral/network effect assumed."},
+    "monthly_units_m6": {"low": 24, "base": 70, "high": 168, "assumption": "term_monthly_units x share_m6 at each percentile (low x low, base x base, high x high)."},
+    "monthly_units_m12": {"low": 48, "base": 140, "high": 308, "assumption": "term_monthly_units x share_m12 at each percentile."},
+    "annual_units_y1": {"low": 300, "base": 1000, "high": 1900, "assumption": "Built from a month-by-month ramp, not a flat average: months 1-3 innovator-only at roughly 30-40% of the month-6 run-rate (moore.chasm, no reviews yet); months 4-6 ramping linearly up to the monthly_units_m6 figure; months 7-9 continuing to ramp toward monthly_units_m12; months 10-12 at or near monthly_units_m12 with a modest Q4 seasonal bump (November-December gifting/replacement per the knowledge base's seasonality note, pet accessories benefit modestly from general Q4 lift though this is not a back-to-school or January organizing product). Summed across all 12 months at each percentile."},
+    "seasonality_note": "Q4 (November-December) carries a modest general Amazon gift/replacement bump for pet accessories; back-to-school (August) and January 'organize my life' demand spikes named in the knowledge base do not apply meaningfully to this specific product category.",
+    "reasoning": "Outside in: scout could not source a direct top-10-20-ASIN monthly unit total for this term (a real gap), so genius built a reasoned 1,200-2,800 (base 2,000) combined monthly-unit estimate from indirect signals (F1's 6+ named competing SKUs, F6's 73-review long-lived listing) and marked it stale. Attainable share starts low (2-6% by month 6) because months 1-3 are innovator-only under moore.chasm and buyer's own fear list shows the 'has anyone with a small pet used this' proof gap is unanswered at launch even with I1/I2's strong thumbnail work; share climbs to 4-11% by month 12 as reviews accumulate. Multiplying share by term volume gives 24-168 units/month at month 6 and 48-308 at month 12; a month-by-month ramp (not a flat multiply-by-12) that weights months 1-3 lightly and adds a small Q4 bump produces the 300-1,900 (base ~1,000) unit annual range."
+  },
+  "timeline": {
+    "phases": [
+      {"phase": "Concept, CAD & DFM with two candidate suppliers", "weeks": {"low": 3, "base": 4, "high": 5.5, "assumption": "Knowledge-base pre-multiplier range 2-4 weeks (base 3) x 1.35 planning-fallacy multiplier."}},
+      {"phase": "Prototypes, fit tests & mechanical/durability testing (mesh sieve-pass, clump-release, frame-flex per the test rig)", "weeks": {"low": 5.5, "base": 9, "high": 9.5, "assumption": "Knowledge-base pre-multiplier prototypes (2-3wk) + mechanical/adhesive-and-mechanical testing analog (2-4wk, re-scoped here to mesh/frame testing since v1_now has no adhesive) combined, roughly 4-6.5 base weeks pre-multiplier x 1.35."}},
+      {"phase": "Aluminium soft tool, T1 samples & 1-2 iterations", "weeks": {"low": 8, "base": 12, "high": 13.5, "assumption": "Knowledge-base pre-multiplier soft tool + T1 (4-6wk) plus 1-2 iteration rounds (2-4wk), combined ~6-9wk base pre-multiplier x 1.35."}},
+      {"phase": "Steel production tool & sign-off", "weeks": {"low": 5.5, "base": 8, "high": 11, "assumption": "Knowledge-base pre-multiplier production tool & sign-off, 4-8wk (base 6) x 1.35; this version's 3-part, low-cavitation tool sits toward the lower-middle of the pre-multiplier band."}},
+      {"phase": "First production run & packaging (incl. mesh-gauge pin-gauge QC on every batch)", "weeks": {"low": 4, "base": 5, "high": 5.5, "assumption": "Knowledge-base pre-multiplier first production run & packaging, 3-4wk (base 3.5) x 1.35."}},
+      {"phase": "Sea freight & FBA check-in (listing and photography run in parallel)", "weeks": {"low": 7, "base": 8, "high": 9.5, "assumption": "Knowledge-base pre-multiplier sea freight & FBA check-in, 5-7wk (base 6) x 1.35."}}
+    ],
+    "weeks_to_first_sale": {"low": 33, "base": 46, "high": 55, "assumption": "Sum of the six phases above, each already carrying the 1.35 planning-fallacy multiplier. Falls at or slightly above the knowledge base's stated 'roughly 20-34 weeks pre-multiplier, x1.3-1.5' range, reflecting this design's added complexity (dual-color snap-fit mesh, reinforced ribbing, a resized ergonomic scoop) versus a fully generic single-part product."}
+  },
+  "premortem": [
+    {
+      "obituary": "It is 12 months on and a production batch quietly widened the 3mm mesh gauge to speed molding - exactly the risk the brief's seller_constraints named by name - and the listing's star rating collapsed on the exact complaint (C1) this product was built to fix.",
+      "probability": 0.20,
+      "impact": "fatal",
+      "mitigation": "Golden-sample-referenced pin-gauge go/no-go check on every incoming production batch before FBA ship-in, with a contractual gauge-tolerance penalty clause with the supplier.",
+      "mitigation_cost_usd": {"low": 150, "base": 400, "high": 900, "assumption": "Gauge tooling plus per-batch QC labour at a China/Vietnam inspection rate; already partly reflected in this version's assembly-labour BOM line, this is the incremental cost of formalizing it as a contractual/inspection process."}
+    },
+    {
+      "obituary": "It is 12 months on and the snap-fit mesh insert (I2) started rattling loose after a few weeks of daily scooping - a review video showing it 'coming apart' went semi-viral in the category and tanked conversion.",
+      "probability": 0.15,
+      "impact": "major",
+      "mitigation": "Add a secondary mechanical retention tab (not adhesive) to the snap-fit joint and run a drop-test/repeated-cycle vibration protocol before mould sign-off at the T1 stage.",
+      "mitigation_cost_usd": {"low": 200, "base": 500, "high": 1000, "assumption": "One additional DFM iteration plus rig time within the prototypes/fit-test phase; not a new tooling pass, a design tweak to the existing mesh-insert cavity."}
+    },
+    {
+      "obituary": "It is 12 months on and a competitor factory copied the dual-color mesh look and the molded rim text within 90 days at roughly 60% of the price, and this listing's price premium stopped being defensible on sight alone.",
+      "probability": 0.45,
+      "impact": "major",
+      "mitigation": "Treat the visible color/text as expected-to-be-cloned within 90 days; put the real moat in the verified-3mm-gauge claim, review velocity and the replacement-mesh back-end SKU, and keep listing content/imagery refreshed rather than relying on visual novelty alone.",
+      "mitigation_cost_usd": {"low": 500, "base": 1200, "high": 2500, "assumption": "Ongoing content refresh and review-generation program (Vine, post-purchase card prompts), not a one-time tooling cost."}
+    },
+    {
+      "obituary": "It is 12 months on and the upgraded die-cut-window box plus shaped inner tray pushed the packed product a few millimetres/grams over the 8oz small-standard line, and the FBA fee jumped a tier, eating the margin this 'FRAGILE MARGIN'-tagged product never had much of.",
+      "probability": 0.30,
+      "impact": "major",
+      "mitigation": "Lock packaging weight and dimensions against a physical dieline sample and a postal scale before committing production tooling, keeping a 5-8g buffer under the 8oz line; re-check after every packaging revision.",
+      "mitigation_cost_usd": {"low": 100, "base": 250, "high": 500, "assumption": "One or two packaging-engineering iterations plus scale checks during the production-run phase."}
+    },
+    {
+      "obituary": "It is 12 months on and a China-origin tariff move (a new or higher IEEPA reciprocal-tariff layer scout could not confirm this session) pushed landed cost well above what the pricing model assumed, and the plan stopped clearing even the loosest sanity rail.",
+      "probability": 0.35,
+      "impact": "major",
+      "mitigation": "Already priced in via the widened duty_rate/additional_tariff_rate ranges above (combined effective duty run out to 36.2% at the high end); in parallel, hold a non-binding conversation with a Vietnam-based alternate supplier as a contingency without committing tooling there.",
+      "mitigation_cost_usd": {"low": 0, "base": 300, "high": 800, "assumption": "Mostly admin/relationship-maintenance cost for a backup-supplier conversation, not a hard tooling spend."}
+    },
+    {
+      "obituary": "It is 12 months on and Amazon suppressed the '30% post-consumer recycled content' sustainability bullet for lacking an on-file certificate, and the listing lost that trust signal right when review count was still thin.",
+      "probability": 0.15,
+      "impact": "minor",
+      "mitigation": "Obtain the supplier's recycled-content certificate for the specific resin lot before the claim goes live (per innovaty.sustainability.claims.verification), or drop the claim for launch and add it once certified.",
+      "mitigation_cost_usd": {"low": 0, "base": 150, "high": 400, "assumption": "Certificate/paperwork fee from the resin supplier; low end assumes the supplier provides it for free as part of the PO."}
+    },
+    {
+      "obituary": "It is 12 months on and review velocity never crossed the chasm - month 6 share landed at the low end of the range and the ad-spend-to-revenue ratio never improved enough to fund itself.",
+      "probability": 0.30,
+      "impact": "major",
+      "mitigation": "Enroll in Amazon Vine at launch and weight PPC spend toward months 1-3 (already reflected in the wide ad_rate range), paired with the packaging insert card's post-purchase review prompt.",
+      "mitigation_cost_usd": {"low": 500, "base": 1500, "high": 3000, "assumption": "Vine enrollment/unit-donation cost plus incremental launch-phase ad spend beyond what steady-state ad_rate alone would imply."}
+    },
+    {
+      "obituary": "It is 12 months on and the '~4in cage-door fit' claim (I4) turned out wrong for a meaningful share of popular cage models, and 1-star 'doesn't fit my cage' complaints became the new C1.",
+      "probability": 0.20,
+      "impact": "minor",
+      "mitigation": "Run the cage-door fit test (per innovaty's test_that_proves_it for I4) against 15-20 best-selling cage models before finalizing the dimension claim, and soften the bullet to a checklist/range rather than a single guaranteed number.",
+      "mitigation_cost_usd": {"low": 100, "base": 250, "high": 450, "assumption": "Purchase of sample cages/door-opening jigs plus a few hours of test labour, run inside the existing test-rig phase."}
+    }
+  ],
+  "idea_rulings": [
+    {
+      "idea_id": "I1",
+      "ruling": "stretch",
+      "why": "Real, visible hero feature the buyer wants proof of, but it adds cost, a bespoke assembly step and a mandatory prior-art search this launch doesn't need to fund yet - so it ships as a fast-follow (v1_plus_hero) once v1_now's core mesh-gauge trust and economics are proven, not at day one.",
+      "deciding_number": "+$0.22 base unit EXW cost (roughly 6% of v1_now's $3.60 base EXW) plus a mandatory full FTO ($1,500-$3,000) that only this idea's 'medium' prior-art risk triggers."
+    },
+    {
+      "idea_id": "I2",
+      "ruling": "realistic",
+      "why": "Cents-tier cost for a 'high' thumbnail-visibility feature that directly answers buyer's top fear (rank 1, C1) and the image_fit gate at essentially no added risk.",
+      "deciding_number": "$0.06 base incremental unit cost (the dual-color/snap-fit delta) against a 'high' innovaty thumbnail-visibility rating."
+    },
+    {
+      "idea_id": "I3",
+      "ruling": "realistic",
+      "why": "Free/tooling-only line item (steel-safe text addition to an existing cavity) that directly answers buyer fear rank 1 with a durability edge (cialdini.authority) over a peelable sticker.",
+      "deciding_number": "$0 marginal per-unit cost - the whole cost lives in the already-budgeted production-tool line, not the BOM."
+    },
+    {
+      "idea_id": "I4",
+      "ruling": "realistic",
+      "why": "No clear per-unit cost premium (material savings roughly offset tooling complexity) for a 'must_be' Kano-class fix to buyer's need N3 (C2), though the '~4in' fit claim needs the cage-door test named in the pre-mortem before it's stated as a hard number.",
+      "deciding_number": "Net ~$0.00 unit-cost delta versus a 'must_be' Kano classification on N3."
+    },
+    {
+      "idea_id": "I5",
+      "ruling": "realistic",
+      "why": "Cents-tier, low prior-art-risk change that targets C2, which scout's clusters put at 25% of all negative feedback in this category.",
+      "deciding_number": "$0.05 base incremental unit cost against C2's share_of_negative of 0.25 (scout.complaint_clusters)."
+    },
+    {
+      "idea_id": "I6",
+      "ruling": "unrealistic",
+      "why": "Innovaty already scoped this as v2_later, and genius agrees: it needs a second two-shot/color-fill tooling pass that this launch's tooling_and_nre budget doesn't fund, for a 'delighter' on a low-thumbnail-visibility detail (the handle, not the hero image).",
+      "deciding_number": "Requires a second tooling pass not included anywhere in the $8,150-$32,200 fixed_launch_cost_usd range built for v1_now."
+    }
+  ],
+  "recommended_version_id": "v1_now",
+  "feasibility_verdict": "stretch",
+  "regulatory": [
+    "Prop 65 labelling/packaging-claim review for a passive US plastic pet accessory (California) - the one check the knowledge base flags even when the brief's own regulatory position is 'none'.",
+    "No CPSC child-product scrutiny: no magnets are used in either version, so the knowledge base's magnet-near-children's-products trigger does not apply.",
+    "No food-contact/FDA requirement: this is a bedding/waste-handling tool, not a food or feed-contact item.",
+    "Sustainability claim (30% PCR content) requires an on-file supplier certificate before it goes live, per innovaty.sustainability.claims.verification - see pre-mortem."
+  ],
+  "three_sentences_to_founder": [
+    "Ship v1_now (I2, I3, I4, I5) first and hold the clear see-through sift window (I1) for a fast-follow: it adds about $0.22 to base unit cost and triggers a mandatory prior-art search this launch doesn't need to fund yet, while v1_now's landed cost still runs about $4.44 on a roughly $18.99 base price - about 24% of price, comfortably inside the 30% rail.",
+    "The real threat to this 'FRAGILE MARGIN' product is advertising, not tooling: at a blended launch-heavy ACoS near 40%+ in the early months, per-unit contribution runs close to zero on the base-case numbers, so review velocity (Vine plus the packaging insert card) matters more to profitability than any further design polish.",
+    "Budget roughly $8,150-$32,200 in tooling and launch costs and 33-55 weeks to first sale (1.35x planning-fallacy buffer already applied), and treat the pin-gauge QC check on every production batch as the single highest-stakes step, since a widened mesh gauge is the exact failure mode the brief's own seller_constraints warns against."
+  ]
+}

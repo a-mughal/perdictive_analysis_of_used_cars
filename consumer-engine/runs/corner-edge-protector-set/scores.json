@@ -1,0 +1,197 @@
+{
+  "scored_at": "2026-09-21T10:28:14+00:00",
+  "evidence": {
+    "facts": 12,
+    "sourced": 12,
+    "stale_fee_inputs": 1,
+    "unsourced_claims": 4,
+    "score": 78.0
+  },
+  "buyer": {
+    "p_click": 0.35,
+    "p_cart": 0.4,
+    "p_buy": 0.45,
+    "p_purchase_overall": 0.063,
+    "framework_tag_coverage": 1.0,
+    "driver": "pain",
+    "pain_level": "moderate",
+    "top_need": "I need to know, before I buy, exactly how much crush resistance I'm getting so I stop guessing at foam density and having corners fail anyway. (Caveat: this traces to C1, which scout marks inferred from SKU-tier segmentation, not mined from real review text - a working hypothesis, not confirmed.)",
+    "top_need_id": "N1",
+    "burning_needs": 1,
+    "headroom_score": 52.5
+  },
+  "innovation": {
+    "ideas_ranked": [
+      {
+        "idea_id": "I3",
+        "name": "Safety-Blue HDPE Caps",
+        "role": "supporting",
+        "in_v1": true,
+        "impact": 25.0,
+        "ruling": "realistic",
+        "weighted": 25.0
+      },
+      {
+        "idea_id": "I4",
+        "name": "Extended-Wing Two-Box Coverage Geometry",
+        "role": "supporting",
+        "in_v1": true,
+        "impact": 21.2,
+        "ruling": "realistic",
+        "weighted": 21.2
+      },
+      {
+        "idea_id": "I6",
+        "name": "Matte No-Logo Kraft Finish",
+        "role": "hygiene",
+        "in_v1": false,
+        "impact": 11.5,
+        "ruling": "realistic",
+        "weighted": 11.5
+      },
+      {
+        "idea_id": "I1",
+        "name": "Stamped Load-Rating Corner Caps",
+        "role": "hero",
+        "in_v1": false,
+        "impact": 18.6,
+        "ruling": "stretch",
+        "weighted": 11.1
+      },
+      {
+        "idea_id": "I2",
+        "name": "Weight-Match Guide Card",
+        "role": "supporting",
+        "in_v1": true,
+        "impact": 9.5,
+        "ruling": "realistic",
+        "weighted": 9.5
+      },
+      {
+        "idea_id": "I5",
+        "name": "Self-Locking Slot-and-Tab Fold",
+        "role": "hygiene",
+        "in_v1": true,
+        "impact": 9.6,
+        "ruling": "stretch",
+        "weighted": 5.8
+      }
+    ],
+    "hero": {
+      "idea_id": "I1",
+      "name": "Stamped Load-Rating Corner Caps",
+      "role": "hero",
+      "in_v1": false,
+      "impact": 18.6,
+      "ruling": "stretch",
+      "weighted": 11.1
+    },
+    "v1_realistic_count": 3,
+    "v1_unrealistic": [],
+    "score": 17.2
+  },
+  "economics": {
+    "version_id": "v1_launch",
+    "version_substituted": false,
+    "price_usd": 15.49,
+    "landed_cost_usd": 2.78,
+    "fee_stack_usd": {
+      "referral": 2.32,
+      "fba": 3.45,
+      "storage": 0.09,
+      "ads": 6.2,
+      "returns": 0.31
+    },
+    "contribution_usd": 0.34,
+    "contribution_pct": 2.2,
+    "landed_pct_of_price": 17.9,
+    "break_even_units": 37804,
+    "months_to_break_even": null
+  },
+  "sanity_rails": [
+    {
+      "rail": "contribution >= 25% of price",
+      "pass": false,
+      "value": "2.2%"
+    },
+    {
+      "rail": "contribution >= 15% of price (hard floor)",
+      "pass": false,
+      "value": "2.2%"
+    },
+    {
+      "rail": "landed cost <= 30% of price",
+      "pass": true,
+      "value": "17.9%"
+    },
+    {
+      "rail": "P(profit > 0 in 12 months) >= 60%",
+      "pass": false,
+      "value": "0%"
+    },
+    {
+      "rail": "first sale within 9 months at high",
+      "pass": false,
+      "value": "54 wk high"
+    },
+    {
+      "rail": "no fatal risk above 25% without a mitigation",
+      "pass": true,
+      "value": "0 unmitigated"
+    },
+    {
+      "rail": "price within what the buyer will pay",
+      "pass": true,
+      "value": "$15.49 vs $17.99"
+    },
+    {
+      "rail": "planning-fallacy multiplier applied",
+      "pass": true,
+      "value": "1.35"
+    }
+  ],
+  "monte_carlo": {
+    "trials": 10000,
+    "p_profit_positive_12m": 0.0,
+    "p_payback_within_12m": 0.0,
+    "profit_12m_p10": -22367,
+    "profit_12m_p50": -15651,
+    "profit_12m_p90": -9678,
+    "median_payback_month": 99
+  },
+  "feasibility": {
+    "rails_passed": "4/8",
+    "rails_broken": [
+      "contribution >= 25% of price",
+      "contribution >= 15% of price (hard floor)",
+      "P(profit > 0 in 12 months) >= 60%",
+      "first sale within 9 months at high"
+    ],
+    "verdict_computed": "unrealistic",
+    "verdict_claimed": "stretch",
+    "disagreement": true,
+    "score": 30.0
+  },
+  "critic_overall": "flags_to_fix",
+  "critic_high": 0,
+  "status": "FIX-FIRST",
+  "summary": "2 flag(s) to close, each routed to its owner — nothing here kills the product",
+  "fixes": [
+    "[genius] broken rail: contribution >= 15% of price (hard floor)",
+    "[genius] broken rail: P(profit > 0 in 12 months) >= 60%"
+  ],
+  "watch": [
+    "[genius] This pass correctly raised I1's prior_art_risk from low to medium (the visual-absence claim was unconfirmed, per the fix summary). Per the playbook's own rule 10, medium-or-higher prior_art_risk mandates an FTO search line in the budget - exactly what was done for I5. No FTO line exists anywhere for I1, not even folded into the v2_with_hero incremental cost note ('add that line on top: low $8,150 / base $15,700 / high $30,000' covers only the hero tooling, not a search). If v2 is later greenlit off v1 proceeds, the plan currently understates what it will actually cost to clear I1 for tooling. — fix: Add an explicit FTO-search line item (or at minimum a note in v2_with_hero's cost delta) sized like I5's ($800-$3,000) for I1, contingent on v2 being funded.",
+    "[buyer] Buyer's grid-stage 'design' signal is written as if the ECT-32 number might appear on the tile ('if it's actually legible on the tile that's an authority signal, but at thumbnail size a printed rating number is easy to miss entirely') and purchase_probability_current.click credits 'the unusual stated-rating angle' with earning a second look. Innovaty's corrected main_image now shows a plain blue cap with 'no deboss, no stamped numerals, no printed text or pictograms anywhere on the cap faces' and explicitly states the callout 'is not part of this shot' - the number cannot register at the image-glance stage at all in v1, only via the title text ('ECT-32 Rated...'). Buyer's grid-stage reasoning was never revised after the image fix and now conflates a title-scan effect with an image effect. — fix: Re-run or hand-edit buyer.three_second_scan's design signal and the click reasoning to say plainly: in v1 the rating is carried only by the title (gate.title_scan), not the thumbnail image (gate.image_orientation) - the tile itself is undifferentiated except for the blue-cap color contrast (I3).",
+    "[innovaty] The same unverified competitive-grid premise that color_strategy.main_image_anchor was correctly reframed to a labeled hypothesis this pass ('scout never obtained a single competitor thumbnail... not an observed fact') is restated as flat fact in two sibling fields on idea I3: mechanism says the caps give 'a two-tone, industrial-equipment look against all-white or all-kraft rival tiles,' and how_it_looks_in_main_image says 'unmistakably two-tone against an all-white or all-kraft background.' The fix was applied to one field and not propagated to the others that assert the identical claim. — fix: Apply the same hedge used in color_strategy.main_image_anchor to these two fields, or simply reference color_strategy.main_image_anchor instead of restating the unverified premise independently.",
+    "[genius] The factory-copy obituary (probability 0.35, impact major - the brief's own 'LOW BARRIER to entry' risk) is still mitigated at 'genuinely zero' cost by deferring I1's hero mold. The actually-visible, copyable v1 surface (I3's blue caps, I4's longer wings, I2's card system, I5's slot-tab fold) ships regardless of whether I1 is deferred, so deferring I1 does not meaningfully reduce a competitor's ability to copy what v1 actually looks like on the shelf. This is unchanged from the prior pass. — fix: Either name a real, costed anti-copy step (design patent or trademark filing on the wing/slot-tab geometry, a faster reorder-to-v2 cadence) or lower confidence that deferring I1 meaningfully mitigates this specific risk.",
+    "[genius] v1_launch's computed unit_weight_g is still 258g (about 9.1oz), while genius.economics.fba_fee_usd's assumption text still bases its triangulation on 'the heavier 8oz tier.' The rigid mailer, bundle add-on and card push the actual packed weight past the 8oz baseline the fee derivation assumes, so the FBA fee range likely understates the true weight-based fee bracket. Unchanged from the prior pass. — fix: Re-derive fba_fee_usd against the actual ~258-260g weight (or trim BOM/packaging weight back under 8oz) before finalizing the economics that price and feasibility rest on.",
+    "[genius] Price range ($13.99-$16.79, base $15.49) still spans only about +/-9% around base - well inside the +/-30% guardrail for anything uncertain, despite price being one of the Monte-Carlo-sampled ranges. It still never tests the buyer's own max_without_reason ceiling ($12.99), even though buyer's three_second_scan rates the price signal 'push_away' against the $13.99 100-pack anchor. Unchanged from the prior pass. — fix: Widen the low end toward $12.99-$13.99 so the Monte Carlo actually samples the discount scenario buyer's own data flags as a live risk.",
+    "[genius] The framework defines 'stretch' as exactly one sanity rail broken, named, with a fix. genius.feasibility_verdict still asserts 'stretch' but the JSON never states, in a structured or explicit way, which rail is broken (contribution % of price, landed cost % of price, etc.) or what the concrete fix is - idea_rulings explains per-idea stretch calls (I1, I5) but not the plan-level feasibility rail. Unchanged from the prior pass. — fix: State explicitly which sanity rail is broken in the base case and name the concrete fix, rather than leaving the plan-level 'stretch' call unexplained.",
+    "[scout] Unlike complaint_clusters (which carry a root_cause_hypothesis and fact_ids), praise_clusters still carry no fact_ids and no per-item caveat - the 'inferred, not mined' admission lives only in the separate top-level gaps array. A downstream reader of praise_clusters alone would reasonably take them as sourced. Unchanged from the prior pass. — fix: Add fact_ids (even pointing only to category-existence facts) and an explicit inferred-not-mined caveat directly on each praise cluster, matching complaint_clusters' treatment.",
+    "[genius] Assumption text still explicitly calls both figures stale/widened per the brief's no-fee-from-memory rule, but neither range object sets the \"stale\": true flag the output format supports - a downstream reader relying on the flag rather than the prose would miss the caveat. Unchanged from the prior pass. — fix: Set \"stale\": true on both range objects to match the prose.",
+    "[innovaty] Still states 'Category norm here is a plain poly bag with no printed spec' as a flat market fact with no fact_id. Scout never viewed any competitor packaging or listing image this session, so this specific claim about rival unboxing experience remains invented, not observed. Unchanged from the prior pass. — fix: Caveat this as an assumption based on category price-point norms rather than a directly observed fact about competitor packaging.",
+    "[genius] broken rail: contribution >= 25% of price",
+    "[genius] broken rail: first sale within 9 months at high"
+  ]
+}

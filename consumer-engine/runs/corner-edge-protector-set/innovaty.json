@@ -22,7 +22,7 @@
       "triz_or_erric_tags": ["triz.local_quality", "triz.colour_change", "cialdini.authority", "erric.create"],
       "thumbnail_visibility": "high",
       "cost_tier": "tooling",
-      "priority": "now",
+      "priority": "later",
       "prior_art_risk": "medium",
       "prior_art_reason": "Printed spec claims exist industry-wide. Scout's four named competitors were checked only through titles and bullet/listing text this session - scout.json's own gaps state no competitor thumbnail or main image could be fetched at all. So the accurate claim is narrower: no competitor TITLE or BULLET TEXT makes a claim about a molded, on-cap ECT numeral. Whether any competitor's actual cap face is itself debossed or hot-stamped with a visible number is unconfirmed - a text-channel absence, not an observed visual absence - pending a manual look at the live competitor listing images. That unresolved gap is exactly what should raise this from 'low', not lower it, so risk is set to medium until a manual image check is done; this is a decoration/mold-insert method, not a novel mechanism, so it likely stays low-to-medium once confirmed, but is not yet confirmed.",
       "test_that_proves_it": "Hot-stamp/deboss legibility and abrasion test (ASTM D5264-style rub test) at 24h and 30d, 23C/50%RH, plus a mocked 16-tile grid render at 300px checked for numeral legibility against the four named competitor listings.",
@@ -164,8 +164,12 @@
     ]
   },
   "version_plan": {
-    "v1_now": ["I1", "I2", "I3", "I4", "I5"],
+    "v1_now": ["I2", "I3", "I4", "I5"],
     "v2_later": [
+      {
+        "idea_id": "I1",
+        "unlock_trigger": "Genius costed I1 into v2_with_hero, not the recommended v1_launch, since the buyer's stated 'visible reason' price premium is already earned by the weight-match card and belly-band callout without it, and the $1,500-$6,000 hero-cap tooling delta is the single most expensive, highest-risk line in the plan; fast-follow once v1 sales and review data confirm demand, and budget a freedom-to-operate search given its medium prior-art risk."
+      },
       {
         "idea_id": "I6",
         "unlock_trigger": "Ship v1 first since the matte no-logo finish is a hygiene polish, not a must-fix; add it once the first reorder cycle confirms the ECT-cap tooling and belly-band packaging are stable and review text shows 'looks cheap' or 'looks like a cheap knockoff' is not a live complaint pattern."

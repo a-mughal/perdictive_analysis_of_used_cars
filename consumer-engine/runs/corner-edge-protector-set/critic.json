@@ -1,0 +1,114 @@
+{
+  "findings": [
+    {
+      "id": "K2",
+      "file": "innovaty",
+      "field_path": "innovaty.ideas[0].prior_art_risk / genius.tooling_and_nre",
+      "severity": "medium",
+      "finding": "This pass correctly raised I1's prior_art_risk from low to medium (the visual-absence claim was unconfirmed, per the fix summary). Per the playbook's own rule 10, medium-or-higher prior_art_risk mandates an FTO search line in the budget - exactly what was done for I5. No FTO line exists anywhere for I1, not even folded into the v2_with_hero incremental cost note ('add that line on top: low $8,150 / base $15,700 / high $30,000' covers only the hero tooling, not a search). If v2 is later greenlit off v1 proceeds, the plan currently understates what it will actually cost to clear I1 for tooling.",
+      "fix": "Add an explicit FTO-search line item (or at minimum a note in v2_with_hero's cost delta) sized like I5's ($800-$3,000) for I1, contingent on v2 being funded.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K3",
+      "file": "buyer",
+      "field_path": "buyer.three_second_scan[3] (design signal)",
+      "severity": "medium",
+      "finding": "Buyer's grid-stage 'design' signal is written as if the ECT-32 number might appear on the tile ('if it's actually legible on the tile that's an authority signal, but at thumbnail size a printed rating number is easy to miss entirely') and purchase_probability_current.click credits 'the unusual stated-rating angle' with earning a second look. Innovaty's corrected main_image now shows a plain blue cap with 'no deboss, no stamped numerals, no printed text or pictograms anywhere on the cap faces' and explicitly states the callout 'is not part of this shot' - the number cannot register at the image-glance stage at all in v1, only via the title text ('ECT-32 Rated...'). Buyer's grid-stage reasoning was never revised after the image fix and now conflates a title-scan effect with an image effect.",
+      "fix": "Re-run or hand-edit buyer.three_second_scan's design signal and the click reasoning to say plainly: in v1 the rating is carried only by the title (gate.title_scan), not the thumbnail image (gate.image_orientation) - the tile itself is undifferentiated except for the blue-cap color contrast (I3).",
+      "owner_agent": "buyer"
+    },
+    {
+      "id": "K4",
+      "file": "innovaty",
+      "field_path": "innovaty.ideas[2].mechanism / innovaty.ideas[2].how_it_looks_in_main_image",
+      "severity": "medium",
+      "finding": "The same unverified competitive-grid premise that color_strategy.main_image_anchor was correctly reframed to a labeled hypothesis this pass ('scout never obtained a single competitor thumbnail... not an observed fact') is restated as flat fact in two sibling fields on idea I3: mechanism says the caps give 'a two-tone, industrial-equipment look against all-white or all-kraft rival tiles,' and how_it_looks_in_main_image says 'unmistakably two-tone against an all-white or all-kraft background.' The fix was applied to one field and not propagated to the others that assert the identical claim.",
+      "fix": "Apply the same hedge used in color_strategy.main_image_anchor to these two fields, or simply reference color_strategy.main_image_anchor instead of restating the unverified premise independently.",
+      "owner_agent": "innovaty"
+    },
+    {
+      "id": "K5",
+      "file": "genius",
+      "field_path": "genius.premortem[1].mitigation_cost_usd",
+      "severity": "medium",
+      "finding": "The factory-copy obituary (probability 0.35, impact major - the brief's own 'LOW BARRIER to entry' risk) is still mitigated at 'genuinely zero' cost by deferring I1's hero mold. The actually-visible, copyable v1 surface (I3's blue caps, I4's longer wings, I2's card system, I5's slot-tab fold) ships regardless of whether I1 is deferred, so deferring I1 does not meaningfully reduce a competitor's ability to copy what v1 actually looks like on the shelf. This is unchanged from the prior pass.",
+      "fix": "Either name a real, costed anti-copy step (design patent or trademark filing on the wing/slot-tab geometry, a faster reorder-to-v2 cadence) or lower confidence that deferring I1 meaningfully mitigates this specific risk.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K6",
+      "file": "genius",
+      "field_path": "genius.versions[0].unit_weight_g",
+      "severity": "medium",
+      "finding": "v1_launch's computed unit_weight_g is still 258g (about 9.1oz), while genius.economics.fba_fee_usd's assumption text still bases its triangulation on 'the heavier 8oz tier.' The rigid mailer, bundle add-on and card push the actual packed weight past the 8oz baseline the fee derivation assumes, so the FBA fee range likely understates the true weight-based fee bracket. Unchanged from the prior pass.",
+      "fix": "Re-derive fba_fee_usd against the actual ~258-260g weight (or trim BOM/packaging weight back under 8oz) before finalizing the economics that price and feasibility rest on.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K7",
+      "file": "genius",
+      "field_path": "genius.price_usd",
+      "severity": "medium",
+      "finding": "Price range ($13.99-$16.79, base $15.49) still spans only about +/-9% around base - well inside the +/-30% guardrail for anything uncertain, despite price being one of the Monte-Carlo-sampled ranges. It still never tests the buyer's own max_without_reason ceiling ($12.99), even though buyer's three_second_scan rates the price signal 'push_away' against the $13.99 100-pack anchor. Unchanged from the prior pass.",
+      "fix": "Widen the low end toward $12.99-$13.99 so the Monte Carlo actually samples the discount scenario buyer's own data flags as a live risk.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K8",
+      "file": "genius",
+      "field_path": "genius.feasibility_verdict",
+      "severity": "medium",
+      "finding": "The framework defines 'stretch' as exactly one sanity rail broken, named, with a fix. genius.feasibility_verdict still asserts 'stretch' but the JSON never states, in a structured or explicit way, which rail is broken (contribution % of price, landed cost % of price, etc.) or what the concrete fix is - idea_rulings explains per-idea stretch calls (I1, I5) but not the plan-level feasibility rail. Unchanged from the prior pass.",
+      "fix": "State explicitly which sanity rail is broken in the base case and name the concrete fix, rather than leaving the plan-level 'stretch' call unexplained.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K9",
+      "file": "scout",
+      "field_path": "scout.praise_clusters",
+      "severity": "medium",
+      "finding": "Unlike complaint_clusters (which carry a root_cause_hypothesis and fact_ids), praise_clusters still carry no fact_ids and no per-item caveat - the 'inferred, not mined' admission lives only in the separate top-level gaps array. A downstream reader of praise_clusters alone would reasonably take them as sourced. Unchanged from the prior pass.",
+      "fix": "Add fact_ids (even pointing only to category-existence facts) and an explicit inferred-not-mined caveat directly on each praise cluster, matching complaint_clusters' treatment.",
+      "owner_agent": "scout"
+    },
+    {
+      "id": "K10",
+      "file": "genius",
+      "field_path": "genius.economics.fba_fee_usd / genius.economics.storage_alloc_usd",
+      "severity": "low",
+      "finding": "Assumption text still explicitly calls both figures stale/widened per the brief's no-fee-from-memory rule, but neither range object sets the \"stale\": true flag the output format supports - a downstream reader relying on the flag rather than the prose would miss the caveat. Unchanged from the prior pass.",
+      "fix": "Set \"stale\": true on both range objects to match the prose.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K11",
+      "file": "innovaty",
+      "field_path": "innovaty.packaging.upgrade_vs_category",
+      "severity": "low",
+      "finding": "Still states 'Category norm here is a plain poly bag with no printed spec' as a flat market fact with no fact_id. Scout never viewed any competitor packaging or listing image this session, so this specific claim about rival unboxing experience remains invented, not observed. Unchanged from the prior pass.",
+      "fix": "Caveat this as an assumption based on category price-point norms rather than a directly observed fact about competitor packaging.",
+      "owner_agent": "innovaty"
+    }
+  ],
+  "unsourced_claim_paths": [
+    "innovaty.ideas[2].mechanism",
+    "innovaty.ideas[2].how_it_looks_in_main_image",
+    "innovaty.packaging.upgrade_vs_category",
+    "scout.praise_clusters"
+  ],
+  "untagged_judgement_paths": [
+    "buyer.unmet_needs",
+    "buyer.hypotheses_tested[0].why",
+    "genius.idea_rulings",
+    "genius.premortem",
+    "innovaty.packaging"
+  ],
+  "contamination_detected": false,
+  "overall": "flags_to_fix",
+  "three_things_the_founder_must_hear": [
+    "The 'unverified competitor grid' caveat that got correctly added to the color strategy didn't make it everywhere it needed to: idea I3's own mechanism and photo-brief text still flatly assert your rivals show 'all-white or all-kraft' tiles, a claim nobody has actually verified this run since scout never saw a single competitor image. Read that claim as a hypothesis worth a five-minute manual check on the live search grid, not a fact you're pricing a color strategy against.",
+    "I1's prior-art risk was correctly bumped from low to medium this pass, which by the plan's own rule means it needs a paid freedom-to-operate search - and nobody budgeted one anywhere, including in the v2 hero-cap cost delta. If you fund v2 off v1 proceeds later, add roughly $800-$3,000 for that search before tooling the hero cap, not after.",
+    "Two small, no-excuse gaps remain from the prior review: the plan calls itself 'stretch' feasibility without ever saying which specific financial guardrail is broken or how you'd fix it, and the FBA fee math is still built off an assumed 8oz package while the actual computed unit weighs about 9.1oz (258g) - reconcile both before you trust the margin number."
+  ]
+}

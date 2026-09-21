@@ -1,0 +1,163 @@
+{
+  "persona": {
+    "who_i_am": "I'm sitting on top of my suitcase at 10:40pm trying to force the zipper shut around the souvenirs I just crammed in, and the strap I bought for exactly this reason cracked at the buckle after two flights.",
+    "trigger": "My suitcase won't close after I packed souvenirs and the lid keeps popping back open.",
+    "fired_solution": "A cheap compression strap I bought before - the buckle cracked right at the anchor point after only two flights, so it's useless now and I'm back to sitting on the case.",
+    "urgency": "today",
+    "search_term": "suitcase compression strap",
+    "why_this_term": "I'm thinking about my problem - the case won't close - not the product itself yet, so I type what's wrong with my suitcase before I type the product name."
+  },
+  "buy_driver": {
+    "driver": "pain",
+    "pain_level": "extreme",
+    "evidence": "This is a repeat failure, not a first-time worry - C1 (buckle snaps at the anchor after a few trips, 50% of the negative pattern) is literally what happened to my last strap, and C2 (buckle slips/loosens once the case is packed) is the other way I've been burned. There's no comparing-without-urgency left in me; I need one that survives, tonight, not eventually.",
+    "tags": ["law.pain_extreme", "jtbd.firing", "kahneman.loss_aversion"]
+  },
+  "future_self": "I see myself at the hotel checkout, cranking the strap down once, the lid clicking shut without me needing to kneel on it, and then not thinking about that strap again for the rest of the trip - buckle still solid on the flight home, not a cracked piece of plastic in my hand at baggage claim.",
+  "comfort_and_laziness": "It removes the nightly wrestling match with my own suitcase - no more sitting on the lid, no more re-checking the strap before every flight wondering if this is the trip it snaps, no more hunting for a replacement buckle mid-trip. I cinch it once and stop thinking about it, which is exactly the lazy path I want after the last one failed on me.",
+  "benefits_not_features": [
+    {
+      "feature": "Stamped-steel ladder-lock buckle, 1.2mm gauge, pull-tested to 150kg with the kg rating stamped on the buckle face",
+      "benefit": "I don't have to take anyone's word for it - I can see the number stamped right into the metal, so I stop wondering if this is the one that cracks like my last one did."
+    },
+    {
+      "feature": "Ratchet ladder-lock mechanism instead of a plastic quick-release/cam buckle",
+      "benefit": "I can crank it down as hard as the case needs and it actually stays cinched overnight instead of quietly loosening and letting the lid pop back open."
+    },
+    {
+      "feature": "Steel buckle construction instead of plastic",
+      "benefit": "It won't crack at the anchor point after a couple of flights the way my last strap's buckle did - that's the exact spot mine broke."
+    },
+    {
+      "feature": "2-pack of 47in nylon webbing straps",
+      "benefit": "I've got a second strap ready if one buckle ever does fail, so I'm not stranded mid-trip with an unclosable case again."
+    }
+  ],
+  "three_second_scan": [
+    {
+      "signal": "image",
+      "what_i_see": "A stamped steel buckle with a kg number visible on its face, instead of the black plastic side-release clip every other strap in the row shows.",
+      "verdict": "pull",
+      "tags": ["gate.image_orientation", "kahneman.system1", "cialdini.authority"]
+    },
+    {
+      "signal": "price",
+      "what_i_see": "$15.99-$23.99 sitting next to a row of plastic-buckle 2-packs at roughly $5-$14 (median ~$9.20) - that's 1.7x to 2.6x the row I'm scanning.",
+      "verdict": "neutral",
+      "tags": ["kahneman.anchoring", "kahneman.system2_trigger"]
+    },
+    {
+      "signal": "rating",
+      "what_i_see": "No stars yet, brand-new listing, sitting right next to an 8-pack with 4.4 stars and options at 4.3 and 4.0.",
+      "verdict": "push_away",
+      "tags": ["cialdini.social_proof", "moore.chasm"]
+    },
+    {
+      "signal": "design",
+      "what_i_see": "A real ratchet ladder-lock buckle instead of the plastic clip or combination-lock buckle everyone else on the page is using.",
+      "verdict": "pull",
+      "tags": ["triz.local_quality", "sutherland.costly_signal"]
+    },
+    {
+      "signal": "experience_promise",
+      "what_i_see": "A kg-rating claim promising it won't fail the way my last one did, but it's a name I've never heard of making that promise.",
+      "verdict": "neutral",
+      "tags": ["kahneman.system2_trigger", "cialdini.authority"]
+    }
+  ],
+  "purchase_probability_current": {
+    "click": 0.35,
+    "add_to_cart": 0.4,
+    "buy": 0.5,
+    "reasoning": "click: the stamped steel buckle image breaks the plastic-buckle pattern and pulls my eye, but zero reviews and a price 1.7-2.6x the row median hold some clicks back. add_to_cart: the kg-rating claim speaks directly to the exact way my last strap failed, but an unknown brand with no reviews and no visible answer on strap length/case fit keeps me from adding automatically. buy: if the bullets settle whether the rating is per-buckle and confirm it fits a full-size checked case, I'll buy since this is precisely the failure that burned me - but with no social proof at all I could still bail at the cart."
+  },
+  "fears": [
+    {
+      "rank": 1,
+      "question": "Is this buckle actually going to survive more than a couple of flights, or will it crack at the anchor again like my last one?",
+      "tags": ["law.pain_extreme", "kano.must_be"],
+      "from_cluster_id": "C1",
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 2,
+      "question": "Will the ratchet actually hold tension once my case is fully packed, or will it slip loose overnight the way my old one did?",
+      "tags": ["kano.must_be", "ulwick.underserved"],
+      "from_cluster_id": "C2",
+      "answered_by": "image"
+    },
+    {
+      "rank": 3,
+      "question": "Is that 150kg rating for one buckle, both buckles, or the whole set - and does that even mean anything for my suitcase?",
+      "tags": ["ulwick.outcome_statement", "kahneman.wysiati"],
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 4,
+      "question": "Is this strap actually long enough to wrap all the way around my big checked suitcase, or is it sized for a carry-on?",
+      "tags": ["jtbd.functional"],
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 5,
+      "question": "This is a brand I've never heard of stamping a safety-sounding number into metal - can I actually trust that number?",
+      "tags": ["cialdini.authority", "kahneman.system2_trigger"],
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 6,
+      "question": "If it doesn't fit my case or the buckle fails anyway, is returning it going to be a hassle?",
+      "tags": ["nudge.friction_asymmetry", "post.return_reason"],
+      "answered_by": "unanswerable"
+    }
+  ],
+  "unmet_needs": [
+    {
+      "need_id": "N1",
+      "statement": "I need the buckle itself to survive many trips of repeated cinching, not just pass one pull test in a warehouse somewhere.",
+      "pain_level": "extreme",
+      "severity": 9,
+      "evidence_cluster_ids": ["C1"]
+    },
+    {
+      "need_id": "N2",
+      "statement": "I need the ratchet to actually hold once the case is packed full and under pressure, not quietly loosen overnight.",
+      "pain_level": "moderate",
+      "severity": 7,
+      "evidence_cluster_ids": ["C2"]
+    },
+    {
+      "need_id": "N3",
+      "statement": "I need to actually understand what a load rating means for my situation before I trust it over a cheap strap with no rating at all.",
+      "pain_level": "moderate",
+      "severity": 6
+    },
+    {
+      "need_id": "N4",
+      "statement": "I need a strap that reaches all the way around a full, overpacked checked case, not just something sized for a small carry-on.",
+      "pain_level": "latent",
+      "severity": 5
+    }
+  ],
+  "price_psychology": {
+    "anchor_seen_usd": 9.2,
+    "max_without_reason_usd": 12.99,
+    "max_with_reason_usd": 22,
+    "reason_required": "The buckle has to visibly be steel with a real kg number stamped into the metal face, legible in the image, not just claimed in text - ideally paired with one honest limitation (like a stated case-size range) so it reads as tested, not just marketed."
+  },
+  "packaging_expectation": "The straps need to arrive coiled and banded neatly, with the buckle's spec (gauge, kg rating) printed on a card or sleeve I can hold in my hand - something that matches what the stamped buckle promised. If they show up as two loose straps tangled in a plain poly bag with nothing printed on them, I'd silently decide this is just another cheap knockoff wearing a bigger price tag, no matter what the listing said.",
+  "lifestyle_target": {
+    "primary": "Me, an overpacked wheelie suitcase full of souvenirs, cinching the ratchet down by hand in a hotel room or at the airport check-in counter and getting the lid to actually close - a vacationer/frequent flyer moment, not a professional mover.",
+    "avoid": "Anything that looks like cargo tie-down or moving-truck strapping - that's the wrong product in my head and would make me think I clicked the wrong listing."
+  },
+  "memory_hook": "The number stamped right into the steel buckle face - that image sticks with me as 'the strap that wouldn't lie to me about what it can hold,' and I keep coming back to it even if I don't buy tonight.",
+  "color_read": "Black webbing with a raw, brushed-steel buckle (not painted or brightly colored plastic) reads as tool-grade and trustworthy to me, the opposite of the primary-colored plastic clips every cheap competitor uses.",
+  "hypotheses_tested": [
+    {
+      "hypothesis": "A buyer whose suitcase won't close after packing souvenirs will buy a compression strap set, and buckle durability across repeated trips (not just closing the case once) is what makes them pick one strap set over another",
+      "verdict": "confirmed",
+      "why": "That's my exact story - the case not closing is what sends me searching tonight, but what actually decides which strap I click and buy is whether the buckle survives more than a couple of flights, since that's precisely what killed my last strap (C1) and is the single most-cited failure in this whole category."
+    }
+  ],
+  "what_would_make_me_buy": "I'll buy this one, and I'll tell a friend, if the listing proves the kg rating is real and applies to my situation - a legible stamped number on the buckle in the actual product photos, a bullet that spells out per-buckle vs per-set and confirms it wraps a full checked case, and enough of an honest limitation stated up front that it doesn't feel like marketing fluff; because the one thing I'm actually shopping for isn't 'does it compress my bag' - every strap in this category does that on day one - it's 'will the buckle still be in one piece after my third flight,' and if this listing answers that question before I have to ask it in Q&A, it's an easy yes even at $20 next to the $9 plastic-buckle straps, and the first thing I'll tell a friend is 'get the one with the steel buckle, mine actually still works.'"
+}

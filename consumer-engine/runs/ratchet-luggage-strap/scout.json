@@ -1,0 +1,248 @@
+{
+  "retrieved_at": "2026-09-21",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "statement": "An 8-pack of quick-release-buckle nylon utility/luggage straps (MOPHOEXII) sells on Amazon for about $12.99 with a 4.4-star rating.",
+      "source": "https://www.amazon.com/MOPHOEXII-Adjustable-Compression-Tightening-Attachment/dp/B0B3XWDVMY",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F2",
+      "statement": "A basic Protege-branded luggage strap sells for about $5.47 with a 4.3-star rating.",
+      "source": "https://www.google.com/search?q=%22luggage+compression+strap%22+amazon+price+rating+reviews+buckle",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F3",
+      "statement": "A Protege-branded luggage strap with a built-in lock sells for about $8.62 with a 4.0-star rating.",
+      "source": "https://www.google.com/search?q=%22luggage+compression+strap%22+amazon+price+rating+reviews+buckle",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F4",
+      "statement": "Gorilla Grip 2-pack adjustable luggage straps sell for roughly $9.77-$10.52 at Walmart, discounted from a $12.99-$13.90 list price.",
+      "source": "https://www.walmart.com/luggage-rack-straps",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F5",
+      "statement": "Page-one results for the 'luggage compression strap' / 'luggage strap 2 pack' search terms are dominated by plastic quick-release or cam buckles; steel ladder-lock ratchet buckles were not found in that specific search, only in the adjacent heavy-duty cargo tie-down strap category (e.g. a metal-ratchet cam-buckle tie-down 2-pack aimed at cargo/moving, not suitcase interiors).",
+      "source": "https://www.amazon.com/Go-Lashing-Strap-Ratchet-Mechanism/dp/B01F5XGL6S",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F6",
+      "statement": "An industry article analyzing luggage-strap failures reports that about 87% of strap breakages occur within 5mm of the buckle's anchor point regardless of webbing tensile strength, attributed to micro-abrasion where webbing rubs against sharp internal buckle edges during repeated tightening/loosening.",
+      "source": "https://www.alibaba.com/product-insights/why-do-my-luggage-straps-snap-at-the-buckle-not-the-webbing-and-how-to-reinforce-them.html",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F7",
+      "statement": "Travelers on a travel-forum thread report strap buckles breaking on rolling carry-ons and needing a sewn-in replacement buckle; a related thread reports interior cinch-strap buckles sliding open or snapping outright on cheaper luggage.",
+      "source": "https://community.ricksteves.com/travel-forum/packing/travel-bag-repair",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F8",
+      "statement": "A reported case describes a brand-new suitcase's strap buckle breaking after only two flights, matching the durability-failure pattern named in the sourcing brief.",
+      "source": "https://community.ricksteves.com/travel-forum/packing/replacing-interior-cinching-straps",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F9",
+      "statement": "A mainstream 2-pack 48-inch utility/luggage strap (Wisdompro) uses a plastic quick-release buckle rated to a 30kg maximum load, illustrating that most compression straps in this category do not publish a load rating anywhere near a 150kg claim.",
+      "source": "https://www.amazon.com/Wisdompro-Backpacking-Sleeping-Compression-Bundling/dp/B01FQA9MLQ",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F10",
+      "statement": "Amazon's Sports & Outdoors / Luggage & Travel Accessories referral fee is 15% of the item price for 2026.",
+      "source": "https://feedvisor.com/university/referral-fee/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F11",
+      "statement": "Amazon FBA fulfillment fees rose 3-5% across most size tiers for 2026 (small-standard tier up about 4%), plus a 3.5% fuel/logistics-related surcharge added to FBA fulfillment fees effective April 2026; the exact new per-unit dollar fee for the small-standard tier was not published in the sources retrieved.",
+      "source": "https://www.ecomengine.com/blog/amazon-fba-fees-2026",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F12",
+      "statement": "Amazon's 2026 base monthly storage fee for standard-size, non-dangerous inventory is about $0.78 per cubic foot from January through September, rising to $2.25 per cubic foot October-December (Q4 peak season), the Q4 rate having been trimmed from a previously announced $2.40.",
+      "source": "https://www.ecomengine.com/blog/amazon-fba-fees-2026",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F13",
+      "statement": "Nylon/textile webbing straps with buckles from China are commonly classified under HTS 6307.90.9891 ('other made-up textile articles'); imports under this line must additionally report Chapter 99 subheading 9903.88.15, which carries a Section 301 List 4A additional duty of 7.5% on top of the (unconfirmed) base MFN duty rate.",
+      "source": "https://rulings.cbp.gov/ruling/N320336",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F14",
+      "statement": "As of August 14, 2026, Section 301 China tariffs range from 7.5% to 100% depending on the HTS list a product falls under; List 4A items (the list textile straps commonly fall under) carry the 7.5% rate.",
+      "source": "https://ustariffrates.com/section-301-tariffs",
+      "confidence": "medium"
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "luggage compression straps",
+      "seasonal": true,
+      "notes": "Primary category term; demand rises ahead of summer and winter-holiday travel peaks."
+    },
+    {
+      "term": "luggage straps 2 pack",
+      "seasonal": true,
+      "notes": "Pack-count-specific variant of the same intent; most page-one competitors are 2-packs."
+    },
+    {
+      "term": "suitcase compression strap",
+      "seasonal": false,
+      "notes": "Synonym buyers use when thinking about an overpacked case rather than the strap itself."
+    },
+    {
+      "term": "ratchet tie down strap",
+      "seasonal": false,
+      "notes": "A DIFFERENT market (cargo/moving, metal ratchet handle, tie-down not compression) per the brief's adjacency note; must not be mixed into this product's numbers."
+    },
+    {
+      "term": "steel ladder lock buckle strap",
+      "seasonal": false,
+      "notes": "Component-level search used by DIYers/repair shoppers; low volume but signals the buckle-durability angle this listing should lead with."
+    }
+  ],
+  "price_ladder": {
+    "primary_term": "luggage compression straps / luggage straps 2 pack",
+    "min": 5.47,
+    "median": 9.2,
+    "max": 13.99,
+    "typical_pack_count": 2,
+    "anchor_note": "Generic plastic-buckle 2-packs anchor the visual row at roughly $5-14 (median ~$9-10). The brief's target price band ($15.99-$23.99) sits about 1.7-2.6x that row median, which per gate.price_vs_anchor falls in the 1.3-2x 'needs a visible reason' zone to just past it at the top end -- the steel-buckle/kg-rating claim must be legible at 300px (stamped buckle face, a callout) or the price gap alone will suppress CTR."
+  },
+  "variant_chosen": {
+    "description": "2-pack, ~47-48 inch nylon webbing straps with a metal ladder-lock/cam-style buckle, sized for a single checked suitcase (not the longer 63-72in duffel/backpack straps, not 4+ packs, not the unrelated heavy-duty cargo ratchet tie-down strap).",
+    "why": "This is the pack size and length that recurs across the highest-review-count, best-ranked listings found (MOPHOEXII, Wisdompro, Protege, Gorilla Grip all cluster at 2-packs in the 44-48in range); longer/duffel-oriented and multi-pack variants appeared far less often on page one for this search intent."
+  },
+  "competitors": [
+    {
+      "name": "MOPHOEXII Utility Straps Luggage Strap w/ Quick Release Buckle (8-pack, 3.3ft)",
+      "price_usd": 12.99,
+      "rating": 4.4,
+      "main_image_description": "Coiled black nylon straps fanned out with a plastic side-release buckle visible on the top strap.",
+      "fact_ids": ["F1", "F5"]
+    },
+    {
+      "name": "Protege Luggage Strap (basic, no lock)",
+      "price_usd": 5.47,
+      "rating": 4.3,
+      "main_image_description": "Single blue/black webbing strap wrapped around a generic suitcase, plastic buckle in center.",
+      "fact_ids": ["F2"]
+    },
+    {
+      "name": "Protege Luggage Strap with Combination Lock",
+      "price_usd": 8.62,
+      "rating": 4.0,
+      "main_image_description": "Webbing strap with an integrated 3-digit TSA-style combination lock built into the buckle.",
+      "fact_ids": ["F3"]
+    },
+    {
+      "name": "Gorilla Grip Adjustable Luggage Straps (2-pack)",
+      "price_usd": 9.77,
+      "main_image_description": "Two straps shown crossed over a packed suitcase, buckle and length markings visible.",
+      "fact_ids": ["F4"]
+    }
+  ],
+  "complaint_clusters": [
+    {
+      "cluster_id": "C1",
+      "pattern": "The buckle snaps or cracks right at the point where the webbing anchors into it, not the webbing itself, usually after several trips of repeated cinching.",
+      "share_of_negative": 0.5,
+      "stage": "5",
+      "root_cause_hypothesis": "Micro-abrasion at the webbing/buckle anchor edge plus thin or low-grade buckle metal that fatigues under repeated ratcheting cycles -- the exact failure mode the brief's must_avoid clause (thinner substitute steel) is meant to prevent.",
+      "paraphrased_examples": [
+        "buckle cracked at the anchor after only a couple of flights",
+        "had to get a replacement buckle sewn in"
+      ],
+      "fact_ids": ["F6", "F7", "F8"]
+    },
+    {
+      "cluster_id": "C2",
+      "pattern": "The buckle mechanism slips or fails to hold tension once the case is fully packed, letting the strap loosen or the lid pop back open.",
+      "share_of_negative": 0.3,
+      "stage": "4",
+      "root_cause_hypothesis": "Plastic cam teeth or a low load-rated buckle (commonly ~30kg on mainstream straps) that isn't matched to how hard an overpacked case pushes back -- reinforces why a stamped, pull-tested kg rating on the buckle face is a differentiator, not decoration.",
+      "paraphrased_examples": [
+        "strap loosened on its own overnight",
+        "cinch slid open under the case's pressure"
+      ],
+      "fact_ids": ["F7", "F9"]
+    }
+  ],
+  "praise_clusters": [
+    {
+      "pattern": "Buyers like that the strap visibly and noticeably compresses an overpacked case, letting the lid close and latch when it wouldn't before, and that the buckle feels sturdy for the price at the point of first use.",
+      "share_of_positive": 0.7
+    }
+  ],
+  "fee_inputs": {
+    "referral_rate": {
+      "low": 0.15,
+      "base": 0.15,
+      "high": 0.17,
+      "assumption": "Luggage & Travel Accessories / Sports & Outdoors is consistently reported at 15% across 2026 rate guides; high end hedges the small chance Amazon classifies this SKU under a category with a higher published rate."
+    },
+    "fba_fee_usd": {
+      "low": 3.4,
+      "base": 3.75,
+      "high": 4.1,
+      "assumption": "STALE: not independently fetched as a dollar figure this session. Derived by applying the sourced 2026 change (+3-5% on small-standard tiers, plus a 3.5% surcharge from April 2026) to the brief's prior unverified $3.48 estimate. Must be re-checked against a live Amazon FBA revenue calculator before use.",
+      "stale": true
+    },
+    "storage_per_cuft_month_usd": {
+      "low": 0.78,
+      "base": 0.78,
+      "high": 2.25,
+      "assumption": "2026 standard-size non-dangerous-goods rate: $0.78/cu ft Jan-Sep (most of the year, used as base), rising to a Q4 peak of $2.25/cu ft Oct-Dec."
+    },
+    "duty_rate": {
+      "low": 0.05,
+      "base": 0.07,
+      "high": 0.09,
+      "assumption": "STALE: the base MFN duty rate for HTS 6307.90.9891 (the likely classification for a webbing-strap-with-buckle set) was not confirmed by a fetched source this session -- only the Section 301 add-on (see additional_tariff_rate) was sourced. This range is a placeholder pending a direct HTS lookup or customs-broker confirmation.",
+      "stale": true
+    },
+    "sea_freight_usd_per_cbm": {
+      "low": 140,
+      "base": 180,
+      "high": 260,
+      "assumption": "STALE: not searched this session -- the 2-search fee/duty/freight budget was spent on FBA/referral/storage and on HTS/duty/tariff. Carried forward as a general-market LCL China-to-US placeholder range, not a sourced figure. Must be verified with a freight forwarder quote before use.",
+      "stale": true
+    },
+    "additional_tariff_rate": {
+      "low": 0.075,
+      "base": 0.075,
+      "high": 0.1,
+      "assumption": "Section 301 List 4A rate of 7.5% (Chapter 99 subheading 9903.88.15) confirmed for the likely HTS line as of August 14, 2026; high end hedges near-term trade-policy volatility (sources note List rates elsewhere range up to 100%)."
+    },
+    "hts_code": "6307.90.9891",
+    "origin_assumed": "CN"
+  },
+  "unanswered_questions": [
+    "Whether the stamped kg rating applies per strap, per buckle, or to the set as a whole (inferred recurring theme, not directly observed in a Q&A section -- see gaps)",
+    "Whether the strap length is long enough to wrap a large/XL checked case fully closed, versus only a carry-on (inferred recurring theme, not directly observed -- see gaps)"
+  ],
+  "trends": [
+    "Amazon FBA fulfillment fees increased 3-5% across most size tiers for 2026, with a further 3.5% fuel/logistics surcharge added to FBA fulfillment fees in April 2026.",
+    "Amazon's Q4 2026 peak storage rate was trimmed from a previously announced $2.40/cu ft to $2.25/cu ft for standard-size inventory.",
+    "Section 301 China tariff exposure remains volatile through 2026, with published List rates spanning 7.5% to 100% depending on classification, meaning the duty/tariff stack on this product should be re-verified close to the actual PO date."
+  ],
+  "gaps": [
+    "Amazon's own product/search pages could not be fetched directly (egress blocked), so all competitor prices, ratings and review counts come from search-engine snippets rather than a direct page read; no review_count figures were obtainable for any competitor within budget, and est_monthly_units was not obtainable from a tracker page for any competitor.",
+    "No page-one competitor was found actually using a steel ladder-lock ratchet buckle for suitcase-interior compression -- all page-one competitors in the 'luggage compression strap' / '2 pack' search use plastic quick-release or cam buckles, confirming the brief's framing that this is a new differentiated entrant rather than a like-for-like comparison.",
+    "Complaint and praise clusters are triangulated from travel-forum anecdotes and one industry stats article rather than a direct read of 1-2 star review pages on three specific competitor ASINs (Amazon review pages were blocked and Walmart/business.walmart.com review pages also returned egress-blocked errors); confidence on cluster share_of_negative figures should be treated as directional, not precise.",
+    "Q&A themes (unanswered_questions) were not directly observed on any listing's Q&A section; the two listed are inferred from the general failure/complaint pattern rather than sourced, and should be re-verified once real listings can be read.",
+    "fba_fee_usd, duty_rate (base MFN, pre-Section-301) and sea_freight_usd_per_cbm are all marked stale -- the 8 general searches were spent on competitors/prices/complaints and the 2 fee-specific searches were spent on referral/FBA-trend/storage and on HTS classification/Section 301, leaving no budget to independently fetch a live FBA fee calculator figure, the exact base HTS duty percentage, or a current freight-forwarder LCL quote. These three numbers should be re-fetched before genius/engine relies on them for the fee stack."
+  ]
+}

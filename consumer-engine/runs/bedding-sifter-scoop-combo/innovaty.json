@@ -136,7 +136,7 @@
   },
   "color_strategy": {
     "product_color": "Sage green tray, scoop and handle accents — a soft, natural pet-care tone that reads as gentle and purpose-built for a living animal, directly matching buyer.color_read's stated preference and deliberately avoiding stark clinical white or generic black cat-litter plastic that would silently re-anchor the buyer to the cat-litter category she is actively trying to escape tonight.",
-    "main_image_anchor": "A muted sage-to-cream soft gradient background (not sterile white, not black), with the crisp white contrast mesh (I2) as the one bright accent point that pulls the eye and separates this tile from the white-background, black-plastic rivals filling the rest of the grid.",
+    "main_image_anchor": "Amazon requires a pure white background on the primary listing image, so the anchor there is the sage-green product body itself against that mandatory white field, with the crisp white contrast mesh (I2) as the one bright accent point inside the product that still pulls the eye against a grid of white-background, black-plastic rivals. The sage-to-cream gradient palette lives in the packaging and lifestyle images instead, where it's compliant and can do more work.",
     "brand_direction": "A gentle, trustworthy, purpose-built small-pet-care brand — closer to a boutique pet-wellness label than a mass commodity cleaning tool — signaling 'made for your hamster' rather than 'recycled cat product.'"
   },
   "bundle_or_addition": {
@@ -192,7 +192,7 @@
   "image_prompts": [
     {
       "purpose": "main_image",
-      "prompt": "Studio product photograph of a sage-green plastic pet-bedding sifter tray and matching waste scoop, shot from slightly above at a three-quarter angle tilted downward so the mesh floor of the tray is visible: pale beige paper and aspen bedding fines are frozen mid-fall through the crisp white fine-mesh grid that contrasts sharply against the sage-green frame, while a single dark, moist-looking bedding clump rests visibly retained on top of the mesh; the tray rim shows embossed raised lettering reading '3MM BEDDING MESH' catching a soft raking highlight; background is a smooth muted sage-to-cream gradient sweep with soft diffused studio lighting, no shadows harsh enough to hide detail, no text overlays, no logos, no side viewing window or transparent panel anywhere on the tray body, clean commercial e-commerce product photography, high resolution."
+      "prompt": "Studio product photograph of a sage-green plastic pet-bedding sifter tray and matching waste scoop, shot from slightly above at a three-quarter angle tilted downward so the mesh floor of the tray is visible: pale beige paper and aspen bedding fines are frozen mid-fall through the crisp white fine-mesh grid that contrasts sharply against the sage-green frame, while a single dark, moist-looking bedding clump rests visibly retained on top of the mesh; the tray rim shows embossed raised lettering reading '3MM BEDDING MESH' catching a soft raking highlight; background is pure seamless white (Amazon primary-image compliant, RGB 255,255,255, no gradient, no props) with soft diffused studio lighting and a faint natural contact shadow beneath the tray, no shadows harsh enough to hide detail, no text overlays, no logos, no side viewing window or transparent panel anywhere on the tray body, clean commercial e-commerce product photography, high resolution."
     },
     {
       "purpose": "packaging",

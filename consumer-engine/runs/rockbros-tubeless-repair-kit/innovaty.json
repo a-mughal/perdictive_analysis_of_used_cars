@@ -5,7 +5,7 @@
     "should_fix_clusters": [],
     "over_served_to_cut": [
       "Long multi-language paper instruction leaflets that ship with most kits in this category but sit unread (buyer wants 'simple printed steps right there', not a booklet)",
-      "A plain single-use poly bag as the sole packaging layer, which the category treats as sufficient but the buyer explicitly names as a 'cheap knockoff' signal"
+      "A plain single-use poly bag as the sole packaging layer — the category-norm baseline for this price band (per scout's observation of a rival tile), and the packaging this specific ASIN is assumed, but not confirmed, to currently ship in — which the buyer names as a 'cheap knockoff' signal if that is what greets her"
     ]
   },
   "ideas": [
@@ -14,7 +14,7 @@
       "name": "Slotted Hard-Case Kit Tin",
       "role": "hero",
       "aspect": "packaging",
-      "mechanism": "Replace the loose poly bag with a compact hinged ABS/aluminum-look hard case sized to a saddlebag, holding a molded foam or PP insert with three individual pin slots and one sealed-strip compartment so nothing rattles or touches bare plastic. The case is shown open, contents fully organized, as the main product shot rather than a bag of loose parts.",
+      "mechanism": "Replace the packaging this ASIN's current listing is assumed (unconfirmed — to be verified against the actual current fulfillment packaging before tooling) to use — a loose poly bag — with a compact hinged ABS/aluminum-look hard case sized to a saddlebag, holding a molded foam or PP insert with three individual pin slots and one sealed-strip compartment so nothing rattles or touches bare plastic. The case is shown open, contents fully organized, as the main product shot rather than a bag of loose parts.",
       "fixes_complaint_clusters": ["C1"],
       "improves_needs": ["N1"],
       "improves_gates": ["gate.image_2_to_6", "gate.brand_trust"],
@@ -27,7 +27,7 @@
       "prior_art_reason": "Hinged hard cases with foam organizer inserts are ubiquitous across pocket-tool, first-aid and EDC categories; this is generic tooling with no novel mechanism to infringe.",
       "test_that_proves_it": "100-cycle, 1 m shake-drop test plus a 30-day 40 C / 70% RH storage cycle, confirming zero part rattle and strip flexibility (Shore A within 10% of baseline) versus an unsealed poly-bag control.",
       "how_it_looks_in_main_image": "The matte tool kit's hard case popped open on a plain surface, three numbered pins and five sealed rubber strips each seated in their own foam slot, nothing loose.",
-      "buyer_sentence": "It comes in this little case where everything has its own slot — nothing rattles around and the strips don't feel like they've been baking in a bag for a year."
+      "buyer_sentence": "It comes in this little case where everything has its own slot — nothing rattles around and the strips don't feel exposed and half-cooked the way I was worried they'd be in just a bag."
     },
     {
       "idea_id": "I2",
@@ -131,8 +131,8 @@
     }
   ],
   "packaging": {
-    "unboxing_moment": "In the first ten seconds the buyer lifts a slim hinged lid instead of tearing a poly bag; inside, three numbered chrome-tipped pins and five glossy red rubber strips sit in their own molded slots with zero rattle, exactly as the kit ships today. Nothing feels loose, nothing feels improvised, and the rubber does not look or feel dusty.",
-    "upgrade_vs_category": "The category norm for this price band is a plain poly bag with loose pins and an exposed sheet of rubber strips (as scout observed on the Genuine Innovations tile). Swapping that for a reusable slotted hard case is a visible, felt step up in perceived engineering effort (sutherland.costly_signal) that a buyer reads as quality before they ever use the tool, directly answering the buyer's own stated packaging_expectation. The foil-sealed strip pouch (I2) and QR proof card (I3) are a near-zero-cost fast-follow once this leaner case-only launch is proven, per genius's recommended v1_hero_case scope.",
+    "unboxing_moment": "In the first ten seconds the buyer lifts a slim hinged lid instead of tearing open a poly bag — the packaging this ASIN is assumed, but not independently confirmed, to currently ship in; that assumption is to be verified against the actual current fulfillment packaging before tooling is committed. Inside, three numbered chrome-tipped pins and five glossy red rubber strips sit in their own molded slots with zero rattle, exactly as the kit ships today. Nothing feels loose, nothing feels improvised, and the rubber does not look or feel dusty. A single printed step insert — three numbered install steps printed on the inside of the case lid or a thin slip card cut from the same foam-insert tooling, at no additional mold or SKU cost — sits right where the buyer's eye lands, so the first attempt is guided even before the numbered pins (I5) or QR proof card (I3) ship in the later fast-follow.",
+    "upgrade_vs_category": "The category norm for this price band is believed to be a plain poly bag with loose pins and an exposed sheet of rubber strips — scout observed this on a rival's tile (the Genuine Innovations kit), and the buyer independently described fearing the same thing for this ASIN, but scout never confirmed this ASIN's own current packaging, so treat it as the working assumption, not a settled fact. Swapping the assumed poly-bag baseline for a reusable slotted hard case is a visible, felt step up in perceived engineering effort (sutherland.costly_signal) that a buyer reads as quality before they ever use the tool, directly answering the buyer's own stated packaging_expectation. The foil-sealed strip pouch (I2) and QR proof card (I3) are a near-zero-cost fast-follow once this leaner case-only launch is proven, per genius's recommended v1_hero_case scope.",
     "cost_tier": "tooling"
   },
   "color_strategy": {
@@ -141,13 +141,13 @@
     "brand_direction": "A no-nonsense, trail-tested mechanic's-tool brand: durability and quiet competence over playful color or gimmicks, aimed at riders who want the tool that looks like it has already survived a ride, not the one that looks new in the box."
   },
   "bundle_or_addition": {
-    "what": "A second foil-sealed sub-pack of 5 spare bacon strips (10 strips total in the box) plus one spare deflating pin, nested in a dedicated extra slot in the hard case.",
-    "why_it_wins": "Directly answers the fear that strips degrade or get used up before they're needed (N1/C1) and the unspoken 'what if the first plug doesn't hold, or I flat twice in one ride' scenario the buyer already described needing 5 strips for — visible spare capacity is a costly signal that partly offsets not having reviews yet.",
+    "what": "Not a v1 launch feature — this is a v2_later fast-follow concept, bundled alongside I2's foil-sealed strip-freshness pouch once the case-only v1_hero_case launch is proven: a second sub-pack of spare bacon strips plus one spare deflating pin, nested in a dedicated extra slot in the hard case. v1 itself ships exactly the 5 strips in their single existing compartment, exactly as they ship today and exactly as genius's costed v1_hero_case BOM specifies — no second pouch, no spare pin, no foil seal at launch.",
+    "why_it_wins": "Once fast-followed alongside I2, this directly answers the fear that strips degrade or get used up before they're needed (N1/C1) and the unspoken 'what if the first plug doesn't hold, or I flat twice in one ride' scenario the buyer already described needing 5 strips for — visible spare capacity is a costly signal that partly offsets not having reviews yet. Held out of v1 because it is not costed in genius's v1_hero_case BOM and would contradict the leaner launch scope.",
     "cost_tier": "cents"
   },
   "errc": {
     "eliminate": [
-      "The plain single-use poly bag as sole packaging",
+      "The plain single-use poly bag as sole packaging — assumed, not confirmed, to be this ASIN's current packaging; to be verified before tooling",
       "The unread multi-fold, multi-language paper instruction booklet"
     ],
     "reduce": [
@@ -219,8 +219,8 @@
   "sustainability": {
     "claims": [
       {
-        "claim": "The packaging redesign eliminates the single-use printed multi-language leaflet and reduces poly-bag film per unit versus the prior poly-bag packaging.",
-        "verification": "Bill-of-materials comparison from the packaging supplier: leaflet + poly bag (prior) vs. QR-card + reusable hard case (new), weighed and itemized per unit."
+        "claim": "The packaging redesign eliminates the single-use printed multi-language leaflet and uses less single-use poly-bag film per unit than a typical poly-bag baseline for this product category, since this ASIN's own prior packaging was not independently confirmed this session.",
+        "verification": "Bill-of-materials comparison from the packaging supplier: a typical category-baseline leaflet + poly bag vs. the new printed step insert + reusable hard case, weighed and itemized per unit — plus direct confirmation of this ASIN's actual current packaging before the claim is finalized for listing copy."
       }
     ],
     "rejected_claims": [
@@ -229,8 +229,8 @@
     ]
   },
   "what_i_cut": [
-    "The multi-fold, multi-language paper instruction booklet — replaced for v1 by numbered pins and the hard case's own slotted organization; the QR-linked proof/install card (I3) fast-follows once the case-only launch is proven, per genius's leaner v1_hero_case scope.",
-    "The loose single-use poly bag as the sole packaging layer — replaced entirely by the reusable slotted hard case.",
+    "The multi-fold, multi-language paper instruction booklet — cut entirely for v1. It is not replaced by numbered pins: I5's laser-etched pin numbering is deferred to v2_later (gated on a prior-art check), and the QR-linked proof/install card (I3) is a separate v2_later fast-follow. In their place, v1 adds one near-zero-cost printed step insert (three numbered install steps, printed on the inside of the hard case's lid or a thin slip card cut from the same foam-insert tooling — no new mold, no new SKU) so a first-time buyer still gets a look-down, unread-nothing guide the moment the case opens, per the 'first attempt succeeds unread' principle.",
+    "The loose single-use poly bag as the sole packaging layer — assumed, not confirmed, to be this ASIN's current packaging (to be verified before tooling) — replaced entirely by the reusable slotted hard case.",
     "Multiple colorway/variant listings — v1_hero_case ships the tool in its current single stock finish only (the matte gunmetal colorway is deferred to the I2/I3/I4 fast-follow bundle), avoiding the variation-dropdown drop-off (schwartz.overload) and keeping tooling cost down."
   ]
 }

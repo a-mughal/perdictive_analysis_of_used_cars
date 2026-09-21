@@ -1,0 +1,43 @@
+{
+  "slug": "corner-edge-protector-set",
+  "product_name": "Foldable Corrugated-Box Corner Protector & Edge Guard Set (ECT-Rated)",
+  "source_url": "https://www.amazon.com/s?k=Foldable+Corrugated-Box+Corner+Protector+%26+Edge+Guard+Set+%28ECT-Rated%29",
+  "marketplace": "amazon.com",
+  "created_at": "2026-09-21T09:51:48+00:00",
+  "mode": "category",
+  "target_buyer": {
+    "description": "Someone shipping or moving boxes (reseller, small mover, or frequent shipper) whose boxes keep arriving with crushed corners despite using foam padding",
+    "context": "My boxes still crush at the corners in the truck even with foam padding on them.",
+    "price_band_usd": {
+      "min": 11.19,
+      "max": 16.79
+    }
+  },
+  "seller_constraints": {
+    "launch_budget_usd": 0,
+    "time_to_market_months": 0,
+    "origin_country": "CN",
+    "must_keep": [
+      "ECT-32 rated corrugate (a stated, printed Edge Crush Test value) with HDPE reinforcement caps"
+    ],
+    "must_avoid": [
+      "a supplier substituting a lower ECT-grade linerboard than specified, so the printed rating overstates real crush resistance and corners fail on the same routes"
+    ]
+  },
+  "user_hypotheses": [
+    "A shipper whose foam-padded boxes still crush at the corners will buy a stated-crush-rating corner/edge protector set specifically because it lets them match protector strength to box weight instead of guessing at foam density"
+  ],
+  "assumptions": [
+    "Category tags from the sourcing brief: Storage, moving, packing & shipping; PUBLISHED-SPEC; NEW listing; FRAGILE MARGIN; LOW BARRIER to entry",
+    "Prior sourcing estimate (unverified against live fees, to be checked by scout/genius): FOB $1.70/unit, freight+drayage $0.30, duty 33% blended on FOB $0.56, prep/poly bag/FNSKU $0.25, landed cost $2.81; referral fee 15% $2.10, FBA fulfilment (8oz tier) $3.38, monthly storage (modeled) $0.04, Amazon fees $5.52; returns reserve 1.6% $0.22, PPC 9.0% TACoS $1.26, ads+returns $1.48; ASP $13.99, net profit $4.18, margin 29.9%",
+    "Sourcing logistics from the brief: tooling $300, MOQ 1,500 units, 2 parts, 3 weeks to first article; packed weight 8oz (small standard tier), packed volume (modeled) 90 cu in",
+    "Closest incumbent named in the brief: plain foam corner protectors sold for furniture shipping, ~$8-10, no stated crush rating",
+    "Differentiator proposed in the brief: die-cut from board rated to a stated Edge Crush Test (ECT-32) value, printed on the pack, so a shipper can match protector strength to box weight instead of guessing at foam density",
+    "Main sourcing risk flagged in the brief: a cheap supplier drops to a lower ECT-grade linerboard to cut cost, so the printed rating overstates real crush resistance and corners fail on the same routes",
+    "Regulatory position per the brief: none — ECT is an industry test spec, not a government certification; note on packaging as a manufacturer spec, not a regulatory claim",
+    "Back-end/repeat-purchase idea from the brief: bulk refill packs for repeat movers/shippers",
+    "In the box per the brief: 8 corner protectors + 4 edge guards, ECT-32 rated corrugate with HDPE reinforcement caps"
+  ],
+  "iterations": 0,
+  "search_budget": 8
+}

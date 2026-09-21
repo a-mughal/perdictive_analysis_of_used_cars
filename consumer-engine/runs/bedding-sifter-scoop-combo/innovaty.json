@@ -177,7 +177,7 @@
   },
   "listing_implications": {
     "title_first_60": "Hamster Bedding Sifter Scoop Combo - See-Through 3mm Mesh",
-    "main_image_brief": "Show the sage-green sifter tray mid-sift at a slight downward angle, held in a hand: pale bedding fines caught mid-fall behind the clear see-through side window (I1), a dark moist clump visibly resting on the crisp white contrast mesh (I2), and the molded '3MM BEDDING MESH' rim callout (I3) readable under soft light, all on a muted sage/cream anchor background - no text overlays, the mechanism itself doing the proving, not a caption.",
+    "main_image_brief": "Show the sage-green sifter tray mid-sift at a slight downward angle, held in a hand: a dark moist clump visibly resting on the crisp white contrast mesh (I2), the molded '3MM BEDDING MESH' rim callout (I3) readable under soft light, and pale bedding fines caught mid-fall through the mesh itself (visible from above, no side viewing window - that's I1, deferred to v1_plus_hero), all on a muted sage/cream anchor background - no text overlays, the mesh and callout doing the proving, not a caption.",
     "image_briefs_2_to_4": [
       "Scale: the compact scoop head held in an adult hand beside an open small-pet cage door, showing it passes through without turning sideways.",
       "Hard case: a moist wood-pellet clump on the mesh releasing clean with one light tap, zero residue left on the ribbed underside.",
@@ -192,7 +192,7 @@
   "image_prompts": [
     {
       "purpose": "main_image",
-      "prompt": "Studio product photograph of a sage-green plastic pet-bedding sifter tray and matching waste scoop, shot at a three-quarter angle tilted slightly downward, mid-sift: pale beige paper and aspen bedding fines are frozen mid-fall behind a clear polycarbonate viewing window set into the tray's long side wall, while a single dark, moist-looking bedding clump rests visibly on top of a crisp white fine-mesh grid that contrasts sharply against the sage-green frame; the tray rim shows embossed raised lettering reading '3MM BEDDING MESH' catching a soft raking highlight; background is a smooth muted sage-to-cream gradient sweep with soft diffused studio lighting, no shadows harsh enough to hide detail, no text overlays, no logos, clean commercial e-commerce product photography, high resolution, slight overhead camera angle."
+      "prompt": "Studio product photograph of a sage-green plastic pet-bedding sifter tray and matching waste scoop, shot from slightly above at a three-quarter angle tilted downward so the mesh floor of the tray is visible: pale beige paper and aspen bedding fines are frozen mid-fall through the crisp white fine-mesh grid that contrasts sharply against the sage-green frame, while a single dark, moist-looking bedding clump rests visibly retained on top of the mesh; the tray rim shows embossed raised lettering reading '3MM BEDDING MESH' catching a soft raking highlight; background is a smooth muted sage-to-cream gradient sweep with soft diffused studio lighting, no shadows harsh enough to hide detail, no text overlays, no logos, no side viewing window or transparent panel anywhere on the tray body, clean commercial e-commerce product photography, high resolution."
     },
     {
       "purpose": "packaging",

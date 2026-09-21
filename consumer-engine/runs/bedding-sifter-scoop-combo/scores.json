@@ -1,0 +1,198 @@
+{
+  "scored_at": "2026-09-21T12:19:31+00:00",
+  "evidence": {
+    "facts": 16,
+    "sourced": 16,
+    "stale_fee_inputs": 1,
+    "unsourced_claims": 3,
+    "score": 82.0
+  },
+  "buyer": {
+    "p_click": 0.3,
+    "p_cart": 0.35,
+    "p_buy": 0.55,
+    "p_purchase_overall": 0.0578,
+    "framework_tag_coverage": 1.0,
+    "driver": "pain",
+    "pain_level": "moderate",
+    "top_need": "I need a mesh gauge actually sized for loose paper/aspen bedding fines, not clumping cat litter, so I stop over-discarding clean bedding or leaving waste behind.",
+    "top_need_id": "N1",
+    "burning_needs": 1,
+    "headroom_score": 60.3
+  },
+  "innovation": {
+    "ideas_ranked": [
+      {
+        "idea_id": "I2",
+        "name": "High-Contrast Dual-Color Fine Mesh",
+        "role": "supporting",
+        "in_v1": true,
+        "impact": 58.3,
+        "ruling": "realistic",
+        "weighted": 58.3
+      },
+      {
+        "idea_id": "I3",
+        "name": "Molded-In 3mm Gauge Callout",
+        "role": "supporting",
+        "in_v1": true,
+        "impact": 26.9,
+        "ruling": "realistic",
+        "weighted": 26.9
+      },
+      {
+        "idea_id": "I1",
+        "name": "See-Through Sift Window",
+        "role": "hero",
+        "in_v1": false,
+        "impact": 38.9,
+        "ruling": "stretch",
+        "weighted": 23.3
+      },
+      {
+        "idea_id": "I5",
+        "name": "Ribbed Non-Stick Mesh Underside + Reinforced Frame",
+        "role": "hygiene",
+        "in_v1": true,
+        "impact": 10.3,
+        "ruling": "realistic",
+        "weighted": 10.3
+      },
+      {
+        "idea_id": "I4",
+        "name": "Compact Cage-Fit Scoop Head & Contoured Short Handle",
+        "role": "supporting",
+        "in_v1": true,
+        "impact": 6.0,
+        "ruling": "realistic",
+        "weighted": 6.0
+      },
+      {
+        "idea_id": "I6",
+        "name": "Durable Molded Depth Marks",
+        "role": "hygiene",
+        "in_v1": false,
+        "impact": 8.0,
+        "ruling": "unrealistic",
+        "weighted": 0.0
+      }
+    ],
+    "hero": {
+      "idea_id": "I1",
+      "name": "See-Through Sift Window",
+      "role": "hero",
+      "in_v1": false,
+      "impact": 38.9,
+      "ruling": "stretch",
+      "weighted": 23.3
+    },
+    "v1_realistic_count": 4,
+    "v1_unrealistic": [],
+    "score": 29.7
+  },
+  "economics": {
+    "version_id": "v1_now",
+    "version_substituted": false,
+    "price_usd": 18.99,
+    "landed_cost_usd": 4.44,
+    "fee_stack_usd": {
+      "referral": 2.85,
+      "fba": 3.45,
+      "storage": 0.06,
+      "ads": 6.08,
+      "returns": 0.51
+    },
+    "contribution_usd": 1.6,
+    "contribution_pct": 8.4,
+    "landed_pct_of_price": 23.4,
+    "break_even_units": 10551,
+    "months_to_break_even": null
+  },
+  "sanity_rails": [
+    {
+      "rail": "contribution >= 25% of price",
+      "pass": false,
+      "value": "8.4%"
+    },
+    {
+      "rail": "contribution >= 15% of price (hard floor)",
+      "pass": false,
+      "value": "8.4%"
+    },
+    {
+      "rail": "landed cost <= 30% of price",
+      "pass": true,
+      "value": "23.4%"
+    },
+    {
+      "rail": "P(profit > 0 in 12 months) >= 60%",
+      "pass": false,
+      "value": "0%"
+    },
+    {
+      "rail": "first sale within 9 months at high",
+      "pass": false,
+      "value": "55 wk high"
+    },
+    {
+      "rail": "no fatal risk above 25% without a mitigation",
+      "pass": true,
+      "value": "0 unmitigated"
+    },
+    {
+      "rail": "price within what the buyer will pay",
+      "pass": true,
+      "value": "$18.99 vs $20.00"
+    },
+    {
+      "rail": "planning-fallacy multiplier applied",
+      "pass": true,
+      "value": "1.35"
+    }
+  ],
+  "monte_carlo": {
+    "trials": 10000,
+    "p_profit_positive_12m": 0.0,
+    "p_payback_within_12m": 0.0,
+    "profit_12m_p10": -26535,
+    "profit_12m_p50": -18675,
+    "profit_12m_p90": -12160,
+    "median_payback_month": 99
+  },
+  "feasibility": {
+    "rails_passed": "4/8",
+    "rails_broken": [
+      "contribution >= 25% of price",
+      "contribution >= 15% of price (hard floor)",
+      "P(profit > 0 in 12 months) >= 60%",
+      "first sale within 9 months at high"
+    ],
+    "verdict_computed": "unrealistic",
+    "verdict_claimed": "unrealistic",
+    "disagreement": false,
+    "score": 30.0
+  },
+  "critic_overall": "flags_to_fix",
+  "critic_high": 0,
+  "status": "FIX-FIRST",
+  "summary": "2 flag(s) to close, each routed to its owner — nothing here kills the product",
+  "fixes": [
+    "[genius] broken rail: contribution >= 15% of price (hard floor)",
+    "[genius] broken rail: P(profit > 0 in 12 months) >= 60%"
+  ],
+  "watch": [
+    "[buyer] Amazon product/review pages were blocked this session, so scout's price_ladder and competitors[] entirely come from Walmart listings (F3-F6) -- the true Amazon combo-set comparators (tafit, Ilofdsn, Niteangel, BFLCTTBD, Mollcouver named in F1/F2) still have no price or rating data at all this run. Buyer's anchoring judgement ('The row I see runs $4.29-$10.17...', anchor_seen_usd: 10.17, unchanged from the prior pass) treats this Walmart-sourced ladder as if it were the literal Amazon grid row, without flagging the marketplace mismatch. That figure still feeds gate.price_vs_anchor / kahneman.anchoring reasoning and, downstream, genius's price_usd rationale ('Buyer's stated band is $14.39-$21.59... buyer.price_psychology names a $12 ceiling'). — fix: Scout should tag each competitor entry with its marketplace and state explicitly that no Amazon-native price anchor exists this run. Buyer should treat the $4.29-$10.17/$10.17 figures as a directional, non-Amazon proxy with wider stated uncertainty rather than 'the row I see', until Amazon data is retrievable.",
+    "[genius] genius.premortem[3] (packaging tier-line jump) still assigns 30% probability to the upgraded die-cut box + shaped inner tray pushing the packed product over the 8oz small-standard tier line -- genius's own top-named packaging risk. But economics.fba_fee_usd (low 2.90 / base 3.45 / high 4.15) only widens the same-tier estimate by roughly +20%; there is still no next-tier fee scenario at the high end, so the Monte-Carlo input doesn't carry the risk genius itself flags as the most consequential packaging failure mode. Unchanged from the prior critic pass. — fix: Either fold an explicit tier-jump scenario into the high end of fba_fee_usd (price the next FBA size tier's fee), or state clearly in the assumption that the current range assumes the pin-gauge/scale-check mitigation succeeds and that a tier-jump remains an unmodeled tail risk.",
+    "[innovaty] The 'second, narrower snap-in 3mm mesh insert for tight corners' plus a replacement-SKU card is still introduced outside the formal ideas[] array -- no idea_id, no kano_class, no prior_art_risk, no thumbnail_visibility, only an ad hoc 'dimes' cost tier -- and it still does not appear in version_plan.v1_now or v2_later. Neither version's BOM in genius.json prices this extra mesh insert or card. Unchanged from the prior pass. — fix: Give it an idea_id, run it through the same TRIZ/ERRC/prior-art/thumbnail-test discipline as I1-I6, and place it explicitly in v1_now or v2_later so genius can cost it in the BOM (or drop it as aspirational scope, not actual v1 content).",
+    "[innovaty] I1 and I3 (both list N4 in improves_needs, N4 = 'real proof it was tested on small-animal bedding', severity 4) still target a need below the innovation playbook's severity>=5 funding threshold, while target_spec.needs_targeted correctly lists only N1-N3. I1 is a 'dimes' cost-tier idea; its primary justification is N1 (severity 8), but N4 riding along uncosted-and-unflagged in the same field is an internal inconsistency between what target_spec claims is funded and what the ideas claim to serve. Unchanged from the prior pass. — fix: Remove N4 from I1's and I3's improves_needs, or add a note in target_spec that N4 is addressed incidentally at zero marginal cost as a side effect, not as a funded target.",
+    "[innovaty] I3 is still self-rated 'medium' thumbnail_visibility, which per the innovation playbook's own thumbnail test means it 'needs a callout or image three' -- not reliably legible at true ~300px grid-thumbnail size. Yet listing_implications.main_image_brief and image_prompts[0] (the main/hero image) both still describe the embossed '3MM BEDDING MESH' rim text as 'readable' directly in that image ('the tray rim shows embossed raised lettering reading \"3MM BEDDING MESH\" catching a soft raking highlight'). Embossed, non-contrasting molded text on a tray rim is unlikely to actually read at thumbnail size, contradicting the idea's own visibility rating. Unchanged from the prior pass -- the main_image prompt was rewritten for the white-background fix but this specific claim was carried over untouched. — fix: Don't rely on I3's embossed text being legible in the grid thumbnail; let I2's color-contrast mesh carry the thumbnail-level proof, and move the 'readable molded text' claim to a full-size listing detail image (2-6), consistent with I3's own 'medium' rating.",
+    "[genius] For the v1_plus_hero window-strip BOM line, genius still states it ran its 'own one-off web search this run (not a scout fact_id, not authorized by any brief clause, just a component-price check)' citing weilinplastic.com, rapiddirect.com and protolabs.com. This directly violates the pipeline's sourcing discipline ('Scout searches; everyone else cites scout's fact_ids'). It's transparently disclosed and confined to the deferred v1_plus_hero version (no impact on v1_now's economics), but it still breaks the chain-of-custody the evidence rule depends on. Unchanged from the prior pass. — fix: Strip the named-domain citations and either fall back to the knowledge-base rule-of-thumb only (as done for every other BOM line this run), or route an authorized request to scout next run and cite a real fact_id instead.",
+    "[innovaty] Two specific competitive claims still have no scout fact_id backing: (1) innovaty.packaging.upgrade_vs_category -- 'The named competitors (F1, F3-F6) ship as a bagged single scoop with no window and no explanation card' -- scout never captured any packaging detail for any competitor; and (2) the rewritten color_strategy.main_image_anchor still asserts '...a grid of white-background, black-plastic rivals' -- scout's competitor descriptions never state plastic color. The main_image gradient-background problem (K2 from the prior pass) was fixed, but this adjacent unsourced-claim problem inside the very same field survived the rewrite untouched. — fix: Soften both to 'typical category convention, not independently confirmed this session,' or have scout actually capture competitor packaging/color detail before stating it as comparative fact.",
+    "[genius] price_usd (low 16.99 / base 18.99 / high 19.99) is still only about 16% wide (low -10.5%, high +5.3% around base), materially narrower than the ~+/-30% guidance applied to every other uncertain figure this run, and it still carries no downside scenario for the case where the 'visible proof' buyer requires to accept a price above her $12 no-reason ceiling doesn't land as intended in the actual photography. Unchanged from the prior pass. — fix: Widen the low end toward buyer's $12-14 no-reason-ceiling band to give the Monte-Carlo a genuine downside price scenario, or explicitly document that price is being treated as a fixed strategic decision rather than an uncertain input (and if so, why a range is supplied at all).",
+    "[genius] The optimistic tail of share_m12 (up to 11%, slightly above the knowledge base's ~10% ceiling) is still justified partly by 'I1/I2's above-median thumbnail visibility if the fast-follow window ships by mid-year' -- but I1's fast-follow (v1_plus_hero) still has no timeline, no tooling schedule, and no FTO-search cost modeled anywhere in this run's fixed_launch_cost_usd (explicitly v1_now-scoped only: 'Deliberately excludes... no window-strip tooling, only a light informal prior-art screen'). 'Ships by mid-year' remains an unbudgeted, unscheduled assumption doing real work in the optimistic tail of the forecast. Unchanged from the prior pass. — fix: Either drop the I1-fast-follow justification from share_m12's high end since it isn't funded/scheduled this run, or explicitly timeline and cost the v1_plus_hero fast-follow so the assumption is traceable to a real, budgeted plan.",
+    "[genius] The revised ad_rate.base (0.32) is now shown with full, checkable month-bucket arithmetic (75/165/280/450 units at ~70/50/30/20% ACoS unit-weights to 0.3186, correctly rounded to 0.32) -- this is a genuine, honest fix, and it reconciles cleanly with monthly_units_m6 (base 70) and monthly_units_m12 (base 140). But ad_rate.low (0.18) and ad_rate.high (0.55) are asserted narratively ('reflects a faster-than-median chasm crossing', 'reflects the pre-mortem's review-velocity obituary') without the same decomposed month-by-month arithmetic given for the base case, so their internal consistency with the forecast's own low/high share and volume ramps can't actually be checked the way the base case can. 0.18 in particular is below the knowledge base's 15-30% steady-state floor, which is only plausible if nearly the whole year sits at the very bottom of that band -- asserted, not shown. — fix: Either show the same bucketed low-case and high-case arithmetic used for the base case, or state plainly that the low/high ad_rate bounds are qualitative judgement calls rather than derived the way the base case now is.",
+    "[buyer] buyer.color_read and buyer.lifestyle_target.avoid explicitly state that 'stark clinical white... backgrounds... would anchor me back to the cat-litter category I'm actively trying to escape.' The now-corrected main_image prompt and color_strategy.main_image_anchor put the hero/grid image on a mandatory pure-white background per Amazon policy -- a sensible, necessary fix, and innovaty's own color_strategy text explains the tension reasonably (sage-green body plus white contrast mesh carrying the anchor instead of a colored backdrop). But that reconciliation lives only in innovaty.json; buyer.json's own stated preference is never caveated to note that the grid-tile background is a platform constraint, not a strategic choice. A future reader of buyer.json alone would conclude the plan is contradicting the buyer's own stated psychology. — fix: Add a one-line caveat to buyer.color_read or lifestyle_target noting that Amazon's primary image is white-background by policy regardless of brand preference, and that the 'avoid stark white' guidance applies to packaging/lifestyle imagery, not the mandatory hero image.",
+    "[genius] broken rail: contribution >= 25% of price",
+    "[genius] broken rail: first sale within 9 months at high"
+  ]
+}

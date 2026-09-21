@@ -1,0 +1,42 @@
+{
+  "slug": "bedding-sifter-scoop-combo",
+  "product_name": "Small-Animal Habitat Bedding Sifter & Waste Scoop Combo",
+  "source_url": "https://www.amazon.com/s?k=Small-Animal+Habitat+Bedding+Sifter+%26+Waste+Scoop+Combo",
+  "marketplace": "amazon.com",
+  "created_at": "2026-09-21T11:40:27+00:00",
+  "mode": "category",
+  "target_buyer": {
+    "description": "An owner of a small caged animal (hamster, gerbil, guinea pig, rabbit) doing routine spot-cleaning who has been using a cat litter scoop that either lets fine bedding through or fails to separate soiled clumps from clean bedding",
+    "context": "My cat litter scoop either lets everything through or catches nothing when I use it on my hamster's cage.",
+    "price_band_usd": {
+      "min": 14.39,
+      "max": 21.59
+    }
+  },
+  "seller_constraints": {
+    "origin_country": "CN",
+    "must_keep": [
+      "sifter mesh gauge (3mm) specifically calibrated to pass paper/aspen bedding fines while retaining soiled clumps and pellets"
+    ],
+    "must_avoid": [
+      "a supplier widening the mesh gauge to speed up molding, letting fine bedding fall through with the waste and causing customers to over-discard clean bedding"
+    ]
+  },
+  "user_hypotheses": [
+    "A small-animal owner frustrated that a repurposed cat-litter scoop either passes everything or nothing will buy a sifter/scoop combo specifically because its mesh gauge is calibrated for bedding fines rather than clumping litter"
+  ],
+  "assumptions": [
+    "Category tag from the sourcing brief: FRAGILE MARGIN",
+    "The card states 'Repriced this run before finalisation — see footer for before/after' but no footer or before/after pricing data was actually included in what was pasted — flagged as a gap, not guessed; the unit economics below are treated as the current (post-reprice) numbers",
+    "Prior sourcing estimate (unverified against live fees, to be checked by scout/genius): FOB $2.90/unit, freight+drayage $0.40, duty 33% blended on FOB $0.96, prep/poly bag/FNSKU $0.30, landed cost $4.56; referral fee 15% $2.70, FBA fulfilment (8oz tier) $3.38, monthly storage (modeled) $0.03, Amazon fees $6.11; returns reserve 2.0% $0.36, PPC 9.8% TACoS $1.76, ads+returns $2.12; ASP $17.99, net profit $5.20, margin 28.9%",
+    "Sourcing logistics from the brief: tooling $950, MOQ 1,000 units, 3 parts, 5 weeks to first article; packed weight 8oz (small standard tier), packed volume (modeled) 60 cu in",
+    "Closest incumbent named in the brief: cat litter scoops re-purposed for small-animal bedding, or generic kitchen sifters",
+    "Differentiator proposed in the brief: sifter mesh gauge specifically sized to pass paper/aspen bedding fines while retaining soiled clumps and pellets — a calibration purpose-built litter scoops don't offer since they're tuned for clay clumping litter",
+    "Main sourcing risk flagged in the brief: a cheap supplier widens the mesh gauge to speed up molding, so fine bedding falls through with the waste and customers over-discard clean bedding",
+    "Regulatory position per the brief: none",
+    "Back-end/repeat-purchase idea from the brief: replacement mesh trays for larger habitats (second SKU)",
+    "In the box per the brief: sifter tray with 3mm mesh, waste scoop, bedding-level depth marks on scoop handle"
+  ],
+  "iterations": 0,
+  "search_budget": 8
+}

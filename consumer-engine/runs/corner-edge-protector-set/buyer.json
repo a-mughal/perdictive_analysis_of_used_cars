@@ -10,7 +10,7 @@
   "buy_driver": {
     "driver": "pain",
     "pain_level": "moderate",
-    "evidence": "C1 - the whole category is split into light/regular/heavy duty tiers, which only makes sense if buyers like me keep picking the wrong thickness for the box weight and having corners crush anyway. That's exactly my situation with foam right now: I'm comparing options, not panicking, but I am actively looking tonight.",
+    "evidence": "C1 - the whole category is split into light/regular/heavy duty tiers, which only makes sense if buyers like me keep picking the wrong thickness for the box weight and having corners crush anyway. That's exactly my situation with foam right now: I'm comparing options, not panicking, but I am actively looking tonight. Caveat: scout self-flags C1 as 'Inferred (not directly mined)' - it's a read on SKU-tier proliferation (three duty tiers sold under near-identical titles), not something pulled from actual 1-2 star review text, since scout had no working review access this session. So this pain-depth read is my working hypothesis about the category, not a confirmed pattern from real reviews - it needs a follow-up pass with real review data before it's treated as settled.",
     "tags": ["law.pain_moderate", "jtbd.firing", "ulwick.underserved"]
   },
   "future_self": "I see myself pulling a stack of boxes out of the closet before a shipping run, snapping a rated protector onto each corner in seconds without stopping to think about it, and then not getting a single 'arrived damaged' message that week - just calm, boring, uneventful deliveries. Shoot me mid-pack, confident, taping the last flap shut with the protectors already on, no extra foam or bubble wrap piled around the corners like I used to need.",
@@ -113,7 +113,7 @@
   "unmet_needs": [
     {
       "need_id": "N1",
-      "statement": "I need to know, before I buy, exactly how much crush resistance I'm getting so I stop guessing at foam density and having corners fail anyway.",
+      "statement": "I need to know, before I buy, exactly how much crush resistance I'm getting so I stop guessing at foam density and having corners fail anyway. (Caveat: this traces to C1, which scout marks inferred from SKU-tier segmentation, not mined from real review text - a working hypothesis, not confirmed.)",
       "pain_level": "moderate",
       "severity": 7,
       "evidence_cluster_ids": ["C1"]
@@ -141,7 +141,7 @@
     },
     {
       "need_id": "N5",
-      "statement": "I need it to be obvious up front which duty tier matches my box weight, without having to compare three near-identical listings from the same brand to figure it out.",
+      "statement": "I need it to be obvious up front which duty tier matches my box weight, without having to compare three near-identical listings from the same brand to figure it out. (Caveat: this traces to C1/C2, both marked inferred by scout from SKU-tier/variant segmentation rather than mined review text - a working hypothesis, not confirmed.)",
       "pain_level": "moderate",
       "severity": 6,
       "evidence_cluster_ids": ["C1", "C2"]

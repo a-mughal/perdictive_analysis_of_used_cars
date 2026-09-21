@@ -2,6 +2,7 @@
   "target_spec": {
     "needs_targeted": ["N1", "N2", "N3", "N4", "N5"],
     "must_fix_clusters": ["C1", "C2"],
+    "must_fix_clusters_confidence_note": "C1's 35% and C2's 25% share_of_negative figures are scout's own inferred placeholders (scout.json: root_cause_hypothesis 'Inferred, not directly mined' for both clusters), not measured shares of real one-star reviews - scout's gaps explicitly state no actual 1-2 star review text could be mined this session. Treat these percentages as working estimates, not confirmed data, and corroborate with a real review-mining pass before committing to full v1 tooling spend, even though the clusters themselves (mismatched duty-tier thickness, size/fit confusion) remain the right things to target on the category-structure evidence scout does have.",
     "over_served_to_cut": [
       "The category's proliferation of near-duplicate board-thickness/length SKUs sold under one brand (F3, F5) forces cross-comparison the buyer resents (C2) - cut variant count, don't add more.",
       "Sheer bulk piece-count as the primary value lever (F5's 100-pack framing) is over-invested relative to what the buyer actually values, a matched, provable rating (N1) - stop competing on raw count."
@@ -22,8 +23,8 @@
       "thumbnail_visibility": "high",
       "cost_tier": "tooling",
       "priority": "now",
-      "prior_art_risk": "low",
-      "prior_art_reason": "Printed spec claims exist industry-wide, but molding the ECT number into a corner cap's visible face (vs. a paper label or packaging-only print) was not observed on any of scout's four named competitors; this is a decoration/mold-insert method, not a novel mechanism, so risk is low.",
+      "prior_art_risk": "medium",
+      "prior_art_reason": "Printed spec claims exist industry-wide. Scout's four named competitors were checked only through titles and bullet/listing text this session - scout.json's own gaps state no competitor thumbnail or main image could be fetched at all. So the accurate claim is narrower: no competitor TITLE or BULLET TEXT makes a claim about a molded, on-cap ECT numeral. Whether any competitor's actual cap face is itself debossed or hot-stamped with a visible number is unconfirmed - a text-channel absence, not an observed visual absence - pending a manual look at the live competitor listing images. That unresolved gap is exactly what should raise this from 'low', not lower it, so risk is set to medium until a manual image check is done; this is a decoration/mold-insert method, not a novel mechanism, so it likely stays low-to-medium once confirmed, but is not yet confirmed.",
       "test_that_proves_it": "Hot-stamp/deboss legibility and abrasion test (ASTM D5264-style rub test) at 24h and 30d, 23C/50%RH, plus a mocked 16-tile grid render at 300px checked for numeral legibility against the four named competitor listings.",
       "how_it_looks_in_main_image": "A kraft-brown corner protector on a corner, camera close enough that the debossed black 'ECT-32' numeral on the blue HDPE cap reads clearly even scaled down to a thumbnail.",
       "buyer_sentence": "This one actually tells you the number right on the corner, not buried in the description, so I know what it can hold before I even tape the box shut."
@@ -136,7 +137,7 @@
   },
   "color_strategy": {
     "product_color": "Natural kraft-brown corrugate body with safety-blue HDPE caps and black debossed/hot-stamped print. Brown reads as raw, unbleached, spec-sheet-honest rather than a marketing color choice - the buyer says so directly (buyer.color_read); blue on the caps borrows industrial-safety trust cues; black-on-kraft print reads as an engineering label, not packaging decoration.",
-    "main_image_anchor": "A cool, pale blue-gray studio background (not stark white, not warm) so the warm kraft-brown board and the blue caps both pop with strong contrast against the sea of white-cardboard, white-background competitor tiles on the grid; a thin blue keyline in one image corner echoes the cap color to tie the tile together at a glance.",
+    "main_image_anchor": "A cool, pale blue-gray studio background (not stark white, not warm) so the warm kraft-brown board and the blue caps both pop with strong contrast. This is innovaty's own hypothesis about the likely competitive grid, inferred from scout's title/text data (e.g. plain 'cardboard,' 'kraft,' and 'white' material descriptions across the named competitors) - not an observed fact: scout never obtained a single competitor thumbnail or main image this session (scout.json gaps), so the actual grid composition is unconfirmed pending a manual check of the live competitor tiles. The blue-cap color choice itself is kept regardless, since it is a reasonable contrast strategy on its own merits; a thin blue keyline in one image corner echoes the cap color to tie the tile together at a glance.",
     "brand_direction": "An engineering-spec / industrial-supply brand voice - 'the box-corner spec sheet' - positioned closer to a named-component industrial supplier than to a generic craft-store packaging brand."
   },
   "bundle_or_addition": {
@@ -173,7 +174,7 @@
   },
   "listing_implications": {
     "title_first_60": "ECT-32 Rated Corner Protectors & Edge Guards, 12-Pc Set",
-    "main_image_brief": "One corner protector shot on a pale blue-gray background, kraft-brown wings shown at their full extended length, two safety-blue HDPE caps with the debossed 'ECT-32' numeral clearly legible even at thumbnail size, no overlay text, camera angled to show both the corner point and one wing's spec callout in the same frame.",
+    "main_image_brief": "One corner protector shot on a pale blue-gray background, kraft-brown wings shown at their full extended length (I4), two plain safety-blue HDPE caps (I3) with no deboss and no molded numeral on the cap face - the two-tone kraft-and-blue contrast itself is the thumbnail signal - no overlay text on the piece; the legible ECT-32 callout lives on the pack/belly-band (I2), not on the cap, so it is not part of this shot; camera angled to show both the corner point and the full wing length in the same frame.",
     "image_briefs_2_to_4": [
       "Scale: the protector held in a hand next to a tape measure showing wing length, so shoppers judge real coverage against their own box size in one glance.",
       "Hard case: a fully taped, protected box shown under a stacked load or a hand pressing down hard on the corner, with a simple callout tying the visible ECT-32 numeral to 'holds up to about X lb per corner' so the rating reads as proven, not printed.",
@@ -188,7 +189,7 @@
   "image_prompts": [
     {
       "purpose": "main_image",
-      "prompt": "Product photograph of a single foldable corrugated corner protector for shipping boxes, shot centered on a cool pale blue-gray seamless studio background under soft, even softbox lighting with a gentle shadow beneath it; the body is natural unbleached kraft-brown corrugated cardboard with crisp, unbent die-cut edges and visible fluting texture, folded into an L-shaped corner form with extended full-length wings running down both faces; two matte safety-blue HDPE plastic caps are fused flush over the corner tip, each cap bearing a clearly legible debossed black-inked 'ECT-32' numeral and a small stacked-box pictogram; the finish is matte with no glossy printing, no logos, and no visible glue seams anywhere on the outward face; shot at a three-quarter angle from slightly above so both the wing length and the debossed cap text are readable even when the image is scaled down to a small thumbnail; no text overlays, no additional graphics, clean commercial product photography style, sharp focus, high detail on the cardboard texture and the debossed plastic lettering."
+      "prompt": "Product photograph of a single foldable corrugated corner protector for shipping boxes, shot centered on a cool pale blue-gray seamless studio background under soft, even softbox lighting with a gentle shadow beneath it; the body is natural unbleached kraft-brown corrugated cardboard with crisp, unbent die-cut edges and visible fluting texture, folded into an L-shaped corner form with extended full-length wings running down both faces; two smooth matte safety-blue HDPE plastic caps are fused flush over the corner tip, plain and unmarked - no deboss, no stamped numerals, no printed text or pictograms anywhere on the cap faces; the finish is matte with no glossy printing, no logos, and no visible glue seams anywhere on the outward face; shot at a three-quarter angle from slightly above so both the extended wing length and the crisp two-tone kraft-and-blue contrast read clearly even when the image is scaled down to a small thumbnail; no text overlays, no additional graphics, clean commercial product photography style, sharp focus, high detail on the cardboard texture and the smooth blue plastic caps."
     },
     {
       "purpose": "packaging",

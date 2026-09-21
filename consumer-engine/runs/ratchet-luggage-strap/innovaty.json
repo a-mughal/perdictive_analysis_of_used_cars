@@ -62,7 +62,7 @@
       "triz_or_erric_tags": ["triz.colour_change", "triz.periodic_action", "kano.delighter", "nudge.default"],
       "thumbnail_visibility": "high",
       "cost_tier": "dimes",
-      "priority": "now",
+      "priority": "later",
       "prior_art_risk": "medium",
       "prior_art_reason": "Color-indicator lock-confirmation tabs exist on other hardware (car-seat buckles, some cam straps); this exact pawl-tab mechanism on a ladder-lock ratchet wasn't found in scout's search, but analogous mechanisms are common enough to warrant a quick FTO check given the tooling spend.",
       "test_that_proves_it": "1,000-cycle engagement test: ratchet closed to a random rung, tab position (protruding vs flush) checked against actual tooth engagement measured by pull-off force; 100% agreement required across 3 buckle samples.",
@@ -166,8 +166,12 @@
     ]
   },
   "version_plan": {
-    "v1_now": ["I1", "I2", "I3", "I6"],
+    "v1_now": ["I1", "I2", "I6"],
     "v2_later": [
+      {
+        "idea_id": "I3",
+        "unlock_trigger": "Genius costed I3 into v2_full_delighter, not the recommended v1_hero_lean, since its overmold tooling and its own medium prior-art-risk FTO add cost with no v1 unit-economics benefit; fast-follow once v1 sales and roughly 30 reviews (moore.chasm) validate demand for the lock-indicator delighter."
+      },
       {
         "idea_id": "I4",
         "unlock_trigger": "Once v1 sales validate willingness to pay the price premium and review volume passes roughly 30 (moore.chasm), justifying the added print-station pass."
@@ -183,8 +187,8 @@
     "main_image_brief": "Buckle face-out and close, matte brushed steel with the bold embossed 150KG PER BUCKLE legend and rounded anchor edge fully legible, black webbing coiled beneath it, shot on a warm light-gray seamless background with a thin orange accent line, no text overlay, no other props.",
     "image_briefs_2_to_4": [
       "Scale: the buckle held in a hand next to a tape measure/ruler, showing true size and the embossed kg number at scale.",
-      "Hard case: the strap cinched tight around a visibly overstuffed suitcase with the lid fully closed and latched, the orange lock-indicator tab shown flush/hidden to prove full engagement.",
-      "Install: a 3-step sequence — loop, thread, ratchet down — with the color-change tab shown protruding mid-sequence then flush/locked as the visual proof step."
+      "Hard case: the strap cinched tight around a visibly overstuffed suitcase with the lid fully closed and latched, the ladder-lock buckle drawn flush against the anchor point and the webbing pulled taut to prove full engagement.",
+      "Install: a 3-step sequence — loop, thread, ratchet down — ending on the buckle seated flush with the embossed 150KG legend legible as the visual proof step."
     ],
     "honest_limitations": [
       "Sized for a single checked suitcase up to about 32in/81cm; it is not a 63in+ duffel or backpack strap and won't fully wrap an XL case in one pass without the double-wrap keeper.",

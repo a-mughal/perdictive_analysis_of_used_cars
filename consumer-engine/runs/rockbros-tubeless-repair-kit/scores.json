@@ -1,0 +1,194 @@
+{
+  "scored_at": "2026-09-21T19:03:30+00:00",
+  "evidence": {
+    "facts": 11,
+    "sourced": 11,
+    "stale_fee_inputs": 4,
+    "unsourced_claims": 6,
+    "score": 52.0
+  },
+  "buyer": {
+    "p_click": 0.3,
+    "p_cart": 0.45,
+    "p_buy": 0.55,
+    "p_purchase_overall": 0.0743,
+    "framework_tag_coverage": 1.0,
+    "driver": "pain",
+    "pain_level": "moderate",
+    "top_need": "I need proof - real ride reports, not just install photos - that a plug holds for actual mileage and not just that it goes in easily.",
+    "top_need_id": "N3",
+    "burning_needs": 2,
+    "headroom_score": 59.2
+  },
+  "innovation": {
+    "ideas_ranked": [
+      {
+        "idea_id": "I4",
+        "name": "Matte Gunmetal Anodizing + Red Pull-Ring Accent",
+        "role": "supporting",
+        "in_v1": false,
+        "impact": 37.5,
+        "ruling": "realistic",
+        "weighted": 37.5
+      },
+      {
+        "idea_id": "I1",
+        "name": "Slotted Hard-Case Kit Tin",
+        "role": "hero",
+        "in_v1": true,
+        "impact": 13.0,
+        "ruling": "realistic",
+        "weighted": 13.0
+      },
+      {
+        "idea_id": "I2",
+        "name": "Foil-Sealed Strip Freshness Pouch",
+        "role": "hygiene",
+        "in_v1": false,
+        "impact": 9.5,
+        "ruling": "realistic",
+        "weighted": 9.5
+      },
+      {
+        "idea_id": "I5",
+        "name": "Integrated Valve-Core Notch + Numbered Pins",
+        "role": "supporting",
+        "in_v1": false,
+        "impact": 11.5,
+        "ruling": "stretch",
+        "weighted": 6.9
+      },
+      {
+        "idea_id": "I3",
+        "name": "In-Box QR Proof Card (No-Sealant + Mileage Test)",
+        "role": "supporting",
+        "in_v1": false,
+        "impact": 5.7,
+        "ruling": "realistic",
+        "weighted": 5.7
+      },
+      {
+        "idea_id": "I6",
+        "name": "Cross-Width Validated Single Strip Geometry",
+        "role": "hygiene",
+        "in_v1": false,
+        "impact": 3.0,
+        "ruling": "realistic",
+        "weighted": 3.0
+      }
+    ],
+    "hero": {
+      "idea_id": "I1",
+      "name": "Slotted Hard-Case Kit Tin",
+      "role": "hero",
+      "in_v1": true,
+      "impact": 13.0,
+      "ruling": "realistic",
+      "weighted": 13.0
+    },
+    "v1_realistic_count": 1,
+    "v1_unrealistic": [],
+    "score": 16.7
+  },
+  "economics": {
+    "version_id": "v1_hero_case",
+    "version_substituted": false,
+    "price_usd": 16.99,
+    "landed_cost_usd": 3.27,
+    "fee_stack_usd": {
+      "referral": 2.55,
+      "fba": 4.35,
+      "storage": 0.03,
+      "ads": 5.1,
+      "returns": 0.53
+    },
+    "contribution_usd": 1.17,
+    "contribution_pct": 6.9,
+    "landed_pct_of_price": 19.2,
+    "break_even_units": 10308,
+    "months_to_break_even": null
+  },
+  "sanity_rails": [
+    {
+      "rail": "contribution >= 25% of price",
+      "pass": false,
+      "value": "6.9%"
+    },
+    {
+      "rail": "contribution >= 15% of price (hard floor)",
+      "pass": false,
+      "value": "6.9%"
+    },
+    {
+      "rail": "landed cost <= 30% of price",
+      "pass": true,
+      "value": "19.2%"
+    },
+    {
+      "rail": "P(profit > 0 in 12 months) >= 60%",
+      "pass": false,
+      "value": "0%"
+    },
+    {
+      "rail": "first sale within 9 months at high",
+      "pass": true,
+      "value": "38 wk high"
+    },
+    {
+      "rail": "no fatal risk above 25% without a mitigation",
+      "pass": true,
+      "value": "0 unmitigated"
+    },
+    {
+      "rail": "price within what the buyer will pay",
+      "pass": true,
+      "value": "$16.99 vs $28.00"
+    },
+    {
+      "rail": "planning-fallacy multiplier applied",
+      "pass": true,
+      "value": "1.35"
+    }
+  ],
+  "monte_carlo": {
+    "trials": 10000,
+    "p_profit_positive_12m": 0.003,
+    "p_payback_within_12m": 0.003,
+    "profit_12m_p10": -23406,
+    "profit_12m_p50": -15211,
+    "profit_12m_p90": -7792,
+    "median_payback_month": 99
+  },
+  "feasibility": {
+    "rails_passed": "5/8",
+    "rails_broken": [
+      "contribution >= 25% of price",
+      "contribution >= 15% of price (hard floor)",
+      "P(profit > 0 in 12 months) >= 60%"
+    ],
+    "verdict_computed": "unrealistic",
+    "verdict_claimed": "stretch",
+    "disagreement": true,
+    "score": 37.6
+  },
+  "critic_overall": "flags_to_fix",
+  "critic_high": 0,
+  "status": "FIX-FIRST",
+  "summary": "2 flag(s) to close, each routed to its owner — nothing here kills the product",
+  "fixes": [
+    "[genius] broken rail: contribution >= 15% of price (hard floor)",
+    "[genius] broken rail: P(profit > 0 in 12 months) >= 60%"
+  ],
+  "watch": [
+    "[innovaty] The near-zero-cost printed step insert added in this pass to fix what_i_cut's gap ('sits right where the buyer's eye lands' per packaging.unboxing_moment) is not depicted in any of the three image_prompts or the 'what's in the box' listing image brief. The packaging image_prompt describes the case open showing only the pins and strips, with no mention of the step insert/slip card at all — so the one instructional aid v1 actually ships with is invisible in every image meant to prove it exists, undercutting the fix's own rationale (post.review_trigger / 'first attempt succeeds unread' only works if the buyer can see or find the guide, and image #3 is the number-one conversion leak per the buyer-journey gates). — fix: Add the printed step insert (lid print or slip card) to the packaging image_prompt and to image_briefs_2_to_4's 'what's in the box' brief, and resolve the still-open either/or ('printed on the inside of the case lid OR a thin slip card') into one concrete implementation so genius can decide whether it needs its own foam slot.",
+    "[innovaty] The sustainability claim was correctly softened this pass to compare against 'a typical poly-bag baseline for this product category' rather than asserting anything about this ASIN's own prior packaging — that fixes the Amazon-suppression risk on the specific-ASIN framing. But the category-baseline premise itself is still attributed to 'scout's observation of a rival tile (the Genuine Innovations kit)', and scout's actual competitor entry never mentions packaging format at all — it only describes the product photo as 'a plastic-handled plug tool shown beside a flat sheet of rubber plug strips' (F4-adjacent). A flat sheet visible in a product photo is not evidence of poly-bag retail packaging. The 'typical poly-bag baseline for this product category' is still an inference dressed as a scout-sourced observation, just one level removed from the original (now-fixed) ASIN-specific version of the same problem. — fix: Either get scout to source an actual competitor packaging-format fact (a listing photo or description that shows the retail packaging, not just the product), or reword the claim as innovaty's own working assumption about category norms rather than something 'scout observed'.",
+    "[genius] Unresolved from the first pass: the BOM line for the aluminum tool body still cites '~48g per F3' as the tool body's own weight. F3 actually states the whole kit (3 plug tools + 5 rubber strips) weighs about 48g total, not the metal body alone — and F3 describes a kit with '3 plug tools' (plural separate tools), which may not even be the same physical shape as this ASIN's single tool with 3 integrated pins (scout's own variant_chosen flags this ambiguity). unit_weight_g (93g for v1_hero_case) is built on top of this mislabeled figure, and it directly feeds premortem #3 (packaging crossing the FBA size-tier line), one of the two 'major' impact premortem items. — fix: Re-derive the tool body's own weight as a fraction of F3's 48g kit total (strips are a small share of it), or get an actual supplier weight before locking case/foam dimensions, since this number is load-bearing for the size-tier risk genius itself is worried about.",
+    "[genius] Unresolved from the first pass: several timeline ranges are still narrower than the brief's ±30% floor for uncertain estimates even after the 1.35x planning-fallacy multiplier — phase 2 (prototypes/compliance testing) ≈±20.6%, phase 3 (soft tooling/T1) ≈±20%, phase 5 (production run) ≈±14.4%, phase 6 (freight/FBA check-in) ≈±16.7%, and the rolled-up weeks_to_first_sale ≈±21.7%. These are exactly the phases most exposed to genius's own flagged risks: a first-time compliance/aging test regime with this supplier, soft tooling for a new case, and a 22%-probability 'fatal' tariff/HTS premortem item sitting right next to the tooling and freight phases. — fix: Widen phases 2, 3, 5 and 6 (and the rolled-up total) to at least ±30% around base, reflecting the tariff/HTS and first-time-compliance uncertainty already named in the premortem.",
+    "[buyer] Unresolved from the first pass: N3 (severity 8, the single highest-severity need in the file, and the direct justification for costed idea I3) and N4 (severity 5) still carry no evidence_cluster_ids and cite no scout fact_id, unlike N1/N2. N3's 'no proof, no reviews' framing traces to F11 (the blocked-fetch gap) rather than any complaint cluster, and N4's 'does it fit both road and MTB tubeless' gap is already named verbatim in scout's own unanswered_questions — both are citable but uncited. — fix: Add evidence_cluster_ids or an explicit fact_id (F11 for N3; the matching unanswered_questions entry for N4) so both needs trace to a source, especially since N3 alone justifies I3's ~$800 one-off spend.",
+    "[innovaty] Unresolved from the first pass: still claims the warm gradient background is needed to 'separate the tile from the white-background, silver-tool rivals in the same grid row,' but no scout fact_id describes any competitor's image background — scout's competitor entries (Genuine Innovations, Stan's Dart, Dynaplug) describe tool shape and price only, never background color. Separately, this field is honest that v1's click-through gain rests entirely on the case (since I4's finish change is deferred), which is good practice, but the underlying competitive-background claim itself is still unsourced. — fix: Either cite a real source for rival tile backgrounds or reword as a design choice rather than a stated competitive fact.",
+    "[innovaty] Unresolved from the first pass: errc.raise[0] (I2's foil seal) and errc.create[0]/[1] (I3's QR proof card, I5's numbered-pin system) still carry no '(ships v2)' flag, unlike every other innovaty field that touches these ideas (packaging, color_strategy, what_i_cut, image_prompts all label the version split correctly). A reader skimming only the ERRC summary would believe these ship at launch. — fix: Add a 'ships v2' parenthetical to the raise/create bullets referencing I2/I3/I5, matching the labeling discipline used elsewhere in the file.",
+    "[innovaty] The bundle_or_addition rewrite correctly resolves the v1-scope contradiction from the first pass (it's now clearly labeled a v2_later fast-follow, consistent with the strip count everywhere else). But two smaller issues remain: (1) why_it_wins still invokes a 'costly signal' argument without the formal sutherland.costly_signal tag the adjacent packaging.upgrade_vs_category field uses inline for the same concept — untagged judgements score at half weight; (2) the concept is not costed in ANY genius version — not v1_hero_case (correctly excluded) but also not in v1_plus_bundle, even though it claims to fast-follow 'alongside I2's foil-sealed strip-freshness pouch,' which IS costed in v1_plus_bundle. The bundle idea itself has never once appeared in a genius BOM. — fix: Add the explicit sutherland.costly_signal tag; and either fold the spare-strip/spare-pin bundle into a future genius version's BOM when it's actually scheduled to ship, or drop the specific 'bundled alongside I2' claim until it is costed.",
+    "[genius] The v1_hero_case BOM line for the hard case still reads 'replacing the poly bag [I1]' with no hedge, while every innovaty field touching the same premise (target_spec.over_served_to_cut, errc.eliminate, what_i_cut, packaging.upgrade_vs_category) was reworded this pass to explicitly flag the current-packaging claim as 'assumed, not confirmed.' This is a minor residual inconsistency showing the reframe wasn't carried into genius's own file, even though the underlying fact status is identical. — fix: Reword the BOM line to '...replacing the poly bag this ASIN is assumed (unconfirmed) to currently ship in [I1]' for consistency with innovaty's language.",
+    "[genius] broken rail: contribution >= 25% of price"
+  ]
+}

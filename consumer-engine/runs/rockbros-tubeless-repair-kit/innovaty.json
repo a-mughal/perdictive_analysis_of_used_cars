@@ -26,7 +26,7 @@
       "prior_art_risk": "low",
       "prior_art_reason": "Hinged hard cases with foam organizer inserts are ubiquitous across pocket-tool, first-aid and EDC categories; this is generic tooling with no novel mechanism to infringe.",
       "test_that_proves_it": "100-cycle, 1 m shake-drop test plus a 30-day 40 C / 70% RH storage cycle, confirming zero part rattle and strip flexibility (Shore A within 10% of baseline) versus an unsealed poly-bag control.",
-      "how_it_looks_in_main_image": "The matte tool kit's hard case popped open on a plain surface, three numbered pins and five sealed rubber strips each seated in their own foam slot, nothing loose.",
+      "how_it_looks_in_main_image": "The tool kit's hard case popped open on a plain surface, the tool in its current stock finish with three plain (unnumbered) pins and five ordinary rubber strips each seated in their own foam slot, nothing loose.",
       "buyer_sentence": "It comes in this little case where everything has its own slot — nothing rattles around and the strips don't feel exposed and half-cooked the way I was worried they'd be in just a bag."
     },
     {
@@ -131,7 +131,7 @@
     }
   ],
   "packaging": {
-    "unboxing_moment": "In the first ten seconds the buyer lifts a slim hinged lid instead of tearing open a poly bag — the packaging this ASIN is assumed, but not independently confirmed, to currently ship in; that assumption is to be verified against the actual current fulfillment packaging before tooling is committed. Inside, three numbered chrome-tipped pins and five glossy red rubber strips sit in their own molded slots with zero rattle, exactly as the kit ships today. Nothing feels loose, nothing feels improvised, and the rubber does not look or feel dusty. A single printed step insert — three numbered install steps printed on the inside of the case lid or a thin slip card cut from the same foam-insert tooling, at no additional mold or SKU cost — sits right where the buyer's eye lands, so the first attempt is guided even before the numbered pins (I5) or QR proof card (I3) ship in the later fast-follow.",
+    "unboxing_moment": "In the first ten seconds the buyer lifts a slim hinged lid instead of tearing open a poly bag — the packaging this ASIN is assumed, but not independently confirmed, to currently ship in; that assumption is to be verified against the actual current fulfillment packaging before tooling is committed. Inside, three plain (unnumbered) chrome-tipped pins and five glossy red rubber strips sit in their own molded slots with zero rattle, exactly as the kit ships today. Nothing feels loose, nothing feels improvised, and the rubber does not look or feel dusty. A single printed step insert — three numbered install steps printed on the inside of the case lid or a thin slip card cut from the same foam-insert tooling, at no additional mold or SKU cost — sits right where the buyer's eye lands, so the first attempt is guided even before the numbered pins (I5) or QR proof card (I3) ship in the later fast-follow.",
     "upgrade_vs_category": "The category norm for this price band is believed to be a plain poly bag with loose pins and an exposed sheet of rubber strips — scout observed this on a rival's tile (the Genuine Innovations kit), and the buyer independently described fearing the same thing for this ASIN, but scout never confirmed this ASIN's own current packaging, so treat it as the working assumption, not a settled fact. Swapping the assumed poly-bag baseline for a reusable slotted hard case is a visible, felt step up in perceived engineering effort (sutherland.costly_signal) that a buyer reads as quality before they ever use the tool, directly answering the buyer's own stated packaging_expectation. The foil-sealed strip pouch (I2) and QR proof card (I3) are a near-zero-cost fast-follow once this leaner case-only launch is proven, per genius's recommended v1_hero_case scope.",
     "cost_tier": "tooling"
   },
@@ -190,10 +190,10 @@
   },
   "listing_implications": {
     "title_first_60": "ROCKBROS Tubeless Tire Plug Kit, No-Glue Repair, Hard Case",
-    "main_image_brief": "Show the tool in its current stock finish laid open beside its slotted hard case, with the three numbered pins and the five rubber strips each visible in their own slot exactly as they ship today (no foil pouch, no proof card — those are the v2 fast-follow), on the warm sandstone-to-charcoal anchor background — the hard case itself, open and organized, is the single v1_hero_case change on display, no text overlay.",
+    "main_image_brief": "Show the tool in its current stock finish laid open beside its slotted hard case, with the three plain (unnumbered) pins and the five rubber strips each visible in their own slot exactly as they ship today (no foil pouch, no proof card, no pin numbering — those are the v2 fast-follow), on the warm sandstone-to-charcoal anchor background — the hard case itself, open and organized, is the single v1_hero_case change on display, no text overlay.",
     "image_briefs_2_to_4": [
       "Scale: the tool held in one hand next to a tire valve stem and a coin, proving it truly fits a jersey pocket.",
-      "Hard case / what's in the box: the case open flat-lay, the tool, three numbered pins and five rubber strips each in a labeled slot exactly as they ship today.",
+      "Hard case / what's in the box: the case open flat-lay, the tool, three plain (unnumbered) pins and five rubber strips each in a labeled slot exactly as they ship today.",
       "Install in three steps: flatten the puncture, insert a strip, pump CO2 — shot trailside on an actual punctured tire holding air."
     ],
     "honest_limitations": [
@@ -205,11 +205,11 @@
   "image_prompts": [
     {
       "purpose": "main_image",
-      "prompt": "A macro product photograph of a compact silver-toned raw-anodized aluminum bike tire plug tool with three integrated pins, shown open beside its slim charcoal hard case whose molded foam insert holds the tool in its own slot, three numbered chrome-tipped steel pins in their own slots, and five ordinary dark-red rubber bacon strips resting in their own foam compartment exactly as they ship today — nothing foil-wrapped, no printed card; the open case with its organized slotted foam layout is the single hero visual, arranged in a tidy three-quarter overhead flat-lay on a warm sandstone-to-charcoal gradient background with soft diffused studio lighting that puts a gentle highlight along the foam texture and the tool's brushed metal finish, sharp focus throughout, no text or logos overlaid, photorealistic e-commerce product photography."
+      "prompt": "A macro product photograph of a compact silver-toned raw-anodized aluminum bike tire plug tool with three integrated pins, shown open beside its slim charcoal hard case whose molded foam insert holds the tool in its own slot, three plain unnumbered chrome-tipped steel pins in their own slots, and five ordinary dark-red rubber bacon strips resting in their own foam compartment exactly as they ship today — nothing foil-wrapped, no printed card; the open case with its organized slotted foam layout is the single hero visual, arranged in a tidy three-quarter overhead flat-lay on a warm sandstone-to-charcoal gradient background with soft diffused studio lighting that puts a gentle highlight along the foam texture and the tool's brushed metal finish, sharp focus throughout, no text or logos overlaid, photorealistic e-commerce product photography."
     },
     {
       "purpose": "packaging",
-      "prompt": "A close-up lifestyle photograph of a pair of dust-smudged cyclist's hands lifting the hinged lid off a slim charcoal hard case, revealing three numbered chrome pins and five dark-red rubber strips seated snugly in individual molded foam slots with zero rattle, exactly as the kit ships today; the case rests on a weathered wooden tailgate or a gravel-dusted bike top-tube, warm early-morning side light raking across the foam texture, shallow depth of field blurring a gravel bike frame in the background, documentary-style product-in-use photography, no visible text or brand logos legible."
+      "prompt": "A close-up lifestyle photograph of a pair of dust-smudged cyclist's hands lifting the hinged lid off a slim charcoal hard case, revealing three plain unnumbered chrome pins and five dark-red rubber strips seated snugly in individual molded foam slots with zero rattle, exactly as the kit ships today; the case rests on a weathered wooden tailgate or a gravel-dusted bike top-tube, warm early-morning side light raking across the foam texture, shallow depth of field blurring a gravel bike frame in the background, documentary-style product-in-use photography, no visible text or brand logos legible."
     },
     {
       "purpose": "lifestyle",

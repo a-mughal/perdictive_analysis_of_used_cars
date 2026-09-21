@@ -1,0 +1,103 @@
+{
+  "findings": [
+    {
+      "id": "K2",
+      "file": "innovaty",
+      "field_path": "innovaty.packaging.unboxing_moment / innovaty.image_prompts[1] (packaging) / innovaty.listing_implications.image_briefs_2_to_4[1]",
+      "severity": "medium",
+      "finding": "The near-zero-cost printed step insert added in this pass to fix what_i_cut's gap ('sits right where the buyer's eye lands' per packaging.unboxing_moment) is not depicted in any of the three image_prompts or the 'what's in the box' listing image brief. The packaging image_prompt describes the case open showing only the pins and strips, with no mention of the step insert/slip card at all — so the one instructional aid v1 actually ships with is invisible in every image meant to prove it exists, undercutting the fix's own rationale (post.review_trigger / 'first attempt succeeds unread' only works if the buyer can see or find the guide, and image #3 is the number-one conversion leak per the buyer-journey gates).",
+      "fix": "Add the printed step insert (lid print or slip card) to the packaging image_prompt and to image_briefs_2_to_4's 'what's in the box' brief, and resolve the still-open either/or ('printed on the inside of the case lid OR a thin slip card') into one concrete implementation so genius can decide whether it needs its own foam slot.",
+      "owner_agent": "innovaty"
+    },
+    {
+      "id": "K3",
+      "file": "innovaty",
+      "field_path": "innovaty.sustainability.claims[0] / innovaty.packaging.upgrade_vs_category / innovaty.target_spec.over_served_to_cut[1]",
+      "severity": "medium",
+      "finding": "The sustainability claim was correctly softened this pass to compare against 'a typical poly-bag baseline for this product category' rather than asserting anything about this ASIN's own prior packaging — that fixes the Amazon-suppression risk on the specific-ASIN framing. But the category-baseline premise itself is still attributed to 'scout's observation of a rival tile (the Genuine Innovations kit)', and scout's actual competitor entry never mentions packaging format at all — it only describes the product photo as 'a plastic-handled plug tool shown beside a flat sheet of rubber plug strips' (F4-adjacent). A flat sheet visible in a product photo is not evidence of poly-bag retail packaging. The 'typical poly-bag baseline for this product category' is still an inference dressed as a scout-sourced observation, just one level removed from the original (now-fixed) ASIN-specific version of the same problem.",
+      "fix": "Either get scout to source an actual competitor packaging-format fact (a listing photo or description that shows the retail packaging, not just the product), or reword the claim as innovaty's own working assumption about category norms rather than something 'scout observed'.",
+      "owner_agent": "innovaty"
+    },
+    {
+      "id": "K4",
+      "file": "genius",
+      "field_path": "genius.versions[0].bom[0].part / genius.versions[0].unit_weight_g",
+      "severity": "medium",
+      "finding": "Unresolved from the first pass: the BOM line for the aluminum tool body still cites '~48g per F3' as the tool body's own weight. F3 actually states the whole kit (3 plug tools + 5 rubber strips) weighs about 48g total, not the metal body alone — and F3 describes a kit with '3 plug tools' (plural separate tools), which may not even be the same physical shape as this ASIN's single tool with 3 integrated pins (scout's own variant_chosen flags this ambiguity). unit_weight_g (93g for v1_hero_case) is built on top of this mislabeled figure, and it directly feeds premortem #3 (packaging crossing the FBA size-tier line), one of the two 'major' impact premortem items.",
+      "fix": "Re-derive the tool body's own weight as a fraction of F3's 48g kit total (strips are a small share of it), or get an actual supplier weight before locking case/foam dimensions, since this number is load-bearing for the size-tier risk genius itself is worried about.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K5",
+      "file": "genius",
+      "field_path": "genius.timeline.phases[1].weeks / genius.timeline.phases[2].weeks / genius.timeline.phases[4].weeks / genius.timeline.phases[5].weeks / genius.timeline.weeks_to_first_sale",
+      "severity": "medium",
+      "finding": "Unresolved from the first pass: several timeline ranges are still narrower than the brief's ±30% floor for uncertain estimates even after the 1.35x planning-fallacy multiplier — phase 2 (prototypes/compliance testing) ≈±20.6%, phase 3 (soft tooling/T1) ≈±20%, phase 5 (production run) ≈±14.4%, phase 6 (freight/FBA check-in) ≈±16.7%, and the rolled-up weeks_to_first_sale ≈±21.7%. These are exactly the phases most exposed to genius's own flagged risks: a first-time compliance/aging test regime with this supplier, soft tooling for a new case, and a 22%-probability 'fatal' tariff/HTS premortem item sitting right next to the tooling and freight phases.",
+      "fix": "Widen phases 2, 3, 5 and 6 (and the rolled-up total) to at least ±30% around base, reflecting the tariff/HTS and first-time-compliance uncertainty already named in the premortem.",
+      "owner_agent": "genius"
+    },
+    {
+      "id": "K6",
+      "file": "buyer",
+      "field_path": "buyer.unmet_needs[2] (N3) / buyer.unmet_needs[3] (N4)",
+      "severity": "medium",
+      "finding": "Unresolved from the first pass: N3 (severity 8, the single highest-severity need in the file, and the direct justification for costed idea I3) and N4 (severity 5) still carry no evidence_cluster_ids and cite no scout fact_id, unlike N1/N2. N3's 'no proof, no reviews' framing traces to F11 (the blocked-fetch gap) rather than any complaint cluster, and N4's 'does it fit both road and MTB tubeless' gap is already named verbatim in scout's own unanswered_questions — both are citable but uncited.",
+      "fix": "Add evidence_cluster_ids or an explicit fact_id (F11 for N3; the matching unanswered_questions entry for N4) so both needs trace to a source, especially since N3 alone justifies I3's ~$800 one-off spend.",
+      "owner_agent": "buyer"
+    },
+    {
+      "id": "K7",
+      "file": "innovaty",
+      "field_path": "innovaty.color_strategy.main_image_anchor",
+      "severity": "medium",
+      "finding": "Unresolved from the first pass: still claims the warm gradient background is needed to 'separate the tile from the white-background, silver-tool rivals in the same grid row,' but no scout fact_id describes any competitor's image background — scout's competitor entries (Genuine Innovations, Stan's Dart, Dynaplug) describe tool shape and price only, never background color. Separately, this field is honest that v1's click-through gain rests entirely on the case (since I4's finish change is deferred), which is good practice, but the underlying competitive-background claim itself is still unsourced.",
+      "fix": "Either cite a real source for rival tile backgrounds or reword as a design choice rather than a stated competitive fact.",
+      "owner_agent": "innovaty"
+    },
+    {
+      "id": "K8",
+      "file": "innovaty",
+      "field_path": "innovaty.errc.raise[0] / innovaty.errc.create[0] / innovaty.errc.create[1]",
+      "severity": "low",
+      "finding": "Unresolved from the first pass: errc.raise[0] (I2's foil seal) and errc.create[0]/[1] (I3's QR proof card, I5's numbered-pin system) still carry no '(ships v2)' flag, unlike every other innovaty field that touches these ideas (packaging, color_strategy, what_i_cut, image_prompts all label the version split correctly). A reader skimming only the ERRC summary would believe these ship at launch.",
+      "fix": "Add a 'ships v2' parenthetical to the raise/create bullets referencing I2/I3/I5, matching the labeling discipline used elsewhere in the file.",
+      "owner_agent": "innovaty"
+    },
+    {
+      "id": "K9",
+      "file": "innovaty",
+      "field_path": "innovaty.bundle_or_addition.why_it_wins / innovaty.bundle_or_addition.cost_tier",
+      "severity": "low",
+      "finding": "The bundle_or_addition rewrite correctly resolves the v1-scope contradiction from the first pass (it's now clearly labeled a v2_later fast-follow, consistent with the strip count everywhere else). But two smaller issues remain: (1) why_it_wins still invokes a 'costly signal' argument without the formal sutherland.costly_signal tag the adjacent packaging.upgrade_vs_category field uses inline for the same concept — untagged judgements score at half weight; (2) the concept is not costed in ANY genius version — not v1_hero_case (correctly excluded) but also not in v1_plus_bundle, even though it claims to fast-follow 'alongside I2's foil-sealed strip-freshness pouch,' which IS costed in v1_plus_bundle. The bundle idea itself has never once appeared in a genius BOM.",
+      "fix": "Add the explicit sutherland.costly_signal tag; and either fold the spare-strip/spare-pin bundle into a future genius version's BOM when it's actually scheduled to ship, or drop the specific 'bundled alongside I2' claim until it is costed.",
+      "owner_agent": "innovaty"
+    },
+    {
+      "id": "K10",
+      "file": "genius",
+      "field_path": "genius.versions[0].bom[2].part",
+      "severity": "low",
+      "finding": "The v1_hero_case BOM line for the hard case still reads 'replacing the poly bag [I1]' with no hedge, while every innovaty field touching the same premise (target_spec.over_served_to_cut, errc.eliminate, what_i_cut, packaging.upgrade_vs_category) was reworded this pass to explicitly flag the current-packaging claim as 'assumed, not confirmed.' This is a minor residual inconsistency showing the reframe wasn't carried into genius's own file, even though the underlying fact status is identical.",
+      "fix": "Reword the BOM line to '...replacing the poly bag this ASIN is assumed (unconfirmed) to currently ship in [I1]' for consistency with innovaty's language.",
+      "owner_agent": "genius"
+    }
+  ],
+  "unsourced_claim_paths": [
+    "innovaty.sustainability.claims[0]",
+    "innovaty.packaging.upgrade_vs_category",
+    "innovaty.target_spec.over_served_to_cut[1]",
+    "innovaty.color_strategy.main_image_anchor",
+    "buyer.unmet_needs[2]",
+    "buyer.unmet_needs[3]"
+  ],
+  "untagged_judgement_paths": [
+    "innovaty.bundle_or_addition.why_it_wins"
+  ],
+  "contamination_detected": false,
+  "overall": "flags_to_fix",
+  "three_things_the_founder_must_hear": [
+    "Buyer's single highest-severity unmet need (N3, severity 8 — 'no proof, no reviews on this exact listing' — the direct justification for costed idea I3) and N4 both cite no scout fact_id or complaint cluster, unlike N1/N2. N3 actually traces to a blocked-fetch gap, not a real complaint pattern, and N4's question is already sitting verbatim in scout's own unanswered_questions. Both are fixable with a real citation, but right now the single biggest reason innovaty gives for spending on I3 is dressed up as buyer evidence when it's really a research gap.",
+    "Two of last round's medium findings are still open: the 48-gram figure scout sourced for the whole kit (tool plus 5 strips) is still labeled as the metal tool body's own weight in the cost model, which feeds directly into the exact FBA size-tier risk the plan itself calls out as a major premortem item; and several timeline phases (tooling, compliance testing, production, freight) are still narrower than the ±30% floor the brief requires for uncertain estimates, right next to a tariff risk genius itself rates as having 'fatal' impact.",
+    "The poly-bag/sustainability story is now honestly framed as an unconfirmed assumption about THIS ASIN, which fixes the worst of the original problem — but the fallback claim, that a plain poly bag is the 'typical baseline for this product category,' is still attributed to a scout observation that never actually described any competitor's packaging, only a rival's product photo. It's a smaller version of the same evidence gap, one level removed."
+  ]
+}

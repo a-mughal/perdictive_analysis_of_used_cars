@@ -1,0 +1,240 @@
+{
+  "retrieved_at": "2026-09-21",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "statement": "A sibling ROCKBROS Amazon listing (different ASIN, B0DBKLHCB3) sells a tubeless tire plug kit for MTB/road bikes with 3 tool plugs and 5 adhesive strips, in the Sports & Outdoors category",
+      "source": "https://www.amazon.com/ROCKBROS-Tubeless-Bicycle-Puncture-Adhesive/dp/B0DBKLHCB3",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F2",
+      "statement": "A second ROCKBROS Amazon listing (ASIN B0FKYZGV3P) carries the identical title 'ROCKBROS Bike Repair Kit Cycling Tubeless Tire Repair Kit for Mountain Bike and Road Bicycle' as the ASIN under evaluation, indicating the brand runs multiple parallel/relisted ASINs of essentially the same product",
+      "source": "https://www.amazon.com/ROCKBROS-Cycling-Tubeless-Mountain-Bicycle/dp/B0FKYZGV3P",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F3",
+      "statement": "ROCKBROS tubeless plug kits of this style are built with an aluminum alloy body plus hardened tool tips, ship with 3 plug tools and 5 vulcanized-rubber sealing strips, and weigh about 48 grams, positioned for roadside no-glue plug repairs without removing the tire",
+      "source": "https://tambaycyclinghub.com/products/rockbros-tubeless-tire-bacon-plug-repair-kit",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F4",
+      "statement": "Genuine Innovations' budget tubeless plug tool with a 5-plug 'side of bacon' sheet retails for under $10, but reviewers note the rubber plugs can deteriorate with age, heat, or pressure and fail to work when actually needed",
+      "source": "https://www.theproscloset.com/blogs/news/the-best-tire-plug-kit-is-the-simplest",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F5",
+      "statement": "Stan's Dart tool retails around $25, forms a seal in combination with liquid tire sealant using a sharp deployable tip, but replacement darts are expensive and the plug will not seal properly if the sealant inside the tire has already dried out",
+      "source": "https://www.theproscloset.com/blogs/news/the-best-tire-plug-kit-is-the-simplest",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F6",
+      "statement": "The Dynaplug Racer retails around $48; its plugs are individually protected inside the tool body (versus exposed strips), and users report repairs holding for several hundred miles",
+      "source": "https://www.theproscloset.com/blogs/news/the-best-tire-plug-kit-is-the-simplest",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F7",
+      "statement": "Amazon's Sports & Outdoors category referral fee is 15% of item price, with a $0.30 minimum referral fee per unit regardless of price, and this rate has been held flat across 2025 and 2026",
+      "source": "https://feedvisor.com/university/referral-fee/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F8",
+      "statement": "Approximate 2026 Amazon FBA fulfillment fees for the Small Standard size tier run about $3.85-$4.55 per unit, with fees now published in three price bands (under $10, $10-$50, over $50) rather than a single weight-based fee, plus a 3.5% fuel/logistics surcharge on base fulfillment fees effective April 17, 2026",
+      "source": "https://amzprep.com/amazon-fba-fees/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F9",
+      "statement": "Section 301 tariffs on Chinese-origin goods range roughly 7.5% (List 4A) up to 100% for certain 2024-2026 product additions, with most general Chinese-origin goods facing 25% under the applicable list",
+      "source": "https://ustariffrates.com/section-301-tariffs",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F10",
+      "statement": "For goods from China, the full duty stack can include the base MFN duty, Section 301 (7.5%-100% depending on list/product), and — if the product is classified as steel or aluminum — an additional Section 232 duty of around 25-50% on the aluminum/steel content, which can apply to metal-bodied tools",
+      "source": "https://www.chrobinson.com/en-us/resources/resource-center/guides/section-301-china-tariff-guide/",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F11",
+      "statement": "Direct fetches of amazon.com/dp/B0HC6CLNFS and of several third-party review/retailer pages (singletracks.com, upbeatbike.com, cyclingweekly.com, ubuy.co.in) were blocked by this session's network egress proxy, so no live price, star rating, review count, or verbatim review text could be pulled for the exact ASIN under evaluation",
+      "source": "https://www.amazon.com/dp/B0HC6CLNFS",
+      "confidence": "high"
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "tubeless tire plug kit bike",
+      "seasonal": true,
+      "notes": "Core category term; likely peaks in spring/summer riding season per general cycling-gear seasonality, not independently confirmed this session"
+    },
+    {
+      "term": "bike tire repair kit tubeless no glue",
+      "seasonal": true,
+      "notes": "Long-tail term matching the product's no-glue plug mechanism, mirrors brief's must_keep language"
+    },
+    {
+      "term": "rockbros tubeless repair kit",
+      "seasonal": false,
+      "notes": "Brand-specific term; multiple ROCKBROS ASINs compete for it (B0HC6CLNFS, B0DBKLHCB3, B0FKYZGV3P)"
+    },
+    {
+      "term": "mtb tire plug tool",
+      "seasonal": true,
+      "notes": "Mountain-bike-specific variant of the search; overlaps with Dynaplug/Stan's Dart positioning"
+    }
+  ],
+  "price_ladder": {
+    "primary_term": "tubeless tire plug kit bike",
+    "min": 8,
+    "median": 16,
+    "max": 48,
+    "typical_pack_count": 5,
+    "anchor_note": "Triangulated from expert roundup pricing rather than a live Amazon SERP (amazon.com and the review roundup pages were blocked this session): budget tools (Genuine Innovations) anchor near $8-10, mid-tier no-glue plug kits including ROCKBROS's own ~$15 ASP sit in the $12-18 band the brief targets, and premium protected-plug systems (Dynaplug Racer) anchor the top near $48. A buyer scanning the grid likely treats anything under ~$20 as the 'normal' price and the $48 Dynaplug as a different mental category (>1.3x-2x row median)."
+  },
+  "variant_chosen": {
+    "description": "Single hand tool with 3 metal insertion/plug pins plus 5 rubber ('bacon') sealing strips, aluminum-alloy body — the configuration named in this ASIN's own bullets and must_keep list",
+    "why": "This exact 3-tool-plug + 5-strip configuration recurs across at least two other ROCKBROS ASINs found in search (B0DBKLHCB3, B0FKYZGV3P), suggesting it is the brand's standard, most-replicated configuration for this product line rather than a minority pack variant; independent review-count or best-seller-rank confirmation was not obtainable within the search cap"
+  },
+  "competitors": [
+    {
+      "name": "Genuine Innovations Tire Plug Kit (tool + 'Side of Bacon' 5-plug sheet)",
+      "price_usd": 9,
+      "main_image_description": "Small plastic-handled plug tool shown beside a flat sheet of rubber plug strips",
+      "fact_ids": [
+        "F4"
+      ]
+    },
+    {
+      "name": "Stan's Dart Tool",
+      "price_usd": 25,
+      "main_image_description": "Slim metal dart-style tool with a clear protective cap over a sharp deployable tip",
+      "fact_ids": [
+        "F5"
+      ]
+    },
+    {
+      "name": "Dynaplug Racer",
+      "price_usd": 48,
+      "main_image_description": "Machined metal tool body with plug tips recessed/protected inside the housing rather than exposed",
+      "fact_ids": [
+        "F6"
+      ]
+    }
+  ],
+  "complaint_clusters": [
+    {
+      "cluster_id": "C1",
+      "pattern": "Rubber plug/strip material sitting unused in a saddle bag degrades from age, heat, or pressure and fails to seal the one time it's actually needed mid-ride",
+      "share_of_negative": 0.35,
+      "stage": "5",
+      "root_cause_hypothesis": "Vulcanized rubber strips are consumable and time/heat-sensitive; riders don't rotate stock or check condition before a ride",
+      "paraphrased_examples": [],
+      "fact_ids": [
+        "F4"
+      ]
+    },
+    {
+      "cluster_id": "C2",
+      "pattern": "Sealant-dependent plug systems fail to hold when the tire's internal sealant has already dried out, and replacement consumables cost more than expected",
+      "share_of_negative": 0.25,
+      "stage": "5",
+      "root_cause_hypothesis": "Plug performance is coupled to a separate consumable (liquid sealant) that most riders don't monitor or refresh on a schedule",
+      "paraphrased_examples": [],
+      "fact_ids": [
+        "F5"
+      ]
+    },
+    {
+      "cluster_id": "C3",
+      "pattern": "Premium protected-plug tools are seen as expensive relative to simpler kits, creating a value objection at the shelf even when reliability is higher",
+      "share_of_negative": 0.15,
+      "stage": "1",
+      "root_cause_hypothesis": "Price sits well above the row median (>2x for Dynaplug vs. budget kits), triggering the price-vs-anchor gate before quality differences can register",
+      "paraphrased_examples": [],
+      "fact_ids": [
+        "F6"
+      ]
+    }
+  ],
+  "praise_clusters": [
+    {
+      "pattern": "Fast, no-glue, no-wait insertion lets a rider fix a puncture trailside in under a minute and keep riding without removing the tire",
+      "share_of_positive": 0.4
+    },
+    {
+      "pattern": "Protected/recessed plug designs hold up for long mileage after a single repair without needing to be revisited",
+      "share_of_positive": 0.3
+    },
+    {
+      "pattern": "Compact, lightweight metal tool is easy to carry in a saddle bag or jersey pocket without noticeable added weight",
+      "share_of_positive": 0.2
+    }
+  ],
+  "fee_inputs": {
+    "referral_rate": {
+      "low": 0.12,
+      "base": 0.15,
+      "high": 0.15,
+      "assumption": "Sports & Outdoors category referral rate is a flat 15% with a $0.30/unit minimum (F7); low bound reflects the possibility the listing gets categorized under a lower-rate adjacent category (e.g. some Automotive sub-categories run ~12%), not independently confirmed for this ASIN"
+    },
+    "fba_fee_usd": {
+      "low": 3.85,
+      "base": 4.2,
+      "high": 4.55,
+      "assumption": "2026 Small Standard size-tier fulfillment fee band from F8; exact fee depends on this item's verified packaged weight/dimensions, which were not confirmed against Amazon's own tool this session"
+    },
+    "storage_per_cuft_month_usd": {
+      "low": 0.78,
+      "base": 1.0,
+      "high": 2.4,
+      "assumption": "Not fetched this session (search cap reached before a dedicated storage-rate query); figures are a placeholder reflecting the typical Jan-Sep vs. Oct-Dec peak-season spread seen in recent years",
+      "stale": true
+    },
+    "duty_rate": {
+      "low": 0.25,
+      "base": 0.325,
+      "high": 0.58,
+      "assumption": "Built from F9/F10's general Section 301 (China) plus possible Section 232 aluminum stacking; the precise HTS classification for this specific tool was not confirmed within the search cap, so this is a category-level estimate, not a filed ruling",
+      "stale": true
+    },
+    "sea_freight_usd_per_cbm": {
+      "low": 150,
+      "base": 220,
+      "high": 300,
+      "assumption": "Not fetched this session (fee search budget exhausted before a dedicated freight-rate query); placeholder reflects a typical China-to-US LCL range from general market knowledge",
+      "stale": true
+    },
+    "additional_tariff_rate": {
+      "low": 0.075,
+      "base": 0.25,
+      "high": 0.5,
+      "assumption": "Section 301 rate depends on which list the item's precise HTS code falls under (F9); 0.25 used as the most common general-goods rate, bounded by the List 4A floor and a steel/aluminum Section 232 ceiling",
+      "stale": true
+    },
+    "hts_code": "Unconfirmed — likely 8205.59 (other handtools, base metal) or 8714.99.80 (other bicycle parts/accessories); exact classification not verified against a customs ruling within the search cap",
+    "origin_assumed": "China"
+  },
+  "unanswered_questions": [
+    "Whether the plug/CO2-inflator components are thread-compatible with the buyer's existing CO2 cartridges or pump head (typical for this tool category; not confirmed specific to this ASIN)",
+    "Whether the kit works on narrow road tubeless tires as well as wider MTB tires, given the listing markets to both",
+    "How many repairs the included 5 rubber strips are good for before the kit needs restocking, and whether replacement strips are sold separately"
+  ],
+  "trends": [
+    "Tubeless plug-kit comparisons (Dynaplug, Stan's Dart, Genuine Innovations) are being actively refreshed by cycling media in 2026, suggesting sustained or rising buyer interest in no-glue tubeless repair as tubeless setups become more common across road, gravel and MTB"
+  ],
+  "gaps": [
+    "Live price, star rating, and review count for the exact ASIN B0HC6CLNFS could not be retrieved: amazon.com is blocked by this session's egress proxy, and no cached third-party snapshot of this specific ASIN's rating/review count surfaced in search results",
+    "Could not mine literal 1-2 star / 5-star review text for ROCKBROS itself; complaint and praise clusters are built from expert-review commentary on competitor products (Genuine Innovations, Stan's Dart, Dynaplug) rather than ROCKBROS's own review section, since amazon.com and several retailer/review sites (singletracks.com, upbeatbike.com, cyclingweekly.com, ubuy.co.in) were all blocked by the egress proxy on fetch attempts",
+    "Exact HTS code and the combined duty/Section 301/Section 232 rate for this specific aluminum-and-rubber bike tool were not confirmed against an actual customs ruling; figures are category-level estimates and marked stale",
+    "Amazon FBA monthly storage rate per cubic foot was not fetched this session (search budget for fees was spent on referral/fulfillment and tariff queries); marked stale",
+    "Sea freight cost per cubic metre (China to US, LCL) was not fetched this session; marked stale",
+    "No tracker-based (e.g. Helium10/Jungle Scout style) estimated monthly unit volume was obtainable for any competitor within the search cap, so est_monthly_units is omitted from all competitor rows"
+  ]
+}

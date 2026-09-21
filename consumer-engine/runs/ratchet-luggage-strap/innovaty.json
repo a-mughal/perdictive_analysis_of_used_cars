@@ -1,0 +1,221 @@
+{
+  "target_spec": {
+    "needs_targeted": ["N1", "N2", "N3", "N4"],
+    "must_fix_clusters": ["C1", "C2"],
+    "over_served_to_cut": [
+      "Built-in combination/TSA lock mechanisms bolted onto the buckle (Protege's lock variant rates lower at 4.0 vs 4.3 for the plain version, despite the added complexity) — F3",
+      "Pack-count escalation (8-packs) competing on quantity rather than buckle quality — F1",
+      "Painted/chrome/multi-color buckle and webbing finishes that add cost without addressing the buyer's actual fear (buckle survival), which every page-one competitor spends on instead of load rating — F5, F9"
+    ]
+  },
+  "ideas": [
+    {
+      "idea_id": "I1",
+      "name": "Radiused-Anchor, Face-Stamped Steel Buckle",
+      "role": "hero",
+      "aspect": "durability",
+      "mechanism": "The buckle's webbing-entry slot is radiused to a minimum 1.5mm edge during the stamping/deburring step instead of left as a sheared 90° edge, removing the sharp edge F6 identifies as the micro-abrasion point where 87% of buckle failures start. The buckle face carries a deep-embossed (not printed) '150KG PER BUCKLE' legend at least 4mm tall so it survives handling and reads at thumbnail size. Finish is left bead-blasted matte steel, unpainted, so the radius and legend stay crisp instead of filling in with coating.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1", "N3"],
+      "improves_gates": ["gate.image_orientation", "gate.image_fit", "gate.brand_trust", "gate.price_vs_anchor"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.local_quality", "triz.composite_materials", "erric.raise", "cialdini.authority", "sutherland.costly_signal"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "tooling",
+      "priority": "now",
+      "prior_art_risk": "medium",
+      "prior_art_reason": "Ladder-lock ratchet buckles and radiused webbing slots both have broad prior art in cargo/outdoor gear; scout found no page-one competitor combining a radiused anchor with a face-stamped per-buckle kg rating on a suitcase strap, but the individual elements are common enough that an FTO check is warranted before the die modification is cut.",
+      "test_that_proves_it": "1,000-cycle ratchet load/release fatigue test at 23°C and 40°C on three lots, radiused-edge vs sheared-edge control, inspected at 10x magnification for crack initiation at the anchor; adapted from PSTC/ASTM D3330 & D3654 peel/shear methodology.",
+      "how_it_looks_in_main_image": "A single coiled black webbing strap with the matte-steel ladder-lock buckle turned face-out, the embossed '150KG PER BUCKLE' text and the smoothly rounded buckle-slot edge both sharp and legible against a plain background.",
+      "buyer_sentence": "It's actually got the number stamped right into the metal, not on a sticker, and it's rounded off exactly where mine cracked last time, so I'm not sitting here waiting for flight three to snap it."
+    },
+    {
+      "idea_id": "I2",
+      "name": "Box-X Bar-Tacked Anchor Reinforcement",
+      "role": "supporting",
+      "aspect": "reliability",
+      "mechanism": "Where the webbing wraps the buckle's center bar, the tape is folded back on itself for a 25mm double-layer overlap and closed with a box-X bar-tack stitch pattern (the same reinforcement used on backpack strap anchors) instead of the single straight box-stitch competitors use. This spreads the ratcheting load across the stitch field and the folded layer instead of concentrating it at one thread line against the buckle bar, directly countering the C1 fatigue-crack root cause. Same webbing and thread, just a different stitch path and one extra fold — a sewing-pattern change on the same line, no new material class.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1"],
+      "improves_gates": ["gate.image_2_to_6", "gate.bullets", "gate.reviews_negative_first"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.local_quality", "triz.segmentation", "erric.raise", "kano.must_be"],
+      "thumbnail_visibility": "medium",
+      "cost_tier": "dimes",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Box-X bar-tack reinforcement at a webbing/hardware anchor is a decades-old, ubiquitous sewing technique used across backpacks and harnesses; no meaningful patent exposure.",
+      "test_that_proves_it": "1,000-cycle load-and-release fatigue test at 100kg applied tension comparing box-X bar-tack anchor vs single straight-stitch anchor; pass = no stitch pull-through or webbing tear at the bar.",
+      "how_it_looks_in_main_image": "A close crop on the buckle-to-webbing joint showing the folded, box-X stitched anchor where the tape wraps the bar, visibly different from a competitor's single straight stitch line.",
+      "buyer_sentence": "The strap's double-folded and stitched in an X right where it meets the buckle, not just one line of thread, so that's not going to be the spot that gives out this time."
+    },
+    {
+      "idea_id": "I3",
+      "name": "Color-Change Ratchet-Lock Indicator Tab",
+      "role": "supporting",
+      "aspect": "eye_catching",
+      "mechanism": "A small spring-loaded pawl tab, overmolded in a second color (bright orange), sits behind the ladder-lock pawl. When a rung tooth is not fully seated, the tab's colored tip protrudes past the buckle housing edge; once the pawl drops fully into a rung, the tab is pushed flush and hidden inside the housing. The customer sees orange (not locked) or all-black (locked) with no guesswork about whether the ratchet caught. It is a two-shot overmold on the existing pawl part — one added insert in the same mould, not a new mechanism.",
+      "fixes_complaint_clusters": ["C2"],
+      "improves_needs": ["N2"],
+      "improves_gates": ["gate.image_2_to_6", "gate.qna", "gate.bullets"],
+      "kano_class": "delighter",
+      "triz_or_erric_tags": ["triz.colour_change", "triz.periodic_action", "kano.delighter", "nudge.default"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "dimes",
+      "priority": "now",
+      "prior_art_risk": "medium",
+      "prior_art_reason": "Color-indicator lock-confirmation tabs exist on other hardware (car-seat buckles, some cam straps); this exact pawl-tab mechanism on a ladder-lock ratchet wasn't found in scout's search, but analogous mechanisms are common enough to warrant a quick FTO check given the tooling spend.",
+      "test_that_proves_it": "1,000-cycle engagement test: ratchet closed to a random rung, tab position (protruding vs flush) checked against actual tooth engagement measured by pull-off force; 100% agreement required across 3 buckle samples.",
+      "how_it_looks_in_main_image": "The buckle shown mid-ratchet with the small orange pawl tab visibly poking out of the housing in one frame and flush/hidden in a second frame beside it — a clear before/after of 'not locked' vs 'locked.'",
+      "buyer_sentence": "There's this little orange tab that pops out if it's not actually locked, so I don't have to guess and find out at baggage claim that it slid open overnight."
+    },
+    {
+      "idea_id": "I4",
+      "name": "Printed Load & Fit Legend on the Webbing Itself",
+      "role": "hygiene",
+      "aspect": "experience",
+      "mechanism": "The last 6 inches of webbing nearest each buckle is run through an extra print station (same silk-screen/heat-transfer process used for branding) to print '150KG PER BUCKLE · fits cases up to 32in/81cm' in white ink on the black tape. Because it's printed into the tape itself rather than on a cardboard hangtag, the spec answer survives long after packaging is discarded, so the buyer can still point to the claim months later.",
+      "fixes_complaint_clusters": [],
+      "improves_needs": ["N3", "N4"],
+      "improves_gates": ["gate.bullets", "gate.qna", "gate.brand_trust"],
+      "kano_class": "performance",
+      "triz_or_erric_tags": ["triz.merging", "cialdini.reciprocity", "post.cognitive_dissonance", "ulwick.outcome_statement"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "cents",
+      "priority": "later",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Printing text on webbing tape is a standard, widely used technique with no meaningful patent exposure.",
+      "test_that_proves_it": "Print adhesion/abrasion test: 50 dry/wet rub cycles (crockmeter or equivalent) on the printed section, legend must stay legible; plus 200h QUV exposure to check for fade.",
+      "how_it_looks_in_main_image": "A macro shot of the black webbing near the buckle showing the white printed '150KG PER BUCKLE · fits cases up to 32in' text legible on the tape itself.",
+      "buyer_sentence": "The weight rating's literally printed on the strap itself, not just on a box I'm going to throw away, so I can still prove what it's rated for six months from now."
+    },
+    {
+      "idea_id": "I5",
+      "name": "Steel Double-Wrap Keeper Ring",
+      "role": "hygiene",
+      "aspect": "convenience",
+      "mechanism": "A second small stamped-steel D-ring, cut from the same steel coil and gauge as the buckle in the same die run, is bar-tacked to the webbing at the 30-inch mark. Routing the strap tail through this ring before the main buckle lets the strap take a double-wrap path around slimmer packed cases, or a single long wrap around an XL case, extending usable reach by roughly 15% without lengthening the base webbing on every unit.",
+      "fixes_complaint_clusters": [],
+      "improves_needs": ["N4"],
+      "improves_gates": ["gate.bullets", "gate.image_2_to_6", "gate.qna"],
+      "kano_class": "performance",
+      "triz_or_erric_tags": ["triz.nesting", "triz.asymmetry", "jtbd.functional", "ulwick.underserved"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "dimes",
+      "priority": "later",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Auxiliary D-rings and double-wrap routing on straps are common in cargo and camera-strap gear; no meaningful prior-art risk for this use.",
+      "test_that_proves_it": "1,000-cycle insertion/retention test on the D-ring at 2mm and 10mm webbing positions, plus pull-off to 150kg on the D-ring's bar-tack point.",
+      "how_it_looks_in_main_image": "The strap routed in a double-wrap loop around a slim duffel, the small steel D-ring at the midpoint visibly guiding the second pass, next to a single-wrap shot on a large case.",
+      "buyer_sentence": "There's a little extra loop so I can double it back around my smaller bag or single-wrap it around the big one — one strap actually covers both instead of me guessing the size."
+    },
+    {
+      "idea_id": "I6",
+      "name": "Raw Matte Brushed-Steel Finish (No Paint, No Plating)",
+      "role": "supporting",
+      "aspect": "color",
+      "mechanism": "The buckle is left in its as-stamped, bead-blasted matte finish with no paint, powder-coat, or black-oxide plating step, which removes a finishing process from the line while keeping the raw brushed-steel look the buyer already reads as 'tool-grade' rather than a painted or chromed look that reads as costume hardware. The matte texture also resists fingerprints and scuffing better than a glossy finish, so it still looks new in a customer's unboxing review photo.",
+      "fixes_complaint_clusters": [],
+      "improves_needs": ["N3"],
+      "improves_gates": ["gate.image_orientation", "gate.brand_trust"],
+      "kano_class": "delighter",
+      "triz_or_erric_tags": ["erric.eliminate", "sutherland.costly_signal", "law.color_anchor"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "free",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Leaving stamped steel in an unpainted, bead-blasted finish is a finishing choice, not a novel mechanism; no prior-art exposure.",
+      "test_that_proves_it": "Salt-spray/humidity cabinet corrosion check at 24h and 30 days on three samples, confirming any surface staining stays cosmetic-only and doesn't affect the 150kg pull rating; 200h QUV for visual consistency.",
+      "how_it_looks_in_main_image": "The buckle photographed under raking light so the bead-blasted matte texture and brushed grain catch highlights with no glossy paint reflection, contrasting against a black-plastic competitor buckle.",
+      "buyer_sentence": "It's not painted or some shiny plastic-looking chrome — it's just raw brushed steel, and honestly that looks like it means business next to those cheap colored clips."
+    }
+  ],
+  "packaging": {
+    "unboxing_moment": "In the first ten seconds the buyer feels two neatly pre-coiled straps, each closed with a tight printed kraft-paper belly band instead of loose in a plain poly bag, and immediately sees the buckle's spec — gauge, per-buckle kg rating, case-size range — printed right on that band, matching the promise the buckle's photo already made. It reads as proof arriving in the box, not just product.",
+    "upgrade_vs_category": "The category norm buyer names explicitly is two loose straps tangled in a plain poly bag with nothing printed on them, which buyer says would read as 'just another cheap knockoff wearing a bigger price tag.' The upgrade swaps that poly bag for a printed paper belly-band/sleeve stating '1.2mm Stamped Steel · 150KG PER BUCKLE · Pull-Tested' plus one honest limitation line, so the box itself argues the case before the product is even used (law.packaging_first_touch, cialdini.reciprocity).",
+    "cost_tier": "cents"
+  },
+  "color_strategy": {
+    "product_color": "Raw matte/bead-blasted brushed steel buckle with black nylon webbing. Black reads as tool-grade, utilitarian trust rather than the primary-colored plastic clips every cheap competitor uses (buyer.color_read); leaving the steel unpainted signals nothing is being hidden under a coating — a costly-signal of confidence rather than decoration.",
+    "main_image_anchor": "A warm light-gray seamless studio background (not stark white like most rivals) with a single thin orange accent line sweeping behind the buckle, echoing the lock-indicator tab's color, so the tile visually separates from a page of white-background plastic-buckle straps while staying clean and professional rather than cargo-coded.",
+    "brand_direction": "A quiet, engineering-grade brand voice — closer to a hardware/tool brand than a travel-accessory brand, signaling 'built to a spec' rather than 'pretty travel gadget.'"
+  },
+  "bundle_or_addition": {
+    "what": "One spare stamped-steel ladder-lock buckle (same 1.2mm gauge, pre-threaded onto a short webbing offcut) included loose in the box as a field-replacement part, alongside the printed spec card.",
+    "why_it_wins": "Directly answers the buyer's rank-1 fear (will the buckle crack again like my last one) and the comfort/laziness pain of 'hunting for a replacement buckle mid-trip' — a spare buckle, not just a spare strap, cushions the exact failure mode named in C1 before it happens (triz.cushion_in_advance, triz.nesting).",
+    "cost_tier": "dimes"
+  },
+  "errc": {
+    "eliminate": [
+      "Built-in combination/TSA lock mechanisms on the buckle — unrelated to the buyer's actual fear and the one competitor with it rates lower (4.0 vs 4.3)",
+      "Painted, powder-coated, or chrome-plated buckle finishes"
+    ],
+    "reduce": [
+      "Pack-count escalation (no 8-pack race) — ship a focused 2-pack instead of competing on quantity",
+      "Webbing color/SKU variety down to a single black colorway, avoiding a dropdown maze (schwartz.overload, gate.variations)"
+    ],
+    "raise": [
+      "Buckle steel legibility and trust signal — large embossed per-buckle kg rating far above the category's 'no published rating' norm",
+      "Anchor-point durability engineering — radiused edge plus box-X bar-tack, far beyond the category's raw sheared-edge, single-stitch standard",
+      "On-strap information density — spec printed directly into the tape, not just a hangtag"
+    ],
+    "create": [
+      "A visible color-change lock-engagement indicator that no category competitor offers at all",
+      "A spare buckle (not just a spare strap) cushioned into the box against the exact failure mode buyers fear",
+      "A double-wrap keeper ring letting one geometry cover both slim and XL cases"
+    ]
+  },
+  "version_plan": {
+    "v1_now": ["I1", "I2", "I3", "I6"],
+    "v2_later": [
+      {
+        "idea_id": "I4",
+        "unlock_trigger": "Once v1 sales validate willingness to pay the price premium and review volume passes roughly 30 (moore.chasm), justifying the added print-station pass."
+      },
+      {
+        "idea_id": "I5",
+        "unlock_trigger": "If Q&A or return data shows buyers actually returning for 'too short for my case' at a rate worth solving, confirming N4's latent severity before spending on the extra die-cut D-ring."
+      }
+    ]
+  },
+  "listing_implications": {
+    "title_first_60": "Steel Ladder-Lock Luggage Compression Straps 2-Pack 150kg",
+    "main_image_brief": "Buckle face-out and close, matte brushed steel with the bold embossed 150KG PER BUCKLE legend and rounded anchor edge fully legible, black webbing coiled beneath it, shot on a warm light-gray seamless background with a thin orange accent line, no text overlay, no other props.",
+    "image_briefs_2_to_4": [
+      "Scale: the buckle held in a hand next to a tape measure/ruler, showing true size and the embossed kg number at scale.",
+      "Hard case: the strap cinched tight around a visibly overstuffed suitcase with the lid fully closed and latched, the orange lock-indicator tab shown flush/hidden to prove full engagement.",
+      "Install: a 3-step sequence — loop, thread, ratchet down — with the color-change tab shown protruding mid-sequence then flush/locked as the visual proof step."
+    ],
+    "honest_limitations": [
+      "Sized for a single checked suitcase up to about 32in/81cm; it is not a 63in+ duffel or backpack strap and won't fully wrap an XL case in one pass without the double-wrap keeper.",
+      "The 150kg rating is a per-buckle pull-test figure on the stamped steel component at 23°C, not a claim about how much your packed suitcase itself can weigh or about airline weight limits.",
+      "This is a hand-ratcheted ladder-lock, not a cargo tie-down strap with a mechanical ratchet handle — it won't deliver that level of leverage, and it's a different product from moving/shipping ratchet straps."
+    ]
+  },
+  "image_prompts": [
+    {
+      "purpose": "main_image",
+      "prompt": "A close-up product photograph of a black nylon webbing luggage compression strap coiled in a neat loop, with a matte, bead-blasted brushed-steel ladder-lock ratchet buckle turned face-forward and slightly tilted toward the camera; the buckle's edges where the webbing threads through are visibly smooth and rounded, its face bears a bold, deep-embossed '150KG PER BUCKLE' engraving catching soft highlights, and a small bright-orange tab is visible just inside the pawl housing peeking out to show the lock-indicator detail; the strap rests on a seamless warm light-gray studio background with a single thin diagonal orange accent line sweeping behind it for contrast; lit with soft diffused studio lighting from the upper left plus a gentle rim light to make the steel's brushed texture and the orange accent pop, shot straight-on at eye level with a macro-leaning lens look, sharp focus throughout, no text, no logos, no props, commercial product photography style."
+    },
+    {
+      "purpose": "packaging",
+      "prompt": "A photograph of an opened cardboard shipping box on a light wooden tabletop, revealing two neatly coiled black nylon webbing straps each held in a tight coil by a printed kraft-paper belly band reading '1.2mm Stamped Steel · 150KG PER BUCKLE · Pull-Tested' in simple black sans-serif text, with a small matte-steel spare ladder-lock buckle nested in its own die-cut cardboard pocket beside the straps and a compact fold-out spec card standing upright showing a case-size range diagram; soft natural window light from the left falls across the open box so the brushed steel buckles catch a gentle highlight, the customer's hands are just entering the frame from the bottom edge as if about to lift a strap out, shot from a slightly elevated three-quarter angle looking down into the box, warm and tidy, no clutter, commercial unboxing photography style."
+    },
+    {
+      "purpose": "lifestyle",
+      "prompt": "A photograph of a traveler in a bright modern hotel room at golden-hour evening light through a window, kneeling beside an open, visibly overstuffed wheeled suitcase on the bed, both hands cranking down a black nylon strap with a brushed-steel ladder-lock buckle wrapped around the case so the lid presses fully shut and clicks closed; the traveler is smiling slightly in relief, wearing casual travel clothing, with a half-packed second bag and a boarding pass visible on the nightstand for context, warm soft ambient light mixed with a hint of cool window light, shot at a natural eye-level angle like a candid travel photo rather than a staged studio shot, shallow depth of field with the buckle and hands in sharp focus and the room softly blurred behind, no cargo straps, no moving-truck or warehouse setting — purely a vacationer's hotel-room moment."
+    }
+  ],
+  "sustainability": {
+    "rejected_claims": [
+      "We do not claim the nylon webbing or steel buckle are biodegradable or compostable — nylon (PA) and steel don't meet that bar and the claim wouldn't survive a critic.",
+      "We do not claim a specific percentage of post-consumer recycled content for the steel or webbing, because no verified supplier certificate exists in this dataset; that claim ships only once scout/genius source a certificate."
+    ]
+  },
+  "what_i_cut": [
+    "The built-in combination/TSA lock mechanism some competitors bolt onto the buckle — it's a separate failure point unrelated to the buyer's actual fear (buckle strength), and the one competitor with it rates lower (4.0) than the plain version.",
+    "The 8-pack/6-pack quantity race some competitors run — we ship a focused 2-pack instead of competing on bulk count, since the buyer's decision driver is buckle durability, not strap quantity.",
+    "Painted, powder-coated, or chrome-plated buckle finishes — cut entirely in favor of raw matte steel, which both removes a production step and reads as more trustworthy.",
+    "Multiple webbing color options — one black colorway only, removing a size/color dropdown that costs conversions (gate.variations) without buyers asking for it."
+  ]
+}

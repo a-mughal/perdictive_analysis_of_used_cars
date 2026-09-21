@@ -1,0 +1,271 @@
+{
+  "planning_fallacy_multiplier": 1.35,
+  "versions": [
+    {
+      "version_id": "v1_hero_lean",
+      "idea_ids": ["I1", "I2", "I6"],
+      "bom": [
+        {
+          "part": "Nylon webbing strap, 47in x 25mm, cut-to-length",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.15, "base": 0.30, "high": 0.55, "assumption": "Component price scout did not provide; live web search (Sep 2026) found 25mm nylon webbing quoted $0.10-0.56/m at 100+ m MOQ across several Alibaba listings. 47in = ~1.2m; range widened beyond the raw quote spread to cover an unconfirmed tensile-grade/color-fastness spec and ~10% cutting waste."}
+        },
+        {
+          "part": "Stamped-steel ladder-lock buckle, 1.2mm gauge, radiused anchor + deep-embossed '150KG PER BUCKLE' face (I1)",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.32, "base": 0.50, "high": 0.85, "assumption": "Component price scout did not provide; live web search (Sep 2026) found generic zinc-alloy/aluminum ladder-lock buckles at $0.01-0.82/unit (100+ MOQ), but those are lighter-duty and not pull-tested. Our spec is heavier-gauge stamped STEEL (not zinc/alloy) with an added radius-deburr die step and a deep-emboss legend cavity, so priced at the upper half of the observed band and above it at the high end; must be replaced with 2 supplier quotes before PO per the brief's own rule-of-thumb caveat."}
+        },
+        {
+          "part": "Box-X bar-tack reinforced anchor stitch at the buckle bar (I2)",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.02, "base": 0.04, "high": 0.08, "assumption": "Same webbing/thread, one extra fold plus a bar-tack pass vs. a single straight stitch. Kb rule of thumb: assembly labour for a few extra parts/passes in China/Vietnam runs a few cents; this is the incremental delta over the baseline stitch, not the whole sew operation."}
+        },
+        {
+          "part": "Assembly labour & QC (cut, thread buckle, bar-tack sew, per-lot gauge-caliper check on buckle steel, ratchet function test)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.10, "base": 0.18, "high": 0.30, "assumption": "Kb rule of thumb: assembly labour and QC for 3-5 parts in China/Vietnam is a few cents; widened here to cover the brief's own stated mitigation (a per-lot caliper gauge check plus destructive pull-test sampling against the must_avoid thin-steel-substitution risk)."}
+        },
+        {
+          "part": "Printed kraft-paper belly band (spec card: gauge, per-buckle kg rating, case-size range)",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.10, "assumption": "Kb rule of thumb: a printed tuck box runs $0.08-0.25; a single-color printed paper belly band is a smaller, cheaper analog of the same print process, one per coiled strap per buyer.packaging_expectation."}
+        },
+        {
+          "part": "Printed outer tuck box / mailer (replaces plain poly bag)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.08, "base": 0.15, "high": 0.25, "assumption": "Kb rule of thumb: printed tuck box $0.08-0.25 vs. poly bag $0.01-0.03; using the printed tuck-box end because buyer.packaging_expectation explicitly says a plain poly bag with nothing printed reads as 'just another cheap knockoff.'"}
+        },
+        {
+          "part": "FNSKU barcode label",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.01, "base": 0.02, "high": 0.03, "assumption": "Standard FNSKU/barcode sticker cost, disaggregated from the brief's own bundled prior estimate ('prep/poly/FNSKU $0.35')."}
+        }
+      ],
+      "unit_weight_g": 85,
+      "landed_cost_usd": {"low": 1.58, "base": 2.83, "high": 5.20, "assumption": "EXW (sum of BOM parts+labour+QC+packaging above, tooling amortisation kept separate under tooling_and_nre so it is not double-counted) plus freight_per_unit plus duty_per_unit plus inbound-to-FBA. Freight: scout's sea_freight_usd_per_cbm (STALE, widened ~25% per the brief's instruction to low $130/base $180/high $280 per cbm) x an estimated 0.0009-0.0016 cbm per 2-pack set (coiled straps + printed packaging, not independently quoted). Duty: scout's duty_rate (STALE, widened ~25% to low 4.5%/base 7%/high 9.5%) plus scout's sourced Section 301 additional_tariff_rate (7.5-10%, F13/F14, not stale) applied to EXW. Inbound-to-FBA: $0.08-0.28/unit genius estimate for domestic drayage/prep-house handling from port to FBA, not independently fetched this session."}
+    },
+    {
+      "version_id": "v2_full_delighter",
+      "idea_ids": ["I1", "I2", "I3", "I6"],
+      "bom": [
+        {
+          "part": "Nylon webbing strap, 47in x 25mm, cut-to-length",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.15, "base": 0.30, "high": 0.55, "assumption": "Same as v1 — see v1 assumption (live-searched Alibaba 25mm webbing range $0.10-0.56/m)."}
+        },
+        {
+          "part": "Stamped-steel ladder-lock buckle, 1.2mm gauge, radiused anchor + deep-embossed '150KG PER BUCKLE' face (I1)",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.32, "base": 0.50, "high": 0.85, "assumption": "Same as v1 — see v1 assumption (live-searched generic ladder-lock buckle band widened upward for 1.2mm steel + radius-deburr + emboss)."}
+        },
+        {
+          "part": "Box-X bar-tack reinforced anchor stitch at the buckle bar (I2)",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.02, "base": 0.04, "high": 0.08, "assumption": "Same as v1."}
+        },
+        {
+          "part": "Two-shot overmolded orange lock-engagement indicator tab on the pawl (I3)",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.05, "base": 0.10, "high": 0.20, "assumption": "Kb rule of thumb: an overmould/second-material step adds $0.05-0.20 per component, applied directly since innovaty describes this as one added insert on the existing pawl part."}
+        },
+        {
+          "part": "Spare stamped-steel buckle + webbing offcut + backer card (field-replacement insert, innovaty's bundle_or_addition)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.35, "base": 0.55, "high": 0.90, "assumption": "Same die-run buckle unit cost as I1's buckle line plus a short webbing offcut (~$0.03-0.05) and a small printed backer card (~$0.02-0.05 by the belly-band rule of thumb)."}
+        },
+        {
+          "part": "Assembly labour & QC (cut, thread buckle, bar-tack sew, overmold-tab engagement check, per-lot gauge-caliper check, ratchet function test)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.10, "base": 0.18, "high": 0.30, "assumption": "Same basis as v1; the added tab-engagement check is a near-zero marginal addition to the existing per-unit function test."}
+        },
+        {
+          "part": "Printed kraft-paper belly band (spec card)",
+          "qty": 2,
+          "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.10, "assumption": "Same as v1."}
+        },
+        {
+          "part": "Printed outer tuck box / mailer",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.08, "base": 0.15, "high": 0.25, "assumption": "Same as v1."}
+        },
+        {
+          "part": "FNSKU barcode label",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.01, "base": 0.02, "high": 0.03, "assumption": "Same as v1."}
+        }
+      ],
+      "unit_weight_g": 115,
+      "landed_cost_usd": {"low": 2.10, "base": 3.73, "high": 6.81, "assumption": "Same build-up method as v1 (EXW + freight + duty + inbound), EXW raised by the I3 overmold tab and the spare-buckle bundle insert; cbm/unit nudged ~10% higher for the added bundle mass (freight widened stale range same $130/$180/$280 per cbm; duty widened stale range same 4.5%/7%/9.5% base plus Section 301 7.5-10%); inbound-to-FBA nudged slightly higher for added weight/bulk."}
+    }
+  ],
+  "tooling_and_nre": [
+    {
+      "item": "Buckle die modification: radiused-anchor deburr step + deep-emboss '150KG PER BUCKLE' cavity, production steel tool (I1)",
+      "cost_usd": {"low": 3000, "base": 6000, "high": 12000, "assumption": "Kb has no stamping-die-specific figure; closest analog is the kb's own 'steel production tool... mid four to low five figures' band, applied to a die MODIFICATION (not a from-scratch multi-cavity tool) since no live supplier quote was fetched — widened further than a quoted figure would be."}
+    },
+    {
+      "item": "Aluminium soft/prototype tool for buckle validation, pre-production-die T1 samples",
+      "cost_usd": {"low": 1200, "base": 2500, "high": 4500, "assumption": "Kb rule of thumb: an aluminium prototype tool of one to four cavities is low four figures."}
+    },
+    {
+      "item": "FTO (freedom-to-operate) search on the radiused-anchor + face-stamp-legend combination",
+      "cost_usd": {"low": 1500, "base": 3000, "high": 5500, "assumption": "Mandatory per the brief because I1 carries innovaty's own prior_art_risk: medium. Not priced by scout; genius estimate from general market rates for a narrow 1-2-feature mechanical FTO search, not a full landscape study."}
+    },
+    {
+      "item": "Destructive fatigue/pull-test lab fees (1,000-cycle ratchet load test + 150kg pull test across 3 production lots, per I1/I2 test specs)",
+      "cost_usd": {"low": 800, "base": 1800, "high": 3500, "assumption": "Third-party lab fee for the exact test protocol innovaty specified in test_that_proves_it for I1 and I2; not a scout-fetched figure, genius market estimate. In-house per-unit caliper checks are already folded into the BOM's assembly-labour line."}
+    },
+    {
+      "item": "Compliance review (Prop 65 labelling check, basic product-liability policy line; no CPSC exposure — no magnets, not child-marketed)",
+      "cost_usd": {"low": 300, "base": 700, "high": 1500, "assumption": "Passive steel/nylon accessory needs no mandatory US safety certification, but a Prop 65 review and a baseline liability-insurance line item are standard launch costs for steel hardware, especially one carrying a numeric strength claim on the packaging."}
+    },
+    {
+      "item": "Product photography (main image + 3 secondary images + 1 lifestyle scene, per innovaty's image_briefs)",
+      "cost_usd": {"low": 600, "base": 1200, "high": 2200, "assumption": "Freelance/studio e-commerce photography package market rate for a small hardware accessory; not scout-sourced this session."}
+    },
+    {
+      "item": "Pre-production samples from 2 candidate suppliers + air-freighted sample shipping",
+      "cost_usd": {"low": 250, "base": 500, "high": 900, "assumption": "Two supplier sample rounds, small-parcel air freight; standard practice for a hardware-accessory sourcing cycle before committing to the production die."}
+    },
+    {
+      "item": "Initial launch ad budget (first 60-90 days, seeds review velocity ahead of organic ranking)",
+      "cost_usd": {"low": 2000, "base": 4000, "high": 7000, "assumption": "One-off launch-phase PPC seeding budget, separate from the ongoing per-unit ad_rate used in the contribution calc (economics.ad_rate), sized for a new ASIN in a category with a $9-14 median row price."}
+    }
+  ],
+  "fixed_launch_cost_usd": {"low": 9650, "base": 19700, "high": 41100, "assumption": "Sum of the tooling_and_nre line items above, sized for the recommended v1_hero_lean scope (I1, I2, I6). Excludes v2's incremental I3 overmold-insert tooling (~$2,000-$7,500), which is deferred to a fast-follow once v1 review volume validates demand — the hero buckle's own die-mod + FTO already carry the launch-blocking lead time."}
+  ,
+  "price_usd": {"low": 17.99, "base": 19.99, "high": 21.99, "assumption": "Inside brief's stated price band ($15.99-$23.99) and buyer.price_psychology (anchor $9.20 seen row, max_without_reason $12.99, max_with_reason $22). Base $19.99 matches the brief's own prior ASP estimate. High $21.99 stays under buyer's stated $22 with-reason ceiling — buyer explicitly says 'an easy yes even at $20' if the kg rating reads as tested, not marketed, which requires the legible embossed buckle face (I1) plus the honest-limitation bullet, both already in v1's listing_implications. Low $17.99 leaves room for an early-review-velocity launch discount during the innovator-only ramp."}
+  ,
+  "economics": {
+    "referral_rate": {"low": 0.15, "base": 0.15, "high": 0.17, "assumption": "Scout F10: Sports & Outdoors / Luggage & Travel Accessories referral fee sourced at 15% for 2026 (not stale); high end hedges the small chance this SKU is classified into a higher-rate category."},
+    "fba_fee_usd": {"low": 3.31, "base": 3.75, "high": 4.19, "assumption": "Scout's fba_fee_usd is itself marked STALE (derived, not independently fetched as a dollar figure this session, per scout.fee_inputs.fba_fee_usd). Per the brief's instruction to widen stale inputs by roughly a quarter, the spread around scout's $3.40/$3.75/$4.10 band is widened ~25% to $3.31/$3.75/$4.19. Must be re-checked against a live Amazon FBA revenue calculator before PO."},
+    "storage_alloc_usd": {"low": 0.03, "base": 0.05, "high": 0.11, "assumption": "Scout F12 (not stale): $0.78/cuft Jan-Sep, $2.25/cuft Oct-Dec. Applied to an estimated ~0.04 cuft per 2-pack set (from v1's ~0.0012 cbm/unit packaging estimate) across a ~1-1.3 month average FBA dwell time; high end applies the Q4 peak rate to units still sitting through Nov-Dec."},
+    "return_rate": {"low": 0.04, "base": 0.06, "high": 0.10, "assumption": "Not fetched this session (no live return-rate benchmark for this sub-category), so treated as genius estimate rather than a scout fact. Set above the brief's own prior unverified 2.5% line because this is a brand-new, zero-review listing with two live unresolved buyer fears (case-fit sizing N4, unknown-brand trust N3, buyer.fears rank 4 and 5) that plausibly drive above-baseline returns until the listing's honest-limitation bullets are proven out by real buyers."},
+    "ad_rate": {"low": 0.18, "base": 0.28, "high": 0.45, "assumption": "Kb: 40-80% ACoS at launch tapering to 15-30% steady-state. This is the ongoing per-unit ACoS feeding the contribution calc across the forecast period; the separate one-off spend to seed initial review velocity is already booked under tooling_and_nre's 'initial launch ad budget' line, so this is not double-counting that spike. Base blends a ~4-month hot-launch window (60-70% ACoS) against an ~8-month steady-state window (18-22% ACoS) within year one."}
+  },
+  "forecast": {
+    "term_monthly_units": {"low": 14400, "base": 24000, "high": 33600, "assumption": "Scout could not fetch a tracker-based est_monthly_units figure for any competitor (scout.gaps). This is genius's own order-of-magnitude estimate of total monthly unit volume across the page-one 'luggage compression strap / luggage straps 2 pack' competitive set (F1-F5), informed by the standing multi-listing competitive set (an 8-pack plus several branded 2-packs) suggesting a moderate-traffic, not niche, sub-category. Per the kb's mandated method, a base judgment of 24,000 units/month is widened ±40%. Must be replaced with a Helium10/Jungle Scout tracker figure before committing ad spend."},
+    "share_m6": {"low": 0.02, "base": 0.035, "high": 0.06, "assumption": "Kb: a new entrant reaches 1-5% of term volume in months 1-3. Placed at the upper-middle of that band by month 6 using buyer.purchase_probability_current.click=0.35 (moderate — the stamped-steel thumbnail is a genuine pattern-break per buyer.three_second_scan 'pull' verdicts, but zero reviews and a 1.7-2.2x price anchor hold some clicks back per buyer's own reasoning) and innovaty's thumbnail_visibility=high on I1 and I3. Capped below the top of the 1-5% band because month 6 is still inside moore.chasm territory for a zero-review-to-modest-review listing."},
+    "share_m12": {"low": 0.04, "base": 0.07, "high": 0.10, "assumption": "Kb: 3-10% of term volume by months 6-12 if CTR/conversion beat the median. Buyer's add_to_cart (0.4) and buy (0.5) probabilities are above-median once the kg-rating and case-fit bullets answer buyer.fears ranks 1-4, per buyer's own 'if the bullets settle whether the rating is per-buckle... it's an easy yes' reasoning — so genius places share_m12 across the full 3-10% kb band rather than a narrower slice, capped at the kb's own stated ceiling."},
+    "monthly_units_m6": {"low": 288, "base": 840, "high": 2016, "assumption": "term_monthly_units x share_m6, each range's own low/base/high multiplied through (288=14400x2%, 840=24000x3.5%, 2016=33600x6%)."},
+    "monthly_units_m12": {"low": 576, "base": 1680, "high": 3360, "assumption": "term_monthly_units x share_m12 (576=14400x4%, 1680=24000x7%, 3360=33600x10%)."},
+    "annual_units_y1": {"low": 3500, "base": 10300, "high": 22800, "assumption": "Outside-in ramp integration per moore.chasm: months 1-3 are innovator-only volume (roughly 20-25% of the month-6 run-rate), months 4-6 ramp up toward the month-6 figure, and months 7-12 ramp from the month-6 to the month-12 figure. Approximated as H1-average x6 + H2-average x6 at each of low/base/high, e.g. base: H1 avg ~462/mo x6=2,772 plus H2 avg ~1,260/mo x6=7,560 = ~10,332, rounded to 10,300."},
+    "seasonality_note": "Mild back-to-school bump in August sits inside the early-ramp window; Q4 (Nov-Dec) holiday travel is the likely single biggest-volume period and also carries the $2.25/cuft peak storage rate already reflected in storage_alloc_usd's high end; a secondary 'organise my life' bump is expected in January.",
+    "reasoning": "Start from scout's own admitted gap: no tracker-sourced est_monthly_units exists for this term, so term_monthly_units (14,400-33,600, base 24,000) is genius's own order-of-magnitude read of the standing page-one competitive set, widened ±40% per the kb's mandated method. From there, attainable share is placed using the buyer's own CTR/ATC/buy judgement: click=0.35 is moderate (the stamped-steel buckle thumbnail is a real pattern-break per three_second_scan, but zero reviews and a 1.7-2.2x price anchor pull back some clicks), while add_to_cart=0.4 and buy=0.5 are above-median once the listing's bullets answer the buyer's top fears — so share starts in the lower-middle of the kb's 1-5% band by month 6 (2-6%) and climbs into the kb's 3-10% band by month 12 (4-10%) as reviews accumulate and cross moore.chasm. Multiplying term volume by share gives month-6 units of 288-2,016 (base 840) and month-12 units of 576-3,360 (base 1,680). Integrating a ramp curve across the year (innovator-only months 1-3, ramping through months 4-6 to the month-6 rate, then ramping months 7-12 toward the month-12 rate) gives annual_units_y1 of roughly 3,500-22,800 units (base ~10,300) — a wide range that should be treated as the honest uncertainty of a brand-new, zero-review entrant rather than narrowed prematurely."
+  },
+  "timeline": {
+    "phases": [
+      {"phase": "Concept, CAD & DFM with two suppliers (FTO search runs in parallel, not additive to this phase's critical path)", "weeks": {"low": 2.7, "base": 4.05, "high": 5.4, "assumption": "Kb baseline 2-4 weeks x 1.35 planning-fallacy multiplier."}},
+      {"phase": "Prototypes & fit tests (radiused-anchor sample, box-X bar-tack sample)", "weeks": {"low": 2.7, "base": 3.4, "high": 4.05, "assumption": "Kb baseline 2-3 weeks x 1.35 multiplier."}},
+      {"phase": "Buckle fatigue & pull-load testing (1,000-cycle ratchet test, destructive pull-test lot per I1/I2 specs)", "weeks": {"low": 2.7, "base": 4.05, "high": 5.4, "assumption": "Kb baseline 2-4 weeks (adhesive/mechanical testing slot repurposed for buckle fatigue/pull testing since this product has no adhesive) x 1.35 multiplier."}},
+      {"phase": "Aluminium soft tool & T1 samples (die-mod soft-tool pass for the radiused/embossed buckle)", "weeks": {"low": 5.4, "base": 6.75, "high": 8.1, "assumption": "Kb baseline 4-6 weeks x 1.35 multiplier."}},
+      {"phase": "One to two iterations (deburr radius correction, emboss depth, gauge/caliper conformance)", "weeks": {"low": 2.7, "base": 4.05, "high": 5.4, "assumption": "Kb baseline 2-4 weeks x 1.35 multiplier."}},
+      {"phase": "Production steel tool (die modification) & sign-off", "weeks": {"low": 5.4, "base": 8.1, "high": 10.8, "assumption": "Kb baseline 4-8 weeks x 1.35 multiplier."}},
+      {"phase": "First production run & packaging (belly-band print, FNSKU prep); listing & photography in parallel", "weeks": {"low": 4.05, "base": 4.73, "high": 5.4, "assumption": "Kb baseline 3-4 weeks x 1.35 multiplier."}},
+      {"phase": "Sea freight & FBA check-in", "weeks": {"low": 6.75, "base": 8.1, "high": 9.45, "assumption": "Kb baseline 5-7 weeks x 1.35 multiplier."}}
+    ],
+    "weeks_to_first_sale": {"low": 32.4, "base": 43.2, "high": 54.0, "assumption": "Sum of all 8 phases above (FTO search runs in parallel with phase 1 and does not extend the critical path). Multiplier of 1.35 already applied throughout. Against the seller's stated time_to_market_months=0: the hero buckle (die modification + mandatory FTO clearance) is the gating item — it genuinely waits roughly 7-13.5 months for first sale, it does not ship this quarter."}
+  },
+  "premortem": [
+    {
+      "obituary": "It is twelve months on and a copycat factory reverse-engineered the visible radiused-anchor, face-stamped buckle within 90 days and is selling a near-identical steel-buckle strap at 60% of our price; buyers can no longer tell the two apart in the search-results thumbnail.",
+      "probability": 0.35,
+      "impact": "major",
+      "mitigation": "Extend the FTO search into a provisional design-patent filing on the radiused-anchor + emboss-legend combination, own the production die so a copier needs its own tooling lead time too, and move on review velocity fast enough that social proof (not just the visual) becomes the moat before a copy can catch up.",
+      "mitigation_cost_usd": {"low": 800, "base": 1800, "high": 3500, "assumption": "Provisional design-patent filing fee, adjunct to the FTO search already budgeted in tooling_and_nre."}
+    },
+    {
+      "obituary": "It is twelve months on and the printed belly-band plus box contents pushed the outer carton a few millimetres over the small-standard size-tier line, and the FBA fee jump on every single unit erased the margin nobody modeled.",
+      "probability": 0.2,
+      "impact": "major",
+      "mitigation": "Lock final packaging dimensions against the FBA size-tier cutoff with a 3-5mm safety margin before ordering belly-bands/cartons, and get a physical FBA dimensioner check on a pre-production sample before the first inbound shipment.",
+      "mitigation_cost_usd": {"low": 50, "base": 150, "high": 400, "assumption": "Sample dimensioning check plus a packaging revision pass if needed."}
+    },
+    {
+      "obituary": "It is twelve months on and the Section 301 rate on our HTS line moved from 7.5% toward the higher end of the published 7.5%-100% band (F14), and the extra duty line alone erased the contribution margin the plan launched on.",
+      "probability": 0.25,
+      "impact": "fatal",
+      "mitigation": "Landed_cost_usd.high already prices the wide duty/tariff band; keep price flexible to absorb a step-up, and hold a qualified Vietnam-based backup supplier quote in reserve as a 6-12 month contingency so origin can shift without a full re-sourcing cycle.",
+      "mitigation_cost_usd": {"low": 500, "base": 1200, "high": 2500, "assumption": "Cost of getting and holding a backup Vietnam supplier quote/sample ready, not activating it."}
+    },
+    {
+      "obituary": "It is twelve months on and Amazon flagged the '150KG PER BUCKLE, pull-tested' claim as an unsubstantiated safety/performance claim and suppressed the listing pending documentation, freezing sales for three weeks during peak season.",
+      "probability": 0.15,
+      "impact": "major",
+      "mitigation": "Commission the third-party 1,000-cycle pull-test/fatigue report (already in tooling_and_nre) before the listing goes live, keep the certificate on file for a fast appeal, and phrase the claim exactly as tested ('pull-tested to 150kg per buckle') rather than as a weight-capacity or safety guarantee.",
+      "mitigation_cost_usd": {"low": 0, "base": 0, "high": 0, "assumption": "Cost is already fully captured in the destructive-test lab-fee line in tooling_and_nre; zero incremental spend."}
+    },
+    {
+      "obituary": "It is twelve months on and review count never crossed roughly 30 (moore.chasm), so the listing stayed stuck on page two next to competitors with hundreds of reviews, and the paid-traffic cost of trying to hold page-one visibility ate every dollar of contribution.",
+      "probability": 0.3,
+      "impact": "fatal",
+      "mitigation": "Deliberately run the first-60-90-day launch ad budget (already in tooling_and_nre) hot to seed review velocity, enroll an initial batch in Vine, and lead with the honest-limitation bullets so early reviewers arrive with calibrated expectations instead of mismatched ones that turn into 1-stars.",
+      "mitigation_cost_usd": {"low": 400, "base": 800, "high": 1500, "assumption": "Vine enrollment plus landed cost of ~20-30 seeded units."}
+    },
+    {
+      "obituary": "It is twelve months on and a production lot shipped with 0.8mm buckle steel instead of the specified 1.2mm gauge — it passed the factory's quick pull test but started cracking at the anchor after a few customers' repeated ratcheting cycles, reproducing the exact C1 failure the whole hero idea existed to prevent, and a wave of 'buckle cracked again' one-star reviews hit right as the rating was building.",
+      "probability": 0.2,
+      "impact": "fatal",
+      "mitigation": "Per-lot gauge-caliper check on incoming buckle steel (the brief's own stated mitigation) plus the 1,000-cycle destructive fatigue pull-test on a sample from every production lot, not just the pilot lot, before that lot is released to FBA.",
+      "mitigation_cost_usd": {"low": 200, "base": 450, "high": 900, "assumption": "Recurring per-lot caliper check plus destructive sample testing, applied to every production run after the pilot."}
+    },
+    {
+      "obituary": "It is twelve months on and after several production runs the stamping die's radiused deburr edge wore back toward a sharp sheared edge without anyone noticing on the line, so later lots quietly reintroduced the micro-abrasion failure point F6 identifies, and the rating dipped right as volume was ramping.",
+      "probability": 0.15,
+      "impact": "major",
+      "mitigation": "Add a radius-edge visual/gauge check to the existing per-lot QC step (same inspector, adds minutes not a new hire) and schedule die maintenance/re-sharpening on a fixed stamping-count interval rather than a calendar interval.",
+      "mitigation_cost_usd": {"low": 100, "base": 250, "high": 500, "assumption": "Incremental QC inspection time plus periodic die maintenance across the production run."}
+    }
+  ],
+  "idea_rulings": [
+    {
+      "idea_id": "I1",
+      "ruling": "realistic",
+      "why": "Directly fixes C1 (50% of the negative pattern) at a landed-cost impact that stays well inside the 30%-of-price sanity rail, even after pricing in FTO and die-mod tooling.",
+      "deciding_number": "landed_cost_usd.base $2.83 is ~14% of price_usd.base $19.99, far under the 30%-of-price rail, despite ~$4,500-$17,500 combined FTO + die-mod tooling."
+    },
+    {
+      "idea_id": "I2",
+      "ruling": "realistic",
+      "why": "A sewing-pattern change on the same line with no tooling and low prior-art risk that reinforces the same C1 fix.",
+      "deciding_number": "adds only $0.04-0.08/unit (cents-tier) with $0 tooling and prior_art_risk: low."
+    },
+    {
+      "idea_id": "I3",
+      "ruling": "stretch",
+      "why": "Manufacturable (a two-shot insert on the existing pawl mould), but stacking a second medium-prior-art-risk FTO and $2,000-$7,500 of tooling into v1 before any sales data exists is the one break; the fix is to ship it as a v2 fast-follow, which is what the recommended version does.",
+      "deciding_number": "second tooling+FTO exposure (~$3,500-$13,000 combined) with zero reduction to landed cost or price and zero contribution to either must-fix cluster before v1 sales data exists."
+    },
+    {
+      "idea_id": "I4",
+      "ruling": "realistic",
+      "why": "Cents-tier print-station add with no tooling and low prior-art risk; correctly sequenced by innovaty as a later, review-gated unlock rather than a v1 blocker.",
+      "deciding_number": "cents-tier unit-cost addition, $0 tooling, prior_art_risk: low."
+    },
+    {
+      "idea_id": "I5",
+      "ruling": "realistic",
+      "why": "Dimes-tier add using the same steel coil and die run as the hero buckle; feasible any time, correctly deferred until Q&A/return data confirms N4 is worth solving.",
+      "deciding_number": "dimes-tier unit-cost addition (~$0.05-0.15 est.) with prior_art_risk: low and no new tooling class."
+    },
+    {
+      "idea_id": "I6",
+      "ruling": "realistic",
+      "why": "A finishing choice that removes a plating/coating step rather than adding one — free tier by definition.",
+      "deciding_number": "$0 incremental unit cost, cost_tier: free."
+    }
+  ],
+  "recommended_version_id": "v1_hero_lean",
+  "feasibility_verdict": "stretch",
+  "regulatory": [
+    "No mandatory US safety certification expected for a passive steel/nylon travel accessory; confirm Prop 65 labelling treatment given the numeric '150KG' strength claim on packaging.",
+    "No CPSC magnet scrutiny: product contains no magnets and is not marketed to or clearly used by children.",
+    "Standard customs/HTS duty classification only (6307.90.9891 per scout, plus Chapter 99 Section 301 subheading 9903.88.15), already reflected in the duty-rate economics inputs.",
+    "Amazon claims-substantiation risk on the '150KG PER BUCKLE, pull-tested' claim: back it with the third-party fatigue/pull-test report (budgeted in tooling_and_nre) and phrase it as a tested figure, not a safety or weight-capacity guarantee, per the pre-mortem's claim-suppression obituary."
+  ],
+  "three_sentences_to_founder": [
+    "The hero buckle is the right call at a landed cost near $2.83 per 2-pack set (about 14% of a $19.99 price, comfortably inside the 30%-of-price rail), but the die modification plus the mandatory FTO clearance push first sale to roughly 32-54 weeks (43 weeks base) — it genuinely waits on tooling lead time, not on the design being wrong, so the 0-month timeline in the brief is not achievable for this version.",
+    "Ship the lean v1 (hero buckle I1 + bar-tack reinforcement I2 + raw steel finish I6, ~$9,650-$41,100 in launch tooling/NRE) rather than the full four-idea plan: base-case contribution lands around 21% of price, which clears the 15% no-go floor but misses the 25% healthy line mainly on launch-phase ad spend, so adding a second overmold-tooling line (I3) and its own FTO exposure before any sales data exists is not worth doing yet — add I3, I4 and I5 as fast-follows once ~30 reviews validate demand, exactly as innovaty's own v2_later logic already suggests.",
+    "Year-one volume is a wide $3,500-$22,800-unit range (base ~10,300) because scout could not fetch real tracker data for this term, and two of the seven pre-mortem risks — review velocity stalling below the moore.chasm threshold, and a supplier substituting thinner 0.8mm buckle steel — are rated fatal-impact; they only stay survivable because their mitigations (Vine-seeded reviews, per-lot gauge and destructive pull-testing) are funded in this plan now, not promised for later."
+  ]
+}

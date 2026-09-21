@@ -1,0 +1,43 @@
+{
+  "slug": "ratchet-luggage-strap",
+  "product_name": "Ratchet-Buckle Luggage Compression Strap Set (2-pack, steel ladder-lock)",
+  "source_url": "https://www.amazon.com/s?k=ratchet-buckle+luggage+compression+strap+set+%282-pack%2C+steel+ladder-lock%29",
+  "marketplace": "amazon.com",
+  "created_at": "2026-09-21T08:41:44+00:00",
+  "mode": "category",
+  "target_buyer": {
+    "description": "A traveler who overpacked and can't get the suitcase lid shut, whose last compression strap started cracking at the buckle after two flights",
+    "context": "My suitcase won't close after I pack souvenirs, and the last strap I bought started cracking at the buckle after two flights.",
+    "price_band_usd": {
+      "min": 15.99,
+      "max": 23.99
+    }
+  },
+  "seller_constraints": {
+    "launch_budget_usd": 0,
+    "time_to_market_months": 0,
+    "origin_country": "CN",
+    "must_keep": [
+      "stamped-steel ladder-lock buckle, 1.2mm gauge, pull-tested to 150kg with the kg rating stamped on the buckle face"
+    ],
+    "must_avoid": [
+      "a thinner substitute buckle steel (e.g. 0.8mm) that passes a quick pull test but fatigues under repeated ratcheting"
+    ]
+  },
+  "user_hypotheses": [
+    "A buyer whose suitcase won't close after packing souvenirs will buy a compression strap set, and buckle durability across repeated trips (not just closing the case once) is what makes them pick one strap set over another"
+  ],
+  "assumptions": [
+    "Category tags from the sourcing brief: Travel, commuting & luggage hardware; NEW listing (no track record); LOW BARRIER to entry",
+    "Prior sourcing estimate (unverified against live fees, to be checked by scout/genius): FOB $2.60/unit (500-1,000 MOQ), sea freight+drayage $0.46, duty 33% blended on FOB $0.86, prep/poly/FNSKU $0.35, landed cost $4.27; referral fee 15% $3.00, FBA fulfilment $3.48, monthly storage (off-peak) $0.03, Amazon fees $6.51; returns reserve 2.5% $0.50, PPC 10.5% TACoS $2.10; ASP $19.99, net profit $6.61, net margin 33.07%",
+    "Build parameters from the sourcing brief: tooling $800, MOQ 1,000 units, 4 parts, 5 weeks to first article",
+    "Closest incumbent named in the brief: generic nylon luggage straps with a plastic cam buckle, 2-packs ~$11-14, no published load rating",
+    "Differentiator proposed in the brief: stamped-steel ladder-lock buckle pull-tested to 150kg, kg rating stamped on the buckle face",
+    "Main sourcing risk flagged in the brief: a supplier substituting thinner buckle steel (0.8mm vs the specified 1.2mm) that passes a quick pull test but fatigues after repeated ratcheting (\"buckle bent, won't hold tension after a few trips\") — mitigation proposed: per-lot gauge caliper check plus a destructive pull-test sample",
+    "Adjacency note from the brief: distinct from a separate 1,100lb cargo ratchet-strapping/buckle-sealer kit (moving/shipping lane, item 21 of a prior run) — this product is a hand-tightened 2-pack for suitcase interiors, no ratchet handle, no sealer; 'ratchet tie-down strap' and 'luggage compression strap' are different search intents",
+    "Back-end/repeat-purchase ideas from the brief: a longer 63in strap SKU for larger cases; a 4-pack multi-length bundle as SKU 2",
+    "In the box per the brief: 2x 47in nylon webbing straps, 2x stamped 150kg-rated steel ladder-lock buckles (kg rating stamped on buckle face)"
+  ],
+  "iterations": 0,
+  "search_budget": 8
+}

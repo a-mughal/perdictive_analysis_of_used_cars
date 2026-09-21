@@ -1,0 +1,171 @@
+{
+  "persona": {
+    "who_i_am": "I resell/ship a steady stream of boxes out of my garage, and I'm the one who eats the cost when they show up crushed.",
+    "trigger": "Another box just came back photos-attached from a buyer with the corner caved in, even though I foam-padded it like always.",
+    "fired_solution": "Loose foam corner pads and folded cardboard scraps taped over the corners - they failed because there's no way to know how much crush resistance a given foam thickness actually gives me, so I'm just guessing and re-guessing every time a box is heavier than usual.",
+    "urgency": "this_week",
+    "search_term": "cardboard corner protectors for shipping",
+    "why_this_term": "It's the plain, exact words for what I'm holding in my head right now - not 'moving' (I'm not moving house) and not the more technical 'corrugated corner protectors' phrasing I'd only use once I already know the category jargon."
+  },
+  "buy_driver": {
+    "driver": "pain",
+    "pain_level": "moderate",
+    "evidence": "C1 - the whole category is split into light/regular/heavy duty tiers, which only makes sense if buyers like me keep picking the wrong thickness for the box weight and having corners crush anyway. That's exactly my situation with foam right now: I'm comparing options, not panicking, but I am actively looking tonight.",
+    "tags": ["law.pain_moderate", "jtbd.firing", "ulwick.underserved"]
+  },
+  "future_self": "I see myself pulling a stack of boxes out of the closet before a shipping run, snapping a rated protector onto each corner in seconds without stopping to think about it, and then not getting a single 'arrived damaged' message that week - just calm, boring, uneventful deliveries. Shoot me mid-pack, confident, taping the last flap shut with the protectors already on, no extra foam or bubble wrap piled around the corners like I used to need.",
+  "comfort_and_laziness": "I never again have to eyeball a box, guess whether my foam is 'thick enough,' or double up padding just in case. I read one number, match it to roughly how heavy the box is, and I'm done deciding - the lazy path is grabbing the same rated protector every time instead of re-litigating the padding question per shipment.",
+  "benefits_not_features": [
+    {
+      "feature": "Printed ECT-32 rating on the pack",
+      "benefit": "I know exactly how much crush resistance I'm buying instead of guessing at foam density like I do now, so I can match it to how heavy my box actually is."
+    },
+    {
+      "feature": "HDPE reinforcement caps on the corners",
+      "benefit": "The exact spot that always caves in on my boxes gets a hard shell, not just soft foam, so a forklift bump or a stack of boxes on top doesn't cave it in."
+    },
+    {
+      "feature": "Foldable, flat-pack corner + edge design (8 corners + 4 edge guards)",
+      "benefit": "It stores flat in my supply shelf between shipments instead of taking up a bin like bulky foam pads do."
+    },
+    {
+      "feature": "Die-cut corrugate construction",
+      "benefit": "I fold it on and it holds its shape - no extra tape or fiddling to keep a floppy foam pad in place while I seal the box."
+    },
+    {
+      "feature": "Corrugated material (recyclable)",
+      "benefit": "I can just toss the offcuts and worn pieces in with my regular cardboard recycling instead of stuck figuring out what to do with old foam."
+    }
+  ],
+  "three_second_scan": [
+    {
+      "signal": "image",
+      "what_i_see": "I honestly can't tell you what the thumbnail looks like - scout never got a rendered listing image for this product or any competitor, so all I have to go on is the title text and price. On a real grid an unclear or generic-stock corner-protector photo at 300px would blur into every other white cardboard tile.",
+      "verdict": "neutral",
+      "tags": ["gate.image_orientation", "kahneman.wysiati"]
+    },
+    {
+      "signal": "price",
+      "what_i_see": "It's priced around the row median ($14-ish), which is fine on its own, but the closest same-price competitor I can see (a 100-pack corner protector set at $13.99) gives roughly eight times the pieces for the same money as this 12-piece (8+4) set.",
+      "verdict": "push_away",
+      "tags": ["ariely.relativity", "kahneman.anchoring"]
+    },
+    {
+      "signal": "rating",
+      "what_i_see": "No stars, no review count showing anywhere - scout couldn't find any for this or any competitor ASIN. On Amazon, no visible rating reads as zero reviews, a brand-new unproven listing.",
+      "verdict": "push_away",
+      "tags": ["cialdini.social_proof", "gate.social_proof", "kahneman.wysiati"]
+    },
+    {
+      "signal": "design",
+      "what_i_see": "A stated ECT-32 number and HDPE caps is a named-spec detail I don't usually see on plain foam corner protectors - if it's actually legible on the tile that's an authority signal, but at thumbnail size a printed rating number is easy to miss entirely.",
+      "verdict": "neutral",
+      "tags": ["cialdini.authority", "kahneman.system1"]
+    },
+    {
+      "signal": "experience_promise",
+      "what_i_see": "The idea that I can match protector strength to box weight instead of guessing speaks directly to the exact problem I have tonight - foam that isn't rated for anything.",
+      "verdict": "pull",
+      "tags": ["jtbd.functional", "law.benefit_not_feature", "ulwick.underserved"]
+    }
+  ],
+  "purchase_probability_current": {
+    "click": 0.35,
+    "add_to_cart": 0.4,
+    "buy": 0.45,
+    "reasoning": "click: no visible rating breaks gate.social_proof and the 12-piece count looks thin against bulk 100-packs at a similar price, but the unusual stated-rating angle earns some of us a second look. add_to_cart: given a click, the bullets could directly answer my C1 fear (wrong thickness = crush again), but it's an unknown brand making a safety-adjacent claim with zero reviews to back it, which triggers full scrutiny. buy: given a full cart, the price sits inside my target band and the ECT reasoning is compelling, but with no reviews at all I'd likely still hesitate and go compare one more listing before actually paying."
+  },
+  "fears": [
+    {
+      "rank": 1,
+      "question": "Will this actually hold up for MY box weight, or will the corners crush again just like they did with foam?",
+      "tags": ["law.pain_moderate", "ulwick.underserved"],
+      "from_cluster_id": "C1",
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 2,
+      "question": "Is ECT-32 the real grade of board in the box, or is this an unknown brand printing a number I can't actually verify?",
+      "tags": ["cialdini.authority", "kahneman.system2_trigger", "gate.brand_trust"],
+      "from_cluster_id": "C1",
+      "answered_by": "image"
+    },
+    {
+      "rank": 3,
+      "question": "Will these even fit my box's actual corner size, or am I going to be fighting with fiddly flaps mid-pack?",
+      "tags": ["law.comfort_laziness", "kahneman.system1"],
+      "from_cluster_id": "C2",
+      "answered_by": "image"
+    },
+    {
+      "rank": 4,
+      "question": "Only 8 corners and 4 edge guards for this price - is that actually enough for one box, or am I going to need to buy multiple sets?",
+      "tags": ["ariely.relativity", "kahneman.anchoring"],
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 5,
+      "question": "This brand has zero reviews I can see - is it going to be flimsy junk that falls apart before it even ships?",
+      "tags": ["cialdini.social_proof", "kahneman.wysiati", "gate.brand_trust"],
+      "answered_by": "unanswerable"
+    }
+  ],
+  "unmet_needs": [
+    {
+      "need_id": "N1",
+      "statement": "I need to know, before I buy, exactly how much crush resistance I'm getting so I stop guessing at foam density and having corners fail anyway.",
+      "pain_level": "moderate",
+      "severity": 7,
+      "evidence_cluster_ids": ["C1"]
+    },
+    {
+      "need_id": "N2",
+      "statement": "I need to know which size/thickness actually fits my box before I order, instead of fumbling with the wrong dimension mid-pack or ordering the wrong one of several near-identical SKUs.",
+      "pain_level": "moderate",
+      "severity": 6,
+      "evidence_cluster_ids": ["C2"]
+    },
+    {
+      "need_id": "N3",
+      "statement": "I need proof this actually holds up on real routes - reviews, photos, anything - not just a printed spec claim from a brand I've never heard of.",
+      "pain_level": "latent",
+      "severity": 5,
+      "evidence_cluster_ids": []
+    },
+    {
+      "need_id": "N4",
+      "statement": "I need the pack size to make sense against the price so I'm not quietly paying way more per piece than the bulk 100-count competitors at the same price point.",
+      "pain_level": "moderate",
+      "severity": 5,
+      "evidence_cluster_ids": []
+    },
+    {
+      "need_id": "N5",
+      "statement": "I need it to be obvious up front which duty tier matches my box weight, without having to compare three near-identical listings from the same brand to figure it out.",
+      "pain_level": "moderate",
+      "severity": 6,
+      "evidence_cluster_ids": ["C1", "C2"]
+    }
+  ],
+  "price_psychology": {
+    "anchor_seen_usd": 14.99,
+    "max_without_reason_usd": 12.99,
+    "max_with_reason_usd": 17.99,
+    "reason_required": "A clearly printed ECT-32 number right on the pack next to a plain-English weight-matching guide (e.g. 'good for boxes up to X lbs'), plus a photo showing the reinforced corner actually holding weight - something that proves the rating isn't just marketing text."
+  },
+  "packaging_expectation": "The set should arrive flat and uncrushed itself - crisp corrugate edges, the printed ECT-32 spec visible on an insert or the board itself, everything stacked neatly rather than loose in a poly bag. If it shows up with bent or dinged corners on the protectors themselves, board that flexes limp in my hand, or no printed rating anywhere in sight, I'd silently write this off as the exact same unrated junk I'm already using - and that verdict would form before I ever put one on a box.",
+  "lifestyle_target": {
+    "primary": "Me as a small shipping/reselling operator - boxes stacked and ready to go in my garage or storage unit, working fast and calm because nothing's coming back damaged anymore. Practical, competent, in control of my own small business.",
+    "avoid": "Staged, empty-studio product shots or moving-house/apartment lifestyle framing - that's a different buyer (per scout's picture-frame and moving sub-markets), and it wouldn't look like it understands my actual repeat-shipping situation."
+  },
+  "memory_hook": "The number itself - 'ECT-32' - sticking in my head the way a nutrition label number does, because it's the first time a corner protector has given me an actual figure instead of just 'heavy duty.'",
+  "color_read": "Plain kraft-brown board with a stark black-and-white printed spec callout reads as an actual engineering spec sheet, not a marketing color choice - that's what would make me trust the number is real rather than decoration.",
+  "hypotheses_tested": [
+    {
+      "hypothesis": "A shipper whose foam-padded boxes still crush at the corners will buy a stated-crush-rating corner/edge protector set specifically because it lets them match protector strength to box weight instead of guessing at foam density",
+      "verdict": "partly",
+      "why": "The underlying pain is real and matches C1 exactly, and the stated-rating pitch directly answers it - but scout has zero review or rating data to confirm buyers actually reward a printed ECT number over just buying a heavier-duty tier, and the thin 12-piece count next to $13.99 100-packs could kill my click before I ever read the rating message."
+    }
+  ],
+  "what_would_make_me_buy": "I'd buy this and tell another reseller about it if the tile actually showed me the ECT-32 number and a hand-scale photo of it holding a stacked box, if the listing had even a handful of real reviews or photos proving it isn't just a marketing claim from a brand I've never heard of, and if the bullets told me straight-up how many boxes 8 corners and 4 edge guards actually covers so I'm not quietly getting less for my money than the bulk packs sitting right next to it - because right now the idea is exactly what I need, but there's nothing here yet that proves it's not just foam with a number stamped on it."
+}

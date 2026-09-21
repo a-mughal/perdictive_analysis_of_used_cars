@@ -1,0 +1,41 @@
+{
+  "slug": "rockbros-tubeless-repair-kit",
+  "product_name": "ROCKBROS Bike Repair Kit Cycling Tubeless Tire Repair Kit for Mountain Bike and Road Bicycle",
+  "source_url": "https://www.amazon.com/dp/B0HC6CLNFS",
+  "marketplace": "amazon.com",
+  "created_at": "2026-09-21T18:20:06+00:00",
+  "mode": "focus",
+  "target_buyer": {
+    "description": "A road, gravel or mountain cyclist running tubeless tires who gets a puncture mid-ride and needs a fast trailside fix without carrying glue, patches, or removing the tire from the rim",
+    "context": "Mid-ride, tire suddenly losing air on the trail or road, no shop or car nearby",
+    "price_band_usd": {
+      "min": 12.0,
+      "max": 18.0
+    }
+  },
+  "seller_constraints": {
+    "origin_country": "CN",
+    "must_keep": [
+      "no-glue tubeless plug mechanism: flatten the puncture, insert a bacon strip, pump in air or CO2, ride away in minutes",
+      "aluminum alloy tool body with an oxidation surface treatment for waterproofing and rust resistance",
+      "multi-plug conversion kit: deflating pin, thwarting pin, inserting pin, plus 5 rubber (bacon) strips"
+    ],
+    "must_avoid": []
+  },
+  "user_hypotheses": [],
+  "assumptions": [
+    "This is an existing, already-published Amazon listing (ASIN B0HC6CLNFS), not a new-product pitch — the job here is a listing/product audit and competitive read, not a from-scratch product decision",
+    "ASP given as '15 suro' — read as $15.00 USD (typo for 'euro' is possible but the listing is on amazon.com; flagged as an assumption, not confirmed)",
+    "Listing bullets (marketing copy, not yet verified against real reviews): easy no-glue no-wait tubeless plug install; aluminum alloy tool, waterproof/rust-resistant surface treatment; positioned as an emergency/just-in-case tool, no glue, no wait time, no tire removal; multi-plug conversion kit (deflating/thwarting/inserting pins + 5 rubber strips) for exhausting, cleaning and filling air in one pass; marketed as suitable for MTB, road and gravel bikes running tubeless"
+  ],
+  "iterations": 0,
+  "focus_products": [
+    {
+      "product_id": "P1",
+      "url": "https://www.amazon.com/dp/B0HC6CLNFS",
+      "role": "mine",
+      "name": "ROCKBROS Bike Repair Kit Cycling Tubeless Tire Repair Kit"
+    }
+  ],
+  "search_budget_per_product": 3
+}

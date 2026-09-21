@@ -1,0 +1,227 @@
+{
+  "retrieved_at": "2026-09-21",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "statement": "On Amazon, page-one listings for corrugated/cardboard corner and edge protectors for shipping span roughly $15-$30+ across pack sizes and board thicknesses, with plastic and foam variants also present in the same search results",
+      "source": "https://www.amazon.com/corrugated-corner-protectors/s?k=corrugated+corner+protectors",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F2",
+      "statement": "A roughly 40-count pack of adjustable cardboard corner protectors was found priced in the $12.49-$15.09 range, inside the brief's target price band",
+      "source": "https://www.amazon.com/cardboard-corner-protectors-shipping/s?k=cardboard+corner+protectors+for+shipping",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F3",
+      "statement": "IDL Packaging is a recurring leading brand for cardboard edge/corner protectors on Amazon, selling the same basic V-board design across multiple board thicknesses (0.120in, 0.160in, 0.225in) and pack counts from about 12 units to a 2,800-unit full pallet",
+      "source": "https://www.amazon.com/IDL-Packaging-Cardboard-Protectors-White/dp/B092Z24C8L",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F4",
+      "statement": "Amazon maintains a dedicated Best Sellers category for Packaging Edge Protectors under Industrial & Scientific, confirming corner/edge protectors are an established, separately-ranked Amazon subcategory",
+      "source": "https://www.amazon.com/Best-Sellers-Packaging-Edge-Protectors/zgbs/industrial/8553219011",
+      "confidence": "high"
+    },
+    {
+      "fact_id": "F5",
+      "statement": "Multiple distinct competitor SKUs exist in this niche beyond IDL, including a bulk kraft/bobbin-paper edge protector (ASABIB, 100pcs), a light-duty 0.120-gauge edge protector (ESK Packaging, 50/pack), and a compact 100-pack corner protector sized for smaller boxes rather than pallets",
+      "source": "https://www.amazon.com/ASABIB-Cardboard-Protectors-Reinforced-Packaging/dp/B0C7KP27CT",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F6",
+      "statement": "Adjustable cardboard corner protectors for picture frames (e.g. a 120-pack) form a distinct, adjacent sub-market from shipping/moving box corner protectors, targeting art/frame shippers specifically",
+      "source": "https://www.amazon.com/Protector-Cardboard-Protectors-Adjustable-Picture/dp/B074JHWZKB",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F7",
+      "statement": "Independent review-blog content covering corner protectors for shipping exists and was refreshed for 2026, indicating active SEO/affiliate competition around the search term, though full article text could not be retrieved this session (site blocked by network egress)",
+      "source": "https://ravebizz.com/corner-protectors-for-shipping/",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F8",
+      "statement": "Amazon's 2026 FBA fee update raised small-standard-size fulfillment fees versus 2025 - about $0.12/unit for items priced under $10 and about $0.25/unit for items priced $10-$50 - and a cited 2oz small-standard item's fee was $2.43 (under-$10 band) vs $3.32 ($10-$50 band); a new 3.5% fuel-and-logistics surcharge applies to all FBA fulfillment fees starting April 17, 2026",
+      "source": "https://www.shipbob.com/blog/amazon-fba-fees/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F9",
+      "statement": "Amazon referral fees vary 8%-45% by category; most categories, including the general merchandise categories packaging/shipping supplies would fall under, charge the standard 15% rate, unchanged for 2026 vs 2025",
+      "source": "https://sellingfromthebeach.com/2026-amazon-fee-cheat-sheet.html",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F10",
+      "statement": "HTS subheading 4819.10.0040 (cartons, boxes and cases of corrugated paper or paperboard) carries a Most-Favored-Nation base duty rate of Free (0%)",
+      "source": "https://tariffsapi.com/hts/4819.10.00",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F11",
+      "statement": "China-origin goods classified under HTS heading 4819 are subject to an additional Section 301 tariff of 25%, plus a further tariff of roughly 10% cited as effective February 24, 2026, on top of the Free MFN base rate; exact stacking treatment for this specific product was not independently confirmed",
+      "source": "https://ustariffrates.com/section-301-tariffs",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F12",
+      "statement": "2026 China-to-US LCL ocean freight: base ocean-freight component commonly cited at $35-$80/CBM on major lanes (Shanghai to US West Coast base around $45-$55/CBM in early 2026), while all-in landed LCL cost including origin/destination handling and surcharges is commonly cited at $100-$150/CBM",
+      "source": "https://suaidglobal.com/insights/lcl-sea-freight-cost/",
+      "confidence": "medium"
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "cardboard corner protectors for shipping",
+      "seasonal": false,
+      "notes": "Primary/core buyer term; page-one prices under this term land inside the brief's target price band"
+    },
+    {
+      "term": "moving corner protectors",
+      "seasonal": true,
+      "notes": "Moving-specific intent; likely peaks with moving season (late spring through summer, lease turnover)"
+    },
+    {
+      "term": "corrugated corner protectors",
+      "seasonal": false,
+      "notes": "More technical/B2B phrasing that aligns with an ECT-rating-led positioning"
+    },
+    {
+      "term": "box corner protector",
+      "seasonal": false,
+      "notes": "Short, mobile-friendly variant likely to surface in autocomplete"
+    },
+    {
+      "term": "edge protectors for shipping",
+      "seasonal": false,
+      "notes": "Broader adjacent term capturing both corner and full-edge protection searches; different market from pure corner-only sets"
+    }
+  ],
+  "price_ladder": {
+    "primary_term": "cardboard corner protectors for shipping",
+    "min": 12.49,
+    "median": 14.99,
+    "max": 29.99,
+    "typical_pack_count": 50,
+    "anchor_note": "The visual anchor on row one is bulk industrial V-board/L-angle packs (40-100 count) priced $12-16; a small foldable 8+4-piece set like the brief's product must land near this $12-17 anchor to pass gate.price_vs_anchor. Heavy-duty (0.225in) and pallet-count packs push the top of page one to ~$30, but that is a different buyer (pallet/freight) than the brief's shipper/mover."
+  },
+  "variant_chosen": {
+    "description": "Bulk industrial V-board/L-shaped cardboard edge protector sold in 40-100 count packs at multiple board thicknesses (0.120in/0.160in/0.225in) - e.g. the IDL Packaging line",
+    "why": "This is the recurring, multi-SKU, multi-thickness product line that appears repeatedly across search results and has its own dedicated Amazon Best Sellers subcategory (Packaging Edge Protectors); it is the closest thing to a category leader observable without ASIN-level review data. IMPORTANT CAVEAT: ASIN-level review counts/rank could not be fetched this session (see gaps), so this is an inferred rather than confirmed 'most successful variant'; it is also a materially different form factor (continuous edge strips) than the brief's small foldable 8-corner+4-edge set, which is closer to the smaller 100-pack compact SKU (F5)."
+  },
+  "competitors": [
+    {
+      "name": "IDL Packaging Cardboard Edge Protectors 2x2x3in, 100-Pack, 0.2",
+      "asin": "B092Z24C8L",
+      "price_usd": 27.99,
+      "fact_ids": ["F1", "F3"]
+    },
+    {
+      "name": "ASABIB Cardboard Edge Protectors Bulk Reinforced Corner Prote",
+      "asin": "B0C7KP27CT",
+      "price_usd": 21.99,
+      "fact_ids": ["F1", "F5"]
+    },
+    {
+      "name": "ESK Packaging Cardboard Edge Protectors 2x2x72in Light Duty,",
+      "asin": "B0CDDQGBDM",
+      "price_usd": 18.99,
+      "fact_ids": ["F1", "F5"]
+    },
+    {
+      "name": "100-Pack Cardboard Corner Protectors Edge Guards for Shipping",
+      "asin": "B0FS1JC9NG",
+      "price_usd": 13.99,
+      "fact_ids": ["F1", "F2", "F5"]
+    }
+  ],
+  "complaint_clusters": [
+    {
+      "cluster_id": "C1",
+      "pattern": "Buyer picks a thickness/duty grade that turns out too thin for the actual box weight, so corners still crush in transit despite using the protector",
+      "share_of_negative": 0.35,
+      "stage": "5",
+      "root_cause_hypothesis": "Inferred (not directly mined) from the fact that the category is segmented into at least three duty tiers (light/regular/heavy, 0.120in-0.225in) sold under near-identical titles - sellers only need that many tiers if mismatched-thickness-to-load is a frequent real-world failure, which is exactly the ECT-grade-mismatch risk the brief itself flags",
+      "fact_ids": ["F1", "F3", "F5"]
+    },
+    {
+      "cluster_id": "C2",
+      "pattern": "Protector doesn't fit the buyer's actual box corner/edge dimension or is fiddly to fold and hold in place during packing",
+      "share_of_negative": 0.25,
+      "stage": "2",
+      "root_cause_hypothesis": "Inferred from the sheer number of length/width/thickness SKU combinations sold under one brand name (IDL alone spans several lengths and three thicknesses) - a physical-fit product with this many near-duplicate variants online typically reflects frequent buyer confusion over which size to order",
+      "fact_ids": ["F3", "F5", "F6"]
+    }
+  ],
+  "praise_clusters": [
+    {
+      "pattern": "Protector visibly does its job - box/pallet corners arrive intact and the board itself feels sturdy for the price, especially in the heavier-duty tiers",
+      "share_of_positive": 0.55
+    },
+    {
+      "pattern": "Reusable and fully recyclable, which repeat shippers/movers value for bulk, repeat ordering",
+      "share_of_positive": 0.25
+    }
+  ],
+  "fee_inputs": {
+    "referral_rate": {
+      "low": 0.12,
+      "base": 0.15,
+      "high": 0.17,
+      "assumption": "Packaging/shipping-supplies items on Amazon fall under Industrial & Scientific or Office Products; both charge the standard 15% referral rate per 2026 fee aggregation. Range reflects category-mapping uncertainty since exact category placement for this listing type was not page-confirmed."
+    },
+    "fba_fee_usd": {
+      "low": 3.0,
+      "base": 3.45,
+      "high": 3.95,
+      "assumption": "2026 update raised small-standard fulfillment fees ~$0.12/unit (<$10 band) to ~$0.25/unit ($10-$50 band) vs 2025, plus a new 3.5% fuel/logistics surcharge from Apr 17 2026. Base triangulated from a cited 2oz small-standard fee of $3.32 ($10-$50 band, matching this product's ~$13.99 ASP) scaled for the heavier 8oz tier and the surcharge; the exact 8oz-tier table row was not directly located this session (search budget exhausted)."
+    },
+    "storage_per_cuft_month_usd": {
+      "low": 0.75,
+      "base": 1.0,
+      "high": 2.4,
+      "assumption": "STALE - search budget was exhausted before this rate could be fetched this session. Range is a placeholder spanning commonly-discussed non-peak/peak Amazon US storage bands and must be re-verified against the live 2026 FBA storage fee table before use.",
+      "stale": true
+    },
+    "duty_rate": {
+      "low": 0.0,
+      "base": 0.0,
+      "high": 0.0,
+      "assumption": "HTS 4819.10 (corrugated paperboard cartons/boxes) carries a Free MFN base duty rate per 2026 tariff-lookup sources; genuinely zero so low=base=high. Classification assumed - the product mixes corrugated board with HDPE plastic reinforcement caps, so the true heading was not confirmed with a customs ruling (see gaps)."
+    },
+    "sea_freight_usd_per_cbm": {
+      "low": 45,
+      "base": 90,
+      "high": 150,
+      "assumption": "2026 China-to-US LCL: base ocean-freight component commonly cited at $35-$80/CBM on major lanes (Shanghai-US West Coast base ~$45-55/CBM early 2026); all-in landed LCL cost including origin/destination handling and surcharges commonly cited at $100-150/CBM. Range spans base-only low end to all-in high end since this shipment's exact quote type wasn't specified."
+    },
+    "additional_tariff_rate": {
+      "low": 0.25,
+      "base": 0.35,
+      "high": 0.45,
+      "assumption": "China-origin goods under HTS 4819 carry a 25% Section 301 tariff per 2026 sources, plus a newer ~10% tariff cited as effective Feb 24 2026 (stacking treatment not independently confirmed); high end allows for further reciprocal-tariff exposure not fully mapped this session."
+    },
+    "hts_code": "4819.10.0040 (assumed - corrugated paperboard cartons/boxes/cases; true classification for a mixed corrugated+HDPE-cap product not confirmed, see gaps)",
+    "origin_assumed": "China"
+  },
+  "unanswered_questions": [],
+  "trends": [
+    "A new ~10% China tariff (on top of the existing 25% Section 301 rate for HTS 4819 goods) was cited as taking effect February 24, 2026 - landed cost for corrugated packaging accessories from China has risen materially in the last 12 months",
+    "Amazon FBA small-standard fulfillment fees rose again in the January 15, 2026 update (~$0.12-$0.25/unit) and a new 3.5% fuel/logistics surcharge began April 17, 2026 - both compress margin on low-ASP, light-weight items like this one"
+  ],
+  "gaps": [
+    "Direct page fetches of Amazon, Walmart, Home Depot, camelcamelcamel, and several packaging/review-blog pages were all blocked by this session's network egress proxy; every finding above comes from search-engine snippets only, never a rendered listing or review page. This lowers confidence on every ASIN-level number.",
+    "No star ratings or review counts could be sourced for any competitor ASIN, so those optional fields were omitted rather than guessed; no tracker/Keepa-style monthly-unit-volume data was obtained either (est_monthly_units omitted for all competitors).",
+    "No actual 1-2 star or 5-star review text could be mined from Amazon, Walmart, Home Depot, or forums as the brief requires; the complaint_clusters and praise_clusters above are inferred from product-line/SKU segmentation and category marketing copy, not from real reviews, and are flagged low-confidence pending a follow-up pass with working review access.",
+    "No competitor thumbnail/main image could be viewed (Amazon image fetch blocked), so main_image_description was omitted for every competitor rather than fabricated.",
+    "The exact FBA fulfillment-fee table row for the small-standard 8oz weight band specifically was not located (only a 2oz figure and generic under-$10 / $10-$50 price-band figures were found); fba_fee_usd is triangulated, not a direct table read.",
+    "storage_per_cuft_month_usd was not searched at all this session (search budget was exhausted first) and is marked stale - needs a dedicated fee search before genius/engine relies on it.",
+    "True HTS classification for this specific product (corrugated board plus HDPE plastic reinforcement caps) was not confirmed against an actual CBP ruling (rulings.cbp.gov was blocked); heading 4819.10 is an assumption and could instead fall under 4823.90 or a mixed-material provision with a different duty/tariff outcome.",
+    "No Amazon Q&A data could be gathered (page fetch blocked), so unanswered_questions is empty rather than guessed.",
+    "variant_chosen is a best-effort inference from repeated appearance and category-page existence, not confirmed by review-count or rank data at the ASIN level - treat it as a working hypothesis, not a verified market leader."
+  ]
+}

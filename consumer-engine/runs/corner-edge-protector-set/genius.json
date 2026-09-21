@@ -1,0 +1,258 @@
+{
+  "planning_fallacy_multiplier": 1.35,
+  "versions": [
+    {
+      "version_id": "v1_launch",
+      "idea_ids": ["I2", "I3", "I4", "I5"],
+      "bom": [
+        {
+          "part": "ECT-32 corrugated die-cut board blank set (8 corner protectors + 4 edge guards, extended-wing geometry per I4, self-locking slot-and-tab die per I5)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.12, "base": 0.20, "high": 0.32, "assumption": "Own one-off web search (2 queries: 'ECT-32 corrugated sheet cost per square foot' and a BGR/PaperMart bale-price follow-up) did not return a usable $/sq ft figure - retail listing pages for ECT-32 sheets (packbgr.com, papermart.com) did not expose price in search snippets. Estimated bottom-up instead: ~3.7 sq ft of C-flute board per set (8 corner blanks ~30 sq in + 4 edge blanks ~72 sq in each, per I4's re-nested wing dims) x an assumed China-converting cost of $0.03-$0.08/sq ft (own estimate, not a scout fact_id, flagged as such per the brief's instruction)."}
+        },
+        {
+          "part": "HDPE reinforcement corner cap, plain molded, safety-blue masterbatch (I3) - no deboss/hot-stamp",
+          "qty": 8,
+          "unit_cost_usd": {"low": 0.04, "base": 0.08, "high": 0.15, "assumption": "KB rule of thumb: simple plastic part under 10g runs low single-digit cents to ~$0.15 at 10k+ units; brief's MOQ 1500 sets = 12,000 caps, near that volume threshold, so priced toward the lower-mid of the range. Color swap (I3) is a masterbatch change on existing tooling, no meaningful cost delta, folded into this line."}
+        },
+        {
+          "part": "Weight-Match Guide Card (I2) - 1-color kraft cardstock insert, die-cut lookup table",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.05, "high": 0.09, "assumption": "Scaled down from KB's printed-tuck-box range ($0.08-0.25) since this is a smaller, single-color flat card with no folding/gluing."}
+        },
+        {
+          "part": "Bundle add-on: 1 spare HDPE corner cap + short kraft reinforcement tape strip",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.05, "high": 0.09, "assumption": "Cost_tier 'cents' per innovaty's bundle_or_addition; spare cap priced at the low end of the cap range (~$0.04) plus a few cents of tape."}
+        },
+        {
+          "part": "Rigid kraft mailer + printed belly-band (ECT-32 + weight-match callout), replaces standard poly bag",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.25, "base": 0.45, "high": 0.75, "assumption": "Innovaty's packaging.cost_tier is explicitly 'dimes' ($0.10-$0.99); priced above the brief's prior poly-bag+FNSKU baseline of $0.25 because a rigid mailer is a real structural upgrade, not a bag swap. Includes FNSKU label."}
+        },
+        {
+          "part": "Assembly labour & QC (fold, cap-seat, card insert, belly-band, spec check on 12 pieces)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.08, "base": 0.15, "high": 0.25, "assumption": "KB says 3-5 part assembly/QC in China/Vietnam runs a few cents; this set has more discrete pieces (12 protector pieces + card + bundle + packaging), so scaled above the 3-5-part baseline."}
+        }
+      ],
+      "unit_weight_g": 258,
+      "landed_cost_usd": {"low": 1.39, "base": 2.78, "high": 5.47, "assumption": "landed = EXW(BOM sum: low 0.83 / base 1.54 / high 2.70) + freight_per_unit + duty_per_unit + inbound_to_FBA. Freight: scout's LCL rate $45-150/CBM (fact_id F12, medium confidence) x an assumed ~100 cu in (0.0016 CBM) packed volume, blended toward the brief's own prior $0.30/unit estimate -> low $0.10, base $0.20, high $0.35. Duty+tariff: HTS 4819.10 MFN duty is 0% per F10, but classification is an unconfirmed assumption for this mixed corrugated+HDPE product, so a misclassification buffer widens the duty tail to 5.5% high (vs scout's flat 0/0/0). Section 301 + the new Feb-2026 tariff (F11, base 25%+10%, stacking unconfirmed) is widened by a quarter per the brief's stale-figure instruction: 25%/35%/45% -> 18.75%/35%/56.25%. Combined duty+tariff rate applied to EXW: 19%/35%/62%. Inbound-to-FBA (FNSKU application, Amazon inbound placement fee, port-to-3PL drayage) estimated at $0.30/$0.50/$0.75 - not a scout fact, genius's own build-up. Result lands very close to the brief's own prior sourcing estimate of $2.81/unit at the base case, which is a useful sanity cross-check. BOM(EXW) is below landed cost at every point (low/base/high) as required."}
+    },
+    {
+      "version_id": "v2_with_hero",
+      "idea_ids": ["I1", "I2", "I3", "I4", "I5"],
+      "bom": [
+        {
+          "part": "ECT-32 corrugated die-cut board blank set (8 corner protectors + 4 edge guards, extended-wing geometry per I4, self-locking slot-and-tab die per I5)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.12, "base": 0.20, "high": 0.32, "assumption": "Same as v1_launch - board cost is unaffected by the hero cap change. See v1_launch's assumption for the own-search note on this line."}
+        },
+        {
+          "part": "HDPE reinforcement corner cap, hero version - debossed raised 'ECT-32' numeral + stack pictogram, hot-stamped black-ink callout, safety-blue (I1 + I3)",
+          "qty": 8,
+          "unit_cost_usd": {"low": 0.06, "base": 0.12, "high": 0.22, "assumption": "Same base plastic-part range as v1's plain cap, plus a per-piece delta for the added hot-stamp print pass (a real secondary process, not free once the debossed cavity exists) - own estimate, no scout fact_id for hot-stamp piece cost."}
+        },
+        {
+          "part": "Weight-Match Guide Card (I2)",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.05, "high": 0.09, "assumption": "Same as v1_launch."}
+        },
+        {
+          "part": "Bundle add-on: 1 spare HDPE corner cap + short kraft reinforcement tape strip",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.03, "base": 0.05, "high": 0.09, "assumption": "Same as v1_launch."}
+        },
+        {
+          "part": "Rigid kraft mailer + printed belly-band, replaces standard poly bag",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.25, "base": 0.45, "high": 0.75, "assumption": "Same as v1_launch."}
+        },
+        {
+          "part": "Assembly labour & QC, plus hot-stamp legibility spot-check",
+          "qty": 1,
+          "unit_cost_usd": {"low": 0.09, "base": 0.17, "high": 0.28, "assumption": "v1_launch's assembly range plus a small increment for the added hot-stamp QC step."}
+        }
+      ],
+      "unit_weight_g": 260,
+      "landed_cost_usd": {"low": 1.59, "base": 3.24, "high": 6.43, "assumption": "Same build-up method as v1_launch (EXW low 1.00 / base 1.88 / high 3.29, plus freight $0.10/$0.20/$0.35, duty+tariff at 19%/35%/62% of EXW, inbound-to-FBA $0.30/$0.50/$0.75). Higher than v1_launch purely because the hero cap's EXW cost is higher, which also inflates the ad-valorem duty/tariff dollar amount. BOM(EXW) is below landed cost at every point."}
+    }
+  ],
+  "tooling_and_nre": [
+    {
+      "item": "Steel-rule die-cutting tool - corrugated blanks (8 corner + 4 edge, extended-wing I4 + self-locking slot-tab I5 geometry)",
+      "cost_usd": {"low": 400, "base": 800, "high": 1500, "assumption": "Brief's prior sourcing note cites $300 tooling for a simpler 2-part design; widened upward because the extended wings (I4) and slot-and-tab locking geometry (I5) add die complexity beyond a plain L-shaped blank."}
+    },
+    {
+      "item": "Aluminum prototype injection mold - HDPE reinforcement cap, 1-2 cavities, plain safety-blue (I3) face, no deboss",
+      "cost_usd": {"low": 2000, "base": 3500, "high": 6000, "assumption": "KB rule of thumb: an aluminium prototype tool of one to four cavities is low four figures."}
+    },
+    {
+      "item": "Hero-cap tooling upgrade - debossed 'ECT-32' + pictogram cavity detail (EDM/engrave) plus hot-stamp die & fixture (I1) - v2_with_hero ONLY, not required to launch v1_launch",
+      "cost_usd": {"low": 1500, "base": 3000, "high": 6000, "assumption": "Incremental cavity-face engraving on the existing cap tool plus a separate hot-stamp die/fixture; priced below a full new steel production tool since it's a detail add to an existing low-cavity aluminum tool, not a new multi-cavity steel tool. This is the cost of the hero that we recommend waiting on."}
+    },
+    {
+      "item": "Prototypes & fit tests (2 supplier rounds)",
+      "cost_usd": {"low": 300, "base": 600, "high": 1200, "assumption": "KB timeline/cost guidance for a prototypes-and-fit-tests phase."}
+    },
+    {
+      "item": "Test rig - ECT/crush validation, 1000-cycle slot-tab retention (I5), hot-stamp/deboss abrasion rub test (I1, ASTM D5264-style, only needed once v2 is built)",
+      "cost_usd": {"low": 400, "base": 800, "high": 1500, "assumption": "Own build-up for a simple mechanical fixture plus a 3rd-party ECT/crush verification test run, per innovaty's test_that_proves_it specs for I1 and I5."}
+    },
+    {
+      "item": "FTO search - MANDATORY: I5 (self-locking slot-and-tab fold) is flagged medium prior-art risk by innovaty",
+      "cost_usd": {"low": 800, "base": 1500, "high": 3000, "assumption": "Typical cost range for a narrow patent landscape / freedom-to-operate search and attorney opinion on a single mechanical feature, not a full portfolio clearance."}
+    },
+    {
+      "item": "Certifications / compliance review - Prop 65 labeling + packaging-claims review",
+      "cost_usd": {"low": 200, "base": 400, "high": 800, "assumption": "No formal government certification applies to a passive plastic/corrugate shipping accessory (ECT is an industry test spec, not a regulatory mark); budgeted for legal/compliance review of labeling and the recyclability claim only."}
+    },
+    {
+      "item": "Photography - main image, 4 supporting images (scale, hard-case load test, 3-step install), packaging unboxing, lifestyle shot",
+      "cost_usd": {"low": 600, "base": 1200, "high": 2200, "assumption": "Own estimate for a small commercial product photo shoot covering innovaty's image_prompts (main, packaging, lifestyle) plus 3 additional listing images."}
+    },
+    {
+      "item": "First ad budget - launch PPC seed, months 1-2",
+      "cost_usd": {"low": 1500, "base": 3000, "high": 6000, "assumption": "Sized to sustain the 40-80% launch-ACoS range from the KB against the low month-1-3 innovator-only volume this forecast assumes."}
+    },
+    {
+      "item": "Samples & sample freight - pre-production and T1 approval rounds, air-shipped from China",
+      "cost_usd": {"low": 150, "base": 300, "high": 600, "assumption": "Own estimate for 2-3 rounds of small air-freighted sample sets at $50-$200/round including express shipping."}
+    },
+    {
+      "item": "Review-seeding program - Vine enrollment + launch-week giveaway units, direct mitigation for the review-velocity chasm risk",
+      "cost_usd": {"low": 300, "base": 600, "high": 1200, "assumption": "Own estimate: ~30-60 units at landed cost plus Vine enrollment fee, needed because buyer.json names zero visible reviews as the #1 unanswerable purchase blocker (fear rank 5, N3)."}
+    }
+  ],
+  "fixed_launch_cost_usd": {"low": 6650, "base": 12700, "high": 24000, "assumption": "Sum of tooling_and_nre EXCLUDING the hero-cap tooling upgrade line ($1,500/$3,000/$6,000), because the recommended path launches v1_launch first without I1. If v2_with_hero is later funded from v1 proceeds, add that line on top: low $8,150 / base $15,700 / high $30,000."},
+  "price_usd": {"low": 13.99, "base": 15.49, "high": 16.79, "assumption": "Buyer's price_psychology gives max_without_reason $12.99 and max_with_reason $17.99, with the reason defined as a clearly printed ECT-32 number plus a weight-match guide plus a photo proving the rating - all three are delivered by I2's card, the belly-band packaging, and the 'hard case' listing image, none of which require the I1 hero mold. Held inside the brief's own target_buyer.price_band_usd ($11.19-$16.79) as the tighter, more conservative ceiling rather than pushing to buyer's full $17.99, since this is a brand-new, zero-review listing (gate.social_proof risk)."},
+  "economics": {
+    "referral_rate": {"low": 0.12, "base": 0.15, "high": 0.17, "assumption": "Scout fact: packaging/shipping-supplies items fall under Industrial & Scientific or Office Products, both standard 15% referral (fact_id F9, medium confidence). Not marked stale by scout, so kept as given."},
+    "fba_fee_usd": {"low": 2.25, "base": 3.45, "high": 4.94, "assumption": "Scout's fba_fee_usd (low 3.00/base 3.45/high 3.95, fact_id F8) is triangulated, not a direct 2026 fee-table read for the 8oz tier - per the brief's instruction this counts as stale, widened by a quarter: low = 3.00 x 0.75, high = 3.95 x 1.25, base held."},
+    "storage_alloc_usd": {"low": 0.05, "base": 0.09, "high": 0.28, "assumption": "Scout's storage_per_cuft_month_usd is explicitly stale:true (never searched); widened by a quarter to low $0.56 / base $1.00 / high $3.00 per cuft-month. Converted to a per-unit allocation using ~100 cu in (0.058 cuft) packed volume x an assumed 1.5 months average time-in-FBA-storage before sale: 0.058 x 1.5 x [0.56, 1.00, 3.00]."},
+    "return_rate": {"low": 0.02, "base": 0.04, "high": 0.08, "assumption": "No scout fact for this category's return rate (not a fetched fee, genius's own estimate per the KB). Low-ASP, non-apparel packaging accessory with modest fit risk (C2's size/fit confusion, partly addressed by I4's fuller-coverage wings and I2's sizing guidance); base 4% reflects a typical low-return commodity accessory, high 8% allows for the brand-new-listing skepticism buyer.json flags (fear rank 5)."},
+    "ad_rate": {"low": 0.25, "base": 0.40, "high": 0.65, "assumption": "KB: 40-80% ACoS at launch, 15-30% steady-state on a commodity. This is a blended year-1 range (heavier weight on the launch phase given months 1-3 are innovator-only per moore.chasm and buyer's own moderate click-through of 0.35), not a steady-state-only figure."}
+  },
+  "forecast": {
+    "term_monthly_units": {"low": 2500, "base": 5000, "high": 8500, "assumption": "Scout did not obtain any ASIN-level monthly-unit or tracker data for the top 10-20 listings on this term (explicit gap in scout.json). Genius's own estimate for a confirmed-but-niche Amazon subcategory (fact_id F4, Best Sellers: Packaging Edge Protectors) at this price point: base 5,000 units/month across the top 10-20 ASINs combined, widened beyond the standard +/-40% (to roughly +/-70%) because there is no underlying data point to anchor the +/-40% band to, only category-existence evidence."},
+    "share_m6": {"low": 0.01, "base": 0.02, "high": 0.035, "assumption": "KB: a new entrant reaches 1-5% of term volume in months 1-3, 3-10% by months 6-12 IF CTR/conversion beat the median. Buyer's own CTR judgement (purchase_probability_current.click = 0.35) is mixed: push_away on price-per-piece (12 pcs vs 100-pack at similar price, ariely.relativity) and zero-reviews (gate.social_proof), pull on the ECT-32 problem-fit message. v1_launch keeps I3's high-thumbnail-visibility blue caps and I4's fuller-looking wings but does NOT yet have I1's on-cap debossed numeral (the strongest gate.brand_trust/authority signal), so share is placed at the low-to-mid, not the top, of the month-6 band."},
+    "share_m12": {"low": 0.02, "base": 0.045, "high": 0.07, "assumption": "Same reasoning as share_m6, extended to months 6-12 as reviews accumulate (assuming the review-seeding mitigation in the premortem lands) and conversion improves once N1/N2/N4/N5 are answered on-listing; still short of the 10% ceiling because the hero deboss cap (I1) - the single highest-thumbnail-visibility trust signal - is deferred to v2."},
+    "monthly_units_m6": {"low": 25, "base": 100, "high": 298, "assumption": "term_monthly_units x share_m6, low-low/base-base/high-high paired."},
+    "monthly_units_m12": {"low": 50, "base": 225, "high": 595, "assumption": "term_monthly_units x share_m12, low-low/base-base/high-high paired."},
+    "annual_units_y1": {"low": 300, "base": 1300, "high": 3600, "assumption": "Built as a 12-month ramp, not a flat average: months 1-3 at ~30% of the month-6 run-rate (moore.chasm innovator-only volume, review-seeding still landing), months 4-6 ramping to ~70% of month-6 rate, months 7-12 averaging between the month-6 and month-12 rates (with a modest Q4 bump folded into the high case, since Nov-Dec is the category's main seasonal lift for a shipping-supplies term). Summed: low ~300, base ~1,300, high ~3,600 units for year one."},
+    "seasonality_note": "This term is closer to a year-round B2B/reseller shipping-supplies search than a consumer gift term, so back-to-school (August) and 'organize my life' (January) have limited relevance; Q4 (Nov-Dec) e-commerce shipping volume is this term's main seasonal bump as resellers ship more holiday-driven orders, folded into the upper half of the annual range rather than modeled as a separate spike.",
+    "reasoning": "Outside-in chain: (1) term_monthly_units is genius's own estimate (2,500-8,500/mo) since scout gathered no ASIN-level unit data, only confirmation the subcategory exists (F4). (2) share_m6/share_m12 place v1_launch in the bottom half of the KB's 1-5%/3-10% new-entrant bands because the buyer's own click-through read is mixed (push_away on price-per-piece and zero reviews, pull on the ECT-32 fit message) and the highest-visibility trust signal (I1's debossed cap) is deliberately deferred to v2. (3) monthly_units_m6/m12 multiply term volume by share. (4) annual_units_y1 integrates a slow-start ramp (moore.chasm) rather than a flat 12x month-6 estimate, since months 1-3 are innovator-only."
+  },
+  "timeline": {
+    "phases": [
+      {"phase": "Concept, CAD/DFM with two corrugate + two cap suppliers, plus prototypes and fit tests", "weeks": {"low": 5.4, "base": 7.4, "high": 9.5, "assumption": "KB base ranges (concept/CAD/DFM 2-4 wk + prototypes/fit 2-3 wk = 4-7 wk pre-multiplier, base ~5.5 wk) x 1.35 planning-fallacy multiplier."}},
+      {"phase": "Mechanical, load-rating and fold-lock testing (ECT crush validation, 1,000-cycle slot-tab retention) plus the mandatory FTO search running in parallel", "weeks": {"low": 2.7, "base": 4.1, "high": 5.4, "assumption": "KB base range for adhesive/mechanical testing 2-4 wk (base ~3 wk) x 1.35 multiplier; FTO search runs concurrently so it does not add net calendar time on its own."}},
+      {"phase": "Aluminum soft tool + T1 samples, one to two iterations", "weeks": {"low": 8.1, "base": 10.8, "high": 13.5, "assumption": "KB base ranges: soft tool + T1 4-6 wk + 1-2 iterations 2-4 wk = 6-10 wk pre-multiplier (base 8 wk) x 1.35."}},
+      {"phase": "Production tool sign-off, first production run and packaging (rigid mailer + belly-band converting)", "weeks": {"low": 9.5, "base": 12.8, "high": 16.2, "assumption": "KB base ranges: production tool/sign-off 4-8 wk + first production run/packaging 3-4 wk = 7-12 wk pre-multiplier (base 9.5 wk) x 1.35."}},
+      {"phase": "Sea freight and FBA check-in (listing copy, photography and A+ content built in parallel)", "weeks": {"low": 6.8, "base": 8.1, "high": 9.5, "assumption": "KB base range 5-7 wk pre-multiplier (base 6 wk) x 1.35."}}
+    ],
+    "weeks_to_first_sale": {"low": 32.5, "base": 43.2, "high": 54.1, "assumption": "Sum of the five phases above, each already carrying the 1.35 planning-fallacy multiplier. Sits within/near the KB's stated 20-34 week pre-multiplier range scaled by 1.3-1.5 (20x1.3=26 wk to 34x1.5=51 wk), on the higher end because this design adds a mandatory FTO search and a slot-tab retention test beyond the KB's baseline phase list."}
+  },
+  "premortem": [
+    {
+      "obituary": "It is 12 months on and this killed us: the HDPE cap-to-board bond delaminated after real transit vibration and repeated stacking loads within the first few weeks of sales, and a viral 'this fake-rated protector fell apart' video tanked the rating before review count ever recovered.",
+      "probability": 0.12,
+      "impact": "major",
+      "mitigation": "Validate the cap-to-board joint (mechanical crimp or structural hot-melt, not a light adhesive dab) with the same test rig used for the slot-tab retention test, adding a vibration/transit-simulation pass before sign-off.",
+      "mitigation_cost_usd": {"low": 150, "base": 350, "high": 700, "assumption": "Incremental scope added to the already-budgeted test rig line, not a new fixture."}
+    },
+    {
+      "obituary": "It is 12 months on and this killed us: a second factory in the same trade-show network copied the printed-spec-plus-blue-cap look within 90 days and undercut us at 60% of price, and the brief's own LOW-BARRIER-to-entry tag turned out to be exactly right.",
+      "probability": 0.35,
+      "impact": "major",
+      "mitigation": "Keep the hero deboss/hot-stamp mold (I1) as the differentiator held back until v2, own the tool rather than share it across factories, and lean on the weight-match card + belly-band system as a harder-to-clone service layer than a cap shape alone.",
+      "mitigation_cost_usd": {"low": 0, "base": 0, "high": 0, "assumption": "Genuinely zero - this is a sequencing/IP-ownership decision (deferring I1, not sharing tooling), not a new purchase."}
+    },
+    {
+      "obituary": "It is 12 months on and this killed us: the rigid-mailer packaging landed a few millimetres over the small-standard size-tier line and the FBA fee jumped a full tier, quietly erasing the margin the base-case numbers assumed.",
+      "probability": 0.20,
+      "impact": "major",
+      "mitigation": "Lock external packed dimensions with a 5mm safety margin under the small-standard threshold at DFM sign-off, confirmed on 3 physical production samples with calipers before committing to the full production run.",
+      "mitigation_cost_usd": {"low": 0, "base": 50, "high": 150, "assumption": "Trivial - a dimensional-check step folded into the existing QC pass."}
+    },
+    {
+      "obituary": "It is 12 months on and this killed us: the China-origin tariff on HTS 4819 goods moved again (as it already did once in Feb 2026 per scout's trend note), and the true classification for this mixed corrugated+HDPE product turned out to sit under a higher-duty heading than the assumed 4819.10.",
+      "probability": 0.30,
+      "impact": "major",
+      "mitigation": "Get a binding CBP classification ruling on the true HTS heading for the mixed-material product before committing to the full 1,500-unit MOQ, and hold a cash buffer sized to the widened duty+tariff range (up to 62% of EXW in the high case).",
+      "mitigation_cost_usd": {"low": 400, "base": 800, "high": 1500, "assumption": "Typical cost of a binding ruling request via a customs broker."}
+    },
+    {
+      "obituary": "It is 12 months on and this killed us: Amazon flagged the 'curbside recyclable' claim on the belly-band as unsubstantiated and suppressed the listing pending a policy review, right as the launch ad budget was spent driving traffic to it.",
+      "probability": 0.08,
+      "impact": "minor",
+      "mitigation": "Keep the sustainability claim generic and verifiable (standard OCC/kraft recycling stream, no numeric recycled-content % since no supplier certificate exists yet, per innovaty's own rejected_claims list), and route final packaging copy through Amazon's claims-review guidance before going live.",
+      "mitigation_cost_usd": {"low": 0, "base": 100, "high": 250, "assumption": "Compliance copy review, no structural change needed."}
+    },
+    {
+      "obituary": "It is 12 months on and this killed us: with zero visible reviews for months, buyer after buyer hit the exact 'is this flimsy junk from an unknown brand' wall (fear rank 5, N3) and bought the 100-pack with 4,000 reviews sitting right next to us instead - review velocity never crossed the chasm.",
+      "probability": 0.45,
+      "impact": "fatal",
+      "mitigation": "Enroll in Vine and run a launch-week giveaway to a reseller/small-shipper micro-influencer audience, targeting 15+ reviews by week 8 post-launch rather than waiting on organic velocity; do not treat ad spend alone as a substitute for review count.",
+      "mitigation_cost_usd": {"low": 300, "base": 600, "high": 1200, "assumption": "~30-60 seeded units at landed cost plus Vine enrollment fee; matches the review-seeding NRE line in tooling_and_nre."}
+    },
+    {
+      "obituary": "It is 12 months on and this killed us: a competitor or an independent reviewer crush-tested the board and showed it doesn't actually hold to ECT-32, and the brief's own flagged risk - a supplier quietly substituting a lower linerboard grade - turned out to be exactly what happened, which is fatal for a product whose entire pitch is 'you can trust this number.'",
+      "probability": 0.18,
+      "impact": "fatal",
+      "mitigation": "Require a mill certificate confirming true ECT-32 linerboard on every PO (not just the first sample run), keep a batch-traceable retained sample from every production lot, and be ready to publish the certificate if the claim is ever publicly challenged.",
+      "mitigation_cost_usd": {"low": 100, "base": 250, "high": 500, "assumption": "Certificate collection and batch-sample retention/admin per production run."}
+    }
+  ],
+  "idea_rulings": [
+    {
+      "idea_id": "I1",
+      "ruling": "stretch",
+      "why": "Real trust value, but it is the single most expensive, highest-risk piece of tooling in the whole plan and is not required to earn the buyer's 'visible reason' price premium, which the packaging/card/photo system already delivers without it.",
+      "deciding_number": "Hero-cap tooling delta of $1,500-$6,000 is the single most expensive line in the plan, and the buyer's stated 'visible reason' price premium is already earned by the weight-match card and packaging system without it"
+    },
+    {
+      "idea_id": "I2",
+      "ruling": "realistic",
+      "why": "Directly fixes N1/N4/N5 at near-zero incremental cost and no tooling.",
+      "deciding_number": "Incremental BOM cost $0.03-$0.09/unit"
+    },
+    {
+      "idea_id": "I3",
+      "ruling": "realistic",
+      "why": "A colorant-masterbatch swap on tooling that is being built anyway (for the base cap), with high thumbnail visibility per innovaty.",
+      "deciding_number": "Near-zero marginal cost, no new tooling"
+    },
+    {
+      "idea_id": "I4",
+      "ruling": "realistic",
+      "why": "A die re-nest that fixes C2's coverage complaint at innovaty's own stated cost_tier of 'free.'",
+      "deciding_number": "cost_tier: free (die geometry change only, board cost stays inside the $0.12-$0.32 range)"
+    },
+    {
+      "idea_id": "I5",
+      "ruling": "stretch",
+      "why": "The mechanism itself is free, but innovaty flags it medium prior-art risk, which makes an FTO search mandatory before it can be called clear to ship.",
+      "deciding_number": "prior_art_risk: medium -> triggers a mandatory $800-$3,000 FTO line"
+    },
+    {
+      "idea_id": "I6",
+      "ruling": "realistic",
+      "why": "Zero tooling, zero BOM delta, and innovaty itself sequences it to v2_later pending review-text confirmation - agree with that sequencing.",
+      "deciding_number": "cost_tier: free; priority: later (innovaty's own sequencing, not a genius override)"
+    }
+  ],
+  "recommended_version_id": "v1_launch",
+  "feasibility_verdict": "stretch",
+  "regulatory": [
+    "No government certification applies - ECT is an industry test spec (TAPPI/ASTM-style edge crush test), not a regulatory mark; listing and pack copy must say 'stated' or 'rated to,' never 'certified.'",
+    "Prop 65 labeling review recommended for the HDPE components as a precaution, even though virgin HDPE resin is not expected to contain a listed substance.",
+    "No CPSC/magnet scrutiny applicable - no magnets, no child-directed marketing in this product.",
+    "Standard FBA packaging/labeling and size-tier compliance only for a passive corrugated+HDPE shipping accessory."
+  ],
+  "three_sentences_to_founder": [
+    "Ship the base set first - I2's weight-match card, I3's blue caps, I4's longer wings, I5's self-locking fold - at $13.99-$16.79 (base $15.49): landed cost runs about $2.78 at the base case ($1.39-$5.47 range) against $6,650-$24,000 of tooling and launch NRE, none of which requires the hero mold.",
+    "The debossed 'ECT-32' hero cap (I1) waits for v2, priced at an extra $1,500-$6,000 in tooling alone - it's a stretch call, not a must, because the printed card, belly-band and hard-case photo already give buyers the 'visible reason' they need to pay near the top of the price band without it.",
+    "The two things actually worth funding on day one are review-seeding (zero reviews is the buyer's #1 unanswerable fear, roughly 45% chance it stalls month-6 volume, $300-$1,200 to mitigate) and a mill certificate on every PO to back the ECT-32 claim (roughly 18% chance of a fatal spec-integrity challenge if unverified, $100-$500 to mitigate)."
+  ]
+}

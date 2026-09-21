@@ -14,8 +14,6 @@
     }
   },
   "seller_constraints": {
-    "launch_budget_usd": 0,
-    "time_to_market_months": 0,
     "origin_country": "CN",
     "must_keep": [
       "ECT-32 rated corrugate (a stated, printed Edge Crush Test value) with HDPE reinforcement caps"

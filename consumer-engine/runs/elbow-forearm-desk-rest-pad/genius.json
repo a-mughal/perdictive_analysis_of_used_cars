@@ -1,0 +1,558 @@
+{
+  "planning_fallacy_multiplier": 1.35,
+  "versions": [
+    {
+      "version_id": "v1_now",
+      "idea_ids": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "bom": [
+        {
+          "part": "Firm HR polyurethane base layer, 45kg/m3+, stepped/tapered profile (I1)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.3,
+            "base": 0.45,
+            "high": 0.7,
+            "assumption": "No scout fact prices dual-density foam directly. Own one-off search (Alibaba/made-in-china listings for PU foam sheet and finished elbow-pad wholesale, e.g. basic single-density elbow pads listed from ~$3.09/unit retail-marked wholesale) found no exact per-unit molded dual-density figure, so this is estimated from the brief's own rule-of-thumb scaling (simple molded plastic parts run cents-to-$0.15 at 10k+; a larger, thicker, compression-molded foam core with a stepped cavity costs several multiples of that). Treated as an estimate pending a real supplier quote."
+          }
+        },
+        {
+          "part": "Softer top comfort foam layer, flame-bonded to base (I1)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.2,
+            "base": 0.28,
+            "high": 0.4,
+            "assumption": "Same basis as the base layer: a thinner, lower-density second foam pour/lamination, estimated as roughly 60% of the base layer's material cost since it uses less foam per unit volume. Own-search Alibaba/made-in-china price checks did not return a specific dual-density figure; treat as an estimate."
+          }
+        },
+        {
+          "part": "Open double-knit lycra-blend anti-tack cover fabric, DWR finish, flame-laminated (I4)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.15,
+            "base": 0.42,
+            "high": 0.6,
+            "assumption": "Innovaty tags this 'cents' tier but a DWR-finished, 20,000+ Martindale double-knit with no PU film is a step up from a generic printed poly cover; priced as a mid-grade technical knit cut-and-sewn cover, no scout source — estimate pending fabric supplier quote."
+          }
+        },
+        {
+          "part": "Full-footprint bonded rubber base sheet, waffle texture, mechanically keyed (I3)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.25,
+            "base": 0.38,
+            "high": 0.55,
+            "assumption": "No scout price for a full-sheet rubber base (only the brief's rule of thumb for a small strip or 3M VHB tape). Estimated at 3-5x a thin non-slip strip because it covers the full ~7.5x5in footprint and needs a heat-press bonding step, not just adhesive. Estimate, not a quote."
+          }
+        },
+        {
+          "part": "Printed double-sided fit-diagram insert card + foam-density trial swatch glued on (I2, bundle_or_addition)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.08,
+            "base": 0.13,
+            "high": 0.2,
+            "assumption": "Card stock printing per brief's rule of thumb for a printed insert ($0.08-0.25 tuck-box-tier line item) plus a few cents for the glued foam offcut swatch; combined into one line since both ship with every unit."
+          }
+        },
+        {
+          "part": "Woven twill density-spec tag, bar-tack stitched (I5)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.03,
+            "base": 0.05,
+            "high": 0.08,
+            "assumption": "Small woven label plus stitching labor, priced at the low end of the brief's 'dimes' cost tier for a single small component; no scout source, estimate."
+          }
+        },
+        {
+          "part": "Moderate-tier printed tuck box + shaped paper-pulp tray",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.2,
+            "base": 0.35,
+            "high": 0.5,
+            "assumption": "brief.json packaging_note sets packaging_tier 'moderate' (printed box + insert), matching innovaty's packaging.cost_tier 'dimes'; priced above the brief's bare $0.08-0.25 tuck-box rule of thumb to account for the die-cut oval window and shaped paper tray innovaty specifies."
+          }
+        },
+        {
+          "part": "Assembly labor + QC (bonding two foam layers, base sheet, cover, tag, insert, 6-7 components)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.15,
+            "base": 0.22,
+            "high": 0.35,
+            "assumption": "Brief's rule of thumb: assembly and QC for 3-5 parts in China/Vietnam runs a few cents; scaled up modestly for 6-7 components (two foam bonds, base bond, cover lamination, tag stitch, insert placement) and the per-unit density-badge QC check."
+          }
+        }
+      ],
+      "unit_weight_g": 220,
+      "landed_cost_usd": {
+        "low": 1.96,
+        "base": 3.47,
+        "high": 5.82,
+        "assumption": "EXW (sum of BOM low/base/high above: $1.57/$2.29/$3.34) + freight_per_unit + duty_per_unit + inbound-to-FBA. Freight: scout's sea_freight_usd_per_cbm is stale ($60/$110/$180 per cbm); widened by ~25% to $45/$110/$200 per cbm per the brief's instruction, divided by an assumed 380-520 units/cbm (packed carton ~20x14x6cm, own volumetric estimate, not sourced) giving $0.09/$0.24/$0.53 per unit. Duty: scout's duty_rate (5.3-25%, stale) and additional_tariff_rate/Section 301 (7.5-25%, stale) are combined into one landed-duty rate, anchored to F8's ~33.9% effective China tariff estimate for the base case, then widened ~25% per the brief's instruction to 10%/30%/45%, applied to EXW cost. Inbound-to-FBA (US port-to-FC prep/freight) estimated at $0.15/$0.25/$0.45/unit, no scout source, typical 3PL range. BOM stays below landed cost at every point (low $1.57<$1.96, base $2.29<$3.47, high $3.34<$5.82) as required."
+      }
+    },
+    {
+      "version_id": "v0_hero_plus_base_only",
+      "idea_ids": [
+        "I1",
+        "I3"
+      ],
+      "bom": [
+        {
+          "part": "Firm HR polyurethane base layer, 45kg/m3+, stepped/tapered profile (I1)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.3,
+            "base": 0.45,
+            "high": 0.7,
+            "assumption": "Same estimate as v1_now's base layer; the hero mechanism is unchanged, only the supporting ideas are cut."
+          }
+        },
+        {
+          "part": "Softer top comfort foam layer, flame-bonded to base (I1)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.2,
+            "base": 0.28,
+            "high": 0.4,
+            "assumption": "Same estimate as v1_now."
+          }
+        },
+        {
+          "part": "Basic PU-coated fabric cover (category-standard, not the anti-tack knit)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.15,
+            "base": 0.22,
+            "high": 0.35,
+            "assumption": "Reverts to a generic PU-coated cover to cut cost since I4 is dropped; this reintroduces the C2 sticky/plastic-smell failure mode the buyer's fear #2 flags, priced at a generic textile-cover rate, no scout source."
+          }
+        },
+        {
+          "part": "Full-footprint bonded rubber base sheet, waffle texture (I3)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.25,
+            "base": 0.38,
+            "high": 0.55,
+            "assumption": "Same estimate as v1_now; kept because it fixes complaint cluster C3 cheaply."
+          }
+        },
+        {
+          "part": "Basic printed box, no fit-diagram insert or spec tag",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.15,
+            "base": 0.22,
+            "high": 0.3,
+            "assumption": "Bare printed box without I2's insert card or I5's spec badge, cheaper than v1_now's moderate-tier packaging, per brief's $0.08-0.25 tuck-box rule of thumb."
+          }
+        },
+        {
+          "part": "Assembly labor + QC (4 parts, fewer bonds/stitches than v1_now)",
+          "qty": 1,
+          "unit_cost_usd": {
+            "low": 0.15,
+            "base": 0.2,
+            "high": 0.3,
+            "assumption": "Fewer components to assemble than v1_now (no insert placement, no tag stitch), scaled down slightly from v1_now's labor line."
+          }
+        }
+      ],
+      "unit_weight_g": 195,
+      "landed_cost_usd": {
+        "low": 1.56,
+        "base": 2.77,
+        "high": 4.75,
+        "assumption": "Same freight/duty/inbound methodology as v1_now (freight $0.09/$0.24/$0.53 per unit; duty 10%/30%/45% of EXW; inbound $0.15/$0.25/$0.45), applied to this version's lower EXW cost ($1.20/$1.75/$2.60). This version drops I2, I4 and I5, so it forfeits two of competition's three named moats (spec_edge and packaging_experience) and does not fix complaint cluster C2 — shown here only as the cost floor, not the recommendation."
+      }
+    }
+  ],
+  "tooling_and_nre": [
+    {
+      "item": "Aluminium prototype tool, foam core (1-2 cavities, stepped dual-density profile)",
+      "cost_usd": {
+        "low": 2000,
+        "base": 3500,
+        "high": 6000,
+        "assumption": "Brief's rule of thumb: aluminium prototype tool of 1-4 cavities is 'low four figures'; taken at the low-to-mid end since a foam compression tool is simpler than a precision injection mold."
+      }
+    },
+    {
+      "item": "Steel production tool, foam core (8-16 cavities)",
+      "cost_usd": {
+        "low": 18000,
+        "base": 30000,
+        "high": 55000,
+        "assumption": "Brief's rule of thumb: steel production tool of 8-16 cavities is 'mid four to low five figures.' Taken below the top of that band because a foam compression/pour tool for a stepped profile is typically less complex (and cheaper) than a precision injection mold for the same cavity count; living-hinge-grade steel/gating precision is not required here."
+      }
+    },
+    {
+      "item": "Rubber base mold (aluminium proto + steel production, full-sheet waffle texture)",
+      "cost_usd": {
+        "low": 3000,
+        "base": 6000,
+        "high": 12000,
+        "assumption": "Separate tool from the foam core since the rubber base is a different material/process; sized down from the foam tool given the simpler flat-sheet geometry, per the same aluminium/steel tooling rule of thumb."
+      }
+    },
+    {
+      "item": "Flame-bonding / lamination fixture (foam-to-foam and foam-to-rubber bonding jig)",
+      "cost_usd": {
+        "low": 2000,
+        "base": 4000,
+        "high": 8000,
+        "assumption": "Not covered by the brief's standard rules of thumb; estimated as a mid-size custom fixture cost since durability_review specifies flame-bonding across the full contact face rather than perimeter gluing, which needs dedicated jigging at the factory."
+      }
+    },
+    {
+      "item": "Freedom-to-operate (FTO) search on the stepped dual-density cross-section",
+      "cost_usd": {
+        "low": 3000,
+        "base": 5000,
+        "high": 8000,
+        "assumption": "Mandatory per the brief because I1 carries a 'medium' prior_art_risk (innovaty: dual-density foam is common, but the specific stepped-taper profile is what gets design-registered). Cost range is a standard IP-search-firm quote range for a single mechanical/design FTO, not sourced from scout."
+      }
+    },
+    {
+      "item": "Certifications: Prop 65 labelling review, OEKO-TEX check on fabric/dye, recycled-content (SBR) supplier audit",
+      "cost_usd": {
+        "low": 1500,
+        "base": 2500,
+        "high": 4000,
+        "assumption": "Passive plastic/foam/fabric desk accessory needs no CPSC or electrical certification, but Prop 65 labelling and the OEKO-TEX/recycled-content claims innovaty proposes (sustainability.claims) need verification paperwork; priced as a standard compliance-consultant review, not sourced from scout."
+      }
+    },
+    {
+      "item": "Test rig: ASTM D3574 Test D compression-set + static load cycling (I1), 90-degree peel/shear adhesion test (I3)",
+      "cost_usd": {
+        "low": 2000,
+        "base": 3500,
+        "high": 6000,
+        "assumption": "Covers the 10,000-cycle compression-set rig innovaty specifies for I1 and the peel/shear rig for I3; priced as a small-batch third-party lab test program plus a simple in-house jig, no scout source."
+      }
+    },
+    {
+      "item": "Prototypes, T1/T2 samples and their air freight (2-3 iterations)",
+      "cost_usd": {
+        "low": 1500,
+        "base": 2500,
+        "high": 4000,
+        "assumption": "Covers the brief's 'one or two iterations' phase: sample unit cost plus air-freight (5-10 days) for 2-3 rounds of prototypes between the supplier and the team."
+      }
+    },
+    {
+      "item": "Product, packaging and lifestyle photography (per innovaty's 3 image_prompts + 4 listing image briefs)",
+      "cost_usd": {
+        "low": 1500,
+        "base": 2500,
+        "high": 4000,
+        "assumption": "Covers the main, packaging, lifestyle and 3 fit/scale image briefs innovaty specifies; priced as a standard freelance product-photography package for a single SKU, not sourced from scout."
+      }
+    },
+    {
+      "item": "First ad budget (launch push, months 1-2, funds the innovator-only ramp)",
+      "cost_usd": {
+        "low": 3000,
+        "base": 6000,
+        "high": 10000,
+        "assumption": "One-off pre-revenue-recouped launch ad spend to seed reviews during the moore.chasm innovator-only window, distinct from the ongoing ACoS modeled in economics.ad_rate; sized to move several hundred initial units at the 40-80% launch ACoS range the brief specifies."
+      }
+    },
+    {
+      "item": "Packaging tooling: die-cut paper tray + insert-card print setup",
+      "cost_usd": {
+        "low": 800,
+        "base": 1500,
+        "high": 2500,
+        "assumption": "One-time die/plate setup cost for the shaped paper-pulp tray with the die-cut oval window and the 4-panel fit-diagram insert card innovaty specifies; standard print-setup range, not sourced from scout."
+      }
+    }
+  ],
+  "fixed_launch_cost_usd": {
+    "low": 38300,
+    "base": 67000,
+    "high": 119500,
+    "assumption": "Sum of all tooling_and_nre line items above (two tools for foam core, one for rubber base, bonding fixture, FTO search, certifications, test rig, prototypes/samples, photography, first ad budget, packaging tooling)."
+  },
+  "price_usd": {
+    "low": 17.99,
+    "base": 19.99,
+    "high": 22.99,
+    "assumption": "Buyer's price_psychology sets max_without_reason at $18 and max_with_reason at $24, requiring 'a visible, named spec... plus a photo proving it fits a raised-lip or rounded desk edge.' v1_now supplies exactly that reason (I1's visible stepped cross-section, I5's printed density-spec badge, I2's fit diagrams) so the price is set above the no-reason ceiling and inside the with-reason band, staying $1+ below the $24 line as a safety margin against the buyer overestimating their own willingness-to-pay. Scout's price ladder (F9) puts the page-one median at $15.50 with the top ($20+) reserved for products with a stated reason (aluminum mechanism, brand premium) — this plan supplies that reason via engineering, not brand, so it earns the premium slot."
+  },
+  "economics": {
+    "referral_rate": {
+      "low": 0.15,
+      "base": 0.15,
+      "high": 0.155,
+      "assumption": "F6: confirmed flat 15% Office Products referral rate for 2026, high confidence, not stale; high end reflects the $0.30 per-item minimum having negligible effect at this price point."
+    },
+    "fba_fee_usd": {
+      "low": 2.65,
+      "base": 3.4,
+      "high": 4.15,
+      "assumption": "Scout's fba_fee_usd (F7) is marked stale — the exact 2026 base small-standard dollar tier was not retrieved, only the +$0.12/unit sub-$10 increase and ~3.5% fuel surcharge. Widened by 25% on both ends per the brief's instruction ($2.9/$3.4/$3.9 → $2.65/$3.4/$4.15). Stale flag carried forward.",
+      "stale": true
+    },
+    "storage_alloc_usd": {
+      "low": 0.02,
+      "base": 0.07,
+      "high": 0.17,
+      "assumption": "Scout's storage_per_cuft_month_usd (stale, search budget exhausted) of $0.78/$1.20/$2.40 per cuft-month was widened by 25% to $0.375/$1.20/$2.805, per the brief's instruction, then multiplied by this pad's own estimated packed volume of ~0.059 cuft (20x14x6cm carton, own volumetric calc, not sourced) for one month's allocation. Actual allocation should rise for Oct-Dec per the brief's seasonal storage note; this is a non-peak baseline. Stale flag carried forward.",
+      "stale": true
+    },
+    "return_rate": {
+      "low": 0.05,
+      "base": 0.08,
+      "high": 0.14,
+      "assumption": "No scout fact gives a category return rate; this is genius's own estimate, not a fetched fee, stated plainly as such. Baseline reflects typical Amazon return rates for small ergonomic comfort accessories (5-8%), with the high end reflecting the risk that a buyer's #1 fear (fear rank 1, 'will I still feel the desk edge pressing through') goes unresolved for heavier forearms despite the spec claim, echoing complaint cluster C1 (35% of negative sentiment) if foam density QC drifts."
+    },
+    "ad_rate": {
+      "low": 0.25,
+      "base": 0.4,
+      "high": 0.65,
+      "assumption": "Brief's own framework states ACoS runs 40-80% at launch and 15-30% steady-state on a commodity. This range blends the launch-heavy months 1-3 (moore.chasm innovator-only window, funded separately by the first ad budget line in tooling_and_nre) with the lower steady-state rate from month 4 onward, weighted toward the launch end since year-one skews early-ramp."
+    }
+  },
+  "forecast": {
+    "term_monthly_units": {
+      "low": 3600,
+      "base": 6000,
+      "high": 8400,
+      "assumption": "Scout gives no direct top-10-20-ASIN unit-volume figure, only a qualitative '1K+ bought in past month' badge on the primary term's top listing (search_terms notes) as the highest apparent-volume signal. Base case extrapolates that one leading ASIN's ~1,000+ units/month across an estimated 5-8 comparably-ranked page-one/two ASINs on 'elbow rest pad for desk' and its close synonyms (forearm rest pad, desk edge elbow cushion), giving ~6,000/month; ±40% per the brief's instruction gives 3,600-8,400."
+    },
+    "share_m6": {
+      "low": 0.02,
+      "base": 0.035,
+      "high": 0.06,
+      "assumption": "Brief's framework: a new entrant reaches 1-5% of term volume in months 1-3 and 3-10% by months 6-12 if CTR/conversion beat the median. Buyer's own purchase_probability_current (click 0.55, add_to_cart 0.4, buy 0.5) already exceeds a generic median because the visible stepped cross-section and spec badge answer fear #1 in the thumbnail and gallery — but competition's copycat_risk base case puts the first clone at month 2, so by month 6 the clone wave is already live in the grid. This share_m6 base of 3.5% sits at the low-to-mid end of the 3-10% band specifically because it already assumes some early erosion from clones undercutting at $8-13, not the clean pre-clone window."
+    },
+    "share_m12": {
+      "low": 0.015,
+      "base": 0.03,
+      "high": 0.05,
+      "assumption": "Share continues to soften from m6 to m12 as more quantity-first clones enter (competition's price_war shows win_probability dropping from 0.55 before clones to 0.30 after, and choice_rank falling to 3rd), so this range already bakes in ongoing organic erosion on top of the m6 numbers — it is not the pre-clone case. The engine's own separate clone-wave Monte-Carlo (run from price_war.share_haircut_pct = 30%) applies a further, formal haircut on top of this already-eroded base; the two are not meant to be added, the engine handles that re-run."
+    },
+    "monthly_units_m6": {
+      "low": 72,
+      "base": 210,
+      "high": 504,
+      "assumption": "term_monthly_units × share_m6 at each percentile."
+    },
+    "monthly_units_m12": {
+      "low": 54,
+      "base": 180,
+      "high": 420,
+      "assumption": "term_monthly_units × share_m12 at each percentile; lower than m6 because share_m12 already reflects further clone-wave erosion per the note above, even before the engine's own cloned-volume Monte-Carlo re-run."
+    },
+    "annual_units_y1": {
+      "low": 950,
+      "base": 1850,
+      "high": 3600,
+      "assumption": "Ramp-weighted sum of 12 months, not a flat multiply. Months 1-3 (moore.chasm, innovator-only, pre-review-base) average ~40% of the month-6 run rate; months 4-6 ramp linearly to the m6 level; months 7-9 hold near the m6-m12 midpoint; months 10-12 get a Q4/holiday seasonality lift ('organise my life'/gift-adjacent office gear) that roughly offsets the ongoing clone-driven share erosion. Base case: 3×(0.4×210) + 3×150 + 3×195 + 3×190 ≈ 1,857, rounded to 1,850; low/high scaled proportionally from the monthly_units_m6/m12 low/high bands."
+    },
+    "seasonality_note": "Back-to-school (August) and back-to-office/New Year 'organise my life' (January) per scout's trends note on the seasonal computer-desk-elbow-pad term; Q4 (Nov-Dec) gets a general gift/office-refresh lift but is also when Amazon's storage_alloc_usd rises per the brief's peak-season note, compressing month-11/12 contribution even as units tick up.",
+    "reasoning": "Outside-in: scout's only volume signal is a '1K+ bought in past month' badge on the category leader, not a summed top-10-20 figure, so term_monthly_units is a wider, explicitly-labelled extrapolation rather than a scout-sourced number, widened the required ±40%. Attainable share starts inside the brief's 1-5% band for months 1-3 (innovator-only, per moore.chasm) and is placed at the low-to-mid end of the 3-10% months-6-12 band specifically because competition's copycat_risk (base 2 months to first clone) means the clone wave is already live well before month 6 — these share numbers are the already-eroding, not the clean pre-clone, case. The engine's separate clone-wave Monte-Carlo re-run (from price_war.share_haircut_pct=30%) is an additional, formal reduction layered on top by the engine itself, not something genius adds by hand here."
+  },
+  "timeline": {
+    "phases": [
+      {
+        "phase": "Concept, CAD, DFM with two suppliers + FTO search kicked off",
+        "weeks": {
+          "low": 2.7,
+          "base": 4.05,
+          "high": 5.4,
+          "assumption": "Brief's rule of thumb 2-4 weeks, multiplied by the 1.35 planning-fallacy factor stated above; FTO search runs in parallel since it is mandatory for I1's medium prior-art risk."
+        }
+      },
+      {
+        "phase": "Prototypes, fit tests, and adhesive/mechanical testing (compression-set + peel/shear rigs)",
+        "weeks": {
+          "low": 5.4,
+          "base": 7.43,
+          "high": 9.45,
+          "assumption": "Brief's rule of thumb 2-3 (prototypes/fit) + 2-4 (adhesive/mechanical testing) = 4-7 weeks raw, multiplied by 1.35."
+        }
+      },
+      {
+        "phase": "Aluminium soft tools (foam core + rubber base) and T1 samples, 1-2 iterations",
+        "weeks": {
+          "low": 8.1,
+          "base": 10.8,
+          "high": 13.5,
+          "assumption": "Brief's rule of thumb 4-6 (soft tool/T1) + 2-4 (iterations) = 6-10 weeks raw, multiplied by 1.35; two separate soft tools (foam, rubber) run in parallel at the same supplier, not sequentially."
+        }
+      },
+      {
+        "phase": "Production tool sign-off, first production run and moderate-tier packaging",
+        "weeks": {
+          "low": 9.45,
+          "base": 12.83,
+          "high": 16.2,
+          "assumption": "Brief's rule of thumb 4-8 (production tool/sign-off) + 3-4 (first run/packaging) = 7-12 weeks raw, multiplied by 1.35; steel tool for the 8-16 cavity foam core is the long pole here."
+        }
+      },
+      {
+        "phase": "Sea freight (30-45 days) and FBA check-in, listing/photography run in parallel",
+        "weeks": {
+          "low": 6.75,
+          "base": 8.1,
+          "high": 9.45,
+          "assumption": "Brief's rule of thumb 5-7 weeks, multiplied by 1.35; photography (tooling_and_nre line item) and listing copy are produced during this window so they do not add sequential time."
+        }
+      }
+    ],
+    "weeks_to_first_sale": {
+      "low": 32.4,
+      "base": 43.2,
+      "high": 54.0,
+      "assumption": "Sum of the five phases above. Raw (pre-multiplier) total is 24-40 weeks, matching the brief's stated 20-34-week range at the low-to-mid end; the 1.35 planning-fallacy multiplier (stated in planning_fallacy_multiplier, >= the brief's 1.3 floor) is already applied to every phase and to this total."
+    }
+  },
+  "premortem": [
+    {
+      "obituary": "It is 12 months on and a factory-direct clone undercut us at $9-11 within 10 weeks of launch, copying the visible two-tone stepped silhouette closely enough that shoppers scanning thumbnails couldn't tell the density difference, and our choice-rank slid to third on the page.",
+      "probability": 0.65,
+      "impact": "major",
+      "mitigation": "Matches competition.copycat_risk (level 'high', months_to_first_clone base 2, high 4) almost exactly — not contradicted here. Mitigation is the two moats innovaty and competition both name: file the stepped-taper design registration before launch (blocks exact-mold copies) and keep the printed, load-tested density badge (a spec a quantity-first factory has no incentive to verify), plus watch competition's watch_signals (new sellers adopting the silhouette, page-one price drops below $13-14) to reprice or push ads faster.",
+      "mitigation_cost_usd": {
+        "low": 1500,
+        "base": 4000,
+        "high": 8000,
+        "assumption": "Design-registration filing fee plus the FTO/legal-lever cost already budgeted in tooling_and_nre; incremental cost here is the registration filing itself, not the full FTO search."
+      }
+    },
+    {
+      "obituary": "It is 12 months on and the flame-bonded foam layers or the rubber-base bond delaminated at the edges after 6-9 months of daily shear load, exactly the failure mode the buyer's own durability_instinct flags from a past mousepad base, and 1-star reviews started citing 'peeling' and 'lopsided.'",
+      "probability": 0.2,
+      "impact": "major",
+      "mitigation": "I1/I3 already specify flame-bonding across the full contact face and mechanical keying instead of perimeter gluing, per innovaty's durability_review. Mitigation is enforcing the ASTM D3574 Test D and 90-degree peel/shear test gates (already budgeted as the test rig line) as a hard QC pass/fail before every production run, not just at prototype stage.",
+      "mitigation_cost_usd": {
+        "low": 500,
+        "base": 1200,
+        "high": 2500,
+        "assumption": "Incremental per-batch retest cost on top of the one-time test rig already in tooling_and_nre, assuming quarterly batch verification in year one."
+      }
+    },
+    {
+      "obituary": "It is 12 months on and the packaged dimensions came in 2mm over the small-standard size-tier line, bumping the FBA fee up a full tier and quietly erasing the contribution margin the plan was priced on.",
+      "probability": 0.12,
+      "impact": "minor",
+      "mitigation": "Lock packaged dimensions with a 3-5mm safety margin before the steel production tool is cut, and verify with Amazon's own FBA size-tier calculator before the first production run ships, not after.",
+      "mitigation_cost_usd": {
+        "low": 0,
+        "base": 300,
+        "high": 800,
+        "assumption": "Essentially a design-review step; cost is the engineering time to re-check dimensions against the tier line, not new tooling."
+      }
+    },
+    {
+      "obituary": "It is 12 months on and the China tariff moved again — F8's ~33.9% effective rate climbed further — and duty alone ate the contribution margin that was modeled at the base case.",
+      "probability": 0.3,
+      "impact": "major",
+      "mitigation": "Qualify a second co-packer in Vietnam in parallel with the China tooling so volume can shift without a full re-tool if tariffs spike again; keep the price band's high end ($22.99) as headroom to absorb a duty increase without going unrealistic on the buyer's max_with_reason ceiling.",
+      "mitigation_cost_usd": {
+        "low": 5000,
+        "base": 8000,
+        "high": 15000,
+        "assumption": "Cost of qualifying and sampling a second-country supplier as a hedge, not a full second tooling run."
+      }
+    },
+    {
+      "obituary": "It is 12 months on and Amazon flagged the '20% recycled SBR content' claim on the rubber base for insufficient substantiation and suppressed the listing detail page pending review, stalling sales for two weeks during the ramp.",
+      "probability": 0.15,
+      "impact": "minor",
+      "mitigation": "Keep only the supplier-certificate-backed recycled-content claim (already scoped in innovaty's sustainability.claims, with the certificate referenced by the packaging QR code) and avoid any broader 'eco-friendly' or 'sustainable' language the certificate doesn't cover; be ready to pull the claim from copy without any product change if flagged.",
+      "mitigation_cost_usd": {
+        "low": 0,
+        "base": 300,
+        "high": 800,
+        "assumption": "Copy-edit and compliance-review time only; the underlying certificate is already a supplier deliverable, not a new cost."
+      }
+    },
+    {
+      "obituary": "It is 12 months on and review velocity never crossed the chasm — months 1-3 stayed innovator-only volume, the review count sat under 50 while VAYDEER's 2,045-review lead kept winning the social-proof scan, and the listing never reached page one.",
+      "probability": 0.25,
+      "impact": "major",
+      "mitigation": "The foam-swatch press-test insert (innovaty's bundle_or_addition) plus the first ad budget line are both designed to shorten this exact window — the swatch answers fear #1 at unboxing before first use, and the launch ad spend buys the review velocity a 40-80% ACoS is meant to purchase; add an automated post-purchase review-request flow at negligible incremental cost.",
+      "mitigation_cost_usd": {
+        "low": 500,
+        "base": 1500,
+        "high": 3000,
+        "assumption": "Cost of a review-request automation tool/service on top of the ad budget already in tooling_and_nre."
+      }
+    },
+    {
+      "obituary": "It is 12 months on and factory QC drift on the base-layer foam density (say 38kg/m3 shipped instead of the specified 45kg/m3+) meant real units still let the desk edge press through for heavier forearms, so complaint cluster C1 came right back under our own brand and the spec badge became a liability, not an asset, once reviewers called it out.",
+      "probability": 0.15,
+      "impact": "fatal",
+      "mitigation": "Incoming-lot density testing (ISO 845) on every production batch before FBA check-in, not just at T1/prototype sign-off, with a hard reject threshold tied to the same 45kg/m3+ spec printed on the badge; ties the badge's honesty to a repeatable QC gate rather than a one-time prototype test.",
+      "mitigation_cost_usd": {
+        "low": 1000,
+        "base": 2000,
+        "high": 4000,
+        "assumption": "Per-year incremental cost of batch-sample lab density testing on top of the one-time compression-set rig already budgeted."
+      }
+    }
+  ],
+  "idea_rulings": [
+    {
+      "idea_id": "I1",
+      "ruling": "realistic",
+      "why": "The hero mechanism keeps landed cost well inside the sanity zone (base $3.47 landed against a $19.99 price is ~17% of price, under the brief's 30% red-flag line) while directly answering the category's #1 complaint (C1, 35% of negative sentiment) with a thumbnail-visible shape.",
+      "deciding_number": "landed cost is ~17% of price at base case (well under the 30% landed/price rail)"
+    },
+    {
+      "idea_id": "I2",
+      "ruling": "realistic",
+      "why": "A printed insert and embossed base icon cost pennies and directly close three of the buyer's five ranked fears (fit, orientation) with no tooling risk.",
+      "deciding_number": "$0.13/unit incremental cost"
+    },
+    {
+      "idea_id": "I3",
+      "ruling": "realistic",
+      "why": "A full-bond rubber base is a dimes-tier upgrade over a thin strip that removes the exact delamination failure mode the buyer names from personal experience, and it doubles as a competition-named moat.",
+      "deciding_number": "$0.38/unit incremental cost"
+    },
+    {
+      "idea_id": "I4",
+      "ruling": "realistic",
+      "why": "Costs more than innovaty's 'cents' tag suggests once priced as a real DWR-finished double-knit (own estimate, $0.42/unit base), but still stays cheap enough not to threaten the sanity rails, and it removes complaint cluster C2 entirely rather than mitigating it.",
+      "deciding_number": "$0.42/unit incremental cost (higher than innovaty's cost_tier label, still realistic)"
+    },
+    {
+      "idea_id": "I5",
+      "ruling": "realistic",
+      "why": "A woven spec tag is the cheapest idea in the set and is the specific mechanism that converts a copyable claim into a moat a quantity-first cloner has no incentive to verify, per competition's spec_edge moat.",
+      "deciding_number": "$0.05/unit incremental cost"
+    },
+    {
+      "idea_id": "I6",
+      "ruling": "stretch",
+      "why": "It is a free mold-geometry change with no incremental unit cost, but it only serves need N5, the lowest-severity unmet need in buyer.json, and innovaty itself defers it to v2 pending real Q&A/return-reason signal — correctly sequenced as a stretch add, not a v1 requirement.",
+      "deciding_number": "need N5 severity = 3/10, the lowest of the five needs targeted"
+    }
+  ],
+  "recommended_version_id": "v1_now",
+  "feasibility_verdict": "stretch",
+  "regulatory": [
+    "No CPSC, electrical or child-safety review triggers for a passive foam/fabric/rubber desk accessory with no magnets or hardware (I6's magnet-adjacent concerns from the knowledge base do not apply — this product carries no magnet).",
+    "Prop 65 labelling review needed for the foam/rubber/dye chemistry typical of Chinese-manufactured foam products sold in California.",
+    "Recycled-content (SBR) and OEKO-TEX-adjacent claims must be backed by a retained supplier certificate before printing on packaging, per innovaty's own sustainability.claims scoping, to survive a critic/Amazon substantiation check."
+  ],
+  "three_sentences_to_founder": [
+    "Landed cost runs $1.96-$5.82 per unit (base $3.47, about 17% of the $19.99 base price) against a $17.99-$22.99 price sitting inside the buyer's own $24 max-with-a-visible-reason ceiling, so the economics have real room before the engine's sanity rails start flashing.",
+    "Fixed launch cost is $38k-$120k (base ~$67k), driven mostly by two separate foam and rubber steel tools plus the FTO search that I1's medium prior-art risk makes mandatory — that is the number that makes this a stretch, not a slam dunk, feasibility call.",
+    "Competition already rates this arena high copycat-risk (first clone in 1-4 months, a 30% forecast-volume haircut once it lands), so I1's design registration, I5's spec badge and I2's fit diagram are the plan's actual moat, not nice-to-haves — ship v1_now with all five ideas together or the plan loses its reason to exist above $18."
+  ]
+}

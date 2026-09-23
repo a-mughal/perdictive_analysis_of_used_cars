@@ -1,0 +1,173 @@
+{
+  "persona": {
+    "who_i_am": "I'm a programmer who's been at this keyboard for six-plus hours a day for years, and my right forearm has started going numb where it rests on the desk edge.",
+    "trigger": "It's 10:40pm, I just shook out my arm for the third time tonight because my forearm went to pins-and-needles again, and I finally admitted a folded towel isn't fixing it.",
+    "fired_solution": "I've been using a folded hand towel wedged under my forearm, but it goes flat within a day, slides off the desk edge constantly, and I have to keep re-adjusting it instead of working.",
+    "urgency": "this_week",
+    "search_term": "elbow rest pad for desk",
+    "why_this_term": "It's the plainest description of what I need and it's the primary term scout flagged as highest apparent volume — I'm not going to type something clever, I'm going to type what hurts."
+  },
+  "buy_driver": {
+    "driver": "pain",
+    "pain_level": "moderate",
+    "evidence": "I'm not desperate yet — it's not numb all day, just after long sessions — so I'm comparing options without real urgency, which matches the praise cluster (0.5 share) about 'noticeable, fairly quick relief from elbow/forearm soreness... after regular use during long sessions.' If C1 (still feels the desk edge through the pad, 35% of negative) turns out to be me, I'll bounce right back to searching.",
+    "tags": ["law.pain_moderate", "jtbd.firing"]
+  },
+  "future_self": "I picture myself deep in a long coding session at 9pm, forearm resting flat and cushioned on the desk edge, typing for hours without that mid-evening shake-out or the tingling creeping up to my fingers — just me, focused, arm quiet and comfortable, like the ache was never there.",
+  "comfort_and_laziness": "It removes the constant micro-adjustment of a sliding towel and the mental tax of noticing my arm hurts every twenty minutes — once it's stuck to the desk with a non-slip base, I never have to think about my arm position again, I just rest it and keep working.",
+  "benefits_not_features": [
+    {
+      "feature": "Memory-foam pad shaped to run along the desk edge",
+      "benefit": "My forearm finally has something soft under it instead of the hard plastic edge digging in, so I stop getting that numb, pins-and-needles feeling by hour three."
+    },
+    {
+      "feature": "Non-slip rubber base",
+      "benefit": "I don't have to keep nudging it back into place every time I reach for the mouse — it just stays put like it's part of the desk."
+    },
+    {
+      "feature": "'Larger and thicker' sizing versus smaller pads",
+      "benefit": "It actually covers my whole forearm instead of just a corner of my elbow, so I'm not still feeling the desk edge poke through on one side."
+    },
+    {
+      "feature": "Fabric (lycra-type) cover over the foam",
+      "benefit": "It won't feel like a cold rubber gel disc against my skin during a long session, and it won't get that sticky, plasticky feel after a few weeks."
+    },
+    {
+      "feature": "Single L-shaped piece (vs. 2-pack of small discs)",
+      "benefit": "I only have to place one thing on my desk once, not fuss with lining up two separate little pads every time I sit down."
+    }
+  ],
+  "three_second_scan": [
+    {
+      "signal": "image",
+      "what_i_see": "VAYDEER's thumbnail is a wide L-shaped foam pad angled on a dark desk edge next to a keyboard, clearly emphasizing size and thickness at a glance.",
+      "verdict": "pull",
+      "tags": ["kahneman.system1", "gate.image_orientation"]
+    },
+    {
+      "signal": "price",
+      "what_i_see": "VAYDEER at $17.99 sits close to the $15.50 median I'm seeing across the row; Fuzadel at $19.99 is the outlier that makes me pause and wonder why it costs more.",
+      "verdict": "neutral",
+      "tags": ["kahneman.anchoring", "gate.price_vs_anchor"]
+    },
+    {
+      "signal": "rating",
+      "what_i_see": "VAYDEER shows 4.6 stars with 2,045 reviews — that's well past my safe-click bar of 4.3 stars and a few hundred reviews, so it reads as a proven, safe pick, not an unknown.",
+      "verdict": "pull",
+      "tags": ["cialdini.social_proof", "gate.social_proof"]
+    },
+    {
+      "signal": "design",
+      "what_i_see": "The Leolee tile shows a visible non-slip rubber base strip on a plain rectangular pad — looks more basic and thinner than VAYDEER's, and the 2-pack framing (two small pads) reads as less coverage per piece even though it's cheaper.",
+      "verdict": "neutral",
+      "tags": ["kahneman.wysiati", "law.three_second_scan"]
+    },
+    {
+      "signal": "experience_promise",
+      "what_i_see": "Fuzadel's rotating aluminum tray with a small pad on top promises adjustable positioning, but the image also shows visible hardware (a clamp mechanism) which is one more thing that can feel unstable or fail — I don't need that complexity for a resting pad.",
+      "verdict": "push_away",
+      "tags": ["kahneman.system2_trigger", "triz.segmentation"]
+    }
+  ],
+  "purchase_probability_current": {
+    "click": 0.55,
+    "add_to_cart": 0.4,
+    "buy": 0.5,
+    "reasoning": "click: VAYDEER's 4.6-star, 2,045-review tile clears my social-proof bar and the price sits near the row median, so it's an easy, low-risk click among four similar-looking tiles. add_to_cart: once I'm reading, nothing in the listing or bullets that scout captured visibly answers whether it still lets the desk edge press through (C1, the category's biggest complaint) or whether it fits a raised-lip or glass desk, so I hesitate. buy: if I do add it, at $13-18 the price is low enough that I don't need a strong extra reason to check out — this is an easy, low-stakes purchase decision once it's in the cart."
+  },
+  "fears": [
+    {
+      "rank": 1,
+      "question": "Will I still feel the hard desk edge pressing through this after a few hours, like people say happens with the 'thicker' one anyway?",
+      "tags": ["ulwick.underserved", "kano.must_be"],
+      "from_cluster_id": "C1",
+      "answered_by": "image"
+    },
+    {
+      "rank": 2,
+      "question": "Is this going to turn sticky or start smelling like plastic after a few weeks like the gel ones do?",
+      "tags": ["post.return_reason", "kano.must_be"],
+      "from_cluster_id": "C2",
+      "answered_by": "unanswerable"
+    },
+    {
+      "rank": 3,
+      "question": "Will it actually stay put on my desk, or will the non-slip base peel or slide once it's broken in?",
+      "tags": ["cialdini.social_proof"],
+      "from_cluster_id": "C3",
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 4,
+      "question": "Does this work if my desk has a raised front lip, or is it only for a flat straight edge?",
+      "tags": ["kahneman.wysiati"],
+      "answered_by": "image"
+    },
+    {
+      "rank": 5,
+      "question": "Can I use this on my left side too, or is it molded for right-handed mousing only?",
+      "tags": ["kahneman.wysiati"],
+      "answered_by": "image"
+    }
+  ],
+  "unmet_needs": [
+    {
+      "need_id": "N1",
+      "statement": "I need a pad that actually stops me from feeling the hard desk edge, not just one that looks thicker in a photo.",
+      "pain_level": "moderate",
+      "severity": 8,
+      "evidence_cluster_ids": ["C1"]
+    },
+    {
+      "need_id": "N2",
+      "statement": "I need the surface to stay comfortable and clean-feeling for months, not turn sticky or start smelling like plastic against my skin.",
+      "pain_level": "latent",
+      "severity": 6,
+      "evidence_cluster_ids": ["C2"]
+    },
+    {
+      "need_id": "N3",
+      "statement": "I need it to grip my desk so I'm not re-centering it every time I reach for the mouse.",
+      "pain_level": "moderate",
+      "severity": 5,
+      "evidence_cluster_ids": ["C3"]
+    },
+    {
+      "need_id": "N4",
+      "statement": "I need to know before I buy whether it'll actually fit my desk's edge shape (raised lip, rounded, glass) instead of guessing and returning it.",
+      "pain_level": "latent",
+      "severity": 6
+    },
+    {
+      "need_id": "N5",
+      "statement": "I need to know it works for whichever arm I use, without buying the wrong orientation.",
+      "pain_level": "latent",
+      "severity": 3
+    }
+  ],
+  "price_psychology": {
+    "anchor_seen_usd": 15.5,
+    "max_without_reason_usd": 18,
+    "max_with_reason_usd": 24,
+    "reason_required": "I'd need to see a visible, named spec — like a callout or diagram showing 'high-density foam, X inches thick, tested to keep bearing weight' plus a photo proving it fits a raised-lip or rounded desk edge — something that directly shows it solves the 'still feel the desk edge' problem, not just a claim of 'larger and thicker' in the title."
+  },
+  "packaging_expectation": "For a $15 desk accessory I expect a simple printed box, maybe a thin insert card showing how to position it and confirming it works on either arm — nothing fancy, just clean and intentional. If it arrives in a plain poly bag with no instructions, already a little crushed or with the foam looking compressed out of shape, I'll silently assume it's a cheap knockoff before I even try it, and that colors every use after.",
+  "lifestyle_target": {
+    "primary": "Show me at my actual desk setup — keyboard, mouse, maybe a monitor arm, normal home-office lighting — arm resting easily on the pad mid-task, looking like an ordinary workday, not a showroom. That's the lifestyle that says 'this is for someone like me, working long hours.'",
+    "avoid": "Don't shoot it as a luxury spa/wellness product with soft-focus lighting and a person meditating — that framing feels like it's selling a feeling I'm not shopping for; I want proof it fixes a physical problem, not a mood."
+  },
+  "memory_hook": "The detail that sticks with me is the phrase 'still feels the desk edge pressing through' — because that's exactly my fear, and if any listing shows a clear cross-section or thickness diagram that visibly answers it, I'll remember that image specifically when I come back to buy, even days later.",
+  "durability_instinct": {
+    "what_warns_me": "I've had a gel wrist rest before that looked plush in the photo and within two months had gone flat and lopsided on one side, plus a mousepad with a rubber base that peeled up at the corners after a summer of heat and left sticky residue on my desk — so a thin rubber base strip on these pads, or a 'gel' surface like Jelbows, immediately reads to me as something that will flatten, peel, or turn tacky, not survive. Fuzadel's clamp mechanism also throws a flag: I've had a phone-arm desk clamp that worked loose and drooped within weeks, so any visible screw/clamp joint on a resting surface reads as a future wobble, not a fix.",
+    "what_reassures_me": "I'd need to see the foam still holding its shape in a photo showing it flexed or under visible weight (not just sitting flat and new), a stated foam density or thickness number I can compare against 'feels the edge through it' complaints, and a base that looks like a solid bonded rubber sheet rather than a thin strip — basically proof it's one dense, bonded piece with nothing that can delaminate, peel, or compress flat, because that's exactly how my past pads died."
+  },
+  "color_read": "A calm blue or neutral gray/black cover reads as trust and 'ergonomic/medical-adjacent' to me — like it's a serious comfort fix, not a toy — whereas a bright gamer-red or neon color would make me second-guess whether it's meant for an office setting at all.",
+  "hypotheses_tested": [
+    {
+      "hypothesis": "A desk worker with elbow/forearm soreness from a hard desk edge will buy a dedicated cushioned rest pad rather than improvising with a folded towel or a mousepad",
+      "verdict": "confirmed",
+      "why": "My own fired_solution is exactly a folded towel that keeps sliding and going flat — a purpose-built pad with a non-slip base and real cushioning directly fixes both failures a towel has, and at $13-18 it's a low-risk swap I'd make this week."
+    }
+  ],
+  "what_would_make_me_buy": "I'd buy the one that shows me, without making me dig through reviews, that it actually solves the 'still feel the desk edge' problem everyone else's pad apparently has — a thickness or density callout, a photo of it flexed under real pressure, and something that tells me it'll fit my desk's edge and either arm — because right now my forearm goes numb by 9pm every night and a towel isn't cutting it; if it arrives feeling as dense and well-made as the photos promised and my arm actually stops aching within a session or two, I'll tell my whole team in Slack because half of them are rubbing the same sore spot."
+}

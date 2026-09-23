@@ -1,0 +1,25 @@
+{
+  "slug": "elbow-forearm-desk-rest-pad",
+  "product_name": "Elbow/Forearm Desk Rest Pad",
+  "source_url": "https://www.amazon.com/s?k=Elbow%2FForearm+Desk+Rest+Pad",
+  "marketplace": "amazon.com",
+  "created_at": "2026-09-23T09:09:45+00:00",
+  "mode": "category",
+  "target_buyer": {
+    "description": "A desk worker (office employee, programmer, or gamer) whose forearm or elbow rests on a hard, sharp desk edge for hours a day and has started to ache or go numb",
+    "context": "Mid-workday or mid-session, arm propped on the desk edge while typing or using a mouse, noticing soreness or pins-and-needles"
+  },
+  "seller_constraints": {
+    "origin_country": "CN",
+    "must_keep": [],
+    "must_avoid": []
+  },
+  "user_hypotheses": [
+    "A desk worker with elbow/forearm soreness from a hard desk edge will buy a dedicated cushioned rest pad rather than improvising with a folded towel or a mousepad"
+  ],
+  "assumptions": [
+    "No ASP, margin, buyer quote or category tags were given for this product — this run starts from the product name and a category search URL only; price band and packaging tier will be set once scout establishes the real price ladder"
+  ],
+  "iterations": 0,
+  "search_budget": 8
+}

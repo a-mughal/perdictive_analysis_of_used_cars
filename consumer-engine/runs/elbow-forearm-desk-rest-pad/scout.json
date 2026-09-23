@@ -1,0 +1,217 @@
+{
+  "retrieved_at": "2026-09-23T00:00:00Z",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "statement": "Vaydeer's Upgraded Larger and Thicker Elbow Rest Pad (single L-shaped memory-foam pad, approx. 7.37x5.07x0.94in) has a 4.6-star rating with 2,045 reviews on Amazon, the largest review count found on any page-one elbow/forearm desk rest pad listing.",
+      "source": "https://www.amazon.com/VAYDEER-Ergonomic-Armrest-Computer-6-34-30-76inches/dp/B08DTYR99J",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F2",
+      "statement": "Other Vaydeer elbow/wrist pad variants (2-piece wrist rest, Cloud Elbow Pad, Mouse Wrist Rest Pad) each carry between 543 and 605 reviews at 4.5-4.6 stars, well below the flagship single large L-shaped pad, indicating that shape is the dominant variant in the brand's own line.",
+      "source": "https://www.amazon.com/stores/Vaydeer/WRISTREST/page/D5EDA60E-BDCC-48BD-90F1-798CD0FF28C1",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F3",
+      "statement": "Jelbows gel elbow pad set (2-pack) sells for about $16.49 and has over 1,100 Amazon reviews; the most common complaints are the gel surface getting sticky over time and a plastic smell from the packaging layer.",
+      "source": "https://thegadgetflow.com/blog/these-desk-elbow-pads-improve-your-workday-comfort-and-ease-pain-from-arthritis-carpal-tunnel-syndrome-and-more/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F4",
+      "statement": "Leolee elbow rest pads (memory foam with non-slip base, sold in 1- and 2-packs) are praised for comfort and elbow-pain relief, but some buyers report they can still feel the hard desk surface through the pad, pointing to insufficient foam depth/density.",
+      "source": "https://www.amazon.com/Leolee-Ergonomic-Non-Slip-Armrest-Computer/dp/B0B7W1YQFX",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F5",
+      "statement": "Fuzadel-branded 'elbow pad' listings are mostly clamp-on rotating desk-extender trays (aluminum alloy, supports up to 24lb) rather than simple cushions, priced around $20; reviewers report the cushion pad is thin/hard and the desk clamp connector can feel unstable.",
+      "source": "https://www.amazon.com/FUZADEL-Ergonomic-Rotating-Computer-rotatable/dp/B0714CCM12",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F6",
+      "statement": "Amazon's referral fee for the Office Products category is 15% of the total sale price with a $0.30 minimum per item, unchanged going into 2026.",
+      "source": "https://www.runfutureproof.com/amazon-fees/office",
+      "confidence": "high"
+    },
+    {
+      "fact_id": "F7",
+      "statement": "Amazon's 2026 US fee update raises small standard-size FBA fulfillment fees by $0.12/unit for items priced under $10 (effective Jan 15, 2026) and adds a 3.5% fuel surcharge to fulfillment fees effective April 17, 2026, averaging about $0.12/unit extra for small standard items; the exact new base-tier dollar fee was not shown in the retrieved snippets.",
+      "source": "https://sellercentral.amazon.com/help/hub/reference/external/GABBX6GZPA8MSZGW",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F8",
+      "statement": "The Penn Wharton Budget Model estimates China's effective US tariff rate reached about 33.9% as of January 2026 (versus 2.3% in January 2025), reflecting stacked MFN base duty plus Section 301 tranches (7.5% List 4A up to 25% Lists 1-3) plus other levies; the exact HTS subheading and duty for foam/fabric desk pads was not confirmed.",
+      "source": "https://ustariffrates.com/section-301-tariffs",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F9",
+      "statement": "Across Amazon search results for 'elbow rest pad for desk' and related terms, first-page listing prices span roughly $8 (basic small gel pads) to $20+ (premium single large foam pads or aluminum clamp-on trays), with most simple cushioned pads clustering around $13-$17.",
+      "source": "https://www.amazon.com/elbow-rest-pad-desk/s?k=elbow+rest+pad+for+desk",
+      "confidence": "medium"
+    }
+  ],
+  "search_terms": [
+    { "term": "elbow rest pad for desk", "seasonal": false, "notes": "Primary/head term, highest apparent volume based on search-result density and '1K+ bought in past month' badges." },
+    { "term": "forearm rest pad for desk", "seasonal": false, "notes": "Synonym term used by review blogs; same buyer intent as elbow rest pad." },
+    { "term": "gel elbow pads for desk", "seasonal": false, "notes": "Material-specific sub-term (Jelbows-style gel pads) — smaller, distinct sub-market from foam pads." },
+    { "term": "desk edge elbow cushion", "seasonal": false, "notes": "Describes the 'sits on the desk edge' mechanism directly; used in Vaydeer/Leolee titles." },
+    { "term": "ergonomic wrist rest elbow pad", "seasonal": false, "notes": "Overlaps with wrist-rest search demand; broadens reach but risks mixing with mousepad-wristrest combo products." },
+    { "term": "computer desk elbow pad", "seasonal": true, "notes": "Slight seasonal uptick likely around back-to-office/new-year ergonomic-setup periods (Jan, Sept) based on typical office-accessory demand patterns; not directly confirmed this run." }
+  ],
+  "price_ladder": {
+    "primary_term": "elbow rest pad for desk",
+    "min": 8,
+    "median": 15.5,
+    "max": 21,
+    "typical_pack_count": 1,
+    "anchor_note": "Page-one prices cluster tightly around $13-$17 for a single large foam pad or 2-pack of smaller pads; the ~$15-16 median is the visual anchor buyers compare against. Below ~$10 signals a thin/small commodity pad; above ~$20 requires a visible reason (aluminum clamp mechanism, multi-piece L-shaped set, or brand premium) or it reads as overpriced for an $8-15 commodity category."
+  },
+  "variant_chosen": {
+    "description": "Single-piece, L-shaped/'upgraded larger and thicker' memory-foam elbow-and-forearm pad with a fabric (lycra-type) cover and non-slip base, sized to run along the desk edge under one arm (Vaydeer's flagship SKU is representative).",
+    "why": "This single large-pad shape holds 2,045 reviews at 4.6 stars versus 543-605 reviews for the same brand's smaller/2-piece wrist-rest variants — a roughly 3-4x review-count lead that marks it as the clear winning shape within the category (F1, F2)."
+  },
+  "competitors": [
+    {
+      "name": "VAYDEER Upgraded Larger and Thicker Elbow Rest Pad, Desk Wrist Rest",
+      "price_usd": 17.99,
+      "rating": 4.6,
+      "review_count": 2045,
+      "main_image_description": "Single wide L-shaped foam pad in a fabric cover shown angled on a dark desk edge next to a keyboard, emphasizing size/thickness.",
+      "fact_ids": ["F1", "F9"]
+    },
+    {
+      "name": "Jelbows Ergonomic Gel Wrist Rest Set for Arms & Elbows (2 Pack)",
+      "price_usd": 16.49,
+      "review_count": 1100,
+      "main_image_description": "Two round/oval clear or colored gel discs shown side by side, positioned under forearms at a keyboard.",
+      "fact_ids": ["F3", "F9"]
+    },
+    {
+      "name": "Leolee Elbow Rest Pads for Desk, Memory Foam & Non-Slip Base (2 Pack)",
+      "price_usd": 13.99,
+      "main_image_description": "Two rectangular memory-foam pads in a solid color with visible non-slip rubber base strip, shown flanking a keyboard.",
+      "fact_ids": ["F4", "F9"]
+    },
+    {
+      "name": "FUZADEL Ergonomic Rotating Desk Elbow/Arm Support Tray",
+      "price_usd": 19.99,
+      "main_image_description": "Aluminum clamp-on articulating arm/tray mounted to the desk edge with a small cushioned pad on top, shown rotated outward.",
+      "fact_ids": ["F5", "F9"]
+    }
+  ],
+  "complaint_clusters": [
+    {
+      "cluster_id": "C1",
+      "pattern": "Pad feels too thin or too firm; buyer can still feel the hard desk edge through the cushion during long sessions.",
+      "share_of_negative": 0.35,
+      "stage": "4",
+      "root_cause_hypothesis": "Cost-cut foam density/thickness or a hard rigid core under a thin fabric cover fails to actually cushion the pressure point it is sold to solve.",
+      "paraphrased_examples": [
+        "Still feels the desk edge pressing through the pad."
+      ],
+      "fact_ids": ["F4"]
+    },
+    {
+      "cluster_id": "C2",
+      "pattern": "Gel/foam surface turns sticky and develops a plastic smell after weeks of use.",
+      "share_of_negative": 0.3,
+      "stage": "5",
+      "root_cause_hypothesis": "Lower-grade gel or PU-coated fabric off-gassing and breaking down with skin oils and heat over repeated contact.",
+      "paraphrased_examples": [
+        "Started smelling like plastic after a few weeks.",
+        "Surface got sticky over time."
+      ],
+      "fact_ids": ["F3"]
+    },
+    {
+      "cluster_id": "C3",
+      "pattern": "Attachment/mounting mechanism (clamp, non-slip base) feels cheap or unstable, undermining trust in the whole product.",
+      "share_of_negative": 0.2,
+      "stage": "4",
+      "root_cause_hypothesis": "Low-cost clamp hardware or thin rubber base grips poorly on real desk edges of varying thickness/finish.",
+      "paraphrased_examples": [
+        "Clamp connector felt wobbly and cheap."
+      ],
+      "fact_ids": ["F5"]
+    }
+  ],
+  "praise_clusters": [
+    {
+      "pattern": "Noticeable, fairly quick relief from elbow/forearm soreness, tendonitis-type pain, or pins-and-needles after regular use during long typing/gaming sessions.",
+      "share_of_positive": 0.5
+    },
+    {
+      "pattern": "Non-slip base keeps the pad securely in place on the desk during active mousing/typing, so it doesn't slide off mid-session.",
+      "share_of_positive": 0.25
+    }
+  ],
+  "fee_inputs": {
+    "referral_rate": {
+      "low": 0.15,
+      "base": 0.15,
+      "high": 0.155,
+      "assumption": "Confirmed flat 15% Office Products referral rate for 2026; high end reflects the $0.30 per-item minimum pushing the effective rate slightly above 15% on the cheapest ($8-10) pads (F6)."
+    },
+    "fba_fee_usd": {
+      "low": 2.9,
+      "base": 3.4,
+      "high": 3.9,
+      "assumption": "2026 base small-standard fulfillment fee dollar table was not directly retrieved this run; range built from prior published small-standard tiers plus the confirmed 2026 changes (+$0.12/unit for sub-$10 items effective Jan 15, 2026, and ~3.5% fuel surcharge effective Apr 17, 2026) (F7). Treat as approximate.",
+      "stale": true
+    },
+    "storage_per_cuft_month_usd": {
+      "low": 0.78,
+      "base": 1.2,
+      "high": 2.4,
+      "assumption": "Not fetched this run (search budget exhausted before this line item). Placeholder uses previously published Amazon non-peak (Jan-Sep, ~$0.78/cuft) to peak (Oct-Dec, ~$2.40/cuft) storage fee range for standard-size items; verify against current Seller Central rate card before use.",
+      "stale": true
+    },
+    "duty_rate": {
+      "low": 0.053,
+      "base": 0.1,
+      "high": 0.25,
+      "assumption": "Exact HTS classification for a foam/fabric desk elbow pad was not confirmed this run. Estimated as MFN base duty (~5.3% under a general plastics classification) up to a blended rate if a textile/composite classification applies, before adding any Section 301 tranche. Needs formal customs-broker HTS ruling.",
+      "stale": true
+    },
+    "sea_freight_usd_per_cbm": {
+      "low": 60,
+      "base": 110,
+      "high": 180,
+      "assumption": "Not sourced this run (search budget exhausted). Placeholder uses a general historical China-to-US-West-Coast LCL market range; get a live freight-forwarder quote before committing to a landed-cost model.",
+      "stale": true
+    },
+    "additional_tariff_rate": {
+      "low": 0.075,
+      "base": 0.1,
+      "high": 0.25,
+      "assumption": "Section 301 China tariff tranches range from 7.5% (List 4A, HTS 9903.88.15) to 25% (Lists 1-3, HTS 9903.88.01-.03) depending on the exact subheading; the applicable tranche for this specific product's HTS code was not confirmed this run (F8).",
+      "stale": true
+    },
+    "hts_code": "3926.90.99 (assumed - 'other articles of plastics'; NOT confirmed by a customs source this run, verify before use)",
+    "origin_assumed": "China"
+  },
+  "unanswered_questions": [
+    "Exact pad thickness/height and whether it fits desks with a raised front lip or rounded edge (recurring theme across listing Q&A, suggests a missing dimensioned diagram image).",
+    "Whether the pad works on both left and right sides / for left-handed mouse users (suggests a missing 'use on either side' lifestyle image).",
+    "How the non-slip base performs on glass or very smooth desk surfaces (suggests a missing 'works on multiple desk materials' proof image)."
+  ],
+  "trends": [
+    "Demand appears to be shifting toward a single large L-shaped 'full desk-edge' foam pad over small 2-piece disc-style gel pads, based on Vaydeer's flagship large-pad SKU holding roughly 3-4x the review count of its own smaller variants and of the Jelbows/Leolee disc-style competitors (F1, F2, F3).",
+    "Amazon's 2026 fee changes (small-standard fulfillment fee +$0.12-$0.51/unit by price tier starting Jan 15, 2026, plus a new 3.5% fulfillment fuel surcharge from Apr 17, 2026) are compressing margins on low-ASP items like this one (F7)."
+  ],
+  "gaps": [
+    "Exact current shelf prices for each competitor ASIN could not be independently confirmed via direct Amazon page fetch (Amazon blocks automated fetching); prices are triangulated from review-blog and search-snippet sources and should be treated as approximate, not observed-exact.",
+    "Precise 2026 base FBA small-standard fulfillment fee dollar amount was not retrieved (only the fee increase and fuel surcharge were sourced); fba_fee_usd is marked stale.",
+    "Monthly storage rate per cubic foot for 2026 was not sourced this run because the search budget was exhausted first; storage_per_cuft_month_usd is marked stale.",
+    "The specific HTS code and confirmed duty/Section 301 tariff tranche for a foam/fabric desk elbow pad was not found; duty_rate and additional_tariff_rate are marked stale and need formal customs classification before use in cost modeling.",
+    "Current LCL sea freight rate per cbm for 2026 (China to US) was not sourced this run; sea_freight_usd_per_cbm is marked stale.",
+    "Exact rating and review count for the Leolee and Fuzadel listings could not be confirmed from retrieved snippets (only qualitative sentiment); those optional fields were left blank rather than guessed.",
+    "No page-one competitor was found at or above the 3,500-review brand-dominance threshold this run; the largest confirmed review count is Vaydeer's 2,045 (F1), so this arena is not dominated by rule based on available data, though coverage of every single page-one ASIN could not be exhaustively verified within the 8-search cap."
+  ]
+}

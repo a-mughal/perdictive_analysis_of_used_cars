@@ -1,0 +1,304 @@
+{
+  "target_spec": {
+    "needs_targeted": ["N1", "N2", "N3", "N4"],
+    "must_fix_clusters": ["C1", "C2", "C3"],
+    "over_served_to_cut": [
+      "Aluminum clamp/hardware complexity (Fuzadel-style) that buyers explicitly push away from as unnecessary risk on a resting surface",
+      "Multi-piece 2-pack disc fragmentation that adds no real coverage buyers value over one larger single piece",
+      "Title-only 'larger/thicker' marketing claims with no visual or spec proof behind them (VAYDEER's own weakness) — cut adjective spend, fund the tested spec instead"
+    ]
+  },
+  "ideas": [
+    {
+      "idea_id": "I1",
+      "name": "Stepped Dual-Density Edge Core",
+      "role": "hero",
+      "aspect": "design",
+      "mechanism": "A firm high-resilience (45kg/m3+) polyurethane base layer is flame-bonded across its full contact face to a softer top comfort layer, molded into a visible stepped/tapered cross-section that runs the length of the desk edge. The step is a two-tone, two-texture line along the pad's front face, and the taper concentrates support directly under the forearm's pressure line so a hand or arm can never bottom out to the desk.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1"],
+      "improves_gates": ["gate.image_fit", "gate.image_2_to_6"],
+      "kano_class": "performance",
+      "triz_or_erric_tags": ["triz.local_quality", "triz.composite_materials", "kano.must_be"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "tooling",
+      "priority": "now",
+      "prior_art_risk": "medium",
+      "prior_art_reason": "Dual-density foam pads exist broadly in the category, so the layering itself is not novel; the specific stepped-taper cross-section profile is what gets design-registered, which narrows real exposure to exact-profile copies rather than the general concept.",
+      "test_that_proves_it": "ASTM D3574 Test D compression-set test (50% deflection, 22h at 70°C) plus a static load test across the 5-8kg forearm-weight range, cycled 10,000 times, photographed pre/post to confirm under 10% height loss in the base layer.",
+      "how_it_looks_in_main_image": "Pad shot at a raised 3/4 angle showing the visible two-tone stepped cross-section along the front edge, a hand pressing into it with the soft top visibly compressing while the firm base layer still holds its height underneath.",
+      "buyer_sentence": "You can actually see the thick support layer under the soft top in the photo — my arm doesn't hit anything hard anymore, not like the 'thicker' one that still let the edge through.",
+      "durability_signal": "reassures",
+      "five_year_test": {
+        "use_cycle": "Rests under a forearm 6-8 hours a day, 5 days a week for 5 years (roughly 1,500 workdays): continuous static load of 1-2kg plus constant micro-shifts from typing and mousing, sitting in ambient office heat/light and occasional friction from a sliding chair.",
+        "failure_modes": [
+          "Top comfort foam takes a compression set after years of repeated static loading, going permanently thinner exactly along the pressure line",
+          "A firm base layer specified too soft could crush over time, losing the 'never feel the edge' guarantee it exists to make",
+          "The bond line between the two foam layers could delaminate under shear from lateral arm movement if glue-laminated instead of flame-bonded"
+        ],
+        "design_answer": "The firm base layer is held to 45kg/m3+ HR foam with under 10% compression set per ASTM D3574 Test D, so even after the softer top layer eventually takes a set, the base still stops the arm from reaching the desk edge. The two layers are flame-bonded across the full contact face rather than glue-laminated, removing the discrete adhesive line that shear stress would otherwise concentrate on.",
+        "fit_range": "Base layer height held at a minimum 12mm compressed / 18mm relaxed across the full pad length, sized for a medium-to-heavy forearm, not just the thin case shown in competitor photos."
+      }
+    },
+    {
+      "idea_id": "I2",
+      "name": "Desk-Fit Diagram Insert + Embossed Base Guide",
+      "role": "supporting",
+      "aspect": "convenience",
+      "mechanism": "A double-sided insert card is printed with dimensioned side-view diagrams showing the pad seated on a flat edge, a raised lip (up to 15mm), a rounded/waterfall edge, and a glass desk, plus a mirrored icon confirming left- or right-arm use. The pad's own rubber base carries a small recessed L/R placement icon so the fit information travels with the product, not only the box.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N4", "N5"],
+      "improves_gates": ["gate.qna", "gate.image_2_to_6", "gate.bullets"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.merging", "ulwick.underserved", "kahneman.wysiati"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "dimes",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Fit diagrams and embossed L/R icons are generic informational content, not a proprietary mechanism, so exposure is negligible.",
+      "test_that_proves_it": "Bench fit-test across three representative desk-edge profiles (square flat edge, 5mm raised lip, 15mm rounded/waterfall edge) plus a glass-vs-laminate grip check, photographed and matched to the printed diagram before print approval.",
+      "how_it_looks_in_main_image": "A flat-lay of the printed insert card beside the pad, showing the four side-view fit diagrams (flat, lip, round, glass) and the mirrored L/R icon, shot for the listing's fit image rather than the grid thumbnail.",
+      "buyer_sentence": "The card in the box literally shows my desk's raised lip and tells me it still works — I didn't have to guess or risk a return.",
+      "durability_signal": "neutral",
+      "five_year_test": {
+        "use_cycle": "The insert card is read once at unboxing then usually kept in a drawer or discarded; the embossed base icon is touched and rubbed against the desk thousands of times over 5 years as the pad is set down and repositioned.",
+        "failure_modes": [
+          "An embossed icon on the rubber base could wear smooth and illegible from years of surface friction against the desk",
+          "A printed insert card has no long-term failure mode relevant to the product itself once its one-time job is done"
+        ],
+        "design_answer": "The L/R and fit icons are molded as a recessed impression at least 0.5mm deep directly into the rubber base compound rather than printed or stamped on top, so the surrounding rubber wears at the same rate as the icon instead of a raised feature shearing off first.",
+        "fit_range": "Diagram covers flat edges, raised lips up to 15mm, rounded/waterfall edges, and glass — the three gaps scout's unanswered_questions flagged — not just the flat case shown in every competitor image."
+      }
+    },
+    {
+      "idea_id": "I3",
+      "name": "Full-Bond Rubber Base Sheet",
+      "role": "supporting",
+      "aspect": "durability",
+      "mechanism": "The thin non-slip rubber strip is replaced with a full-footprint, solid bonded rubber base sheet matching the pad's outline, heat-pressed and mechanically keyed into the foam's underside with a shallow interlocking lattice rather than glued at the perimeter alone. A deep waffle/diamond grip texture runs across the whole contact area instead of a narrow strip.",
+      "fixes_complaint_clusters": ["C3"],
+      "improves_needs": ["N3"],
+      "improves_gates": ["gate.image_2_to_6", "gate.reviews_negative_first"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.composite_materials", "triz.local_quality"],
+      "thumbnail_visibility": "medium",
+      "cost_tier": "dimes",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Full-sheet bonded rubber bases are a common construction across mats and pads generally; no novel mechanism, so freedom-to-operate exposure is low.",
+      "test_that_proves_it": "90-degree peel adhesion test (PSTC-101 style) and static shear test on laminate, glass, and painted-MDF desk surfaces at 23°C and 40°C, after 24 hours and after 30 days, confirming bond strength retention and no edge lift.",
+      "how_it_looks_in_main_image": "Pad tilted slightly off the desk at the edge of frame to reveal a full black waffle-textured rubber base running edge-to-edge, visibly distinct from a competitor's thin exposed strip.",
+      "buyer_sentence": "The whole bottom is grippy rubber, not just a thin strip — it hasn't budged once, even after months of shoving my chair back into the desk.",
+      "durability_signal": "reassures",
+      "five_year_test": {
+        "use_cycle": "Set down, nudged, and pressed against roughly 10-20 times a day for 5 years, sitting under body heat and desk-surface temperature swings (summer AC, winter heater vents) that continuously stress the bond.",
+        "failure_modes": [
+          "Adhesive bond between rubber base and foam fails at the edges first, letting corners curl up — the exact failure buyer's past mousepad base already showed",
+          "Rubber compound can harden and crack from UV/heat exposure if the desk sits near a sunny window",
+          "Grip texture can burnish smooth in the highest-contact zone under the wrist, reducing friction over years"
+        ],
+        "design_answer": "The base is heat-press bonded across the full contact face, not perimeter-glued, and mechanically keyed into a shallow interlocking lattice molded into the foam's underside, so shear load spreads across the whole sheet instead of concentrating peel stress at one exposed strip edge. The rubber is a UV-stabilized SBR blend rated for indoor light exposure, and the waffle texture is cut 0.8mm deep so predictable burnishing at the center still leaves surrounding grip intact.",
+        "fit_range": "Full pad footprint (approximately 7.5 x 5in) bonded, not a 1-2in strip, so grip holds even if the pad is nudged off its original placement."
+      }
+    },
+    {
+      "idea_id": "I4",
+      "name": "Knit Anti-Tack Cover",
+      "role": "hygiene",
+      "aspect": "comfort",
+      "mechanism": "The cover drops any PU-coated or gel-laminate film in favor of a moisture-wicking, open double-knit lycra-blend fabric, flame-laminated (not glued) to the foam with a durable water-repellent finish in place of a tacky surface coating, so there is no PU film layer left to hydrolyze or off-gas over time.",
+      "fixes_complaint_clusters": ["C2"],
+      "improves_needs": ["N2"],
+      "improves_gates": ["gate.bullets", "gate.reviews_negative_first"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.taking_out", "cialdini.authority"],
+      "thumbnail_visibility": "low",
+      "cost_tier": "cents",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Open-knit anti-tack fabrics are commodity textile stock widely available; no novel IP is involved.",
+      "test_that_proves_it": "72-hour accelerated heat/humidity aging test (40°C/90% RH) followed by a tack-to-skin panel test and a VOC off-gas check, compared against a PU-coated control sample.",
+      "how_it_looks_in_main_image": "A close-up texture inset in the listing's third image showing the breathable knit weave against a smooth gel surface for contrast, arm resting comfortably on it.",
+      "buyer_sentence": "It still feels dry and soft after months — none of that sticky, plasticky gel-pad feeling creeping in like the last one.",
+      "durability_signal": "reassures",
+      "five_year_test": {
+        "use_cycle": "In constant skin contact for hours daily across 5 years, absorbing sweat, skin oils, and hand lotion, and exposed to periodic wiping or spot-cleaning with a damp cloth.",
+        "failure_modes": [
+          "PU-coated or gel-laminate covers hydrolyze and turn tacky from skin oils and heat over weeks to months — the exact C2 complaint",
+          "An open-knit fabric with no coating can pill or thin at the highest-friction zone under the wrist over years",
+          "Dye or finish could rub off onto light-colored desks over time if not colorfast"
+        ],
+        "design_answer": "Removing the PU film layer entirely eliminates the hydrolysis failure mode at its source instead of relying on a 'better' coating that would eventually fail the same way. The fabric is a tight double-knit construction rated for 20,000+ Martindale abrasion cycles, finished with a colorfast, OEKO-TEX-compliant dye so sweat exposure does not bleed color onto the desk.",
+        "fit_range": "Cover is cut and bonded as one continuous piece across the full stepped profile with no seam at the high-wear wrist zone, so the weakest point is not a stitched seam."
+      }
+    },
+    {
+      "idea_id": "I5",
+      "name": "Printed Foam-Density Spec Badge",
+      "role": "supporting",
+      "aspect": "eye_catching",
+      "mechanism": "A small woven twill label is bar-tack stitched onto the pad's front-left edge, printed with the tested spec (e.g. '45kg/m3 High-Resilience Foam - Load-Tested'), mirrored as a callout badge on the packaging. This ties the physical product to a factual claim a cloner would have to actually source and verify to copy honestly, not just print.",
+      "fixes_complaint_clusters": ["C1"],
+      "improves_needs": ["N1"],
+      "improves_gates": ["gate.title_scan", "gate.brand_trust", "gate.bullets"],
+      "kano_class": "performance",
+      "triz_or_erric_tags": ["cialdini.authority", "kahneman.system2_trigger", "erric.create"],
+      "thumbnail_visibility": "medium",
+      "cost_tier": "dimes",
+      "priority": "now",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Naming a density spec is a factual claim, not a protectable mechanism; the only copyable part is the wording, while the underlying tested foam grade is what actually costs a cloner money to match.",
+      "test_that_proves_it": "In-house foam density test (ISO 845 / ASTM D3574 Test A) confirming kg/m3, plus the same compression-set test used for I1, referenced by a lot/batch QR code printed on the insert.",
+      "how_it_looks_in_main_image": "A small contrast-stitched fabric tag on the pad's front-left edge reading the density number, visible as a crisp accent mark against the matte cover in the hero shot.",
+      "buyer_sentence": "It actually lists the foam density right on the tag instead of just saying 'thicker' — that's the first pad I've seen put a real number on it.",
+      "durability_signal": "neutral",
+      "five_year_test": {
+        "use_cycle": "The tag is glanced at occasionally and otherwise sits in the same wear zone as the rest of the cover, touched incidentally during repositioning.",
+        "failure_modes": [
+          "A heat-transfer print can crack or fade faster than a woven label if the cheaper labeling method were chosen",
+          "A sewn-on tag edge is a potential snag or fray point if stitched with low-cycle-count thread"
+        ],
+        "design_answer": "The spec badge is woven directly into a twill tag rather than heat-transfer printed, and bar-tack stitched with high-tenacity polyester thread rated for 50,000+ flex cycles, avoiding the fade/crack failure a printed label would hit within a year or two.",
+        "fit_range": "Single tag placement standardized across all pad sizes and colors, so the claim and its proof travel with every unit, not just a hero SKU."
+      }
+    },
+    {
+      "idea_id": "I6",
+      "name": "Mirror-Symmetric Ambidextrous Profile",
+      "role": "supporting",
+      "aspect": "design",
+      "mechanism": "Instead of a handed, asymmetric L-shape that implicitly favors one arm, the pad is molded with a mirror-symmetric taper about its vertical centerline, so the same physical piece cushions either the left or right forearm with no wrong-way orientation; a small centered embossed centerline mark aids placement.",
+      "fixes_complaint_clusters": [],
+      "improves_needs": ["N5"],
+      "improves_gates": ["gate.image_2_to_6", "gate.qna"],
+      "kano_class": "must_be",
+      "triz_or_erric_tags": ["triz.universality", "law.shape_memory"],
+      "thumbnail_visibility": "high",
+      "cost_tier": "free",
+      "priority": "later",
+      "prior_art_risk": "low",
+      "prior_art_reason": "Symmetric ergonomic pad silhouettes are generic geometry; no one owns 'symmetric' as a shape, so exposure is minimal.",
+      "test_that_proves_it": "User bench test with left-handed and right-handed mouse users confirming equal comfort and coverage scores on both orientations, plus a mirror-overlay check in QC.",
+      "how_it_looks_in_main_image": "A single pad shot dead-center to show its symmetric taper reads the same from either direction, or two identical pads mirrored on either side of a keyboard in the listing's lifestyle image.",
+      "buyer_sentence": "I mouse left-handed and didn't have to think twice — it just works flipped around, unlike the ones that look molded for one side.",
+      "durability_signal": "neutral",
+      "five_year_test": {
+        "use_cycle": "Placed and occasionally orientation-flipped (desk rearrangement, shared desk, switching hands) over 5 years; it is a geometry choice with no added mechanical part.",
+        "failure_modes": [
+          "The shape carries the same foam, fabric, and base failure modes already covered in I1/I3/I4; its only unique risk is buyer confusion if the centerline mark wears off and orientation stops being obvious"
+        ],
+        "design_answer": "The centerline mark is molded as a shallow recess in the base rubber using the same technique as I2's fit icon, so it does not fade before the rest of the product wears out.",
+        "fit_range": "Symmetric profile fits a right-arm mouse setup and a left-arm mouse setup at the same coverage width, not just the right-handed case shown in every competitor photo."
+      }
+    }
+  ],
+  "durability_review": {
+    "weakest_point": "The bond lines — between the two foam layers, and between the foam core and the rubber base — are where five-year failure concentrates first, before either the foam or the rubber itself reaches the end of its own working life.",
+    "physics": "Daily static and shear load from a resting, shifting forearm pushes compressive force straight down through the soft top layer into the firm base layer, while lateral movement (reaching for the mouse, sliding the pad to reposition) puts shear force exactly at the two bond lines: top-foam-to-base-foam, and base-foam-to-rubber. Body heat plus ambient desk-surface temperature swings softens adhesive resins over years, and dust and skin oils migrate into any exposed bond edge, accelerating peel. If either bond line lets go before the foam itself reaches its compression-set life, the whole design fails early even though the foam spec on its own is sound.",
+    "five_year_verdict": "needs_change",
+    "changes_made": [
+      "Switched the foam-to-foam bond from adhesive lamination to flame bonding across the full contact face (I1) to remove a discrete glue line that shear stress would otherwise concentrate on",
+      "Switched the base attachment from a glued perimeter strip to a full-sheet, mechanically-keyed bonded base (I3) so peel stress is distributed across the whole footprint instead of starting at one exposed edge",
+      "Specified a UV-stabilized rubber compound and a colorfast fabric finish (I3, I4) so heat and light exposure age the bond lines and cover at the same rate as the foam core, instead of the weakest material failing years before the rest of the product"
+    ]
+  },
+  "pillars": {
+    "reliability": "Every unit ships with the same tested density spec, flame-bonded core, and full-sheet grip base, so day-one performance and day-500 performance are the same claim, not a lottery.",
+    "durability": "Flame-bonded dual-density foam plus a full mechanically-keyed rubber base removes the two glue-line failure points that killed the buyer's own past gel pad and mousepad base, engineered to hold shape and grip past the five-year use cycle.",
+    "uniqueness": "No page-one competitor shows a visible stepped dual-density cross-section, a printed density-spec tag, or a diagram proving fit on a raised lip or glass desk — VAYDEER claims 'thicker,' nobody proves it.",
+    "exclusiveness": "The registered stepped-taper profile and named foam spec mean a buyer who wants proof, not just a promise, has exactly one place to get it at this price.",
+    "attraction": "The two-tone stepped edge reads as visibly thicker and more substantial than any flat, single-color pad in the grid, at a glance, before a single word is read."
+  },
+  "moat_built_in": [
+    "design_registration — the registered stepped dual-density cross-section profile (I1) blocks exact-mold clones, matching competition's named strongest moat",
+    "spec_edge — the named, load-tested foam-density badge (I5) is a spec a quantity-first factory has no incentive to actually source or verify, matching competition's spec_edge moat",
+    "packaging_experience — the dimensioned fit diagram plus insert card answering raised-lip, glass, and left/right questions (I2) is design effort a poly-bag reseller skips, matching competition's packaging_experience moat"
+  ],
+  "packaging": {
+    "tier": "moderate",
+    "unboxing_moment": "Lifting the printed tuck-box lid, the buyer sees the pad nested in a shaped paper tray with the stepped foam cross-section facing up and visible through a die-cut oval window in the tray liner, the insert diagram card tucked beside it — the first ten seconds show, not tell, that this pad is thicker where it counts.",
+    "upgrade_vs_category": "The category norm is a plain poly bag or a generic printed box with no fit information at all; adding a shaped paper tray and a dimensioned fit-diagram insert card costs only dimes but is absent from every page-one competitor per scout's unanswered_questions.",
+    "cost_tier": "dimes"
+  },
+  "color_strategy": {
+    "product_color": "A calm neutral gray-blue knit cover with a charcoal-black firm base layer visible at the stepped seam — blue-gray reads as trust and 'ergonomic/medical-adjacent' per the buyer's own color_read, avoiding the gamer-red or novelty-gel colors that read as a toy rather than a serious fix.",
+    "main_image_anchor": "A warm dark-walnut wood desk surface background, not the generic dark desk every competitor uses, with a single soft studio highlight running along the stepped edge so the two-tone taper visibly pops against the four look-alike tiles on the page.",
+    "brand_direction": "A calm, competence-first ergonomic-accessory brand, closer to a medical/office-wellness supply than a gaming peripheral — matching a buyer who wants a serious fix, not a mood."
+  },
+  "bundle_or_addition": {
+    "what": "A small trial-size swatch of the exact density-matched foam wedge, glued onto the insert card so the buyer can press-test the actual spec with a finger before ever using the full pad.",
+    "why_it_wins": "Directly answers fear rank 1 ('will I still feel the desk edge pressing through') at the moment of unboxing, before first use, engineering the review-trigger delight window instead of hoping the buyer notices the cushioning is real over time.",
+    "cost_tier": "cents"
+  },
+  "errc": {
+    "eliminate": [
+      "The handed, asymmetric L-shape geometry that implicitly favors one arm (removed entirely by I6)",
+      "The PU-coated / gel-laminate cover material that causes the C2 sticky-and-smell failure"
+    ],
+    "reduce": [
+      "Reliance on title-only, unproven claims like 'larger and thicker' with no visual or spec evidence behind them",
+      "The thin perimeter-strip rubber base, reduced to zero and replaced by a full-sheet bonded base"
+    ],
+    "raise": [
+      "Foam base-layer density and compression-set resistance, named and tested, far above the category's silent norm",
+      "Fit-question coverage (raised lip, glass, left/right) that no page-one competitor answers at all"
+    ],
+    "create": [
+      "A visible, thumbnail-legible stepped dual-density cross-section that is the shape itself proving cushioning depth",
+      "A dimensioned fit-diagram insert card plus embossed base icon addressing the three unanswered desk-fit questions",
+      "A printed, load-tested foam-density spec badge stitched onto the product itself"
+    ]
+  },
+  "version_plan": {
+    "v1_now": ["I1", "I2", "I3", "I4", "I5"],
+    "v2_later": [
+      {
+        "idea_id": "I6",
+        "unlock_trigger": "After v1 confirms the core density and fit fixes resolve C1 review sentiment, and left/right-use questions actually appear in Q&A or return reasons at real volume — spend the free mold-symmetry change once that signal is real, not speculative, since it only touches severity-3 need N5."
+      }
+    ]
+  },
+  "listing_implications": {
+    "title_first_60": "Elbow Rest Desk Pad, Dual-Density Foam, Fits Raised Lip Edge",
+    "main_image_brief": "The pad shot at a 3/4 angle on a walnut desk edge showing the visible two-tone stepped foam cross-section, full-width rubber base peeking at the corner, and the woven density-spec tag on the front edge — no clamp, no gel, no seams.",
+    "image_briefs_2_to_4": [
+      "Image 2 - scale: pad shown next to a ruler and an adult hand spanning its width, proving real forearm coverage, not just a flattering crop.",
+      "Image 3 - hard case: a hand pressing down hard at the exact pressure point with cross-section callout arrows showing the firm base layer still holding height under load, directly answering 'will I still feel the desk edge.'",
+      "Image 4 - install/fit: a four-panel diagram showing the pad seated on a flat edge, a raised lip, a rounded edge, and a glass desk, plus a mirrored left/right icon, matching the insert card."
+    ],
+    "honest_limitations": [
+      "The dual-density foam adds real thickness (about 1.8-2.2in relaxed), so it will not tuck under a desk with less than roughly 2in of clearance to a drawer or keyboard tray — measure your gap first.",
+      "The rubber base grips well on laminate, wood, and glass but performs best on a clean, dry surface; heavy dust or a waxed/oiled desk finish can reduce initial grip until the surface is wiped down."
+    ]
+  },
+  "image_prompts": [
+    {
+      "purpose": "main_image",
+      "prompt": "A single ergonomic elbow-and-forearm desk rest pad photographed at a three-quarter angle on a warm dark-walnut wood desk edge, softbox studio lighting from upper left casting a gentle highlight along its length; the pad has a calm gray-blue matte knit fabric cover over a visibly stepped, two-tone dual-density foam cross-section (a darker charcoal firm base layer beneath a lighter gray-blue soft top layer, the step clearly visible along the front face), a full-width matte black waffle-textured rubber base peeking out at the near corner, a small woven charcoal fabric tag on the front-left edge with a density-spec callout, a mirror-symmetric taper with no handed orientation, no visible seams, no gel sheen, no clamp or hardware, shot with a shallow depth of field on a clean neutral studio backdrop, no text overlays, photorealistic product photography."
+    },
+    {
+      "purpose": "packaging",
+      "prompt": "An overhead flat-lay unboxing shot of a matte-finish printed tuck box in muted gray-blue and white with clean minimal typography, lid lifted open to reveal a shaped white paper-pulp tray cradling a gray-blue elbow rest pad with its stepped foam cross-section facing up through a die-cut oval window in the tray liner, a small printed insert card tucked beside it showing four simple line-diagram icons (flat desk edge, raised lip, rounded edge, glass desk) and a mirrored left/right arm icon, soft natural window light from the side, a pair of hands lifting the box lid at the edge of frame, warm wood table surface beneath the box, no other visible text, photorealistic."
+    },
+    {
+      "purpose": "lifestyle",
+      "prompt": "A realistic home-office scene at dusk, warm desk-lamp light mixing with a cool monitor glow, a programmer in a plain t-shirt sitting at an ordinary cluttered desk with a keyboard, mouse, and dual monitors, right forearm resting flat and relaxed on a gray-blue dual-density elbow rest pad along the desk edge while typing mid-focus, natural candid posture rather than posed, a faint expression of quiet relief rather than a dramatic reaction, normal home-office clutter (a coffee mug, a notebook, some cables) visible but not staged, shot from a slightly elevated three-quarter angle like a photo a coworker might take, no soft-focus spa lighting, no wellness styling, photorealistic and documentary in feel."
+    }
+  ],
+  "sustainability": {
+    "claims": [
+      {
+        "claim": "Rubber base compound contains at least 20% recycled SBR content",
+        "verification": "Supplier recycled-content certificate retained on file, referenceable via the packaging insert's QR code"
+      }
+    ],
+    "rejected_claims": [
+      "We do not claim the foam or fabric is biodegradable or compostable — PU/PP-based foams and synthetic knit fabrics are not, and that claim would not survive a critic's check."
+    ]
+  },
+  "what_i_cut": [
+    "Cut the aluminum clamp/tray mechanism entirely (Fuzadel-style) — the buyer's own durability instinct reads visible hardware as a future wobble, and it adds cost and a failure mode nobody in the target need list asked for.",
+    "Cut the 2-piece/2-pack disc format — the buyer wants one piece placed once, not two pads to align every session, so that budget funds the dual-density core and full-bond base upgrade instead of duplicating a smaller part.",
+    "Cut decorative title puffery ('upgraded,' 'larger') with nothing behind it — that spend goes into the actual density spec, test, and tag instead of adjective inflation."
+  ]
+}

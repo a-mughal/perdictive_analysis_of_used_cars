@@ -1,0 +1,253 @@
+{
+  "scored_at": "2026-09-23T09:41:28+00:00",
+  "evidence": {
+    "facts": 9,
+    "sourced": 9,
+    "stale_fee_inputs": 5,
+    "unsourced_claims": 2,
+    "score": 62.0
+  },
+  "buyer": {
+    "p_click": 0.55,
+    "p_cart": 0.4,
+    "p_buy": 0.5,
+    "p_purchase_overall": 0.11,
+    "framework_tag_coverage": 1.0,
+    "driver": "pain",
+    "pain_level": "moderate",
+    "top_need": "I need a pad that actually stops me from feeling the hard desk edge, not just one that looks thicker in a photo.",
+    "top_need_id": "N1",
+    "burning_needs": 1,
+    "headroom_score": 57.0
+  },
+  "innovation": {
+    "ideas_ranked": [
+      {
+        "idea_id": "I1",
+        "name": "Stepped Dual-Density Edge Core",
+        "role": "hero",
+        "durability": "reassures",
+        "in_v1": true,
+        "impact": 18.6,
+        "ruling": "realistic",
+        "weighted": 18.6
+      },
+      {
+        "idea_id": "I3",
+        "name": "Full-Bond Rubber Base Sheet",
+        "role": "supporting",
+        "durability": "reassures",
+        "in_v1": true,
+        "impact": 13.8,
+        "ruling": "realistic",
+        "weighted": 13.8
+      },
+      {
+        "idea_id": "I6",
+        "name": "Mirror-Symmetric Ambidextrous Profile",
+        "role": "supporting",
+        "durability": "neutral",
+        "in_v1": false,
+        "impact": 21.0,
+        "ruling": "stretch",
+        "weighted": 12.6
+      },
+      {
+        "idea_id": "I5",
+        "name": "Printed Foam-Density Spec Badge",
+        "role": "supporting",
+        "durability": "neutral",
+        "in_v1": true,
+        "impact": 11.9,
+        "ruling": "realistic",
+        "weighted": 11.9
+      },
+      {
+        "idea_id": "I4",
+        "name": "Knit Anti-Tack Cover",
+        "role": "hygiene",
+        "durability": "reassures",
+        "in_v1": true,
+        "impact": 11.2,
+        "ruling": "realistic",
+        "weighted": 11.2
+      },
+      {
+        "idea_id": "I2",
+        "name": "Desk-Fit Diagram Insert + Embossed Base Guide",
+        "role": "supporting",
+        "durability": "neutral",
+        "in_v1": true,
+        "impact": 6.3,
+        "ruling": "realistic",
+        "weighted": 6.3
+      }
+    ],
+    "hero": {
+      "idea_id": "I1",
+      "name": "Stepped Dual-Density Edge Core",
+      "role": "hero",
+      "durability": "reassures",
+      "in_v1": true,
+      "impact": 18.6,
+      "ruling": "realistic",
+      "weighted": 18.6
+    },
+    "five_year_verdict": "needs_change",
+    "weakest_point": "The bond lines — between the two foam layers, and between the foam core and the rubber base — are where five-year failure concentrates first, before either the foam or the rubber itself reaches the end of its own working life.",
+    "warning_shapes": [],
+    "v1_realistic_count": 5,
+    "v1_unrealistic": [],
+    "score": 14.2
+  },
+  "competition": {
+    "present": true,
+    "brand_dominance": "partial",
+    "top_review_count": 2045,
+    "rule_3500_triggered": false,
+    "raised_by_rule": false,
+    "top_brand": "VAYDEER",
+    "sellers_on_page_one": 4,
+    "lookalike_share": 0.5,
+    "copycat_risk": "high",
+    "months_to_clone": 2.0,
+    "clone_price_usd": 10.0,
+    "share_haircut_pct": 30,
+    "win_before": 0.55,
+    "win_after": 0.3,
+    "choice_rank_after": 3,
+    "strongest_moat": "Registered design on the desk-edge profile geometry (the specific L-shaped/dual-taper cross-section and thickness callout)",
+    "moat_strength": "medium",
+    "deep_study": "VAYDEER wins on size/thickness perception (its own listing title leads with 'Upgraded Larger and Thicker') and on a 4.6-star rating backed by a real review base, which buyers read as proof the shape works. It is weak exactly where the category's biggest complaint cluster lives: C1 (35% of negative sentiment, stage 4) says pads still let the hard desk edge press through, meaning even the review leader has not convincingly solved density/thickness for heavier or bonier forearms, and none of VAYDEER's own product images or copy visibly address desk-lip fit or foam depth (per scout's unanswered questions). We coexist by not attacking VAYDEER on price or review count directly, and instead flank on a named, testable foam-density/thickness spec plus a diagram-based fit image (raised lip, glass desks, left/right use) that closes the exact gaps its own buyers and the unanswered-questions list surface."
+  },
+  "economics": {
+    "version_id": "v1_now",
+    "version_substituted": false,
+    "price_usd": 19.99,
+    "landed_cost_usd": 3.47,
+    "fee_stack_usd": {
+      "referral": 3.0,
+      "fba": 3.4,
+      "storage": 0.07,
+      "ads": 8.0,
+      "returns": 0.81
+    },
+    "contribution_usd": 1.25,
+    "contribution_pct": 6.2,
+    "landed_pct_of_price": 17.4,
+    "break_even_units": 53632,
+    "months_to_break_even": null
+  },
+  "sanity_rails": [
+    {
+      "rail": "contribution >= 25% of price",
+      "pass": false,
+      "value": "6.2%",
+      "soft": false
+    },
+    {
+      "rail": "contribution >= 15% of price (hard floor)",
+      "pass": false,
+      "value": "6.2%",
+      "soft": false
+    },
+    {
+      "rail": "landed cost <= 30% of price",
+      "pass": true,
+      "value": "17.4%",
+      "soft": false
+    },
+    {
+      "rail": "P(profit > 0 in 12 months) >= 60%",
+      "pass": false,
+      "value": "0%",
+      "soft": false
+    },
+    {
+      "rail": "first sale within 9 months at high",
+      "pass": false,
+      "value": "54 wk high",
+      "soft": false
+    },
+    {
+      "rail": "no fatal risk above 25% without a mitigation",
+      "pass": true,
+      "value": "0 unmitigated",
+      "soft": false
+    },
+    {
+      "rail": "price within what the buyer will pay",
+      "pass": true,
+      "value": "$19.99 vs $24.00",
+      "soft": false
+    },
+    {
+      "rail": "planning-fallacy multiplier applied",
+      "pass": true,
+      "value": "1.35",
+      "soft": false
+    },
+    {
+      "rail": "profit survives a copycat wave (P >= 40%)",
+      "pass": false,
+      "value": "0% after the clone haircut",
+      "soft": true,
+      "owner": "innovaty"
+    }
+  ],
+  "monte_carlo": {
+    "trials": 10000,
+    "p_profit_positive_12m": 0.0,
+    "p_payback_within_12m": 0.0,
+    "profit_12m_p10": -99182,
+    "profit_12m_p50": -72917,
+    "profit_12m_p90": -52205,
+    "median_payback_month": 99
+  },
+  "monte_carlo_cloned": {
+    "trials": 10000,
+    "p_profit_positive_12m": 0.0,
+    "p_payback_within_12m": 0.0,
+    "profit_12m_p10": -98984,
+    "profit_12m_p50": -72978,
+    "profit_12m_p90": -52744,
+    "median_payback_month": 99
+  },
+  "feasibility": {
+    "rails_passed": "4/8",
+    "rails_broken": [
+      "contribution >= 25% of price",
+      "contribution >= 15% of price (hard floor)",
+      "P(profit > 0 in 12 months) >= 60%",
+      "first sale within 9 months at high"
+    ],
+    "soft_broken": [
+      "profit survives a copycat wave (P >= 40%)"
+    ],
+    "verdict_computed": "unrealistic",
+    "verdict_claimed": "stretch",
+    "disagreement": true,
+    "score": 30.0
+  },
+  "critic_overall": "flags_to_fix",
+  "critic_high": 0,
+  "status": "FIX-FIRST",
+  "summary": "3 flag(s) to close, each routed to its owner — nothing here kills the product",
+  "fixes": [
+    "[innovaty] copycat risk is high and no strong moat is built in — a quantity-first cloner will undercut us within months; add a defensible edge (design registration, bundle, spec edge, review lead plan) before launch",
+    "[genius] broken rail: contribution >= 15% of price (hard floor)",
+    "[genius] broken rail: P(profit > 0 in 12 months) >= 60%"
+  ],
+  "watch": [
+    "[orchestrator] brand-partial arena — the top listing has 2,045 reviews. Not a reason to give up: flagged for serious consideration; read the deep study in the report",
+    "[innovaty] five-year test says 'needs change' at: The bond lines — between the two foam layers, and between the foam core and the rubber base — are where five-year failure concentrates first, before either the foam or the rubber itself reaches the end of its own working life.",
+    "[buyer] N2 ('surface stays comfortable, doesn't turn sticky/smell') and N4 ('need to know before I buy whether it fits my desk's edge shape') are both labeled pain_level 'latent' — defined as hidden, barely felt, buyer not looking. But this same buyer explicitly names both worries, unprompted, as ranked fears (fear rank 2 and rank 4) before seeing any diagram or bullet, and N4 is directly tied to fears the buyer says they'd otherwise 'guess and risk a return' on. A buyer actively articulating and ranking a worry is not exhibiting latent pain by the framework's own definition — that's moderate pain, like N1 and N3 (correctly labeled 'moderate'). Unresolved across two passes; left open by design since it belongs to buyer, not innovaty, and the fix loop was scoped to innovaty's two high findings. — fix: Re-rate N2 and N4 as pain_level 'moderate' (or justify in evidence why an explicitly self-articulated, ranked fear is still latent), and re-check whether innovaty's spend allocation, which weights by pain depth, under-prioritized these needs on the mistaken assumption they were only latent.",
+    "[genius] The pre-clone win probability of 0.55 treats a brand-new, zero-review listing as a near-coin-flip winner against VAYDEER's 2,045-review, 4.6-star incumbent on day one. This is not reconciled with the review-gating logic genius's own forecast otherwise respects (moore.chasm, gate.social_proof, months 1-3 modeled as innovator-only 1-5% share) or with buyer's three_second_scan, where social proof is exactly what pulls the click toward VAYDEER, not an unknown new entrant. Unresolved across two passes; carried forward as a watch item since it did not block readiness and the fix loop was scoped to innovaty's two high findings. — fix: Either lower win_probability_before_clones to reflect the review-chasm the listing starts inside of, or add an explicit reason (e.g. 'conditioned on accumulating ~50+ reviews before the clone wave lands') so the number doesn't silently assume the review gap has already closed.",
+    "[genius] States 'I1's design registration, I5's spec badge and I2's fit diagram are the plan's actual moat' as if the three carry comparable weight. But competition itself rates I2's packaging_experience moat 'weak' and says explicitly a cloner 'won't bother replicating it in their first wave' — a temporary, first-wave-only deterrent, not durable protection like design_registration (medium, legally actionable). Folding a weak, soon-clonable item into the same breath as the strongest moat overstates the plan's actual defensibility to the founder. Unresolved across two passes; carried forward as a watch item. — fix: Qualify the founder summary to distinguish the durable moat (design registration) from the soft, temporary ones (spec badge, fit diagram), and note the packaging/spec items only buy time in the first clone wave, not lasting protection.",
+    "[innovaty] Claims the walnut-wood background will make the product 'visibly pop against the four look-alike tiles on the page,' implying all four page-one competitors share a similar (dark) background. Scout only confirmed a background description for VAYDEER ('dark desk'); Jelbows, Leolee and Fuzadel's main_image_description fields give no background color at all. Unresolved across two passes; low severity, carried forward as a watch item. — fix: Either scope the claim to what's actually confirmed ('differentiates from VAYDEER's dark-desk anchor, the only background scout could confirm') or have scout capture the other three listings' actual background/thumbnail treatment before asserting grid-wide differentiation.",
+    "[genius] States 'I6's magnet-adjacent concerns from the knowledge base do not apply — this product carries no magnet.' No idea in this run (I1-I6) involves a magnet in any form; I6 is a pure geometry/symmetry change, not a magnet mechanism. This reads as a boilerplate knowledge-base line pattern-matched onto an unrelated idea. Unresolved across two passes; low severity, carried forward as a watch item. — fix: Drop the false I6/magnet reference and simply state the product contains no magnetic components, confirmed against the actual BOM (foam, fabric, rubber, printed card, woven tag).",
+    "[genius] broken rail: contribution >= 25% of price",
+    "[genius] broken rail: first sale within 9 months at high",
+    "[innovaty] profit survives a copycat wave (P >= 40%) — the moat must be stronger or the price war will eat the margin"
+  ]
+}

@@ -33,10 +33,16 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 BRAIN = HERE / "CLAUDE.md"
-PHASES = ["scout", "buyer", "innovaty", "genius", "critic"]
+PHASES = ["scout", "competition", "buyer", "innovaty", "genius", "critic"]
+REQUIRED = ("scout", "buyer", "innovaty", "genius")     # competition is scored when present
+TIERS = ("simple", "moderate", "premium")
+TIER_HELP = {"simple": "poly bag or sleeve + one printed card — cents",
+             "moderate": "printed tuck box + paper tray or insert — dimes",
+             "premium": "rigid box, magnetic lid, foam or moulded insert — dollars"}
 
 DEFAULT_MODEL = "claude-opus-5"
-FAST_MODELS = {"scout": "claude-sonnet-5", "buyer": "claude-sonnet-5", "innovaty": "claude-sonnet-5"}
+FAST_MODELS = {"scout": "claude-sonnet-5", "competition": "claude-sonnet-5",
+               "buyer": "claude-sonnet-5", "innovaty": "claude-sonnet-5"}
 MC_TRIALS = 10_000
 MC_SEED = 7
 
@@ -216,6 +222,8 @@ BRIEF = OB({
     }), "the only products the engine may think about, in focus mode", req=False),
     "search_budget_per_product": N("hard cap on web searches per product in focus mode", req=False),
     "search_budget": N("hard cap on web searches in category mode (default 8)", req=False),
+    "packaging_tier": EN("chosen by the founder before the run", *TIERS, req=False),
+    "packaging_note": S("anything the founder said about the packaging", req=False),
     "user_hypotheses": AR(S("something the seller believes and wants tested"), req=False),
     "assumptions": AR(S("what we assumed rather than knew"), req=False),
     "iterations": N("fix-loop count", req=False),
@@ -350,6 +358,12 @@ BUYER = OB({
     }),
     "memory_hook": S("the one detail that keeps tempting me to think about it again later, even if "
                      "I do not buy today (law.delayed_desire)", minlen=30),
+    "durability_instinct": OB({
+        "what_warns_me": S("the shapes, hinges, angles, thin walls or mechanisms in this grid that my "
+                           "past failures taught me to distrust — the ones that will betray me next "
+                           "(law.shape_memory)", minlen=30),
+        "what_reassures_me": S("what I would need to see to believe it survives five years of use", minlen=20),
+    }, "lived experience judging durability from shape alone"),
     "color_read": S("the color direction that would anchor ME for this product, and why "
                     "(law.color_anchor)", req=False),
     "hypotheses_tested": AR(OB({
@@ -391,8 +405,35 @@ INNOVATY = OB({
         "test_that_proves_it": S("the named test that would prove the claim", minlen=15),
         "how_it_looks_in_main_image": S("one sentence a photographer could shoot", minlen=15),
         "buyer_sentence": S("what the buyer says to a friend, in the buyer's voice", minlen=15),
+        "durability_signal": EN("what the shape says to a buyer who has been betrayed before",
+                                "reassures", "neutral", "warns"),
+        "five_year_test": OB({
+            "use_cycle": S("how it is really used over five years: how often opened, closed, removed, "
+                           "pressed; dust, heat, force, weather", minlen=25),
+            "failure_modes": AR(S("what breaks, jams or wears first"), lo=1),
+            "design_answer": S("the dimensions, angles, wall thickness, hinge type or mechanism chosen "
+                               "so it survives that cycle", minlen=25),
+            "fit_range": S("the sizes, diameters or loads it accommodates — cover the medium case, "
+                           "not just the thin one", req=False),
+        }, "reason from the working physics, not from how cool it looks"),
     }), lo=4, hi=7),
+    "durability_review": OB({
+        "weakest_point": S("the part of the whole product that fails first", minlen=15),
+        "physics": S("where the force, wear, dust, heat and fatigue actually go, in plain words", minlen=40),
+        "five_year_verdict": EN("does the product as designed survive five years", "survives", "needs_change", "fails"),
+        "changes_made": AR(S("what you changed because of this review"), lo=1),
+    }, "the whole product through the five-year test"),
+    "pillars": OB({
+        "reliability": S("how it works every time", minlen=10),
+        "durability": S("how it lasts", minlen=10),
+        "uniqueness": S("what nobody else in the grid has", minlen=10),
+        "exclusiveness": S("what makes it feel like the one to own", minlen=10),
+        "attraction": S("what pulls the eye in the grid", minlen=10),
+    }, "never underestimated — one honest line each"),
+    "moat_built_in": AR(S("the competition moat this design bakes in, by name"),
+                        "what a quantity-first cloner cannot copy cheaply", lo=1),
     "packaging": OB({
+        "tier": EN("must match the founder's choice in brief.packaging_tier", *TIERS),
         "unboxing_moment": S("what the customer feels in the first ten seconds of opening — the "
                              "first physical impression convicts or acquits the whole brand", minlen=25),
         "upgrade_vs_category": S("what changes vs the category norm and why it reads as quality", minlen=20),
@@ -403,7 +444,7 @@ INNOVATY = OB({
                            "(red urgency, blue trust, green nature, gradient fun, black+gold luxury)", minlen=15),
         "main_image_anchor": S("the background / accent of the main image that makes the tile pop "
                                "in a grid of look-alikes", minlen=15),
-        "brand_direction": S("what kind of brand these colors say we are", req=False),
+        "brand_direction": S("what kind of brand these colors say we are"),
     }, "law.color_anchor — distinguish or disappear"),
     "bundle_or_addition": OB({
         "what": S("the extra thing in the box or the companion piece"),
@@ -438,6 +479,60 @@ INNOVATY = OB({
     }, req=False),
     "what_i_cut": AR(S("what the category does that you would remove to pay for the above"), lo=2),
 }, "runs/<slug>/innovaty.json")
+
+BRAND_RULE_REVIEWS = 3500   # a page-one listing at or above this = treat the arena as brand-dominated
+
+COMPETITION = OB({
+    "arena": OB({
+        "sellers_on_page_one": N("distinct sellers or brands sharing page one"),
+        "lookalike_share": P("share of page-one tiles that are near-identical products"),
+        "price_floor_usd": N("the cheapest credible price a quantity-first clone could sell at"),
+        "dominant_form": S("the shape or design most tiles share"),
+        "summary": S("the competitive environment in two sentences", minlen=40),
+    }),
+    "brand_dominance": OB({
+        "level": EN("none = open field; partial = one strong brand but room; dominated = a brand owns the term",
+                    "none", "partial", "dominated"),
+        "top_brand": S("who", req=False),
+        "top_review_count": N("the largest review count on page one"),
+        "rule_3500": B("true when any page-one product has 3500+ reviews — that alone means brand-dominated"),
+        "evidence": S("what shows this", minlen=20),
+        "deep_study": S("when partial or dominated: what the brand does right, where it is weak, how we "
+                        "coexist or flank it — studied hard, never surrendered", req=False, minlen=60),
+    }),
+    "copycat_risk": OB({
+        "level": EN("how fast and cheap a clone wave would follow our launch", "low", "medium", "high"),
+        "months_to_first_clone": RG("months until a look-alike appears at a lower price"),
+        "clone_price_usd": RG("what the clones will sell at"),
+        "why": S("what makes it easy or hard to copy", minlen=20),
+    }),
+    "price_war": OB({
+        "win_probability_before_clones": P("our chance of being the chosen tile at launch"),
+        "win_probability_after_clones": P("our chance once cheap look-alikes fill the grid"),
+        "choice_rank_after_clones": N("where we land in the buyer's shortlist once clones arrive (1 = first)", lo=1),
+        "share_haircut_pct": N("the share of our forecast volume the clone wave takes — the engine "
+                               "re-runs the profit simulation with it", lo=0, hi=100),
+        "why": S("how the buyer's comparison shifts when the grid fills with cheaper twins", minlen=20),
+    }),
+    "moats": AR(OB({
+        "moat": S("the defensible edge"),
+        "type": EN("kind", "design_registration", "review_lead", "bundle", "spec_edge",
+                   "packaging_experience", "supply_exclusivity", "brand_story", "other"),
+        "strength": EN("how hard it is to copy cheaply", "weak", "medium", "strong"),
+        "cost_tier": EN("what it costs us", *COST_TIERS),
+        "why": S("why a quantity-first cloner will not bother", minlen=15),
+    }), "what a cloner who believes in quantity, not quality, cannot copy", lo=2),
+    "competitor_profiles": AR(OB({
+        "name": S("from scout.competitors"),
+        "price_usd": N("price"),
+        "review_count": N("count", req=False),
+        "strength": S("what they do right"),
+        "weakness": S("where they lose"),
+        "threat": EN("to us", "low", "medium", "high"),
+    }), lo=3),
+    "watch_signals": AR(S("what to monitor after launch: new sellers, price drops, review velocity"), lo=2),
+    "tags": TAGLIST,
+}, "runs/<slug>/competition.json")
 
 GENIUS = OB({
     "planning_fallacy_multiplier": N("applied to the timeline; >= 1.3", lo=1.3),
@@ -518,11 +613,11 @@ CRITIC = OB({
     "three_things_the_founder_must_hear": AR(S("plain and unsoftened"), lo=3, hi=3),
 }, "runs/<slug>/critic.json — flags routed to their owners; the product is never declared a flop")
 
-CONTRACTS = {"brief": BRIEF, "scout": SCOUT, "buyer": BUYER,
+CONTRACTS = {"brief": BRIEF, "scout": SCOUT, "competition": COMPETITION, "buyer": BUYER,
              "innovaty": INNOVATY, "genius": GENIUS, "critic": CRITIC}
 
 # In focus mode the grid is smaller by definition, so list minimums drop by this much.
-FOCUS_RELAX = {"scout": 2, "buyer": 1, "innovaty": 1, "genius": 1, "critic": 0}
+FOCUS_RELAX = {"scout": 2, "competition": 1, "buyer": 1, "innovaty": 1, "genius": 1, "critic": 0}
 
 
 # ============================================================================================ io
@@ -556,7 +651,17 @@ def read_run(run: Path) -> dict:
 
 # ========================================================================================== new
 
-def cmd_new(run: Path, name: str, url: str | None, focus: list[str] | None, mine: int | None, budget: int):
+def suggest_tier(price_max: float) -> tuple[str, str]:
+    """A default packaging tier from the price band. The founder confirms or overrides."""
+    if price_max and price_max <= 15:
+        return "simple", "under $15 the box cannot earn its cost back — spend on the product"
+    if not price_max or price_max <= 35:
+        return "moderate", "a printed box with an insert reads as a brand without a premium bill"
+    return "premium", "above $35 the unboxing is part of what they paid for"
+
+
+def cmd_new(run: Path, name: str, url: str | None, focus: list[str] | None, mine: int | None, budget: int,
+            packaging: str | None = None, packaging_note: str | None = None):
     if (run / "brief.json").exists():
         print(f"{run/'brief.json'} already exists; not overwriting"); return
     brief = {
@@ -574,6 +679,10 @@ def cmd_new(run: Path, name: str, url: str | None, focus: list[str] | None, mine
     }
     if not focus:
         brief["search_budget"] = 8
+    if packaging in TIERS:
+        brief["packaging_tier"] = packaging
+    if packaging_note:
+        brief["packaging_note"] = packaging_note
     if focus:
         brief["focus_products"] = [
             {"product_id": f"P{i}", "url": u, "role": "mine" if mine == i else "competitor", "name": ""}
@@ -584,6 +693,12 @@ def cmd_new(run: Path, name: str, url: str | None, focus: list[str] | None, mine
     dump(brief, run / "brief.json")
     print(f"created {run/'brief.json'} ({brief['mode']} mode)")
     print("fill target_buyer.description before running scout, then:  python engine.py next", run)
+    if packaging not in TIERS:
+        tier, why = suggest_tier(0)
+        print("\nPACKAGING — ask the founder to choose one tier (set brief.packaging_tier):")
+        for t in TIERS:
+            print(f"   {t:9} {TIER_HELP[t]}")
+        print(f"   suggested: {tier} — {why}; refine once the price band is known")
 
 
 # ===================================================================================== validate
@@ -610,6 +725,9 @@ def phase_errors(name: str, data: dict, focus: bool) -> list[str]:
             if h.get("thumbnail_visibility") != "high":
                 errs.append(f"innovaty.ideas[{h.get('idea_id')}]: the hero must be visible in the "
                             f"thumbnail (high)")
+            if h.get("durability_signal") == "warns":
+                errs.append(f"innovaty.ideas[{h.get('idea_id')}]: the hero's shape warns the buyer it will "
+                            f"betray them — redesign it before it is the hero")
         for i in ideas:
             if not (i.get("fixes_complaint_clusters") or i.get("improves_needs")):
                 errs.append(f"innovaty.ideas[{i.get('idea_id')}]: fixes no complaint cluster and improves "
@@ -628,6 +746,12 @@ def phase_errors(name: str, data: dict, focus: bool) -> list[str]:
             if need not in purposes:
                 errs.append(f"innovaty.image_prompts: no prompt with purpose '{need}' — all three are needed")
     return errs
+
+
+def top_reviews(scout) -> float:
+    """The largest review count scout saw on page one."""
+    return max((c["review_count"] for c in _dicts(scout, "competitors") if _isnum(c.get("review_count"))),
+               default=0)
 
 
 def _strs(v) -> list[str]:
@@ -694,6 +818,27 @@ def cross_errors(run: dict) -> list[str]:
         if _isnum(cap) and _isnum(price) and price > cap * 1.05:
             errs.append(f"genius.price_usd: base ${price:.2f} is above the ${cap:.2f} the buyer said they "
                         f"would pay even with a visible reason — reprice or change the product")
+    comp, brief = run.get("competition"), run.get("brief")
+    comp = comp if usable(comp) else None
+    brief = brief if usable(brief) else None
+    if scout and comp:
+        top = top_reviews(scout)
+        bd = comp.get("brand_dominance") if isinstance(comp.get("brand_dominance"), dict) else {}
+        if top >= BRAND_RULE_REVIEWS and bd.get("level") in ("none", "partial"):
+            errs.append(f"competition.brand_dominance.level: a page-one listing has {top:,.0f} reviews (>= "
+                        f"{BRAND_RULE_REVIEWS:,}) — that is 'dominated' by rule, not '{bd.get('level')}'; "
+                        f"say so and study it")
+        if top >= BRAND_RULE_REVIEWS and bd.get("rule_3500") is False:
+            errs.append(f"competition.brand_dominance.rule_3500: scout shows {top:,} reviews — set it true")
+        if bd.get("level") in ("partial", "dominated") and len(str(bd.get("deep_study") or "")) < 60:
+            errs.append("competition.brand_dominance.deep_study: the arena has a strong brand — study it "
+                        "hard (what they do right, where they are weak, how we flank them)")
+    if brief and inn:
+        want = brief.get("packaging_tier")
+        pk = inn.get("packaging") if isinstance(inn.get("packaging"), dict) else {}
+        if want in TIERS and pk.get("tier") and pk["tier"] != want:
+            errs.append(f"innovaty.packaging.tier: founder chose '{want}', you designed '{pk['tier']}' — "
+                        f"design inside the chosen tier")
     if gen:
         f = gen.get("forecast") if isinstance(gen.get("forecast"), dict) else {}
         term, share, units = _b(f.get("term_monthly_units")), _b(f.get("share_m6")), _b(f.get("monthly_units_m6"))
@@ -831,14 +976,52 @@ def score_innovation(inn, scout, genius) -> dict:
             / _COST_W.get(i.get("cost_tier"), 2.0)
         ruling = rulings.get(i.get("idea_id"), "unrated")
         rows.append({"idea_id": i.get("idea_id"), "name": i.get("name"), "role": i.get("role"),
+                     "durability": i.get("durability_signal"),
                      "in_v1": i.get("idea_id") in v1, "impact": round(impact, 1), "ruling": ruling,
                      "weighted": round(impact * _RULING_W.get(ruling, 0.5), 1)})
     rows.sort(key=lambda r: -r["weighted"])
     top = rows[:4]
+    dr = inn.get("durability_review") if isinstance(inn.get("durability_review"), dict) else {}
     return {"ideas_ranked": rows, "hero": next((r for r in rows if r["role"] == "hero"), None),
+            "five_year_verdict": dr.get("five_year_verdict"), "weakest_point": dr.get("weakest_point"),
+            "warning_shapes": [r["idea_id"] for r in rows if r.get("durability") == "warns"],
             "v1_realistic_count": sum(1 for r in rows if r["in_v1"] and r["ruling"] == "realistic"),
             "v1_unrealistic": [r["idea_id"] for r in rows if r["in_v1"] and r["ruling"] == "unrealistic"],
             "score": round(min(100, sum(r["weighted"] for r in top) / len(top)), 1) if top else 0}
+
+
+_MOAT_W = {"weak": 1, "medium": 2, "strong": 3}
+_HAIRCUT_DEFAULT = {"low": 15, "medium": 30, "high": 50}
+
+
+def score_competition(comp, scout) -> dict:
+    """The arena as the engine sees it: the 3500-review rule is applied here regardless of what the
+    agent said, and the clone-wave haircut is what the second profit simulation runs on."""
+    top = top_reviews(scout)
+    bd = comp.get("brand_dominance") if isinstance(comp.get("brand_dominance"), dict) else {}
+    cr = comp.get("copycat_risk") if isinstance(comp.get("copycat_risk"), dict) else {}
+    pw = comp.get("price_war") if isinstance(comp.get("price_war"), dict) else {}
+    ar = comp.get("arena") if isinstance(comp.get("arena"), dict) else {}
+    level = bd.get("level") if bd.get("level") in ("none", "partial", "dominated") else None
+    raised = top >= BRAND_RULE_REVIEWS and level != "dominated"
+    if raised:
+        level = "dominated"
+    moats = [m for m in _dicts(comp, "moats") if m.get("strength") in _MOAT_W]
+    best = max(moats, key=lambda m: _MOAT_W[m["strength"]], default={})
+    risk = cr.get("level") if cr.get("level") in _HAIRCUT_DEFAULT else None
+    haircut = pw["share_haircut_pct"] if _isnum(pw.get("share_haircut_pct")) else _HAIRCUT_DEFAULT.get(risk, 30)
+    return {"present": bool(comp), "brand_dominance": level or "unknown", "top_review_count": top,
+            "rule_3500_triggered": top >= BRAND_RULE_REVIEWS, "raised_by_rule": raised,
+            "top_brand": bd.get("top_brand"),
+            "sellers_on_page_one": ar.get("sellers_on_page_one"),
+            "lookalike_share": ar.get("lookalike_share"),
+            "copycat_risk": risk or "unknown", "months_to_clone": _b(cr.get("months_to_first_clone")),
+            "clone_price_usd": _b(cr.get("clone_price_usd")), "share_haircut_pct": haircut,
+            "win_before": pw.get("win_probability_before_clones"),
+            "win_after": pw.get("win_probability_after_clones"),
+            "choice_rank_after": pw.get("choice_rank_after_clones"),
+            "strongest_moat": best.get("moat"), "moat_strength": best.get("strength", "none"),
+            "deep_study": bd.get("deep_study")}
 
 
 # ------------------------------------------------------------------ economics the engine computes
@@ -910,7 +1093,7 @@ def _hi(r):
     return float(r) if _isnum(r) else None
 
 
-def sanity_rails(econ, genius, mc, buyer) -> list[dict]:
+def sanity_rails(econ, genius, mc, buyer, mc_cloned=None) -> list[dict]:
     tl = genius.get("timeline") if isinstance(genius.get("timeline"), dict) else {}
     hi_weeks = _hi(tl.get("weeks_to_first_sale"))
     fatal = unmitigated_fatal(genius)
@@ -932,7 +1115,13 @@ def sanity_rails(econ, genius, mc, buyer) -> list[dict]:
         ("planning-fallacy multiplier applied", _isnum(mult) and mult >= 1.3,
          str(mult) if _isnum(mult) else "not stated"),
     ]
-    return [{"rail": r, "pass": bool(ok), "value": v} for r, ok, v in rails]
+    out = [{"rail": r, "pass": bool(ok), "value": v, "soft": False} for r, ok, v in rails]
+    if mc_cloned:
+        out.append({"rail": "profit survives a copycat wave (P >= 40%)",
+                    "pass": mc_cloned["p_profit_positive_12m"] >= 0.40,
+                    "value": f"{mc_cloned['p_profit_positive_12m']:.0%} after the clone haircut",
+                    "soft": True, "owner": "innovaty"})
+    return out
 
 
 def _tri(r, rng):
@@ -947,7 +1136,8 @@ def _tri(r, rng):
     return rng.triangular(lo, hi, min(max(b, lo), hi))
 
 
-def monte_carlo(genius, trials=MC_TRIALS, seed=MC_SEED) -> dict:
+def monte_carlo(genius, trials=MC_TRIALS, seed=MC_SEED, units_scale=1.0) -> dict:
+    """units_scale < 1 simulates the clone wave: cheaper twins take that share of our volume."""
     ver, _sub = pick_version(genius)
     e = genius.get("economics") if isinstance(genius.get("economics"), dict) else {}
     f = genius.get("forecast") if isinstance(genius.get("forecast"), dict) else {}
@@ -963,7 +1153,7 @@ def monte_carlo(genius, trials=MC_TRIALS, seed=MC_SEED) -> dict:
                    - _tri(e.get("return_rate"), rng) * (0.4 * price + 0.6 * landed)
                    - landed)
         m6, m12 = _tri(f.get("monthly_units_m6"), rng), _tri(f.get("monthly_units_m12"), rng)
-        units = ramp(m6, m12)
+        units = ramp(m6 * units_scale, m12 * units_scale)
         cum, payback = -_tri(genius.get("fixed_launch_cost_usd"), rng), None
         for month, u in enumerate(units, start=1):
             cum += u * contrib
@@ -981,14 +1171,17 @@ def monte_carlo(genius, trials=MC_TRIALS, seed=MC_SEED) -> dict:
 
 
 def feasibility(rails, mc, genius) -> dict:
-    passed = sum(1 for r in rails if r["pass"])
-    broken = [r["rail"] for r in rails if not r["pass"]]
+    """Soft rails (the clone wave) are reported and watched, but never decide the verdict."""
+    hard = [r for r in rails if not r.get("soft")]
+    passed = sum(1 for r in hard if r["pass"])
+    broken = [r["rail"] for r in hard if not r["pass"]]
     fatal = unmitigated_fatal(genius)
     computed = ("unrealistic" if (len(broken) > 1 or fatal)
                 else "stretch" if broken else "realistic")
-    s = 0.6 * (100 * passed / len(rails)) + 40 * mc["p_profit_positive_12m"]
+    s = 0.6 * (100 * passed / len(hard)) + 40 * mc["p_profit_positive_12m"]
     s -= 15 * len(fatal)
-    return {"rails_passed": f"{passed}/{len(rails)}", "rails_broken": broken,
+    soft_broken = [r["rail"] for r in rails if r.get("soft") and not r["pass"]]
+    return {"rails_passed": f"{passed}/{len(hard)}", "rails_broken": broken, "soft_broken": soft_broken,
             "verdict_computed": computed, "verdict_claimed": genius.get("feasibility_verdict"),
             "disagreement": computed != genius.get("feasibility_verdict"),
             "score": round(max(0, min(100, s)), 1)}
@@ -1001,9 +1194,31 @@ _HARD_RAILS = {"contribution >= 15% of price (hard floor)",
                "no fatal risk above 25% without a mitigation"}
 
 
-def readiness(ev, bu, inn, fe, critic) -> tuple[str, str, list[str], list[str]]:
+def readiness(ev, bu, inn, fe, critic, comp=None) -> tuple[str, str, list[str], list[str]]:
     """READY or FIX-FIRST — never a flop. Every flag names the agent that owns the fix."""
     fixes, watch = [], []
+    comp = comp or {}
+    if comp.get("brand_dominance") in ("partial", "dominated"):
+        watch.append(f"[orchestrator] brand-{comp['brand_dominance']} arena — the top listing has "
+                     f"{comp.get('top_review_count', 0):,.0f} reviews. Not a reason to give up: flagged for "
+                     f"serious consideration; read the deep study in the report")
+    if comp.get("copycat_risk") == "high" and comp.get("moat_strength") != "strong":
+        fixes.append("[innovaty] copycat risk is high and no strong moat is built in — a quantity-first "
+                     "cloner will undercut us within months; add a defensible edge (design registration, "
+                     "bundle, spec edge, review lead plan) before launch")
+    elif comp.get("copycat_risk") == "medium" and comp.get("moat_strength") in ("none", "weak"):
+        watch.append("[innovaty] medium copycat risk with only a weak moat — plan the review lead and a "
+                     "visible difference clones will not bother with")
+    if inn.get("five_year_verdict") == "fails":
+        fixes.append(f"[innovaty] the design fails its own five-year test (weakest point: "
+                     f"{inn.get('weakest_point') or '?'}) — redesign the mechanism, not the styling")
+    elif inn.get("five_year_verdict") == "needs_change":
+        watch.append(f"[innovaty] five-year test says 'needs change' at: {inn.get('weakest_point') or '?'}")
+    if inn.get("warning_shapes"):
+        watch.append(f"[innovaty] shapes that warn a betrayed buyer: {', '.join(inn['warning_shapes'])} — "
+                     f"the buyer will assume they break")
+    if not comp.get("present"):
+        watch.append("[orchestrator] the competition phase has not run — the clone-wave numbers are defaults")
     for f in _dicts(critic, "findings"):
         line = f"[{f.get('owner_agent') or f.get('file') or '?'}] {f.get('finding')} — fix: {f.get('fix')}"
         (fixes if f.get("severity") == "high" else watch).append(line)
@@ -1012,6 +1227,11 @@ def readiness(ev, bu, inn, fe, critic) -> tuple[str, str, list[str], list[str]]:
                      "trusting any number below")
     for r in fe["rails_broken"]:
         (fixes if r in _HARD_RAILS else watch).append(f"[genius] broken rail: {r}")
+    if fe["verdict_computed"] == "unrealistic" and not any(r in _HARD_RAILS for r in fe["rails_broken"]):
+        fixes.append("[genius] two or more sanity rails are broken (" + "; ".join(fe["rails_broken"][:3])
+                     + ") — the plan is unrealistic as costed; reprice, re-cost or re-time it")
+    for r in fe.get("soft_broken") or []:
+        watch.append(f"[innovaty] {r} — the moat must be stronger or the price war will eat the margin")
     if inn["v1_unrealistic"]:
         fixes.append(f"[innovaty] v1 contains ideas genius ruled unrealistic "
                      f"({', '.join(inn['v1_unrealistic'])}) — move them to v2")
@@ -1031,11 +1251,12 @@ def cmd_score(run: Path, quiet=False, force=False) -> dict:
     d = read_run(run)
     if not isinstance(d.get("brief"), dict) or "__broken__" in d["brief"]:
         sys.exit(f"cannot score: {run}/brief.json is missing or is not valid JSON")
-    for need in PHASES[:4]:
+    for need in REQUIRED:
         if need not in d:
             sys.exit(f"cannot score: {need}.json is missing")
     focus = d["brief"].get("mode") == "focus"
-    blocking = [e for n in PHASES[:4] for e in phase_errors(n, d[n], focus)]
+    scored = [n for n in REQUIRED + ("competition",) if n in d]
+    blocking = [e for n in scored for e in phase_errors(n, d[n], focus)]
     if blocking and not force:
         print(f"cannot score — {len(blocking)} contract problem(s). Fix these, or pass --force to "
               f"score anyway (numbers will be wrong):", file=sys.stderr)
@@ -1043,7 +1264,10 @@ def cmd_score(run: Path, quiet=False, force=False) -> dict:
             print(f"   - {e}", file=sys.stderr)
         sys.exit(1)
     # With --force the files may be malformed; treat anything that is not an object as absent.
-    scout, buyer, inn, gen = (d[n] if isinstance(d[n], dict) else {} for n in PHASES[:4])
+    scout, buyer, inn, gen = (d[n] if isinstance(d[n], dict) else {} for n in REQUIRED)
+    comp = d.get("competition") if isinstance(d.get("competition"), dict) else {}
+    if "__broken__" in comp:
+        comp = {}
     critic = d.get("critic") or {}
     if not isinstance(critic, dict):
         critic = {}
@@ -1052,13 +1276,15 @@ def cmd_score(run: Path, quiet=False, force=False) -> dict:
         critic = {}
     econ = economics(gen)
     mc = monte_carlo(gen)
-    rails = sanity_rails(econ, gen, mc, buyer)
+    sc = score_competition(comp, scout)
+    mc_cloned = monte_carlo(gen, units_scale=1 - sc["share_haircut_pct"] / 100.0) if sc["present"] else None
+    rails = sanity_rails(econ, gen, mc, buyer, mc_cloned)
     ev, bu = score_evidence(scout, critic), score_buyer(buyer)
     ino, fe = score_innovation(inn, scout, gen), feasibility(rails, mc, gen)
-    status, summary, fixes, watch = readiness(ev, bu, ino, fe, critic)
+    status, summary, fixes, watch = readiness(ev, bu, ino, fe, critic, sc)
     out = {"scored_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-           "evidence": ev, "buyer": bu, "innovation": ino, "economics": econ,
-           "sanity_rails": rails, "monte_carlo": mc, "feasibility": fe,
+           "evidence": ev, "buyer": bu, "innovation": ino, "competition": sc, "economics": econ,
+           "sanity_rails": rails, "monte_carlo": mc, "monte_carlo_cloned": mc_cloned, "feasibility": fe,
            "critic_overall": critic.get("overall", "not run"),
            "critic_high": sum(1 for f in _dicts(critic, "findings") if f.get("severity") == "high"),
            "status": status, "summary": summary, "fixes": fixes, "watch": watch}
@@ -1068,7 +1294,9 @@ def cmd_score(run: Path, quiet=False, force=False) -> dict:
                           "evidence": ev["score"], "headroom": bu["headroom_score"],
                           "innovation": ino["score"], "feasibility": fe["score"],
                           "contribution_pct": econ["contribution_pct"],
-                          "p_profit_12m": mc["p_profit_positive_12m"]}, indent=2))
+                          "p_profit_12m": mc["p_profit_positive_12m"],
+                          "p_profit_12m_under_clones": mc_cloned["p_profit_positive_12m"] if mc_cloned else None,
+                          "feasibility_computed": fe["verdict_computed"]}, indent=2))
     return out
 
 
@@ -1090,8 +1318,8 @@ def cmd_report(run: Path, force=False):
     d = read_run(run)
     s = cmd_score(run, quiet=True, force=force)
     ok = lambda x: x if isinstance(x, dict) and "__broken__" not in x else {}
-    brief, scout, buyer, inn, gen = (ok(d.get(n)) for n in ["brief"] + PHASES[:4])
-    econ, mc, bu = s["economics"], s["monte_carlo"], s["buyer"]
+    brief, scout, buyer, inn, gen = (ok(d.get(n)) for n in ("brief",) + REQUIRED)
+    econ, mc, bu, sc, mcc = s["economics"], s["monte_carlo"], s["buyer"], s["competition"], s["monte_carlo_cloned"]
     clusters = sorted([c for c in _dicts(scout, "complaint_clusters") if _isnum(c.get("share_of_negative"))],
                       key=lambda c: -c["share_of_negative"])[:3]
     be = econ["break_even_units"]
@@ -1105,7 +1333,7 @@ def cmd_report(run: Path, force=False):
     variant = scout.get("variant_chosen") if isinstance(scout.get("variant_chosen"), dict) else {}
     rulings = {r.get("idea_id"): r.get("ruling") for r in _dicts(gen, "idea_rulings")}
     v1 = set(_strs(vp.get("v1_now")))
-    broken = [r for r in s["sanity_rails"] if not r["pass"]]
+    broken = [r for r in s["sanity_rails"] if not r["pass"] and not r.get("soft")]
     weeks = _r((gen.get("timeline") or {}).get("weeks_to_first_sale") if isinstance(gen.get("timeline"), dict) else None, " wk", 0)
 
     L = [f"# {brief.get('product_name', '(unnamed product)')} — **{s['status']}**",
@@ -1127,6 +1355,24 @@ def cmd_report(run: Path, force=False):
             if _isnum(pp.get("max_with_reason_usd")) else ""),
          f"- **Memory hook:** {_one_line(buyer.get('memory_hook'))}",
          "",
+         "## The competition",
+         ("- **Competition phase has not run** — the numbers below are the engine's rule alone" if not sc["present"] else
+          f"- **Arena:** {sc.get('sellers_on_page_one') or '?'} sellers on page one")
+         + (f", {sc['lookalike_share']:.0%} look-alikes" if _isnum(sc.get("lookalike_share")) else "")
+         + f" · brand dominance **{sc['brand_dominance']}**"
+         + (f" ({sc.get('top_brand')}, " if sc.get("top_brand") else " (")
+         + f"top listing {sc['top_review_count']:,.0f} reviews"
+         + (" — 3500 rule" + (", raised by the engine" if sc.get("raised_by_rule") else "") + ")"
+            if sc["rule_3500_triggered"] else ")"),
+         f"- **If cloned:** copycat risk **{sc['copycat_risk']}**"
+         + (f", first clone in ~{sc['months_to_clone']:.0f} months at ~${sc['clone_price_usd']:.2f}"
+            if sc["months_to_clone"] and sc["clone_price_usd"] else "")
+         + (f" · our win chance {sc['win_before']:.0%} → {sc['win_after']:.0%}"
+            if _isnum(sc.get("win_before")) and _isnum(sc.get("win_after")) else "")
+         + (f", shortlist rank {sc['choice_rank_after']:.0f}" if _isnum(sc.get("choice_rank_after")) else "")
+         + f" · volume haircut {sc['share_haircut_pct']:.0f}%",
+         f"- **Moat:** {_one_line(sc.get('strongest_moat'), 90) or 'none named'} ({sc['moat_strength']})",
+         "",
          "## The winning changes"]
     for idea in _dicts(inn, "ideas"):
         iid = idea.get("idea_id")
@@ -1135,9 +1381,16 @@ def cmd_report(run: Path, force=False):
         L.append(f"- {mark}**{idea.get('name', iid)}** [{idea.get('aspect', '?')}] — "
                  f"{_one_line(idea.get('buyer_sentence'), 100)} · {idea.get('cost_tier', '?')}"
                  f" · thumbnail {idea.get('thumbnail_visibility', '?')}"
+                 f" · durability {idea.get('durability_signal', '?')}"
                  f" · {rulings.get(iid, 'unrated')}{tag}")
+    dr = inn.get("durability_review") if isinstance(inn.get("durability_review"), dict) else {}
+    if dr:
+        L.append(f"- **Five-year test:** **{dr.get('five_year_verdict', '?')}** — weakest point: "
+                 f"{_one_line(dr.get('weakest_point'), 80)}; changed: "
+                 f"{_one_line('; '.join(_strs(dr.get('changes_made'))), 110)}")
     if pack:
-        L.append(f"- **Packaging** — {_one_line(pack.get('unboxing_moment'), 110)} · {pack.get('cost_tier', '?')}")
+        L.append(f"- **Packaging ({pack.get('tier', '?')})** — {_one_line(pack.get('unboxing_moment'), 110)}"
+                 f" · {pack.get('cost_tier', '?')}")
     if col:
         L.append(f"- **Colors** — product: {_one_line(col.get('product_color'), 80)} · "
                  f"main-image anchor: {_one_line(col.get('main_image_anchor'), 80)}")
@@ -1153,13 +1406,19 @@ def cmd_report(run: Path, force=False):
           f"({econ['contribution_pct']}%)**",
           (f"- Break-even **{be:,} units** (~{econ['months_to_break_even'] or '>12'} months) · "
            if be is not None else "- Break-even **never at these numbers** · ")
-          + f"P(profit 12 m) **{mc['p_profit_positive_12m']:.0%}** · "
-            f"year-1 P50 ${mc['profit_12m_p50']:,} (P10 ${mc['profit_12m_p10']:,})",
+          + f"P(profit 12 m) **{mc['p_profit_positive_12m']:.0%}**"
+          + (f", under a clone wave **{mcc['p_profit_positive_12m']:.0%}**" if mcc else "")
+          + f" · year-1 P50 ${mc['profit_12m_p50']:,} (P10 ${mc['profit_12m_p10']:,})",
           f"- First sale in {weeks} · rails {s['feasibility']['rails_passed']}"
-          + (" — broken: " + "; ".join(b["rail"] for b in broken) if broken else " — all pass")]
+          + (" — broken: " + "; ".join(b["rail"] for b in broken) if broken else " — all pass")
+          + f" · feasibility **{s['feasibility']['verdict_computed']}**"
+          + (f" (genius said *{s['feasibility']['verdict_claimed']}*)" if s["feasibility"]["disagreement"] else "")]
     if econ.get("version_substituted"):
         L.append(f"- ⚠ numbers are for **{econ['version_id']}** — genius recommended "
                  f"`{gen.get('recommended_version_id') or 'nothing'}`, which it never costed")
+    if sc.get("brand_dominance") in ("partial", "dominated") and sc.get("deep_study"):
+        L += ["", "## A brand owns this shelf — the deep study",
+              _one_line(sc["deep_study"], 600)]
     if s["fixes"]:
         L += ["", "## Flags to close first  *(routed to their owners — nothing here is a flop)*"]
         L += [f"- {f}" for f in s["fixes"]]
@@ -1214,11 +1473,13 @@ def next_phase(run: Path) -> str | None:
 # Which knowledge subsections each agent receives (matched against the ### headings in
 # CLAUDE.md's KNOWLEDGE section). Sending everyone everything is the single biggest credit leak.
 KNOW_FOR = {"scout": ("buyer journey",),
+            "competition": ("competition playbook",),
             "buyer": ("buying laws", "tag vocabulary", "buyer journey"),
-            "innovaty": ("buying laws", "tag vocabulary", "buyer journey", "innovation playbook"),
-            "genius": ("unit economics",),
+            "innovaty": ("buying laws", "tag vocabulary", "buyer journey", "innovation playbook",
+                         "five-year test", "competition playbook"),
+            "genius": ("unit economics", "competition playbook"),
             "critic": ("buying laws", "tag vocabulary", "buyer journey", "innovation playbook",
-                       "unit economics")}
+                       "five-year test", "competition playbook", "unit economics")}
 
 
 def knowledge_for(phase: str, knowledge: str) -> str:
@@ -1241,8 +1502,10 @@ def build_prompt(run: Path, phase: str, fast=False) -> str:
                      f"'## AGENT: <name>' headings")
     if "brief" not in d:
         sys.exit(f"{run}/brief.json is missing — start with `engine.py new`")
-    needs = {"scout": [], "buyer": ["scout"], "innovaty": ["scout", "buyer"],
-             "genius": ["scout", "buyer", "innovaty"], "critic": ["scout", "buyer", "innovaty", "genius"]}[phase]
+    order = PHASES[:PHASES.index(phase)]
+    needs = [n for n in order if n != "competition" or (run / "competition.json").exists()]
+    if phase == "competition":
+        needs = ["scout"]
     missing = [n for n in needs if n not in d]
     broken = [n for n in needs if n in d and "__broken__" in d[n]]
     if missing or broken:
@@ -1265,8 +1528,20 @@ def build_prompt(run: Path, phase: str, fast=False) -> str:
                      "If the product exists in several shapes or dimensions, name the most successful "
                      "variant (reviews, rank, share) in `variant_chosen` and anchor ALL research on it — "
                      "do not mix numbers across shapes.")
+    if phase == "competition":
+        parts.append("\nSEARCH BUDGET: reason from scout.json first; at most 3 web searches, only to "
+                     "confirm seller count, a brand's presence, or a clone price. Record gaps.")
+    if phase == "innovaty":
+        tier = d["brief"].get("packaging_tier")
+        parts.append(f"\nPACKAGING TIER chosen by the founder: **{tier}** — {TIER_HELP[tier]}. Design the "
+                     f"unboxing inside this tier: unique, exclusive, eye-catching and affordable, never a "
+                     f"$500 unboxing." if tier in TIERS else
+                     "\nNo packaging tier was chosen. Assume 'moderate' (printed box + insert) and say so.")
+        if d["brief"].get("packaging_note"):
+            parts.append(f"Founder's packaging note: {d['brief']['packaging_note']}")
     if fast:
         note = {"scout": "cover the essentials and record gaps rather than chasing them",
+                "competition": "the 3500 rule, the clone wave, two moats — nothing more",
                 "buyer": "keep every section to its minimum length; the 3-second scan and the "
                          "strongest needs carry the weight",
                 "innovaty": "four ideas, not seven",
@@ -1287,7 +1562,7 @@ def build_prompt(run: Path, phase: str, fast=False) -> str:
 
 # ========================================================================================== run
 
-def cmd_run(product, url, buyer_desc, focus, mine, budget, model, fast, only):
+def cmd_run(product, url, buyer_desc, focus, mine, budget, model, fast, only, packaging=None):
     try:
         import anthropic
     except ImportError:
@@ -1295,11 +1570,19 @@ def cmd_run(product, url, buyer_desc, focus, mine, budget, model, fast, only):
     client = anthropic.Anthropic()
     run = HERE / "runs" / slugify(product)
     if not (run / "brief.json").exists():
-        cmd_new(run, product, url, focus, mine, budget)
+        cmd_new(run, product, url, focus, mine, budget, packaging)
     brief = load(run / "brief.json")
     if buyer_desc:
         brief["target_buyer"]["description"] = buyer_desc
-        dump(brief, run / "brief.json")
+    if packaging in TIERS:
+        brief["packaging_tier"] = packaging
+    if brief.get("packaging_tier") not in TIERS:
+        band = (brief.get("target_buyer") or {}).get("price_band_usd")
+        tier, why = suggest_tier(float(band.get("max") or 0) if isinstance(band, dict) else 0)
+        brief["packaging_tier"] = tier
+        brief.setdefault("assumptions", []).append(f"packaging tier assumed '{tier}' ({why}); pass --packaging to choose")
+        print(f"packaging tier not chosen — assuming '{tier}': {why}")
+    dump(brief, run / "brief.json")
     if str(brief["target_buyer"]["description"]).startswith("TO FILL"):
         sys.exit(f"fill target_buyer.description in {run/'brief.json'} first (or pass --buyer)")
     fast = fast or brief.get("mode") == "focus"
@@ -1311,7 +1594,7 @@ def cmd_run(product, url, buyer_desc, focus, mine, budget, model, fast, only):
         print(f"→ {phase} ({m}) …", flush=True)
         prompt = build_prompt(run, phase, fast)
         tools = [{"type": "web_search_20250305", "name": "web_search",
-                  "max_uses": 12 if phase == "scout" else 4}] if phase != "buyer" else None
+                  "max_uses": {"scout": 12, "competition": 3}.get(phase, 4)}] if phase != "buyer" else None
         data = _ask(client, m, prompt, tools)
         errs = phase_errors(phase, data, load(run / "brief.json").get("mode") == "focus")
         if errs:
@@ -1358,6 +1641,7 @@ DEMO = {
               "seller_constraints": {"launch_budget_usd": 25000, "time_to_market_months": 9,
                                      "origin_country": "CN", "must_keep": [], "must_avoid": ["electronics"]},
               "user_hypotheses": ["Buyers will pay more for clips that do not pull paint"],
+              "packaging_tier": "moderate", "packaging_note": "unique but affordable — not a $500 unboxing",
               "assumptions": ["synthetic demo data"], "iterations": 0},
     "scout": {"retrieved_at": "2026-01-01",
               "facts": [{"fact_id": f"F{i}", "statement": s, "source": "https://example.com/demo", "confidence": c}
@@ -1397,6 +1681,41 @@ DEMO = {
                                  "sea_freight_usd_per_cbm": (60, 95, 160, "China to US west coast LCL", True),
                              }.items()},
               "gaps": ["synthetic demo — no live sources"]},
+    "competition": {
+        "arena": {"sellers_on_page_one": 14, "lookalike_share": 0.8, "price_floor_usd": 5.99,
+                  "dominant_form": "white adhesive clip, six-pack, thin-cable photo",
+                  "summary": "A crowded open field of near-identical white clips priced $7–11, where nobody "
+                             "shows a thick cable or a painted wall. One large-review seller anchors the top row."},
+        "brand_dominance": {"level": "dominated", "top_brand": "Demo competitor 1", "top_review_count": 12400,
+                            "rule_3500": True,
+                            "evidence": "One listing carries 12,400 reviews; the next carries 3,100; the rest are under 900",
+                            "deep_study": "The leader wins on review count and a $8.99 six-pack, not on the product: its "
+                                          "one-stars repeat the adhesive and paint failures. It never shows removal or a "
+                                          "thick cable, so we flank it on the two fears it leaves open rather than on price."},
+        "copycat_risk": {"level": "high",
+                         "months_to_first_clone": {"low": 2, "base": 4, "high": 8, "assumption": "a pull tab is visible and cheap to imitate"},
+                         "clone_price_usd": {"low": 6.99, "base": 8.99, "high": 10.99, "assumption": "clones sell at the category floor"},
+                         "why": "The tab is visible in the thumbnail, needs no special tooling, and the category already has dozens of quantity-first sellers"},
+        "price_war": {"win_probability_before_clones": 0.55, "win_probability_after_clones": 0.3,
+                      "choice_rank_after_clones": 3, "share_haircut_pct": 40,
+                      "why": "Once three tiles show a tab at $8.99, the buyer compares tabs on price and we drop to the third choice unless the reviews say ours is the one that lasted"},
+        "moats": [
+            {"moat": "Named 3M pad plus a printed 30-day shear test in the listing", "type": "spec_edge", "strength": "medium",
+             "cost_tier": "cents", "why": "A quantity seller will not pay for the branded tape or run the test"},
+            {"moat": "Two spare plates and the prep wipe in every pack", "type": "bundle", "strength": "medium",
+             "cost_tier": "cents", "why": "Adds cents per pack that a price-floor seller cannot afford"},
+            {"moat": "Registered design on the shear-plate tab geometry", "type": "design_registration", "strength": "strong",
+             "cost_tier": "dollars", "why": "Lets us report the exact copies and slows the wave by a season"}],
+        "competitor_profiles": [
+            {"name": "Demo competitor 1", "price_usd": 8.99, "review_count": 12400, "strength": "review count and price",
+             "weakness": "adhesive and paint complaints, never shows removal", "threat": "high"},
+            {"name": "Demo competitor 2", "price_usd": 10.99, "review_count": 3100, "strength": "clean white design",
+             "weakness": "thin-cable only", "threat": "medium"},
+            {"name": "Demo competitor 3", "price_usd": 14.99, "review_count": 860, "strength": "premium look",
+             "weakness": "same tape as everyone", "threat": "low"}],
+        "watch_signals": ["New sellers showing a tab in the thumbnail", "Price drops below $8 on page one",
+                          "Our review velocity vs the leader's"],
+        "tags": ["sharp.physical_availability", "cialdini.social_proof", "moore.chasm"]},
     "buyer": {"persona": {"who_i_am": "I rent a flat and my desk sits against a painted drywall wall",
                           "trigger": "My charging cable slid behind the desk for the third time tonight",
                           "fired_solution": "Cheap sticky hooks that fell off in a fortnight",
@@ -1448,6 +1767,11 @@ DEMO = {
                                    "avoid": "Corporate server-room cable management — that is not me"},
               "memory_hook": "The little pull tab — next time a hook rips my paint I will remember the clip "
                              "that promised to come off clean.",
+              "durability_instinct": {
+                  "what_warns_me": "Thin living hinges and clever snap-lids — every one I have owned went stiff with "
+                                   "dust and cracked within a year; a tiny cable hole means the fat charger never fits",
+                  "what_reassures_me": "A solid one-piece body, a jaw wide enough for my charger, and a photo of it "
+                                       "still up after months"},
               "color_read": "Blue accents on white — this purchase is about trust that it stays up and comes off clean",
               "hypotheses_tested": [{"hypothesis": "Buyers will pay more for clips that do not pull paint",
                                      "verdict": "confirmed", "why": "It is my second fear and my deposit"}],
@@ -1470,7 +1794,12 @@ DEMO = {
                       "prior_art_risk": "medium", "prior_art_reason": "Stretch-release tabs are widely patented; a shear plate is a different mechanism but needs a search",
                       "test_that_proves_it": "Removal on painted drywall after 30 days at 23 C and 40 C, 20 samples",
                       "how_it_looks_in_main_image": "A thumb pulling a small tab as the clip lifts off a painted wall, paint intact",
-                      "buyer_sentence": "You just pull the tab and it comes off without taking the paint"},
+                      "buyer_sentence": "You just pull the tab and it comes off without taking the paint",
+                      "durability_signal": "reassures",
+                      "five_year_test": {"use_cycle": "Stuck once, left for years, removed once or twice at a move; the tab is pulled maybe three times in its life",
+                                         "failure_modes": ["tab tears off if the fold is too thin", "plate creeps under a heavy cable"],
+                                         "design_answer": "1.2 mm tab with a radiused fold, plate area sized for three times the cable weight",
+                                         "fit_range": "any wall clip; independent of cable size"}},
                      {"idea_id": "I2", "name": "Branded high-tack acrylic pad", "role": "supporting", "aspect": "reliability",
                       "mechanism": "Replace generic tape with a die-cut branded acrylic foam pad rated for the cable load. The foam conforms to wall texture and the higher shear rating covers the creep that makes generic tape let go.",
                       "fixes_complaint_clusters": ["C1"], "improves_needs": ["N1"],
@@ -1480,7 +1809,11 @@ DEMO = {
                       "prior_art_risk": "low", "prior_art_reason": "Buying a named tape is not an invention",
                       "test_that_proves_it": "Static shear at three times cable weight for 30 days",
                       "how_it_looks_in_main_image": "A named tape logo on the pad, called out in image three",
-                      "buyer_sentence": "It uses the proper tape, not the cheap stuff"},
+                      "buyer_sentence": "It uses the proper tape, not the cheap stuff",
+                      "durability_signal": "neutral",
+                      "five_year_test": {"use_cycle": "Holds a static load for years through summer heat and winter dry air",
+                                         "failure_modes": ["creep at 40 C", "adhesion loss on dusty paint"],
+                                         "design_answer": "Acrylic foam rated for the load with margin, applied after the prep wipe"}},
                      {"idea_id": "I3", "name": "Dual-durometer flexing jaw", "role": "supporting", "aspect": "comfort",
                       "mechanism": "The jaw is overmoulded in a softer elastomer over a rigid body so it spreads for a thick cable and closes on a thin one. The soft lip provides the retention instead of an interference fit.",
                       "fixes_complaint_clusters": ["C3"], "improves_needs": ["N3"],
@@ -1490,7 +1823,12 @@ DEMO = {
                       "prior_art_risk": "medium", "prior_art_reason": "Overmoulded jaws exist in cable management; the geometry may be free",
                       "test_that_proves_it": "Retention at 2 mm and 10 mm diameters over 1000 cycles",
                       "how_it_looks_in_main_image": "One clip holding a fat black cable beside one holding a thin white cable",
-                      "buyer_sentence": "It grips my thick charger as well as the thin one"},
+                      "buyer_sentence": "It grips my thick charger as well as the thin one",
+                      "durability_signal": "reassures",
+                      "five_year_test": {"use_cycle": "Cable pushed in and pulled out a few times a week for years; dust settles in the jaw",
+                                         "failure_modes": ["elastomer lip tears", "jaw takes a set and loses grip"],
+                                         "design_answer": "Rigid body with a 2 mm elastomer lip, no hinge to jam, opening sized 2–10 mm",
+                                         "fit_range": "2 mm earphone wire to 10 mm braided charger"}},
                      {"idea_id": "I4", "name": "Prep wipe in the pack", "role": "hygiene", "aspect": "addition",
                       "mechanism": "An alcohol prep pad ships in the box and the instruction is printed on the liner itself, so the wall gets cleaned before the pad is applied. Most early failures are a dirty wall, not weak tape.",
                       "fixes_complaint_clusters": ["C1"], "improves_needs": ["N1"],
@@ -1500,8 +1838,23 @@ DEMO = {
                       "prior_art_risk": "low", "prior_art_reason": "Including a wipe is common practice",
                       "test_that_proves_it": "Peel strength with and without prep on three wall finishes",
                       "how_it_looks_in_main_image": "The wipe sachet laid beside the clips in the what-is-in-the-box shot",
-                      "buyer_sentence": "They even give you the wipe so it actually sticks"}],
-                 "packaging": {"unboxing_moment": "A crisp matte box opens flat like a book: six clips seated in a "
+                      "buyer_sentence": "They even give you the wipe so it actually sticks",
+                      "durability_signal": "neutral",
+                      "five_year_test": {"use_cycle": "Used once at installation",
+                                         "failure_modes": ["sachet dries out in storage"],
+                                         "design_answer": "Foil sachet instead of paper so the alcohol does not dry out on the shelf"}}],
+                 "durability_review": {"weakest_point": "the fold of the pull tab on the base plate",
+                                       "physics": "Static shear on the pad for years, one pull-force event at removal through the tab, and repeated cable push-in against the jaw lip; no hinge means no dust-jam and no fatigue crack",
+                                       "five_year_verdict": "survives",
+                                       "changes_made": ["dropped a snap-lid variant that fails the hinge test", "widened the jaw opening to 10 mm"]},
+                 "pillars": {"reliability": "one-piece body, no moving hinge, named tape",
+                             "durability": "no fatigue part; the only consumable is the pad, and spares are in the box",
+                             "uniqueness": "the only clip in the grid that shows clean removal",
+                             "exclusiveness": "blue tab and printed lid read as a considered brand, not a bag of clips",
+                             "attraction": "the tab-pull photo on a painted wall stops the scroll"},
+                 "moat_built_in": ["Named 3M pad plus a printed 30-day shear test in the listing",
+                                   "Two spare plates and the prep wipe in every pack"],
+                 "packaging": {"tier": "moderate", "unboxing_moment": "A crisp matte box opens flat like a book: six clips seated in a "
                                                   "paper tray, the wipe on top, the pull-tab promise printed inside the lid",
                                "upgrade_vs_category": "The category ships loose clips in a poly bag; a tray plus a "
                                                       "printed lid reads as a brand, not a commodity",
@@ -1643,6 +1996,8 @@ def main(argv=None):
     n.add_argument("--focus", nargs="+", metavar="URL", help="1-5 product URLs; think only about these")
     n.add_argument("--mine", type=int, help="1-based index of the URL that is your product")
     n.add_argument("--budget", type=int, default=3, help="web searches per product in focus mode")
+    n.add_argument("--packaging", choices=TIERS, help="simple | moderate | premium (asked if omitted)")
+    n.add_argument("--packaging-note", help="anything the founder said about the box")
 
     for c, h in [("check", "validate every file and their coherence"), ("next", "print the phase to run now")]:
         sub.add_parser(c, help=h).add_argument("run_dir")
@@ -1661,6 +2016,7 @@ def main(argv=None):
     r.add_argument("product"); r.add_argument("--url"); r.add_argument("--buyer")
     r.add_argument("--focus", nargs="+", metavar="URL"); r.add_argument("--mine", type=int)
     r.add_argument("--budget", type=int, default=3); r.add_argument("--model", default=DEFAULT_MODEL)
+    r.add_argument("--packaging", choices=TIERS, help="simple | moderate | premium (suggested from price if omitted)")
     r.add_argument("--fast", action=argparse.BooleanOptionalAction, default=True,
                    help="fast is the default; --no-fast for the thorough pass")
     r.add_argument("--only", nargs="*", choices=PHASES)
@@ -1669,9 +2025,9 @@ def main(argv=None):
     if a.cmd == "demo":
         sys.exit(cmd_demo())
     if a.cmd == "run":
-        return cmd_run(a.product, a.url, a.buyer, a.focus, a.mine, a.budget, a.model, a.fast, a.only)
+        return cmd_run(a.product, a.url, a.buyer, a.focus, a.mine, a.budget, a.model, a.fast, a.only, a.packaging)
     if a.cmd == "new":
-        return cmd_new(Path(a.run_dir), a.name, a.url, a.focus, a.mine, a.budget)
+        return cmd_new(Path(a.run_dir), a.name, a.url, a.focus, a.mine, a.budget, a.packaging, a.packaging_note)
     run = Path(a.run_dir)
     if a.cmd == "check":
         sys.exit(cmd_check(run))
@@ -1682,7 +2038,7 @@ def main(argv=None):
     elif a.cmd == "next":
         nxt = next_phase(run)
         print(f"next phase: {nxt}\n  python engine.py prompt {run} {nxt}" if nxt
-              else "all five phases are written — run `check`, then `report`")
+              else "all six phases are written — run `check`, then `report`")
     elif a.cmd == "prompt":
         print(build_prompt(run, a.phase, a.fast))
 

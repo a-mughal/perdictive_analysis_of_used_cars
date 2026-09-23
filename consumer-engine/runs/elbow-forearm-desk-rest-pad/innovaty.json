@@ -75,7 +75,7 @@
       "name": "Full-Bond Rubber Base Sheet",
       "role": "supporting",
       "aspect": "durability",
-      "mechanism": "The thin non-slip rubber strip is replaced with a full-footprint, solid bonded rubber base sheet matching the pad's outline, heat-pressed and mechanically keyed into the foam's underside with a shallow interlocking lattice rather than glued at the perimeter alone. A deep waffle/diamond grip texture runs across the whole contact area instead of a narrow strip.",
+      "mechanism": "The thin non-slip rubber strip is replaced with a full-footprint, solid bonded rubber base sheet matching the pad's outline, heat-pressed and mechanically keyed into the foam's underside with an interlocking lattice engaged to a minimum 2.5mm depth (rather than glued at the perimeter alone), with a thin contrasting witness line molded along the bond seam that visibly discolors if the bond begins to lift. A deep waffle/diamond grip texture runs across the whole contact area instead of a narrow strip.",
       "fixes_complaint_clusters": ["C3"],
       "improves_needs": ["N3"],
       "improves_gates": ["gate.image_2_to_6", "gate.reviews_negative_first"],
@@ -97,7 +97,7 @@
           "Rubber compound can harden and crack from UV/heat exposure if the desk sits near a sunny window",
           "Grip texture can burnish smooth in the highest-contact zone under the wrist, reducing friction over years"
         ],
-        "design_answer": "The base is heat-press bonded across the full contact face, not perimeter-glued, and mechanically keyed into a shallow interlocking lattice molded into the foam's underside, so shear load spreads across the whole sheet instead of concentrating peel stress at one exposed strip edge. The rubber is a UV-stabilized SBR blend rated for indoor light exposure, and the waffle texture is cut 0.8mm deep so predictable burnishing at the center still leaves surrounding grip intact.",
+        "design_answer": "The base is heat-press bonded across the full contact face, not perimeter-glued, and mechanically keyed into an interlocking lattice engaged to a minimum 2.5mm depth molded into the foam's underside — deeper than a flush interlock — so shear load spreads across the whole sheet and the mechanical key itself carries load before the bonded interface is ever tested. A thin contrasting witness line is molded into the rubber along the bond seam so any early separation shows as a visible color break before grip is actually lost. The rubber is a UV-stabilized SBR blend rated for indoor light exposure, and the waffle texture is cut 0.8mm deep so predictable burnishing at the center still leaves surrounding grip intact.",
         "fit_range": "Full pad footprint (approximately 7.5 x 5in) bonded, not a 1-2in strip, so grip holds even if the pad is nudged off its original placement."
       }
     },
@@ -197,9 +197,9 @@
     "physics": "Daily static and shear load from a resting, shifting forearm pushes compressive force straight down through the soft top layer into the firm base layer, while lateral movement (reaching for the mouse, sliding the pad to reposition) puts shear force exactly at the two bond lines: top-foam-to-base-foam, and base-foam-to-rubber. Body heat plus ambient desk-surface temperature swings softens adhesive resins over years, and dust and skin oils migrate into any exposed bond edge, accelerating peel. If either bond line lets go before the foam itself reaches its compression-set life, the whole design fails early even though the foam spec on its own is sound.",
     "five_year_verdict": "needs_change",
     "changes_made": [
-      "Switched the foam-to-foam bond from adhesive lamination to flame bonding across the full contact face (I1) to remove a discrete glue line that shear stress would otherwise concentrate on",
-      "Switched the base attachment from a glued perimeter strip to a full-sheet, mechanically-keyed bonded base (I3) so peel stress is distributed across the whole footprint instead of starting at one exposed edge",
-      "Specified a UV-stabilized rubber compound and a colorfast fabric finish (I3, I4) so heat and light exposure age the bond lines and cover at the same rate as the foam core, instead of the weakest material failing years before the rest of the product"
+      "Increased the foam-to-rubber mechanical keying depth from a flush interlock to a minimum 2.5mm engaged depth (I3), so the lattice itself carries more of the lateral shear load before the bonded interface is tested at all — a real dimensional change made because of this review, not the pre-existing flame-bonding/full-sheet choice relabeled",
+      "Added a thin contrasting witness line molded into the rubber base along the bond seam (I3) that visibly discolors if the bond begins to lift, so a customer or QC sees early separation before the pad's grip actually fails, instead of the failure being invisible until it is total",
+      "Reviewed (rather than changed) the full-contact-face flame bonding (I1), the full-sheet mechanically-keyed base (I3), and the UV-stabilized rubber compound and colorfast fabric finish (I3, I4): these were already specified before this review and already correctly target the bond-line weak point, so they are confirmed here, not claimed as new changes"
     ]
   },
   "pillars": {
@@ -274,7 +274,7 @@
   "image_prompts": [
     {
       "purpose": "main_image",
-      "prompt": "A single ergonomic elbow-and-forearm desk rest pad photographed at a three-quarter angle on a warm dark-walnut wood desk edge, softbox studio lighting from upper left casting a gentle highlight along its length; the pad has a calm gray-blue matte knit fabric cover over a visibly stepped, two-tone dual-density foam cross-section (a darker charcoal firm base layer beneath a lighter gray-blue soft top layer, the step clearly visible along the front face), a full-width matte black waffle-textured rubber base peeking out at the near corner, a small woven charcoal fabric tag on the front-left edge with a density-spec callout, a mirror-symmetric taper with no handed orientation, no visible seams, no gel sheen, no clamp or hardware, shot with a shallow depth of field on a clean neutral studio backdrop, no text overlays, photorealistic product photography."
+      "prompt": "A single ergonomic elbow-and-forearm desk rest pad photographed at a three-quarter angle on a warm dark-walnut wood desk edge, softbox studio lighting from upper left casting a gentle highlight along its length; the pad has a calm gray-blue matte knit fabric cover over a visibly stepped, two-tone dual-density foam cross-section (a darker charcoal firm base layer beneath a lighter gray-blue soft top layer, the step clearly visible along the front face), a full-width matte black waffle-textured rubber base peeking out at the near corner, a small woven charcoal fabric tag on the front-left edge with a density-spec callout, a single-piece asymmetric L-shaped taper that runs the length of the desk edge, no visible seams, no gel sheen, no clamp or hardware, shot with a shallow depth of field on a clean neutral studio backdrop, no text overlays, photorealistic product photography."
     },
     {
       "purpose": "packaging",

@@ -18,10 +18,10 @@
     "A desk worker with elbow/forearm soreness from a hard desk edge will buy a dedicated cushioned rest pad rather than improvising with a folded towel or a mousepad"
   ],
   "assumptions": [
-    "No ASP, margin, buyer quote or category tags were given for this product — this run starts from the product name and a category search URL only; price band and packaging tier will be set once scout establishes the real price ladder"
+    "No ASP, margin, buyer quote or category tags were given for this product \u2014 this run starts from the product name and a category search URL only; price band and packaging tier will be set once scout establishes the real price ladder"
   ],
   "packaging_tier": "moderate",
-  "packaging_note": "Price band established by scout at $8-21, median ~$15.50 — moderate tier (printed box + insert) matches the engine's own price-based suggestion for this range; not a $500 unboxing on a $16 product.",
-  "iterations": 0,
+  "packaging_note": "Price band established by scout at $8-21, median ~$15.50 \u2014 moderate tier (printed box + insert) matches the engine's own price-based suggestion for this range; not a $500 unboxing on a $16 product.",
+  "iterations": 1,
   "search_budget": 8
 }

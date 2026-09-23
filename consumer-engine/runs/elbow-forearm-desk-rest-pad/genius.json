@@ -42,13 +42,13 @@
           }
         },
         {
-          "part": "Full-footprint bonded rubber base sheet, waffle texture, mechanically keyed (I3)",
+          "part": "Full-footprint bonded rubber base sheet, waffle texture, mechanically keyed 2.5mm min, witness-line marking (I3)",
           "qty": 1,
           "unit_cost_usd": {
-            "low": 0.25,
-            "base": 0.38,
-            "high": 0.55,
-            "assumption": "No scout price for a full-sheet rubber base (only the brief's rule of thumb for a small strip or 3M VHB tape). Estimated at 3-5x a thin non-slip strip because it covers the full ~7.5x5in footprint and needs a heat-press bonding step, not just adhesive. Estimate, not a quote."
+            "low": 0.28,
+            "base": 0.43,
+            "high": 0.62,
+            "assumption": "No scout price for a full-sheet rubber base (only the brief's rule of thumb for a small strip or 3M VHB tape). Estimated at 3-5x a thin non-slip strip because it covers the full ~7.5x5in footprint and needs a heat-press bonding step, not just adhesive. Bumped +$0.03-0.07 over the prior estimate for the contrasting witness line added by the durability review: achieved as a secondary pad-print/ink-marking pass along the bond seam on the existing single-color tool, not a two-shot mold, so it adds a marking step's cost rather than new tooling. Estimate, not a quote."
           }
         },
         {
@@ -138,13 +138,13 @@
           }
         },
         {
-          "part": "Full-footprint bonded rubber base sheet, waffle texture (I3)",
+          "part": "Full-footprint bonded rubber base sheet, waffle texture, mechanically keyed 2.5mm min, witness-line marking (I3)",
           "qty": 1,
           "unit_cost_usd": {
-            "low": 0.25,
-            "base": 0.38,
-            "high": 0.55,
-            "assumption": "Same estimate as v1_now; kept because it fixes complaint cluster C3 cheaply."
+            "low": 0.28,
+            "base": 0.43,
+            "high": 0.62,
+            "assumption": "Same estimate as v1_now (including the witness-line pad-print bump); kept because it fixes complaint cluster C3 cheaply."
           }
         },
         {
@@ -202,7 +202,7 @@
         "low": 3000,
         "base": 6000,
         "high": 12000,
-        "assumption": "Separate tool from the foam core since the rubber base is a different material/process; sized down from the foam tool given the simpler flat-sheet geometry, per the same aluminium/steel tooling rule of thumb."
+        "assumption": "Separate tool from the foam core since the rubber base is a different material/process; sized down from the foam tool given the simpler flat-sheet geometry, per the same aluminium/steel tooling rule of thumb. The durability review's witness-line detail does not add a mold cavity or a two-shot step here — it is realized as a secondary pad-print/ink-marking pass on the finished part (costed in the BOM line, not here)."
       }
     },
     {

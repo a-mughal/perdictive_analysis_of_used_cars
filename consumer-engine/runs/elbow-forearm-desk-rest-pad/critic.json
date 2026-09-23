@@ -1,48 +1,30 @@
 {
   "findings": [
     {
-      "id": "K1",
-      "file": "innovaty",
-      "field_path": "innovaty.durability_review.changes_made",
-      "severity": "high",
-      "finding": "All three listed 'changes' are not changes at all: they restate design choices that were already present in the ideas' original mechanism/design_answer text before any review happened. I1's mechanism already says 'flame-bonded across its full contact face' (not glued). I3's mechanism already says 'heat-pressed and mechanically keyed into the foam's underside... rather than glued at the perimeter alone.' I3's design_answer already specifies a 'UV-stabilized SBR blend,' and I4's design_answer already specifies a colorfast OEKO-TEX finish. The review names the bond lines as the weakest point and issues a 'needs_change' verdict, but nothing in the product actually changed as a result of naming that weak point — it's the same pre-existing design relabeled as a fix. Per the brief's own rule, 'a real design review changes something; one that changes nothing was not real.'",
-      "fix": "Either identify a genuine design change the review triggers — e.g. increase the minimum bond overlap/keying depth, add a witness/wear indicator at the bond line, upgrade the base-layer minimum height margin, or specify a stronger foam-to-rubber adhesive spec than what I1/I3 already had — or drop the 'needs_change' framing and honestly report that the review confirmed the ideas' existing bonding choices already address the weakest point, with no new change needed.",
-      "owner_agent": "innovaty"
-    },
-    {
       "id": "K2",
-      "file": "innovaty",
-      "field_path": "innovaty.image_prompts[0].prompt",
-      "severity": "high",
-      "finding": "The main-image prompt explicitly describes 'a mirror-symmetric taper with no handed orientation.' That is idea I6's exact geometry (Mirror-Symmetric Ambidextrous Profile), which innovaty itself deferred to v2_later, and which genius's version_plan/BOM for v1_now (I1, I2, I3, I4, I5 only) never funds or tools. The hero image the founder will use to sell v1 depicts a shape the v1 product does not have — an invented feature from a version that was never funded, which is both a version-fidelity break and a claims-risk problem (the photo would misrepresent the shipped product).",
-      "fix": "Remove the 'mirror-symmetric taper / no handed orientation' language from the main_image prompt and restore the actual v1 geometry (the asymmetric L-shaped/stepped taper from scout's variant_chosen and I1), or, if ambidextrous symmetry is genuinely wanted for launch, move I6 into v1_now and have genius re-cost/re-tool/re-time the plan accordingly.",
-      "owner_agent": "innovaty"
-    },
-    {
-      "id": "K3",
       "file": "buyer",
       "field_path": "buyer.unmet_needs[1].pain_level, buyer.unmet_needs[3].pain_level",
       "severity": "medium",
-      "finding": "N2 ('surface stays comfortable, doesn't turn sticky/smell') and N4 ('need to know before I buy whether it fits my desk's edge shape') are both labeled pain_level 'latent' — defined in the framework as hidden, barely felt, buyer not looking. But this same buyer explicitly names both worries, unprompted, as ranked fears (fear rank 2 and rank 4 respectively) before ever seeing a diagram or bullet. A buyer who is actively articulating and ranking a worry is not exhibiting latent pain by the framework's own definition — that's moderate pain the buyer is already searching/comparing on, just like N1 and N3 (both correctly labeled 'moderate').",
-      "fix": "Re-rate N2 and N4 as pain_level 'moderate' (or explain in evidence why an explicitly self-articulated, ranked fear is still latent), and re-check whether innovaty's spend allocation (which weights by pain depth) under-prioritized these needs on the mistaken assumption they were only latent.",
+      "finding": "N2 ('surface stays comfortable, doesn't turn sticky/smell') and N4 ('need to know before I buy whether it fits my desk's edge shape') are both labeled pain_level 'latent' — defined as hidden, barely felt, buyer not looking. But this same buyer explicitly names both worries, unprompted, as ranked fears (fear rank 2 and rank 4) before seeing any diagram or bullet, and N4 is directly tied to fears the buyer says they'd otherwise 'guess and risk a return' on. A buyer actively articulating and ranking a worry is not exhibiting latent pain by the framework's own definition — that's moderate pain, like N1 and N3 (correctly labeled 'moderate'). Unresolved across two passes; left open by design since it belongs to buyer, not innovaty, and the fix loop was scoped to innovaty's two high findings.",
+      "fix": "Re-rate N2 and N4 as pain_level 'moderate' (or justify in evidence why an explicitly self-articulated, ranked fear is still latent), and re-check whether innovaty's spend allocation, which weights by pain depth, under-prioritized these needs on the mistaken assumption they were only latent.",
       "owner_agent": "buyer"
+    },
+    {
+      "id": "K3",
+      "file": "genius",
+      "field_path": "competition.price_war.win_probability_before_clones",
+      "severity": "medium",
+      "finding": "The pre-clone win probability of 0.55 treats a brand-new, zero-review listing as a near-coin-flip winner against VAYDEER's 2,045-review, 4.6-star incumbent on day one. This is not reconciled with the review-gating logic genius's own forecast otherwise respects (moore.chasm, gate.social_proof, months 1-3 modeled as innovator-only 1-5% share) or with buyer's three_second_scan, where social proof is exactly what pulls the click toward VAYDEER, not an unknown new entrant. Unresolved across two passes; carried forward as a watch item since it did not block readiness and the fix loop was scoped to innovaty's two high findings.",
+      "fix": "Either lower win_probability_before_clones to reflect the review-chasm the listing starts inside of, or add an explicit reason (e.g. 'conditioned on accumulating ~50+ reviews before the clone wave lands') so the number doesn't silently assume the review gap has already closed.",
+      "owner_agent": "genius"
     },
     {
       "id": "K4",
       "file": "genius",
-      "field_path": "competition.price_war.win_probability_before_clones",
-      "severity": "medium",
-      "finding": "The pre-clone win probability of 0.55 ('the product can plausibly be a top pick on the page') treats a brand-new, zero-review listing as a near-coin-flip winner against VAYDEER's 2,045-review, 4.6-star incumbent on day one. This does not reconcile with the review-gating logic (gate.social_proof: 'under 20 reviews only innovators bite'; moore.chasm) that genius's own forecast correctly respects elsewhere (months 1-3 are explicitly modeled as innovator-only volume at 1-5% share). A 55% win probability for an unreviewed listing is optimistic and isn't explained against the buyer's own three_second_scan, where social proof is what pulls the click toward VAYDEER, not an unknown new entrant.",
-      "fix": "Either lower win_probability_before_clones to reflect the review-chasm the listing starts inside of, or add an explicit reason (e.g. 'win probability is conditioned on having accumulated ~50+ reviews and early social proof by the point clones would appear') so the number doesn't silently assume the review gap has already closed.",
-      "owner_agent": "genius"
-    },
-    {
-      "id": "K5",
-      "file": "genius",
       "field_path": "genius.three_sentences_to_founder[2]",
       "severity": "medium",
-      "finding": "The founder-facing summary states 'I1's design registration, I5's spec badge and I2's fit diagram are the plan's actual moat' as if all three carry comparable weight. But competition itself rates the packaging_experience moat (I2's fit diagram/insert) as 'weak' and says explicitly it 'won't bother [copying it] in their first wave' — i.e. it's a temporary, first-wave-only deterrent, not a durable moat like design_registration (medium/strong, legally actionable). Folding a weak, easily-cloned-later item into the same sentence as the strongest moat overstates the plan's actual defensibility to the founder.",
-      "fix": "Qualify the founder summary to distinguish the durable moat (design registration) from the soft, temporary ones (spec badge, fit diagram), and note that the packaging/spec items only buy time in the first clone wave, not lasting protection.",
+      "finding": "States 'I1's design registration, I5's spec badge and I2's fit diagram are the plan's actual moat' as if the three carry comparable weight. But competition itself rates I2's packaging_experience moat 'weak' and says explicitly a cloner 'won't bother replicating it in their first wave' — a temporary, first-wave-only deterrent, not durable protection like design_registration (medium, legally actionable). Folding a weak, soon-clonable item into the same breath as the strongest moat overstates the plan's actual defensibility to the founder. Unresolved across two passes; carried forward as a watch item.",
+      "fix": "Qualify the founder summary to distinguish the durable moat (design registration) from the soft, temporary ones (spec badge, fit diagram), and note the packaging/spec items only buy time in the first clone wave, not lasting protection.",
       "owner_agent": "genius"
     },
     {
@@ -50,7 +32,7 @@
       "file": "innovaty",
       "field_path": "innovaty.color_strategy.main_image_anchor",
       "severity": "low",
-      "finding": "Claims the walnut-wood background will make the product 'visibly pop against the four look-alike tiles on the page,' implying all four page-one competitors share a similar (dark) background. Scout only confirmed a background description for VAYDEER ('dark desk'); Jelbows, Leolee and Fuzadel's main_image_description fields give no background color at all. The differentiation claim generalizes from one confirmed data point to all four competitors.",
+      "finding": "Claims the walnut-wood background will make the product 'visibly pop against the four look-alike tiles on the page,' implying all four page-one competitors share a similar (dark) background. Scout only confirmed a background description for VAYDEER ('dark desk'); Jelbows, Leolee and Fuzadel's main_image_description fields give no background color at all. Unresolved across two passes; low severity, carried forward as a watch item.",
       "fix": "Either scope the claim to what's actually confirmed ('differentiates from VAYDEER's dark-desk anchor, the only background scout could confirm') or have scout capture the other three listings' actual background/thumbnail treatment before asserting grid-wide differentiation.",
       "owner_agent": "innovaty"
     },
@@ -59,7 +41,7 @@
       "file": "genius",
       "field_path": "genius.regulatory[0]",
       "severity": "low",
-      "finding": "States 'I6's magnet-adjacent concerns from the knowledge base do not apply — this product carries no magnet.' No idea in this run (I1-I6) involves a magnet in any form; I6 is a pure geometry/symmetry change. Referencing 'I6's magnet-adjacent concerns' looks like a boilerplate knowledge-base line (magnets near anything child-related draw CPSC scrutiny) pattern-matched onto an idea that has nothing to do with magnets, suggesting the regulatory check wasn't actually run against this product's real BOM.",
+      "finding": "States 'I6's magnet-adjacent concerns from the knowledge base do not apply — this product carries no magnet.' No idea in this run (I1-I6) involves a magnet in any form; I6 is a pure geometry/symmetry change, not a magnet mechanism. This reads as a boilerplate knowledge-base line pattern-matched onto an unrelated idea. Unresolved across two passes; low severity, carried forward as a watch item.",
       "fix": "Drop the false I6/magnet reference and simply state the product contains no magnetic components, confirmed against the actual BOM (foam, fabric, rubber, printed card, woven tag).",
       "owner_agent": "genius"
     }
@@ -79,8 +61,8 @@
   "contamination_detected": false,
   "overall": "flags_to_fix",
   "three_things_the_founder_must_hear": [
-    "The 'durability review' innovaty ran didn't actually change the design — every fix it lists (flame bonding, mechanical keying, UV-stabilized rubber) was already in the ideas before the review happened; the weak point it names has not been re-engineered, only relabeled.",
-    "The hero photo you'll be shown depicts a mirror-symmetric, ambidextrous pad shape — that's idea I6, which was deliberately deferred to a later version and isn't in the v1 tooling or BOM genius priced. The image doesn't match what you'd actually be manufacturing first.",
-    "Competition's own numbers say a clone lands in 1-4 months and takes roughly 30% of forecast volume, dropping you to third choice — yet the pre-clone win probability (55%) assumes near-equal footing against a 2,045-review incumbent on day one with zero reviews of your own, which contradicts the review-gated ramp the rest of the plan uses. Expect a slower climb than that number suggests."
+    "Two fix loops resolved everything high-severity: the durability review now names a real dimensional change (bond-keying depth increased to a minimum 2.5mm, plus a new witness-line indicator), the main hero image now correctly shows v1's actual asymmetric shape instead of a deferred, unfunded ambidextrous geometry, and the ERRC list no longer claims that deferred feature is already shipping. The witness-line detail has also now been priced into the BOM (a small pad-print/ink-marking step, not new tooling) and added to I3's proving test.",
+    "Two open items still deserve a look before you fund this: the day-one 55% win-probability-before-clones number assumes near-equal footing against VAYDEER's 2,045-review lead with zero reviews of your own — that contradicts the review-gated ramp (innovator-only volume, months 1-3) the rest of the plan itself uses, so expect a slower early climb, especially with a clone wave arriving in 1-4 months per competition's own numbers. And the founder summary lumps a weak, easily-cloned moat (the fit-diagram insert) in with the durable one (design registration) — treat the registered profile as your real protection, the rest as a first-wave head start only.",
+    "Two buyer needs (surface staying non-tacky, and knowing before purchase whether it fits your desk edge) are self-articulated ranked fears but are still labeled 'latent' pain rather than 'moderate' — worth a second look since spend allocation weights by pain depth, and these may be under-funded relative to how much buyers actually care."
   ]
 }

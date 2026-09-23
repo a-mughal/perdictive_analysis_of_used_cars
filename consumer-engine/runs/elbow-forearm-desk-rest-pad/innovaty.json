@@ -86,7 +86,7 @@
       "priority": "now",
       "prior_art_risk": "low",
       "prior_art_reason": "Full-sheet bonded rubber bases are a common construction across mats and pads generally; no novel mechanism, so freedom-to-operate exposure is low.",
-      "test_that_proves_it": "90-degree peel adhesion test (PSTC-101 style) and static shear test on laminate, glass, and painted-MDF desk surfaces at 23°C and 40°C, after 24 hours and after 30 days, confirming bond strength retention and no edge lift.",
+      "test_that_proves_it": "90-degree peel adhesion test (PSTC-101 style) and static shear test on laminate, glass, and painted-MDF desk surfaces at 23°C and 40°C, after 24 hours and after 30 days, confirming bond strength retention and no edge lift. Plus a cross-section dimensional QC check confirming the mechanical keying is molded to a minimum 2.5mm engaged depth on production samples, and a functional witness-line check: partially delaminate a test sample under controlled shear until early separation starts, confirming the contrasting witness line is visibly discolored before grip is actually lost.",
       "how_it_looks_in_main_image": "Pad tilted slightly off the desk at the edge of frame to reveal a full black waffle-textured rubber base running edge-to-edge, visibly distinct from a competitor's thin exposed strip.",
       "buyer_sentence": "The whole bottom is grippy rubber, not just a thin strip — it hasn't budged once, even after months of shoving my chair back into the desk.",
       "durability_signal": "reassures",
@@ -232,7 +232,6 @@
   },
   "errc": {
     "eliminate": [
-      "The handed, asymmetric L-shape geometry that implicitly favors one arm (removed entirely by I6)",
       "The PU-coated / gel-laminate cover material that causes the C2 sticky-and-smell failure"
     ],
     "reduce": [

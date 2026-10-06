@@ -1,0 +1,352 @@
+{
+  "retrieved_at": "2026-10-06",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "statement": "P1 EdgeRest PostureUp (ASIN B0CN8VC121) is a single-piece L-shaped black pad, 24 x 3.5 x 1 in, memory-foam core, low-friction woven PU/cotton cover, textured non-slip underside rated for wood, glass and laminate; the listing is sold under a variation parent (B0F1HVV9CC) that also offers a 16 x 3 in 'Mini'. Title on amazon.com: 'EdgeRest PostureUp L-Shaped Desk Long Wrist Rest Elbow, Forearm & Wrist Comfort Support for Table or Desk Edge, Non-Slip, Memory Foam Padding, Ergonomic Design for Work, Universal Fit, Black'.",
+      "source": "https://www.amazon.com/EdgeRest-PostureUp-L-Shaped-Ergonomic-Universal/dp/B0CN8VC121",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F2",
+      "statement": "EdgeRest (B0CN8VC121) shows 4.6 stars with 226 ratings on the Amazon Australia storefront and 4.6 stars with 204 ratings on Amazon UK (search snippets, 2026-10-06); one unattributed snippet shows 4.5 stars. The amazon.com count itself was not captured, so 226 is the largest confirmed count for this ASIN.",
+      "source": "https://www.amazon.com.au/EdgeRest-PostureUp-L-Shaped-Ergonomic-Universal/dp/B0CN8VC121",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F3",
+      "statement": "On the brand's own store the EdgeRest standard (24 in) is priced $59.99 marked down from $69.99 and the EdgeRest Mini (16 in) $47.99; the brand site carries a 4.85-star average from 27 reviews and says the cushion was designed by a Doctor of Physical Therapy. The amazon.com shelf price was not visible in any snippet.",
+      "source": "https://postureupshop.com/products/edgerest-l-shaped-wrist-rest-for-desk-edge",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F4",
+      "statement": "Review snippets for EdgeRest praise foam that is firm enough to support without flattening, a pad that stays put on the desk, and a profile thin enough not to get in the way; no sliding or smell complaints surfaced in two searches, and no 1-2 star review text was retrievable (all review pages egress-blocked).",
+      "source": "https://judge.me/reviews/stores/postureupshop.com/products/edgerest-l-shaped-wrist-rest-for-desk-edge",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F5",
+      "statement": "P2 ArmCloud (ASIN B0FHMXYL7G, sold by the Arm Cloud Store) is a single extra-long L-shaped pad that hugs the desk edge, 28 x 3.5 x 1.2 in, memory foam with a breathable Lycra cover carrying carved grooves over a polyurethane layer, anti-skid rubber base with no adhesive; first available 15 July 2025. The listing title has been changed between 'ArmCloud Desk Edge Rest, Memory Foam Keyboard Wrist Rest, Long Ergonomic Elbow & Forearm Support...' and 'Desk Edge Cushion, Extra Long 28 Inch Arm Rest Pad for Desk, Memory Foam'.",
+      "source": "https://www.amazon.com/ArmCloud-Keyboard-Ergonomic-Non-Slip-Technology/dp/B0FHMXYL7G",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F6",
+      "statement": "ArmCloud's price, star rating and review count did not appear in any snippet across three searches (Amazon, Amazon India mirror, ReviewMeta, camelcamelcamel and the eBay cross-listing 188204575476 are all egress-blocked for fetching); the product is confirmed to exist on Amazon and eBay but its numbers are unverified.",
+      "source": "https://www.ebay.com/itm/188204575476",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F7",
+      "statement": "P3 JIKIOU L-Shaped Desk Elbow Pad 2 Pack, black (ASIN B0FH22782P) is listed at $17.99 with 4.4 stars and 791 ratings; each pad is 14.9 x 3.5 x 0.6 in, cloth cover over slow-rebound memory foam with a 'massage' texture, rubber base plus 6 removable adhesive pieces (one snippet says 12 adhesive strips) to lock it to the desk.",
+      "source": "https://www.amazon.com/JIKIOU-L-Shaped-Support-Padding-Non-Slip/dp/B0FH22782P",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F8",
+      "statement": "JIKIOU runs the same L-shaped 2-pack in pattern/colour variants: Black Flowers (B0FYFMKBK5), Marble Pink (B0FYFVLD6H) and a 'Leather' cloud-print White (B0G5NLY1M5); an older snippet of the black listing gives 15.75 x 3.94 in as the size, so the pad length is somewhere between 14.9 and 15.75 in.",
+      "source": "https://us.amazon.com/JIKIOU-L-Shaped-Support-Padding-Non-Slip/dp/B0FYFMKBK5",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F9",
+      "statement": "Amazon results for 'elbow pad desk' show a wave of near-identical L-shaped 2-pack listings, all with 2025-2026 ASIN prefixes: MEKASS diamond black 2 pcs (B0F28ZPFCV), Sushret 2-pack (B0FJ5RR8JK), Vaydeer 2Pcs L-Shaped (B0FNMMJ2RQ), MOSISO diamond 2 pcs (B0GCMKR1JH), ELZO 2-pack (B0FW4QSD93), Tiiyee separate-design (B0FNMVCC8K), an unbranded 24 in full-size rail (B0FCCZ2B14), an adjustable-spacing 2-pack (B0G482W69W) and a 2-in-1 pad-plus-mousepad set (B0GS5MVFLP). Prices and ratings for these were not in the snippets.",
+      "source": "https://www.amazon.com/Elbow-Pad-Desk/s?k=Elbow+Pad+Desk",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F10",
+      "statement": "Unbranded L-shaped memory-foam 2-piece desk-edge pads are cross-listed on Walmart and eBay; a search summary across those listings put consumer prices at roughly $16.98 at the low end up to $69.99 (the EdgeRest regular price) at the top.",
+      "source": "https://www.walmart.com/ip/Arm-Rest-Desk-L-Shaped-Memory-Foam-Elbow-Pads-Non-Slip-Base-2-Piece-Ergonomic-Desk-Edge-Cushion-Wrist-Rest-Computer-Keyboard-Office-Home-Use/19467419686",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F11",
+      "statement": "Carried over from the 2026-09-23 category run: VAYDEER's Upgraded Larger and Thicker Elbow Rest Pad (single L-shaped memory-foam pad, about 7.37 x 5.07 x 0.94 in) sells at $17.99 with 4.6 stars and 2,045 reviews, the largest review count found on any page-one elbow/forearm desk pad.",
+      "source": "https://www.amazon.com/VAYDEER-Ergonomic-Armrest-Computer-6-34-30-76inches/dp/B08DTYR99J",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F12",
+      "statement": "Carried over from the 2026-09-23 category run: first-page prices for 'elbow rest pad for desk' span about $8 (small gel pads) to $20+ (large foam pads or clamp-on trays), with simple cushioned pads clustering at $13-17 and a median near $15.50.",
+      "source": "https://www.amazon.com/elbow-rest-pad-desk/s?k=elbow+rest+pad+for+desk",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F13",
+      "statement": "Carried over from the 2026-09-23 run: Leolee memory-foam elbow pads (non-slip base, 1- and 2-packs) draw praise for relief but some buyers still feel the hard desk through the pad, pointing to insufficient foam depth or density (complaint cluster C1).",
+      "source": "https://www.amazon.com/Leolee-Ergonomic-Non-Slip-Armrest-Computer/dp/B0B7W1YQFX",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F14",
+      "statement": "Carried over from the 2026-09-23 run: Jelbows gel elbow pad set (2-pack, about $16.49, 1,100+ reviews) has as its commonest complaints the surface turning sticky over time and a plastic smell (complaint cluster C2).",
+      "source": "https://thegadgetflow.com/blog/these-desk-elbow-pads-improve-your-workday-comfort-and-ease-pain-from-arthritis-carpal-tunnel-syndrome-and-more/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F15",
+      "statement": "Carried over from the 2026-09-23 run: Fuzadel clamp-on elbow trays (about $20) draw complaints that the cushion is thin and the desk-clamp connector feels unstable (complaint cluster C3, base/mount fails).",
+      "source": "https://www.amazon.com/FUZADEL-Ergonomic-Rotating-Computer-rotatable/dp/B0714CCM12",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F16",
+      "statement": "A retailer blog on new-wrist-rest odour attributes it to VOC off-gassing from PU foam and coated fabrics, typically fading over 3-14 days; this is the mechanism behind the 'smells like plastic' complaints in cluster C2.",
+      "source": "https://www.sushret.net/blogs/peripheral-reviews/why-does-my-new-wrist-rest-smell-causes-safety-fix-guide",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F17",
+      "statement": "Carried over from the 2026-09-23 run: Amazon's referral fee for the Office Products category is 15% of the sale price with a $0.30 per-item minimum, unchanged for 2026.",
+      "source": "https://www.runfutureproof.com/amazon-fees/office",
+      "confidence": "high"
+    },
+    {
+      "fact_id": "F18",
+      "statement": "2026 US FBA fulfilment fees (effective 15 Jan 2026, non-apparel, $10-$50 price band) fetched this run: small standard 2 oz $3.32, 4-6 oz $3.45, 8-10 oz $3.68, 14-16 oz $3.96; large standard up to 4 oz $3.73, 4-8 oz $3.95, 12-16 oz $4.60, 3-20 lb $6.97 plus $0.08 per 4 oz; a 3.5% fuel and logistics surcharge is added to every fulfilment fee from 17 April 2026. The 10-12 oz small-standard row and the 1-1.5 lb large-standard row were not in the snippet (sellerguards.com carried the same table).",
+      "source": "https://amzprep.com/amazon-fba-fees/",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F19",
+      "statement": "Carried over from the 2026-09-23 run: Amazon's 2026 fee notice raises small-standard fulfilment fees by $0.12/unit for items under $10 from 15 Jan 2026 and adds a 3.5% fuel surcharge from 17 April 2026.",
+      "source": "https://sellercentral.amazon.com/help/hub/reference/external/GABBX6GZPA8MSZGW",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F20",
+      "statement": "CBP ruling NY N216783 classified a polyurethane-gel palm/wrist rest pad with a vinyl top layer under HTSUS 8473.30.5100 (parts and accessories of automatic data-processing machines, other) at a FREE general rate of duty; no ruling specific to a desk-edge elbow/forearm pad was found.",
+      "source": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N216783",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F21",
+      "statement": "CBP classifies polyurethane foam sheet from China under 3921.13.5000 at 4.2% ad valorem; a search summary also cited a memory-foam neck pillow with a knit polyester cover classified 9404.90.2000 with the Section 301 List 4A line 9903.88.15 (7.5%) applied, which is the fallback family if a fabric-covered desk pad is treated as a cushion rather than a computer accessory.",
+      "source": "https://rulings.cbp.gov/ruling/L89601",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F22",
+      "statement": "Carried over from the 2026-09-23 run: the Penn Wharton Budget Model put China's effective US tariff rate at about 33.9% as of January 2026 (2.3% a year earlier), stacking MFN duty, Section 301 tranches (7.5% List 4A to 25% Lists 1-3) and the 2025 IEEPA/reciprocal layers; the tranche for this product's subheading was not confirmed.",
+      "source": "https://ustariffrates.com/section-301-tariffs",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F23",
+      "statement": "Sourcing: an Alibaba wholesale listing 'L-Shaped Desk Edge Ergonomic Support Memory Foam Elbow Pad Arm Rest for Palm Wrist Forearm Non-Slip Separate Design' is priced at $3.20 per piece with a 50-piece minimum order; the snippet does not say whether a 'piece' is one pad or the 2-pad separate-design set, and no logo or retail packaging is included at that price. The same results page lists an 'Arm Rest Rectangular Memory Foam Elbow Pads Non-Slip Base 300x100x30mm' item (a close match to the founder's 300 x 100 x 20 mm spec) without a price in the snippet, and MOQs on the page range from 2 to 300 pieces.",
+      "source": "https://www.alibaba.com/wholesale/elbow-pad-desk.html",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F24",
+      "statement": "Sourcing: Alibaba's 'office elbow pads' showroom shows memory-foam armrest/elbow pads from $3.09 per unit with a minimum order of 1 piece (sample-tier pricing, 1-pc, no logo or packaging stated); bulk tiers and foam density are not visible in the snippet.",
+      "source": "https://www.alibaba.com/showroom/office-elbow-pads.html",
+      "confidence": "low"
+    },
+    {
+      "fact_id": "F25",
+      "statement": "Founder's supplier quote, reference only, no public URL (recorded from brief.json assumptions, contact 'Ahmad'): EXW USD 7.58 per piece as a single, about USD 5.75 per 2-piece set without logo (genius should confirm whether 5.75 is per set or per piece in the set configuration, since it is below the single-piece price), mould USD 230, MOQ 300 pcs; sample spec L-shaped foldable memory-foam pad, milk-silk fabric cover, 300 x 100 x 20 mm, about 250 g per piece, kraft mailer 32 x 11 x 6.5 cm per 2-pc set (590 g/set), 30 sets per 58 x 34 x 43 cm carton.",
+      "source": "https://github.com/a-mughal/perdictive_analysis_of_used_cars/blob/product-engine/consumer-engine/runs/l-shaped-forearm-rest-pad-black/brief.json",
+      "confidence": "high"
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "elbow pad for desk",
+      "seasonal": false,
+      "notes": "The phrase in nearly every L-shaped competitor title (JIKIOU, MEKASS, Sushret, MOSISO, Vaydeer 2Pcs) and the Amazon search URL that surfaced the look-alike wave (F9). Primary term for this ladder."
+    },
+    {
+      "term": "forearm table pad",
+      "seasonal": false,
+      "notes": "The founder's own search URL (brief.source_url); a lower-volume synonym that lands on the same L-shaped grid."
+    },
+    {
+      "term": "desk edge cushion",
+      "seasonal": false,
+      "notes": "Describes the L-shaped lip mechanism directly; used in EdgeRest, ArmCloud, JIKIOU and MEKASS titles."
+    },
+    {
+      "term": "arm rest for desk edge",
+      "seasonal": false,
+      "notes": "Amazon search page surfaced by the ArmCloud listing; same buyer, long-rail form over-indexes here."
+    },
+    {
+      "term": "L shaped desk elbow pad",
+      "seasonal": false,
+      "notes": "The sub-variant term; buyers who already know they want the lip geometry."
+    },
+    {
+      "term": "keyboard wrist rest long",
+      "seasonal": false,
+      "notes": "ArmCloud's title keywords; a different market (wrist rests in front of the keyboard) that the long-rail form straddles. Different term, different anchor — do not mix its prices in."
+    },
+    {
+      "term": "ergonomic elbow rest",
+      "seasonal": false,
+      "notes": "Amazon search page surfaced by EdgeRest; broad term that mixes chair armrest pads in. Seasonality not confirmed this run; the earlier run assumed a mild Jan/Sep office-setup uptick."
+    }
+  ],
+  "price_ladder": {
+    "primary_term": "elbow pad for desk",
+    "min": 8,
+    "median": 17.49,
+    "max": 59.99,
+    "typical_pack_count": 2,
+    "anchor_note": "Anchored on the single-piece L-shaped lip pad. The first row is dominated by 2-pack short L-shaped pads at $16.98-17.99 (JIKIOU $17.99 F7, unbranded 2-packs from $16.98 F10, VAYDEER's upgraded single pad $17.99 F11), so the visual anchor is about $17.50 — a little above the $15.50 broad-term median carried over from the 2026-09-23 run (F12). The $8 floor is small gel pads (F12). The long single-rail form (EdgeRest $59.99 on the brand site, F3; ArmCloud price unknown, F6) sits 3x above the anchor and reads as a different mental category. The founder's $15-25 band therefore spans 0.86x to 1.4x the anchor: up to about $22.70 passes the 1.3x gate silently, $23-25 needs a visible reason in the thumbnail."
+  },
+  "variant_chosen": {
+    "description": "Single-piece L-shaped 'lip' memory-foam pad: one foam profile whose front lip folds over the desk's front edge so the forearm never meets the edge, fabric cover (lycra, cloth or milk-silk), rubber or adhesive-dot non-slip base, black. It is sold in two pack forms — a pair of short pads of about 12-16 in each (JIKIOU, MEKASS, Sushret, MOSISO, Vaydeer 2Pcs, and the founder's planned 300 x 100 x 20 mm 2-pc set) or one long 24-28 in rail (EdgeRest, ArmCloud). Every price, rating, review count and complaint in this file is anchored on the L-shaped single-piece pad; where the pack form matters it is stated on the row.",
+    "why": "All three focus products share the L-shaped lip geometry, so it is the shape the buyer compares. Among them the 2-pack short-pad form carries the most social proof at the founder's price band (JIKIOU 791 ratings at $17.99, F7, versus EdgeRest's 204-226 at roughly $60, F2/F3), and the 2025-26 look-alike wave on page one is almost entirely 2-pack short pads (F9). The 2,045-review VAYDEER pad (F11) is a single L-shaped pad at the same $17.99, confirming the price point. The long-rail form sells at 3x the price with fewer reviews."
+  },
+  "competitors": [
+    {
+      "name": "JIKIOU L-Shaped Desk Elbow Pad for Desk 2 Pack, Soft Memory Foam Elbow",
+      "asin": "B0FH22782P",
+      "price_usd": 17.99,
+      "rating": 4.4,
+      "review_count": 791,
+      "main_image_description": "Two short black L-shaped pads with a quilted 'massage' texture hooked over a light desk edge either side of a keyboard, lip visible from the front.",
+      "fact_ids": ["F7", "F8", "F9"]
+    },
+    {
+      "name": "EdgeRest PostureUp L-Shaped Desk Long Wrist Rest Elbow, Forearm & Wrist",
+      "asin": "B0CN8VC121",
+      "price_usd": 59.99,
+      "rating": 4.6,
+      "review_count": 226,
+      "main_image_description": "One long matte-black 24 in L-profile rail with a rounded lip wrapped over a desk edge, keyboard and mouse behind it, shot at a low angle to show thickness.",
+      "fact_ids": ["F1", "F2", "F3", "F4"]
+    },
+    {
+      "name": "VAYDEER Upgraded Larger and Thicker Elbow Rest Pad, Desk Wrist Rest",
+      "asin": "B08DTYR99J",
+      "price_usd": 17.99,
+      "rating": 4.6,
+      "review_count": 2045,
+      "main_image_description": "Single wide black L-shaped foam pad in a fabric cover angled on a dark desk edge next to a keyboard, emphasising size and thickness (carried over from the 2026-09-23 run).",
+      "fact_ids": ["F11", "F12"]
+    }
+  ],
+  "complaint_clusters": [
+    {
+      "cluster_id": "C1",
+      "pattern": "Pad is too thin or too firm; the buyer can still feel the hard desk edge through it after an hour.",
+      "share_of_negative": 0.35,
+      "stage": "4",
+      "root_cause_hypothesis": "Share carried over from the 2026-09-23 run (Leolee, F13); not re-measured on the focus products because no 1-2 star text was retrievable. The focus grid's thickness ladder makes the exposure visible: JIKIOU 0.6 in (F7) versus EdgeRest 1.0 in (F1) and ArmCloud 1.2 in (F5) — the cheap 2-pack form is the thin one, and the founder's 20 mm (0.79 in) sits between.",
+      "paraphrased_examples": [
+        "Still feel the desk edge pressing through the pad."
+      ],
+      "fact_ids": ["F13", "F7", "F1", "F5"]
+    },
+    {
+      "cluster_id": "C2",
+      "pattern": "The cover or gel surface turns sticky and smells of plastic after a few weeks of skin contact.",
+      "share_of_negative": 0.3,
+      "stage": "5",
+      "root_cause_hypothesis": "Share carried over from the 2026-09-23 run (Jelbows, F14). Mechanism: VOC off-gassing from PU foam and PU-coated fabric, then breakdown under skin oil and heat (F16). Lycra/PU covers (ArmCloud, F5) and cloth covers (JIKIOU, F7) are both exposed; EdgeRest advertises a low-friction woven surface that wipes clean (F1).",
+      "paraphrased_examples": [
+        "Started smelling like plastic after a few weeks.",
+        "Surface got sticky over time."
+      ],
+      "fact_ids": ["F14", "F16", "F5", "F7"]
+    },
+    {
+      "cluster_id": "C3",
+      "pattern": "The pad creeps or slides off the edge; the base or mount does not hold on the real desk.",
+      "share_of_negative": 0.2,
+      "stage": "4",
+      "root_cause_hypothesis": "Share carried over from the 2026-09-23 run (Fuzadel clamp, F15). On the L-shaped form the signal is that JIKIOU ships 6-12 removable adhesive pieces on top of its rubber base (F7) — the base alone is not trusted to hold — while EdgeRest and ArmCloud sell a textured or anti-skid rubber underside with no adhesive (F1, F5).",
+      "paraphrased_examples": [
+        "Clamp connector felt wobbly and cheap."
+      ],
+      "fact_ids": ["F15", "F7", "F1", "F5"]
+    }
+  ],
+  "praise_clusters": [
+    {
+      "pattern": "Noticeable relief from elbow and forearm soreness or pins-and-needles within days of regular use during long typing or gaming sessions (carried over from the 2026-09-23 run).",
+      "share_of_positive": 0.45
+    },
+    {
+      "pattern": "The pad stays put on the desk through active mousing and chair movement, so the buyer forgets it is there.",
+      "share_of_positive": 0.25
+    },
+    {
+      "pattern": "Foam is firm enough to support without flattening and the profile is low enough not to get in the way of the keyboard (EdgeRest snippets, F4).",
+      "share_of_positive": 0.2
+    }
+  ],
+  "fee_inputs": {
+    "referral_rate": {
+      "low": 0.15,
+      "base": 0.15,
+      "high": 0.155,
+      "assumption": "Carried over from the 2026-09-23 run (F17): flat 15% Office Products referral rate for 2026; the high end reflects the $0.30 per-item minimum, which is irrelevant inside the $15-25 band but kept for a sub-$10 clearance price."
+    },
+    "fba_fee_usd": {
+      "low": 3.68,
+      "base": 5.3,
+      "high": 6.2,
+      "assumption": "Fetched this run (F18). Low = small-standard 8-10 oz row at the $10-50 band ($3.68) for one 250 g pad shipped flat as a single — only valid if the 20 mm pad compresses under the small-standard thickness limit, which was not fetched; verify. Base/high = the founder's actual SKU, a 2-pc set at 590 g (1.3 lb) in a 32 x 11 x 6.5 cm mailer, which is large standard 1-1.5 lb: that row was not in the snippet, so it is interpolated between the fetched $4.60 (12-16 oz) and $6.97 (3 lb) rows, then the 3.5% fuel surcharge (from 17 Apr 2026) is added; high also covers the set being measured into the 1.5-2 lb band."
+    },
+    "storage_per_cuft_month_usd": {
+      "low": 0.78,
+      "base": 1.2,
+      "high": 2.4,
+      "assumption": "Not fetched this run (search budget spent on the three focus products and sourcing); carried over as stale from the 2026-09-23 run, which used previously published Amazon standard-size rates of about $0.78/cu ft Jan-Sep and $2.40/cu ft Oct-Dec. Verify on the Seller Central rate card before use.",
+      "stale": true
+    },
+    "duty_rate": {
+      "low": 0.0,
+      "base": 0.0,
+      "high": 0.07,
+      "assumption": "Fetched this run (F20, F21). Base assumes the pad classifies like the ruled PU palm/wrist rest under 8473.30.5100 at a free general rate (the listings call themselves keyboard wrist rests). High covers reclassification as a cushion or textile article (9404.90 about 6%, 6307.90.98 7%, 3926.90.99 5.3%) because the ruling is for a keyboard wrist rest, not a desk-edge elbow pad. Get a broker opinion before the first entry. MFN duty only; the China-specific layers are in additional_tariff_rate."
+    },
+    "sea_freight_usd_per_cbm": {
+      "low": 60,
+      "base": 110,
+      "high": 180,
+      "assumption": "Not fetched this run; carried over as stale from the 2026-09-23 run (general China to US West Coast LCL market range). The founder's carton is 58 x 34 x 43 cm = 0.085 cbm for 30 sets, so even the high end is small per set; still get a live forwarder quote.",
+      "stale": true
+    },
+    "additional_tariff_rate": {
+      "low": 0.175,
+      "base": 0.3,
+      "high": 0.45,
+      "assumption": "Carried over as stale from the 2026-09-23 run (F22). Low = Section 301 List 4A 7.5% plus a 10% reciprocal layer; base = the roughly 30-34% non-MFN stack implied by the 33.9% effective China rate reported for January 2026; high = a 25% List 1-3 tranche plus IEEPA and reciprocal layers if 8473.30 falls in an early list. The exact tranche for the final subheading was not re-fetched; widened by a quarter as the standard requires.",
+      "stale": true
+    },
+    "hts_code": "8473.30.5100 (candidate, per CBP ruling NY N216783 for a PU palm/wrist rest, free MFN rate; alternatives 9404.90.20 / 6307.90.98 / 3926.90.99 if treated as a cushion or textile article — not confirmed for a desk-edge elbow pad)",
+    "origin_assumed": "China"
+  },
+  "unanswered_questions": [
+    "Does the L-shaped lip actually fit a thick (over 1 in) or rounded/bullnose desk edge, and how far does the lip hang down? Recurring across the category Q&A; every listing shows a thin square edge only — a missing dimensioned diagram image.",
+    "Does a 1-1.2 in pad lift the forearm above a low-profile keyboard and bend the wrist up? The long-rail listings (EdgeRest 1.0 in, ArmCloud 1.2 in) never show the pad next to a keyboard in profile.",
+    "Two short pads or one long rail: can a 2-pack be spaced for keyboard plus mouse without a gap at the elbow? Nobody shows the spacing in a top-down image.",
+    "Does the rubber base hold on glass or glossy laminate without the adhesive strips JIKIOU ships — a missing 'works on five desk surfaces' proof image.",
+    "Can the cover be removed and washed, or only wiped? No listing shows a care step.",
+    "Will it work on the left side for a left-handed mouse user (carried over from the 2026-09-23 run)."
+  ],
+  "trends": [
+    "In the twelve months to October 2026 the L-shaped lip pad became the default form on page one: ArmCloud launched 15 July 2025 (F5) and JIKIOU, MEKASS, Sushret, Vaydeer 2Pcs, MOSISO, ELZO and Tiiyee all carry 2025-26 ASIN prefixes (F9) — a clone wave is already in progress, and the differentiation has moved to surface pattern (diamond quilt, 'massage' texture, cloud/marble/leather prints) and colour variants (F8).",
+    "A premium long-rail rung opened above the 2-pack cluster: EdgeRest at about $60 on its own site (F3) and ArmCloud at 28 in (F5) sell one 24-28 in piece instead of two short pads, at roughly 3x the $17.50 anchor.",
+    "Carried over from the 2026-09-23 run: demand shifted from small gel discs toward larger L-shaped foam pads (VAYDEER's large pad holds 3-4x the reviews of its smaller variants, F11).",
+    "Amazon's 2026 FBA fee table plus the 3.5% fuel surcharge from 17 April 2026 (F18, F19) adds roughly $0.15-0.20 per unit on this size tier, compressing margin at the $15-20 price point."
+  ],
+  "gaps": [
+    "ArmCloud (P2, B0FHMXYL7G): no price, rating or review count appeared in any snippet after three searches, and every page that would carry them (Amazon.com, Amazon.in mirror, eBay 188204575476, ReviewMeta, camelcamelcamel) is egress-blocked. It is therefore recorded in facts (F5, F6) but left OUT of competitors[] rather than given a guessed price; one more search on the ASIN plus a price keyword, or a human glance at the listing, would close this.",
+    "EdgeRest (P1): the amazon.com shelf price was not captured; competitors[] uses the brand's own store price of $59.99 (F3) and the Amazon count of 226 is from the Australian storefront (F2) — the amazon.com rating count may differ.",
+    "No 1-2 star review text was retrievable for any of the three focus products (all review pages blocked), so the three complaint clusters and their shares are carried over from the 2026-09-23 run (Leolee, Jelbows, Fuzadel) and only cross-referenced to the focus products' specs; treat the shares as category-level, not product-level.",
+    "No tracker page was readable, so est_monthly_units is blank for every competitor.",
+    "Sourcing: Made-in-China and 1688 searches returned only retail listings (Walmart/eBay/JD), no factory prices; the only factory-side prices found are two Alibaba snippets (F23 $3.20 at MOQ 50, F24 $3.09 at MOQ 1) and neither states whether a piece is one pad or a 2-pad set, the foam density, or logo/packaging — a sample order is needed before treating them as a real alternative to the on-file quote (F25).",
+    "FBA fee: the exact 2026 large-standard 1-1.5 lb row for the 590 g 2-pc set was not in the fetched snippet; the base is interpolated between fetched neighbouring rows, and the small-standard thickness limit that decides whether a single 20 mm pad qualifies for the low end was not fetched.",
+    "Monthly storage and sea freight per cbm were not fetched this run and remain stale carry-overs.",
+    "HTS: the only ruling found is for a keyboard palm/wrist rest (8473.30.5100, free); no ruling for a desk-edge elbow pad exists in the snippets, and the Section 301 / IEEPA / reciprocal stack for that subheading was not re-fetched, so additional_tariff_rate is stale and wide.",
+    "JIKIOU pad length conflicts between snippets (14.9 in versus 15.75 in); thickness 0.6 in is from one snippet only.",
+    "No page-one listing was found at or above the 3,500-review dominance threshold; the largest count on record is VAYDEER's 2,045 (F11, carried over) and the largest among the focus products is JIKIOU's 791 (F7)."
+  ]
+}

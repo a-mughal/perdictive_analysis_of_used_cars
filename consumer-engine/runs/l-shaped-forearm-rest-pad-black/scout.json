@@ -33,7 +33,7 @@
     },
     {
       "fact_id": "F6",
-      "statement": "ArmCloud's price, star rating and review count did not appear in any snippet across three searches (Amazon, Amazon India mirror, ReviewMeta, camelcamelcamel and the eBay cross-listing 188204575476 are all egress-blocked for fetching); the product is confirmed to exist on Amazon and eBay but its numbers are unverified.",
+      "statement": "ArmCloud's price, star rating and review count did not appear in any snippet across the first three searches (Amazon, Amazon India mirror, ReviewMeta, camelcamelcamel and the eBay cross-listing 188204575476 are all egress-blocked for fetching); the shelf price surfaced on the fifth ArmCloud search (F26), the rating and count still did not.",
       "source": "https://www.ebay.com/itm/188204575476",
       "confidence": "low"
     },
@@ -150,6 +150,12 @@
       "statement": "Founder's supplier quote, reference only, no public URL (recorded from brief.json assumptions, contact 'Ahmad'): EXW USD 7.58 per piece as a single, about USD 5.75 per 2-piece set without logo (genius should confirm whether 5.75 is per set or per piece in the set configuration, since it is below the single-piece price), mould USD 230, MOQ 300 pcs; sample spec L-shaped foldable memory-foam pad, milk-silk fabric cover, 300 x 100 x 20 mm, about 250 g per piece, kraft mailer 32 x 11 x 6.5 cm per 2-pc set (590 g/set), 30 sets per 58 x 34 x 43 cm carton.",
       "source": "https://github.com/a-mughal/perdictive_analysis_of_used_cars/blob/product-engine/consumer-engine/runs/l-shaped-forearm-rest-pad-black/brief.json",
       "confidence": "high"
+    },
+    {
+      "fact_id": "F26",
+      "statement": "P2 ArmCloud (B0FHMXYL7G) amazon.com snippet (2026-10-06, search 16) shows a shelf price of $42.49 with a 15% off coupon offered on the listing (so about $36.12 at checkout if the coupon is clipped), sold by the Arm Cloud Store, 28 x 3.5 in, Lycra/PU, black; the Amazon India mirror lists it at INR 9,895.76 (third-party import price, not comparable). Star rating and ratings count were still absent from every snippet after five ArmCloud searches.",
+      "source": "https://www.amazon.com/Arm-Memory-Support-Forearm-ArmCloud/dp/B0FHMXYL7G",
+      "confidence": "medium"
     }
   ],
   "search_terms": [
@@ -195,7 +201,7 @@
     "median": 17.49,
     "max": 59.99,
     "typical_pack_count": 2,
-    "anchor_note": "Anchored on the single-piece L-shaped lip pad. The first row is dominated by 2-pack short L-shaped pads at $16.98-17.99 (JIKIOU $17.99 F7, unbranded 2-packs from $16.98 F10, VAYDEER's upgraded single pad $17.99 F11), so the visual anchor is about $17.50 — a little above the $15.50 broad-term median carried over from the 2026-09-23 run (F12). The $8 floor is small gel pads (F12). The long single-rail form (EdgeRest $59.99 on the brand site, F3; ArmCloud price unknown, F6) sits 3x above the anchor and reads as a different mental category. The founder's $15-25 band therefore spans 0.86x to 1.4x the anchor: up to about $22.70 passes the 1.3x gate silently, $23-25 needs a visible reason in the thumbnail."
+    "anchor_note": "Anchored on the single-piece L-shaped lip pad. The first row is dominated by 2-pack short L-shaped pads at $16.98-17.99 (JIKIOU $17.99 F7, unbranded 2-packs from $16.98 F10, VAYDEER's upgraded single pad $17.99 F11), so the visual anchor is about $17.50 — a little above the $15.50 broad-term median carried over from the 2026-09-23 run (F12). The $8 floor is small gel pads (F12). The long single-rail form (ArmCloud $42.49 before a 15% coupon, F26; EdgeRest $59.99 on the brand site, F3) sits 2.4-3.4x above the anchor and reads as a different mental category; neither moves the first-row median, which the 2-packs set. The founder's $15-25 band therefore spans 0.86x to 1.4x the anchor: up to about $22.70 passes the 1.3x gate silently, $23-25 needs a visible reason in the thumbnail."
   },
   "variant_chosen": {
     "description": "Single-piece L-shaped 'lip' memory-foam pad: one foam profile whose front lip folds over the desk's front edge so the forearm never meets the edge, fabric cover (lycra, cloth or milk-silk), rubber or adhesive-dot non-slip base, black. It is sold in two pack forms — a pair of short pads of about 12-16 in each (JIKIOU, MEKASS, Sushret, MOSISO, Vaydeer 2Pcs, and the founder's planned 300 x 100 x 20 mm 2-pc set) or one long 24-28 in rail (EdgeRest, ArmCloud). Every price, rating, review count and complaint in this file is anchored on the L-shaped single-piece pad; where the pack form matters it is stated on the row.",
@@ -219,6 +225,13 @@
       "review_count": 226,
       "main_image_description": "One long matte-black 24 in L-profile rail with a rounded lip wrapped over a desk edge, keyboard and mouse behind it, shot at a low angle to show thickness.",
       "fact_ids": ["F1", "F2", "F3", "F4"]
+    },
+    {
+      "name": "ArmCloud Desk Edge Rest, Memory Foam Keyboard Wrist Rest, Long Ergonomic",
+      "asin": "B0FHMXYL7G",
+      "price_usd": 42.49,
+      "main_image_description": "One extra-long (28 in) black L-profile rail with a grooved lycra top hooked over a desk edge, spanning keyboard and mouse, shot from the front-left to show the lip. Rating and review count not captured (F26).",
+      "fact_ids": ["F5", "F6", "F26"]
     },
     {
       "name": "VAYDEER Upgraded Larger and Thicker Elbow Rest Pad, Desk Wrist Rest",
@@ -338,7 +351,7 @@
     "Amazon's 2026 FBA fee table plus the 3.5% fuel surcharge from 17 April 2026 (F18, F19) adds roughly $0.15-0.20 per unit on this size tier, compressing margin at the $15-20 price point."
   ],
   "gaps": [
-    "ArmCloud (P2, B0FHMXYL7G): no price, rating or review count appeared in any snippet after three searches, and every page that would carry them (Amazon.com, Amazon.in mirror, eBay 188204575476, ReviewMeta, camelcamelcamel) is egress-blocked. It is therefore recorded in facts (F5, F6) but left OUT of competitors[] rather than given a guessed price; one more search on the ASIN plus a price keyword, or a human glance at the listing, would close this.",
+    "ArmCloud (P2, B0FHMXYL7G): five searches spent in total (16 run-wide, the cap). Closed: shelf price $42.49 with a 15% coupon on the listing (F26), now in competitors[]. Still open: star rating and ratings count — absent from every snippet. Query forms already tried, do not repeat: ASIN + brand name + 'amazon'; '\"ArmCloud\" desk edge rest 28 inch memory foam arm rest price rating reviews'; '\"ArmCloud\" arm rest desk review complaints too thick firm slides off desk'; '\"B0FHMXYL7G\" price'; the newer title '\"Desk Edge Cushion, Extra Long 28 Inch Arm Rest Pad for Desk\" ratings $ ArmCloud amazon'. Every page that would carry the count (Amazon.com, Amazon.in mirror, eBay 188204575476, ReviewMeta, camelcamelcamel) is egress-blocked for fetching; a human glance at the listing is the remaining route. No 1-2 star text for ArmCloud either.",
     "EdgeRest (P1): the amazon.com shelf price was not captured; competitors[] uses the brand's own store price of $59.99 (F3) and the Amazon count of 226 is from the Australian storefront (F2) — the amazon.com rating count may differ.",
     "No 1-2 star review text was retrievable for any of the three focus products (all review pages blocked), so the three complaint clusters and their shares are carried over from the 2026-09-23 run (Leolee, Jelbows, Fuzadel) and only cross-referenced to the focus products' specs; treat the shares as category-level, not product-level.",
     "No tracker page was readable, so est_monthly_units is blank for every competitor.",

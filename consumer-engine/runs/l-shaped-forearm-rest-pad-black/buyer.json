@@ -1,0 +1,199 @@
+{
+  "persona": {
+    "who_i_am": "I write code from a home office nine hours a day on a dark laminate desk with a square one-inch front edge, and by mid-afternoon there is a red groove across my right forearm and my mouse hand is going numb.",
+    "trigger": "This afternoon my mouse hand went pins-and-needles again in the middle of a long session and I caught myself rubbing the dent in my forearm on a video call; I have already decided a pad that wraps the edge is the fix, and now it is 10:40 pm and I have four black L-shaped tiles open on my phone (jtbd.hiring_moment).",
+    "fired_solution": "A folded hand towel over the edge that slid off every time I rolled my chair back, and before that a gel keyboard wrist rest that went flat and tacky within a few months and only ever covered my wrist, not the forearm where the edge actually bites; pushing the keyboard back and resting straight on the desk is what gave me the groove in the first place (jtbd.firing).",
+    "urgency": "this_week",
+    "search_term": "elbow pad for desk",
+    "why_this_term": "It is what autocomplete finished when I typed 'elbow pad', and it is the phrase in every tile's title. I tried 'forearm table pad' first and got the same black L shapes, so I stayed on the term with the most tiles and the most reviews and I am not switching mid-hunt (cialdini.consistency, dunford.best_fit_customer)."
+  },
+  "buy_driver": {
+    "driver": "pain",
+    "pain_level": "moderate",
+    "evidence": "Pain, not pleasure: nobody wants a black foam pad, they want the groove in their arm gone. It is moderate, at the top of moderate, not extreme: I have decided a pad is the fix and I am actively comparing thickness, base and cover tonight, but my price sensitivity has not collapsed, I am shopping the $17.99 tiles and dismissing the $42-60 rails, and I will wait for Prime delivery rather than drive anywhere. C1 (35% of negatives, 'still feel the desk edge through it') is literally the burned buyer I am afraid of becoming, which is why I compare on thickness; C3 (20%, pad creeps, base or mount fails) is the towel I already fired; the 45% praise cluster (relief from soreness and pins-and-needles within days) is the exact outcome I am buying. If I had bought a thin pad once already and were back here, this would be extreme; today it is a deliberate, comparing purchase (law.pain_moderate).",
+    "tags": ["law.pain_moderate", "jtbd.hiring_moment", "jtbd.firing", "kahneman.loss_aversion", "ulwick.underserved"]
+  },
+  "future_self": "It is 4 pm on a Thursday, the light through the window has gone warm, and I am forty minutes into a debugging session with both forearms lying flat on something soft that wraps the edge of the desk. My sweater sleeves are pushed up and there is no red line on either arm. I have not thought about my arm since lunch. I push off the desk to roll back and grab my coffee, roll back in, and the pads are exactly where I left them. The shot a photographer should take is over my shoulder: dark laminate desk, mechanical keyboard and mouse, two black pads hooked over the square edge either side of the keyboard, my bare forearms resting on them mid-type, the hard desk corner visibly underneath and not touching skin, mug and monitor arm in frame, me looking at the screen and not at the pad (law.future_self, ariely.endowment).",
+  "comfort_and_laziness": "It removes the twenty-minute ritual: lifting my arm to shake out the tingling, rubbing the groove, re-folding the towel that slid off, shifting my chair to change the angle, pulling my sleeve down as a cushion, and the 3 pm decision to stand up because my arm hurts rather than because I am done. The lazy path is: hook it over the edge once, no clamp, no screws, no strips to stick to my desk, and never touch it again, and when it gets grubby, wipe it with the cloth I already use for the desk instead of buying another one (law.comfort_laziness, nudge.default).",
+  "benefits_not_features": [
+    {
+      "feature": "L-shaped lip that folds over and hugs the desk's front edge (all four tiles)",
+      "benefit": "The corner of my desk stops existing. Wherever I slide my arm forward or back, it lands on foam, not on the edge that carved the groove, and I can finally sit with my forearms down instead of hovering (law.benefit_not_feature)."
+    },
+    {
+      "feature": "Memory-foam core; slow-rebound (JIKIOU), firm foam that does not flatten (EdgeRest snippets F4), 'Larger and Thicker' 0.94 in (VAYDEER)",
+      "benefit": "My arm sinks a little and stops, instead of sinking all the way through to the wood by the end of an hour like my gel rest did; at 4 pm it still feels like it did at 9 am."
+    },
+    {
+      "feature": "Non-slip rubber or anti-skid base (EdgeRest, ArmCloud, VAYDEER); rubber base plus 6-12 adhesive pieces (JIKIOU)",
+      "benefit": "I can shove off the desk to roll my chair back and the pad is still where I hooked it, so I never re-seat it ten times a day like the towel; and if I do not have to stick strips to my desk, I do not have to scrape glue off it later."
+    },
+    {
+      "feature": "Fabric cover: cloth with a massage texture (JIKIOU), breathable grooved Lycra (ArmCloud), low-friction woven PU/cotton (EdgeRest)",
+      "benefit": "My bare forearm in July does not stick to it, sweat on it, or peel off it with a noise on a call, and it does not smell like a new shower curtain in my face for two weeks."
+    },
+    {
+      "feature": "Two short pads in the pack (JIKIOU and the look-alike 2-packs) versus one 24-28 in rail (EdgeRest, ArmCloud)",
+      "benefit": "Both of my forearms are covered, keyboard arm and mouse arm, and I am not choosing which arm hurts less; the long rail's version of this is no gap at my elbow when I slide from keys to mouse, which the 2-pack cannot promise."
+    }
+  ],
+  "three_second_scan": [
+    {
+      "signal": "image",
+      "what_i_see": "Four black foam hooks over a desk edge. JIKIOU: two short quilted pads either side of a keyboard on a light desk, lip visible from the front, I get it in half a second. VAYDEER: one wide thick pad angled on a dark desk, it reads as 'more foam'. EdgeRest: a long matte rail at a low angle that shows thickness. ArmCloud: a 28 in grooved rail across keyboard and mouse. Plus nine more 2-packs that look exactly like JIKIOU with a diamond print. The shape explains itself, so nobody is skipped for being unclear, but at 300 px the row blurs into one product and none of them show the pad on a thick or rounded edge, which is the edge I actually own.",
+      "verdict": "pull",
+      "tags": ["gate.image_orientation", "underhill.decompression", "kahneman.wysiati", "schwartz.overload"]
+    },
+    {
+      "signal": "price",
+      "what_i_see": "$17.99 for the JIKIOU pair, $17.99 for the single VAYDEER, a scatter of $13-17 look-alike pairs, then a jump to $42.49 (ArmCloud, with a coupon badge) and $59.99 (EdgeRest). My anchor is about $17.50 for 'a pad'. The two rails are not expensive versions of the same thing to me, they are a different mental category, roughly 'the physio one', and before I would pay 2.4-3.4x the tile itself would have to show me a problem the $17.99 pads visibly have and the rail visibly does not: a cross-section with twice the foam under my arm, or a side-by-side of a thin pad bottoming out next to the rail holding, or a review count in the thousands. Neither does. EdgeRest's tile shows me length and a nice matte finish, and I do not have a 24-inch problem, I have a two-forearm problem; ArmCloud at $42 with no star row at all is an unknown brand plus a price alarm, which is the two things that make me stop and think, and when I stop and think at this price I close the tab. A pair at $19.99-22.99 would pass without my noticing, but only if the tile gives me one visible reason over the $17.99 pair I am already looking at.",
+      "verdict": "push_away",
+      "tags": ["gate.price_vs_anchor", "kahneman.anchoring", "ariely.relativity", "kahneman.system2_trigger", "gate.brand_trust"]
+    },
+    {
+      "signal": "rating",
+      "what_i_see": "VAYDEER 4.6 stars on 2,045: the safe click, I do not even need to open the one-stars. JIKIOU 4.4 on 791: fine, but 4.4 on a pair makes me open the negative reviews and look for 'thin' and 'sticky'. EdgeRest 4.6 on 226: good number, small crowd, and at $60 I want a bigger crowd before I spend that. ArmCloud: no stars showing, so either nobody has bought it or it is brand new, and at $42 I am not going to be the one who finds out. The dozen look-alikes with no visible counts are wallpaper.",
+      "verdict": "pull",
+      "tags": ["cialdini.social_proof", "gate.social_proof", "sutherland.satisficing", "gate.reviews_negative_first"]
+    },
+    {
+      "signal": "design",
+      "what_i_see": "Everything is black foam with a lip. JIKIOU's quilted 'massage' texture and the diamond-print pairs read as 'not a plain slab' but also slightly gimmicky, like a car seat cushion; ArmCloud's grooved Lycra reads sporty; EdgeRest's smooth matte one-piece rail is the only one that looks like it belongs on a grown-up desk. Nothing in the design tells me which one is thick enough or which base holds, so design does not decide anything tonight; I fall back to the star row and the price.",
+      "verdict": "neutral",
+      "tags": ["law.three_second_scan", "law.color_anchor", "kahneman.wysiati"]
+    },
+    {
+      "signal": "experience_promise",
+      "what_i_see": "VAYDEER's title opens with 'Upgraded Larger and Thicker', which is the one thing I am afraid of getting wrong, so it speaks straight to me. JIKIOU opens with '2 Pack, Soft Memory Foam', and 'soft' worries me a little because soft is what went flat on me. EdgeRest's title is a keyword list ('Long Wrist Rest Elbow, Forearm & Wrist') with 'PostureUp' hinting at posture, which is a promise I cannot check. ArmCloud sells 'Keyboard Wrist Rest, Long', which is a different product in my head. The promise I am hunting for, 'you will not feel the edge', is only half-said by one tile.",
+      "verdict": "pull",
+      "tags": ["gate.title_scan", "kahneman.loss_aversion", "law.benefit_not_feature"]
+    }
+  ],
+  "purchase_probability_current": {
+    "click": 0.65,
+    "add_to_cart": 0.5,
+    "buy": 0.7,
+    "reasoning": "Click 0.65: the shape reads at 300 px and VAYDEER or JIKIOU carry a safe star row, so most nights I click one of the two $17.99 tiles; I lose the rest to a row of twelve identical black hooks and to the fact that no tile shows the thickness or the edge fit I am actually worried about (gate.social_proof, schwartz.overload). Cart 0.5: inside the listing the images never show the lip on a thick or rounded edge, the base on my laminate, the pad in profile next to a keyboard, or a care step, so half of me opens the next tab to compare, and JIKIOU's 4.4 sends me into the one-stars where C1 'still feel the edge' is waiting (gate.image_2_to_6, kahneman.wysiati). Buy 0.7: at $17.99 the money does not hurt, I want it this week, and returns are easy, so most carts become orders; the hesitation is 'will it fit my edge' and 'is there a better one' (ariely.pain_of_paying, nudge.friction_asymmetry). For the $60 EdgeRest tile specifically my click is nearer 0.15: a different category at 3.4x with no visible reason in the tile (gate.price_vs_anchor)."
+  },
+  "fears": [
+    {
+      "rank": 1,
+      "question": "Will I still feel the desk edge through it after an hour, like I did with the gel one?",
+      "tags": ["kahneman.loss_aversion", "gate.image_fit", "kano.must_be"],
+      "from_cluster_id": "C1",
+      "answered_by": "image"
+    },
+    {
+      "rank": 2,
+      "question": "Does the lip actually fit over my desk edge, a thick one-inch laminate with a slightly rounded front, or will it sit crooked and pop off?",
+      "tags": ["gate.image_fit", "kahneman.wysiati", "post.return_reason"],
+      "from_cluster_id": "C3",
+      "answered_by": "image"
+    },
+    {
+      "rank": 3,
+      "question": "Will it creep or slide off when I push my chair back, and do I have to stick those adhesive strips to my desk to make it stay?",
+      "tags": ["law.shape_memory", "kahneman.peak_end", "gate.image_2_to_6"],
+      "from_cluster_id": "C3",
+      "answered_by": "image"
+    },
+    {
+      "rank": 4,
+      "question": "Will the cover go sticky and smell like plastic after a month of my arm on it, and can I actually wash it or only wipe it?",
+      "tags": ["kahneman.availability", "gate.qna", "kano.must_be"],
+      "from_cluster_id": "C2",
+      "answered_by": "bullet"
+    },
+    {
+      "rank": 5,
+      "question": "Will a one-inch pad lift my forearm above a low keyboard and bend my wrist up the wrong way?",
+      "tags": ["gate.image_2_to_6", "kahneman.wysiati"],
+      "answered_by": "image"
+    },
+    {
+      "rank": 6,
+      "question": "Who is JIKIOU, or ArmCloud with no stars at $42, and is this one of the twelve identical pads from the same factory that will be gone when I want a second pair?",
+      "tags": ["gate.brand_trust", "sharp.double_jeopardy", "cialdini.reciprocity"],
+      "answered_by": "bullet"
+    }
+  ],
+  "unmet_needs": [
+    {
+      "need_id": "N1",
+      "statement": "I want to put my arm down at 9 am and still not feel the desk edge at 4 pm; the pad must not bottom out onto the wood, and nobody on the shelf proves theirs does not except one title that says 'thicker'.",
+      "pain_level": "moderate",
+      "severity": 8,
+      "evidence_cluster_ids": ["C1"]
+    },
+    {
+      "need_id": "N2",
+      "statement": "I need to see it on a desk edge like mine, thick and a little rounded, before I pay; every tile shows a thin square edge and I am guessing whether the lip will sit flat on my desk or ride up.",
+      "pain_level": "moderate",
+      "severity": 7,
+      "evidence_cluster_ids": ["C3"]
+    },
+    {
+      "need_id": "N3",
+      "statement": "A cover that still feels like fabric in month six, not tacky, not smelly, and a care step I can see, wash or wipe, because the sticky gel rest is the thing I threw away.",
+      "pain_level": "moderate",
+      "severity": 7,
+      "evidence_cluster_ids": ["C2"]
+    },
+    {
+      "need_id": "N4",
+      "statement": "It has to stay where I hook it on my laminate when I push off the desk, without gluing strips to my furniture; a box of adhesive pieces tells me the base alone was not trusted.",
+      "pain_level": "moderate",
+      "severity": 6,
+      "evidence_cluster_ids": ["C3"]
+    },
+    {
+      "need_id": "N5",
+      "statement": "I want to know it is the same pad in year three, no permanent dent where my elbow always lands and no base peeling at a corner, and nothing in any tile or spec tells me how long it lasts.",
+      "pain_level": "moderate",
+      "severity": 6,
+      "evidence_cluster_ids": ["C1", "C3"]
+    },
+    {
+      "need_id": "N6",
+      "statement": "Both forearms covered, keyboard arm and mouse arm, spaced so my elbow does not land on bare edge between two pads when I slide to the mouse; no 2-pack shows the spacing from above.",
+      "pain_level": "moderate",
+      "severity": 5,
+      "evidence_cluster_ids": []
+    }
+  ],
+  "price_psychology": {
+    "anchor_seen_usd": 17.49,
+    "max_without_reason_usd": 19.99,
+    "max_with_reason_usd": 24.99,
+    "reason_required": "For a pair at $22.99-24.99 to beat the $17.99 JIKIOU and VAYDEER tiles I am already looking at, the tile itself has to carry the reason, not the bullets: a side profile of one pad hooked over a visibly thick desk edge with a bare forearm resting on it and clear daylight between the arm and the desk corner, with the thickness called out as a number next to the thin pad's number, so I can see 'more foam between me and the edge' in two seconds. Then image 3 has to show the hard case working: the pad on a thick, slightly rounded edge sitting flat, a thumb pressing the foam next to a ruler and the foam not reaching the desk, and the bare rubber underside being pushed sideways on glass or glossy laminate and staying put, with no adhesive strips anywhere in the shot. Two pads spaced either side of a keyboard from above would close the last question. With that visible, $24.99 for two pads is cheaper than buying the $17.99 pair and finding out at 4 pm that it bottoms out; above $25 it starts to look like half an EdgeRest and I ask why not buy the physio one. For a $42-60 single rail to earn 2.4-3.4x, the same proof would have to be in the tile and the star row would have to be in the thousands; today neither rail shows me anything but length (kahneman.anchoring, gate.price_vs_anchor, kahneman.loss_aversion, gate.image_fit)."
+  },
+  "packaging_expectation": "I expect a plain box or sleeve the two pads slide out of flat and already the right shape, no plastic smell when I open it, and one card that shows me in three pictures how to hook it over the edge and how to clean the cover. That is all; I am spending on the pad, not the box, and a fancy magnetic box on a $20 pad would make me wonder what they skimped on. What makes me silently decide it is third-rate before I use it: a crushed poly bag with the pads folded in half and a crease pressed into the foam, a chemical smell when the bag opens (my old wrist rest did that for two weeks), a little baggie of adhesive strips rattling around loose, which tells me the base will not hold on its own, a crooked seam or a loose thread at the inside corner of the L, a rubber base already lifting at one corner, and a sticker on the fabric that leaves glue behind. Any one of those and the review is already half-written (law.packaging_first_touch, post.cognitive_dissonance).",
+  "lifestyle_target": {
+    "primary": "A real working desk mid-afternoon: a home-office programmer or remote employee at a dark laminate desk with a square edge, mechanical keyboard, mouse, monitor arm, a mug, a sweater sleeve pushed up, both forearms down on the pads, hand on the mouse, eyes on the screen, working rather than posing. The person is me on a Thursday, not an athlete and not a patient (law.lifestyle_match, ariely.endowment).",
+    "avoid": "The RGB gamer cave with neon and a headset, the sterile white clinic render with a physiotherapist's hand pointing at a wrist, a studio shot of the bare pad with no arm or desk edge in frame, and the stock photo of someone clutching their wrist in pain; the first two say 'not for my desk', the last two say 'nobody has used this'."
+  },
+  "memory_hook": "The side-profile picture of a bare forearm lying on the pad with the hard desk corner visible underneath and a clear gap between skin and edge. Every time I feel the groove in my arm at 4 pm I will see that picture again, and the pad that owns it is the one I come back to (law.delayed_desire, sharp.mental_availability).",
+  "durability_instinct": {
+    "what_warns_me": "I have owned the gel wrist rest that went flat and then tacky and left a sticky patch on the desk; the mousepad whose rubber base peeled at one corner and curled until the whole thing rocked; the foam seat cushion that took a permanent dent exactly where I always sat; the 'leather' PU cover on a chair pad that cracked, went shiny and flaked onto my sleeve; and the stick-on cable clips whose strips let go in month two and left glue I had to scrape off. In this grid those memories light up on sight. The six to twelve adhesive pieces in the JIKIOU box: adhesive is the thing that always failed me and the strips say the rubber base alone was not trusted, so I already see residue on my desk and a pad that migrates once the strips give up. The 0.6 in thin pad: the thin one is the one I felt the wood through, and thin foam takes the elbow dent first. Any shiny PU or 'leather'-look cover and the cloud or marble print variants: that is the surface that went sticky and flaked on me, and skin oil plus summer heat is exactly what it gets all day. The word 'Soft' in a title: soft went flat. Quilted stitching over foam: stitches are where the fabric on my chair cushion wore through first and where grime collects. And the inside corner of the L itself, where the lip meets the top: a fold in foam is a hinge, and a hinge is where a cover splits and foam tears, so I look at that corner in every photo and nobody shows it close up (law.shape_memory, kahneman.availability).",
+    "what_reassures_me": "A photo, not an adjective. A cross-section or a thumb pressing the pad next to a ruler, foam at least three-quarters of an inch thick and visibly springing back, with the thickness printed as a number. The underside shown bare: one continuous rubber sheet bonded edge to edge, not dots, not strips, and a shot of it being pushed sideways on glass and on glossy laminate and not moving, with no adhesive in the box at all. A close-up of the inside corner of the L showing one clean seam or no seam, not a crease in the foam. A spec that names things the way a mattress listing does: a density number for the foam, 'slow rebound' with a recovery time, a cover named as a woven polyester or spandex fabric that is machine-washable or at least wipe-clean with a shown care step, instead of 'premium PU leather'. A dated photo of the same pad after six or twelve months on a real desk with no dent where the elbow sits and no peel at a corner, ideally from a reviewer with a photo rather than the seller. One honest limitation on the tile or in the first bullet, such as 'fits square edges up to 1.5 in; not for bullnose edges', because one true limit makes me believe the rest. And a plain promise I can hold them to: 'if the foam flattens or the base peels within two years we replace it'. Show me those and I believe five years; tell me 'durable' and I believe nothing (cialdini.reciprocity, cialdini.authority, sutherland.costly_signal, gate.reviews_with_photos)."
+  },
+  "color_read": "Black is a given, so the pad cannot anchor the tile by colour in a row of twelve black hooks; the background and one detail have to. Shoot it on a light warm-wood or off-white desk so the black lip reads as a silhouette with the desk edge visible, in cool neutral daylight that says 'ergonomic and trustworthy' rather than 'gamer'. One quiet accent at most, a charcoal or dark-grey piping or a printed thickness line along the inside corner, never a neon stripe, gold or red: neon says RGB cave, gold says luxury I did not ask for, red says urgency on a product I want to disappear into the desk (law.color_anchor).",
+  "hypotheses_tested": [
+    {
+      "hypothesis": "A black, L-shaped forearm-and-wrist pad can beat the three liked page-one listings (EdgeRest, ArmCloud, JIKIOU) at a $15-25 shelf price while holding a 30-40% margin",
+      "verdict": "partly",
+      "why": "From where I stand a $15-25 pair beats EdgeRest and ArmCloud by default, because at $42-60 they are a category I never seriously consider and ArmCloud has no stars; beating JIKIOU is a fight at the same price where a tile with zero reviews loses to 791 unless it shows the one visible reason (thickness and edge fit in the tile) and climbs past a few hundred reviews; and the real bar is VAYDEER at 4.6 on 2,045, which the hypothesis does not name but which is the tile I would click tonight. I cannot see margin from the shelf (gate.social_proof, kahneman.anchoring, moore.chasm)."
+    },
+    {
+      "hypothesis": "A cheaper factory than the one quoted (EXW USD 7.58/pc, USD 5.75/set-of-2 without logo, mold USD 230, MOQ 300) exists for the same spec, and the saving is what makes the 30-40% margin possible",
+      "verdict": "partly",
+      "why": "I cannot see factories; what I can see is nine look-alike pairs at $13-17, so cheaper supply plainly exists for somebody, but the cheap pad is exactly the thin, soft, adhesive-strip pad I am trying not to buy (C1, C3), and if the saving comes out of foam depth or the cover I am the one who returns it; the money I will pay extra for is more foam and a base that holds, not a cheaper box (law.shape_memory, post.return_reason)."
+    },
+    {
+      "hypothesis": "Buyers will pay inside the $15-25 band for a visibly more durable, futuristic-looking pad that is easier to clean and more relaxing for wrist and elbow than the current L-shaped pads, as long as the price stays under the band ceiling",
+      "verdict": "partly",
+      "why": "Confirmed for 'visibly more durable' if visible means a thicker profile, a one-piece rubber base and a washable fabric cover shown in the tile and image 3, for which I will go to about $24.99; confirmed for 'easier to clean' only if the care step is shown, since the sticky cover is my lived memory (C2); rejected for 'futuristic-looking', which does nothing for me and reads like gamer gear on a work desk, and 'more relaxing' cannot be shown in a tile, so I do not pay for it (gate.price_vs_anchor, law.lifestyle_match, kahneman.wysiati)."
+    }
+  ],
+  "what_would_make_me_buy": "I would buy the pair whose tile shows me, in one picture, my own arm resting on the pad with daylight between my skin and a thick desk edge, and a number next to it that is bigger than the thin pad's number, at any price up to about $25. Inside the listing I want the hard case done for me: the lip sitting flat on a rounded one-inch edge, a thumb pressing the foam next to a ruler and not reaching the desk, the bare rubber underside being shoved sideways on glass and staying, two pads spaced around a keyboard from above, and a care step that shows the cover being wiped or washed. Give me one honest limit in the first bullet and a two-year promise on flattening and peeling, ship it flat in a plain box with no smell and no baggie of adhesive strips, and when it is still the same pad at 4 pm on day ninety with no dent and no tackiness, I will tell the friend who complained about his wrist on our last call: 'get the thick pair, the one that shows the arm over the edge, you will stop noticing your desk by the second day' (law.future_self, cialdini.reciprocity, post.review_trigger)."
+}

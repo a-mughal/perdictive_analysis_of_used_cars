@@ -1,7 +1,18 @@
 {
   "target_spec": {
-    "needs_targeted": ["N1", "N2", "N3", "N4", "N5", "N6"],
-    "must_fix_clusters": ["C1", "C2", "C3"],
+    "needs_targeted": [
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "N6"
+    ],
+    "must_fix_clusters": [
+      "C1",
+      "C2",
+      "C3"
+    ],
     "should_fix_clusters": [],
     "over_served_to_cut": [
       "Surface pattern and colour variants (JIKIOU's flowers, marble and leather prints, the diamond quilts on MEKASS and MOSISO, F8/F9): the buyer reads quilting as a car-seat gimmick and prints as the PU surface that went sticky on them (buyer.three_second_scan.design, buyer.durability_instinct). One black, smooth, un-quilted SKU, no dropdown (gate.variations, schwartz.overload).",
@@ -16,51 +27,86 @@
       "name": "Solid-corner L: no fold, 22 mm of foam over the corner, a wedge thickest at the desk edge",
       "role": "hero",
       "aspect": "pain_removal",
-      "mechanism": "Replace the folded flat pad with a one-piece L profile, 300 mm long, contour-cut as an extruded L with no hinge anywhere: a 100 mm deep top that is 26 mm thick at the desk-edge end and tapers to 20 mm at the keyboard edge (a 3.5-degree wedge with its thick end at the desk), and a 45 mm lip that is 26 mm thick at the roll and tapers to 20 mm at its bottom edge. Both legs are 26 mm thick where they meet, and the outer corner is an R20 roll whose centre sits 6 mm outboard of the inside corner on each axis, so the roll surface is about 28 mm from the inside corner on the diagonal; the inside corner carries a 6 mm quarter-round relief channel so a square or lightly eased (up to R5) desk corner sits in air and the load bears on the two flat rubber faces. The forearm therefore bridges the desk corner on about 22 mm of continuous foam measured on the diagonal (about 12 mm of HR core under the 10 mm memory shell, above the 6 mm relief) instead of on a fabric fold with no foam under it; the first drawing's 20 mm walls with the roll centred on the inside corner gave only 14 mm there, which is why the section is thickened at the corner and nowhere else (triz.local_quality). A revised profile cutting template of the same class as the existing US$230 one (F25).",
-      "fixes_complaint_clusters": ["C1", "C3"],
-      "improves_needs": ["N1", "N2", "N5"],
-      "improves_gates": ["gate.image_orientation", "gate.image_fit", "gate.price_vs_anchor", "gate.title_scan"],
+      "mechanism": "Replace the folded flat pad with a one-piece L profile, 300 mm long, contour-cut from a single block of high-resilience (HR) polyurethane foam with no hinge and no second layer anywhere: a 100 mm deep top that is 26 mm thick at the desk-edge end and tapers to 20 mm at the keyboard edge (a 3.5-degree wedge with its thick end at the desk), and a 45 mm lip that is 26 mm thick at the roll and tapers to 20 mm at its bottom edge. Both legs are 26 mm thick where they meet, and the outer corner is an R20 roll whose centre sits 6 mm outboard of the inside corner on each axis, so the roll surface is about 28 mm from the inside corner on the diagonal; the inside corner carries a 6 mm quarter-round relief channel so a square or lightly eased (up to R5) desk corner sits in air and the load bears on the two flat rubber faces. The forearm therefore bridges the desk corner on about 22 mm of continuous HR foam measured on the diagonal above the 6 mm relief, instead of on a fabric fold with no foam under it; the first drawing's 20 mm walls with the roll centred on the inside corner gave only 14 mm there, which is why the section is thickened at the corner and nowhere else (triz.local_quality). The foam is specified by number, the way a mattress is: HR polyether polyurethane at 50 kg/m3 (accepted band 45-55 kg/m3, ISO 845), 25% IFD 150-190 N on a 50 mm slab from the same lot (ISO 2439 method B, about 34-43 lbf), support factor (65%/25% IFD) at least 2.4, resilience at least 50% (ball rebound, ASTM D3574 H). That band is chosen because a single 20-26 mm layer of slow-rebound memory foam creeps under nine hours of static arm load and bottoms out onto the wood (the C1 failure), while HR foam at this density gives way for the first quarter of its depth and then stiffens as it closes toward the corner, so the arm sinks a little and stops; below 45 kg/m3 or 150 N it sinks through under a leaning elbow, above 55 kg/m3 or 190 N it reads as hard under the ulna. The core is covered with a fixed, sewn-closed 100% polyester milk-silk knit (200-220 gsm) made from fabric certified to OEKO-TEX Standard 100 by the mill, uncoated (no PU or 'leather' film anywhere, F16), cut with its stretch across the roll, sewn as a sleeve over the bare core with the rubber base panel (I3) stitched in on four sides and no flame bonding or adhesive between knit and foam; it is not removable and is cleaned by wiping with a damp cloth and mild soap, the care step drawn on the card and shown in image 4. A revised profile cutting template of the same class as the existing US$230 one (F25).",
+      "fixes_complaint_clusters": [
+        "C1",
+        "C3"
+      ],
+      "improves_needs": [
+        "N1",
+        "N2",
+        "N5"
+      ],
+      "improves_gates": [
+        "gate.image_orientation",
+        "gate.image_fit",
+        "gate.price_vs_anchor",
+        "gate.title_scan"
+      ],
       "kano_class": "performance",
-      "triz_or_erric_tags": ["triz.taking_out", "triz.local_quality", "erric.eliminate", "erric.create", "law.shape_memory", "kahneman.loss_aversion"],
+      "triz_or_erric_tags": [
+        "triz.taking_out",
+        "triz.local_quality",
+        "erric.eliminate",
+        "erric.create",
+        "law.shape_memory",
+        "kahneman.loss_aversion"
+      ],
       "thumbnail_visibility": "high",
       "cost_tier": "tooling",
       "priority": "now",
       "prior_art_risk": "low",
       "prior_art_reason": "One-piece L foam rails are public domain (EdgeRest F1, ArmCloud F5, and the USPTO L-section PU supporter competition found); only our ornamental profile (R20 roll on a 26 mm corner section, the 3.5-degree wedge thick at the desk edge, R6 relief, 45 mm lip) is what a design application would claim, and that is the moat, not a risk; nothing is filed yet.",
-      "test_that_proves_it": "Edge-load bottoming test: pad seated on a 25 mm square laminate edge and on a 38 mm R5 eased edge; a 25 mm wide rigid bar (ulna simulant) loaded at 30 N across the corner for 60 min at 35 C; residual foam over the desk corner >= 8 mm by probe from the 22 mm start, versus the folded 15 mm 2-pack (F7) which reads 0 mm at the fold. Then ISO 3385 80,000-cycle fatigue on the roll zone with <= 5% thickness loss, and goniometer wrist-extension on five users at two keyboard heights (home row about 22 mm and about 38 mm above the desk) versus a flat 20 mm pad: expected 2-4 degrees less extension on the low keyboard from the 3.5-degree decline toward the keys, no gain expected on the tall keyboard; the test decides whether any gain survives there, and the listing names the keyboards it suits.",
-      "how_it_looks_in_main_image": "Low front-left angle: a solid black L with a thick rounded roll wrapped over a pale maple desk edge, visibly thickest at the roll and tapering gently toward the keyboard, no fold line anywhere, the lip flat against the desk face, a bare forearm lying across the roll with daylight visible between the skin and the desk corner.",
-      "buyer_sentence": "Get the pair that does not fold: it is one solid piece that wraps the edge with the better part of an inch of foam right over the corner, so the corner of your desk just stops existing by the second day.",
+      "test_that_proves_it": "Edge-load bottoming test: pad seated on a 25 mm square laminate edge and on a 38 mm R5 eased edge; a 25 mm wide rigid bar (ulna simulant) loaded at 30 N across the corner for 60 min at 35 C; residual foam over the desk corner >= 8 mm by probe from the 22 mm start, versus the folded 15 mm 2-pack (F7) which reads 0 mm at the fold. Foam lot sheets from a third-party lab: ISO 845 density 45-55 kg/m3, ISO 2439 25% IFD 150-190 N, ISO 1856 compression set <= 5% (70 C, 22 h, 50%), ISO 3385 80,000-cycle fatigue on the roll zone with <= 5% thickness loss and <= 20% hardness loss (the HR failure is softening, not denting, so the hardness limit is the one that matters). Then goniometer wrist-extension on five users at two keyboard heights (home row about 22 mm and about 38 mm above the desk) versus a flat 20 mm pad: expected 2-4 degrees less extension on the low keyboard from the 3.5-degree decline toward the keys, no gain expected on the tall keyboard; the test decides whether any gain survives there, and the listing names the keyboards it suits. If the bottoming, set or fatigue gate fails, I2 is pulled forward (version_plan.v2_later).",
+      "how_it_looks_in_main_image": "Low front-left angle: a solid black L with a thick rounded roll wrapped over a pale maple desk edge, visibly thickest at the roll and tapering gently toward the keyboard, no fold line and no seam on the roll, one smooth matte knit, the lip flat against the desk face, a bare forearm lying across the roll with daylight visible between the skin and the desk corner.",
+      "buyer_sentence": "Get the pair that does not fold: it is one solid block of foam that wraps the edge with the better part of an inch right over the corner, so the corner of your desk just stops existing by the second day, and it springs back when you lift your arm instead of holding a dent.",
       "durability_signal": "reassures",
       "five_year_test": {
         "use_cycle": "Hooked over the edge once and left there; lifted and re-seated two to four times a day for wiping or a desk move (about 5,000 re-seats in five years); a forearm placed on the roll 50-80 times a day, 250 days a year (about 75,000 load cycles) at 1.5 kg static with 5-10 kg leaning transients; skin at 33 C and summer rooms at 30 C; sleeves and a bare forearm dragging across the roll on every slide from keys to mouse; dust and skin oil settling on the roll.",
         "failure_modes": [
           "The category's fold hinge: the cover splits and the foam crumbles at the fold, which is also exactly where there is no foam over the desk corner (C1); eliminated by having no fold",
-          "Permanent set in the top layer at the roll where the ulna always lands (N5)",
+          "Fatigue softening or compression set of the single HR core at the roll where the ulna always lands, so the 26 mm roll loses height and the arm finds the corner again by year three (N5, C1)",
           "Lip rides up or the pad sits crooked on a thick or eased edge and then creeps (N2, C3)",
-          "Cover abraded at the inside corner by a sharp laminate corner until the knit fuzzes and splits"
+          "Cover abraded at the inside corner by a sharp laminate corner until the knit fuzzes and splits",
+          "The fixed knit over the roll pills, shines and loads with skin oil under sleeve drag, and cannot be washed (the wear part is now the pad's life; see durability_review)"
         ],
-        "design_answer": "Continuous foam through the corner, with the section thickened to 26 mm on both legs at the corner and the R20 roll centre moved 6 mm outboard of the inside corner, so the arm bridges about 22 mm of foam over the desk corner (about 12 mm of HR core under the 10 mm memory shell) with the 6 mm relief below it; a 45 mm lip (covers a 38 mm desk fully) with rubber on its inner face so it hugs the desk face along its whole drop; the 6 mm inside-corner relief so the desk corner never point-loads the cover and an eased edge up to R5 still seats flat; the wedge runs thick-to-thin from the desk edge (26 mm) to the keyboard edge (20 mm): its extra foam is corner foam, and the 20 mm keyboard edge keeps the wrist about level with a low keyboard's home row with the forearm sloping gently down to the keys, so the wrist is not bent upward to reach them (fear 5).",
-        "fit_range": "Desk tops 18-38 mm thick (0.7-1.5 in), square or eased edges up to R5, with 50 mm of clear desk face below the edge (no apron or keyboard tray right under the edge); any adult forearm; keyboards whose home row sits about 20-35 mm above the desk (low-profile to standard), which the 20 mm keyboard edge is sized to, while on a tall mechanical board with its feet up the wrist sits a little below the keys, as on any 20 mm pad; not for full bullnose edges, stated as the honest limitation."
+        "design_answer": "Continuous foam through the corner, with the section thickened to 26 mm on both legs at the corner and the R20 roll centre moved 6 mm outboard of the inside corner, so the arm bridges about 22 mm of one-piece HR foam over the desk corner with the 6 mm relief below it; one HR polyurethane core at 50 kg/m3 (45-55) and 25% IFD 150-190 N with a support factor of at least 2.4, chosen because HR foam holds compression set under 5% and does not creep under a nine-hour static load the way a single slow-rebound layer does, and because one solid body has no bond line to lift at the roll; a 45 mm lip (covers a 38 mm desk fully) with rubber on its inner face so it hugs the desk face along its whole drop; the 6 mm inside-corner relief so the desk corner never point-loads the cover and an eased edge up to R5 still seats flat; the wedge runs thick-to-thin from the desk edge (26 mm) to the keyboard edge (20 mm): its extra foam is corner foam, and the 20 mm keyboard edge keeps the wrist about level with a low keyboard's home row with the forearm sloping gently down to the keys, so the wrist is not bent upward to reach them (fear 5); a fixed uncoated knit sewn as a sleeve, not laminated, so there is nothing between fabric and foam to delaminate, go tacky or smell. What is traded against the two-layer build: the slow sink and the pressure-spreading of a memory top, so the first touch is firmer; what is kept is the thing C1 is about, foam that is still there at 4 pm.",
+        "fit_range": "Desk tops 18-38 mm thick (0.7-1.5 in), square or eased edges up to R5, with 50 mm of clear desk face below the edge (no apron or keyboard tray right under the edge); forearm loads from a 50 kg to a 120 kg adult, including leaning, which the 150-190 N IFD band and the support factor are sized to; keyboards whose home row sits about 20-35 mm above the desk (low-profile to standard), which the 20 mm keyboard edge is sized to, while on a tall mechanical board with its feet up the wrist sits a little below the keys, as on any 20 mm pad; not for full bullnose edges, stated as the honest limitation."
       }
     },
     {
       "idea_id": "I2",
-      "name": "Two-layer core: HR foam spring under a 10 mm slow-rebound top",
+      "name": "Two-layer core (v1.1): HR foam spring under a 10 mm slow-rebound top",
       "role": "supporting",
       "aspect": "comfort",
-      "mechanism": "The L core is high-resilience polyurethane foam at 45 kg/m3 (ILD about 35 at 40%), contour-cut from slab as the full L including the 26 mm corner section; over it sits a 10 mm slow-rebound memory-foam shell at 60 kg/m3, 3-5 s recovery, contour-cut from slab as its own 10 mm L shell (not a bent sheet) covering the top, the R20 roll and the outer lip face. The bond is a sprayed solvent-free water-based polyurethane-dispersion foam adhesive on the core's three outer faces, the shell laid on and the pair seated for the adhesive's set time in a 300 mm contour cradle (a CNC-cut HDPE or plywood negative of the top, roll and lip profile) under a light press, which is how furniture and mattress fabricators bond foam round a radius; a laminated web is a flat-bed process that cannot follow the roll, and flame lamination and solvent spray glue are excluded. The memory layer spreads the pressure of the ulna and elbow; the HR layer is the spring that stops the arm sinking to the wood after an hour (the viscoelastic creep that makes a 20 mm all-memory pad bottom out), and at the corner it is the HR core that carries the load: about 12 mm of HR under the 10 mm shell on the diagonal over the desk corner.",
-      "fixes_complaint_clusters": ["C1"],
-      "improves_needs": ["N1", "N5"],
-      "improves_gates": ["gate.image_2_to_6", "gate.bullets", "gate.brand_trust"],
+      "mechanism": "A v1.1 upgrade over I1's single HR core, or pulled into v1 if that core fails its gates. The L core is high-resilience polyurethane foam at 45 kg/m3 (ILD about 35 at 40%), contour-cut from slab as the full L including the 26 mm corner section; over it sits a 10 mm slow-rebound memory-foam shell at 60 kg/m3, 3-5 s recovery, contour-cut from slab as its own 10 mm L shell (not a bent sheet) covering the top, the R20 roll and the outer lip face. The bond is a sprayed solvent-free water-based polyurethane-dispersion foam adhesive on the core's three outer faces, the shell laid on and the pair seated for the adhesive's set time in a 300 mm contour cradle (a CNC-cut HDPE or plywood negative of the top, roll and lip profile) under a light press, which is how furniture and mattress fabricators bond foam round a radius; a laminated web is a flat-bed process that cannot follow the roll, and flame lamination and solvent spray glue are excluded. The memory layer spreads the pressure of the ulna and elbow; the HR layer is the spring that stops the arm sinking to the wood after an hour (the viscoelastic creep that makes a 20 mm all-memory pad bottom out), and at the corner it is the HR core that carries the load: about 12 mm of HR under the 10 mm shell on the diagonal over the desk corner.",
+      "fixes_complaint_clusters": [
+        "C1"
+      ],
+      "improves_needs": [
+        "N1",
+        "N5"
+      ],
+      "improves_gates": [
+        "gate.image_2_to_6",
+        "gate.bullets",
+        "gate.brand_trust"
+      ],
       "kano_class": "must_be",
-      "triz_or_erric_tags": ["triz.composite_materials", "triz.local_quality", "erric.raise", "cialdini.authority", "kano.must_be"],
+      "triz_or_erric_tags": [
+        "triz.composite_materials",
+        "triz.local_quality",
+        "erric.raise",
+        "cialdini.authority",
+        "kano.must_be"
+      ],
       "thumbnail_visibility": "medium",
       "cost_tier": "dimes",
-      "priority": "now",
+      "priority": "later",
       "prior_art_risk": "low",
       "prior_art_reason": "Dual-density foam stacks are standard in mattresses and seat cushions; nothing to own, nothing to infringe.",
       "test_that_proves_it": "ISO 845 density (45 and 60 kg/m3), ISO 2439 indentation hardness, ISO 1856 compression set <= 5% (70 C, 22 h, 50%), ISO 3385 dynamic fatigue 80,000 cycles with <= 20% hardness loss and <= 5% thickness loss, and ASTM D903 peel of the sprayed shell-to-core bond >= 1 N/cm after 500 h at 40 C / 80% RH on a strip cut from the roll zone of a cradle-bonded pad (not a flat coupon); recovery time 3-5 s measured by thumb-press at 23 C.",
-      "how_it_looks_in_main_image": "Only in image 3: a sectioned end of one pad seated on a desk corner, showing the black knit, the pale 10 mm top layer and the charcoal core as two clean bands following the roll, the 6 mm relief at the inside corner, a thumb pressing the top next to a steel ruler and the foam not reaching the desk.",
+      "how_it_looks_in_main_image": "Not in the v1 images. In the v1.1 image 2: a sectioned end of one pad seated on a desk corner, showing the black knit, the pale 10 mm top layer and the charcoal core as two clean bands following the roll, the 6 mm relief at the inside corner, a thumb pressing the top next to a steel ruler and the foam not reaching the desk.",
       "buyer_sentence": "Your arm sinks a little and then stops; at 4 pm it still feels like it did at 9, because there is a springy layer under the soft one.",
       "durability_signal": "reassures",
       "five_year_test": {
@@ -79,23 +125,39 @@
       "name": "Stitched-in rubber base: one continuous sheet on both faces of the L, no strips",
       "role": "supporting",
       "aspect": "reliability",
-      "mechanism": "The non-slip base is a single panel of woven polyester scrim with a 1.2 mm solid natural-rubber blend hot-vulcanised through the weave, so the rubber is mechanically keyed into the fabric with no adhesive layer to fail. One continuous panel runs from the keyboard edge, under the top, round the R6 inside-corner relief and down the inner face of the lip to its bottom, so the L grips the desk top and the desk face with the same rubber. The panel is sewn into the cover on all four sides (both end caps, the keyboard edge and the zip tape along the lip bottom), so a corner is held by a seam, not by glue, and nothing adhesive ships in the box.",
-      "fixes_complaint_clusters": ["C3"],
-      "improves_needs": ["N4", "N5", "N2"],
-      "improves_gates": ["gate.image_2_to_6", "gate.reviews_negative_first", "gate.qna"],
+      "mechanism": "The non-slip base is a single panel of woven polyester scrim with a 1.2 mm solid natural-rubber blend hot-vulcanised through the weave, so the rubber is mechanically keyed into the fabric with no adhesive layer to fail. One continuous panel runs from the keyboard edge, under the top, round the R6 inside-corner relief and down the inner face of the lip to its bottom, so the L grips the desk top and the desk face with the same rubber. The panel is sewn into the cover on all four sides (both end caps, the keyboard edge and the lip-bottom seam), so a corner is held by a seam, not by glue, and nothing adhesive ships in the box.",
+      "fixes_complaint_clusters": [
+        "C3"
+      ],
+      "improves_needs": [
+        "N4",
+        "N5",
+        "N2"
+      ],
+      "improves_gates": [
+        "gate.image_2_to_6",
+        "gate.reviews_negative_first",
+        "gate.qna"
+      ],
       "kano_class": "must_be",
-      "triz_or_erric_tags": ["triz.universality", "triz.taking_out", "erric.eliminate", "law.shape_memory", "kahneman.peak_end"],
+      "triz_or_erric_tags": [
+        "triz.universality",
+        "triz.taking_out",
+        "erric.eliminate",
+        "law.shape_memory",
+        "kahneman.peak_end"
+      ],
       "thumbnail_visibility": "medium",
       "cost_tier": "cents",
       "priority": "now",
       "prior_art_risk": "low",
       "prior_art_reason": "Rubber-backed woven fabric sewn as a base panel is how mousepads and bath mats are made; the only novelty is extending it round the inside corner of an L, which is a pattern change, not an invention.",
-      "test_that_proves_it": "ASTM D1894 static coefficient of friction >= 0.8 on glass, glossy laminate, oak, painted MDF and bamboo at 23 C and 35 C; a 20 N sideways push at the top on glass with zero slip, repeated 1,000 times on a chair-push-off rig with < 2 mm cumulative creep; rubber-to-scrim peel >= 2 N/mm (ASTM D903) after 30 d at 40 C; 20 cold washes with no edge lift; seam strength ISO 13935 >= 150 N.",
+      "test_that_proves_it": "ASTM D1894 static coefficient of friction >= 0.8 on glass, glossy laminate, oak, painted MDF and bamboo at 23 C and 35 C; a 20 N sideways push at the top on glass with zero slip, repeated 1,000 times on a chair-push-off rig with < 2 mm cumulative creep; rubber-to-scrim peel >= 2 N/mm (ASTM D903) after 30 d at 40 C; 50 damp-wipe cycles with mild soap and 30 d at 40 C / 80% RH with no edge lift; seam strength ISO 13935 >= 150 N.",
       "how_it_looks_in_main_image": "Image 3: one pad flipped to show a single charcoal rubber sheet running edge to edge under the top and down the lip with no dots, no strips and no glue, a finger shoving it sideways on a glass desk and it not moving.",
       "buyer_sentence": "You hook it on once, shove off the desk to roll back, and it is still exactly where you left it, with nothing stuck to your furniture.",
       "durability_signal": "reassures",
       "five_year_test": {
-        "use_cycle": "Static friction loaded 75,000 times by arm placements and 2-3 chair push-offs an hour; lifted and re-seated about 5,000 times, flexing the panel round the inside corner each time; sits on laminate, glass, oak or painted MDF at 20-30 C; wiped with the desk cloth weekly; cold-washed about 20 times with the cover; ozone and heat age the rubber slowly indoors.",
+        "use_cycle": "Static friction loaded 75,000 times by arm placements and 2-3 chair push-offs an hour; lifted and re-seated about 5,000 times, flexing the panel round the inside corner each time; sits on laminate, glass, oak or painted MDF at 20-30 C; wiped with a damp cloth weekly (the cover is fixed, so the panel is never washed); ozone and heat age the rubber slowly indoors.",
         "failure_modes": [
           "Base peels and curls at a corner, the buyer's mousepad memory, because glue between fabric and rubber let go (N5)",
           "Rubber cracks at the inside-corner crease after thousands of re-seats",
@@ -103,27 +165,42 @@
           "Lip rubber lifts at its bottom edge and the lip curls away from the desk face"
         ],
         "design_answer": "Rubber keyed through the scrim by hot vulcanisation (no glue line), the scrim captured in seams on all four edges so a corner cannot start to lift; the crease replaced by an R6 bend (about 10% surface strain in 1.2 mm rubber, far below the natural-rubber fatigue threshold); the panel carried the full 45 mm down the lip so the lip is held along its whole drop; a solid non-marking natural-rubber blend rather than dots or a tacky gel.",
-        "fit_range": "Holds on the five named surfaces at 23-35 C under a 20 N sideways shove; rated for cold wash and air dry (no tumble dryer), stated on the card."
+        "fit_range": "Holds on the five named surfaces at 23-35 C under a 20 N sideways shove; wipe-clean with a damp cloth, never machine washed and never tumble dried, stated on the card."
       }
     },
     {
       "idea_id": "I4",
-      "name": "Wash-it cover: uncoated knit with a hidden coil zip under the lip",
+      "name": "Wash-it cover (v1.1): uncoated knit with a hidden coil zip under the lip",
       "role": "supporting",
       "aspect": "convenience",
-      "mechanism": "The cover is 100% polyester milk-silk knit made from fabric certified to OEKO-TEX Standard 100 (the mill's certificate on file), with no PU or 'leather' coating anywhere (coatings are what hydrolyse and go sticky under skin oil and heat, F16), cut with the stretch direction across the roll. It is a removable sleeve opened by a U-shaped #3 nylon coil zip of about 370 mm: 280 mm along the bottom face of the lip plus about 45 mm up the seam between the lip's outer face and each end cap, all below the desk edge, so the whole outer face of the lip folds open as a flap and the foam L lifts out without being forced through a 20 mm slot (the sofa-cushion-cover opening); the slider parks in a fabric garage at the top of one end-cap seam, the tape ends are bar-tacked and the puller is a nylon cord. Unzip, fold the lip flap open, lift the lip block out and draw the top out of its pocket, cold-wash the cover with its sewn-in base, air dry, refit top first and zip round the U. Weekly it is simply wiped with the desk cloth.",
-      "fixes_complaint_clusters": ["C2"],
-      "improves_needs": ["N3", "N5"],
-      "improves_gates": ["gate.qna", "gate.bullets", "gate.image_2_to_6"],
+      "mechanism": "A v1.1 upgrade over the fixed, sewn-closed wipe-clean cover that ships in v1 (I1). The cover is 100% polyester milk-silk knit made from fabric certified to OEKO-TEX Standard 100 (the mill's certificate on file), with no PU or 'leather' coating anywhere (coatings are what hydrolyse and go sticky under skin oil and heat, F16), cut with the stretch direction across the roll. It is a removable sleeve opened by a U-shaped #3 nylon coil zip of about 370 mm: 280 mm along the bottom face of the lip plus about 45 mm up the seam between the lip's outer face and each end cap, all below the desk edge, so the whole outer face of the lip folds open as a flap and the foam L lifts out without being forced through a 20 mm slot (the sofa-cushion-cover opening); the slider parks in a fabric garage at the top of one end-cap seam, the tape ends are bar-tacked and the puller is a nylon cord. Unzip, fold the lip flap open, lift the lip block out and draw the top out of its pocket, cold-wash the cover with its sewn-in base, air dry, refit top first and zip round the U. Weekly it is simply wiped with the desk cloth.",
+      "fixes_complaint_clusters": [
+        "C2"
+      ],
+      "improves_needs": [
+        "N3",
+        "N5"
+      ],
+      "improves_gates": [
+        "gate.qna",
+        "gate.bullets",
+        "gate.image_2_to_6"
+      ],
       "kano_class": "delighter",
-      "triz_or_erric_tags": ["triz.cheap_short_living", "triz.taking_out", "erric.create", "law.comfort_laziness", "kahneman.availability"],
+      "triz_or_erric_tags": [
+        "triz.cheap_short_living",
+        "triz.taking_out",
+        "erric.create",
+        "law.comfort_laziness",
+        "kahneman.availability"
+      ],
       "thumbnail_visibility": "medium",
       "cost_tier": "dimes",
-      "priority": "now",
+      "priority": "later",
       "prior_art_risk": "low",
       "prior_art_reason": "Zipped removable covers on pillows, seat cushions and keyboard wrist rests are ubiquitous; placing the zip on the lip's underside is a pattern choice, not a protectable mechanism.",
       "test_that_proves_it": "Synthetic-sebum ageing: cover swatches dosed with artificial sebum at 40 C for 14 d, then a tack test (no stickiness) and an odour panel (no plastic smell); ISO 6330 20 wash cycles at 30 C with <= 3% shrink and pilling grade >= 3-4 (ISO 12945 Martindale); zip 500 open-close cycles with no slider jam (about 25x the five-year wash count); seam strength ISO 13935 >= 150 N; and a refit test on the T1 sample: cover off and back on 50 times by an untrained user, plus once after each of the 20 washes, each refit timed at under two minutes, with no tear, no seam opening at the end-cap corners and no shell lift at the roll (probe check after the 50 cycles); if the refit fails, v1 ships the cover sewn closed and wipe-clean and the replacement sleeve becomes the service part.",
-      "how_it_looks_in_main_image": "Image 4, last step: the pad flipped, a hand unzipping round the U under the lip and up its two ends, the lip flap folded open and the cover half off showing the bare two-layer foam L, and the cover going into a washing machine drum.",
+      "how_it_looks_in_main_image": "Not in the v1 images. In the v1.1 image 4, last step: the pad flipped, a hand unzipping round the U under the lip and up its two ends, the lip flap folded open and the cover half off showing the bare two-layer foam L, and the cover going into a washing machine drum.",
       "buyer_sentence": "When it gets grubby you wipe it with the cloth you already use, and twice a year you unzip it and throw the cover in the wash, so it never turns into that tacky gel rest you threw away.",
       "durability_signal": "neutral",
       "five_year_test": {
@@ -143,12 +220,25 @@
       "name": "Spec tag and the two-year flatten-or-peel promise",
       "role": "supporting",
       "aspect": "other",
-      "mechanism": "A 15 x 40 mm pale-grey woven tag sewn into one end-cap seam states the things a mattress listing states: HR 45 / memory 60 kg/m3, 3-5 s recovery, 100% polyester knit, natural-rubber base, 'cold wash, air dry', and the promise 'if the foam flattens or the base peels within two years, we replace it'. The OEKO-TEX line is not on the tag: the certificate belongs to the mill's fabric, not to the finished cover, so the listing bullet says 'cover made from fabric certified to OEKO-TEX Standard 100' and nothing more. The same spec and promise are printed on the card and written into the first bullet, and image 3 is a thumb-on-ruler sectioned pad that shows the numbers are real. The tag is the physical carrier of the spec_edge moat: a $3 factory does not buy a named density and a cloner does not print a promise it cannot keep.",
+      "mechanism": "A 15 x 40 mm pale-grey woven tag sewn into one end-cap seam states the things a mattress listing states: HR foam 50 kg/m3, 25% IFD 150-190 N, 100% polyester knit, natural-rubber base, 'wipe clean, damp cloth', and the promise 'if the foam flattens or the base peels within two years, we replace it'. The OEKO-TEX line is not on the tag: the certificate belongs to the mill's fabric, not to the finished cover, so the listing bullet says 'cover made from fabric certified to OEKO-TEX Standard 100' and nothing more. The same spec and promise are printed on the card and written into the first bullet, and image 3 is a thumb-on-ruler sectioned pad that shows the numbers are real. The tag is the physical carrier of the spec_edge moat: a $3 factory does not buy a named density and a cloner does not print a promise it cannot keep.",
       "fixes_complaint_clusters": [],
-      "improves_needs": ["N5", "N1"],
-      "improves_gates": ["gate.brand_trust", "gate.bullets", "gate.reviews_with_photos"],
+      "improves_needs": [
+        "N5",
+        "N1"
+      ],
+      "improves_gates": [
+        "gate.brand_trust",
+        "gate.bullets",
+        "gate.reviews_with_photos"
+      ],
       "kano_class": "performance",
-      "triz_or_erric_tags": ["cialdini.authority", "cialdini.reciprocity", "sutherland.costly_signal", "erric.create", "post.cognitive_dissonance"],
+      "triz_or_erric_tags": [
+        "cialdini.authority",
+        "cialdini.reciprocity",
+        "sutherland.costly_signal",
+        "erric.create",
+        "post.cognitive_dissonance"
+      ],
       "thumbnail_visibility": "medium",
       "cost_tier": "cents",
       "priority": "now",
@@ -159,7 +249,7 @@
       "buyer_sentence": "It actually tells you the foam density and promises to replace it if it flattens or peels in two years, which no other pad on the page does.",
       "durability_signal": "reassures",
       "five_year_test": {
-        "use_cycle": "The tag sits in an end-cap seam at the lip end, below desk level, touched only when the cover is washed; it is read once at unboxing and again when the buyer writes the review or makes a claim.",
+        "use_cycle": "The tag sits in an end-cap seam at the lip end, below desk level, touched only when the pad is wiped; it is read once at unboxing and again when the buyer writes the review or makes a claim.",
         "failure_modes": [
           "A printed label fades or peels; a woven tag does not",
           "A tag sewn on the top surface would be felt by the arm and would fray; it is in the end-cap seam instead"
@@ -170,21 +260,34 @@
     },
     {
       "idea_id": "I6",
-      "name": "No-smell build: aired foam, no solvent glue, no poly bag",
+      "name": "No-smell build: aired foam, no glue anywhere, no poly bag",
       "role": "hygiene",
       "aspect": "experience",
-      "mechanism": "The C2 smell is VOC off-gassing from fresh PU foam, PU-coated fabric and solvent adhesives, worst in the first 3-14 days and trapped by a sealed poly bag (F16). The build removes each source: foam blocks rest at least 7 days on open racks after foaming before they are cut and covered; the layers are bonded with a sprayed solvent-free water-based polyurethane adhesive, not the solvent spray glue the row uses; the cover has no PU coating; and the pads ship in the kraft box with no poly bag, so the box is not a sealed jar of foam gas when it is opened.",
-      "fixes_complaint_clusters": ["C2"],
-      "improves_needs": ["N3"],
-      "improves_gates": ["gate.reviews_negative_first", "gate.bullets"],
+      "mechanism": "The C2 smell is VOC off-gassing from fresh PU foam, PU-coated fabric and solvent adhesives, worst in the first 3-14 days and trapped by a sealed poly bag (F16). The build removes each source: foam blocks rest at least 7 days on open racks after foaming before they are cut and covered; the v1 pad has no adhesive line at all, because the single HR core (I1) needs no bond, the knit is sewn as a sleeve over the bare foam rather than flame-laminated or glued to it, and the base panel is vulcanised through its scrim and stitched in (I3), so the row's solvent spray glue has nowhere to be; the cover has no PU coating; and the pads ship in the kraft box with no poly bag, so the box is not a sealed jar of foam gas when it is opened.",
+      "fixes_complaint_clusters": [
+        "C2"
+      ],
+      "improves_needs": [
+        "N3"
+      ],
+      "improves_gates": [
+        "gate.reviews_negative_first",
+        "gate.bullets"
+      ],
       "kano_class": "must_be",
-      "triz_or_erric_tags": ["triz.preliminary_action", "erric.eliminate", "kano.must_be", "post.review_trigger", "law.packaging_first_touch"],
+      "triz_or_erric_tags": [
+        "triz.preliminary_action",
+        "erric.eliminate",
+        "kano.must_be",
+        "post.review_trigger",
+        "law.packaging_first_touch"
+      ],
       "thumbnail_visibility": "low",
       "cost_tier": "cents",
       "priority": "now",
       "prior_art_risk": "low",
       "prior_art_reason": "Resting foam and avoiding solvent adhesives are process choices with no ownership; nothing to search.",
-      "test_that_proves_it": "Sealed 24 h chamber sniff test on production pads (ISO 16000-style small chamber or a five-person panel): no perceptible odour at one hour out of the box; the supplier's process sheet showing the 7-day rest and the water-based adhesive's safety data sheet (no solvent), audited on the first lot.",
+      "test_that_proves_it": "Sealed 24 h chamber sniff test on production pads (ISO 16000-style small chamber or a five-person panel): no perceptible odour at one hour out of the box; the supplier's process sheet showing the 7-day rest and confirming no adhesive and no flame lamination anywhere in the cover assembly, audited on the first lot.",
       "how_it_looks_in_main_image": "Invisible in the tile; in the packaging shot the pads lie bare in the kraft box with no plastic bag, which is what the buyer notices in the first ten seconds.",
       "buyer_sentence": "You open the box and it smells of nothing, not like a new shower curtain in your face for two weeks.",
       "durability_signal": "neutral",
@@ -192,9 +295,9 @@
         "use_cycle": "Off-gassing is a first-two-weeks event, but a coated cover and a solvent glue line keep releasing and then degrade under 33 C skin and summer heat for years, which is the stickiness the buyer remembers.",
         "failure_modes": [
           "Fresh foam sealed in a poly bag arrives smelling of plastic and the review is written in week one (C2)",
-          "Solvent adhesive line hydrolyses, softens and lets the layers slide after a hot summer"
+          "The row's solvent glue line between foam and base, or a flame-laminated cover, hydrolyses, softens and smells after a hot summer; eliminated, because there is no glue line in the v1 pad"
         ],
-        "design_answer": "7-day open-rack rest before covering, a sprayed solvent-free water-based PU bond with a humidity-aged peel gate, an uncoated knit, and a box with no bag, so there is no sealed volume to concentrate what little remains.",
+        "design_answer": "7-day open-rack rest before covering, a sewn sleeve with no adhesive or flame bond between knit and foam, a stitched-in vulcanised base, an uncoated knit, and a box with no bag, so there is no sealed volume to concentrate what little remains.",
         "fit_range": "Covers the first-sixty-seconds and the three-week review window (Stage 4-5), the period that writes the rating."
       }
     },
@@ -205,10 +308,22 @@
       "aspect": "convenience",
       "mechanism": "Two 10 x 3 mm N35 neodymium discs, Ni-Cu-Ni plated, are sewn into pockets inside each end cap in the lip block, below desk level where no arm ever lands, poles arranged so either end of either pad attracts the other. Butted together the pair becomes one continuous 600 mm rail that spans keyboard and mouse with no gap at the elbow (the long rail's benefit, F1/F5); pulled apart they flank the keyboard. The pockets are sewn into the end-cap seam so the magnets stay captive through washing.",
       "fixes_complaint_clusters": [],
-      "improves_needs": ["N6"],
-      "improves_gates": ["gate.image_2_to_6", "gate.qna", "gate.variations"],
+      "improves_needs": [
+        "N6"
+      ],
+      "improves_gates": [
+        "gate.image_2_to_6",
+        "gate.qna",
+        "gate.variations"
+      ],
       "kano_class": "delighter",
-      "triz_or_erric_tags": ["triz.merging", "triz.universality", "triz.mechanics_substitution", "erric.create", "ariely.relativity"],
+      "triz_or_erric_tags": [
+        "triz.merging",
+        "triz.universality",
+        "triz.mechanics_substitution",
+        "erric.create",
+        "ariely.relativity"
+      ],
       "thumbnail_visibility": "medium",
       "cost_tier": "dimes",
       "priority": "later",
@@ -231,35 +346,33 @@
     }
   ],
   "durability_review": {
-    "weakest_point": "The R20 roll at the outer corner of the L: the 10 mm slow-rebound shell over about 12 mm of HR core, above the 6 mm relief, exactly where the forearm bridges the desk edge; it takes every placement, every lean, every sleeve drag and all the skin oil, and it is where the sprayed shell-to-core bond would be in peel if the memory layer were a bent sheet.",
-    "physics": "Force: the whole forearm (1.5 kg, with 5-10 kg leaning spikes) comes in through a 25 mm wide strip of foam that sits directly over the desk corner, about 22 mm deep on the diagonal with 6 mm of air under it; the rest of the top sees a tenth of that pressure. That strip is compressed about 75,000 times in five years and held under load nine hours a day, so it is where compression set and fatigue show first, and it is why the section is 26 mm there and 20 mm at the wrist. Wear: the arm and sleeve slide along the pad on every move from keys to mouse, so the knit over the roll is abraded most and loads up with skin oil and dust, which then migrate into the top millimetres of foam. Heat: skin at 33 C and a 30 C room soften the viscoelastic layer and age any adhesive line; winter cold stiffens it. Flex: the base panel bends round the inside corner on about 5,000 lift-and-reseat cycles, and the end-cap seams are pulled at their inside-corner turn each time the cover comes off. The zip runs along the lip bottom and up the two lip end caps, all below desk level, and is never loaded; the magnets (v2) sit below desk level. Nothing in the product is a hinge, a snap or an adhesive bond to furniture.",
+    "weakest_point": "The fixed knit over the R20 roll: the 200-220 gsm polyester fabric a bare forearm and a sleeve cuff slide across on every move from keys to mouse, loaded with skin oil and desk dust, now sewn shut over the core with no zip, so it can be wiped but never washed or replaced; the wear part has become the pad's life.",
+    "physics": "Force: the forearm (1.5 kg, with 5-10 kg leaning spikes) comes in through a 25 mm wide strip of foam directly over the desk corner, about 22 mm of HR foam on the diagonal with 6 mm of air under it; at about 10 kPa static the 150-190 N IFD core closes roughly 40% and holds there all day because HR foam creeps little, and a leaning spike closes it to 5-8 mm for a second and lets go; that strip is compressed about 75,000 times in five years, so fatigue softening of the single core (up to 20% hardness loss) shows there first, which the ISO 3385 gate and the card's thickness ruler watch. Shear: every chair push-off (20 N, 2-3 an hour, about 25,000 in five years) goes from the desk into the rubber, through the vulcanised scrim into the four seams that hold the base panel, and from the seams into the knit and the foam; the end-cap seam's 90-degree turn at the inside corner carries that shear while the 1.2 mm rubber flexes round the R6 relief on about 5,000 re-seats, so it is the one seam that sees shear and flex together, and with the cover sewn shut it is a permanent load path nobody can inspect at a refit. Wear: the arm and sleeve drag along the roll on every slide, so the knit there is abraded most, pills and goes shiny first, and takes the skin oil that migrates into the top millimetres of foam over the years; a wipe removes the surface film but not what is in the fibre, and the buyer who threw away a tacky gel rest reads a greasy, shiny roll as the same failure (C2, N3). Heat: skin at 33 C and a 30 C room soften the foam a little and age the rubber slowly; there is no adhesive line left in the product to hydrolyse. Nothing in the product is a hinge, a snap, a zip, a bond line or an adhesive to furniture.",
     "five_year_verdict": "survives",
     "changes_made": [
-      "The memory top layer is now contour-cut as its own 10 mm L shell instead of a flat sheet bent round the R20 roll, removing the standing tension that would peel the bond at the roll over hot summers.",
-      "The shell-to-core bond changed from a laminated web (first flame lamination, then a PUR hot-melt web, both flat-bed processes that cannot follow a curved shell round an R20 roll) to a sprayed solvent-free water-based polyurethane-dispersion adhesive with the shell seated in a 300 mm contour cradle under a light press; the gate stays at >= 1 N/cm peel after 500 h at 40 C / 80% RH, now cut from the roll zone of a cradle-bonded pad, and the solvent-free adhesive still serves the no-smell build.",
-      "The corner was re-sectioned after this review: the first drawing had 20 mm walls with the R20 roll centred on the inside corner, which left 14 mm of foam over the desk corner once the R6 relief was cut, only 4 mm of it HR; both legs are now 26 mm thick at the corner with the roll centre moved 6 mm outboard on each axis, so the diagonal carries about 22 mm of foam with about 12 mm of HR core under the 10 mm shell, and the wedge is reversed to run thick-to-thin from the desk edge (26 mm) to the keyboard edge (20 mm), so its extra foam is corner foam rather than a wrist lift against a low keyboard.",
-      "Inside-corner relief opened from R3 to R6 so the rubber base panel bends at a 6 mm radius (about 10% surface strain in 1.2 mm rubber) instead of creasing to a crack over 5,000 re-seats.",
-      "The base panel extended to the full 45 mm lip height (first sketch stopped at 30 mm) so the lip grips the desk face along its whole drop and its bottom edge cannot curl outward.",
-      "End-cap seams bar-tacked at the inside-corner turn with the seam allowance clipped, because the cover-off and cover-on pull concentrates there and a plain seam would open at the corner first.",
-      "The zip opening lengthened from a 280 mm slot along the lip bottom to a U of about 370 mm that continues up both lip end-cap seams, so the lip face opens as a flap and the bonded foam L is never forced through a 20 mm slot (which would put the shell bond in peel at the roll); the zip keeps its fabric garage for the parked slider, bar-tacked tape ends and a cord puller instead of a metal one, so the one mechanism in the product can neither jam nor scratch a desk.",
-      "Knit cut with its stretch direction across the roll so the fabric sits under 10% stretch over R20 and does not thin, shine or split there first; the cover is made removable and replaceable so the knit, the wear part, is serviceable rather than the pad's life limit."
+      "The knit is re-specified as a structural part, not a serviceable one: 200-220 gsm milk-silk polyester (up from the sample's 180 gsm class), Martindale abrasion >= 20,000 cycles with no thread break (ISO 12947-2) and pilling grade >= 3-4 (ISO 12945-2) written on the fabric purchase order, and the 14-day synthetic-sebum tack and odour test kept on the fixed knit because it can never be washed out.",
+      "The cover is sewn as a sleeve over the bare core with no flame lamination or adhesive between knit and foam, so the only bond line left in the earlier build is gone and the no-smell build (I6) has no glue to audit.",
+      "The end-cap seams are sewn with bonded polyester thread, bar-tacked at the inside-corner turn with the seam allowance clipped, and the ISO 13935 >= 150 N seam gate is kept, because the push-off shear from the base panel now runs through a seam the buyer can never open and check; the rubber panel's wash test is replaced by 50 damp-wipe cycles and 30 d at 40 C / 80% RH with no edge lift.",
+      "The single core is specified by number and gated as the thing that decides C1 without I2: HR polyurethane 50 kg/m3 (45-55), 25% IFD 150-190 N, support factor >= 2.4, ISO 1856 compression set <= 5%, ISO 3385 80,000 cycles with <= 5% thickness and <= 20% hardness loss, plus the 30 N / 60 min edge-load bottoming test; any failure pulls I2 forward, and the Limited Warranty's 'flattens' line (20% thickness loss at the roll against the card's printed ruler) is now measured on a 26 mm single core.",
+      "The care step on the card and in image 4 changed from unzip-and-wash to wipe-clean with a damp cloth and mild soap, and the listing states plainly that the cover is fixed and not machine washable; the replacement-cover SKU is deferred with I4 and the Limited Warranty's service part is a replacement pad.",
+      "Kept from the earlier review and still true of this build: the corner re-sectioned to 26 mm on both legs with the R20 roll centre 6 mm outboard, so the diagonal carries about 22 mm of foam instead of 14 mm, and the wedge reversed to run thick-to-thin from the desk edge (26 mm) to the keyboard edge (20 mm); the inside-corner relief opened from R3 to R6 so the 1.2 mm rubber bends at about 10% surface strain instead of creasing; the base panel extended to the full 45 mm lip height; the knit cut with its stretch across the roll so it sits under 10% stretch over R20 and does not thin, shine or split there first."
     ]
   },
   "pillars": {
     "reliability": "Hook it over once: rubber on both faces of the L holds on glass, laminate, oak, painted MDF and bamboo under a 20 N shove with nothing stuck to the desk, and an eased edge up to R5 still seats flat in the relief (C3, N4).",
-    "durability": "No hinge, no snap, no glue to furniture: a one-piece HR core under a 60 kg/m3 memory shell, a vulcanised-through rubber panel captured in seams, a washable replaceable cover, gated by ISO 3385 80,000 cycles and a two-year flatten-or-peel promise (N5).",
-    "uniqueness": "The only 2-pack in the row with no fold: the long rail's solid-corner geometry at 2-pack price, plus a two-tone engineered section a buyer can see in image 3 (erric.create).",
+    "durability": "No hinge, no snap, no zip, no glue anywhere: one solid HR polyurethane core at a named density and IFD, a vulcanised-through rubber panel captured in seams, an uncoated knit sewn closed, gated by ISO 1856 compression set, ISO 3385 80,000 cycles and the edge-load bottoming test, under a two-year flatten-or-peel Limited Warranty (N5).",
+    "uniqueness": "The only 2-pack in the row with no fold: the long rail's solid-corner geometry at 2-pack price, plus a sectioned pad beside a ruler in image 2 showing 22 mm of named-density foam over the desk corner (erric.create).",
     "exclusiveness": "A profile to be filed as a US design application (nothing is on file today), with its spec named on a woven tag and a promise printed in the first bullet; one black SKU, no dropdown, so it is the obvious one to own rather than one of twelve (sutherland.satisficing).",
     "attraction": "A thick black rounded roll wrapped over a pale wood edge with a bare forearm on it and daylight under the arm, which is the buyer's own memory hook, against a row of folded quilted pads (law.delayed_desire)."
   },
   "moat_built_in": [
-    "design_registration: the specific ornamental profile (R20 roll on a 26 mm corner section, the wedge thick at the desk edge, R6 inside relief, 45 mm lip, two-tone section) to be filed as a US design application, with the brand enrolled in Brand Registry; nothing is filed today, 'patent pending' stays off the tag, card and listing until it is, and the application protects year two once it issues rather than the launch; medium, as competition rated it, because the L concept itself is public domain and a cloner can walk around it with a different radius.",
-    "spec_edge: HR 45 / memory 60 kg/m3 named on the tag, a sprayed solvent-free PU bond with a humidity-aged peel gate, a vulcanised-through natural-rubber base with a published COF on five surfaces, an uncoated knit made from fabric certified to OEKO-TEX Standard 100, all tied to a two-year promise; medium, because a $3.09-3.20 factory (F23, F24) buys none of it and it only shows in month three to twelve reviews and in image 3."
+    "design_registration: the specific ornamental profile (R20 roll on a 26 mm corner section, the wedge thick at the desk edge, R6 inside relief, 45 mm lip) to be filed as a US design application, with the brand enrolled in Brand Registry; nothing is filed today, 'patent pending' stays off the tag, card and listing until it is, and the application protects year two once it issues rather than the launch; medium, as competition rated it, because the L concept itself is public domain and a cloner can walk around it with a different radius.",
+    "spec_edge: one HR core at 50 kg/m3 (45-55) and a 25% IFD band named on the tag and backed by ISO 845 / ISO 2439 / ISO 1856 / ISO 3385 lab sheets, a vulcanised-through natural-rubber base with a published COF on five surfaces, an uncoated knit made from fabric certified to OEKO-TEX Standard 100 by the mill and sewn, not laminated, all tied to a two-year Limited Warranty; medium, because a $3.09-3.20 factory (F23, F24) buys none of it and it only shows in month three to twelve reviews and in image 2."
   ],
   "packaging": {
     "tier": "simple",
-    "unboxing_moment": "Lift the kraft lid and smell nothing. The first thing seen is one matte card lying between the two pads, with three line drawings: hook it over the edge, two layouts (either side of the keyboard, or both end to end on one side), unzip and wash. Lift a pad out and it is already an L, solid, no crease, no fold line; squeeze the roll and it springs back in a few seconds. Turn it over: one charcoal rubber sheet edge to edge, down the lip too. No plastic bag, no baggie of adhesive strips rattling, no sticker on the fabric, a small grey woven tag in the end seam with the foam density on it. Ten seconds and the buyer's six silent third-rate tests (buyer.packaging_expectation) have all been passed (law.packaging_first_touch, post.cognitive_dissonance).",
-    "upgrade_vs_category": "Against the category's poly bag with the pads folded flat and a loose adhesive baggie: the pads ship un-folded in their final shape, nested top-to-top in the existing kraft mailer (re-cubed by genius around the nested pair of 26 mm-corner Ls, still intended to pack 30 sets a carton, F25) and closed with a paper seal tab so it counts as sealed retail packaging at FBA prep (the textile prep rule to be confirmed before the box dieline), with no bag, no strips and no sticker. The one card does three jobs (triz.merging): it is the divider that protects the two knit faces in transit, the fit and care guide the buyer asked for, and the review trigger: the back carries the spec, the fit range (18-38 mm, square or eased, not bullnose), the two-year promise and a QR to register it, so the delight of the first ten seconds lands next to the ask (post.review_trigger). Cheaper than JIKIOU's strips, and it reads as a maker who trusts the base.",
+    "unboxing_moment": "Lift the kraft lid and smell nothing. The first thing seen is one matte card lying between the two pads, with three line drawings: hook it over the edge, two layouts (either side of the keyboard, or both end to end on one side), and a cloth wiping the roll (the care panel: damp cloth, mild soap, air dry). Lift a pad out and it is already an L, solid, no crease, no fold line, one smooth knit with no zip or opening anywhere; squeeze the roll and it springs straight back. Turn it over: one charcoal rubber sheet edge to edge, down the lip too. No plastic bag, no baggie of adhesive strips rattling, no sticker on the fabric, a small grey woven tag in the end seam with the foam density on it. Ten seconds and the buyer's six silent third-rate tests (buyer.packaging_expectation) have all been passed (law.packaging_first_touch, post.cognitive_dissonance).",
+    "upgrade_vs_category": "Against the category's poly bag with the pads folded flat and a loose adhesive baggie: the pads ship un-folded in their final shape, nested top-to-top in the existing kraft mailer (re-cubed by genius around the nested pair of 26 mm-corner Ls, still intended to pack 30 sets a carton, F25) and closed with a paper seal tab so it counts as sealed retail packaging at FBA prep (the textile prep rule to be confirmed before the box dieline), with no bag, no strips and no sticker. The one card does three jobs (triz.merging): it is the divider that protects the two knit faces in transit, the fit and care guide the buyer asked for (hook, place, wipe), and the review trigger: the back carries the spec, the fit range (18-38 mm, square or eased, not bullnose), the two-year promise and a QR to register it, so the delight of the first ten seconds lands next to the ask (post.review_trigger). Cheaper than JIKIOU's strips, and it reads as a maker who trusts the base.",
     "cost_tier": "cents"
   },
   "color_strategy": {
@@ -268,17 +381,17 @@
     "brand_direction": "A quiet ergonomic-equipment brand: black product, pale wood, grey tag, daylight. It says engineered, honest and made for a working desk; not RGB, not clinic, not luxury."
   },
   "bundle_or_addition": {
-    "what": "A replacement cover (knit sleeve with its sewn-in rubber base) as a separate low-cost companion SKU from month six, and the part shipped under the two-year promise instead of a whole pad. Not in the v1 box and not in the v1 images.",
-    "why_it_wins": "Answers N5 and N3 at the five-year mark: the knit is the wear part, so a year-three buyer refreshes the pad for a few dollars instead of re-buying, and a flatten-or-peel claim costs the founder a cover, not a set (triz.cheap_short_living, sharp.double_jeopardy: plan to be re-found).",
+    "what": "A single replacement pad (one L, not a set) held in US stock as the Limited Warranty's service part and listed from month six as a companion SKU for a third pad or a wide desk; the replacement-cover SKU follows I4 in v1.1. Not in the v1 box and not in the v1 images.",
+    "why_it_wins": "Answers N5 at the five-year mark: a flatten-or-peel claim costs the founder one pad and postage, not a set, and the buyer who wore one pad harder than the other (mouse arm) refreshes one for less than half the set price instead of re-buying; answers N6 for a buyer who wants a third pad on the mouse side (triz.cheap_short_living, sharp.double_jeopardy: plan to be re-found).",
     "cost_tier": "dimes"
   },
   "errc": {
     "eliminate": [
       "The fold or hinge in the pad: the 2-pack row's foldable L (F7, F9) is replaced by a one-piece solid-corner L (I1)",
       "Adhesive strips and dots in the box (JIKIOU's 6-12 pieces, F7) and any adhesive bond to the desk (I3)",
-      "PU or 'leather' coatings, prints and colour or pattern variants (F8): one black uncoated knit SKU (I4)",
+      "PU or 'leather' coatings, prints and colour or pattern variants (F8): one black uncoated knit SKU (I1 cover)",
       "Quilted or 'massage' stitching on the face, which the buyer reads as grime traps and the first place a cover wears through (buyer.durability_instinct)",
-      "The poly bag and any solvent adhesive in assembly (I6)"
+      "The poly bag, and any glue line or flame lamination anywhere in the pad (I6)"
     ],
     "reduce": [
       "Foam bulk: 20 mm at the keyboard edge and 26 mm only at the desk edge, instead of the 30 mm rail, so the wrist is not lifted above a low keyboard (fear 5)",
@@ -286,8 +399,8 @@
       "Packaging to what the founder chose: the existing kraft mailer, one card, no insert, no bag"
     ],
     "raise": [
-      "Foam over the desk corner: about 22 mm of continuous foam on the diagonal at the R20 roll (about 12 mm of HR core under the 10 mm memory shell, above the 6 mm relief) versus 0 mm at a fold (I1)",
-      "Foam grade, named: HR 45 under memory 60 kg/m3 with ISO 1856 and ISO 3385 gates (I2)",
+      "Foam over the desk corner: about 22 mm of continuous HR foam on the diagonal at the R20 roll, above the 6 mm relief, versus 0 mm at a fold (I1)",
+      "Foam grade, named: one HR polyurethane core at 50 kg/m3 (45-55) with a stated 25% IFD band and ISO 1856 / ISO 3385 gates, instead of an unnamed foam (I1, I5)",
       "Base: one vulcanised-through rubber panel on both faces of the L, stitched in, proven on five surfaces (I3)",
       "Proof: a sectioned pad with a ruler, the bare underside on glass, the inside corner close up, a stated limitation and a two-year promise (I5)"
     ],
@@ -295,14 +408,26 @@
       "The long rail's no-fold geometry inside the 2-pack row at 2-pack price (I1)",
       "A 3.5-degree wedge that runs thick-to-thin from the desk edge (26 mm) to the keyboard edge (20 mm), so the extra foam sits over the corner and the forearm slopes gently down to a low keyboard instead of being lifted above it (I1)",
       "An inside-corner relief so eased edges seat flat and the desk corner never point-loads the cover (I1)",
-      "A removable, machine-washable cover with a U-shaped zip hidden under the lip and round its two ends, below desk level where it touches nothing (I4)",
       "A woven spec tag and a flatten-or-peel promise, the first in the row (I5)",
       "A card that is the divider, the fit guide, the care guide and the review trigger in one (packaging)"
     ]
   },
   "version_plan": {
-    "v1_now": ["I1", "I2", "I3", "I4", "I5", "I6"],
+    "v1_now": [
+      "I1",
+      "I3",
+      "I5",
+      "I6"
+    ],
     "v2_later": [
+      {
+        "idea_id": "I2",
+        "unlock_trigger": "Pulled forward into v1 at once if the T1 single-density HR core fails the C1 'feel the edge' bar: the edge-load bottoming test (25 mm bar, 30 N, 60 min at 35 C, residual >= 8 mm over the corner on the 25 mm square and 38 mm R5 edges), ISO 1856 compression set <= 5%, or ISO 3385 80,000 cycles with <= 5% thickness and <= 20% hardness loss (genius premortem[0]); otherwise v1.1, funded from margin once the engine's contribution clears the 15% post-advertising floor at $24.99 (genius idea_rulings I2: about +$0.55 a set, a $30-200 contour cradle and the ASTM D903 humidity-aged peel gate >= 1 N/cm after 500 h at 40 C / 80% RH on a strip from the roll zone). The memory shell is cut as its own L and bonded with the sprayed solvent-free water-based PU dispersion in the contour cradle, never a bent sheet or a flat-bed web."
+      },
+      {
+        "idea_id": "I4",
+        "unlock_trigger": "v1.1 once the lean landed cost is confirmed under the engine's 30% rail ($7.50 a set at $24.99) at MOQ 1,000 on the 26% tariff line (genius: lean-spec EXW <= $4.50 a set in writing), or once more than 5% of reviews and Q&A in any three-month window ask about washing or removing the cover; it ships only after a named SBS or YKK #3 coil on the 370 mm U passes 500 open-close cycles, 20 washes and the 50-refit test by an untrained user, with the cord puller, slider garage and bar-tacked tape ends, and the replacement-cover SKU is listed alongside it (genius idea_rulings I4; the zip obituary in genius premortem). Until then the cover is sewn closed and wipe-clean, and the card shows a wipe, not an unzip."
+      },
       {
         "idea_id": "I7",
         "unlock_trigger": "Three months of reviews or Q&A in which at least 5% mention a gap between the two pads or wanting one long piece, a positive FTO read on magnet-joined cushions, and a confirmed contribution at or above 30% at the launch price so the dimes per set are funded; until then the card and image 4 show the butted-rail layout without magnets."
@@ -313,14 +438,14 @@
     "title_first_60": "Elbow Pad for Desk 2 Pack, No-Fold L Arm Rest, 0.8-1 in Foam",
     "main_image_brief": "Front-left, low angle, pale maple desk with a visibly thick (about 30 mm) square edge, off-white wall, cool daylight. Two identical black solid-corner L pads hooked over the edge either side of a low black keyboard; the nearer pad in near profile so the rounded roll (the thickest point, 26 mm, tapering to 20 mm at the keyboard edge), the 45 mm lip flat against the desk face and the un-folded one-piece shape all read at 300 px; a bare forearm (sleeve pushed up) resting mid-forearm across the roll with clear daylight between the skin and the desk corner. Matte un-quilted knit, no seam on the roll, no fold line, the small grey tag just visible in the end seam. No text, no logo, no props beyond keyboard and desk (gate.image_orientation, gate.image_fit, buyer.memory_hook).",
     "image_briefs_2_to_4": [
-      "Scale: one pad held in profile against a steel ruler showing 300 mm long, 100 mm deep, 26 mm at the desk edge tapering to 20 mm at the keyboard edge, 45 mm lip; beside it a sectioned sample seated on a desk corner showing the black knit, the pale 10 mm memory layer, about 12 mm of charcoal HR core and the 6 mm relief stacked on the diagonal over the corner, 22 mm of foam in all against the ruler, with the rubber base as the last band, and a thumb pressing the top with the foam not reaching the desk (gate.image_2_to_6, cialdini.authority).",
+      "Scale: one pad held in profile against a steel ruler showing 300 mm long, 100 mm deep, 26 mm at the desk edge tapering to 20 mm at the keyboard edge, 45 mm lip; beside it a sectioned sample seated on a desk corner showing the black knit, one solid band of charcoal HR foam about 22 mm deep on the diagonal over the corner above the 6 mm relief, with the rubber base as the last band, and a thumb pressing the top next to the ruler with the foam not reaching the desk (gate.image_2_to_6, cialdini.authority).",
       "Hard case: the pad seated flat on a 38 mm butcher-block with an eased R5 edge, lip flush to the face; the inside corner close up with the knit wrapping the corner and no seam or crease; the pad flipped to show one continuous rubber sheet under the top and down the lip; a finger shoving it sideways on a glass desk and on glossy laminate with no movement; no adhesive anywhere in frame (gate.image_fit, law.shape_memory, N2, N4).",
-      "Install in three steps: hook it over the edge; from above, set the two pads either side of the keyboard, or both end to end on the mouse side (two separate pads; they do not connect); flip, unzip the U under the lip and up its two ends, fold the lip flap open, lift the foam out and drop the cover in the wash, air dry (gate.image_2_to_6, N6, N3)."
+      "Install and care in three steps: hook it over the edge; from above, set the two pads either side of the keyboard, or both end to end on the mouse side (two separate pads; they do not connect); wipe the roll with a damp cloth and mild soap and let it air dry (the cover is fixed, not removable), with a small dimensioned side view of the 18-38 mm edge range and the 50 mm of clear desk face beside it (gate.image_2_to_6, N6, N3, N2)."
     ],
     "honest_limitations": [
       "Fits square or lightly eased desk edges 18-38 mm (0.7-1.5 in) thick with about 50 mm of clear desk face below the edge; not for full bullnose edges or desks with a front apron or keyboard tray right under the edge.",
-      "Cover is cold machine wash and air dry only; the rubber base panel is washed with it, so no tumble dryer; refitting the cover takes a minute or two, like a sofa cushion cover, and is meant for a couple of times a year, not weekly.",
-      "Slow-rebound foam is firmer in a cold room (below about 18 C) and softer in summer; it is a supportive pad, not a squishy gel one.",
+      "The cover is fixed and wipe-clean (damp cloth, mild soap, air dry): it does not come off and is not machine washable, and fabric wear or staining is not covered by the Limited Warranty, which is for foam that flattens or a base that peels.",
+      "The foam is a supportive high-resilience grade that springs back at once; it is firmer at first touch than a slow-sinking memory-foam wrist rest and it is not a squishy gel one.",
       "Fresh foam is aired seven days before covering and ships without a bag, but a faint foam smell can remain for the first day out of the box.",
       "Two separate 300 mm pads: placed end to end they make a continuous run, but they do not connect to each other; a buyer who wants one 24-28 in piece should buy a rail, not this set.",
       "The keyboard edge is 0.8 in (20 mm), sized for low-profile and standard keyboards; on a tall mechanical keyboard with its feet up the wrist sits a little below the keys, as it would on any 0.8 in pad."
@@ -329,11 +454,11 @@
   "image_prompts": [
     {
       "purpose": "main_image",
-      "prompt": "Product photograph for an e-commerce listing, photorealistic, 1:1 square. A pale maple desk with a visibly thick 30 mm square front edge, off-white wall behind, cool neutral daylight from the left, soft shadows. Two identical black L-shaped forearm rest pads are hooked over the front edge of the desk, one either side of a low-profile black keyboard that sits further back. Each pad is one solid piece of matte black smooth polyester knit with no quilting, no stitching on the face, no print and no fold line: a 100 mm deep top that is about 26 mm thick where it rolls over the desk edge and tapers gently to 20 mm at the keyboard edge, a generous rounded roll where it wraps the desk edge, and a 45 mm lip hanging flat against the front face of the desk. Camera low and front-left so the nearer pad is seen almost in profile and its solid L cross-section, rounded roll and lip against the desk face are obvious. A bare adult forearm with a grey sweater sleeve pushed up rests mid-forearm across the roll of the nearer pad, hand relaxed toward the keyboard, with a clear sliver of daylight visible between the skin and the hard desk corner. A tiny pale-grey woven tag is just visible in the end seam of the nearer pad. No text, no logo, no overlays, no other props. Clean, calm, ergonomic-equipment mood."
+      "prompt": "Product photograph for an e-commerce listing, photorealistic, 1:1 square. A pale maple desk with a visibly thick 30 mm square front edge, off-white wall behind, cool neutral daylight from the left, soft shadows. Two identical black L-shaped forearm rest pads are hooked over the front edge of the desk, one either side of a low-profile black keyboard that sits further back. Each pad is one solid piece of matte black smooth polyester knit with no quilting, no stitching on the face, no print, no zip and no fold line: a 100 mm deep top that is about 26 mm thick where it rolls over the desk edge and tapers gently to 20 mm at the keyboard edge, a generous rounded roll where it wraps the desk edge, and a 45 mm lip hanging flat against the front face of the desk. Camera low and front-left so the nearer pad is seen almost in profile and its solid L cross-section, rounded roll and lip against the desk face are obvious. A bare adult forearm with a grey sweater sleeve pushed up rests mid-forearm across the roll of the nearer pad, hand relaxed toward the keyboard, with a clear sliver of daylight visible between the skin and the hard desk corner. A tiny pale-grey woven tag is just visible in the end seam of the nearer pad. No text, no logo, no overlays, no other props. Clean, calm, ergonomic-equipment mood."
     },
     {
       "purpose": "packaging",
-      "prompt": "Photorealistic top-down three-quarter shot in soft daylight on a pale wood desk: a plain unprinted kraft mailer box sized just to the two nested pads, lid open, a torn paper seal tab at its front edge. Inside, two black L-shaped foam forearm pads in matte smooth knit, each thickest at its rounded roll, lie nested top-to-top in their finished L shape, un-folded and un-creased, with no plastic bag anywhere. A single matte off-white printed card lies between them, showing only three small black line pictograms in a row: a pad hooking over a desk edge, two pads placed either side of a keyboard, and a cover being unzipped round the underside of the lip with a washing-machine symbol; no legible text. A hand lifts one pad out by its roll; the second pad is turned to show a single continuous charcoal rubber sheet covering its whole underside and running down the inside of the lip, with no dots, no strips and no adhesive pieces. A small pale-grey woven tag sits in the end seam of one pad. Nothing else in the box. Calm, honest, no-frills unboxing, cool neutral light, no text overlays."
+      "prompt": "Photorealistic top-down three-quarter shot in soft daylight on a pale wood desk: a plain unprinted kraft mailer box sized just to the two nested pads, lid open, a torn paper seal tab at its front edge. Inside, two black L-shaped foam forearm pads in matte smooth knit with no zip or opening anywhere, each thickest at its rounded roll, lie nested top-to-top in their finished L shape, un-folded and un-creased, with no plastic bag anywhere. A single matte off-white printed card lies between them, showing only three small black line pictograms in a row: a pad hooking over a desk edge, two pads placed either side of a keyboard, and a hand wiping the rounded roll of a pad with a small cloth beside a water-drop symbol; no legible text. A hand lifts one pad out by its roll; the second pad is turned to show a single continuous charcoal rubber sheet covering its whole underside and running down the inside of the lip, with no dots, no strips and no adhesive pieces. A small pale-grey woven tag sits in the end seam of one pad. Nothing else in the box. Calm, honest, no-frills unboxing, cool neutral light, no text overlays."
     },
     {
       "purpose": "lifestyle",
@@ -343,8 +468,8 @@
   "sustainability": {
     "claims": [
       {
-        "claim": "Replaceable cover: the wear part (knit plus base panel) can be removed, washed and replaced, so the foam core is kept rather than the whole pad thrown away.",
-        "verification": "The hidden zip on every v1 pad and the replacement-cover SKU listed from month six."
+        "claim": "Built to be kept, not re-bought: one solid HR foam core at a named density and IFD, no glue line to fail, a two-year flatten-or-peel Limited Warranty, and a replacement pad (one L, not a set) as the service part so a claim replaces one pad rather than two.",
+        "verification": "ISO 845, ISO 2439, ISO 1856 and ISO 3385 lab sheets on the production foam lot; the Limited Warranty terms on the card and in the listing; the dated twelve-month photo of one pad in daily use; the replacement-pad SKU listed from month six."
       },
       {
         "claim": "Ships in a paper box with no plastic bag: unprinted kraft mailer closed with a paper seal tab, one paper card, no poly bag, no plastic insert (the wording genius cleared; never 'plastic-free product').",
@@ -367,6 +492,7 @@
     "Pattern and colour variants (F8) and any quilted or 'massage' face stitching: one black smooth SKU, no dropdown, no grime traps.",
     "PU or 'leather' coated surfaces and prints: the cover is an uncoated knit, so the C2 stickiness mechanism is removed rather than managed.",
     "The poly bag: the pads ship bare in the kraft box, which costs less and removes the sealed-jar smell the buyer remembers.",
-    "The 28 in single-rail length and the 30 mm thickness: two 300 mm pieces at 20-26 mm (thick only at the desk edge) cover both forearms without lifting the wrist above a low keyboard."
+    "The 28 in single-rail length and the 30 mm thickness: two 300 mm pieces at 20-26 mm (thick only at the desk edge) cover both forearms without lifting the wrist above a low keyboard.",
+    "The second foam layer (I2) and the zip (I4), for v1: one named-density HR core in a sewn-closed wipe-clean knit ships first, which saves about four minutes of sewing a pad, a bond line, a cradle and the one mechanism that could jam; both come back in v1.1 on the triggers in version_plan."
   ]
 }

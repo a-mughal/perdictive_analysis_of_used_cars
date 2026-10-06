@@ -1,0 +1,175 @@
+{
+ "findings": [
+  {
+   "id": "K1",
+   "file": "scout",
+   "field_path": "scout.fee_inputs.additional_tariff_rate (with fee_inputs.hts_code and fee_inputs.duty_rate)",
+   "severity": "high",
+   "finding": "The whole money section rests on one stale number, and the number is built on a stack that no longer exists in the form described. F22 (low confidence, January 2026 data) stacks MFN + Section 301 + 'IEEPA/reciprocal layers'; as the critic recalls it, the Supreme Court struck the IEEPA tariffs in February 2026 and the replacement layer (a time-limited Section 122 tariff, then whatever followed it) is a different statute at a different rate, so the 17.5 / 30 / 45 assumption text is describing a January 2026 world in October 2026. Separately, the HTS candidate and the 301 tranche are decoupled: 8473.30.5100 ('parts and accessories of ADP machines') comes from a ruling on a keyboard palm rest that is principally used with a computer; a pad sold as 'elbow pad for desk' that sits on the desk edge for any desk work fails the principal-use test a broker will apply, and the likely home is 9404.90.20 (cushions, 6% MFN) on List 4A (7.5%), per scout's own F21 neck-pillow precedent, whereas 8473.30.51 is a List 3 (25%) candidate. So the 'free MFN' line genius uses as the base may be the more expensive route for a China origin (0 + 25% versus 6 + 7.5%), and the tariff range is not tied to the classification at all. The plan does say a broker must confirm it (timeline phase 1, premortem[3], three_sentences[2]); what it does not say is that the base and the HTS line are mutually inconsistent today.",
+   "fix": "One fee fetch (scout's two fee searches are the budget): the current Section 301 list membership and rate for 8473.30.51 and 9404.90.20 (USTR/HTS), and the current status and rate of the post-IEEPA China layer as of October 2026. Rewrite additional_tariff_rate so low/base/high each name a classification and a stack (e.g. low = 9404.90.20 at 6% MFN + 7.5% List 4A + current layer; high = 8473.30.51 at 25% List 3 + current layer) and move duty_rate to match (base 6%, not 0%). Then the broker's written opinion before any deposit, which genius already requires.",
+   "owner_agent": "scout"
+  },
+  {
+   "id": "K2",
+   "file": "innovaty",
+   "field_path": "innovaty.ideas[I1].mechanism (also ideas[I1].five_year_test.design_answer, errc.raise[0], ideas[I1].test_that_proves_it)",
+   "severity": "high",
+   "finding": "The hero's central physical claim is over-stated by its own geometry. With 20 mm walls and a full R20 roll, the roll's arc is centred on the inside corner, so the foam on the diagonal over the desk corner is 20 mm, not '20-28 mm' (28 mm is the un-rolled square corner that was rejected). The R6 inside-corner relief then removes 6 mm of foam at the inner corner, so the desk corner sits in 6 mm of air under 14 mm of foam, and because the memory shell (I2) is 10 mm of that 14 mm, the HR 'spring' that I2 says stops bottoming out is 4 mm thick at exactly the point where C1 happens. The weakest point is correctly located at the roll and the durability_signal 'reassures' is honest against the buyer's list (no fold, continuous corner, one rubber sheet), but the number the title, image 2 and the ERRC line will carry is wrong in the optimistic direction, and the bottoming test (residual >= 8 mm after 60 min at 30 N) is being run against a thinner section than the plan believes. The same fix resolves the 3-degree wedge: the wedge currently puts its extra 5 mm at the keyboard end, which is the wrong end for the low-keyboard fear it cites (fear 5: a thicker wrist end raises the wrist above a low keyboard); it only helps a tall mechanical keyboard, and the goniometer test is run at two keyboard heights, so the honest expectation is a gain at one height and a loss at the other.",
+   "fix": "Move the thickness to the corner: set the roll centre 6-8 mm outboard of the inside corner (top 25-26 mm at the front edge tapering to 20 mm at the keyboard edge, lip 25 mm at the top tapering to 20 mm at the bottom), keep the R6 relief, so the diagonal carries about 20 mm of foam with at least 10 mm of HR core under the 10 mm shell. Restate the figure as '20 mm of foam over the corner' in mechanism, design_answer, errc.raise and image 2; keep the >= 8 mm residual probe test. State the wedge's purpose honestly as corner thickness, and let the goniometer test decide whether any keyboard-end rise survives.",
+   "owner_agent": "innovaty"
+  },
+  {
+   "id": "K3",
+   "file": "genius",
+   "field_path": "genius.three_sentences_to_founder[2] (and premortem[6].mitigation, versions[v1_now].landed_cost_usd.assumption)",
+   "severity": "medium",
+   "finding": "The 'sign nothing until' gate (tariff <= 17.5% and EXW <= $5.00 at MOQ 1,000) is presented as the go condition, but it is a necessary condition, not a sufficient one, and the file never shows the founder the sensitivity that proves it. From genius's own ranges: at $24.99 with EXW $5.00 and 17.5% the set clears about 29% before advertising and about 4% after year-one ads; at 7.5% about 31% and 6%; the engine's 15% post-ad floor is not reached by any combination of the three levers in year one, only at a steady-state ad rate of 15-20% (about 12-14%). Each lever is worth roughly the same ($1.44 a set for 30% -> 7.5% tariff, $1.41 for $6.41 -> $5.00 EXW, $0.85 for $23.99 -> $24.99), so 'which single number' has an honest answer: none alone; the tariff first because it is a fact, free to learn, and decides whether the other two are worth chasing.",
+   "fix": "Add a four-row sensitivity to the landed_cost assumption or the premortem (tariff 7.5 / 17.5 / 30 / 45% at EXW $6.41 and $5.00, pre-ad and post-ad contribution at $24.99) so the engine's single base number is not the only view; reword three_sentences[2] to say the two gates buy about 4-6% after year-one ads and that the 15% floor is a year-two number conditional on reviews bringing ads to 15-20%.",
+   "owner_agent": "genius"
+  },
+  {
+   "id": "K4",
+   "file": "genius",
+   "field_path": "genius.recommended_version_id (with idea_rulings[I2].why, idea_rulings[I4].why, premortem[6].mitigation)",
+   "severity": "medium",
+   "finding": "The recommended version contradicts its own gate. Genius expects the realistic negotiated EXW for the full v1_now spec to be $5.50-6.80 a set at MOQ 1,000 (landed_cost assumption), then rules I2 and I4 'stretch' and keeps them in v1 only if that EXW comes in at or under $5.00 at MOQ 1,000. By genius's own expectation the gate fails and the plan ships v1_lean, yet v1_now is the version the engine scores and the samples and lab tests are budgeted for. The verdict does not change (v1_lean at $24.99 is about 28% pre-ad and 3% post-ad on the same numbers, so the spec is not what breaks the plan, as genius says), but the founder is reading a BOM, a timeline and a lab budget for a version genius does not expect to ship.",
+   "fix": "Either recommend v1_lean and move I2 and I4 to a v1.1 funded from margin (then the lab lines for the PUR peel gate and the zip cycles drop to the v1.1 budget), or set the gate where genius expects the number to land ($5.50-6.80) and say what the plan does at each end. One recommendation, one gate, consistent with each other.",
+   "owner_agent": "genius"
+  },
+  {
+   "id": "K5",
+   "file": "innovaty",
+   "field_path": "innovaty.ideas[I2].mechanism (and durability_review.changes_made[0..1])",
+   "severity": "medium",
+   "finding": "The two-layer core is specified as a 10 mm contour-cut memory shell covering the top, the R20 roll and the outer lip face, bonded to the HR L core with a PUR hot-melt web. PUR web lamination is a flat-bed or nip process; bonding a thin viscoelastic shell around an R20 roll onto a profiled core needs a shaped caul, a heated profile press or a vacuum fixture that neither the $0.14-a-pad line nor the timeline carries, and the quoted supplier's process is a folded flat pad with a glued base (F25). The obvious shortcut, laminate flat then contour-cut the L, puts memory foam on the top only, exposing HR at the roll and the lip face, which changes I2's claim, the two-band section in image 2 and where the shell-to-core bond sits relative to the weakest point.",
+   "fix": "Choose the process on the drawing: (a) flat lamination then contour cut, and restate I2 as 'memory layer on the top surface' with image 2 redrawn; or (b) pour-moulded two-layer viscoelastic/HR L in an aluminium mould (the moulded memory-foam pillow process), which makes the R20 roll and R6 relief exact with no web, no peel gate and no lamination fixture, at a mould cost genius must re-estimate (likely above the $200-1,100 foam-die class). Say which, so genius re-costs the line and the lab list.",
+   "owner_agent": "innovaty"
+  },
+  {
+   "id": "K6",
+   "file": "innovaty",
+   "field_path": "innovaty.ideas[I4].mechanism (and ideas[I4].test_that_proves_it)",
+   "severity": "medium",
+   "finding": "The washable cover's zip runs along the 20 mm-wide bottom face of the lip, bounded on one side by the non-stretch rubber-scrim panel. Getting a laminated one-piece L (100 x 65-70 x 300 mm, HR core that springs back) out through a 280 x 20 mm slot and, harder, back in after a wash, relies entirely on the knit stretching; forcing the 10 mm memory shell through risks delamination at the roll, which is the premortem[0] failure delivered by the customer rather than the factory, and the one-star it writes is on the delighter. The tests prove the zip (500 cycles) and the wash (20 cycles) but never the refit.",
+   "fix": "Open the lip as a flap: a U-shaped zip along the lip bottom and up both end caps (about 370 mm), or a zip across one end cap instead; add to I4's test 'cover off and on 20 times by an untrained user with no delamination, no tear and a seated fit' on the T1 sample; if it fails, ship the wipe-clean closed cover (v1_lean) and sell the replacement sleeve as the service part.",
+   "owner_agent": "innovaty"
+  },
+  {
+   "id": "K7",
+   "file": "innovaty",
+   "field_path": "innovaty.image_prompts[packaging].prompt (and packaging.unboxing_moment, listing_implications.image_briefs_2_to_4[2])",
+   "severity": "medium",
+   "finding": "The magnet dock (I7) hardware stays out of every v1 field, BOM and image, but its benefit leaks: the printed card pictogram shows 'two pads ... with an arrow pushing them together into one long piece', the unboxing text says 'pushed together as one long rail', and image brief 4 says 'push them together into one 600 mm rail'. Without magnets the two pads do not become one piece; they are two pads end to end that separate on the first chair push-off, and a buyer who was shown 'one long piece' on the card writes that they do not connect. This is the I7 promise shipped without the I7 part.",
+   "fix": "Reword all three to 'end to end for a continuous 600 mm run' and add an honest limitation line: 'the two pads sit end to end; they do not connect'. Keep the magnet language for the v2 card.",
+   "owner_agent": "innovaty"
+  },
+  {
+   "id": "K8",
+   "file": "genius",
+   "field_path": "genius.economics.fba_fee_usd (and versions[v1_now].bom[8] mailer line, premortem[2].probability)",
+   "severity": "medium",
+   "finding": "The nested set box cannot be 32 x 11 x 7.5 cm. Two L profiles (100 mm top, 20-25 mm thick; 45 mm lip, 20 mm thick) nest at best as a Z of 120 x 65-70 x 300 mm, so the smallest box is about 31 x 13 x 7.5 cm external (roughly 184 in3, 1.33 lb dimensional weight) and 207 in3 / 1.49 lb with ordinary walls, which is the 1.25-1.5 lb large-standard band, not the 1-1.25 lb band the $5.30 base assumes; the packaging image prompt's 33 x 12 x 7 cm is also too narrow. Premortem[2] prices this exact event at 35% when the base box already cannot exist at 11 cm, and fba_fee_usd is called stale in its assumption but not marked stale.",
+   "fix": "Re-cube with the nested Z (120 x 70 x 300 mm internal plus walls), fetch the 2026 large-standard 1-1.25 and 1.25-1.5 lb rows rather than interpolating, move the base to the row the cube lands in, mark fba_fee_usd 'stale': true until the rate card is read, fix the mailer dims in the BOM and the packaging prompt, and raise premortem[2] to the probability the geometry implies.",
+   "owner_agent": "genius"
+  },
+  {
+   "id": "K9",
+   "file": "genius",
+   "field_path": "genius.premortem[1].mitigation (and tooling_and_nre[5].assumption)",
+   "severity": "medium",
+   "finding": "The clone obituary (probability 0.65, major) is mitigated with 'the design application and Brand Registry on file before launch so exact copies of the registered profile are reportable'. A pending US design application is not enforceable: Amazon's infringement report needs an issued patent number, and design pendency is roughly 16-20 months, so nothing is reportable inside competition's 1-6 month clone window. Competition said this plainly ('protects year two, not launch'); genius contradicts it without saying why. The haircut is still applied by the engine, so the forecast is fine; the mitigation text promises a defence that does not exist in year one.",
+   "fix": "Reword: year-one clone defence is image 3, review velocity and the no-match-below-$19.99 rule only; the design patent protects year two. If year-one enforcement matters, cost USPTO expedited examination for the design (extra fee and a search, roughly $1,500-2,500) in tooling_and_nre[5] and state the expected issue date it buys.",
+   "owner_agent": "genius"
+  },
+  {
+   "id": "K10",
+   "file": "genius",
+   "field_path": "genius.idea_rulings[I5].deciding_number (and regulatory[2], innovaty.bundle_or_addition.why_it_wins)",
+   "severity": "medium",
+   "finding": "The two-year 'if the foam flattens or the base peels we replace it' promise is costed at $0.07 a set as a 2% claim rate on a $3-4 replacement cover. A flatten claim is a foam claim: the cover does not fix it, so the replacement is a pad or a set shipped from US stock (about $5-10 landed plus $5-9 domestic postage, $10-19 a claim), and 'flattens' is undefined, so every subjective claim is honoured; 2-5% then costs $0.20-0.95 a set. It is also a written warranty on a consumer product over $15, which under Magnuson-Moss needs a 'Limited Warranty' designation and pre-sale availability of the terms in the listing, and it is woven into a sewn-in tag that cannot be edited after the first order. Nobody has costed or worded this.",
+   "fix": "Re-cost the promise at a pad-plus-postage claim cost and a 2-5% rate, define 'flattens' measurably on the card (e.g. more than 20% thickness loss at the roll against the printed ruler), designate it 'Limited Warranty' with the terms in the listing and on the card, and keep the tag to the spec line only so the promise wording can be changed without a re-order.",
+   "owner_agent": "genius"
+  },
+  {
+   "id": "K11",
+   "file": "innovaty",
+   "field_path": "innovaty.sustainability.claims[2] (and ideas[I5].mechanism, ideas[I5].test_that_proves_it)",
+   "severity": "medium",
+   "finding": "'OEKO-TEX Standard 100 certified cover fabric' with 'the supplier's OEKO-TEX certificate number printed on the woven tag' misuses the certificate. The certificate and label belong to the mill for the knit article; the finished cover (knit plus nylon coil zip, thread, rubber-scrim base panel and woven tag sewn into one sleeve) is not a certified article unless the maker certifies it, and OEKO-TEX's label rules do not let a downstream maker print the mill's number on its own product as a certification. On Amazon an unsubstantiated certification claim is a suppression risk, and this one is sewn in.",
+   "fix": "Wording: 'cover knit made from fabric certified to OEKO-TEX Standard 100 (certificate on file)' in a bullet only, nothing on the tag; or budget article certification of the finished cover (roughly $1,000-2,500, not in the NRE) if the label itself is wanted.",
+   "owner_agent": "innovaty"
+  },
+  {
+   "id": "K12",
+   "file": "genius",
+   "field_path": "genius.timeline.weeks_to_first_sale (and timeline.phases[2].weeks.assumption)",
+   "severity": "medium",
+   "finding": "The high of 37 weeks 'clears the 39-week rail by two weeks' and carries one extra sample round, but the lab-gate phase's own assumption says a failed peel gate adds a full round (the 500 h humidity ageing alone is three weeks, plus a sample and air freight, about 5-6 weeks), premortem[0] gives that bond a 12% field failure, and K5 adds a lamination process the factory has not run. A high that excludes the one failure the file names is fitted to the rail, not estimated; the honest high is about 43 weeks and the rail breaks in that case.",
+   "fix": "Set high to about 43 weeks (37 plus one failed lab gate) and say that the 39-week rail breaks if the T1 peel gate fails; keep base at 30.",
+   "owner_agent": "genius"
+  },
+  {
+   "id": "K13",
+   "file": "innovaty",
+   "field_path": "innovaty.ideas[I1].prior_art_risk (source: competition.copycat_risk.why and moats[0].why)",
+   "severity": "medium",
+   "finding": "I1's prior-art risk is 'low' because competition 'found USPTO prior art for an L-section polyurethane foam supporter installed along a work-surface edge' and treats it as public domain. No patent or publication number is cited anywhere, so nobody can tell whether it is an expired reference (public domain, which caps the design moat at medium as competition says) or a utility patent still in force (an FTO problem for the hero itself, which would make 'low' wrong). The $400-2,000 FTO line and the $800-3,500 design filing both hang on which it is.",
+   "fix": "Have competition cite the number and its status (filed, issued, expired); if in force, innovaty re-rates I1 and the FTO search is run before the die, not in parallel with the lab gates.",
+   "owner_agent": "orchestrator"
+  },
+  {
+   "id": "K14",
+   "file": "innovaty",
+   "field_path": "innovaty.sustainability.claims[1] (and ideas[I6].mechanism, packaging.upgrade_vs_category)",
+   "severity": "low",
+   "finding": "'Plastic-free packaging' is still the claim text in innovaty while genius's premortem[4] already rewords it to 'ships in a paper box with no plastic bag'; the two files disagree on the words that will be printed. Underneath it, the no-bag build has not been checked against FBA prep: a bare textile item in an unsealed tuck mailer may be required to be sealed or bagged at prep, and if a poly bag is forced on, both the I6 odour mechanism (no sealed jar) and the packaging claim fall at once.",
+   "fix": "Adopt genius's wording in innovaty, and specify a paper seal tab for the mailer so it counts as sealed retail packaging at FBA prep; confirm the textile prep rule before the box dieline.",
+   "owner_agent": "innovaty"
+  },
+  {
+   "id": "K15",
+   "file": "innovaty",
+   "field_path": "innovaty.pillars.exclusiveness (and moat_built_in[0])",
+   "severity": "low",
+   "finding": "'A registered profile with its spec named on a woven tag' asserts a registration that has not been filed; the moat text says 'filed ... and registered with Brand Registry' in the same breath. Internal language today, but it is one copy-paste from a bullet or the card, where 'registered design' or 'patent pending' before filing is a false claim.",
+   "fix": "Write 'profile to be filed as a US design application' in both places, and keep 'patent pending' off the tag, card and listing until the application is actually on file.",
+   "owner_agent": "innovaty"
+  },
+  {
+   "id": "K16",
+   "file": "genius",
+   "field_path": "genius.forecast.term_monthly_units.assumption",
+   "severity": "low",
+   "finding": "The Fermi is sourced to F2, F7, F9, F11-F14 as far as review counts go, but about 46% of the 5,700 base (VAYDEER at an 'assumed current 40-80 reviews a month' and the nine look-alikes at 1,800 units a month) rests on no count at all; VAYDEER's 2,045 is carried over unchanged from 23 September, so no velocity exists in the file, and 2,045 over a 2020 ASIN averages under 30 a month, not 40-80. The -40/+50% band covers it, but the audit-first assumption named in the file is the review rate, when the unsourced half of the volume is the bigger lever.",
+   "fix": "One human read of VAYDEER's and JIKIOU's counts dated today, and again in four weeks, gives a measured velocity; until then state VAYDEER at 25-40 a month and widen the low end.",
+   "owner_agent": "genius"
+  }
+ ],
+ "unsourced_claim_paths": [
+  "competition.copycat_risk.clone_price_usd.assumption (MEKASS $14.44 promo against $24.99 list from 'pricehistory.app, search 1': no fact_id, no URL)",
+  "competition.copycat_risk.why (USPTO prior art for an L-section PU foam supporter: no patent number, no URL)",
+  "competition.competitor_profiles[2].weakness (no registered design surfaced in a USPTO search: no search record)",
+  "competition.arena.sellers_on_page_one (12: scout F9 names nine look-alikes plus the four competitors; the count is not a fact)",
+  "genius.forecast.term_monthly_units.assumption (VAYDEER 40-80 reviews a month; look-alikes 1,800 units a month; 2-5% review-per-order rate)",
+  "genius.economics.return_rate.assumption ('desk accessories without electronics run about 3-6% returns')",
+  "genius.forecast.seasonality_note (Q4 raises storage not demand for a desk pad)",
+  "genius.versions[v1_now].landed_cost_usd.assumption (small-standard 0.75 in thickness cap, from memory; scout says it was not fetched)",
+  "genius.versions[v1_now].bom[0..4].unit_cost_usd.assumption (HR foam $4-6/kg, viscoelastic $4.5-7/kg, rubber scrim $3-6/m2, knit $2.5-4.5/m2, labour $4-6/h: rules of thumb, no quote, acknowledged as such)",
+  "scout.praise_clusters[1] (pad stays put, 25% of positives: no fact_id, no source)"
+ ],
+ "untagged_judgement_paths": [
+  "innovaty.pillars.reliability",
+  "innovaty.pillars.durability",
+  "genius.idea_rulings[I1..I7].why",
+  "genius.forecast.seasonality_note",
+  "genius.regulatory[0..2]",
+  "genius.timeline.phases[0..4].weeks.assumption"
+ ],
+ "contamination_detected": false,
+ "overall": "flags_to_fix",
+ "three_things_the_founder_must_hear": [
+  "The design is good and the money is not. As costed the pair loses $2.07 a set after advertising at $23.99 (landed $9.90 is 41% of price against a 30% rail; 0 of 10,000 simulated first years are profitable, median -$20k), and no single number fixes it: tariff 30% -> 7.5% is worth $1.44 a set, EXW $6.41 -> $5.00 is worth $1.41, $23.99 -> $24.99 is worth $0.85, and you need all three to reach about 6% after year-one ads (31% before ads, which is the margin you asked for). Learn the tariff first: it is free, it is a fact not a negotiation, and today's 17.5-45% describes a January 2026 stack on a keyboard-wrist-rest HTS line (8473.30) that is probably not yours; if the broker says 25-30%, the other two are not worth chasing at this price.",
+  "Your 30-40% is a pre-advertising margin. Referral at 15% plus the $5.30 large-standard fee take $9.05 of a $24.99 price (36%), and a 65 mm-tall moulded L can never be small-standard, so year-one ads at about 25% eat what is left; the engine's 15% floor is a year-two number that arrives only if you pass roughly 100 reviews and ads fall to 15-20%. Plan cash for a first-year loss of $12-30k at today's numbers, or do not launch the pair at $23.99 from China.",
+  "Fix two things on the drawing before the die is cut, then the paperwork. Drawing: the foam over the desk corner is 14 mm plus a 6 mm air gap, not the 20-28 mm the plan claims, and only 4 mm of it is the springy layer, so put the wedge's extra 5 mm at the roll, not the keyboard end; and the card's 'one long piece' promises the magnet dock you did not fund. Paperwork: the two-year 'flatten' promise is a written warranty that replaces a pad, not a $3 cover ($10-19 a claim); the OEKO-TEX certificate is the mill's, not yours; and a filed design application stops no clone until it issues in about 18 months."
+ ]
+}

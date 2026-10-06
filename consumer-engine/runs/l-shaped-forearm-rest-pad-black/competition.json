@@ -1,0 +1,139 @@
+{
+ "arena": {
+  "sellers_on_page_one": 12,
+  "lookalike_share": 0.65,
+  "price_floor_usd": 13.99,
+  "dominant_form": "A pair of short (12-16 in) black L-shaped memory-foam pads, fabric cover, lip hooked over the desk's front edge, rubber or adhesive-dot base, sold as a 2-pack at $15-18 (JIKIOU F7; MEKASS, Sushret, MOSISO, ELZO, Tiiyee, Vaydeer 2Pcs F9). The same lip geometry is sold as one 24-28 in rail at $42-60 (EdgeRest F1/F3, ArmCloud F5/F26).",
+  "summary": "This is a two-tier shelf on one search term: a crowded $15-18 row of near-identical black 2-pack L-pads from about a dozen sellers, nine of which launched in 2025-26 (F9) on open factory moulds priced at $3.09-3.20 a piece on Alibaba (F23, F24), and a thin $42-60 rung of two single long rails (EdgeRest F3, ArmCloud F26) sold on posture and a physical-therapist story rather than on more foam. The founder's $15-25 band is the top of the low row, not the bottom of the premium one: we fight JIKIOU and VAYDEER for the 2-pack buyer at 1.0-1.3x the $17.49 anchor (kahneman.anchoring, ariely.relativity), with the $42-60 rails acting as the decoy that makes $19.99-22.99 read as mid-priced, and the fight is a commodity price war already in progress, with social proof (cialdini.social_proof) and whatever is visible at 300 px (law.three_second_scan) deciding the click."
+ },
+ "brand_dominance": {
+  "level": "partial",
+  "top_brand": "VAYDEER",
+  "top_review_count": 2045,
+  "rule_3500": false,
+  "evidence": "The largest count scout recorded on page one is VAYDEER's 2,045 reviews at 4.6 stars and $17.99 (F11), under the 3,500 rule threshold, so the arena is not dominated by rule. VAYDEER is 2.6x the next listing (JIKIOU 791 at 4.4, F7) and 9x EdgeRest (226 at 4.6, F2), which is one strong brand with real room beside it: a 2025 entrant (JIKIOU, F7) banked 791 reviews in about fifteen months in the same row, and nine more look-alikes hold page-one tiles (F9). ArmCloud's count is unknown (F6, F26, and the roundup search this phase ran found no count) and is assumed to be below JIKIOU's for a July 2025 ASIN. sutherland.satisficing: VAYDEER is the safe-choice tile, not the only tile.",
+  "deep_study": "What VAYDEER does right (F11): it sits exactly on the $17.99 anchor, carries 4.6 stars over 2,045 reviews banked since a 2020 ASIN, and its title answers complaint cluster C1 head-on ('Upgraded Larger and Thicker', 0.94 in) so the buyer who was burned by a thin pad reads the fix in the first five words (gate.title_scan, kahneman.loss_aversion). Its thumbnail sells size and thickness on a dark desk, which is the one thing a 300 px image can prove. Where it is weak: it is a single pad, so the keyboard-plus-mouse, both-forearms buyer the L-shape wave is built around must buy two or look elsewhere; its own 2-pack answer (Vaydeer 2Pcs, B0FNMMJ2RQ, F9) is a separate 2025 ASIN with no review bank, which tells us the leader is following the 2-pack wave rather than owning it (sharp.double_jeopardy cuts both ways: its 2,045 reviews do not transfer to the new listing). Like every tile on the term it never shows the lip over a thick or bullnose edge, never shows two pads spaced around a keyboard, never proves the base on glass or glossy laminate, and never shows a cover being cleaned (scout unanswered_questions; kahneman.wysiati). The C1/C2/C3 shares are category-level (gap), so we cannot say VAYDEER has solved stickiness or creep, only that nobody on the term shows proof. How we coexist and flank: we do not contest 'biggest single pad'; we sit in the 2-pack row beside JIKIOU, where the social-proof leader is fifteen months old at 791 reviews (moore.chasm is crossable in months, not years), and we flank VAYDEER's single-pad buyer with the pair-covers-both-arms benefit, a 20 mm high-density core shown next to a keyboard in profile (C1), a fabric cover with a visible care step (C2) and a rubber base proven on five surfaces without adhesive strips (C3), each as the image the leader never shot (gate.image_2_to_6). The price stays at 1.0-1.3x the anchor so the comparison never trips gate.price_vs_anchor."
+ },
+ "copycat_risk": {
+  "level": "high",
+  "months_to_first_clone": {
+   "low": 1,
+   "base": 3,
+   "high": 6,
+   "assumption": "The clone wave is already running before we launch: nine near-identical 2-pack L-pads carry 2025-26 ASIN prefixes (F9) and the form ships from open Alibaba moulds at $3.09-3.20 a piece with MOQs from 1 to 300 (F23, F24). Our own supplier's mould is a $230 item at MOQ 300 (F25), so anything visible we add that is cut into foam, stitched into a cover or printed on a card is re-tooled by a factory in weeks. Low = a seller already on page one adds our visible feature as a variant; base = a new ASIN appears within a quarter; high = our differentiator needs a second material or a registered profile a factory must draw from scratch. forecast.reference_class: ArmCloud launched July 2025 (F5) and by October 2026 shares the term with at least nine imitators."
+  },
+  "clone_price_usd": {
+   "low": 12.99,
+   "base": 14.99,
+   "high": 16.99,
+   "assumption": "Anchored on observed prices: MEKASS 2-pack at $14.44 on promotion against a $24.99 list, with a third-party new offer at $16.99 (pricehistory.app, this phase, search 1); unbranded 2-packs from $16.98 (F10); JIKIOU $17.99 (F7). A quantity-first cloner buying at $3.09-3.20 a piece (F23, F24) can hold $14.99 as a steady price and dip to $12.99 on coupon days; $16.99 is the clone that simply matches the row. The Sushret $50-64 prices in the same snippet are an overseas or mis-scraped listing and are not used. gate.price_vs_anchor: every clone sits at or below 1.0x the $17.49 anchor."
+  },
+  "why": "Every must-keep the founder names (black, L-lip, rubber base, high-density foam, fabric cover) is already in every competitor title and invisible at 300 px except the shape itself, which is the shared commodity geometry; a USPTO search this phase found prior art for an L-section polyurethane foam supporter installed along a work-surface edge, so the lip concept itself cannot be fenced. The only things a cloner skips are the ones that cost more per unit without showing in the thumbnail: a named foam density, a tested base, a cover that survives skin oil, and a review bank that takes months to build (cialdini.social_proof, moore.chasm). The 30-40% margin target leaves little room to match a $14.44 promo, so the war is fought on proof images and reviews, not on price."
+ },
+ "price_war": {
+  "win_probability_before_clones": 0.12,
+  "win_probability_after_clones": 0.07,
+  "choice_rank_after_clones": 4,
+  "share_haircut_pct": 35,
+  "why": "At launch the buyer's shortlist on 'elbow pad for desk' is VAYDEER (2,045 reviews, 4.6, $17.99, F11), JIKIOU (791, 4.4, $17.99, F7) and one or two $14-17 look-alikes (F9, F10); with zero reviews we are below the gate.social_proof floor where only innovators click (rogers.innovators), so even a visibly different tile at $19.99-21.99 wins the click about one time in eight (law.three_second_scan, kahneman.system1), mostly from buyers who were burned by a thin or sticky pad and read our proof images (kahneman.loss_aversion). Once twins of our visible feature arrive at $12.99-14.99 the lowest-price tile with 100+ reviews joins the shortlist and we fall to fourth behind VAYDEER, JIKIOU and the cheapest credible twin (schwartz.overload, sutherland.satisficing), holding only the quality-seeking minority who read image 3 and the one-star patterns. The haircut is 35 rather than the engine's 50 default for high risk because the grid is already full of look-alikes on launch day: the pre-clone number already prices in the existing wave, and the incremental loss is from twins of our specific differentiator undercutting by $5-8 (ariely.relativity)."
+ },
+ "moats": [
+  {
+   "moat": "A registered design on our specific lip profile and top texture (the ornamental cross-section and surface pattern innovaty chooses), filed with Amazon Brand Registry so exact copies can be reported as IP infringement",
+   "type": "design_registration",
+   "strength": "medium",
+   "cost_tier": "dollars",
+   "why": "A quantity-first cloner copies the open factory L-profile that already ships at $3.09-3.20 (F23, F24), not our drawing, because a registered ornamental profile plus Brand Registry lets us take down exact copies without a lawsuit, and redrawing a profile costs the cloner a new mould for no extra sales. It is medium, not strong: USPTO prior art for an L-section PU foam supporter along a work-surface edge (search 3, this phase) means the lip concept itself is unprotectable, only a distinctive profile or texture is; a US design application takes roughly a year or more to issue, so it protects year two, not launch; and a near-copy that changes the lip angle walks around it. erric.create on the profile is what makes this worth filing at all."
+  },
+  {
+   "moat": "A named, tested spec a $3 factory will not buy into: a stated foam density and slow-rebound grade for the 20 mm core, a rubber base with a published static-friction figure on five named desk surfaces (wood, glass, laminate, painted MDF, bamboo), and a milk-silk cover that passes a stated skin-oil and heat ageing test, all tied to the five-year claim",
+   "type": "spec_edge",
+   "strength": "medium",
+   "cost_tier": "dimes",
+   "why": "Alibaba snippets state no foam density at all (F23, F24) and the cheap 2-pack is the thin one in the grid (JIKIOU 0.6 in, F7), because density and cover grade are invisible in the thumbnail and a cloner interested in quantity buys the lowest-cost foam the mould accepts. The edge is medium because it only shows up at month three to twelve when C1 (still feel the edge) and C2 (sticky, smells) reviews land on the clones and not on us (post.review_trigger, cialdini.authority for the named grade); it is invisible on day one and must be made visible through image 2 and 3 (gate.image_2_to_6) and an honest stated limitation (cialdini.reciprocity). Cost is dimes per set: denser PU and a better fabric, inside the EXW quote on file (F25)."
+  },
+  {
+   "moat": "A banked review lead in the 2-pack row, measured against JIKIOU's velocity (791 reviews in about fifteen months, F7)",
+   "type": "review_lead",
+   "strength": "weak",
+   "cost_tier": "cents",
+   "why": "Reviews are the one thing a cloner cannot buy from a factory, and in this row the leader of the 2-pack form is only fifteen months old, so the gap is crossable (moore.chasm, cialdini.social_proof). It is weak today because we have zero and the leader has 2,045 (F11); it becomes medium only if our velocity beats roughly 50 a month for nine to twelve months, driven by a first-sixty-seconds delight and a review-trigger card inside the simple-tier box (post.review_trigger). Rated honestly: a moat we must build, not one we hold."
+  },
+  {
+   "moat": "Packaging: a kraft mailer plus one printed card (brief.packaging_tier simple, F25)",
+   "type": "packaging_experience",
+   "strength": "weak",
+   "cost_tier": "cents",
+   "why": "By the founder's own choice the box is a plain kraft mailer with one card, which any cloner matches for the same cents; it is listed so innovaty and genius do not count on it (law.packaging_first_touch still applies, so the one card must do real work as the review trigger and the care instruction, but it is not a barrier)."
+  },
+  {
+   "moat": "Supply: a mould of our own registered profile held at the supplier under a written exclusivity clause, instead of the open $230 mould the factory sells to anyone (F25)",
+   "type": "supply_exclusivity",
+   "strength": "weak",
+   "cost_tier": "tooling",
+   "why": "A $230 foam-cutting mould at MOQ 300 (F25) is trivially re-cut by any factory, and no supplier honours exclusivity at that volume; the clause only has teeth once our orders are a meaningful share of the line. It pairs with the design registration (the profile is ours on paper) but on its own a quantity-first cloner simply takes the same drawing to the next factory on the Alibaba page (F23)."
+  }
+ ],
+ "competitor_profiles": [
+  {
+   "name": "JIKIOU L-Shaped Desk Elbow Pad for Desk 2 Pack, Soft Memory Foam Elbow",
+   "price_usd": 17.99,
+   "review_count": 791,
+   "strength": "Owns the 2-pack row at exactly the $17.99 anchor with 791 reviews at 4.4 (F7), a quilted 'massage' texture that reads in the thumbnail, pattern and colour variants that widen reach (F8), and 6-12 adhesive pieces that pre-empt the slides-off fear (C3). This is the tile our planned 2-pc set sits directly beside at the same price (cialdini.social_proof, nudge.default).",
+   "weakness": "The thinnest pad in the grid at 0.6 in (F7) against our 20 mm core, so it is the most exposed to C1; a cloth cover with no care step, exposed to C2; adhesive strips signal the base alone is not trusted and risk residue on removal (law.shape_memory, kahneman.peak_end); 4.4 stars trails VAYDEER and EdgeRest at 4.6; four pattern variants are a dropdown that loses buyers (gate.variations). Our flank is thickness, a base proven without adhesive, and a cover care image.",
+   "threat": "high"
+  },
+  {
+   "name": "VAYDEER Upgraded Larger and Thicker Elbow Rest Pad, Desk Wrist Rest",
+   "price_usd": 17.99,
+   "review_count": 2045,
+   "strength": "The social-proof leader of the term at 2,045 reviews and 4.6 stars on the anchor price (F11), a 2020 lineage, and a title that answers C1 in its first five words with a 0.94 in pad (gate.title_scan, kahneman.loss_aversion). The safe choice for a satisficing buyer (sutherland.satisficing).",
+   "weakness": "A single pad, so the keyboard-plus-mouse buyer must buy two or shortlist a 2-pack; its own 2-pack (Vaydeer 2Pcs, B0FNMMJ2RQ, F9) is a 2025 ASIN with no review bank, so the lead does not carry into the row we fight in (sharp.double_jeopardy); imagery never shows lip depth on a thick edge, spacing round a keyboard, or the base on glass (scout unanswered_questions, kahneman.wysiati). Its review text was not re-mined this run, so its own complaint mix is a gap.",
+   "threat": "high"
+  },
+  {
+   "name": "EdgeRest PostureUp L-Shaped Desk Long Wrist Rest Elbow, Forearm & Wrist",
+   "price_usd": 59.99,
+   "review_count": 226,
+   "strength": "One continuous 24 in rail with no gap at the elbow, a low-friction woven PU/cotton cover that wipes clean (C2 answered on paper), a textured base rated for wood, glass and laminate (C3 answered on paper), 4.6 stars, a Doctor-of-Physical-Therapy design story and a DTC site with its own 4.85-star reviews (F1, F2, F3, F4; cialdini.authority, sutherland.costly_signal). Snippets praise firm foam that does not flatten and a pad that stays put (F4).",
+   "weakness": "At $59.99 on its own site (F3; the amazon.com price was not captured, a gap) it is 3.4x the $17.49 anchor, which is a different mental category rather than a competitor for our buyer (gate.price_vs_anchor, kahneman.anchoring); 226 reviews across Amazon storefronts (F2) is a fraction of the row leaders; one colour, thin square desk edge only in every image; no registered design surfaced in a USPTO search this phase, so the premium is story and length, not a protected geometry. For us it is the decoy that makes $19.99-22.99 read as mid-priced (ariely.relativity).",
+   "threat": "low"
+  },
+  {
+   "name": "ArmCloud Desk Edge Rest, Memory Foam Keyboard Wrist Rest, Long Ergonomic",
+   "price_usd": 42.49,
+   "strength": "The longest rail on the term at 28 in, a grooved breathable Lycra top over a PU layer, an adhesive-free anti-skid rubber base, and a 15% coupon that brings it to about $36 at checkout (F5, F26). It straddles the keyboard-wrist-rest term as well (search_terms), so it draws a second buyer our 2-pack does not.",
+   "weakness": "Rating and review count were invisible across five scout searches and one roundup search this phase (F6, F26; gap), which for a July 2025 ASIN (F5) reads as a thin review base; the title has been rewritten twice (F5), so it is still hunting for its term (sharp.mental_availability); 2.4x the anchor before the coupon (gate.price_vs_anchor); a Lycra/PU surface is exactly the cover family C2 targets (F16). Not a price competitor for a $15-25 2-pack; a buyer who wants 28 in of one piece was never ours.",
+   "threat": "low"
+  }
+ ],
+ "watch_signals": [
+  "Weekly: the number of distinct L-shaped 2-pack ASINs on page one of 'elbow pad for desk' (twelve sellers today, nine of them 2025-26 ASINs, F9) and, more specifically, any tile that adopts our visible differentiator (the lip profile, top texture or accent innovaty chooses); a copy on Alibaba's 'elbow pad desk' wholesale page (F23) usually precedes an Amazon listing by six to ten weeks and is the leading indicator.",
+  "The promo floor: MEKASS's 2-pack was observed at $14.44 against a $24.99 list (search 1, this phase); any page-one 2-pack holding under $14 for more than two weeks, or JIKIOU or VAYDEER dropping below $16.99, moves the anchor and triggers a review of our price inside the band (kahneman.anchoring).",
+  "Review velocity: ours against JIKIOU's roughly 50 a month (791 in about fifteen months, F7) and against the leader's own 2-pack ASIN B0FNMMJ2RQ (F9); if the Vaydeer 2Pcs listing crosses about 300 reviews before ours does, the row's safe choice changes and our share forecast needs the haircut applied early (moore.chasm, gate.social_proof).",
+  "Tier collapse: EdgeRest or ArmCloud priced under $30 on amazon.com (today $59.99 on the brand site F3 and $42.49 with a 15% coupon F26) would pull the long-rail form into our band and make a 24 in rail at $22-25 the new comparison; ArmCloud's still-unknown rating and count (F6) should be read by a human off the listing at launch and monthly after.",
+  "Our own one-star pattern against the three category clusters: three matching one-stars on 'still feel the edge' (C1), 'sticky or smells' (C2) or 'slides off' (C3) in any month is the signal the spec edge failed in the field and the clones' reviews will not diverge from ours (gate.reviews_negative_first, post.review_trigger).",
+  "Variant creep on page one: JIKIOU already runs flower, marble and leather-print variants (F8); if the row moves to pattern-and-colour differentiation, our single black SKU must win on proof images instead, so log how many top-row tiles show a non-black hero image each month (law.color_anchor)."
+ ],
+ "tags": [
+  "kahneman.anchoring",
+  "ariely.relativity",
+  "cialdini.social_proof",
+  "sutherland.satisficing",
+  "moore.chasm",
+  "sharp.double_jeopardy",
+  "gate.price_vs_anchor",
+  "gate.social_proof",
+  "gate.image_2_to_6",
+  "law.three_second_scan",
+  "kahneman.wysiati",
+  "kahneman.loss_aversion",
+  "schwartz.overload",
+  "forecast.reference_class",
+  "cialdini.authority",
+  "post.review_trigger",
+  "erric.create",
+  "law.shape_memory",
+  "sharp.mental_availability"
+ ]
+}

@@ -6,20 +6,23 @@
   "created_at": "2026-10-06T00:00:00+00:00",
   "mode": "focus",
   "target_buyer": {
-    "description": "A desk worker (programmer, office employee, or gamer) whose forearm and wrist rest on a hard, sharp desk edge for hours a day and who has already decided a dedicated pad is the fix — now choosing between the L-shaped pads on page one",
+    "description": "A desk worker (programmer, office employee, or gamer) whose forearm and wrist rest on a hard, sharp desk edge for hours a day and who has already decided a dedicated pad is the fix \u2014 now choosing between the L-shaped pads on page one",
     "context": "Mid-workday or mid-session, arm aching or going numb at the desk edge; shopping on a phone or second monitor, comparing three or four look-alike L-shaped pads by photo, price and reviews",
-    "price_band_usd": {"min": 15, "max": 25}
+    "price_band_usd": {
+      "min": 15,
+      "max": 25
+    }
   },
   "seller_constraints": {
     "origin_country": "CN",
     "must_keep": [
-      "Black color only — one SKU color, no variants",
+      "Black color only \u2014 one SKU color, no variants",
       "L-shaped extension: a lip that folds over and stays in contact with the desk's front edge so the arm never meets the edge",
       "Non-slip rubber base",
       "High-density foam core (not a soft cheap sponge)",
-      "Good fabric (fiber) cover — comfortable, breathable, easy to clean",
-      "Designed for at least 5 years of daily use — durability engineered, not claimed",
-      "Normal, simple packaging — spend on the product, not the box",
+      "Good fabric (fiber) cover \u2014 comfortable, breathable, easy to clean",
+      "Designed for at least 5 years of daily use \u2014 durability engineered, not claimed",
+      "Normal, simple packaging \u2014 spend on the product, not the box",
       "Shelf price between $15 and $25 with a 30-40% margin"
     ],
     "must_avoid": [
@@ -29,9 +32,24 @@
     ]
   },
   "focus_products": [
-    {"product_id": "P1", "url": "https://www.amazon.com/EdgeRest-PostureUp-L-Shaped-Ergonomic-Universal/dp/B0CN8VC121", "role": "competitor", "name": "EdgeRest PostureUp L-Shaped Ergonomic Universal (B0CN8VC121)"},
-    {"product_id": "P2", "url": "https://www.amazon.com/Arm-Memory-Support-Forearm-ArmCloud/dp/B0FHMXYL7G", "role": "competitor", "name": "ArmCloud Arm Memory Support Forearm (B0FHMXYL7G)"},
-    {"product_id": "P3", "url": "https://www.amazon.com/JIKIOU-L-Shaped-Support-Non-Slip-Ergonomic/dp/B0FH22782P", "role": "competitor", "name": "JIKIOU L-Shaped Support Non-Slip Ergonomic (B0FH22782P)"}
+    {
+      "product_id": "P1",
+      "url": "https://www.amazon.com/EdgeRest-PostureUp-L-Shaped-Ergonomic-Universal/dp/B0CN8VC121",
+      "role": "competitor",
+      "name": "EdgeRest PostureUp L-Shaped Ergonomic Universal (B0CN8VC121)"
+    },
+    {
+      "product_id": "P2",
+      "url": "https://www.amazon.com/Arm-Memory-Support-Forearm-ArmCloud/dp/B0FHMXYL7G",
+      "role": "competitor",
+      "name": "ArmCloud Arm Memory Support Forearm (B0FHMXYL7G)"
+    },
+    {
+      "product_id": "P3",
+      "url": "https://www.amazon.com/JIKIOU-L-Shaped-Support-Non-Slip-Ergonomic/dp/B0FH22782P",
+      "role": "competitor",
+      "name": "JIKIOU L-Shaped Support Non-Slip Ergonomic (B0FH22782P)"
+    }
   ],
   "search_budget_per_product": 3,
   "packaging_tier": "simple",
@@ -49,5 +67,5 @@
     "The first URL the founder pasted (an Amazon search for 'bearing adjust speed jump rope') is unrelated to this product and was treated as a mis-paste; it was not researched.",
     "Color is fixed to black by the founder, so color strategy is about finish, texture and the one accent that makes a black pad legible in a grid, not about choosing a color."
   ],
-  "iterations": 0
+  "iterations": 1
 }

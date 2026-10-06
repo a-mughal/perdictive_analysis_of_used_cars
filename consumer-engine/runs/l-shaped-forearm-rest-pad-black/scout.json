@@ -156,6 +156,48 @@
       "statement": "P2 ArmCloud (B0FHMXYL7G) amazon.com snippet (2026-10-06, search 16) shows a shelf price of $42.49 with a 15% off coupon offered on the listing (so about $36.12 at checkout if the coupon is clipped), sold by the Arm Cloud Store, 28 x 3.5 in, Lycra/PU, black; the Amazon India mirror lists it at INR 9,895.76 (third-party import price, not comparable). Star rating and ratings count were still absent from every snippet after five ArmCloud searches.",
       "source": "https://www.amazon.com/Arm-Memory-Support-Forearm-ArmCloud/dp/B0FHMXYL7G",
       "confidence": "medium"
+    },
+    {
+      "fact_id": "F27",
+      "statement": "Fetched 2026-10-06 (critic K1 fix loop, search 1 of 4): the US Supreme Court struck down the tariffs imposed under IEEPA on 20 February 2026, and the White House reimposed a replacement within hours under Section 122 of the Trade Act of 1974; the IEEPA-based China layers (the 2025 fentanyl and reciprocal tariffs) therefore no longer apply as such. Three independent law-firm and trade-monitor snippets (WilmerHale, Clyde & Co, Global Trade Alert) agree on the date and the sequence; no page loaded (all egress-blocked), so this is snippet-level only.",
+      "source": "https://www.wilmerhale.com/en/insights/client-alerts/20260220-supreme-court-strikes-down-ieepa-tariffs-what-now",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F28",
+      "statement": "Fetched 2026-10-06 (search 1): the Section 122 tariff that replaced IEEPA took effect 24 February 2026 at 10% and expired at 12:01 am EDT on 24 July 2026 at the end of its 150-day limit; the Court of International Trade struck Section 122 down in May 2026 but that ruling is on appeal and the duty was collected through expiry. Snippets say a replacement took effect the same minute: new Section 301 duties of 10 to 12.5% on products of about 60 economies. Corroborated by a Skadden alert snippet; no page loaded.",
+      "source": "https://gingercontrol.com/blog/section-122-tariffs-explained",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F29",
+      "statement": "Fetched 2026-10-06 (search 4): the Section 301 action that replaced Section 122 on 24 July 2026 puts China in its top tier at a flat 12.5% with no product carve-outs, on top of the existing China-specific Section 301 lists; two snippets say the action covers 60 countries and a third says 46 (12.5% tier). A tariff-calculator page headlines China's 2026 rate at 37.5%, which matches 25% (List 3) plus 12.5% and is the cross-check for the high scenario. Snippet-level from commercial tariff sites (ustariffcalc, tariffstool, carraglobe); not confirmed on a USTR, CBP or Federal Register page, all of which are egress-blocked.",
+      "source": "https://ustariffcalc.com/section-122-expired-what-replaces-it.html",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F30",
+      "statement": "Fetched 2026-10-06 (searches 1 and 3): the China-specific Section 301 lists still carry their pre-2025 rates — Lists 1 to 3 at 25% (List 3 is entered under 9903.88.03 and covers about 5,745 subheadings including furniture, textiles and auto parts) and List 4A at 7.5% (9903.88.15, about 3,243 subheadings of consumer goods including apparel, footwear, electronics and toys; 15% from 1 September 2019, cut to 7.5% on 14 February 2020). A line's list is read from the 9903.88.xx footnote on its HTS entry. Agreed across gingercontrol, ustariffrates, htsapi.dev and tariffsentinel snippets; none of the pages loaded.",
+      "source": "https://gingercontrol.com/blog/section-301-tariff-rates-china",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F31",
+      "statement": "Fetched 2026-10-06 (search 2): HTSUS 9404.90.20 (articles of bedding and similar furnishings, fitted with any material or of cellular rubber or plastics, whether or not covered: other: pillows, cushions and similar furnishings, other than of cotton) carries a 6% general rate of duty, free only under an eligible FTA; snippets from unisco.com and htshub.com agree. This is the base classification scenario for a memory-foam desk-edge pad with a fabric cover that is sold for any desk work rather than principally with a computer.",
+      "source": "https://www.unisco.com/hts/94049020",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F32",
+      "statement": "Fetched 2026-10-06 (search 2): CBP ruling NY J84497 classified a mouse pad with an integral cellular-polyurethane wrist rest under 8473.30.5000 (now 8473.30.51, parts and accessories of machines of heading 8471), a second keyboard/mouse-side precedent alongside NY N216783 (F20, free general rate). Both rulings concern items used at the keyboard or mouse, so neither settles a pad sold as an elbow and forearm support for a desk edge; no ruling on a desk-edge forearm or elbow pad surfaced in either HTS search.",
+      "source": "https://rulings.cbp.gov/ruling/J84497",
+      "confidence": "medium"
+    },
+    {
+      "fact_id": "F33",
+      "statement": "Not found 2026-10-06 (searches 3 and 4, plus 23 fetch attempts, every one egress-blocked: hts.usitc.gov, congress.gov and about twenty commercial tariff-lookup and law-firm pages): the Section 301 list membership of 8473.30.51 and of 9404.90.20 was never shown on any page or snippet — the search engine's own summary repeated the query's parentheticals (List 3 for 8473.30.51, List 4A for 9404.90.20) and is not evidence. The only session-level indicator is F21's neck-pillow ruling snippet, where 9903.88.15 (List 4A, 7.5%) was applied to a 9404.90.2000 article; 8473.30.51 on List 3 (25%) rests on the critic's recollection and on List 3's described coverage, not on a page read this run. Any Section 232 action was not checked.",
+      "source": "https://hts.usitc.gov/reststop/search?keyword=8473.30.51",
+      "confidence": "low"
     }
   ],
   "search_terms": [
@@ -315,9 +357,9 @@
     },
     "duty_rate": {
       "low": 0.0,
-      "base": 0.0,
+      "base": 0.06,
       "high": 0.07,
-      "assumption": "Fetched this run (F20, F21). Base assumes the pad classifies like the ruled PU palm/wrist rest under 8473.30.5100 at a free general rate (the listings call themselves keyboard wrist rests). High covers reclassification as a cushion or textile article (9404.90 about 6%, 6307.90.98 7%, 3926.90.99 5.3%) because the ruling is for a keyboard wrist rest, not a desk-edge elbow pad. Get a broker opinion before the first entry. MFN duty only; the China-specific layers are in additional_tariff_rate."
+      "assumption": "Rewritten 2026-10-06 after critic K1; MFN duty only, as a fraction of EXW. Low = classification scenario A, 8473.30.51 (parts and accessories of ADP machines) at the free general rate (F20, F32), which only holds if a broker accepts that the pad is used principally with a computer — the keyboard-wrist-rest and mouse-pad rulings say so for those items, not for an elbow pad sold for any desk edge. Base = scenario B, 9404.90.20 (cushions and similar furnishings of cellular plastics, covered, other than of cotton) at 6% (F31), the likelier home for a memory-foam pad with a fabric cover marketed as an elbow and forearm support. High = scenario C, 6307.90.98 (other made-up textile articles) at 7% if the fabric cover is held to govern — this 7% is carried from the previous run's assumption text and was not re-fetched this run (search budget spent on the China layers), so treat the high end as a one-point buffer above the fetched 6%, not as a fetched point. China-specific layers are in additional_tariff_rate. A licensed customs broker's written classification is required before any deposit."
     },
     "sea_freight_usd_per_cbm": {
       "low": 60,
@@ -327,13 +369,12 @@
       "stale": true
     },
     "additional_tariff_rate": {
-      "low": 0.175,
-      "base": 0.3,
-      "high": 0.45,
-      "assumption": "Carried over as stale from the 2026-09-23 run (F22). Low = Section 301 List 4A 7.5% plus a 10% reciprocal layer; base = the roughly 30-34% non-MFN stack implied by the 33.9% effective China rate reported for January 2026; high = a 25% List 1-3 tranche plus IEEPA and reciprocal layers if 8473.30 falls in an early list. The exact tranche for the final subheading was not re-fetched; widened by a quarter as the standard requires.",
-      "stale": true
+      "low": 0.075,
+      "base": 0.2,
+      "high": 0.375,
+      "assumption": "Rewritten 2026-10-06 after critic K1 from this run's fetches (F27-F31), as a fraction of EXW on China origin, on top of duty_rate. The stack as of October 2026 is: the China-specific Section 301 list rate for the line (List 3 25% or List 4A 7.5%, F30) plus the 12.5% China tier of the Section 301 action that replaced Section 122 on 24 July 2026 (F29); the 2025 IEEPA fentanyl and reciprocal layers ended with the Supreme Court ruling of 20 February 2026 (F27) and the 10% Section 122 bridge expired 24 July 2026 (F28), so neither is stacked. Base = scenario B, 9404.90.20 on List 4A: 7.5% + 12.5% = 20%; List 4A membership rests on F21's neck-pillow ruling snippet (9903.88.15 applied to a 9404.90.2000 article), not on an HTS page read this run (F33). High = scenario A, 8473.30.51 on List 3: 25% + 12.5% = 37.5%, matching the 37.5% headline China rate on a tariff-calculator page (F29); List 3 membership of 8473.30.51 was not confirmed on any page this run (F33). Low = scenario B with the July-2026 12.5% layer vacated or refunded (the Court of International Trade struck the Section 122 bridge in May 2026 while it was still being collected, F28, so litigation removing a layer is a live scenario): 7.5% only. Scenario C (6307.90.98 textile article) list membership was not searched. Rates are from search snippets of commercial tariff sites; no USTR, CBP or USITC page loaded. Confirm the list footnote on the chosen line and the 12.5% layer with the broker before any deposit."
     },
-    "hts_code": "8473.30.5100 (candidate, per CBP ruling NY N216783 for a PU palm/wrist rest, free MFN rate; alternatives 9404.90.20 / 6307.90.98 / 3926.90.99 if treated as a cushion or textile article — not confirmed for a desk-edge elbow pad)",
+    "hts_code": "9404.90.20 (most likely: cushions and similar furnishings of cellular plastics, covered, other than of cotton, 6% MFN per F31, List 4A 7.5% per F21 — the pad is sold as an elbow and forearm support for any desk edge, so the principal-use test for an ADP accessory is unlikely to be met); alternatives 8473.30.51 (free MFN, keyboard wrist-rest and mouse-pad precedents NY N216783 / NY J84497, F20/F32; List 3 25% unconfirmed this run, F33) and 6307.90.98 / 3926.90.99 if the textile cover or the foam is held to govern. No ruling on a desk-edge pad exists in any snippet; a licensed customs broker's binding classification is required before any deposit.",
     "origin_assumed": "China"
   },
   "unanswered_questions": [
@@ -358,7 +399,7 @@
     "Sourcing: Made-in-China and 1688 searches returned only retail listings (Walmart/eBay/JD), no factory prices; the only factory-side prices found are two Alibaba snippets (F23 $3.20 at MOQ 50, F24 $3.09 at MOQ 1) and neither states whether a piece is one pad or a 2-pad set, the foam density, or logo/packaging — a sample order is needed before treating them as a real alternative to the on-file quote (F25).",
     "FBA fee: the exact 2026 large-standard 1-1.5 lb row for the 590 g 2-pc set was not in the fetched snippet; the base is interpolated between fetched neighbouring rows, and the small-standard thickness limit that decides whether a single 20 mm pad qualifies for the low end was not fetched.",
     "Monthly storage and sea freight per cbm were not fetched this run and remain stale carry-overs.",
-    "HTS: the only ruling found is for a keyboard palm/wrist rest (8473.30.5100, free); no ruling for a desk-edge elbow pad exists in the snippets, and the Section 301 / IEEPA / reciprocal stack for that subheading was not re-fetched, so additional_tariff_rate is stale and wide.",
+    "HTS and tariff (critic K1 fix loop, 2026-10-06: 4 searches and 23 fetch attempts, every fetch egress-blocked, so all of it is snippet-level). Fetched this run: the IEEPA tariffs were struck on 20 Feb 2026 and the 10% Section 122 bridge ran 24 Feb to 24 Jul 2026 (F27, F28); the Section 301 action that replaced it puts China at 12.5% from 24 Jul 2026 (F29); the China-specific lists stay at 25% (Lists 1-3) and 7.5% (List 4A) (F30); 9404.90.20 carries 6% MFN (F31); a second keyboard-side precedent, NY J84497, sits in 8473.30.51 (F32). Still unconfirmed: which Section 301 list 8473.30.51 and 9404.90.20 actually sit on (no HTS footnote page loaded — the base case leans on F21's neck-pillow snippet, the high case on the critic's recollection, F33); whether the July-2026 12.5% layer survives litigation, given the CIT struck Section 122 in May 2026; the country count of that action (60 or 46 in snippets); any Section 232 action; the 6307.90.98 textile-article rate (7%) and its list, not re-fetched; and no CBP ruling for a desk-edge forearm or elbow pad exists in any snippet, so the principal-use question that decides 8473 versus 9404 is open. duty_rate and additional_tariff_rate are now scenario-labelled (A = 8473.30.51, B = 9404.90.20, C = 6307.90.98) so genius can see which line each end assumes, and neither is marked stale because every rate in them was fetched this run. A licensed customs broker's binding classification (or a CBP binding-ruling request) is required before any deposit is paid.",
     "JIKIOU pad length conflicts between snippets (14.9 in versus 15.75 in); thickness 0.6 in is from one snippet only.",
     "No page-one listing was found at or above the 3,500-review dominance threshold; the largest count on record is VAYDEER's 2,045 (F11, carried over) and the largest among the focus products is JIKIOU's 791 (F7)."
   ]

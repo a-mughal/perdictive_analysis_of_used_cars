@@ -2,341 +2,364 @@
  "planning_fallacy_multiplier": 1.35,
  "versions": [
   {
-   "version_id": "v1_now",
-   "idea_ids": ["I1", "I2", "I3", "I4", "I5", "I6"],
+   "version_id": "v1_lean",
+   "idea_ids": ["I1", "I3", "I5", "I6"],
    "bom": [
     {
-     "part": "HR polyurethane foam core 45 kg/m3, contour-cut as a one-piece L with the R20 roll and R6 inside relief (I1, I2), ~22 g plus 30% cutting waste, per pad",
+     "part": "Slow-rebound memory foam 60 kg/m3, contour-cut as a one-piece L with the 26 mm corner section, 3.5-degree wedge (26 mm at the desk edge to 20 mm at the keyboard edge), R20 roll and R6 inside relief (I1 geometry, single density, no I2 second layer), ~70 g plus 30% cutting waste, per pad",
      "qty": 2,
-     "unit_cost_usd": {"low": 0.10, "base": 0.17, "high": 0.26, "assumption": "HR block foam at roughly $4-6/kg in Guangdong at 2026 prices (rule of thumb, no quote; the Alibaba snippets F23/F24 state no density at all); the 945 cm3 L profile holds ~465 cm3 of core; 30% waste for contour cutting an L from a block; high covers a 50 kg/m3 grade or poor nesting on the cutting bed."}
+     "unit_cost_usd": {"low": 0.30, "base": 0.48, "high": 0.70, "assumption": "Viscoelastic foam at roughly $4.5-7/kg (mattress-trade price, not a quote; the Alibaba snippets F23/F24 state no density); the re-sectioned profile holds about 1,170 cm3 of foam per pad against the sample's 600 cm3 (F25), so about 70 g at 60 kg/m3; low is 20% waste from good nesting on the cutting bed, high is 50 kg/m3 bought in a small lot. One density, no bond, no cradle; the edge-load bottoming test and the ISO 1856 compression-set gate decide whether this single core holds C1 (see premortem[0])."}
     },
     {
-     "part": "Slow-rebound memory-foam shell 60 kg/m3, 10 mm, contour-cut as its own L over the top, roll and outer lip face (I2), ~29 g plus 30% waste, per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.16, "base": 0.26, "high": 0.40, "assumption": "Viscoelastic foam at roughly $4.5-7/kg (mattress-trade price, not a quote); ~480 cm3 shell per pad; the supplier's sample foam density is not stated (F25), so this is an estimate of a named grade a $3 factory does not buy (competition spec_edge)."}
-    },
-    {
-     "part": "Solvent-free PUR hot-melt web bond between shell and core plus lamination press time (I2, I6), per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.08, "base": 0.14, "high": 0.22, "assumption": "PUR web at $1.5-2.5/m2 over ~0.03 m2 plus press labour; replaces the flame lamination or solvent glue the smell cluster traces to (F16); high is a factory that has to buy the web in small rolls for a 300-set order."}
-    },
-    {
-     "part": "Vulcanised natural-rubber base panel on woven polyester scrim, 1.2 mm, 150 x 300 mm, running under the top and down the lip (I3), per pad",
+     "part": "Vulcanised natural-rubber base panel on woven polyester scrim, 1.2 mm, about 150 x 300 mm, running under the 100 mm top, round the R6 relief and down the 45 mm lip inner face (I3), per pad",
      "qty": 2,
      "unit_cost_usd": {"low": 0.14, "base": 0.24, "high": 0.38, "assumption": "Rubber-backed scrim sheet (mousepad-base grade) at $3-6/m2 over 0.045 m2 plus die-cutting; replaces the dots or the 6-12 adhesive strips JIKIOU ships (F7); high is a solid natural-rubber blend instead of SBR at the stated 1.2 mm."}
     },
     {
-     "part": "Milk-silk 100% polyester knit cover, OEKO-TEX Standard 100, uncoated, ~0.14 m2 cut with the stretch across the roll (I4), per pad",
+     "part": "Milk-silk 100% polyester knit cover made from fabric certified to OEKO-TEX Standard 100 (mill certificate on file), uncoated, about 0.15 m2 for the 26 mm section, cut with the stretch across the roll, sewn closed and wipe-clean (no zip; I4 deferred to v1.1), per pad",
      "qty": 2,
-     "unit_cost_usd": {"low": 0.30, "base": 0.46, "high": 0.72, "assumption": "180-220 gsm milk-silk knit at $2.5-4.5/m2 with about 10% premium for a certified mill; the supplier's sample already uses milk silk (F25) so the base is near its cost; high is the certified lot bought in a small quantity."}
+     "unit_cost_usd": {"low": 0.30, "base": 0.47, "high": 0.74, "assumption": "180-220 gsm milk-silk knit at $2.5-4.5/m2 with about 10% premium for a certified mill; the supplier's sample already uses milk silk (F25) so the base is near its cost; the thicker section adds about 0.01 m2 of fabric; high is the certified lot bought in a small quantity."}
     },
     {
-     "part": "#3 nylon coil zip 280 mm with fabric slider garage, cord puller and bar-tacked tape ends, on the underside of the lip (I4), per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.07, "base": 0.12, "high": 0.20, "assumption": "Generic coil zip about $0.07, SBS or YKK branded $0.12-0.20 cut to length; the sample has no zip (F25), so this line is pure addition over the quote."}
-    },
-    {
-     "part": "Woven spec tag 15 x 40 mm in the end-cap seam (I5), thread, bar-tack and consumables, per pad",
+     "part": "Woven spec tag 15 x 40 mm in the end-cap seam carrying the spec line only (densities, fibre, care); the Limited Warranty wording goes on the card and in the listing so it can change without a re-order (I5, critic K10), thread, bar-tack and consumables, per pad",
      "qty": 2,
      "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.10, "assumption": "Woven label $0.02-0.05 at 1,000+ pieces, thread and consumables $0.01-0.05; a printed tag would be cheaper but fades (innovaty I5)."}
     },
     {
-     "part": "Cutting, sewing, assembly and QC labour per pad: zipped cover with the base panel sewn in on four sides, bar-tacked end caps, two-layer foam inserted, no bag",
+     "part": "Cutting, sewing, assembly and QC labour per pad: closed cover with the base panel sewn in on four sides, bar-tacked end-cap corners, single foam L inserted, no zip, no lamination, no bag",
      "qty": 2,
-     "unit_cost_usd": {"low": 0.50, "base": 0.85, "high": 1.30, "assumption": "8-12 minutes of sewing and assembly at a fully loaded $4-6 an hour coastal-China rate plus a minute of QC; the zip and the four-side base seam roughly double the sewing of the folded sample (F25); low is a line already running the row's open mould at volume (F23, F24)."}
+     "unit_cost_usd": {"low": 0.35, "base": 0.55, "high": 0.85, "assumption": "5-8 minutes at a fully loaded $4-6 an hour coastal-China rate plus a minute of QC; about a third less sewing than the zipped version; low is a line already running the row's open die at volume (F23, F24)."}
     },
     {
-     "part": "Kraft mailer 32 x 11 x 7.5 cm, unprinted, simple tier: the supplier's 32 x 11 x 6.5 cm box grown about 1 cm so two moulded Ls nest top-to-top (F25, innovaty packaging)",
+     "part": "Kraft mailer about 15.7 x 7.6 x 30.6 cm external (152 x 71 x 300 mm internal), E-flute, unprinted, paper seal tab, simple tier: the two 126 x 71 x 300 mm Ls nested as a Z with the card in the 19 mm gap between the tops (critic K8; replaces the supplier's 32 x 11 x 6.5 cm box, F25, which the moulded L cannot fit)",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.10, "base": 0.16, "high": 0.25, "assumption": "E-flute kraft mailer rule of thumb $0.08-0.25 (the knowledge base's tuck-box range); the existing box is already in the supplier's set price (F25), so only the size change is new cost."}
+     "unit_cost_usd": {"low": 0.14, "base": 0.22, "high": 0.35, "assumption": "A 3.65-litre E-flute mailer sits at the top of the knowledge base's $0.08-0.25 tuck-box rule of thumb; the supplier's smaller box is inside its set price (F25) so about half of this line is new cost; high is B-flute walls, which also cube the box into the next weight band (premortem[2])."}
     },
     {
-     "part": "One printed card, two sides, about 300 gsm: divider, fit guide, care step, spec, two-year promise and review QR (innovaty packaging)",
+     "part": "One printed card, two sides, about 300 gsm: divider in the Z-nest gap, fit guide with the 18-38 mm limit, care step, spec, a printed thickness ruler for the warranty's 'flattens' test, the Limited Warranty terms and the review QR (innovaty packaging, critic K10)",
      "qty": 1,
      "unit_cost_usd": {"low": 0.025, "base": 0.05, "high": 0.09, "assumption": "Offset-printed card at 1,000-5,000 pieces; no insert, no poly bag and no adhesive baggie (I6, what_i_cut)."}
     },
     {
-     "part": "Master carton share: 30 sets per 58 x 34 x 43 cm carton (F25)",
+     "part": "Master carton share: 30 set boxes per about 63 x 48 x 40 cm double-wall carton (2 x 3 x 5 boxes, 0.121 cbm, about 16 kg); the supplier's 58 x 34 x 43 cm carton (F25) no longer fits 30 of the larger boxes",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.03, "base": 0.05, "high": 0.08, "assumption": "A $1.00-2.40 double-wall carton spread over 30 sets; the taller set box may cut the count to 26 per carton, which is inside the high."}
+     "unit_cost_usd": {"low": 0.04, "base": 0.07, "high": 0.10, "assumption": "A $1.20-3.00 double-wall carton spread over 30 sets; about 0.0040 cbm a set against 0.0028 for the sample's carton, which is what raises the freight line in landed."}
     },
     {
      "part": "Factory overhead, profit, the 7-day open-rack foam rest (I6) and the MOQ-300 premium",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.60, "base": 1.55, "high": 2.40, "assumption": "15-40% over direct cost; base is about 32% at the quoted MOQ of 300 (F25), low is MOQ 1,000 at a factory already running the row's open mould (F23, F24), high is a careful factory pricing every spec line separately. Tooling is carried as NRE, not amortised here, so it is not double-counted."}
+     "unit_cost_usd": {"low": 0.50, "base": 1.30, "high": 2.00, "assumption": "15-40% over a direct cost of about $3.90 a set; base is about 33% at the quoted MOQ of 300 (F25), low is MOQ 1,000 at a factory already running the row's open die (F23, F24), high is a careful factory pricing every spec line separately. Tooling is carried as NRE, not amortised here."}
+    },
+    {
+     "part": "Limited Warranty reserve: the expected cost of the two-year flatten-or-peel promise per set sold (I5, critic K10). NOT part of EXW and not dutiable; it is carried as its own line inside landed_cost_usd so the engine subtracts it from contribution, because it is a per-unit cost of sale and not a return",
+     "qty": 1,
+     "unit_cost_usd": {"low": 0.20, "base": 0.40, "high": 0.80, "assumption": "Claim rate 2-5% of sets over the two years (base 3%) once 'flattens' is defined on the card as more than 20% thickness loss at the roll against the printed ruler, photo required; cost per claim is a replacement PAD, not a cover: about $4.35 landed (half the set's base landed) plus $5-9 US domestic postage for a 12 in box plus $1-2 handling, about $10-15 a claim, $17-22 if a whole set is sent; 3% x $13 = $0.40 a set. Above 5% (an undefined 'flattens') the reserve is gone by month 8, which is premortem[10]."}
     }
    ],
-   "unit_weight_g": 480,
-   "landed_cost_usd": {"low": 6.40, "base": 9.90, "high": 15.00, "assumption": "EXW from the BOM above: base $6.41 a set (low $3.52, high $9.98). Reconciled against the quote on file (F25): the $5.75 per 2-piece set is read as PER SET ($2.88 a pad), because the per-piece reading ($11.50 a set) would sit at twice the Alibaba 1-piece prices any buyer can see (F23 $3.20, F24 $3.09) and no factory quotes against that; confirm it in writing before any deposit. The bottom-up lands ABOVE the $5.75 quote at base, not below, and it should: the quote is for the folded single-density sample with a glued base and no zip, while innovaty's spec adds a second foam layer and a PUR web (+$0.40-0.60 a pad), a zip with garage and the sewing it needs (+$0.30-0.45), a vulcanised rubber panel on both faces (+$0.15-0.25) and a tag, so at the quoted supplier the realistic negotiated EXW for THIS spec is $6.50-8.00 a set at MOQ 300 and $5.50-6.80 at MOQ 1,000; the founder's hoped-for cheaper source exists only for the bare, thin pad the buyer is trying not to buy (F23, F24 state no density, no logo, no packaging). The $7.58 single-piece figure (F25) is read as a one-off sample price, not a production single. Landed = EXW + sea freight $0.60-2.20 a set (scout's stale $60-180/cbm widened by a quarter to $45-225, about 0.0033 cbm a set with the taller box, plus the LCL fixed charges that dominate a 300-set first order; base assumes a 1,000-set order) + MFN duty 0-7% (F20, F21: the 8473.30.5100 free ruling is for a keyboard wrist rest, not this pad) + the China additional tariff, stale at 17.5-45% and widened by a quarter to 13-56% (F22), base 30% = $1.92 + inbound to FBA $0.30-0.80 (partnered carrier plus the inbound placement fee, not fetched, stale). Base = 6.41 + 1.10 + 0 + 1.92 + 0.45 = $9.90; low is a $4.80 MOQ-1,000 EXW at a 13-15% tariff with a 1,000-set LCL; high is an $8.00 EXW at a 45% tariff with a 300-set LCL and a 7% MFN reclassification. Fulfilment is not in landed: the moulded L is 65 mm tall, small standard caps at 0.75 in, so this set is large standard at scout's interpolated $5.30 (economics.fba_fee_usd)."}
+   "unit_weight_g": 490,
+   "landed_cost_usd": {"low": 5.40, "base": 8.70, "high": 14.40, "assumption": "RECOMMENDED VERSION. EXW from the BOM above (lines 1-9, excluding the warranty reserve): base $5.24 a set at MOQ 300 (low $2.95, high $8.08), realistic negotiated $5.00-6.00 at MOQ 300 and $4.00-4.80 at MOQ 1,000, close to the $5.75 quote on file (F25, read as PER SET; confirm in writing, premortem[8]) for a product that is still a contour-cut L with 95% more foam and a vulcanised base on both faces but no fold, no glued base and no zip. Landed = EXW + sea freight $0.70-2.50 a set (scout's stale $60-180/cbm widened by a quarter to $45-225, now 0.0040 cbm a set in the 63 x 48 x 40 cm carton, plus the LCL fixed charges that dominate a 300-set order; base $1.25 assumes a 1,000-set order) + the fetched China stack as a fraction of EXW (scout fee_inputs, F27-F33, fetched this run so NOT widened) + inbound to FBA $0.30-0.80 (partnered carrier plus placement fee, not fetched, stale, widened) + the Limited Warranty reserve $0.20-0.80. Tariff scenarios, each end named: LOW end = scenario B with the July-2026 layer vacated, 9404.90.20 at 6% MFN + List 4A 7.5% = 13.5% (F31, F21, F28); BASE = scenario B as it stands, 6% + 7.5% + the 12.5% China tier of the Section 301 action that replaced Section 122 on 24 July 2026 = 26% (F29, F30, F31); HIGH end = scenario A, 8473.30.51 free MFN + List 3 25% + 12.5% = 37.5% (F20, F32, F33 unconfirmed list membership). Scenario C (6307.90.98 at 7%, list not searched) would sit at 27% on List 4A or 44.5% on List 3, the latter above this range and named in premortem[3]. Base = 5.24 + 1.25 + 0.26 x 5.24 (1.36) + 0.45 + 0.40 = $8.70; low = a $3.70 MOQ-1,000 EXW at 13.5% with a 1,000-set LCL = 3.70 + 0.70 + 0.50 + 0.30 + 0.20 = $5.40; high = a $7.50 EXW at 37.5% on a 300-set LCL = 7.50 + 2.50 + 2.81 + 0.80 + 0.80 = $14.40. Landed by scenario at the base EXW: $8.05 / $8.70 / $9.31; at a $4.40 MOQ-1,000 EXW: $6.70 / $7.25 / $7.75. The engine's 30% landed rail at $24.99 is $7.50: this version reaches it only at MOQ 1,000 on scenario B or better, which is why the gate in premortem[6] is set at EXW <= $4.50 at MOQ 1,000 (expected $4.00-4.80, so a coin toss) AND the broker on 9404.90.20 at <= 26%; both are necessary and neither is sufficient, since the 15% post-advertising floor also needs the $24.99 price, a 15-20% ad rate (year two, past about 100 reviews) and the box held under 208 in3. This version's idea_ids (I1, I3, I5, I6) are NOT innovaty's v1_now (I1-I6): I2 and I4 move to v1.1, and the orchestrator must reconcile innovaty's image 3 (two-band section) and image 4 (unzip step) with it. Fulfilment is not in landed: the set is large standard 1.5-2 lb by dimensional weight (economics.fba_fee_usd)."}
+  },
+  {
+   "version_id": "v1_now",
+   "idea_ids": ["I1", "I2", "I3", "I4", "I5", "I6"],
+   "bom": [
+    {
+     "part": "HR polyurethane foam core 45 kg/m3, contour-cut as a one-piece L with the 26 mm corner section, 3.5-degree wedge, R20 roll and R6 inside relief (I1, I2), ~27 g plus 30% cutting waste, per pad",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.12, "base": 0.20, "high": 0.30, "assumption": "HR block foam at roughly $4-6/kg in Guangdong at 2026 prices (rule of thumb, no quote; F23/F24 state no density); the re-sectioned core is about 600 cm3 (27 g) against 22 g on the first drawing (innovaty durability_review.changes_made); 30% waste for contour cutting an L from a block; high covers a 50 kg/m3 grade or poor nesting."}
+    },
+    {
+     "part": "Slow-rebound memory-foam shell 60 kg/m3, 10 mm, contour-cut as its own L over the top, the R20 roll and the outer lip face (I2), ~34 g plus 30% waste, per pad",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.18, "base": 0.29, "high": 0.44, "assumption": "Viscoelastic foam at roughly $4.5-7/kg (mattress-trade price, not a quote); about 570 cm3 (34 g) per pad on the 26 mm section against 32 g before; the supplier's sample density is not stated (F25), so this is a named grade a $3 factory does not buy (competition spec_edge)."}
+    },
+    {
+     "part": "Sprayed solvent-free water-based polyurethane-dispersion foam adhesive on the core's three outer faces, the shell seated in the 300 mm contour cradle under a light press for the set time (I2, I6; replaces the PUR hot-melt web, which cannot follow the roll), per pad",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.08, "base": 0.16, "high": 0.28, "assumption": "PUD foam adhesive at $5-8/kg, about 6-8 g wet over 0.045 m2 ($0.03-0.06), plus 1-2 minutes of spray and cradle-press labour at $4-6 an hour; the cradle itself is NRE (tooling_and_nre[1]); high is a factory that has never run a cradle bond and prices the learning curve into a 300-set order."}
+    },
+    {
+     "part": "Vulcanised natural-rubber base panel on woven polyester scrim, 1.2 mm, about 150 x 300 mm, under the top and down the lip (I3), per pad",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.14, "base": 0.24, "high": 0.38, "assumption": "Same line as v1_lean: rubber-backed scrim at $3-6/m2 over 0.045 m2 plus die-cutting."}
+    },
+    {
+     "part": "Milk-silk 100% polyester knit cover made from OEKO-TEX Standard 100 certified fabric, uncoated, about 0.15 m2, stretch across the roll (I4), per pad",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.30, "base": 0.47, "high": 0.74, "assumption": "Same fabric line as v1_lean."}
+    },
+    {
+     "part": "#3 nylon coil zip, U-shaped, about 370 mm (280 mm along the lip bottom plus about 45 mm up each lip end-cap seam), fabric slider garage, cord puller, bar-tacked tape ends (I4, innovaty durability_review change 7), per pad",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.09, "base": 0.15, "high": 0.25, "assumption": "Generic coil zip about $0.09, SBS or YKK branded $0.15-0.25 cut to 370 mm, about 30% more tape than the 280 mm slot; the sample has no zip (F25), so this line is pure addition over the quote."}
+    },
+    {
+     "part": "Woven spec tag 15 x 40 mm in the end-cap seam, spec line only (I5), thread, bar-tack and consumables, per pad",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.10, "assumption": "Same line as v1_lean."}
+    },
+    {
+     "part": "Cutting, sewing, assembly and QC labour per pad: zipped cover with the U-zip round two end caps, the base panel sewn in on four sides, bar-tacked corners, the cradle-bonded two-layer foam inserted, no bag",
+     "qty": 2,
+     "unit_cost_usd": {"low": 0.55, "base": 0.92, "high": 1.40, "assumption": "9-13 minutes at a fully loaded $4-6 an hour plus a minute of QC; the U-zip up two end caps adds about a minute over the straight slot, and the zip plus the four-side base seam roughly double the sewing of the folded sample (F25)."}
+    },
+    {
+     "part": "Kraft mailer about 15.7 x 7.6 x 30.6 cm external, E-flute, unprinted, paper seal tab, Z-nested pair (critic K8)",
+     "qty": 1,
+     "unit_cost_usd": {"low": 0.14, "base": 0.22, "high": 0.35, "assumption": "Same line as v1_lean."}
+    },
+    {
+     "part": "One printed card: divider, fit guide, care step with the unzip-and-wash drawing, spec, thickness ruler, Limited Warranty terms, review QR",
+     "qty": 1,
+     "unit_cost_usd": {"low": 0.025, "base": 0.05, "high": 0.09, "assumption": "Same line as v1_lean."}
+    },
+    {
+     "part": "Master carton share: 30 set boxes per about 63 x 48 x 40 cm carton (0.121 cbm)",
+     "qty": 1,
+     "unit_cost_usd": {"low": 0.04, "base": 0.07, "high": 0.10, "assumption": "Same line as v1_lean."}
+    },
+    {
+     "part": "Factory overhead, profit, the 7-day open-rack foam rest (I6) and the MOQ-300 premium",
+     "qty": 1,
+     "unit_cost_usd": {"low": 0.65, "base": 1.70, "high": 2.60, "assumption": "15-40% over a direct cost of about $5.30 a set; base about 32% at MOQ 300 (F25); low is MOQ 1,000 at a factory already running the row; high is a careful factory pricing every spec line separately."}
+    },
+    {
+     "part": "Limited Warranty reserve per set (I5, critic K10): NOT EXW, not dutiable, carried in landed so the engine sees it",
+     "qty": 1,
+     "unit_cost_usd": {"low": 0.25, "base": 0.45, "high": 1.00, "assumption": "2-5% of sets claiming over two years (base 3%) at a replacement pad of about $5.50 landed plus $5-9 postage and $1-2 handling, $11-17 a claim; 3% x $15 = $0.45."}
+    }
+   ],
+   "unit_weight_g": 500,
+   "landed_cost_usd": {"low": 7.20, "base": 11.00, "high": 17.40, "assumption": "Costed for comparison; NOT the recommended version (critic K4). EXW from the BOM (lines 1-12, excluding the reserve): base $7.02 a set at MOQ 300 (low $3.84, high $10.92), up from $6.41 on the first drawing because the 26 mm corner section adds about 12 g of foam a set, the zip grew to a 370 mm U, the sprayed cradle bond carries press labour, and the box and carton grew with the L; realistic negotiated $6.50-8.00 at MOQ 300 and $5.80-7.00 at MOQ 1,000. The $5.75 quote (F25) is for the folded single-density sample with a glued base and no zip, and this spec adds about $1.20-1.60 a pad to it. Landed = EXW + freight $0.70-2.50 + the fetched China stack (low end scenario B with the July layer vacated 13.5%, base scenario B 26%, high end scenario A 37.5%; see v1_lean for the scenario definitions and fact ids) + inbound $0.30-0.80 (stale, widened) + the warranty reserve $0.25-1.00. Base = 7.02 + 1.25 + 1.83 + 0.45 + 0.45 = $11.00; low = a $5.20 MOQ-1,000 EXW at 13.5% = 5.20 + 0.70 + 0.70 + 0.30 + 0.25 = $7.20; high = a $9.50 EXW at 37.5% on a 300-set LCL = 9.50 + 2.50 + 3.56 + 0.80 + 1.00 = $17.40. Landed by scenario at base EXW: $10.10 / $11.00 / $11.80; at a $6.20 MOQ-1,000 EXW: $8.80 / $9.55 / $10.30. The deciding number: the engine's 30% landed rail at $24.99 is $7.50, and this version does not reach it at any EXW I expect for the full spec, even at MOQ 1,000 on the lowest tariff scenario, which is why v1_lean is recommended and I2 and I4 are v1.1. Fulfilment is not in landed: same 1.5-2 lb large-standard set box as v1_lean."}
   },
   {
    "version_id": "v1_single",
    "idea_ids": ["I1", "I2", "I3", "I4", "I5", "I6"],
    "bom": [
     {
-     "part": "HR polyurethane foam core 45 kg/m3, contour-cut one-piece L (I1, I2), one pad",
+     "part": "HR polyurethane foam core 45 kg/m3, contour-cut one-piece L with the 26 mm corner section (I1, I2), ~27 g plus waste, one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.10, "base": 0.17, "high": 0.26, "assumption": "Same line as v1_now: HR block foam $4-6/kg, ~465 cm3 core, 30% cutting waste, no quote."}
+     "unit_cost_usd": {"low": 0.12, "base": 0.20, "high": 0.30, "assumption": "Same line as v1_now."}
     },
     {
-     "part": "Slow-rebound memory-foam shell 60 kg/m3, 10 mm, contour-cut L (I2), one pad",
+     "part": "Slow-rebound memory-foam shell 60 kg/m3, 10 mm, contour-cut L (I2), ~34 g plus waste, one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.16, "base": 0.26, "high": 0.40, "assumption": "Same line as v1_now: viscoelastic foam $4.5-7/kg over ~480 cm3, density not stated in any quote (F23-F25)."}
+     "unit_cost_usd": {"low": 0.18, "base": 0.29, "high": 0.44, "assumption": "Same line as v1_now."}
     },
     {
-     "part": "PUR hot-melt web bond and lamination (I2, I6), one pad",
+     "part": "Sprayed water-based PU-dispersion bond with cradle press (I2, I6), one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.08, "base": 0.14, "high": 0.22, "assumption": "Same line as v1_now: web at $1.5-2.5/m2 plus press labour."}
+     "unit_cost_usd": {"low": 0.08, "base": 0.16, "high": 0.28, "assumption": "Same line as v1_now."}
     },
     {
      "part": "Vulcanised natural-rubber base panel on scrim, 1.2 mm, both faces of the L (I3), one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.14, "base": 0.24, "high": 0.38, "assumption": "Same line as v1_now: rubber-backed scrim at $3-6/m2 over 0.045 m2 plus die-cutting."}
+     "unit_cost_usd": {"low": 0.14, "base": 0.24, "high": 0.38, "assumption": "Same line as v1_now."}
     },
     {
-     "part": "Milk-silk polyester knit cover, OEKO-TEX 100, uncoated (I4), one pad",
+     "part": "Milk-silk polyester knit cover from OEKO-TEX 100 certified fabric, uncoated (I4), one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.30, "base": 0.46, "high": 0.72, "assumption": "Same line as v1_now: 180-220 gsm knit at $2.5-4.5/m2 with a certified-mill premium."}
+     "unit_cost_usd": {"low": 0.30, "base": 0.47, "high": 0.74, "assumption": "Same line as v1_now."}
     },
     {
-     "part": "#3 nylon coil zip with garage, cord puller and bar-tacks (I4), one pad",
+     "part": "#3 nylon coil U-zip about 370 mm with garage, cord puller and bar-tacks (I4), one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.07, "base": 0.12, "high": 0.20, "assumption": "Same line as v1_now: generic to branded coil zip cut to 280 mm."}
+     "unit_cost_usd": {"low": 0.09, "base": 0.15, "high": 0.25, "assumption": "Same line as v1_now."}
     },
     {
      "part": "Woven spec tag, thread and consumables (I5), one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.10, "assumption": "Same line as v1_now: woven label $0.02-0.05 plus consumables."}
+     "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.10, "assumption": "Same line as v1_now."}
     },
     {
      "part": "Cutting, sewing, assembly and QC labour, one zipped pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.50, "base": 0.85, "high": 1.30, "assumption": "Same line as v1_now: 8-12 minutes at a loaded $4-6 an hour; the per-pad labour does not fall because the pad ships alone."}
+     "unit_cost_usd": {"low": 0.55, "base": 0.92, "high": 1.40, "assumption": "Same line as v1_now; the per-pad labour does not fall because the pad ships alone."}
     },
     {
-     "part": "Kraft mailer 30.5 x 10.5 x 7 cm, unprinted, one moulded L (simple tier)",
+     "part": "Kraft mailer about 13.2 x 7.7 x 30.6 cm external for one 126 x 71 x 300 mm L, E-flute, unprinted (simple tier)",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.09, "base": 0.14, "high": 0.22, "assumption": "A one-pad box is barely smaller than the set box because the L is 100 mm deep and 65 mm tall whether one or two are packed; kraft mailer rule of thumb $0.08-0.25."}
+     "unit_cost_usd": {"low": 0.12, "base": 0.18, "high": 0.28, "assumption": "A one-pad box is about 3.1 litres against 3.65 for the Z-nested pair, because the L is 126 mm deep and 71 mm tall whether one or two are packed; kraft mailer rule of thumb $0.08-0.25, this one near the top."}
     },
     {
-     "part": "One printed card (fit guide, care step, spec, promise, review QR)",
+     "part": "One printed card (fit guide, care step, spec, ruler, Limited Warranty terms, review QR)",
      "qty": 1,
      "unit_cost_usd": {"low": 0.025, "base": 0.05, "high": 0.09, "assumption": "Same card as the set at 1,000-5,000 pieces."}
     },
     {
-     "part": "Master carton share, about 60 single boxes per carton",
+     "part": "Master carton share, about 36 single boxes per 63 x 48 x 40 cm carton",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.02, "base": 0.035, "high": 0.06, "assumption": "A $1.00-2.40 carton over about 60 single boxes."}
+     "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.09, "assumption": "A $1.20-3.00 carton over about 36 single boxes, about 0.0034 cbm a pad."}
     },
     {
      "part": "Factory overhead, profit, 7-day foam rest and MOQ premium, one pad",
      "qty": 1,
-     "unit_cost_usd": {"low": 0.35, "base": 0.80, "high": 1.30, "assumption": "15-40% over a direct cost of about $2.53 a pad; the supplier's own $7.58 single-piece price (F25) is 2.6x its per-pad set price and is read as a 1-piece sample price, not what a 300-piece single-box order would cost."}
+     "unit_cost_usd": {"low": 0.40, "base": 0.90, "high": 1.45, "assumption": "15-40% over a direct cost of about $2.80 a pad; the supplier's own $7.58 single-piece price (F25) is 2.6x its per-pad set price and is read as a 1-piece sample price, not what a 300-piece single-box order would cost."}
+    },
+    {
+     "part": "Limited Warranty reserve per pad sold (I5, critic K10): NOT EXW, carried in landed",
+     "qty": 1,
+     "unit_cost_usd": {"low": 0.22, "base": 0.40, "high": 0.85, "assumption": "2-5% of pads claiming at a replacement pad of about $6.30 landed plus $5-9 postage and handling, $12-17 a claim; 3% x $13.50 = $0.40."}
     }
    ],
-   "unit_weight_g": 260,
-   "landed_cost_usd": {"low": 3.70, "base": 5.50, "high": 9.00, "assumption": "EXW from the BOM: base $3.33 a pad (low $1.87, high $5.25). Landed = EXW + sea freight $0.45-1.40 (the LCL fixed charges weigh more per unit on a 300-piece order; about 0.0019 cbm a box) + MFN duty 0-7% (F20, F21) + the stale China tariff 13-56%, base 30% = $1.00 (F22) + inbound $0.28-0.65. Base = 3.33 + 0.75 + 0 + 1.00 + 0.40 = $5.48, rounded to $5.50; low is a $2.60 MOQ-1,000 EXW at a 15% tariff; high a $4.60 EXW at a 45% tariff on a small LCL. Fulfilment is NOT in landed: one moulded L in a 30.5 x 10.5 x 7 cm box is about 137 in3 and ~260 g, which is large standard 12-16 oz (dimensional weight ~0.99 lb), so the fee is $4.76 (the fetched $4.60 row in F18 plus the 3.5% surcharge), range $4.09-5.30; the $3.68 small-standard row scout listed as a low is unreachable, because even the flat 20 mm sample exceeds the 0.75 in small-standard limit and the moulded L is 65 mm tall. This version would be priced at $16.99-19.99 beside VAYDEER's single at $17.99 (F11), not at the set's $23.99; the engine's price, FBA and forecast inputs are for the recommended set, and this version's per-pad comparison is in forecast.reasoning: it earns about $0.80 more contribution per pad than the set at base (the buyer pays $17.99 for one pad against $12 a pad in the set) but sells one pad an order and fights the 2,045-review leader at its own price, and it does not clear the 15% floor either."}
-  },
-  {
-   "version_id": "v1_lean",
-   "idea_ids": ["I1", "I3", "I5", "I6"],
-   "bom": [
-    {
-     "part": "Slow-rebound memory foam 60 kg/m3, contour-cut one-piece L, full 945 cm3 single-density core (I1 geometry without the I2 second layer), ~57 g plus 30% waste, per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.22, "base": 0.36, "high": 0.55, "assumption": "Viscoelastic foam at $4.5-7/kg over the whole profile; one density, no web, no lamination step; the compression-set gate (ISO 1856) still applies to the single core."}
-    },
-    {
-     "part": "Vulcanised natural-rubber base panel on scrim, 1.2 mm, both faces of the L (I3), per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.14, "base": 0.24, "high": 0.38, "assumption": "Same line as v1_now: rubber-backed scrim $3-6/m2 over 0.045 m2 plus die-cutting."}
-    },
-    {
-     "part": "Milk-silk polyester knit cover, OEKO-TEX 100, uncoated, sewn closed and wipe-clean (no zip, I4 deferred), per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.30, "base": 0.46, "high": 0.72, "assumption": "Same fabric line as v1_now; the care step becomes wipe with the desk cloth, shown on the card, which the buyer also accepts (buyer.comfort_and_laziness)."}
-    },
-    {
-     "part": "Woven spec tag, thread and consumables (I5), per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.03, "base": 0.06, "high": 0.10, "assumption": "Same line as v1_now."}
-    },
-    {
-     "part": "Cutting, sewing, assembly and QC labour, closed cover with the base panel sewn in, no zip, no lamination, per pad",
-     "qty": 2,
-     "unit_cost_usd": {"low": 0.35, "base": 0.55, "high": 0.85, "assumption": "5-8 minutes at a loaded $4-6 an hour; about a third less sewing than the zipped version."}
-    },
-    {
-     "part": "Kraft mailer 32 x 11 x 7.5 cm, unprinted (F25 box grown ~1 cm)",
-     "qty": 1,
-     "unit_cost_usd": {"low": 0.10, "base": 0.16, "high": 0.25, "assumption": "Same line as v1_now."}
-    },
-    {
-     "part": "One printed card (fit guide, care step, spec, promise, review QR)",
-     "qty": 1,
-     "unit_cost_usd": {"low": 0.025, "base": 0.05, "high": 0.09, "assumption": "Same line as v1_now."}
-    },
-    {
-     "part": "Master carton share, 30 sets per carton (F25)",
-     "qty": 1,
-     "unit_cost_usd": {"low": 0.03, "base": 0.05, "high": 0.08, "assumption": "Same line as v1_now."}
-    },
-    {
-     "part": "Factory overhead, profit, 7-day foam rest (I6) and MOQ premium",
-     "qty": 1,
-     "unit_cost_usd": {"low": 0.50, "base": 1.20, "high": 1.90, "assumption": "15-40% over a direct cost of about $3.60 a set; base about 33% at MOQ 300."}
-    }
-   ],
-   "unit_weight_g": 500,
-   "landed_cost_usd": {"low": 5.00, "base": 7.80, "high": 12.00, "assumption": "The fallback if the full-spec EXW ceiling fails: keeps the hero geometry (I1), the stitched base (I3), the tag and promise (I5) and the no-smell process (I6), drops the second layer (I2) and the zip (I4). EXW from the BOM: base $4.80 a set (low $2.74, high $7.52), which is about $1.60 under the full spec and close to the $5.75 quote (F25) for a product that is still a moulded L with a vulcanised base. Landed = 4.80 + freight 1.10 + duty 0 + stale 30% tariff 1.44 + inbound 0.45 = $7.79, rounded to $7.80; low is a $3.60 MOQ-1,000 EXW at a 15% tariff; high a $6.50 EXW at a 45% tariff on a 300-set LCL. Same large-standard fulfilment as v1_now ($5.30 interpolated). Costed to show the lever: even this build is about $7.80 landed against a roughly $6.20 ceiling for a 30% pre-advertising margin at $22.99, so the spec is not what breaks the plan; the tariff tranche and the fee stack are."}
+   "unit_weight_g": 280,
+   "landed_cost_usd": {"low": 4.20, "base": 6.30, "high": 10.30, "assumption": "EXW from the BOM (lines 1-12): base $3.68 a pad (low $2.07, high $5.80). Landed = EXW + sea freight $0.50-1.60 (LCL fixed charges weigh more per unit on a 300-piece order; about 0.0034 cbm a box) + the fetched China stack (13.5% / 26% / 37.5%, scenarios as in v1_lean) + inbound $0.28-0.65 (stale, widened) + the warranty reserve $0.22-0.85. Base = 3.68 + 0.85 + 0.96 + 0.40 + 0.40 = $6.30; low is a $2.80 MOQ-1,000 EXW at 13.5% = $4.20; high a $5.20 EXW at 37.5% on a small LCL = $10.30. Fulfilment is NOT in landed: one 126 x 71 x 300 mm L in a 13.2 x 7.7 x 30.6 cm box is about 190 in3, a dimensional weight of about 1.37 lb against 280 g actual, so it is large standard in the 1.25-1.5 lb band (about $5.35 with the 3.5% surcharge, interpolated between the fetched $4.60 and $6.97 rows, F18/F19, stale); the 1-1.25 lb band needs the box under 174 in3, and no version can be small standard because the L is 71 mm tall. This version would be priced at $16.99-19.99 beside VAYDEER's single at $17.99 (F11), not at the set's $24.99; the engine's price, FBA and forecast inputs are for the recommended set, and the per-pad comparison is in forecast.reasoning: the single fights the 2,045-review leader at its own price, sells one pad an order, and pays almost the same fulfilment fee as the pair."}
   }
  ],
  "tooling_and_nre": [
   {
-   "item": "Profile die or cutting template for the one-piece L, the 10 mm memory shell and the HR core (I1, I2): the same class as the supplier's US$230 mould (F25), with one re-cut budgeted",
-   "cost_usd": {"low": 200, "base": 450, "high": 1100, "assumption": "A foam contour-cutting template or compression die, not a steel injection tool; the supplier's existing flat-pad mould is $230 at MOQ 300 (F25); base is two dies (shell and core) at that class; high is a re-cut after the fit test plus a second factory's die for the Vietnam or Alibaba-class second source."}
+   "item": "Profile die or cutting templates for the one-piece L (26 mm corner section, 3.5-degree wedge, R20 roll, R6 relief, 45 mm lip): the single-density core template for v1_lean, plus the HR core and 10 mm shell templates held for v1.1 (I1, I2); the same class as the supplier's US$230 mould (F25), with one re-cut budgeted",
+   "cost_usd": {"low": 200, "base": 450, "high": 1100, "assumption": "A foam contour-cutting template or compression die, not a steel injection tool; the supplier's existing flat-pad mould is $230 at MOQ 300 (F25); base is two templates at that class; high is a re-cut after the fit test plus a second factory's die for the Vietnam or Alibaba-class second source."}
+  },
+  {
+   "item": "Contour cradle for the shell-to-core bond (I2): a CNC-cut HDPE or plywood negative of the top, roll and lip profile, 300 mm, used under a light press; built only if the bottoming test pulls I2 into v1, otherwise at v1.1",
+   "cost_usd": {"low": 30, "base": 80, "high": 200, "assumption": "Tens of dollars of CNC time and stock (innovaty durability_review change 2); high is two cradles, one per factory, with a hinged press plate."}
   },
   {
    "item": "Samples: three rounds of 4-6 sets from two factories (the quoted supplier and one F23/F24-class factory) plus express air freight each round",
-   "cost_usd": {"low": 300, "base": 650, "high": 1200, "assumption": "Sample fees $50-150 a round plus DHL $60-150 a round for 2-3 kg; the third round is the pre-production sample that the lab gates are run on."}
+   "cost_usd": {"low": 300, "base": 650, "high": 1200, "assumption": "Sample fees $50-150 a round plus DHL $60-150 a round for 2-3 kg; the third round is the pre-production sample the lab gates are run on."}
   },
   {
-   "item": "Foam and bond lab tests: ISO 845 density, ISO 2439 hardness, ISO 1856 compression set, ISO 3385 80,000-cycle fatigue, ASTM D903 peel after 500 h at 40 C / 80% RH (I2, I6)",
-   "cost_usd": {"low": 500, "base": 1000, "high": 1900, "assumption": "Third-party lab in Guangdong (SGS, TUV or Intertek class): density and hardness $150-300, compression set $100-250, 80,000-cycle fatigue $300-700, humidity-aged peel $150-400; high is two lots tested (T1 and production)."}
+   "item": "Foam lab tests on the v1_lean single core: ISO 845 density, ISO 2439 hardness, ISO 1856 compression set, ISO 3385 80,000-cycle fatigue on the roll zone, and the edge-load bottoming test (25 mm bar, 30 N, 60 min at 35 C, residual >= 8 mm on the 25 mm square and 38 mm R5 edges) that decides whether I2 is pulled forward (I1, I2)",
+   "cost_usd": {"low": 350, "base": 750, "high": 1500, "assumption": "Third-party lab in Guangdong (SGS, TUV or Intertek class): density and hardness $150-300, compression set $100-250, 80,000-cycle fatigue $300-700, the bottoming test on a simple rig $50-250; high is two lots tested (T1 and production)."}
   },
   {
-   "item": "Base, cover and odour tests: ASTM D1894 COF on five desk surfaces, a chair-push-off rig, synthetic-sebum ageing, ISO 6330 20 washes and ISO 12945 pilling, zip 500 cycles, 24 h chamber sniff panel (I3, I4, I6)",
-   "cost_usd": {"low": 400, "base": 800, "high": 1600, "assumption": "COF on five substrates $150-350, wash and pilling $150-300, sebum tack and odour panel $100-300, a home-built push-off rig $100-300 plus the zip cycle test; proves the image-3 claims and the tag's numbers before Amazon's claims policy asks (I5)."}
+   "item": "v1.1 gates held in reserve: ASTM D903 peel >= 1 N/cm after 500 h at 40 C / 80% RH on a strip from the roll zone of a cradle-bonded pad (I2), 500 zip cycles and the 50-refit test (I4); run in v1 only if the bottoming test pulls I2 forward (critic K4)",
+   "cost_usd": {"low": 0, "base": 200, "high": 700, "assumption": "Humidity-aged peel $150-400, zip cycles and refit $50-300; low is both deferred to v1.1, base weights the roughly even chance the single core fails the bottoming test, high is both gates run on two lots."}
   },
   {
-   "item": "Short FTO search on the L-section edge-support profile (USPTO prior art competition found) with a read-ahead on magnet-joined cushions for v2 (I7 medium prior art)",
-   "cost_usd": {"low": 400, "base": 900, "high": 2000, "assumption": "A patent search firm's short search and written note $400-900; a practitioner's opinion letter pushes it to $2,000; mandatory because competition rated the design registration medium against existing L-section prior art and I7 carries medium prior-art risk."}
+   "item": "Base, cover and odour tests: ASTM D1894 COF on five desk surfaces, a chair-push-off rig, synthetic-sebum ageing of the knit, ISO 6330 20 washes and ISO 12945 pilling (the knit is still the serviceable part even sewn closed), 24 h chamber sniff panel (I3, I6)",
+   "cost_usd": {"low": 350, "base": 700, "high": 1400, "assumption": "COF on five substrates $150-350, wash and pilling $150-300, sebum tack and odour panel $100-300, a home-built push-off rig $100-300; proves the image-3 claims and the tag's numbers before Amazon's claims policy asks (I5)."}
   },
   {
-   "item": "US design patent application on the specific ornamental profile (R20 roll, 3-degree wedge, R6 relief, 45 mm lip, two-tone section), drawings and small-entity fees (competition moat: design_registration, medium)",
-   "cost_usd": {"low": 800, "base": 1800, "high": 3500, "assumption": "USPTO small-entity design filing with professional drawings $800-1,200 self-filed, $1,800-3,500 through a practitioner; issues in about a year, so it protects year two (competition), but it must be on file before the clone wave competition dates at 1-6 months."}
+   "item": "Short FTO search confirming US 5,170,971 expired and looking for later continuation or design filings on specific L-section profiles (competition.copycat_risk), with a read-ahead on magnet-joined cushions for v2 (I7 medium prior art)",
+   "cost_usd": {"low": 400, "base": 900, "high": 2000, "assumption": "A patent search firm's short search and written note $400-900; a practitioner's opinion letter pushes it to $2,000; mandatory because competition rated the design registration medium against existing L-section prior art and I7 carries medium prior-art risk; run before the die is cut, not in parallel."}
   },
   {
-   "item": "USPTO trademark (one class) and Amazon Brand Registry enrolment, needed to report exact copies of the registered profile",
+   "item": "US design patent application on the specific ornamental profile (R20 roll, 3.5-degree wedge, 26 mm corner section, R6 relief, 45 mm lip), drawings and small-entity fees (competition moat: design_registration, medium); a YEAR-TWO tool",
+   "cost_usd": {"low": 800, "base": 1800, "high": 5500, "assumption": "USPTO small-entity design filing with professional drawings $800-1,200 self-filed, $1,800-3,500 through a practitioner. A pending application is not enforceable: Amazon's infringement report needs an issued patent number and design pendency runs roughly 16-20 months (critic K9), so it stops no clone inside competition's 1-6 month window and protects year two once it issues; 'patent pending' stays off the tag, card and listing until it is actually on file. High adds expedited examination (37 CFR 1.155, the fee plus the required pre-examination search, roughly $1,500-2,500 extra), which would bring expected issue to about 6-10 months after filing, still after the clone window, so it is budgeted only in the high."}
+  },
+  {
+   "item": "USPTO trademark (one class) and Amazon Brand Registry enrolment: for listing hijacks, counterfeit of the brand name and A+ content, NOT for design copies until the design patent issues",
    "cost_usd": {"low": 350, "base": 700, "high": 1400, "assumption": "USPTO filing fee about $350 a class plus $300-1,000 of attorney or filing-service time; Brand Registry itself is free once the mark is pending."}
   },
   {
-   "item": "Photography: main image, packaging and lifestyle per innovaty's three prompts, plus the ruler-and-section, hard-case (38 mm eased edge, bare base on glass) and three-step install images (2-4), with a forearm model, a pale-maple set and a dark-laminate set",
-   "cost_usd": {"low": 500, "base": 1200, "high": 2500, "assumption": "One studio day with a product photographer and a hand/forearm model $500-1,500 plus retouching; the Nano Banana prompts can draft the lifestyle frame but the sectioned pad, ruler and glass-desk proof must be real photographs of the production sample (buyer.durability_instinct); high is two shoots after a sample change."}
+   "item": "Photography: main image, packaging and lifestyle per innovaty's three prompts, plus the ruler-and-section image (the v1_lean section is one band of foam, not two, until I2 ships: to be reconciled by the orchestrator), hard-case (38 mm eased edge, bare base on glass) and install images, with a forearm model, a pale-maple set and a dark-laminate set",
+   "cost_usd": {"low": 500, "base": 1200, "high": 2500, "assumption": "One studio day with a product photographer and a hand/forearm model $500-1,500 plus retouching; the sectioned pad, ruler and glass-desk proof must be real photographs of the production sample (buyer.durability_instinct); high is two shoots after a sample change. These images are the year-one clone defence (premortem[1])."}
   },
   {
-   "item": "Listing graphics, A+ content, the one card's artwork and the dieline for the taller kraft mailer",
-   "cost_usd": {"low": 200, "base": 450, "high": 1000, "assumption": "A freelance designer's 1-3 days for seven listing images with callouts, a basic A+ module and the card; the dieline is the supplier's with one revision."}
+   "item": "Listing graphics, A+ content, the one card's artwork (thickness ruler, fit limit, Limited Warranty terms) and the dieline for the 15.7 x 7.6 x 30.6 cm Z-nest mailer",
+   "cost_usd": {"low": 200, "base": 450, "high": 1000, "assumption": "A freelance designer's 1-3 days for seven listing images with callouts, a basic A+ module and the card; the dieline is new (the supplier's box does not fit the L) with one revision."}
   },
   {
    "item": "Launch advertising before the first organic order plus Vine enrolment and 30 Vine sets at landed cost (the running year-one ad load is economics.ad_rate, not this line)",
-   "cost_usd": {"low": 800, "base": 1800, "high": 3200, "assumption": "Vine enrolment about $200 plus 30 sets at about $9.90 landed = $300, and $300-2,700 of sponsored-product spend in the first 2-4 weeks when a zero-review tile converts almost nothing; sized to reach the first 30 reviews (moore.chasm), not the whole chasm, so it does not double-count the ad_rate the engine charges on every unit."}
+   "cost_usd": {"low": 800, "base": 1800, "high": 3200, "assumption": "Vine enrolment about $200 plus 30 sets at about $8.70 landed = $260, and $300-2,700 of sponsored-product spend in the first 2-4 weeks when a zero-review tile converts almost nothing; sized to reach the first 30 reviews (moore.chasm), not the whole chasm, so it does not double-count the ad_rate the engine charges on every unit."}
   },
   {
-   "item": "Compliance: GS1 GTIN, Prop 65 and FTC textile and country-of-origin label review, OEKO-TEX certificate copy from the mill",
-   "cost_usd": {"low": 50, "base": 150, "high": 400, "assumption": "A single GS1 GTIN is tens of dollars; a compliance consultant's hour or two for the Prop 65 flame-retardant question on PU foam and the textile label wording; the OEKO-TEX certificate is the mill's to supply."}
+   "item": "Compliance: GS1 GTIN, Prop 65 and FTC textile and country-of-origin label review, the mill's OEKO-TEX certificate on file, and a Magnuson-Moss review of the Limited Warranty wording on the card and in the listing (critic K10)",
+   "cost_usd": {"low": 80, "base": 250, "high": 600, "assumption": "A single GS1 GTIN is tens of dollars; a compliance consultant's two to four hours for the Prop 65 flame-retardant question on PU foam, the textile label wording and the 'Limited Warranty' designation and pre-sale availability of terms (16 CFR 701-702)."}
   }
  ],
- "fixed_launch_cost_usd": {"low": 4500, "base": 9900, "high": 19800, "assumption": "The sum of the eleven NRE lines above at each end (low $4,500, base $9,900, high $19,800). Inventory for the first 300-1,000 sets (about $3,000-10,000 at landed cost) is working capital and lives in the landed cost, not here, so break-even units are not double-counted. The design filing and trademark ($1,150-4,900) could be phased into months 1-3 after launch under the US 12-month grace period, which would cut the pre-sale figure to about $3,350-14,900, but competition dates the clone wave at 1-6 months, so they are budgeted up front. The brief states no launch budget, so nothing here is checked against one."},
- "price_usd": {"low": 19.99, "base": 23.99, "high": 24.99, "assumption": "Inside the buyer's band: $19.99 is the most they pay with no visible reason and is the launch and coupon-day price; $24.99 is the most they pay with the reason in the tile (buyer.price_psychology: a side profile of the arm over a thick edge with daylight under it, the thickness as a number); competition reads $19.99-22.99 as 'mid-priced' against the $42-60 rails (F3, F26) with the $17.49 anchor (scout.price_ladder, ariely.relativity). Base $23.99 is 1.37x the anchor, which needs the hero's no-fold roll to carry it (gate.price_vs_anchor, kahneman.anchoring); it sits at the top of the band because the fee stack, not the buyer, is the binding constraint, and the three sentences show why. Competition's 0.12 win probability was read at $19.99-21.99; at $23.99 it is nearer 0.09-0.10 and the forecast's share allows for that."},
+ "fixed_launch_cost_usd": {"low": 4400, "base": 9900, "high": 22300, "assumption": "The sum of the thirteen NRE lines above at each end (low $4,360, base $9,930, high $22,300, rounded). Inventory for the first 300-1,000 sets (about $2,600-8,700 at landed cost) is working capital and lives in the landed cost, not here, so break-even units are not double-counted. The design filing and trademark ($1,150-6,900) could be phased into months 1-3 after launch under the US 12-month grace period, which would cut the pre-sale figure to about $3,250-15,400; they are budgeted up front because the filing date fixes the profile on paper, not because it stops a year-one clone (it does not, premortem[1]). The brief states no launch budget, so nothing here is checked against one."},
+ "price_usd": {"low": 19.99, "base": 24.99, "high": 24.99, "assumption": "Inside the buyer's band: $19.99 is the most they pay with no visible reason and is the launch and coupon-day price for the first 60 days; $24.99 is the most they pay with the reason in the tile (buyer.price_psychology: a side profile of the arm over a thick edge with daylight under it, the thickness as a number). Base is now the top of the band, not $23.99, because critic K3 is right that the plan only works with the price at the top: at $24.99 the set is 1.43x the $17.49 anchor (scout.price_ladder, gate.price_vs_anchor, kahneman.anchoring) and needs the hero's no-fold 26 mm roll in the thumbnail to carry it; competition read $19.99-22.99 as 'mid-priced' against the $42-60 rails (F3, F26, ariely.relativity) and its 0.12 win probability was read at $19.99-21.99, so at $24.99 it is nearer 0.09, which the forecast's share already allows for. There is no high above $24.99 because the buyer's ceiling is $24.99 and the engine would reject it."},
  "economics": {
   "referral_rate": {"low": 0.15, "base": 0.15, "high": 0.155, "assumption": "Scout's fetched 15% Office Products referral rate for 2026 (F17); the high is the $0.30 per-item minimum, which cannot bite inside the $15-25 band and is kept only for a clearance price."},
-  "fba_fee_usd": {"low": 4.76, "base": 5.30, "high": 6.20, "assumption": "Scout's fee_inputs as given (F18, F19), for the 2-piece set: the moulded L no longer packs flat, so two nested Ls sit in a 32 x 11 x 7.5 cm box of about 161-170 in3 at about 480 g, which is large standard with a dimensional weight of 1.16-1.22 lb, the 1-1.25 lb band. Scout's $5.30 base is interpolated between the fetched $4.60 (12-16 oz) and $6.97 (3 lb) rows plus the 3.5% fuel surcharge, so the range is widened by a quarter as the standard requires: low $4.76 is the fetched 12-16 oz row plus surcharge, reachable only if the nested box is held under the 139 in3 dimensional-weight line, which the 65 mm-tall L makes unlikely; high $6.20 is the 1.5-2 lb band if the box grows past about 190 in3 or the pads come in at the sample's 250 g each (F25). Scout's $3.68 small-standard low does not apply to any version: the flat 20 mm sample already exceeds the 0.75 in small-standard limit. Not fetched for the exact row, so treat as stale until the rate card is read."},
-  "storage_alloc_usd": {"low": 0.15, "base": 0.33, "high": 0.70, "stale": true, "assumption": "Stale: scout did not fetch storage this run and carried over about $0.78 per cu ft Jan-Sep and $2.40 Oct-Dec, widened by a quarter as the standard requires. The nested set box is about 0.093-0.098 cu ft; a blended $1.20 per cu ft over an average three-month dwell for a 1,000-set order selling over six months gives about $0.33 a set; low is a 300-set order sold through in eight weeks; high is Q4 storage at $2.40 for three months plus the 181-day aged-inventory surcharge if velocity lands at the forecast's low end."},
-  "return_rate": {"low": 0.03, "base": 0.06, "high": 0.11, "assumption": "Desk accessories without electronics run about 3-6% returns; this product's specific return reason is fear 2 and N2, 'does the lip fit my edge' (post.return_reason), pushed down by the honest 18-38 mm fit limit on the tile, the card and the first bullet (cialdini.reciprocity) and up to 11% if the lip rides up on real desks with aprons or bullnose edges; the engine models the cost as rate x (0.4 x price + 0.6 x landed)."},
-  "ad_rate": {"low": 0.14, "base": 0.25, "high": 0.42, "assumption": "Year-one advertising as a share of all revenue, volume-weighted across the ramp: months 1-3 at 45-60% ACoS on nearly every order because a zero-review tile buys each click (gate.social_proof, rogers.innovators), months 4-6 near 30%, months 7-12 at 15-20% once organic rank on 'elbow pad for desk' carries about half the orders, which blends to about 25% (the knowledge base's 40-80% launch and 15-30% steady-state bands for a commodity); low assumes Vine and the card's review trigger get us past 100 reviews by month 6 and organic takes over early; high is the clone-wave price war in which every order is bought against $12.99-14.99 twins (competition.price_war). The founder's 30-40% margin target is measured before this line."}
+  "fba_fee_usd": {"low": 5.10, "base": 5.75, "high": 6.90, "stale": true, "assumption": "For the recommended 2-piece set, re-cubed after critic K8. The re-sectioned L is a 126 x 71 x 300 mm envelope per pad (100 mm top plus the 26 mm lip in front of the desk face; 26 mm top plus the 45 mm lip drop); two nest only as a Z (one upright, one inverted, lips at opposite ends, a 19 mm gap between the tops where the card sits) at 152 x 71 x 300 mm internal, so the supplier's 32 x 11 x 6.5-7.5 cm mailer (F25) cannot hold the pair. External about 15.7 x 7.6 x 30.6 cm (6.2 x 3.0 x 12.0 in) with E-flute walls = about 215-230 in3, a dimensional weight of 1.55-1.65 lb (divisor 139) against about 490 g (1.08 lb) actual, so the set is billed in the LARGE STANDARD 1.5-2 lb band, not the 1-1.25 lb band the first pass assumed and not the 1.25-1.5 lb band either unless the box is held at or under 208 in3. The 1-1.5 lb and 1.5-2 lb rows were not in scout's snippet (F18), so the fee is interpolated between the fetched $4.60 (12-16 oz) and $6.97 (3 lb) rows: 1.25-1.5 lb about $4.95, 1.5-2 lb about $5.50-5.60, 2-2.5 lb about $6.10-6.40, each plus the 3.5% fuel and logistics surcharge from 17 April 2026 (F19). Base $5.75 = the 1.5-2 lb band with surcharge. Low $5.10 = the 1.25-1.5 lb row with surcharge, reachable only if the Z-nest is held at 148-152 x 69-71 mm internal with 2-3 mm of compression at the rolls and 1.5 mm E-flute (about 15.2 x 7.3 x 30.3 cm, 205 in3). High $6.90 = the 2-2.5 lb band if B-flute walls, a sleeve or Amazon's own cubing take the box past 278 in3, with the quarter widening the standard requires for a row not fetched. The single (v1_single) lands in the 1.25-1.5 lb band at about 190 in3. Scout's $3.68 small-standard low applies to no version: the L is 71 mm tall and even the flat 20 mm sample exceeds the small-standard thickness limit. STALE until the exact 2026 rows are read on the Seller Central rate card."},
+  "storage_alloc_usd": {"low": 0.20, "base": 0.46, "high": 0.95, "stale": true, "assumption": "Stale: scout did not fetch storage this run and carried over about $0.78 per cu ft Jan-Sep and $2.40 Oct-Dec, widened by a quarter as the standard requires. The Z-nest set box is about 3.65 litres = 0.129 cu ft (up from 0.095 on the first box); a blended $1.20 per cu ft over an average three-month dwell for a 1,000-set order selling over six months gives about $0.46 a set; low is a 300-set order sold through in eight weeks at the Jan-Sep rate; high is Q4 storage at $2.40 for three months plus the 181-day aged-inventory surcharge if velocity lands at the forecast's low end."},
+  "return_rate": {"low": 0.03, "base": 0.06, "high": 0.11, "assumption": "Desk accessories without electronics run about 3-6% returns (rule of thumb, no source); this product's specific return reason is fear 2 and N2, 'does the lip fit my edge' (post.return_reason), pushed down by the honest 18-38 mm fit limit on the tile, the card and the first bullet (cialdini.reciprocity) and up to 11% if the lip rides up on real desks with aprons or bullnose edges; the engine models the cost as rate x (0.4 x price + 0.6 x landed). Warranty claims are NOT returns and are carried in landed as the reserve line."},
+  "ad_rate": {"low": 0.14, "base": 0.25, "high": 0.42, "assumption": "Year-one advertising as a share of all revenue, volume-weighted across the ramp: months 1-3 at 45-60% ACoS on nearly every order because a zero-review tile buys each click (gate.social_proof, rogers.innovators), months 4-6 near 30%, months 7-12 at 15-20% once organic rank on 'elbow pad for desk' carries about half the orders, which blends to about 25% (the knowledge base's 40-80% launch and 15-30% steady-state bands for a commodity); low assumes Vine and the card's review trigger get us past 100 reviews by month 6 and organic takes over early; high is the clone-wave price war in which every order is bought against $12.99-14.99 twins (competition.price_war). The founder's 30-40% margin target is measured before this line, and the engine's 15% floor is measured after it, which is why the floor is a year-two number at 15-20% ads, not a year-one one at 25%."}
  },
  "forecast": {
-  "term_monthly_units": {"low": 3300, "base": 5700, "high": 8500, "assumption": "No tracker page was readable, so est_monthly_units is blank for every competitor (scout.gaps); this is a Fermi estimate from review velocity (forecast.fermi, forecast.reference_class): JIKIOU 791 ratings in about 15 months is about 53 a month (F7), VAYDEER 2,045 since a 2020 ASIN (F11) at an assumed current 40-80 a month, EdgeRest 226 in about 24 months (F2), ArmCloud unknown (F6), nine look-alike 2-packs (F9) and the gel and flat pads from the earlier run (F12-F14); at an assumed 2-5% review-per-order rate (base 3.5%) that is roughly JIKIOU 1,500, VAYDEER 1,200, EdgeRest 250, ArmCloud 150, the look-alikes 1,800 and the rest 800 units a month, about 5,700 on 'elbow pad for desk'; the band is -40% / +50% because a 2% review rate doubles every line. A unit is a listing's unit, so a 2-pack counts once. The review-rate assumption is the one to audit first."},
-  "share_m6": {"low": 0.01, "base": 0.025, "high": 0.05, "assumption": "A new entrant reaches 1-5% in months 1-3 and 3-10% by months 6-12 only if click-through and conversion beat the median; today the buyer's 0.65 click goes to VAYDEER or JIKIOU (buyer.purchase_probability_current, gate.social_proof), competition gives us 0.12 as the chosen tile before clones, and with about 50-80 reviews by month 6 (Vine plus a 5% review rate on the ramp) we are still inside the chasm (moore.chasm), so base 2.5% is below the knowledge base's midpoint; high assumes the hero's no-fold tile (innovaty thumbnail_visibility high) and the daylight-under-the-arm image (buyer.memory_hook) put us on page one by month 4. These are PRE-clone-window numbers; the engine applies competition's 35% haircut on top."},
-  "share_m12": {"low": 0.015, "base": 0.04, "high": 0.08, "assumption": "3-10% by month 12 if CTR and conversion beat the median; base 4% assumes about 100-150 reviews by month 12 against JIKIOU's 791 and VAYDEER's 2,045 (past the 30-review floor, still far from the leader), a 4.5+ rating because C1, C2 and C3 are answered in the build, and page-one placement on the term at $23.99; low is page two at 15-30 reviews with ads doing all the work; high is the row's own JIKIOU trajectory (791 reviews in 15 months, F7). Pre-clone numbers: after the 35% haircut the base is about 2.6%, which is the number to plan cash around."},
-  "monthly_units_m6": {"low": 35, "base": 140, "high": 425, "assumption": "Term volume times share at each end: 3,300 x 1%, 5,700 x 2.5%, 8,500 x 5%; sets a month in month 6, before the clone haircut the engine applies."},
-  "monthly_units_m12": {"low": 50, "base": 230, "high": 680, "assumption": "Term volume times share at each end: 3,300 x 1.5%, 5,700 x 4%, 8,500 x 8%; sets a month in month 12, before the clone haircut."},
-  "annual_units_y1": {"low": 380, "base": 1650, "high": 4900, "assumption": "The engine's linear ramp from zero to the month-6 figure and on to the month-12 figure, summed: months 1-3 are innovator-only volume (rogers.innovators); after competition's 35% haircut the base year is about 1,070 sets."},
-  "seasonality_note": "Scout did not confirm seasonality for the term (search_terms notes); the earlier run assumed a mild January 'organise my life' and September office-setup uptick, and Q4 raises storage cost rather than demand for a desk pad, so no seasonal adjustment is applied beyond the ranges.",
-  "reasoning": "Outside in (forecast.reference_class, forecast.fermi): scout has no tracker volumes, so term volume is a Fermi estimate from review velocity, about 5,700 units a month on 'elbow pad for desk' (3,300-8,500) at an assumed 2-5% review-per-order rate, and that rate is the assumption to audit first. Our share: the buyer clicks VAYDEER or JIKIOU 65% of the time today (gate.social_proof) and competition gives us 0.12 as the chosen tile at launch, falling to 0.07 once twins arrive; a zero-review tile at $23.99 starts on page two, months 1-3 are innovator-only (rogers.innovators, moore.chasm), Vine plus the card's review trigger bring 50-80 reviews by month 6 and 100-150 by month 12, which keeps us inside the chasm against 791 and 2,045 but past the 30-review floor, so 2.5% of the term by month 6 (35-425 sets, base 140) and 4% by month 12 (50-680, base 230), year one 380-4,900, base 1,650 sets. These share numbers are the PRE-clone window: competition rates copycat risk high, twins in 1-6 months at $12.99-16.99 and a 35% haircut, and the engine applies that haircut itself (monte_carlo_cloned), so the cloned base is about 150 sets in month 12 and 1,070 in the year; the wave is deliberately not baked into the shares to avoid a double haircut. Set versus single: the pair is the row's form (nine of twelve tiles, F9) and halves the fulfilment fee per pad ($5.30 for two against $4.76 for one, both large standard because the moulded L is 65 mm tall); the single at $17.99 earns about $0.80 more contribution per pad at base because the buyer pays $17.99 for one pad (VAYDEER, F11) against about $12 a pad in the set, but it sells one pad an order, fights the 2,045-review leader at its own price (competition threat high) and the buyer has a two-forearm problem (N6), so the pair is recommended. Neither version clears the 15% post-advertising floor at today's landed cost (set at $23.99 roughly -2 a set at base, single at $17.99 roughly break-even, v1_lean at $23.99 roughly break-even), which is why the fix is the tariff tranche and the EXW, not the pack count."
+  "term_monthly_units": {"low": 2800, "base": 5200, "high": 8500, "assumption": "No tracker page was readable, so est_monthly_units is blank for every competitor (scout.gaps); this is a Fermi estimate from review velocity (forecast.fermi, forecast.reference_class): JIKIOU 791 ratings in about 15 months is about 53 a month (F7); VAYDEER's 2,045 is carried unchanged from 23 September (F11) so no velocity exists in the file, and 2,045 over a 2020 ASIN averages under 30 a month, so it is taken at 25-40 a month (critic K16), not the 40-80 of the first pass; EdgeRest 226 in about 24 months (F2); ArmCloud unknown (F6); nine look-alike 2-packs (F9) and the gel and flat pads from the earlier run (F12-F14) at an assumed 1,800 units a month with no count behind it. At an assumed 2-5% review-per-order rate (base 3.5%) that is roughly JIKIOU 1,500, VAYDEER 900, EdgeRest 250, ArmCloud 150, the look-alikes 1,800 and the rest 600 units a month, about 5,200 on 'elbow pad for desk'; the band is -45% / +65% because a 2% review rate doubles every line and about half the base rests on no count at all. A unit is a listing's unit, so a 2-pack counts once. One human read of VAYDEER's and JIKIOU's counts today and in four weeks replaces the biggest guess."},
+  "share_m6": {"low": 0.01, "base": 0.025, "high": 0.05, "assumption": "A new entrant reaches 1-5% in months 1-3 and 3-10% by months 6-12 only if click-through and conversion beat the median; today the buyer's 0.65 click goes to VAYDEER or JIKIOU (buyer.purchase_probability_current, gate.social_proof), competition gives us 0.12 as the chosen tile before clones (nearer 0.09 at $24.99), and with about 50-80 reviews by month 6 (Vine plus a 5% review rate on the ramp) we are still inside the chasm (moore.chasm), so base 2.5% is below the knowledge base's midpoint; high assumes the hero's no-fold tile (innovaty thumbnail_visibility high) and the daylight-under-the-arm image (buyer.memory_hook) put us on page one by month 4. These are PRE-clone-window numbers; the engine applies competition's 35% haircut on top."},
+  "share_m12": {"low": 0.015, "base": 0.04, "high": 0.08, "assumption": "3-10% by month 12 if CTR and conversion beat the median; base 4% assumes about 100-150 reviews by month 12 against JIKIOU's 791 and VAYDEER's 2,045 (past the 30-review floor, still far from the leader), a 4.5+ rating because C1 and C3 are answered in the build and C2 by the uncoated knit, and page-one placement on the term at $24.99; low is page two at 15-30 reviews with ads doing all the work; high is the row's own JIKIOU trajectory (791 reviews in 15 months, F7). Pre-clone numbers: after the 35% haircut the base is about 2.6%, which is the number to plan cash around."},
+  "monthly_units_m6": {"low": 30, "base": 130, "high": 425, "assumption": "Term volume times share at each end: 2,800 x 1%, 5,200 x 2.5%, 8,500 x 5%; sets a month in month 6, before the clone haircut the engine applies."},
+  "monthly_units_m12": {"low": 40, "base": 210, "high": 680, "assumption": "Term volume times share at each end: 2,800 x 1.5%, 5,200 x 4%, 8,500 x 8%; sets a month in month 12, before the clone haircut."},
+  "annual_units_y1": {"low": 320, "base": 1500, "high": 4900, "assumption": "The engine's linear ramp from zero to the month-6 figure and on to the month-12 figure, summed (6 x month-6 plus 3.5 x month-12): months 1-3 are innovator-only volume (rogers.innovators); after competition's 35% haircut the base year is about 1,000 sets."},
+  "seasonality_note": "Scout did not confirm seasonality for the term (search_terms notes); the earlier run assumed a mild January 'organise my life' and September office-setup uptick (knowledge base seasonality), and Q4 raises storage cost rather than demand for a desk pad (forecast.reference_class: no gifting signal in any listing scout read), so no seasonal adjustment is applied beyond the ranges.",
+  "reasoning": "Outside in (forecast.reference_class, forecast.fermi): scout has no tracker volumes, so term volume is a Fermi estimate from review velocity, about 5,200 units a month on 'elbow pad for desk' (2,800-8,500) at an assumed 2-5% review-per-order rate with VAYDEER taken at 25-40 reviews a month, and that rate plus the uncounted look-alike half are the assumptions to audit first. Our share: the buyer clicks VAYDEER or JIKIOU 65% of the time today (gate.social_proof) and competition gives us 0.12 as the chosen tile at launch, falling to 0.07 once twins arrive; a zero-review tile at $24.99 starts on page two, months 1-3 are innovator-only (rogers.innovators, moore.chasm), Vine plus the card's review trigger bring 50-80 reviews by month 6 and 100-150 by month 12, which keeps us inside the chasm against 791 and 2,045 but past the 30-review floor, so 2.5% of the term by month 6 (30-425 sets, base 130) and 4% by month 12 (40-680, base 210), year one 320-4,900, base 1,500 sets. These share numbers are the PRE-clone window: competition rates copycat risk high, twins in 1-6 months at $12.99-16.99 and a 35% haircut, and the engine applies that haircut itself (monte_carlo_cloned), so the cloned base is about 135 sets in month 12 and 1,000 in the year; the wave is deliberately not baked into the shares to avoid a double haircut. Set versus single: the pair is the row's form (nine of twelve tiles, F9) and the two boxes cost almost the same to fulfil (the Z-nested set at about $5.75 in the 1.5-2 lb band against about $5.35 for one L in the 1.25-1.5 lb band, both large standard because the L is 71 mm tall), so the pair spreads that fee over two pads; the single at $17.99 would sell one pad an order, fight the 2,045-review leader at its own price (competition threat high) and the buyer has a two-forearm problem (N6), so the pair is recommended. Lean versus full spec: the recommended v1_lean (I1, I3, I5, I6) lands at about $8.70 a set at base against $11.00 for innovaty's full v1_now, and only the lean build can reach the engine's 30% landed rail ($7.50 at $24.99) at MOQ 1,000 on the 26% tariff scenario; the engine will show that neither clears the 15% post-advertising floor at year-one ad rates, which is why the fix is the tariff scenario, the MOQ-1,000 EXW, the price at the top of the band and a year-two ad rate together, not the pack count or the spec."
  },
  "timeline": {
   "phases": [
    {
-    "phase": "DFM and quotes: profile CAD for the one-piece L, two factory quotes on the full spec at MOQ 300 and 1,000, written confirmation that $5.75 is per set (F25), broker opinion on the HTS line and the 301 tranche (F20-F22)",
-    "weeks": {"low": 2.7, "base": 4.1, "high": 5.4, "assumption": "2-4 calendar weeks before the multiplier (base 3), times 1.35; the broker opinion and the second quote run in parallel with the CAD."}
+    "phase": "DFM and quotes: profile CAD for the re-sectioned L (26 mm corner, 3.5-degree wedge), two factory quotes on the lean spec and the full spec at MOQ 300 and 1,000, written confirmation that $5.75 is per set (F25), a licensed broker's written classification on 9404.90.20 versus 8473.30.51 with the Section 301 list footnote and the July-2026 12.5% layer (F27-F33)",
+    "weeks": {"low": 2.7, "base": 4.1, "high": 5.4, "assumption": "2-4 calendar weeks before the multiplier (base 3), times 1.35 (forecast.planning_fallacy); the broker opinion and the second quote run in parallel with the CAD; high is a broker who wants a binding-ruling request drafted before committing."}
    },
    {
-    "phase": "Prototypes and fit tests: the new profile die, two sample rounds air-freighted, seating on a 25 mm square edge and a 38 mm R5 eased edge, the edge-load bottoming test (I1), and weighing and cubing the nested box against the live FBA rate card",
-    "weeks": {"low": 4.1, "base": 5.4, "high": 6.8, "assumption": "3-5 weeks before the multiplier (base 4), times 1.35; a foam die turns in days, the air freight and the second round set the floor."}
+    "phase": "Prototypes and fit tests: the new profile template, two sample rounds air-freighted, seating on a 25 mm square edge and a 38 mm R5 eased edge, the edge-load bottoming test on the single core (I1), and weighing and cubing the Z-nest box against the live FBA rate card",
+    "weeks": {"low": 4.1, "base": 5.4, "high": 8.1, "assumption": "3-6 weeks before the multiplier (base 4), times 1.35 (forecast.planning_fallacy); a foam template turns in days, the air freight and the second round set the floor; high (+50%) is a third round because the first L seats crooked on the eased edge or the box cubes over the line."}
    },
    {
-    "phase": "Lab gates: the 500 h humidity-aged peel (three weeks on its own), compression set, 80,000-cycle fatigue, COF on five surfaces, 20 washes, zip cycles, chamber sniff (I2-I4, I6); photography, listing copy, the design filing and Brand Registry run in parallel",
-    "weeks": {"low": 4.1, "base": 5.4, "high": 6.8, "assumption": "3-5 weeks before the multiplier (base 4), times 1.35; the humidity ageing is the critical path and cannot be shortened, and a failed peel gate adds a full round."}
+    "phase": "Lab gates: compression set, 80,000-cycle fatigue, COF on five surfaces, 20 washes and pilling, 14-day sebum ageing, chamber sniff (I1, I3, I6); if the bottoming test failed, I2 is pulled in and the 500 h humidity-aged peel (three weeks on its own) joins the critical path; photography, listing copy, the design filing and Brand Registry run in parallel",
+    "weeks": {"low": 4.1, "base": 5.4, "high": 12.2, "assumption": "3-9 weeks before the multiplier (base 4), times 1.35 (forecast.planning_fallacy): low is every gate passing with the 14-day sebum ageing as the critical path; high (+125%) is one failed gate, which costs a re-sample, air freight and a re-test (5-6 weeks), and if that gate pulled I2 forward, the 500 h peel on the cradle-bonded shell on top. The first pass fitted this high to the 39-week rail (critic K12); this one does not."}
    },
    {
-    "phase": "Production: die sign-off, first run of 300-1,000 sets with the 7-day open-rack foam rest (I6), pre-shipment inspection, packing in the taller kraft mailer with the card and no bag",
-    "weeks": {"low": 5.4, "base": 6.8, "high": 8.1, "assumption": "4-6 weeks before the multiplier (base 5), times 1.35; includes the seven rest days and a factory queue behind larger orders."}
+    "phase": "Production: template sign-off, first run of 300-1,000 sets with the 7-day open-rack foam rest (I6), pre-shipment inspection, packing in the Z-nest mailer with the card and no bag, 30 per 63 x 48 x 40 cm carton",
+    "weeks": {"low": 5.4, "base": 6.8, "high": 9.5, "assumption": "4-7 weeks before the multiplier (base 5), times 1.35 (forecast.planning_fallacy); includes the seven rest days and a factory queue behind larger orders; high (+40%) is a failed pre-shipment inspection on the base-panel seam and a partial re-sew."}
    },
    {
     "phase": "Sea freight LCL China to US West Coast, customs entry under the broker's classification, FBA check-in and the first organic order",
-    "weeks": {"low": 6.8, "base": 8.1, "high": 9.5, "assumption": "5-7 weeks before the multiplier (base 6), times 1.35; port-to-port 30-45 days on scout's stale freight assumption plus one to two weeks of receiving."}
+    "weeks": {"low": 6.8, "base": 8.1, "high": 10.8, "assumption": "5-8 weeks before the multiplier (base 6), times 1.35 (forecast.planning_fallacy); port-to-port 30-45 days on scout's stale freight assumption plus one to two weeks of receiving; high (+33%) is a customs exam on a new importer with a contested HTS line or FBA receiving in the Q4 queue."}
    }
   ],
-  "weeks_to_first_sale": {"low": 23, "base": 30, "high": 37, "assumption": "The five phases summed: 17-27 weeks before the multiplier (base 22, inside the knowledge base's 20-34 because the tooling is a foam die, not a steel injection tool), times the 1.35 planning-fallacy multiplier stated above (forecast.planning_fallacy); the high of 37 already carries one extra sample round and clears the 39-week rail by two weeks, so a second die re-cut or a failed humidity-aged peel would break that rail."}
+  "weeks_to_first_sale": {"low": 23, "base": 30, "high": 46, "assumption": "The five phases summed: 17-34 weeks before the multiplier (base 22, inside the knowledge base's 20-34 because the tooling is a foam template, not a steel injection tool), times the 1.35 planning-fallacy multiplier stated above (forecast.planning_fallacy): 23 / 30 / 46. The high of 46 BREAKS the engine's 39-week first-sale rail: it is one failed lab gate (a re-sample round plus, if I2 is pulled in, the 500 h peel) on top of a third prototype round and a Q4 receiving queue, each of which the file names elsewhere, so the number is estimated, not fitted (critic K12). At base, 30 weeks clears the rail by nine."}
  },
  "premortem": [
   {
-   "obituary": "It is twelve months on and the memory shell lifted and bunched at the R20 roll on pads that spent a summer in a 30 C room, and three matching one-stars on 'the top layer came loose' sank the rating to 4.1: the category's adhesive obituary, transposed to the one bond we kept (C2, N5).",
-   "probability": 0.12,
+   "obituary": "It is twelve months on and the single 60 kg/m3 core took a permanent dent at the R20 roll on pads that spent a summer in a 30 C room, the arm found the desk corner again by 4 pm, and three matching one-stars on 'flattened where it goes over the edge' sank the rating to 4.1: C1, the cluster the hero exists to fix, delivered by the layer we cut to save $0.55 a set (I1, I2, N5).",
+   "probability": 0.18,
    "impact": "major",
-   "mitigation": "The humidity-aged peel gate (at least 1 N/cm after 500 h at 40 C / 80% RH, ASTM D903) on the T1 sample and on every production lot, the memory shell cut as its own L so the bond is never in peel at the roll, and the vulcanised-through base with no glue line (I2, I3, innovaty durability_review).",
-   "mitigation_cost_usd": {"low": 300, "base": 700, "high": 1400, "assumption": "Peel tests on two lots plus a retained-sample programme; already partly inside the lab-test NRE line."}
+   "mitigation": "The edge-load bottoming test on the T1 lean sample (25 mm bar, 30 N, 60 min at 35 C, residual >= 8 mm over the corner on the 25 mm square and 38 mm R5 edges), ISO 1856 compression set <= 5% and ISO 3385 80,000 cycles on the roll zone, all before the template is signed off; if any fails, I2 (the HR 45 core under the 10 mm shell, cradle-bonded with the sprayed water-based PU adhesive) is pulled into v1 at about +$0.55 a set with its humidity-aged peel gate (>= 1 N/cm after 500 h at 40 C / 80% RH, ASTM D903) and the plan is re-costed as v1_now less the zip; the memory layer cut as its own L either way so no bond is ever in peel at the roll (innovaty durability_review).",
+   "mitigation_cost_usd": {"low": 400, "base": 1000, "high": 2200, "assumption": "The foam lab line plus the v1.1 gates in reserve if I2 comes forward, plus the cradle; a retained-sample programme on two lots."}
   },
   {
    "obituary": "It is twelve months on and three 2-packs with a rounded no-fold corner appeared on page one between months 2 and 5 at $12.99-14.99, re-cut from an open foam die, took the price-sensitive two-thirds of our clicks, and we sold 35% fewer sets than planned. This agrees with competition's read: copycat risk high, first clone in 1-6 months, clone price $12.99-16.99, haircut 35% (competition.copycat_risk, price_war).",
    "probability": 0.65,
    "impact": "major",
-   "mitigation": "The design application and Brand Registry on file before launch so exact copies of the registered profile are reportable (competition moat design_registration, medium); the spec edge made visible in image 3 (sectioned pad, ruler, bare base on glass) so a clone's thin single-density pad reads as the pad the buyer was burned by (gate.image_2_to_6, law.shape_memory); the Alibaba 'elbow pad desk' page watched weekly as the 6-10-week leading indicator (competition.watch_signals); a 50-reviews-a-month velocity target against JIKIOU's; and no price match below $19.99, because the margin cannot fund one.",
-   "mitigation_cost_usd": {"low": 1150, "base": 2500, "high": 4900, "assumption": "Design filing plus trademark (already in the NRE) plus an hour a week of takedown and watch time; the haircut itself is simulated by the engine, not mitigated here."}
+   "mitigation": "Year-one defence is only what works inside a 1-6 month window, because a pending design application is not enforceable (critic K9, competition: 'protects year two, not launch'): (1) the review lead, a 50-reviews-a-month velocity target against JIKIOU's 53 from Vine, the card's trigger and the request button (moore.chasm, cialdini.social_proof); (2) the proof images a $3 clone cannot shoot honestly, image 2's ruler on a 26 mm corner section and image 3's sectioned pad and bare base on glass, so a thin single-density twin reads as the pad the buyer was burned by (gate.image_2_to_6, law.shape_memory); (3) Brand Registry for listing hijacks and counterfeit of the brand name only, not for design copies; (4) price discipline, no match below $19.99, because the margin cannot fund a war (ariely.relativity); (5) the Alibaba 'elbow pad desk' page watched weekly as the 6-10 week leading indicator (competition.watch_signals). The design application is filed before launch so the profile is fixed on paper, and it becomes a takedown tool only when it issues, about 16-20 months out: a year-two tool, costed in tooling_and_nre[7].",
+   "mitigation_cost_usd": {"low": 900, "base": 2200, "high": 6000, "assumption": "The year-one items are inside the photography and Vine lines plus an hour a week of watch time; the design filing and trademark ($1,150-6,900 with expedited examination in the high) are the year-two part; the haircut itself is simulated by the engine, not mitigated here."}
   },
   {
-   "obituary": "It is twelve months on and the nested box for two moulded Ls cubed at 1.3 lb dimensional weight instead of 1.2, Amazon re-tiered the set, and the fulfilment fee came in $0.35-0.90 a set above plan on every unit: the packaging-over-the-line obituary, because the moulded L no longer packs flat and the box grew about 1 cm (innovaty packaging note).",
-   "probability": 0.35,
+   "obituary": "It is twelve months on and the Z-nested box for two 26 mm Ls cubed at 2.1 lb dimensional weight instead of 1.6 because the factory used B-flute and a sleeve, Amazon re-tiered the set, and the fulfilment fee came in $0.35-1.15 a set above plan on every unit: the packaging-over-the-line obituary, on a box that is already one band above the one the first pass assumed (critic K8).",
+   "probability": 0.3,
    "impact": "major",
-   "mitigation": "Fix the nested box at or under 30.5 x 12 x 7.2 cm (about 165 in3) and the set at or under 500 g, weigh and cube the T1 sample against the live rate card before the die is signed off (timeline phase 2), cap pad weight at 200 g with the 45/60 kg/m3 build rather than the sample's 250 g, and never let the card or a sleeve add a layer.",
+   "mitigation": "Hold the Z-nest at 148-152 x 69-71 x 300 mm internal in 1.5 mm E-flute with the card in the gap between the tops and nothing else in the box; weigh and cube the T1 box against the live rate card before the template is signed off (timeline phase 2); target 208 in3 or under so the set drops to the 1.25-1.5 lb row, which is worth about $0.65 a set; cap pad weight at 200 g with the 60 kg/m3 build rather than the sample's 250 g (irrelevant to the band while dimensional weight governs, but it keeps the actual weight under it); never let a sleeve or a second card add a layer.",
    "mitigation_cost_usd": {"low": 50, "base": 150, "high": 350, "assumption": "One dieline iteration and a cubing check; the fee difference is already inside the fba_fee_usd range."}
   },
   {
-   "obituary": "It is twelve months on and the China stack on our line moved from the 17.5-30% we planned to 45-56% between the deposit and the entry, adding $1.00-1.70 a set, and the first 1,000 sets landed at a loss before advertising: the origin-tariff obituary, on a stack that went from 2.3% to 33.9% effective in one year (F22).",
-   "probability": 0.45,
+   "obituary": "It is twelve months on and the broker put the pad on 8473.30.51 (List 3) instead of 9404.90.20, or a new layer landed between the deposit and the entry, and the China stack on our line went from the 26% we planned to 37.5-44.5%, adding $0.60-1.00 a set at the lean EXW, and the first 1,000 sets landed at a loss before advertising: the origin-tariff obituary, on a stack that has changed three times in 2026 alone (F27, F28, F29).",
+   "probability": 0.4,
    "impact": "major",
-   "mitigation": "A broker's written classification and tranche on 8473.30.5100 versus 9404.90 before the first entry (F20, F21); the first order capped at 1,000 sets; a Vietnam or Indonesia foam-and-sewing second source sampled at the prototype stage so the second order can change origin; the price held at $23.99-24.99 rather than $19.99 so there is room to absorb one step.",
-   "mitigation_cost_usd": {"low": 350, "base": 900, "high": 1800, "assumption": "Broker opinion $150-400 plus one Vietnam sample round and its air freight $200-1,400."}
+   "mitigation": "A licensed broker's written classification on 9404.90.20 (scenario B, 6% + List 4A 7.5% + the 12.5% July-2026 tier = 26%) with the 9903.88.xx footnote read from the HTS page, or a CBP binding-ruling request if the broker will not commit, before any deposit (F31, F33); scenario A (8473.30.51 free + List 3 25% + 12.5% = 37.5%) and scenario C on List 3 (6307.90.98 at 7% + 25% + 12.5% = 44.5%, not searched this run) are the cases the written opinion must rule out; the first order capped at 1,000 sets; a Vietnam or Indonesia foam-and-sewing second source sampled at the prototype stage so the second order can change origin; the price held at $24.99 rather than $19.99 so there is room to absorb one step; and the July-2026 12.5% layer tracked, since the CIT struck the Section 122 bridge in May 2026 and a refund scenario (13.5%) is live (F28).",
+   "mitigation_cost_usd": {"low": 350, "base": 900, "high": 1800, "assumption": "Broker opinion $150-400 (a binding-ruling request is the founder's time plus the broker's hour) plus one Vietnam sample round and its air freight $200-1,400."}
   },
   {
-   "obituary": "It is twelve months on and the 'plastic-free packaging' bullet was flagged under Amazon's environmental-claims policy and the listing sat suppressed for nine days in month 3 while the clones ranked: the suppressed-claim obituary (innovaty sustainability claims).",
-   "probability": 0.2,
+   "obituary": "It is twelve months on and a packaging or certification bullet was flagged under Amazon's environmental-claims policy and the listing sat suppressed for nine days in month 3 while the clones ranked: the suppressed-claim obituary (innovaty sustainability claims, critic K11).",
+   "probability": 0.15,
    "impact": "minor",
-   "mitigation": "Word the box line as 'ships in a paper box with no plastic bag' and the cover line as 'OEKO-TEX Standard 100 certified knit, certificate on file', never 'eco', 'green' or 'plastic-free product'; keep the certificate number on the tag and in Seller Central; keep 'replaceable cover' as the longevity claim, which is the strongest one (innovation playbook 7).",
+   "mitigation": "Word the box line as 'ships in a paper box with no plastic bag' and the cover line as 'cover made from fabric certified to OEKO-TEX Standard 100 (certificate on file)' in a bullet only, with the mill's certificate (number, scope, validity) in Seller Central and nothing on the tag, since the certificate is the mill's for the knit and not ours for the finished cover; never 'eco', 'green', 'plastic-free product' or 'certified cover'; keep 'replaceable cover' as the longevity claim once I4 ships and 'washable fabric' until then (innovation playbook 7).",
    "mitigation_cost_usd": {"low": 0, "base": 50, "high": 150, "assumption": "A copy review; nothing physical changes."}
   },
   {
-   "obituary": "It is twelve months on and we reached 38 reviews by month 6 and 90 by month 12 against VAYDEER's 2,045 and JIKIOU's 791, the tile never left page two on 'elbow pad for desk', ads bought every order at 45% and the forecast's month-12 volume never arrived: the review-velocity obituary (moore.chasm, gate.social_proof, competition watch_signals).",
+   "obituary": "It is twelve months on and we reached 38 reviews by month 6 and 90 by month 12 against VAYDEER's 2,045 and JIKIOU's 791, the tile never left page two on 'elbow pad for desk', ads bought every order at 45% and the forecast's month-12 volume never arrived: the review-velocity obituary (moore.chasm, gate.social_proof, competition watch_signals). It is also the obituary of the 15% floor, which only exists at a 15-20% ad rate that needs those reviews.",
    "probability": 0.55,
    "impact": "major",
-   "mitigation": "Vine on 30 sets at launch; the card's review trigger with a QR beside the spec and the two-year promise (post.review_trigger, I5); Amazon's review-request button on every order; a $19.99 launch price for the first 60 days against the $23.99 list; and a hard check at month 4: under 30 reviews means the ad budget stops and the price war is not fought, so the loss is bounded.",
-   "mitigation_cost_usd": {"low": 600, "base": 1500, "high": 3000, "assumption": "Vine fee plus 30 sets at landed cost (in the NRE) plus a $4 launch discount on the first 300 sets."}
+   "mitigation": "Vine on 30 sets at launch; the card's review trigger with a QR beside the spec and the Limited Warranty (post.review_trigger, I5); Amazon's review-request button on every order; a $19.99 launch price for the first 60 days against the $24.99 list; and a hard check at month 4: under 30 reviews means the ad budget stops and the price war is not fought, so the loss is bounded.",
+   "mitigation_cost_usd": {"low": 600, "base": 1500, "high": 3000, "assumption": "Vine fee plus 30 sets at landed cost (in the NRE) plus a $5 launch discount on the first 300 sets."}
   },
   {
-   "obituary": "It is twelve months on and the quoted supplier re-priced innovaty's spec at $7.80 a set, the tariff stack stayed near 30%, the set landed at $11 against a $23.99 price, and every unit lost money after the 15% referral, the $5.30 fulfilment fee and the launch advertising: the plan was signed on a $5.75 quote for a different, simpler pad (F25) and the 30-40% margin was never there.",
+   "obituary": "It is twelve months on and the quoted supplier priced the lean spec at $6.20 a set, the broker put us on the 37.5% line, the Z-nest box billed at 1.5-2 lb, the set landed at $10 against a $24.99 price, and every unit lost money after the 15% referral, the $5.75 fulfilment fee and the launch advertising: the plan was signed on a $5.75 quote for a different, simpler pad (F25) and the 30-40% margin was never there.",
    "probability": 0.55,
    "impact": "fatal",
-   "mitigation": "No deposit until two numbers are in writing: a broker's tariff tranche at or under 17.5% on the confirmed HTS line, and an EXW at or under $5.00 a set at MOQ 1,000 for the full spec from one of two factories; if either fails, ship v1_lean (I1, I3, I5, I6: one 60 kg/m3 core, a sewn wipe-clean knit, no zip) at $24.99, about $2.10 a set cheaper landed, and treat I2 and I4 as the v1.1 upgrade funded from the first margin; if both fail, the product does not ship as a 2-pack from China at this price and the founder re-briefs on origin or price.",
+   "mitigation": "No deposit until two numbers are in writing, and both are NECESSARY, NOT SUFFICIENT (critic K3): (a) a licensed broker's classification on 9404.90.20 with the stack at or under 26%, and (b) a lean-spec EXW at or under $4.50 a set at MOQ 1,000 from one of two factories (I expect $4.00-4.80, so this is set where the number lands, not where it is hoped to land). Together they put v1_lean at about $7.25-7.40 landed, under the engine's 30% rail at $24.99, and no more than that. For the 15% post-advertising floor to clear, the engine's arithmetic also needs: the price at $24.99 with the thickness proof in the tile (not $23.99, not $19.99 beyond the 60-day launch), the ad rate at 15-20% (a year-two number that arrives only past about 100 reviews at 50 a month), returns at or under 6%, and the box at or under 208 in3 so the fee drops to the 1.25-1.5 lb row; year one at 25% ads is a planned loss at every combination of the two gates. What the plan does at each end: at $4.00 and 26% it ships v1_lean at $24.99 and funds I2 from the first margin; at $4.80 or at 37.5% it ships only if the July layer is vacated (13.5%) or the box makes the lower row, else it does not ship from China at this price; above $5.00 at MOQ 1,000 on the lean spec, or if the bottoming test forces I2 and the EXW rises past $5.00, the founder re-briefs on origin (Vietnam second source) or price (the $42-60 rail category, which is a different product and a different buyer).",
    "mitigation_cost_usd": {"low": 300, "base": 800, "high": 1600, "assumption": "A second factory's sample rounds and air freight; the broker opinion is in the tariff item above."}
   },
   {
-   "obituary": "It is twelve months on and the coil zip on the lip jammed on the knit edge or its tape stitching let go on the first wash for about one buyer in twenty, and the washable-cover delighter became the one-star pattern (I4, N3, gate.reviews_negative_first).",
+   "obituary": "v1.1 only (I4 is not in the recommended version): it is twelve months after the zipped cover ships and the coil zip on the lip jammed on the knit edge or its tape stitching let go on the first wash for about one buyer in twenty, and the washable-cover delighter became the one-star pattern (I4, N3, gate.reviews_negative_first).",
    "probability": 0.12,
    "impact": "major",
-   "mitigation": "A named SBS or YKK #3 coil, the slider garage and bar-tacked ends innovaty specified, 500 open-close cycles and 20 washes on the T1 sample before sign-off, the cord puller instead of metal, and the care step shown on the card (cold wash, air dry).",
-   "mitigation_cost_usd": {"low": 120, "base": 300, "high": 600, "assumption": "Branded zips add about $0.03-0.08 a pad on the first order plus the cycle test in the lab line."}
+   "mitigation": "Before I4 ships in v1.1: a named SBS or YKK #3 coil on the 370 mm U, the slider garage and bar-tacked ends innovaty specified, 500 open-close cycles, 20 washes and the 50-refit test by an untrained user on the sample, the cord puller instead of metal, and the care step shown on the card (cold wash, air dry); if the refit fails, the replacement sleeve stays the service part and the cover stays sewn closed.",
+   "mitigation_cost_usd": {"low": 120, "base": 300, "high": 600, "assumption": "Branded zips add about $0.03-0.08 a pad on the v1.1 order plus the cycle and refit tests in the reserve lab line."}
   },
   {
    "obituary": "It is twelve months on and the $5.75 turned out to be per piece in the set configuration, not per set, the ambiguity scout flagged in F25; the real set EXW was $11.50 and nothing in the $15-25 band could carry it.",
@@ -351,62 +374,69 @@
    "impact": "major",
    "mitigation": "The honest fit limit (18-38 mm, square or eased up to R5, 50 mm of clear desk face, not bullnose) in the first bullet, on the card and as a dimensioned drawing in image 2 (innovaty honest_limitations, cialdini.reciprocity), a 'measure your edge' line in the back half of the title, and the R6 relief that seats eased edges flat (I1).",
    "mitigation_cost_usd": {"low": 50, "base": 150, "high": 400, "assumption": "The dimensioned drawing and the card artwork, inside the listing-graphics NRE line."}
+  },
+  {
+   "obituary": "It is twelve months on and the two-year promise drew claims at 8% of sets because 'flattens' was never defined, every subjective claim was honoured with a pad and $7 of postage, the $0.40-a-set reserve was gone by month 8, and the wording was woven into a tag that could not be changed without a re-order: the written-warranty obituary (I5, critic K10).",
+   "probability": 0.25,
+   "impact": "major",
+   "mitigation": "Designate it 'Limited Warranty' and state the terms on the card and pre-sale in the listing, as the Magnuson-Moss Warranty Act requires for a written warranty on a consumer product over $15 (16 CFR 701-702): covered = more than 20% thickness loss at the roll measured against the card's printed ruler, or base-panel separation, within two years of delivery, photo required; remedy = one replacement pad (not a set) shipped from a small US stock; the sewn-in tag carries the spec line only so the wording can change without a re-order; claim rate re-read at month 6 and the reserve re-set from it; the cost is carried per unit in the warranty-reserve BOM line where the engine sees it (law.loss_aversion framing kept: the promise still answers N5).",
+   "mitigation_cost_usd": {"low": 100, "base": 300, "high": 800, "assumption": "The warranty-wording review (in the compliance line), the ruler artwork on the card, and a 2-3% spare-pad stock held in the US from the first order; the per-claim cost itself is the reserve in landed, not here."}
   }
  ],
  "idea_rulings": [
   {
    "idea_id": "I1",
    "ruling": "realistic",
-   "why": "A one-piece L on a foam die in the $200-1,100 class, not a steel tool (the supplier's mould is $230, F25), and the only change a stranger sees at 300 px; its cost is that the set no longer packs flat, which keeps it large standard, where the 590 g sample already was.",
-   "deciding_number": "+$0.20-0.40 a pad for 945 cm3 of foam against the sample's 600 cm3, on a $200-1,100 die"
+   "why": "A one-piece L on a foam template in the $200-1,100 class, not a steel tool (the supplier's mould is $230, F25), and the only change a stranger sees at 300 px (law.shape_memory, triz.local_quality); its real cost is the box: the 126 x 71 mm envelope nests two-up only as a Z at 152 x 71 x 300 mm, which lands the set in the 1.5-2 lb large-standard band.",
+   "deciding_number": "+$0.25-0.45 a pad for about 1,170 cm3 of foam on the 26 mm corner section against the sample's 600 cm3, on a $200-1,100 template; plus about $0.45 a set of fulfilment fee for the band the Z-nest lands in"
   },
   {
    "idea_id": "I2",
    "ruling": "stretch",
-   "why": "Two densities with a PUR web are the right answer to N1 and N5 and cost about $0.45 a pad over one 60 kg/m3 core on a set that already fails the contribution floor; it stays in v1 only if the full-spec EXW at MOQ 1,000 comes in at or under $5.00 a set, else it is the v1.1 upgrade.",
-   "deciding_number": "+$0.90 a set (base) for the second layer and the web, against a $5.00 EXW ceiling"
+   "why": "The HR core under a 10 mm shell is the right answer to N1 and N5 (kano.must_be for C1) and the hero's own physics assumes it, but it costs about $0.55 a set over one 60 kg/m3 core on a set that already fails the contribution floor, plus a cradle and a peel gate; it is the v1.1 upgrade funded from the first margin, and it comes straight back into v1 if the single core fails the bottoming test (premortem[0]).",
+   "deciding_number": "+$0.55 a set at base (HR core $0.20 + shell $0.29 + sprayed bond $0.16, less the $0.48 single core, per pad, with overhead), a $30-200 cradle and a $150-400 humidity-aged peel gate, against a lean EXW gate of $4.50 at MOQ 1,000"
   },
   {
    "idea_id": "I3",
    "ruling": "realistic",
-   "why": "A vulcanised scrim panel on both faces is $0.24 a pad against $0.05-0.10 of dots or strips, removes the C3 one-star and the adhesive baggie (F7), and is the base the buyer asked to see bare on glass.",
+   "why": "A vulcanised scrim panel on both faces is $0.24 a pad against $0.05-0.10 of dots or strips, removes the C3 one-star and the adhesive baggie (F7), and is the base the buyer asked to see bare on glass (law.shape_memory, kahneman.peak_end).",
    "deciding_number": "+$0.15 a pad net over dots or strips"
   },
   {
    "idea_id": "I4",
    "ruling": "stretch",
-   "why": "A zip with garage and bar-tacks plus its sewing is about $0.35 a pad for a delighter the buyer would also accept as a shown wipe-clean step (buyer.comfort_and_laziness); funded only inside the $5.00 EXW ceiling, else v1.1 with the replacement-cover SKU.",
-   "deciding_number": "+$0.35 a pad including labour, +$0.70 a set"
+   "why": "The 370 mm U-zip with garage and bar-tacks plus about four minutes of extra sewing is about $0.52 a pad, $1.35 a set with overhead, for a delighter (kano.delighter) the buyer would also accept as a shown wipe-clean step (buyer.comfort_and_laziness); it is the most expensive line after labour and the first thing to defer, so it is v1.1 with the replacement-cover SKU, gated by the 50-refit test.",
+   "deciding_number": "+$0.52 a pad including labour, about +$1.35 a set with overhead, against a lean EXW gate of $4.50 at MOQ 1,000"
   },
   {
    "idea_id": "I5",
    "ruling": "realistic",
-   "why": "A woven tag is $0.03-0.06 a pad and the two-year promise costs about $0.07 a set at a 2% claim rate on a $3-4 replacement cover; it is the physical carrier of the spec edge competition rated medium and costs cents.",
-   "deciding_number": "$0.10 a set all-in, tag plus the promise's expected claim cost"
+   "why": "A woven tag is $0.03-0.06 a pad and the two-year flatten-or-peel promise is a written Limited Warranty whose claims cost a replacement pad plus postage, not a $3 cover (critic K10); re-costed at a 2-5% claim rate it is $0.20-0.80 a set and carried as a reserve in landed; still the physical carrier of the spec edge competition rated medium (cialdini.authority, sutherland.costly_signal) and cheap for what it buys.",
+   "deciding_number": "$0.46-0.92 a set all-in: tag $0.06-0.12 plus the Limited Warranty reserve $0.40 a set at base (3% of sets claiming over two years at about $13 a claim: a pad at about $4.35 landed plus $5-9 postage and $1-2 handling), $0.20-0.80 at 2-5%"
   },
   {
    "idea_id": "I6",
    "ruling": "realistic",
-   "why": "A 7-day rack rest, a PUR web and no poly bag net $0.05-0.10 a set (the web costs about what the bag saved) and add seven days to the first run; it answers C2 at 30% of negatives and is the cheapest fix in the plan.",
-   "deciding_number": "7 days on the first run and under $0.10 a set"
+   "why": "A 7-day rack rest, a solvent-free bond (in the I2 line when it ships) and no poly bag net under $0.10 a set and add seven days to the first run; it answers C2 at 30% of negatives (kano.must_be, post.review_trigger) and is the cheapest fix in the plan.",
+   "deciding_number": "7 days on the first run and under $0.10 a set; the bag saved $0.01-0.03"
   },
   {
    "idea_id": "I7",
    "ruling": "unrealistic",
-   "why": "Four plated N35 discs in sewn pockets are $0.25-0.40 a set plus an FTO read on magnet-joined cushions (medium prior art); innovaty's own unlock needs contribution at or above 30% at launch and the base case as costed is negative, so it stays in v2 and is not in any funded version.",
-   "deciding_number": "unlock at 30% contribution against a negative base contribution; +$0.25-0.40 a set"
+   "why": "Four plated N35 discs in sewn pockets are $0.25-0.40 a set plus an FTO read on magnet-joined cushions (medium prior art); innovaty's own unlock needs contribution at or above 30% at the launch price and the engine will show the base case below zero, so it stays in v2 and is in no funded version (kano.delighter deferred).",
+   "deciding_number": "unlock at 30% contribution against a base contribution the engine computes below zero; +$0.25-0.40 a set and an FTO read"
   }
  ],
- "recommended_version_id": "v1_now",
+ "recommended_version_id": "v1_lean",
  "feasibility_verdict": "unrealistic",
  "regulatory": [
-  "Prop 65 (California): polyurethane foam can carry listed flame retardants such as TDCPP; require the supplier's written declaration of no listed FR on the foam lot or carry the warning on the box; no CPSC or children's-product testing applies to an adult desk accessory with no magnets in v1.",
-  "FTC Textile Fiber Products Identification Act and country of origin: '100% polyester cover' and 'Made in China' on the woven tag and the box; the OEKO-TEX Standard 100 certificate number kept on file for the claim; no 'eco' or 'biodegradable' wording on PU foam (innovaty rejected_claims).",
-  "No FCC, UL or CE applies to a passive foam pad; the two-year flatten-or-peel promise is a seller warranty and must be honoured as written under Amazon's claims policy; if I7 ships in v2 the listing states the magnets are sewn captive and the product is not for children."
+  "Prop 65 (California): polyurethane foam can carry listed flame retardants such as TDCPP; require the supplier's written declaration of no listed FR on the foam lot or carry the warning on the box; no CPSC or children's-product testing applies to an adult desk accessory with no magnets in v1 (regulatory baseline for a passive accessory, knowledge base timeline note).",
+  "FTC Textile Fiber Products Identification Act and country of origin: '100% polyester cover' and 'Made in China' on the woven tag and the box; the mill's OEKO-TEX Standard 100 certificate (number, scope, validity) kept on file in Seller Central for the bullet 'cover made from fabric certified to OEKO-TEX Standard 100', nothing on the tag and never 'certified cover'; no 'eco' or 'biodegradable' wording on PU foam (innovaty rejected_claims, critic K11).",
+  "Magnuson-Moss Warranty Act: the two-year 'if the foam flattens or the base peels we replace it' promise is a written warranty on a consumer product over $15, so it is designated 'Limited Warranty', its terms (what is covered: more than 20% thickness loss at the roll against the card's printed ruler, or base-panel separation, within two years of delivery, photo required; remedy: one replacement pad shipped from US stock; how to claim) are printed on the card and made available pre-sale in the listing (16 CFR 701-702), and the sewn-in tag carries the spec line only so the wording can change without a re-order; it is also honoured as written under Amazon's claims policy (critic K10). No FCC, UL or CE applies to a passive foam pad; if I7 ships in v2 the listing states the magnets are sewn captive and the product is not for children."
  ],
  "three_sentences_to_founder": [
-  "Your 30-40% is a pre-advertising margin, and at the pair's $5.30 large-standard fulfilment fee plus the 15% referral it needs the landed set at or under roughly $4.70 at $19.99, $6.20 at $22.99 and $7.30 at $24.99 for 30%, and roughly $2.80, $4.00 and $4.80 for 40% (the engine prints the exact figures); the $5.75 quote itself lands at about $8.30-9.90 after the stale 17.5-45% China tariff and freight, above every one of those ceilings.",
-  "A cheaper factory for innovaty's spec does not exist: the bottom-up EXW is $6.41 a set at MOQ 300 (realistic negotiated $6.50-8.00, or $5.50-6.80 at MOQ 1,000), above the $5.75 quote, because the two-layer core, the zipped washable cover and the vulcanised base on both faces add about $1.00-1.40 a pad to the folded single-density sample the quote was for, and the $3.09-3.20 Alibaba pads are the thin, bare pads the buyer is trying not to buy.",
-  "Ship the pair, not a single (a single moulded L still costs $4.76 to fulfil because it is 65 mm tall and cannot be small standard, and it fights VAYDEER's 2,045 reviews at the same $17.99), but sign nothing until a broker confirms the tariff tranche at or under 17.5% and a factory confirms $5.00 a set or less at MOQ 1,000 in writing: as costed today the contribution after advertising is negative at every price in the band, with both fixes it is only about 7% at $24.99 against the engine's 15% floor (about 28% before advertising, which is your target), so the plan is unrealistic as costed and FIX-FIRST, not dead."
+  "Your 30-40% is a pre-advertising margin, and the money has moved against you since the last pass: the re-sectioned L (26 mm legs, 126 x 71 x 300 mm per pad) nests two-up only in a 15.7 x 7.6 x 30.6 cm box that cubes at about 1.6 lb dimensional weight, so the set is billed in the 1.5-2 lb large-standard band (about $5.75 a set, interpolated from the fetched rows and marked stale) instead of the 1-1.25 lb band assumed before; the fetched China stack is 26% on the likely line (9404.90.20: 6% + List 4A 7.5% + the 12.5% July-2026 tier), 37.5% if a broker puts it on 8473.30.51 (free + List 3 25% + 12.5%) and 13.5% only if the July layer is vacated; and innovaty's full spec is $7.00 a set EXW bottom-up at MOQ 300, so v1_now lands at about $11.00 a set ($7.20-17.40) against a $24.99 ceiling and never reaches the engine's 30% landed rail ($7.50) at any EXW I expect, even at MOQ 1,000.",
+  "So the version to cost and ship is v1_lean, not v1_now: the no-fold 26 mm-corner L, the vulcanised base on both faces, the spec tag with a properly worded Limited Warranty, and the no-smell build, with one 60 kg/m3 core and a sewn-closed wipe-clean knit; it lands at about $8.70 a set ($5.40-14.40) and about $7.25-7.40 at MOQ 1,000 on the 26% stack, the two-layer core (I2, about $0.55 a set) and the U-zip washable cover (I4, about $1.35 a set) become v1.1 funded from margin, I2 comes straight back if the single core fails the 30 N / 60 min bottoming test on the T1 sample, and because this version is no longer innovaty's v1_now, the orchestrator must reconcile innovaty's image 3 (two-band section) and image 4 (unzip step) before anything is shot.",
+  "Sign nothing until two numbers are in writing, a broker's classification on 9404.90.20 at or under 26% and a lean-spec EXW at or under $4.50 a set at MOQ 1,000 (I expect $4.00-4.80, so this is a coin toss, not a formality), and understand that both are necessary and neither is sufficient: the engine's 15% post-advertising floor also needs the price at $24.99 with the thickness proof in the tile, ads down to 15-20% (a year-two number that arrives only past about 100 reviews at 50 a month against JIKIOU's 53), returns at or under 6% and the box held under 208 in3 for the 1.25-1.5 lb row, so year one at 25% ads is a planned loss at every combination, the first sale lands at 23-46 weeks with the 1.35 multiplier applied and the 46 breaks the 39-week rail if one lab gate fails, and the plan is unrealistic as costed and FIX-FIRST, not dead."
  ]
 }

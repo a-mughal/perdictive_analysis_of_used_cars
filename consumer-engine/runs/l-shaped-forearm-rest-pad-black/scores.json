@@ -1,0 +1,269 @@
+{
+  "scored_at": "2026-10-06T10:49:26+00:00",
+  "evidence": {
+    "facts": 33,
+    "sourced": 33,
+    "stale_fee_inputs": 2,
+    "unsourced_claims": 11,
+    "score": 44.0
+  },
+  "buyer": {
+    "p_click": 0.65,
+    "p_cart": 0.5,
+    "p_buy": 0.7,
+    "p_purchase_overall": 0.2275,
+    "framework_tag_coverage": 1.0,
+    "driver": "pain",
+    "pain_level": "moderate",
+    "top_need": "I want to put my arm down at 9 am and still not feel the desk edge at 4 pm; the pad must not bottom out onto the wood, and nobody on the shelf proves theirs does not except one title that says 'thicker'.",
+    "top_need_id": "N1",
+    "burning_needs": 3,
+    "headroom_score": 49.4
+  },
+  "innovation": {
+    "ideas_ranked": [
+      {
+        "idea_id": "I1",
+        "name": "Solid-corner L: no fold, 22 mm of foam over the corner, a wedge thickest at the desk edge",
+        "role": "hero",
+        "durability": "reassures",
+        "in_v1": true,
+        "impact": 24.3,
+        "ruling": "realistic",
+        "weighted": 24.3
+      },
+      {
+        "idea_id": "I3",
+        "name": "Stitched-in rubber base: one continuous sheet on both faces of the L, no strips",
+        "role": "supporting",
+        "durability": "reassures",
+        "in_v1": true,
+        "impact": 20.6,
+        "ruling": "realistic",
+        "weighted": 20.6
+      },
+      {
+        "idea_id": "I5",
+        "name": "Spec tag and the two-year flatten-or-peel promise",
+        "role": "supporting",
+        "durability": "reassures",
+        "in_v1": true,
+        "impact": 12.4,
+        "ruling": "realistic",
+        "weighted": 12.4
+      },
+      {
+        "idea_id": "I6",
+        "name": "No-smell build: aired foam, no glue anywhere, no poly bag",
+        "role": "hygiene",
+        "durability": "neutral",
+        "in_v1": true,
+        "impact": 11.2,
+        "ruling": "realistic",
+        "weighted": 11.2
+      },
+      {
+        "idea_id": "I2",
+        "name": "Two-layer core (v1.1): HR foam spring under a 10 mm slow-rebound top",
+        "role": "supporting",
+        "durability": "reassures",
+        "in_v1": false,
+        "impact": 13.9,
+        "ruling": "stretch",
+        "weighted": 8.3
+      },
+      {
+        "idea_id": "I4",
+        "name": "Wash-it cover (v1.1): uncoated knit with a hidden coil zip under the lip",
+        "role": "supporting",
+        "durability": "neutral",
+        "in_v1": false,
+        "impact": 12.8,
+        "ruling": "stretch",
+        "weighted": 7.7
+      },
+      {
+        "idea_id": "I7",
+        "name": "Magnet dock: two pads snap end-to-end into one 600 mm rail",
+        "role": "supporting",
+        "durability": "neutral",
+        "in_v1": false,
+        "impact": 6.4,
+        "ruling": "unrealistic",
+        "weighted": 0.0
+      }
+    ],
+    "hero": {
+      "idea_id": "I1",
+      "name": "Solid-corner L: no fold, 22 mm of foam over the corner, a wedge thickest at the desk edge",
+      "role": "hero",
+      "durability": "reassures",
+      "in_v1": true,
+      "impact": 24.3,
+      "ruling": "realistic",
+      "weighted": 24.3
+    },
+    "five_year_verdict": "survives",
+    "weakest_point": "The fixed knit over the R20 roll: the 200-220 gsm polyester fabric a bare forearm and a sleeve cuff slide across on every move from keys to mouse, loaded with skin oil and desk dust, now sewn shut over the core with no zip, so it can be wiped but never washed or replaced; the wear part has become the pad's life.",
+    "warning_shapes": [],
+    "v1_realistic_count": 4,
+    "v1_unrealistic": [],
+    "score": 17.1
+  },
+  "competition": {
+    "present": true,
+    "brand_dominance": "partial",
+    "top_review_count": 2045,
+    "rule_3500_triggered": false,
+    "raised_by_rule": false,
+    "top_brand": "VAYDEER",
+    "sellers_on_page_one": 12,
+    "lookalike_share": 0.65,
+    "copycat_risk": "high",
+    "months_to_clone": 3.0,
+    "clone_price_usd": 14.99,
+    "share_haircut_pct": 35,
+    "win_before": 0.12,
+    "win_after": 0.07,
+    "choice_rank_after": 4,
+    "strongest_moat": "A registered design on our specific lip profile and top texture (the ornamental cross-section and surface pattern innovaty chooses), filed with Amazon Brand Registry so exact copies can be reported as IP infringement",
+    "moat_strength": "medium",
+    "deep_study": "What VAYDEER does right (F11): it sits exactly on the $17.99 anchor, carries 4.6 stars over 2,045 reviews banked since a 2020 ASIN, and its title answers complaint cluster C1 head-on ('Upgraded Larger and Thicker', 0.94 in) so the buyer who was burned by a thin pad reads the fix in the first five words (gate.title_scan, kahneman.loss_aversion). Its thumbnail sells size and thickness on a dark desk, which is the one thing a 300 px image can prove. Where it is weak: it is a single pad, so the keyboard-plus-mouse, both-forearms buyer the L-shape wave is built around must buy two or look elsewhere; its own 2-pack answer (Vaydeer 2Pcs, B0FNMMJ2RQ, F9) is a separate 2025 ASIN with no review bank, which tells us the leader is following the 2-pack wave rather than owning it (sharp.double_jeopardy cuts both ways: its 2,045 reviews do not transfer to the new listing). Like every tile on the term it never shows the lip over a thick or bullnose edge, never shows two pads spaced around a keyboard, never proves the base on glass or glossy laminate, and never shows a cover being cleaned (scout unanswered_questions; kahneman.wysiati). The C1/C2/C3 shares are category-level (gap), so we cannot say VAYDEER has solved stickiness or creep, only that nobody on the term shows proof. How we coexist and flank: we do not contest 'biggest single pad'; we sit in the 2-pack row beside JIKIOU, where the social-proof leader is fifteen months old at 791 reviews (moore.chasm is crossable in months, not years), and we flank VAYDEER's single-pad buyer with the pair-covers-both-arms benefit, a 20 mm high-density core shown next to a keyboard in profile (C1), a fabric cover with a visible care step (C2) and a rubber base proven on five surfaces without adhesive strips (C3), each as the image the leader never shot (gate.image_2_to_6). The price stays at 1.0-1.3x the anchor so the comparison never trips gate.price_vs_anchor."
+  },
+  "economics": {
+    "version_id": "v1_lean",
+    "version_substituted": false,
+    "price_usd": 24.99,
+    "landed_cost_usd": 8.7,
+    "fee_stack_usd": {
+      "referral": 3.75,
+      "fba": 5.75,
+      "storage": 0.46,
+      "ads": 6.25,
+      "returns": 0.91
+    },
+    "contribution_usd": -0.83,
+    "contribution_pct": -3.3,
+    "landed_pct_of_price": 34.8,
+    "break_even_units": null,
+    "months_to_break_even": null
+  },
+  "sanity_rails": [
+    {
+      "rail": "contribution >= 25% of price",
+      "pass": false,
+      "value": "-3.3%",
+      "soft": false
+    },
+    {
+      "rail": "contribution >= 15% of price (hard floor)",
+      "pass": false,
+      "value": "-3.3%",
+      "soft": false
+    },
+    {
+      "rail": "landed cost <= 30% of price",
+      "pass": false,
+      "value": "34.8%",
+      "soft": false
+    },
+    {
+      "rail": "P(profit > 0 in 12 months) >= 60%",
+      "pass": false,
+      "value": "0%",
+      "soft": false
+    },
+    {
+      "rail": "first sale within 9 months at high",
+      "pass": false,
+      "value": "46 wk high",
+      "soft": false
+    },
+    {
+      "rail": "no fatal risk above 25% without a mitigation",
+      "pass": true,
+      "value": "0 unmitigated",
+      "soft": false
+    },
+    {
+      "rail": "price within what the buyer will pay",
+      "pass": true,
+      "value": "$24.99 vs $24.99",
+      "soft": false
+    },
+    {
+      "rail": "planning-fallacy multiplier applied",
+      "pass": true,
+      "value": "1.35",
+      "soft": false
+    },
+    {
+      "rail": "profit survives a copycat wave (P >= 40%)",
+      "pass": false,
+      "value": "0% after the clone haircut",
+      "soft": true,
+      "owner": "innovaty"
+    }
+  ],
+  "monte_carlo": {
+    "trials": 10000,
+    "p_profit_positive_12m": 0.0,
+    "p_payback_within_12m": 0.0,
+    "profit_12m_p10": -29630,
+    "profit_12m_p50": -19294,
+    "profit_12m_p90": -10970,
+    "median_payback_month": 99
+  },
+  "monte_carlo_cloned": {
+    "trials": 10000,
+    "p_profit_positive_12m": 0.0,
+    "p_payback_within_12m": 0.0,
+    "profit_12m_p10": -24666,
+    "profit_12m_p50": -16805,
+    "profit_12m_p90": -10298,
+    "median_payback_month": 99
+  },
+  "feasibility": {
+    "rails_passed": "3/8",
+    "rails_broken": [
+      "contribution >= 25% of price",
+      "contribution >= 15% of price (hard floor)",
+      "landed cost <= 30% of price",
+      "P(profit > 0 in 12 months) >= 60%",
+      "first sale within 9 months at high"
+    ],
+    "soft_broken": [
+      "profit survives a copycat wave (P >= 40%)"
+    ],
+    "verdict_computed": "unrealistic",
+    "verdict_claimed": "unrealistic",
+    "disagreement": false,
+    "score": 22.5
+  },
+  "critic_overall": "flags_to_fix",
+  "critic_high": 1,
+  "status": "FIX-FIRST",
+  "summary": "5 flag(s) to close, each routed to its owner — nothing here kills the product",
+  "fixes": [
+    "[innovaty] copycat risk is high and no strong moat is built in — a quantity-first cloner will undercut us within months; add a defensible edge (design registration, bundle, spec edge, review lead plan) before launch",
+    "[orchestrator] The founder's brief names the product 'L-Shaped Memory-Foam Forearm & Wrist Desk Rest Pad' and describes the supplier's sample as a memory-foam pad, and all four rival titles carry 'Memory Foam' (F1, F5, F7, F11). The version that will be sampled, v1_lean = innovaty v1_now (I1, I3, I5, I6), contains no memory foam at all: one HR polyether core at 50 kg/m3, 25% IFD 150-190 N, which springs back at once and is 'firmer at first touch than a slow-sinking memory-foam wrist rest' (innovaty honest_limitations[2]). Innovaty's title honestly omits the words, which also drops the one keyword every tile on 'elbow pad for desk' shares. Nothing is wrong with the engineering choice (it is the right answer to C1's creep and bottoming), but nobody has told the founder that the sample they are about to order is not the product their brief names, that the listing cannot say 'memory foam' without a claims problem, and that the memory-foam version is I2 at about +$0.55 a set in v1.1. That is a before-samples decision, not a text fix (law.benefit_not_feature, sharp.mental_availability, gate.title_scan). — fix: Orchestrator puts the choice to the founder in one line before the T1 sample is ordered: ship v1 as a high-resilience (not memory-foam) pad under a name and title without 'memory foam', accepting the keyword loss and the firmer touch as the stated limitation; or pull I2 forward now (HR core under a 10 mm memory shell, +$0.55 a set, cradle and peel gate) so the name, the keyword and the brief agree. Record the answer in brief.assumptions and, if the first, rename brief.product_name.",
+    "[scout] evidence is thin — source the facts and fetch the live fees before trusting any number below",
+    "[genius] broken rail: contribution >= 15% of price (hard floor)",
+    "[genius] broken rail: P(profit > 0 in 12 months) >= 60%"
+  ],
+  "watch": [
+    "[orchestrator] brand-partial arena — the top listing has 2,045 reviews. Not a reason to give up: flagged for serious consideration; read the deep study in the report",
+    "[genius] The 'sign nothing until' gate is restated as necessary-not-sufficient (K3 of pass 1, resolved), but its arithmetic uses two different freight numbers. The base landed ($8.70) adds freight $1.25 'assumes a 1,000-set order' + inbound $0.45 + reserve $0.40 = $2.10 of non-EXW adders; the gate's 'EXW <= $4.50 at MOQ 1,000 and 26% puts v1_lean at $7.25-7.40, under the $7.50 rail' only works with $1.70 of adders (4.50 x 1.26 = 5.67 + 1.70 = 7.37), i.e. freight at about $0.85. With the base adders the gate lands at $7.77, over the rail, and the EXW that actually clears $7.50 at 26% is about $4.30. Then, taking every lever at the best end genius names (EXW $4.50, 26%, landed $7.40, the box held to the 1.25-1.5 lb row at $5.10, ads at 15%, returns 6%): 24.99 - 3.75 - 5.10 - 0.46 - 3.75 - 0.87 - 7.40 = $3.66, which is 14.6% of price, still under the engine's 15% floor, and 27-29.5% before advertising, under the founder's own 30-40%. The file implies the floor is reachable in year two; by its own numbers it is missed by half a point at the best combination (forecast.fermi, gate.price_vs_anchor). — fix: State the adders the gate uses (freight at 1,000 sets, inbound, reserve) in premortem[6] and make the base's freight assumption agree with them, or reset the gate to EXW <= $4.30 at MOQ 1,000; add the one-line contribution arithmetic at the gate (pre-ad and at 15% ads) to premortem[6] and three_sentences[2], and say plainly that the honest steady state at $24.99 is 10-14.6% after ads and 27-29.5% before, with no named lever that lifts it past 15%.",
+    "[genius] Genius still describes the recommended lean core as a '60 kg/m3' core in five places: bom[0] ('about 70 g at 60 kg/m3', priced as viscoelastic at $4.5-7/kg), premortem[0] ('the single 60 kg/m3 core took a permanent dent'), premortem[2] ('cap pad weight at 200 g with the 60 kg/m3 build'), idea_rulings[I2] ('over one 60 kg/m3 core') and three_sentences[1] ('with one 60 kg/m3 core'). Innovaty's lean core (I1, I5 tag, moat_built_in, durability_review) is HR polyether at 50 kg/m3 (45-55), which at 1,170 cm3 weighs about 58 g a pad, not 70, and whose five-year failure is fatigue softening (<= 20% hardness loss), not the compression-set dent of memory foam that premortem[0] writes the obituary for. The woven tag will print 50 kg/m3 while the founder's three sentences say 60. The gates in premortem[0]'s mitigation are the right ones; the obituary and the spec line are of the previous build (forecast.premortem, cialdini.authority). — fix: Replace 60 kg/m3 with 'HR 50 kg/m3 (45-55), 25% IFD 150-190 N' in all five places; price bom[0] as HR slab at $3-5/kg over about 58 g plus waste (the range can stay, the reasoning cannot); rewrite premortem[0]'s obituary as 'softened 20% at the roll after a summer and the arm found the corner' so the ISO 3385 hardness-loss gate is the one it names.",
+    "[innovaty] C1 is 'too thin OR too firm; still feel the edge'. The lean single core is gated against thin (edge-load bottoming >= 8 mm residual, compression set, fatigue) and I1's 'reassures' is honest for what the buyer's shape memory reads: no fold, continuous foam over the corner, visible spring-back, a density number (law.shape_memory). But 'too firm' has no gate at all. A 150-190 N IFD HR core at 20-26 mm under a bony ulna is a medium-firm seat grade on a thin layer, innovaty itself says above 55 kg/m3 or 190 N it 'reads as hard under the ulna', honest_limitations[2] admits the firmer first touch, and the goniometer test measures wrist angle, not pressure. The only triggers that pull I2 forward are bottoming, set and fatigue, so a T1 sample that reads hard under the elbow has no path in the plan except a one-star review (kano.must_be, post.review_trigger). — fix: Add a comfort gate to I1's test on the T1 sample: peak interface pressure under a 25 mm ulna simulant at 30 N on the roll (or, cheaper, a five-user 60-minute blind panel against a JIKIOU and a VAYDEER pad with a stated pass rule such as no user rating it harder than the VAYDEER), and make failing it a third unlock trigger for I2 in version_plan and genius premortem[0]. Genius adds the $50-150 to the foam lab line.",
+    "[genius] The lab budget and the lab-gate phase still run 'ISO 6330 20 washes' on a cover that innovaty has sewn closed and says is never washed (I1, I3 fit_range, honest_limitations[1]); that was I4's test and I4 is v1.1. Meanwhile innovaty's durability_review names the fixed knit over the roll as the single weakest point and writes its only gate in changes_made[0]: Martindale abrasion >= 20,000 cycles (ISO 12947-2), pilling >= 3-4 (ISO 12945-2) and the 14-day sebum tack and odour test on the fixed knit, plus the base panel's 50 damp-wipe cycles and 30 d at 40 C / 80% RH (changes_made[2]). None of the abrasion or wipe gates is in genius's lab line or the timeline, so the weakest point of the recommended build has no budgeted proof while an irrelevant wash test does (law.shape_memory, cialdini.authority). — fix: In tooling_and_nre[5] and timeline phase 3, replace the 20-wash test with Martindale abrasion and pilling on the knit lot and the 50 damp-wipe / humidity test on the base panel; keep the sebum ageing; the cost is within the same $350-1,400 range.",
+    "[genius] Three places still say v1_lean's idea_ids 'are NOT innovaty's v1_now (I1-I6)' and that 'the orchestrator must reconcile innovaty's image 3 (two-band section) and image 4 (unzip step) before anything is shot'. Verified against the current innovaty: version_plan.v1_now is exactly I1, I3, I5, I6, image brief 2 shows one band of foam, image brief 4 shows a wipe, the packaging prompt says 'no zip or opening anywhere', and no v1 field carries I2, I4 or I7 content. The reconciliation is done; the founder's second sentence instructs an action already taken. — fix: Delete the reconcile clauses in the three places and say instead that innovaty's v1_now and the recommended version agree.",
+    "[innovaty] The sectioned pad beside the ruler is image 2 in image_briefs_2_to_4[0] and in pillars.uniqueness, but I5 says 'image 3 is a thumb-on-ruler sectioned pad' and its tag text is legible 'in the image-3 close-up next to the sectioned sample', while brief[1] makes image 3 the hard case (eased edge, bare base on glass). Genius premortem[1] cites both ('image 2's ruler' and 'image 3's sectioned pad'). The photographer gets two shot lists. — fix: One numbering: image 2 = scale and section with the tag close-up, image 3 = hard case and bare base; correct I5 and genius premortem[1] to match the briefs.",
+    "[orchestrator] Carried, downgraded. Pass 1 asked for the patent number and status; competition now cites US 5,170,971 'Table top mountable wrist supporter' (Schaeffer et al.), granted 15 December 1992, expired by statutory term, with a USPTO PDF URL, and the FTO line in genius confirms expiry before the die is cut. The number is consistent with a mid-December 1992 grant and a 1992 patent cannot be in force in 2026, so I1's 'low' prior-art risk stands. Not verified this pass: patents.google.com is egress-blocked, so the title and the L-section claim rest on competition's search alone. — fix: Keep as is; the FTO search already budgeted (tooling_and_nre[6]) reads claim 1 to confirm it is the L-section desk-edge foam supporter and looks for later design filings on specific profiles. No other action.",
+    "[scout] EdgeRest's tile price is recorded as $59.99, which is the brand's own-site price (F3); the amazon.com shelf price was never captured (scout.gaps). The buyer's price scan and competition's decoy argument ('the $42-60 rails make $19.99-22.99 read as mid-priced') both use it as the Amazon price. The conclusion survives any plausible Amazon price for a 24 in rail, but it is a different storefront's number sitting in the Amazon column (kahneman.anchoring, ariely.relativity). — fix: Mark the row 'brand-site price; amazon.com price not captured' or have a human read the amazon.com tile once; no downstream change expected.",
+    "[genius] broken rail: contribution >= 25% of price",
+    "[genius] broken rail: landed cost <= 30% of price",
+    "[genius] broken rail: first sale within 9 months at high",
+    "[innovaty] profit survives a copycat wave (P >= 40%) — the moat must be stronger or the price war will eat the margin"
+  ]
+}
